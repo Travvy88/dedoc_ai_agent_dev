@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_5b63231d23a472778cc159d9b959daeb" kind="dir">
+    <compoundname>dedoc/converters</compoundname>
+    <innerdir refid="dir_7af3248daf688a3f8fc9c22aa9bf59f6">dedoc/converters/concrete_converters</innerdir>
+    <innerfile refid="converters_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="converter__composition_8py">converter_composition.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/"/>
+  </compounddef>
+</doxygen>

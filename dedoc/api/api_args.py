@@ -1,9 +1,40 @@
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing, APIRequest; CONCEPT(7): QueryParameters, FormParsing; TECH(8): FastAPI, Dataclass]
+## @modulecontract
+## @purpose Define QueryParameters — a dataclass-based FastAPI Form model that captures all dedoc API query parameters for document parsing configuration.
+## @scope API request parameter parsing — document type, structure options, PDF handling, table analysis, attachments, etc.
+## @input FastAPI Form fields from HTTP request.
+## @output QueryParameters instance with typed fields and `to_dict()` serialization.
+## @links [USES_API(8): fastapi.Form; USES_API(6): dataclasses.asdict]
+## @invariants
+## - All Form fields have defaults (no required parameters at this level).
+## - to_dict() always returns a flat dict with parameter_name -> default_value.
+## @rationale
+## Q: Why dataclass with Form() instead of Pydantic BaseModel?
+## A: FastAPI's Form() with dataclass provides direct mapping from multipart form data and enum validation without Pydantic overhead. Fields use string enums for request validation.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup]
+## @modulemap
+## CLASS 8[API query parameters as Form dataclass] => QueryParameters
+## METHOD 5[Serializes dataclass to flat dict] => to_dict
+## @usecases
+## - [QueryParameters]: ApiEndpoint => ParseFormData => ConfigureParsingPipeline
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: query, parameters, form, FastAPI, dataclass, document_type, structure, pdf, tables, attachments, API request
+# STRUCTURE: ▶ FastAPI Form dataclass → QueryParameters ┌~30 typed fields┐ → METHOD to_dict → Σ flat dict
+
+import logging
 from dataclasses import asdict, dataclass
 from typing import Optional
 
 from fastapi import Form
 
+logger = logging.getLogger(__name__)
 
+# region CLASS_QueryParameters [DOMAIN(8): DocumentProcessing; CONCEPT(7): APIRequest; TECH(8): FastAPIForm]
+## @purpose Capture all dedoc API query parameters from multipart form data with enum-validated defaults for document parsing configuration.
+## @io FastAPI Form(...) fields -> QueryParameters instance
 @dataclass
 class QueryParameters:
     # type of document structure parsing
@@ -45,10 +76,18 @@ class QueryParameters:
     html_fields: str = Form("", description="List of fields for JSON documents to be parsed as HTML documents")
     handle_invisible_table: str = Form("false", enum=["true", "false"], description="Handle tables without visible borders as tables in HTML")
 
+    # region METHOD_to_dict [DOMAIN(7): Serialization; CONCEPT(6): DictConversion; TECH(5): Dataclass]
+    ## @purpose Convert the QueryParameters dataclass to a flat dict with defaults resolved for downstream pipeline configuration.
+    ## @uses dataclasses.asdict
+    ## @io None -> dict
+    ## @complexity 3
     def to_dict(self) -> dict:
         parameters = {}
 
         for parameter_name, parameter_value in asdict(self).items():
             parameters[parameter_name] = getattr(parameter_value, "default", parameter_value)
 
+        logger.debug(f"[IMP:4][QueryParameters][TO_DICT] Converted {len(parameters)} parameters to dict")
         return parameters
+    # endregion METHOD_to_dict
+# endregion CLASS_QueryParameters

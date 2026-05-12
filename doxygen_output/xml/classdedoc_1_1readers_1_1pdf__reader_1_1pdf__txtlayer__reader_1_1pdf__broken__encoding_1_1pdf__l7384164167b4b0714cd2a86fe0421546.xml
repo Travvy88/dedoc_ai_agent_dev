@@ -1,0 +1,777 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a1e1a9e97e5bfc1e5e92e692e85926927" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="34" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1aa694257ddef09688fda4480847f322ce" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="84" endline="86">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__assert_labels_and_model</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a87f3fb548a61fb0fb1f950105736cca7" compoundref="pdf__layout__corrector_8py" startline="167" endline="191">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ab8951b0ba816c6015556810bff66e2ea" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="89" endline="111">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.recognize_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="35" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a78419220758fd382cbf24fe711d98238" compoundref="run_8py" startline="58" endline="61">dedoc.readers.docx_reader.data_structures.run.Run.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" compoundref="pdf__layout__corrector_8py" startline="44" endline="55">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a81f8113c5731c8bd45a22a5be2e959e8" compoundref="run_8py" startline="31" endline="55">dedoc.readers.docx_reader.data_structures.run.Run.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1acba182f20945ebaa6a2f7fb0092cc83e" compoundref="word__with__bbox_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::match_dict</definition>
+        <argsstring></argsstring>
+        <name>match_dict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a48a20c4700bbd10d0d61589e4457966c" compoundref="pdf__layout__corrector_8py" startline="304" endline="311">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_correct_glyph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0701c5358e24d72e9b5bb16074c82244" compoundref="pdf__layout__corrector_8py" startline="296" endline="301">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_match_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" compoundref="pdf__layout__corrector_8py" startline="151" endline="164">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0c3ce054cd3f7189f89f3a46fe741367" compoundref="pdf__layout__corrector_8py" startline="218" endline="253">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_char</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" compoundref="pdf__layout__corrector_8py" startline="44" endline="55">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a9fc1387ffcb35dba45d66f7d0e1b459c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::white_spaces</definition>
+        <argsstring></argsstring>
+        <name>white_spaces</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.white_spaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="147" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" compoundref="pdf__layout__corrector_8py" startline="151" endline="164">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a071e1b71334089af8400aa019003440d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::rsr</definition>
+        <argsstring></argsstring>
+        <name>rsr</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.rsr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="373" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a29892ee3c7b4c1d01b0b8635dc93f76a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::__cached_fonts</definition>
+        <argsstring></argsstring>
+        <name>__cached_fonts</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__cached_fonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="37" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" compoundref="pdf__layout__corrector_8py" startline="327" endline="380">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1adfb2e12df53f53450f2bb328e0ab7be9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::__fontname2basefont</definition>
+        <argsstring></argsstring>
+        <name>__fontname2basefont</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__fontname2basefont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="38" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" compoundref="pdf__layout__corrector_8py" startline="327" endline="380">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a19f598d4ec4bcdc880cfa376e0ca1434" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::__unicodemaps</definition>
+        <argsstring></argsstring>
+        <name>__unicodemaps</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__unicodemaps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="39" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a304d27b5d038092100faa370c18ad242" compoundref="pdf__layout__corrector_8py" startline="283" endline="293">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__get_char_index</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0c3ce054cd3f7189f89f3a46fe741367" compoundref="pdf__layout__corrector_8py" startline="218" endline="253">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_char</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" compoundref="pdf__layout__corrector_8py" startline="327" endline="380">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abf3ca32d412b46175505be870049bdf9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector::__name2code</definition>
+        <argsstring></argsstring>
+        <name>__name2code</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__name2code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="40" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a48a20c4700bbd10d0d61589e4457966c" compoundref="pdf__layout__corrector_8py" startline="304" endline="311">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_correct_glyph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac1eadbe0e80962cd9c3b43a5ffa5095e" compoundref="pdf__layout__corrector_8py" startline="87" endline="148">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_glyphs</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a417a44d552872ee7989f87a0a98a6d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="33" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="33" bodyend="41"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[PDFPage], List[LTPage]]</type>
+        <definition> Tuple[List[PDFPage], List[LTPage]] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</definition>
+        <argsstring>(self, Path pdf_path)</argsstring>
+        <name>get_correct_layout</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>pdf_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="44" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="44" bodyend="55"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" compoundref="pdf__layout__corrector_8py" startline="151" endline="164">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a140294defa2d8bada960ca7ad9400cdb" compoundref="pdf__layout__corrector_8py" startline="58" endline="61">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__read_pdf</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" compoundref="pdf__layout__corrector_8py" startline="327" endline="380">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" compoundref="pdf__layout__corrector_8py" startline="36">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1af9e398d0117af698a5eba799c7973e25" compoundref="api_2schema_2line__with__meta_8py" startline="48">dedoc.api.schema.line_with_meta.LineWithMeta.text</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a64c2a1672c3d7826f140a50b4230fc64" compoundref="api_2schema_2tree__node_8py" startline="60">dedoc.api.schema.tree_node.TreeNode.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a9851d243d04b7af0ca3a0e8a8ef6ea91" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="44">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a2bd667b3076078ab1f3305c573960f9a" compoundref="run_8py" startline="25">dedoc.readers.docx_reader.data_structures.run.Run.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a9c41fe96ecf8680633830c421a5bc0e0" compoundref="text__with__bbox_8py" startline="38" endline="40">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a4b20d35224713c5cd88a5bdbea19eba7" compoundref="word__with__bbox_8py" startline="14">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a1daf0b71379194293147ee537484a57e" compoundref="ocr__block_8py" startline="28" endline="30">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a7ec72369995f27b4e3051836bf97cfb2" compoundref="ocr__line_8py" startline="31" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1a7c88a3873ed6a5c4162f6950aecc7fe2" compoundref="ocr__page_8py" startline="65" endline="67">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" compoundref="ocr__paragraph_8py" startline="29" endline="31">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a18fefb80752ac08ae145ad075c5e097e" compoundref="ocr__tuple_8py" startline="35">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a644fbbd2be30fb5c94f6b7068bfe43dc" compoundref="ocr__word_8py" startline="21">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" compoundref="pdf__layout__corrector_8py" startline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.text</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a140294defa2d8bada960ca7ad9400cdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__read_pdf</definition>
+        <argsstring>(self, Path pdf_path, Path fonts_path, Path glyphs_path)</argsstring>
+        <name>__read_pdf</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__read_pdf</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>pdf_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>fonts_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>glyphs_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="58" bodyend="61"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a3f37ef29fea397a5ca938762af7bb3a3" compoundref="pdf__layout__corrector_8py" startline="64" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_fonts</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac1eadbe0e80962cd9c3b43a5ffa5095e" compoundref="pdf__layout__corrector_8py" startline="87" endline="148">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_glyphs</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" compoundref="pdf__layout__corrector_8py" startline="44" endline="55">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a3f37ef29fea397a5ca938762af7bb3a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_fonts</definition>
+        <argsstring>(self, Path pdf_path, Path fonts_path)</argsstring>
+        <name>__extract_fonts</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_fonts</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>pdf_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>fonts_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="64" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="64" bodyend="84"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a140294defa2d8bada960ca7ad9400cdb" compoundref="pdf__layout__corrector_8py" startline="58" endline="61">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__read_pdf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac1eadbe0e80962cd9c3b43a5ffa5095e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_glyphs</definition>
+        <argsstring>(self, Path fonts_path, Path glyphs_path)</argsstring>
+        <name>__extract_glyphs</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_glyphs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>fonts_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>glyphs_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="87" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="87" bodyend="148"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abf3ca32d412b46175505be870049bdf9" compoundref="pdf__layout__corrector_8py" startline="40">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__name2code</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a140294defa2d8bada960ca7ad9400cdb" compoundref="pdf__layout__corrector_8py" startline="58" endline="61">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__read_pdf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</definition>
+        <argsstring>(self, Path fonts_path, Path glyphs_path)</argsstring>
+        <name>__match_glyphs_and_encoding_for_all</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>fonts_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>glyphs_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="151" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="151" bodyend="164"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a87f3fb548a61fb0fb1f950105736cca7" compoundref="pdf__layout__corrector_8py" startline="167" endline="191">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" compoundref="pdf__layout__corrector_8py" startline="36">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a9fc1387ffcb35dba45d66f7d0e1b459c" compoundref="pdf__layout__corrector_8py" startline="147">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.white_spaces</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" compoundref="pdf__layout__corrector_8py" startline="44" endline="55">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a87f3fb548a61fb0fb1f950105736cca7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[Union[str, int], str]</type>
+        <definition> Dict[Union[str, int], str] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding</definition>
+        <argsstring>(self, Path images_path)</argsstring>
+        <name>__match_glyphs_and_encoding</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>images_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="167" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="167" bodyend="191"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="67" endline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a1e1a9e97e5bfc1e5e92e692e85926927" compoundref="pdf__layout__corrector_8py" startline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.model</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" compoundref="pdf__layout__corrector_8py" startline="151" endline="164">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding_for_all</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</definition>
+        <argsstring>(self, Union[LTChar, LTTextLineHorizontal, Iterable] o, dict cached_fonts, list page_text)</argsstring>
+        <name>__extract_text_str</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>o</declname>
+          <array>[LTChar, LTTextLineHorizontal, Iterable]</array>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>page_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="194" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="194" bodyend="201"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0c3ce054cd3f7189f89f3a46fe741367" compoundref="pdf__layout__corrector_8py" startline="218" endline="253">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_char</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a85145cd7addd4e977aa37ee18aeba474" compoundref="pdf__layout__corrector_8py" startline="204" endline="207">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_iterable</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a57a3a454c05f07d4691c1e95cdc2a27d" compoundref="pdf__layout__corrector_8py" startline="210" endline="215">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_text_line</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a85145cd7addd4e977aa37ee18aeba474" compoundref="pdf__layout__corrector_8py" startline="204" endline="207">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_iterable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a85145cd7addd4e977aa37ee18aeba474" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_iterable</definition>
+        <argsstring>(self, Iterable iterable_obj, dict cached_fonts, list page_text)</argsstring>
+        <name>__process_iterable</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_iterable</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Iterable</type>
+          <declname>iterable_obj</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>page_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="204" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="204" bodyend="207"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" compoundref="pdf__layout__corrector_8py" startline="194" endline="201">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" compoundref="pdf__layout__corrector_8py" startline="194" endline="201">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a57a3a454c05f07d4691c1e95cdc2a27d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_text_line</definition>
+        <argsstring>(self, LTTextLineHorizontal text_line, list page_text)</argsstring>
+        <name>__process_text_line</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_text_line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTTextLineHorizontal</type>
+          <declname>text_line</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>page_text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="210" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="210" bodyend="215"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" compoundref="pdf__layout__corrector_8py" startline="194" endline="201">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0c3ce054cd3f7189f89f3a46fe741367" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_char</definition>
+        <argsstring>(self, LTChar char_obj, dict cached_fonts)</argsstring>
+        <name>__process_char</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__process_char</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTChar</type>
+          <declname>char_obj</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="218" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="218" bodyend="253"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a19f598d4ec4bcdc880cfa376e0ca1434" compoundref="pdf__layout__corrector_8py" startline="39">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__unicodemaps</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" compoundref="pdf__layout__corrector_8py" startline="36">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" compoundref="pdf__layout__corrector_8py" startline="194" endline="201">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__extract_text_str</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</definition>
+        <argsstring>(self, Union[LTChar, LTTextLineHorizontal, Iterable] o, dict cached_fonts, list fulltext)</argsstring>
+        <name>__correct_pages_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>o</declname>
+          <array>[LTChar, LTTextLineHorizontal, Iterable]</array>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>fulltext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="256" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="256" bodyend="263"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" compoundref="pdf__layout__corrector_8py" startline="266" endline="280">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a53a2f6143534f278d99b8d388a4011a6" compoundref="pdf__layout__corrector_8py" startline="314" endline="317">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_iterable_text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1aafe2ba58af49509550b4078135560f16" compoundref="pdf__layout__corrector_8py" startline="320" endline="324">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_line_text</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a53a2f6143534f278d99b8d388a4011a6" compoundref="pdf__layout__corrector_8py" startline="314" endline="317">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_iterable_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</definition>
+        <argsstring>(self, LTChar char_obj, dict cached_fonts)</argsstring>
+        <name>__correct_char_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTChar</type>
+          <declname>char_obj</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="266" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="266" bodyend="280"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a48a20c4700bbd10d0d61589e4457966c" compoundref="pdf__layout__corrector_8py" startline="304" endline="311">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_correct_glyph</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0701c5358e24d72e9b5bb16074c82244" compoundref="pdf__layout__corrector_8py" startline="296" endline="301">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_match_dict</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a304d27b5d038092100faa370c18ad242" compoundref="pdf__layout__corrector_8py" startline="283" endline="293">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__get_char_index</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" compoundref="pdf__layout__corrector_8py" startline="256" endline="263">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a304d27b5d038092100faa370c18ad242" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[int]</type>
+        <definition> Optional[int] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__get_char_index</definition>
+        <argsstring>(self, str char)</argsstring>
+        <name>__get_char_index</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__get_char_index</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str char</type>
+          <defname>char</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="283" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="283" bodyend="293"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a19f598d4ec4bcdc880cfa376e0ca1434" compoundref="pdf__layout__corrector_8py" startline="39">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__unicodemaps</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" compoundref="pdf__layout__corrector_8py" startline="266" endline="280">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0701c5358e24d72e9b5bb16074c82244" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_match_dict</definition>
+        <argsstring>(self, LTChar char_obj, str fontname, str char)</argsstring>
+        <name>__apply_match_dict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_match_dict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTChar</type>
+          <declname>char_obj</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>fontname</declname>
+        </param>
+        <param>
+          <type>str char</type>
+          <defname>char</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="296" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="296" bodyend="301"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" compoundref="pdf__layout__corrector_8py" startline="36">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" compoundref="pdf__layout__corrector_8py" startline="266" endline="280">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a48a20c4700bbd10d0d61589e4457966c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_correct_glyph</definition>
+        <argsstring>(self, LTChar char_obj, str fontname, int index, dict cached_fonts)</argsstring>
+        <name>__apply_correct_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__apply_correct_glyph</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTChar</type>
+          <declname>char_obj</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>fontname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="304" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="304" bodyend="311"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abf3ca32d412b46175505be870049bdf9" compoundref="pdf__layout__corrector_8py" startline="40">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__name2code</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" compoundref="pdf__layout__corrector_8py" startline="36">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.match_dict</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" compoundref="pdf__layout__corrector_8py" startline="266" endline="280">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_char_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a53a2f6143534f278d99b8d388a4011a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_iterable_text</definition>
+        <argsstring>(self, Iterable iterable, dict cached_fonts, list fulltext)</argsstring>
+        <name>__correct_iterable_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_iterable_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Iterable</type>
+          <declname>iterable</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>cached_fonts</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>fulltext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="314" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="314" bodyend="317"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" compoundref="pdf__layout__corrector_8py" startline="256" endline="263">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" compoundref="pdf__layout__corrector_8py" startline="256" endline="263">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1aafe2ba58af49509550b4078135560f16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_line_text</definition>
+        <argsstring>(self, LTTextLineHorizontal line, list fulltext)</argsstring>
+        <name>__correct_line_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_line_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>LTTextLineHorizontal</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>fulltext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="320" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="320" bodyend="324"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" compoundref="pdf__layout__corrector_8py" startline="256" endline="263">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__correct_pages_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[PDFPage], List[LTPage]]</type>
+        <definition> Tuple[List[PDFPage], List[LTPage]] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</definition>
+        <argsstring>(self, Path pdf_path, int start=0, int end=0)</argsstring>
+        <name>__restore_layout</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__restore_layout</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>pdf_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="327" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="327" bodyend="380"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a29892ee3c7b4c1d01b0b8635dc93f76a" compoundref="pdf__layout__corrector_8py" startline="37">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__cached_fonts</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1adfb2e12df53f53450f2bb328e0ab7be9" compoundref="pdf__layout__corrector_8py" startline="38">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__fontname2basefont</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a19f598d4ec4bcdc880cfa376e0ca1434" compoundref="pdf__layout__corrector_8py" startline="39">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__unicodemaps</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" compoundref="pdf__layout__corrector_8py" startline="44" endline="55">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.get_correct_layout</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" line="31" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/pdf_layout_corrector.py" bodystart="31" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a48a20c4700bbd10d0d61589e4457966c" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__apply_correct_glyph</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0701c5358e24d72e9b5bb16074c82244" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__apply_match_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a29892ee3c7b4c1d01b0b8635dc93f76a" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__cached_fonts</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abb9b61f0fa13708e9e546f2950f0e014" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__correct_char_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a53a2f6143534f278d99b8d388a4011a6" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__correct_iterable_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1aafe2ba58af49509550b4078135560f16" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__correct_line_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0a645c9e2632ec9b3bf0748be0ff6cec" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__correct_pages_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a3f37ef29fea397a5ca938762af7bb3a3" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__extract_fonts</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac1eadbe0e80962cd9c3b43a5ffa5095e" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__extract_glyphs</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a955e804d488f720b13354d2a35f62274" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__extract_text_str</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1adfb2e12df53f53450f2bb328e0ab7be9" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__fontname2basefont</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a304d27b5d038092100faa370c18ad242" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__get_char_index</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a417a44d552872ee7989f87a0a98a6d2a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a87f3fb548a61fb0fb1f950105736cca7" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__match_glyphs_and_encoding</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a8a6d098cbe887030c6041d57d23be034" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__match_glyphs_and_encoding_for_all</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1abf3ca32d412b46175505be870049bdf9" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__name2code</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a0c3ce054cd3f7189f89f3a46fe741367" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__process_char</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a85145cd7addd4e977aa37ee18aeba474" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__process_iterable</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a57a3a454c05f07d4691c1e95cdc2a27d" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__process_text_line</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a140294defa2d8bada960ca7ad9400cdb" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__read_pdf</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1ac8af989e47d5977cacc465e12075d82e" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__restore_layout</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a19f598d4ec4bcdc880cfa376e0ca1434" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>__unicodemaps</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a27cf0201dbd06a8a87ed324a53b4a23c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>get_correct_layout</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a947afd579076ff93c9999ff4bc55aabf" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>match_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a1e1a9e97e5bfc1e5e92e692e85926927" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>model</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a071e1b71334089af8400aa019003440d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>rsr</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a9fc1387ffcb35dba45d66f7d0e1b459c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::pdf_layout_corrector::PDFLayoutCorrector</scope><name>white_spaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

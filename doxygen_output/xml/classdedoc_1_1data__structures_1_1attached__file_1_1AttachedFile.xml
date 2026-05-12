@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::attached_file::AttachedFile</compoundname>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.attached_file.AttachedFile.__init__</definition>
+        <argsstring>(self, str original_name, str tmp_file_path, bool need_content_analysis, str uid)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.attached_file.AttachedFile.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1ad49100cbb4bd59d4dd6eb98e034c561c">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>original_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>tmp_file_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need_content_analysis</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize attached file metadata with original name, temp path, content analysis flag, and UID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (str, str, bool, str) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param original_name: original name of the attached file :param tmp_file_path: path to the attachment file :param need_content_analysis: indicator should we parse the attachment&apos;s content or simply save it without parsing :param uid: unique identifier of the attachment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/attached_file.py" line="27" column="1" bodyfile="dedoc/data_structures/attached_file.py" bodystart="27" bodyend="39"/>
+        <references refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a296df6da3348b2b83958db01c2f5b05a" compoundref="api__args_8py" startline="49">dedoc.api.api_args.QueryParameters.need_content_analysis</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1af6051fa5b06028afd24bf93eedf6b8c8" compoundref="api_2schema_2table__metadata_8py" startline="51">dedoc.api.schema.table_metadata.TableMetadata.uid</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a4153dc3d63d44f47023732651e4c537a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="35">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1af3745f216df9501f06924d81dd45163a" compoundref="text__with__bbox_8py" startline="33">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a23d7dbaedcda36844d3da9f9d7710dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.attached_file.AttachedFile.get_filename_in_path</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_filename_in_path</name>
+        <qualifiedname>dedoc.data_structures.attached_file.AttachedFile.get_filename_in_path</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return the path to the attached file on disk. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/attached_file.py" line="46" column="1" bodyfile="dedoc/data_structures/attached_file.py" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a9cf22e44fe6f81a02d7dacc793d08107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.attached_file.AttachedFile.get_original_filename</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_original_filename</name>
+        <qualifiedname>dedoc.data_structures.attached_file.AttachedFile.get_original_filename</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return the original file name before rename. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/attached_file.py" line="54" column="1" bodyfile="dedoc/data_structures/attached_file.py" bodystart="54" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold information about files attached to the parsed document: original name, disk path, content analysis flag, and UID. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Holds information about files, attached to the parsed document.</para>
+<para>:ivar original_name: original name of the attached file if it was possible to extract it :ivar tmp_file_path: path to the attached file on disk - its name is different from original_name :ivar need_content_analysis: does the attached file need parsing (enable recursive parsing in :class:<computeroutput>~dedoc.DedocManager</computeroutput>) :ivar uid: unique identifier of the attached file</para>
+<para>:vartype original_name: str :vartype tmp_file_path: str :vartype need_content_analysis: bool :vartype uid: str </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.data_structures.attached_file.AttachedFile</label>
+        <link refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile"/>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="dedoc/data_structures/attached_file.py" line="8" column="1" bodyfile="dedoc/data_structures/attached_file.py" bodystart="8" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" prot="public" virt="non-virtual"><scope>dedoc::data_structures::attached_file::AttachedFile</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a23d7dbaedcda36844d3da9f9d7710dd6" prot="public" virt="non-virtual"><scope>dedoc::data_structures::attached_file::AttachedFile</scope><name>get_filename_in_path</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a9cf22e44fe6f81a02d7dacc793d08107" prot="public" virt="non-virtual"><scope>dedoc::data_structures::attached_file::AttachedFile</scope><name>get_original_filename</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="utils__reg_8py" kind="file" language="Python">
+    <compoundname>utils_reg.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders">dedoc::structure_extractors::hierarchy_level_builders</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg">dedoc::structure_extractors::hierarchy_level_builders::utils_reg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>re</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="4" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1af5b8d9537cfaa8b43b476768408f6db6" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>item<sp/>parse<sp/>\d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a37bccbc8c34090cc745353d12753b0e8" refkind="member"><highlight class="normal">regexps_item<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*\d+\.\s&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="8" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ae53a7b1e15eac5b75ba880f3392b5817" refkind="member"><highlight class="normal">regexps_foiv_item<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*(\d+\.)+\s*&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="9" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a33744a8a9e84ef9fac78bd564ae0f5ec" refkind="member"><highlight class="normal">regexps_item_with_bracket<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*(\d*\.)*\d+[)}]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a7c1274f8c0f0083b4f462110bc68f60a" refkind="member"><highlight class="normal">regexps_digits_with_dots<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*(\d+\.)+(\d+)?\s*&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>subitem<sp/>parse<sp/>[а-яё]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a56aaa528eeff984ed3de9d73ebd06f5c" refkind="member"><highlight class="normal">regexps_subitem_with_dots<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*((\d+\.((\d+|[а-яё])\.)+)|[а-яё][.)])\s&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="14" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ab53173fbf3706c2474f975822f0037fd" refkind="member"><highlight class="normal">regexps_subitem_extended<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*[A-ZА-Яa-zа-яё][)}.]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ac5d11d06802ffec01e3d445a94ab8fd6" refkind="member"><highlight class="normal">regexps_subitem<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;^\s*[а-яё][)}]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a213cc3acdcdeb982e83242303d0fec03" refkind="member"><highlight class="normal">regexps_number<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;(^\s*\d{1,2}(\.\d{1,2})*)(\s|$|\)|\}|\.([A-ZА-Яa-zа-яё]|\s))&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a152e0a1a1d21c64a46bac6634be9e1be" refkind="member"><highlight class="normal">regexps_ends_of_number<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;([A-ZА-Яa-zа-яё]|\s|(<sp/>)*)$&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>others</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a5a95d1e714dbe15cafbe601a0d675798" refkind="member"><highlight class="normal">regexps_year<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;(19\d\d|20\d\d)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1adc95d4127af828781dc6c26e987c3624" refkind="member"><highlight class="normal">roman_regexp<sp/>=<sp/>re.compile(</highlight><highlight class="stringliteral">r&quot;\s*(I|Г|T|Т|II|П|III|Ш|ТУ|TУ|IV|V|У|VI|УТ|УT|VII|УТТ|VIII|I[XХ]|[XХ]|[XХ]I|[XХ]II)\.\s+&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(HierarchyBuilding):<sp/>...;<sp/>TECH(Python):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/hierarchy_level_builders/utils_reg:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/hierarchy_level_builders/utils_reg</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a2120e6febc7d50efe5125e6a8c33d824" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a2120e6febc7d50efe5125e6a8c33d824" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>hierarchy<sp/>level<sp/>builders,<sp/>utils<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/hierarchy_level_builders/utils_reg<sp/>→<sp/>○<sp/>module<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py"/>
+  </compounddef>
+</doxygen>

@@ -210,3 +210,27 @@ windows_mapping = {
     "0xf095": "❿",
     "0xf09f": "•"
 }
+
+# region MODULE_CONTRACT [DOMAIN(6): DocumentProcessing; CONCEPT(5): FontMapping, Encoding; TECH(4): Python]
+## @modulecontract
+## @purpose Map Windows Symbol font code points (0xf0xx range) to their Unicode equivalents — corrects garbled text from legacy .doc/.docx documents that use Symbol encoding.
+## @scope Font glyph substitution — Windows Symbol → Unicode character mapping.
+## @input None (static dictionary evaluated at import time).
+## @output Dict[str, str] — hex code point → Unicode character.
+## @links [USES_API(0): None — pure data module]
+## @invariants
+## - windows_mapping ALWAYS contains string keys (hex) and string values (Unicode chars).
+## @rationale
+## Q: Why a separate module for font mapping?
+## A: The mapping table is large and format-specific — isolation keeps the docx reader code clean and makes the mapping auditable.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup.]
+## @modulemap
+## DATA [10][Windows Symbol → Unicode glyph mapping] => windows_mapping
+## @usecases
+## - [windows_mapping]: DocxReader (Parse) → CorrectEncoding(text) → UnicodeText
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: windows_font_mapping, Symbol, Unicode, LegacyEncoding, Windows, DOCX, font, glyph, hex, substitution, dedoc, reader
+# STRUCTURE: ▶ Dict{0xf0xx → Unicode} → ○ windows_mapping[hex] → ⊕ corrected character

@@ -1,0 +1,6 @@
+var gost__frame__recognizer_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d" ],
+    [ "_module_contract", "gost__frame__recognizer_8py.html#a620b9616904d70d82326256037f6877c", null ],
+    [ "MIN_FRAME_CONTENT_AREA", "gost__frame__recognizer_8py.html#af6214a05da03a03b7a5f3e60e2d0ba58", null ]
+];

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::feature_extractors::list_features::prefix</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1any__letter__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::any_letter_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bracket__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::bracket_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bracket__roman__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::bracket_roman_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bullet__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::bullet_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1dotted__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::dotted_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::empty_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::letter_prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1roman__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::roman_prefix</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/prefix/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

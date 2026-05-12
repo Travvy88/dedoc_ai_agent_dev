@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors</compoundname>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__attachments__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::abstract_office_attachments_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::docx_attachments_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachments__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::excel_attachments_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1json__attachment__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::json_attachment_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments__extractor">dedoc::attachments_extractors::concrete_attachments_extractors::pptx_attachments_extractor</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1ad20406d9ee315c0d5b8b85d28dc1120c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors.concrete_attachments_extractors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Register the concrete_attachments_extractors subpackage: docx, xlsx, pptx, pdf, json attachment extractor implementations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization, no runtime logic. \par \b Input\/ \:  None \par \b Output\/ \:  None (namespace registration only) \par \b Links\/ \:  [USES_API(8): AbstractOfficeAttachmentsExtractor, AbstractAttachmentsExtractor] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This file is intentionally empty; all imports happen via the parent package <bold>init</bold>. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this file empty? A: Re-exports are centralized in the parent <computeroutput><ref refid="attachments__extractors_2____init_____8py" kindref="compound">dedoc/attachments_extractors/__init__.py</ref></computeroutput> to provide a single import surface. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup added] \par \b Module Map\/ \:</para>
+<para>PKG 10[Concrete attachment extractors subpackage] =&gt; concrete_attachments_extractors \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[concrete_attachments_extractors]: CodeAgent (Navigation) =&gt; LocateExtractorImplementations =&gt; InstantiateCorrectExtractor </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/__init__.py" line="19" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

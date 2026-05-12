@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::annotation::Annotation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1aa03caf3110f4f78f92f7e9f8305cf9d9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.annotation.Annotation::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>dedoc.api.schema.annotation.Annotation.start</qualifiedname>
+        <initializer>=  Field(description=&quot;Start of the annotated text&quot;, example=0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="50" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a3ebe5819c050783499cf6ea669b012e0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.annotation.Annotation::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>dedoc.api.schema.annotation.Annotation.end</qualifiedname>
+        <initializer>=  Field(description=&quot;End of the annotated text (end isn&apos;t included)&quot;, example=5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="51" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a1aef39397a2eda6e8895e4b46846e9e5" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.schema.annotation.Annotation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.api.schema.annotation.Annotation.name</qualifiedname>
+        <initializer>=  Field(description=&quot;Annotation name&quot;, example=&quot;italic&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="52" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a88bbc2858ac736e3f2cefef1c9d85fe0" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.schema.annotation.Annotation::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>dedoc.api.schema.annotation.Annotation.value</qualifiedname>
+        <initializer>=  Field(description=&quot;Annotation value. For example, it may be font size value for size type&quot;, example=&quot;True&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="53" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Represent a single inline annotation (e.g., bold, italic, link) spanning a character range within document text. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (int, int, str, str) -&gt; JSON serializable model</para>
+<para>The piece of information about the text line: it&apos;s appearance or links to another document object. For example Annotation(1, 13, &quot;italic&quot;, &quot;True&quot;) says that text between 1st and 13th symbol was written in italic.</para>
+<para>:ivar start: start of the annotated text :ivar end: end of the annotated text (end isn&apos;t included) :ivar name: annotation&apos;s name, specific for each type of annotation :ivar value: information about annotated text, depends on the type of annotation, e.g. &quot;True&quot;/&quot;False&quot;, &quot;10.0&quot;, etc.</para>
+<para>:vartype start: int :vartype end: int :vartype name: str :vartype value: str </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.annotation.Annotation</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.annotation.Annotation</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/annotation.py" line="35" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="35" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a3ebe5819c050783499cf6ea669b012e0" prot="public" virt="non-virtual"><scope>dedoc::api::schema::annotation::Annotation</scope><name>end</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a1aef39397a2eda6e8895e4b46846e9e5" prot="public" virt="non-virtual"><scope>dedoc::api::schema::annotation::Annotation</scope><name>name</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1aa03caf3110f4f78f92f7e9f8305cf9d9" prot="public" virt="non-virtual"><scope>dedoc::api::schema::annotation::Annotation</scope><name>start</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a88bbc2858ac736e3f2cefef1c9d85fe0" prot="public" virt="non-virtual"><scope>dedoc::api::schema::annotation::Annotation</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::tables</compoundname>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell">dedoc::readers::pdf_reader::data_classes::tables::cell</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location">dedoc::readers::pdf_reader::data_classes::tables::location</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable">dedoc::readers::pdf_reader::data_classes::tables::scantable</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree">dedoc::readers::pdf_reader::data_classes::tables::table_tree</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type">dedoc::readers::pdf_reader::data_classes::tables::table_type</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1ac7a8ca943b3745d59a66facb482e25eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Package init — marks tables as a dedoc reader subpackage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Symbol re-export. \par \b Input\/ \:  None. \par \b Output\/ \:  None. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This file may be empty. \par \b Changes\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup.] \par \b Module Map\/ \:</para>
+<para>[10][Empty package init — as designed.] \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[init]: Python (Import) → LoadSubpackage → ModuleReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/__init__.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/__init__.py" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/data_classes/tables/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

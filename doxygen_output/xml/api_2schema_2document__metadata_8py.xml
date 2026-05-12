@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2document__metadata_8py" kind="file" language="Python">
+    <compoundname>document_metadata.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" prot="public">dedoc::api::schema::document_metadata::DocumentMetadata</innerclass>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config" prot="public">dedoc::api::schema::document_metadata::DocumentMetadata::Config</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1document__metadata">dedoc::api::schema::document_metadata</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1document__metadata" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>FileMetadata;<sp/>CONCEPT(7):<sp/>DocumentProperties,<sp/>FilesystemMetadata;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel,<sp/>Extra]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>DocumentMetadata<sp/>schema<sp/>—<sp/>a<sp/>Pydantic<sp/>model<sp/>holding<sp/>file-level<sp/>metadata<sp/>(name,<sp/>size,<sp/>timestamps,<sp/>MIME<sp/>type,<sp/>UID)<sp/>with<sp/>support<sp/>for<sp/>extra<sp/>attributes.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>file<sp/>metadata<sp/>model.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model<sp/>with<sp/>extra<sp/>attributes<sp/>support).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`DocumentMetadata`<sp/>with<sp/>uid,<sp/>file_name,<sp/>size,<sp/>timestamps,<sp/>file_type,<sp/>plus<sp/>arbitrary<sp/>extra<sp/>fields.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel,<sp/>pydantic.Extra]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>uid<sp/>is<sp/>always<sp/>a<sp/>non-empty<sp/>unique<sp/>string.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>file_name<sp/>is<sp/>always<sp/>present<sp/>(original<sp/>document<sp/>name).</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>-<sp/>Extra<sp/>fields<sp/>are<sp/>preserved<sp/>and<sp/>serialized.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>Extra.allow?</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>A:<sp/>Different<sp/>document<sp/>formats<sp/>carry<sp/>different<sp/>metadata<sp/>(author,<sp/>pages,<sp/>etc.).<sp/>Extra.allow<sp/>prevents<sp/>data<sp/>loss<sp/>while<sp/>keeping<sp/>the<sp/>schema<sp/>flexible.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>CLASS<sp/>9[Document<sp/>metadata<sp/>with<sp/>extra<sp/>attributes<sp/>support]<sp/>=&gt;<sp/>DocumentMetadata</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>-<sp/>[DocumentMetadata]:<sp/>MetadataExtractor<sp/>=&gt;<sp/>PopulateMetadata<sp/>=&gt;<sp/>ReturnToAPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacededoc_1_1api_1_1schema_1_1document__metadata_1a6b5d999c89a54130dbbc0ea215113044" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1document__metadata_1a6b5d999c89a54130dbbc0ea215113044" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>metadata,<sp/>document,<sp/>file,<sp/>name,<sp/>size,<sp/>timestamps,<sp/>MIME,<sp/>uid,<sp/>extra,<sp/>Pydantic,<sp/>schema</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>(Extra.allow)<sp/>→<sp/>DocumentMetadata<sp/>┌uid,<sp/>file_name,<sp/>size,<sp/>timestamps,<sp/>file_type,<sp/>+extra┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Extra,<sp/>Field</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacededoc_1_1api_1_1schema_1_1document__metadata_1aa457c78f64fffb4dea87861be258152d" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_DocumentMetadata<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>FileMetadata;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Hold<sp/>document<sp/>file<sp/>metadata<sp/>(name,<sp/>size,<sp/>timestamps,<sp/>MIME<sp/>type)<sp/>with<sp/>open<sp/>extension<sp/>for<sp/>format-specific<sp/>attributes<sp/>via<sp/>Extra.allow.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">##<sp/>@io<sp/>(uid,<sp/>file_name,<sp/>size,<sp/>timestamps,<sp/>file_type,<sp/>**extra)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" kindref="compound">DocumentMetadata</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Document<sp/>metadata<sp/>like<sp/>its<sp/>name,<sp/>size,<sp/>author,<sp/>etc.</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:ivar<sp/>file_name:<sp/>original<sp/>document<sp/>name<sp/>(before<sp/>rename<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>conversion,<sp/>so<sp/>it<sp/>can<sp/>contain<sp/>non-ascii<sp/>symbols,<sp/>spaces<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>so<sp/>on)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>temporary_file_name:<sp/>file<sp/>name<sp/>during<sp/>parsing<sp/>(unique<sp/>name<sp/>after<sp/>rename<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>conversion)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>size:<sp/>size<sp/>of<sp/>the<sp/>original<sp/>file<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>bytes</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>modified_time:<sp/>time<sp/>of<sp/>the<sp/>last<sp/>modification<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>unix<sp/>time<sp/>format<sp/>(seconds<sp/>since<sp/>the<sp/>epoch)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>created_time:<sp/>time<sp/>of<sp/>the<sp/>creation<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>unixtime</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>access_time:<sp/>time<sp/>of<sp/>the<sp/>last<sp/>access<sp/>to<sp/>the<sp/>file<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>unixtime</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>file_type:<sp/>mime<sp/>type<sp/>of<sp/>the<sp/>file</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>uid:<sp/>document<sp/>unique<sp/>identifier<sp/>(useful<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>attached<sp/>files)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>file_name:<sp/>str</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>temporary_file_name:<sp/>str</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>size:<sp/>int</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>modified_time:<sp/>int</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>created_time:<sp/>int</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>access_time:<sp/>int</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>file_type:<sp/>str</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>uid:<sp/>str</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>Additional<sp/>variables<sp/>may<sp/>be<sp/>added<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>other<sp/>file<sp/>metadata.</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="60" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config" refkind="compound"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config" kindref="compound">Config</ref>:</highlight></codeline>
+<codeline lineno="61" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config_1aa573a62a7e2dcf61b3bfadaf74fb6eba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extra<sp/>=<sp/>Extra.allow</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uid:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Document<sp/>unique<sp/>identifier<sp/>(useful<sp/>for<sp/>attached<sp/>files)&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;doc_uid_auto_ba73d76a-326a-11ec-8092-417272234cb0&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aaa7b5dfad3a3f524c73f3085c16380c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>file_name:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Original<sp/>document<sp/>name<sp/>before<sp/>rename<sp/>and<sp/>conversion&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;example.odt&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="65" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a776a1a9dafcfb93f5107bfadb57d60e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>temporary_file_name:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;File<sp/>name<sp/>during<sp/>parsing<sp/>(unique<sp/>name<sp/>after<sp/>rename<sp/>and<sp/>conversion)&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;123.odt&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a85233336e19ef9fff56c4e307eb3a06e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>size:<sp/>int<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;File<sp/>size<sp/>in<sp/>bytes&quot;</highlight><highlight class="normal">,<sp/>example=20060)</highlight></codeline>
+<codeline lineno="67" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aea3c842b5dd4cd210b7b11e104a7c7ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>modified_time:<sp/>int<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Modification<sp/>time<sp/>of<sp/>the<sp/>document<sp/>in<sp/>the<sp/>UnixTime<sp/>format&quot;</highlight><highlight class="normal">,<sp/>example=1590579805)</highlight></codeline>
+<codeline lineno="68" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a24e0ad35f394a6e3eeed20c31c2a06be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>created_time:<sp/>int<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Creation<sp/>time<sp/>of<sp/>the<sp/>document<sp/>in<sp/>the<sp/>UnixTime<sp/>format&quot;</highlight><highlight class="normal">,<sp/>example=1590579805)</highlight></codeline>
+<codeline lineno="69" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a7023d715a7e6412be1f0fabb0549ee03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>access_time:<sp/>int<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;File<sp/>access<sp/>time<sp/>in<sp/>the<sp/>UnixTime<sp/>format&quot;</highlight><highlight class="normal">,<sp/>example=1590579805)</highlight></codeline>
+<codeline lineno="70" refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a42043714e4919cfddfb64d66498f49a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>file_type:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Mime<sp/>type<sp/>of<sp/>the<sp/>file&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;application/vnd.oasis.opendocument.text&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_DocumentMetadata</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/document_metadata.py"/>
+  </compounddef>
+</doxygen>

@@ -20,7 +20,9 @@ from dedoc.utils.office_utils import get_bs_from_zip
 from dedoc.utils.utils import calculate_file_hash
 
 
+# region CLASS_DocxDocument [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class DocxDocument:
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, path: str, attachments: List[AttachedFile], logger: logging.Logger) -> None:
         self.logger = logger
         self.path = path
@@ -36,6 +38,8 @@ class DocxDocument:
         self.paragraph_list = []
         self.lines = self.__get_lines()
 
+    # region METHOD___get_paragraph_maker [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def __get_paragraph_maker(self) -> ParagraphMaker:
         styles_extractor = StylesExtractor(get_bs_from_zip(self.path, "word/styles.xml"), self.logger)
         num_tree = get_bs_from_zip(self.path, "word/numbering.xml")
@@ -51,6 +55,8 @@ class DocxDocument:
             endnote_extractor=FootnoteExtractor(get_bs_from_zip(self.path, "word/endnotes.xml"), key="endnote")
         )
 
+    # region METHOD___get_lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_paragraph_maker
     def __get_lines(self) -> List[LineWithMeta]:
         """
         Get list of LineWithMeta with annotations, references to the images, diagrams and tables.
@@ -90,6 +96,8 @@ class DocxDocument:
 
         return self.__paragraphs2lines(image_refs, table_refs, diagram_refs)
 
+    # region METHOD___paragraphs2lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_lines
     def __paragraphs2lines(self, image_refs: dict, table_refs: dict, diagram_refs: dict) -> List[LineWithMeta]:
         """
         Convert list of paragraphs into list of LineWithMeta.
@@ -118,6 +126,8 @@ class DocxDocument:
 
         return lines_with_meta
 
+    # region METHOD___handle_table_xml [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___paragraphs2lines
     def __handle_table_xml(self, xml: Tag, table_refs: dict) -> None:
         table = DocxTable(xml, self.paragraph_maker)
         self.tables.append(table.to_table())
@@ -130,6 +140,8 @@ class DocxDocument:
         else:
             table_refs[len(self.paragraph_list) - 1].append(table_uid)
 
+    # region METHOD___handle_images_xml [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_table_xml
     def __handle_images_xml(self, xmls: List[Tag], image_refs: dict) -> None:
         rels = get_bs_from_zip(self.path, "word/_rels/document.xml.rels")
         if rels is None:
@@ -153,6 +165,8 @@ class DocxDocument:
                 continue
             image_refs[len(self.paragraph_list) - 1].append(image_uid)
 
+    # region METHOD___handle_diagram_xml [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_images_xml
     def __handle_diagram_xml(self, xml: Tag, diagram_refs: dict) -> None:
         diagram_name = f"{hashlib.md5(xml.encode()).hexdigest()}.docx"
         if diagram_name in self.attachment_name2uid:
@@ -163,6 +177,8 @@ class DocxDocument:
         self.__prepare_paragraph_list()
         diagram_refs[len(self.paragraph_list) - 1].append(diagram_uid)
 
+    # region METHOD___prepare_paragraph_list [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_diagram_xml
     def __prepare_paragraph_list(self) -> None:
         while len(self.paragraph_list) > 0:
             if self.paragraph_list[-1].text.strip() == "":
@@ -172,4 +188,32 @@ class DocxDocument:
 
         if not self.paragraph_list:
             empty_paragraph = self.paragraph_maker.make_paragraph(BeautifulSoup("<w:p></w:p>").body.contents[0], self.paragraph_list)
+# endregion CLASS_DocxDocument
             self.paragraph_list.append(empty_paragraph)
+
+    # endregion METHOD___prepare_paragraph_list
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_docx_document; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse DOCX documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Data model definitions.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [16][DocxDocument reader/processor] => DocxDocument
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(DOCX) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: docx_document, dedoc, reader, DOCX, DocxReader, BaseReader, DOCX, Word, UnstructuredDocument, LineWithMeta, attachments, numbering, styles, properties, paragraph, footnote, DocxDocument
+# STRUCTURE: ▶ Init ┌DOCX file┐ → [DocxDocument] ○ can_read? → ○ read → [__init__ → __get_paragraph_maker → __get_lines] → ⊕ UnstructuredDocument(lines, tables, attachments)

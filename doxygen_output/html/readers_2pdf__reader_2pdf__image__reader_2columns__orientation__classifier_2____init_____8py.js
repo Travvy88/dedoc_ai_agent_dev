@@ -1,0 +1,4 @@
+var readers_2pdf__reader_2pdf__image__reader_2columns__orientation__classifier_2____init_____8py =
+[
+    [ "_module_contract", "readers_2pdf__reader_2pdf__image__reader_2columns__orientation__classifier_2____init_____8py.html#a6de0219e4211f1fc48f2a7aaab845640", null ]
+];

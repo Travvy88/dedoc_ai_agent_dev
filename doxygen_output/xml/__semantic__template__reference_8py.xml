@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="__semantic__template__reference_8py" kind="file" language="Python">
+    <compoundname>_semantic_template_reference.py</compoundname>
+    <innerclass refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass" prot="public">dedoc::_semantic_template_reference::ExampleClass</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1__semantic__template__reference">dedoc::_semantic_template_reference</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1__semantic__template__reference" refkind="compound"><highlight class="comment">#<sp/>======================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>SEMANTIC<sp/>TEMPLATE<sp/>REFERENCE<sp/>(ONE-SHOT<sp/>EXAMPLE<sp/>FOR<sp/>AGENTS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Этот<sp/>файл<sp/>—<sp/>эталон<sp/>формата<sp/>разметки.<sp/>При<sp/>обработке<sp/>других<sp/>файлов</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>следуй<sp/>ровно<sp/>этому<sp/>формату.<sp/>Не<sp/>отклоняйся.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>======================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(X):<sp/>DomainName;<sp/>CONCEPT(Y):<sp/>ConceptName;<sp/>TECH(Z):<sp/>TechName]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@purpose<sp/>[Describe<sp/>the<sp/>GOAL<sp/>of<sp/>the<sp/>module<sp/>—<sp/>what<sp/>business/operational<sp/>need<sp/>it<sp/>fulfills.]</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>@scope<sp/>[Main<sp/>functional<sp/>areas<sp/>covered<sp/>by<sp/>the<sp/>module.]</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@input<sp/>[Module-wide<sp/>input<sp/>data.]</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@output<sp/>[What<sp/>the<sp/>module<sp/>provides<sp/>to<sp/>the<sp/>rest<sp/>of<sp/>the<sp/>system.]</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@links<sp/>[USES_API(X):<sp/>...;<sp/>READS_DATA_FROM(Y):<sp/>...]</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@links_to_spec<sp/>[Technical<sp/>requirements<sp/>points,<sp/>if<sp/>applicable]</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>-<sp/>[Condition/State<sp/>that<sp/>always<sp/>holds]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>Q:<sp/>[Why<sp/>was<sp/>it<sp/>implemented<sp/>this<sp/>way?]</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>A:<sp/>[Justification,<sp/>environmental<sp/>constraints.]</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[Current<sp/>version<sp/>-<sp/>Brief<sp/>description<sp/>of<sp/>latest<sp/>changes]</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">##<sp/>FUNC/CLASS<sp/>[Weight<sp/>1-10][Entity<sp/>description]<sp/>=&gt;<sp/>[entity_name]</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">##<sp/>-<sp/>[Entity]:<sp/>[Actor]<sp/>=&gt;<sp/>[Action]<sp/>=&gt;<sp/>[Goal]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="namespacededoc_1_1__semantic__template__reference_1a0c1a85624ee84dbdfcbfeeffc82df52b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1__semantic__template__reference_1a0c1a85624ee84dbdfcbfeeffc82df52b" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>[Comma-separated<sp/>keywords<sp/>for<sp/>grep<sp/>search]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>[Creative<sp/>one-line<sp/>mini<sp/>block<sp/>diagram]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacededoc_1_1__semantic__template__reference_1a0cf975d613e119c3d65aaccbf03b7a71" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_ExampleClass<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>[Goal<sp/>of<sp/>the<sp/>class<sp/>—<sp/>what<sp/>it<sp/>enables<sp/>the<sp/>user/agent<sp/>to<sp/>do.]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass" kindref="compound">ExampleClass</ref>:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_example_method<sp/>[DOMAIN(X):<sp/>...;<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>[Goal<sp/>of<sp/>the<sp/>method.]</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>[APIs<sp/>or<sp/>modules<sp/>used]</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>[Input<sp/>types]<sp/>-&gt;<sp/>[Output<sp/>types]</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>[1-10]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass_1a48379d18fe618dc8a202ad8632386661" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass_1a48379d18fe618dc8a202ad8632386661" kindref="member">example_method</ref>(self,<sp/>param1:<sp/>int)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>LDD-log:<sp/>flow<sp/>start</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][ExampleClass][INIT]<sp/>Starting<sp/>with<sp/>param1={param1}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>str(param1<sp/>*<sp/>2)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>LDD-log:<sp/>business<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:9][ExampleClass][RESULT]<sp/>Computed<sp/>result={result}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_example_method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_ExampleClass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_example_function<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>[Describe<sp/>the<sp/>GOAL<sp/>of<sp/>this<sp/>function.]</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>@uses<sp/>[APIs<sp/>or<sp/>modules<sp/>used]</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@io<sp/>[Input<sp/>types]<sp/>-&gt;<sp/>[Output<sp/>types]</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>@complexity<sp/>[1-10]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="namespacededoc_1_1__semantic__template__reference_1abe94dcb74dc97546b80898c012b5b29b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1__semantic__template__reference_1abe94dcb74dc97546b80898c012b5b29b" kindref="member">example_function</ref>(data:<sp/>list)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>LDD-log:<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][example_function][INIT]<sp/>Input<sp/>data<sp/>length={len(data)}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>total<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>item<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>data:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total<sp/>+=<sp/>item</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:3][example_function][LOOP]<sp/>item={item},<sp/>running_total={total}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>LDD-log:<sp/>business<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:9][example_function][RESULT]<sp/>Sum<sp/>computed:<sp/>{total}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>total</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_example_function</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/_semantic_template_reference.py"/>
+  </compounddef>
+</doxygen>

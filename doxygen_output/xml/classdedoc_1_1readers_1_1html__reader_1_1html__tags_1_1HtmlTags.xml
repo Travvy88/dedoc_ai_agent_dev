@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::html_reader::html_tags::HtmlTags</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aaf31c343caa7e52f06e3ba781a580324" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::service_tags</definition>
+        <argsstring></argsstring>
+        <name>service_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.service_tags</qualifiedname>
+        <initializer>=  [&quot;script&quot;, &quot;style&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="6" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7ca06749e91bf638d18f0aae946c4bfb" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::list_items</definition>
+        <argsstring></argsstring>
+        <name>list_items</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.list_items</qualifiedname>
+        <initializer>=  [&quot;li&quot;, &quot;dd&quot;, &quot;dt&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="8" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a75ab8e04361eaee02447e06745e4bfad" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::block_tags</definition>
+        <argsstring></argsstring>
+        <name>block_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.block_tags</qualifiedname>
+        <initializer>=  [&quot;aside&quot;, &quot;article&quot;, &quot;body&quot;, &quot;div&quot;, &quot;blockquote&quot;, &quot;footer&quot;, &quot;header&quot;, &quot;html&quot;, &quot;main&quot;, &quot;nav&quot;, &quot;section&quot;, &quot;form&quot;, *<ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7ca06749e91bf638d18f0aae946c4bfb" kindref="member">list_items</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="9" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a13b96037c0e95737ce3006fd0cb0c083" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::unordered_list</definition>
+        <argsstring></argsstring>
+        <name>unordered_list</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.unordered_list</qualifiedname>
+        <initializer>=  [&quot;ul&quot;, &quot;dl&quot;, &quot;dir&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="10" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ab1b11ef962cc20eda885996760ed130b" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::ordered_list</definition>
+        <argsstring></argsstring>
+        <name>ordered_list</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.ordered_list</qualifiedname>
+        <initializer>=  [&quot;ol&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="11" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad844fdc5d2070b0fb28988840795a8b6" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::list_tags</definition>
+        <argsstring></argsstring>
+        <name>list_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.list_tags</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a13b96037c0e95737ce3006fd0cb0c083" kindref="member">unordered_list</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ab1b11ef962cc20eda885996760ed130b" kindref="member">ordered_list</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="12" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a2bc2ed5698f911385f5c93903dd56d08" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::header_tags</definition>
+        <argsstring></argsstring>
+        <name>header_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.header_tags</qualifiedname>
+        <initializer>=  [&quot;h1&quot;, &quot;h2&quot;, &quot;h3&quot;, &quot;h4&quot;, &quot;h5&quot;, &quot;h6&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="13" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a426454bdb4a71dbc5a2bf71ce2cf1ae6" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::strike_tags</definition>
+        <argsstring></argsstring>
+        <name>strike_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.strike_tags</qualifiedname>
+        <initializer>=  [&quot;del&quot;, &quot;strike&quot;, &quot;s&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="15" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1accc4f6e74d3638180a2ed395e847fd3d" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::bold_tags</definition>
+        <argsstring></argsstring>
+        <name>bold_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.bold_tags</qualifiedname>
+        <initializer>=  [&quot;strong&quot;, &quot;b&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="16" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ae3e0ca7a62f5abd94d826b7fe46ae22e" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::underlined_tags</definition>
+        <argsstring></argsstring>
+        <name>underlined_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.underlined_tags</qualifiedname>
+        <initializer>=  [&quot;ins&quot;, &quot;u&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="17" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad04b6cd82c73282cff7f841e49635536" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::italic_tags</definition>
+        <argsstring></argsstring>
+        <name>italic_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.italic_tags</qualifiedname>
+        <initializer>=  [&quot;em&quot;, &quot;i&quot;, &quot;dfn&quot;, &quot;var&quot;, &quot;address&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="18" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aa8ba31bd815584e14e3a47f5d74c60d8" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::subscript_tags</definition>
+        <argsstring></argsstring>
+        <name>subscript_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.subscript_tags</qualifiedname>
+        <initializer>=  [&quot;sub&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="19" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a271230102c25ed91066ee00e11672a33" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::superscript_tags</definition>
+        <argsstring></argsstring>
+        <name>superscript_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.superscript_tags</qualifiedname>
+        <initializer>=  [&quot;sup&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="20" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a9018158b2a31c7444a2b699f91315305" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::link_tags</definition>
+        <argsstring></argsstring>
+        <name>link_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.link_tags</qualifiedname>
+        <initializer>=  [&quot;a&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="21" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a3001b874a708040ab803b54ea85135a1" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::paragraphs</definition>
+        <argsstring></argsstring>
+        <name>paragraphs</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.paragraphs</qualifiedname>
+        <initializer>=  [&quot;p&quot;] + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a75ab8e04361eaee02447e06745e4bfad" kindref="member">block_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7ca06749e91bf638d18f0aae946c4bfb" kindref="member">list_items</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a2bc2ed5698f911385f5c93903dd56d08" kindref="member">header_tags</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="23" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a1daf0b71379194293147ee537484a57e" compoundref="ocr__block_8py" startline="28" endline="30">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.text</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7fc81b49b9c08e98ed6dd2b496d26254" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::styled_tag</definition>
+        <argsstring></argsstring>
+        <name>styled_tag</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.styled_tag</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1accc4f6e74d3638180a2ed395e847fd3d" kindref="member">bold_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad04b6cd82c73282cff7f841e49635536" kindref="member">italic_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ae3e0ca7a62f5abd94d826b7fe46ae22e" kindref="member">underlined_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a426454bdb4a71dbc5a2bf71ce2cf1ae6" kindref="member">strike_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a271230102c25ed91066ee00e11672a33" kindref="member">superscript_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aa8ba31bd815584e14e3a47f5d74c60d8" kindref="member">subscript_tags</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="25" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7a1fa36ac2183aad4ab1e7bcc4af8e21" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::simple_text_tags</definition>
+        <argsstring></argsstring>
+        <name>simple_text_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.simple_text_tags</qualifiedname>
+        <initializer>=  [
+        &quot;a&quot;, &quot;abbr&quot;, &quot;acronym&quot;, &quot;applet&quot;, &quot;area&quot;, &quot;article&quot;, &quot;aside&quot;, &quot;bdi&quot;, &quot;bdo&quot;, &quot;big&quot;, &quot;canvas&quot;, &quot;caption&quot;, &quot;center&quot;, &quot;cite&quot;, &quot;code&quot;, &quot;data&quot;,
+        &quot;font&quot;, &quot;kbd&quot;, &quot;mark&quot;, &quot;output&quot;, &quot;p&quot;, &quot;pre&quot;, &quot;q&quot;, &quot;samp&quot;, &quot;small&quot;, &quot;span&quot;, &quot;tt&quot;, &quot;wbr&quot;
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="26" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a20b20f9ec41b31785fa2fcf0637fb79c" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::text_tags</definition>
+        <argsstring></argsstring>
+        <name>text_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.text_tags</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7a1fa36ac2183aad4ab1e7bcc4af8e21" kindref="member">simple_text_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7fc81b49b9c08e98ed6dd2b496d26254" kindref="member">styled_tag</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="30" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7a1393c8cb7f4151e5be47d910b8ad02" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::table_tags</definition>
+        <argsstring></argsstring>
+        <name>table_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.table_tags</qualifiedname>
+        <initializer>=  [&quot;table&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="32" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aaef31992f24809a47a7d362bc4203407" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::table_rows</definition>
+        <argsstring></argsstring>
+        <name>table_rows</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.table_rows</qualifiedname>
+        <initializer>=  [&quot;tr&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="33" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1abdf8542b81f2a9686e9a7a2400c903cc" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::table_cells</definition>
+        <argsstring></argsstring>
+        <name>table_cells</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.table_cells</qualifiedname>
+        <initializer>=  [&quot;td&quot;, &quot;th&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="34" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a163c5784166bfbd1c727c2319bcd2873" prot="public" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc.readers.html_reader.html_tags.HtmlTags::special_symbol_tags</definition>
+        <argsstring></argsstring>
+        <name>special_symbol_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.special_symbol_tags</qualifiedname>
+        <initializer>=  {&quot;br&quot;: &quot;\n&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="36" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a03b5eec45d7851e1791a1e561127c76d" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.html_reader.html_tags.HtmlTags::available_tags</definition>
+        <argsstring></argsstring>
+        <name>available_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.available_tags</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a75ab8e04361eaee02447e06745e4bfad" kindref="member">block_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad844fdc5d2070b0fb28988840795a8b6" kindref="member">list_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a2bc2ed5698f911385f5c93903dd56d08" kindref="member">header_tags</ref> + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a20b20f9ec41b31785fa2fcf0637fb79c" kindref="member">text_tags</ref> + list(special_symbol_tags.keys()) + <ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a3001b874a708040ab803b54ea85135a1" kindref="member">paragraphs</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="37" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a8c16ac6208760086425d197b2ce9d9b9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.html_reader.html_tags.HtmlTags::available_tags</definition>
+        <argsstring></argsstring>
+        <name>available_tags</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tags.HtmlTags.available_tags</qualifiedname>
+        <initializer>=  sorted(set(available_tags))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tags.py" line="38" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Define canonical HTML tag categories (block, inline, list, table, styled) for use by the HTML reader pipeline — serves as a lookup dictionary for tag classification. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b Uses\/ \:  None (pure data class with no external dependencies) \par \b Complexity\/ \:  2 </para>
+    </detaileddescription>
+    <location file="dedoc/readers/html_reader/html_tags.py" line="5" column="1" bodyfile="dedoc/readers/html_reader/html_tags.py" bodystart="5" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a03b5eec45d7851e1791a1e561127c76d" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>available_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a8c16ac6208760086425d197b2ce9d9b9" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>available_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a75ab8e04361eaee02447e06745e4bfad" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>block_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1accc4f6e74d3638180a2ed395e847fd3d" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>bold_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a2bc2ed5698f911385f5c93903dd56d08" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>header_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad04b6cd82c73282cff7f841e49635536" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>italic_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a9018158b2a31c7444a2b699f91315305" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>link_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7ca06749e91bf638d18f0aae946c4bfb" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>list_items</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ad844fdc5d2070b0fb28988840795a8b6" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>list_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ab1b11ef962cc20eda885996760ed130b" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>ordered_list</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a3001b874a708040ab803b54ea85135a1" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>paragraphs</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aaf31c343caa7e52f06e3ba781a580324" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>service_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7a1fa36ac2183aad4ab1e7bcc4af8e21" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>simple_text_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a163c5784166bfbd1c727c2319bcd2873" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>special_symbol_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a426454bdb4a71dbc5a2bf71ce2cf1ae6" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>strike_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7fc81b49b9c08e98ed6dd2b496d26254" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>styled_tag</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aa8ba31bd815584e14e3a47f5d74c60d8" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>subscript_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a271230102c25ed91066ee00e11672a33" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>superscript_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1abdf8542b81f2a9686e9a7a2400c903cc" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>table_cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1aaef31992f24809a47a7d362bc4203407" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>table_rows</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a7a1393c8cb7f4151e5be47d910b8ad02" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>table_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a20b20f9ec41b31785fa2fcf0637fb79c" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>text_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1ae3e0ca7a62f5abd94d826b7fe46ae22e" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>underlined_tags</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags_1a13b96037c0e95737ce3006fd0cb0c083" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tags::HtmlTags</scope><name>unordered_list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

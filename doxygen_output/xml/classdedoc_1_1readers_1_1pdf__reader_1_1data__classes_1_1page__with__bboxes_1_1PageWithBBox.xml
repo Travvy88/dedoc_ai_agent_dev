@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1afcaf69a83b434d4219e47113317fbca2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="19" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a21e641c531dfbe482bba8ff7d9b93eb7" compoundref="onepage__table__extractor_8py" startline="61" endline="86">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.__get_matrix_table_from_tree</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7715ae2cc01e15cbad56930afe0af262" compoundref="onepage__table__extractor_8py" startline="36" endline="58">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.extract_onepage_tables_from_image</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7461fba8bc0af5cd1647a48628697bc6" compoundref="onepage__table__extractor_8py" startline="106" endline="128">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.handle_cells</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a18ebc8fb6149796346e2df378dd88ba5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::bboxes</definition>
+        <argsstring></argsstring>
+        <name>bboxes</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.bboxes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="20" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a49df740cfec1d9f2ace218b5c6b51083" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::page_num</definition>
+        <argsstring></argsstring>
+        <name>page_num</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.page_num</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="21" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a1bdde77a317549e9068f9324b8ee775f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::attachments</definition>
+        <argsstring></argsstring>
+        <name>attachments</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.attachments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="22" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9ee6a43295eb67c371e8e512cd0dd751" compoundref="data__structures_2parsed__document_8py" startline="56" endline="61">dedoc.data_structures.parsed_document.ParsedDocument.add_attachments</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1aefbcbcde04638c9180fbd259c791bffd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::pdf_page_width</definition>
+        <argsstring></argsstring>
+        <name>pdf_page_width</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.pdf_page_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a4f33e293ce0621c356c0bc98b028f62d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox::pdf_page_height</definition>
+        <argsstring></argsstring>
+        <name>pdf_page_height</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.pdf_page_height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a13ee7861e0b305f4c06f5639a5b4f0c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.__init__</definition>
+        <argsstring>(self, Optional[ndarray] image, List[TextWithBBox] bboxes, int page_num, List[PdfImageAttachment] attachments=None, Optional[int] pdf_page_width=None, Optional[int] pdf_page_height=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>image</declname>
+          <array>[ndarray]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>bboxes</declname>
+          <array>[TextWithBBox]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_num</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>attachments</declname>
+          <array>[PdfImageAttachment]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>pdf_page_width</declname>
+          <array>[int]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>pdf_page_height</declname>
+          <array>[int]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="17" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="18" bodyend="26"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/page_with_bboxes.py" bodystart="14" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a13ee7861e0b305f4c06f5639a5b4f0c7" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a1bdde77a317549e9068f9324b8ee775f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>attachments</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a18ebc8fb6149796346e2df378dd88ba5" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>bboxes</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1afcaf69a83b434d4219e47113317fbca2" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>image</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a49df740cfec1d9f2ace218b5c6b51083" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>page_num</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a4f33e293ce0621c356c0bc98b028f62d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>pdf_page_height</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1aefbcbcde04638c9180fbd259c791bffd" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::page_with_bboxes::PageWithBBox</scope><name>pdf_page_width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

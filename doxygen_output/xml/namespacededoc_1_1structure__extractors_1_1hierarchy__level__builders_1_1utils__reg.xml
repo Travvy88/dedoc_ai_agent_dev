@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::utils_reg</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1af5b8d9537cfaa8b43b476768408f6db6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="4" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a37bccbc8c34090cc745353d12753b0e8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_item</definition>
+        <argsstring></argsstring>
+        <name>regexps_item</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_item</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*\d+\.\s&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="7" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ae53a7b1e15eac5b75ba880f3392b5817" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_foiv_item</definition>
+        <argsstring></argsstring>
+        <name>regexps_foiv_item</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_foiv_item</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*(\d+\.)+\s*&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="8" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a33744a8a9e84ef9fac78bd564ae0f5ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_item_with_bracket</definition>
+        <argsstring></argsstring>
+        <name>regexps_item_with_bracket</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_item_with_bracket</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*(\d*\.)*\d+[)}]&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="9" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a7c1274f8c0f0083b4f462110bc68f60a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_digits_with_dots</definition>
+        <argsstring></argsstring>
+        <name>regexps_digits_with_dots</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_digits_with_dots</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*(\d+\.)+(\d+)?\s*&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="10" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a56aaa528eeff984ed3de9d73ebd06f5c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_subitem_with_dots</definition>
+        <argsstring></argsstring>
+        <name>regexps_subitem_with_dots</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_subitem_with_dots</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*((\d+\.((\d+|[а-яё])\.)+)|[а-яё][.)])\s&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="13" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ab53173fbf3706c2474f975822f0037fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_subitem_extended</definition>
+        <argsstring></argsstring>
+        <name>regexps_subitem_extended</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_subitem_extended</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*[A-ZА-Яa-zа-яё][)}.]&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="14" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1ac5d11d06802ffec01e3d445a94ab8fd6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_subitem</definition>
+        <argsstring></argsstring>
+        <name>regexps_subitem</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_subitem</qualifiedname>
+        <initializer>=  re.compile(r&quot;^\s*[а-яё][)}]&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="15" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a213cc3acdcdeb982e83242303d0fec03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_number</definition>
+        <argsstring></argsstring>
+        <name>regexps_number</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_number</qualifiedname>
+        <initializer>=  re.compile(r&quot;(^\s*\d{1,2}(\.\d{1,2})*)(\s|$|\)|\}|\.([A-ZА-Яa-zа-яё]|\s))&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a152e0a1a1d21c64a46bac6634be9e1be" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_ends_of_number</definition>
+        <argsstring></argsstring>
+        <name>regexps_ends_of_number</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_ends_of_number</qualifiedname>
+        <initializer>=  re.compile(r&quot;([A-ZА-Яa-zа-яё]|\s|( )*)$&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="19" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a5a95d1e714dbe15cafbe601a0d675798" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.regexps_year</definition>
+        <argsstring></argsstring>
+        <name>regexps_year</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.regexps_year</qualifiedname>
+        <initializer>=  re.compile(r&quot;(19\d\d|20\d\d)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="22" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1adc95d4127af828781dc6c26e987c3624" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::utils_reg.roman_regexp</definition>
+        <argsstring></argsstring>
+        <name>roman_regexp</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg.roman_regexp</qualifiedname>
+        <initializer>=  re.compile(r&quot;\s*(I|Г|T|Т|II|П|III|Ш|ТУ|TУ|IV|V|У|VI|УТ|УT|VII|УТТ|VIII|I[XХ]|[XХ]|[XХ]I|[XХ]II)\.\s+&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="23" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a2120e6febc7d50efe5125e6a8c33d824" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.utils_reg._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.utils_reg._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/hierarchy_level_builders/utils_reg: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/hierarchy_level_builders/utils_reg \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="42" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" bodystart="42" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/utils_reg.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

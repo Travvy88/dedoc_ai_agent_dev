@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_fdb024f9e99d6c811bc69c584221c812" kind="dir">
+    <compoundname>dedoc/readers/docx_reader</compoundname>
+    <innerdir refid="dir_2c9b879be69e0020e285bd79559c63d7">dedoc/readers/docx_reader/data_structures</innerdir>
+    <innerfile refid="readers_2docx__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="docx__reader_8py">docx_reader.py</innerfile>
+    <innerfile refid="footnote__extractor_8py">footnote_extractor.py</innerfile>
+    <innerfile refid="line__with__meta__converter_8py">line_with_meta_converter.py</innerfile>
+    <innerfile refid="docx__reader_2numbering__extractor_8py">numbering_extractor.py</innerfile>
+    <innerfile refid="docx__reader_2properties__extractor_8py">properties_extractor.py</innerfile>
+    <innerfile refid="styles__extractor_8py">styles_extractor.py</innerfile>
+    <innerfile refid="windows__font__mapping_8py">windows_font_mapping.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/"/>
+  </compounddef>
+</doxygen>

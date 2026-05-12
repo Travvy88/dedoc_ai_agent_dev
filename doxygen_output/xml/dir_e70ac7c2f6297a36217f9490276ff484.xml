@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_e70ac7c2f6297a36217f9490276ff484" kind="dir">
+    <compoundname>dedoc/utils</compoundname>
+    <innerfile refid="utils_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="annotation__merger_8py">annotation_merger.py</innerfile>
+    <innerfile refid="image__utils_8py">image_utils.py</innerfile>
+    <innerfile refid="langchain_8py">langchain.py</innerfile>
+    <innerfile refid="office__utils_8py">office_utils.py</innerfile>
+    <innerfile refid="parameter__utils_8py">parameter_utils.py</innerfile>
+    <innerfile refid="pdf__utils_8py">pdf_utils.py</innerfile>
+    <innerfile refid="train__dataset__utils_8py">train_dataset_utils.py</innerfile>
+    <innerfile refid="utils_2utils_8py">utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/"/>
+  </compounddef>
+</doxygen>

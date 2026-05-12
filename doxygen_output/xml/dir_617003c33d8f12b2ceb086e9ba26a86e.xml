@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_617003c33d8f12b2ceb086e9ba26a86e" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_txtlayer_reader</compoundname>
+    <innerdir refid="dir_33ffb13cdfb9607a3cf6febbf6d71cb0">dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding</innerdir>
+    <innerdir refid="dir_616e14847f782746868ff37f7cb0edd6">dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader</innerdir>
+    <innerdir refid="dir_d33f124a0a7c1067fdc72b487d3ff2c5">dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf</innerdir>
+    <innerfile refid="readers_2pdf__reader_2pdf__txtlayer__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="pdf__broken__encoding__reader_8py">pdf_broken_encoding_reader.py</innerfile>
+    <innerfile refid="pdf__tabby__reader_8py">pdf_tabby_reader.py</innerfile>
+    <innerfile refid="pdf__txtlayer__reader_8py">pdf_txtlayer_reader.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/"/>
+  </compounddef>
+</doxygen>

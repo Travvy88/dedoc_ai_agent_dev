@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="empty__prefix_8py" kind="file" language="Python">
+    <compoundname>empty_prefix.py</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix" prot="public">dedoc::structure_extractors::feature_extractors::list_features::prefix::empty_prefix::EmptyPrefix</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors">dedoc::structure_extractors::feature_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features">dedoc::structure_extractors::feature_extractors::list_features</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::empty_prefix</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LinePrefix</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="4" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1a7a697da79271cddcebb3c950a4e09228" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_EmptyPrefix<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(FeatureEngineering):<sp/>...;<sp/>TECH(Pandas):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>EmptyPrefix<sp/>for<sp/>document<sp/>structure<sp/>extraction<sp/>pipeline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix" kindref="compound">EmptyPrefix</ref>(<ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix" kindref="compound">LinePrefix</ref>):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Line<sp/>without<sp/>&apos;&apos;</highlight><highlight class="normal">list<sp/>like</highlight><highlight class="stringliteral">&apos;&apos;</highlight><highlight class="normal"><sp/>prefix,<sp/>it<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>some<sp/>kind<sp/>of<sp/>zero<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>prefixes</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="14" refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a8a444ddc9797e5b65c8954633c111912" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;empty&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>__init__<sp/>method</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a34b30e02ef894a5b74d810e923397753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a34b30e02ef894a5b74d810e923397753" kindref="member">__init__</ref>(self,<sp/>prefix:<sp/>str<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>indent:<sp/>float<sp/>=<sp/>0)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][EmptyPrefix][__init___INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a34b30e02ef894a5b74d810e923397753" kindref="member">__init__</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>indent=indent)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_predecessor<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>predecessor<sp/>method</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a80d3e8078f18b0b61a35cc9f41935b89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a80d3e8078f18b0b61a35cc9f41935b89" kindref="member">predecessor</ref>(self,<sp/>other:<sp/>LinePrefix)<sp/>-&gt;<sp/>bool:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][EmptyPrefix][predecessor_INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_predecessor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_is_valid<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>is_valid<sp/>method</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a0233d7caa000989a3a68a02b9d6aa068" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix_1a0233d7caa000989a3a68a02b9d6aa068" kindref="member">is_valid</ref>(prefix_str:<sp/>str)<sp/>-&gt;<sp/>bool:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][EmptyPrefix][is_valid_INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_is_valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_EmptyPrefix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(FeatureEngineering):<sp/>...;<sp/>TECH(Pandas):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/feature_extractors/list_features/prefix/empty_prefix:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/feature_extractors/list_features/prefix/empty_prefix</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>CLASS<sp/>[Weight<sp/>7][Structure<sp/>extraction]<sp/>=&gt;<sp/>EmptyPrefix</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1a59a2a87a9d2fed499b407cb358858297" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1a59a2a87a9d2fed499b407cb358858297" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>feature<sp/>extractors,<sp/>list<sp/>features,<sp/>prefix,<sp/>empty<sp/>prefix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/feature_extractors/list_features/prefix/empty_prefix<sp/>→<sp/>○<sp/>EmptyPrefix.cls<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/prefix/empty_prefix.py"/>
+  </compounddef>
+</doxygen>

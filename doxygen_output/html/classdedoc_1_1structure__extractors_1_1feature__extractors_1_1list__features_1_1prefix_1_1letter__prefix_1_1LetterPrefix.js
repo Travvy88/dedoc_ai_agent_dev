@@ -1,0 +1,8 @@
+var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix =
+[
+    [ "is_valid", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix.html#a0af422b8aa20b2732749df0f7d7cefce", null ],
+    [ "order", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix.html#a7a617bb33068c05032272153d0b1ba94", null ],
+    [ "predecessor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix.html#af5902c63fcbead8464b8bfe33ad9a673", null ],
+    [ "name", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix.html#ac389afcf68332ea70ea066f74e022b05", null ],
+    [ "regexp", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix.html#a39ca6fc0efad34fc97694393ff391dfd", null ]
+];

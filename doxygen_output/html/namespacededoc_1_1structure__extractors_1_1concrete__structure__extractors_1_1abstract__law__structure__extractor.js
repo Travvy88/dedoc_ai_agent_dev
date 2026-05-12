@@ -1,0 +1,6 @@
+var namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structure__extractor =
+[
+    [ "AbstractLawStructureExtractor", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structu47731f7f502a87b4521a5afc80a3fbcb.html", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structu47731f7f502a87b4521a5afc80a3fbcb" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structure__extractor.html#a2b6fbc7c5fd88d7b0b88e05571a1d674", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structure__extractor.html#a5e8c080a02f7ad831ee8321da81483f1", null ]
+];

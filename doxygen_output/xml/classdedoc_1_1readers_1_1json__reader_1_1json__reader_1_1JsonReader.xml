@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::json_reader::json_reader::JsonReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" prot="public" virt="non-virtual">dedoc.readers.base_reader.BaseReader</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6e21ebc990ad16dcc7b620a88153e259" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.json_reader.json_reader.JsonReader::attachment_extractor</definition>
+        <argsstring></argsstring>
+        <name>attachment_extractor</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.attachment_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="26" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a9f20b27924ebbb71527023198cf7dea4" compoundref="docx__reader_8py" startline="25" endline="40">dedoc.readers.docx_reader.docx_reader.DocxReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" compoundref="excel__reader_8py" startline="33" endline="52">dedoc.readers.excel_reader.excel_reader.ExcelReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063" compoundref="pdf__tabby__reader_8py" startline="64" endline="89">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af5edfd4e7eca504a71ceec0a2bc1b86b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.json_reader.json_reader.JsonReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a552713056ee6b03298dd298321be30ef">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="21" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="21" bodyend="27"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af5edfd4e7eca504a71ceec0a2bc1b86b" compoundref="json__reader_8py" startline="21" endline="27">dedoc.readers.json_reader.json_reader.JsonReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af5edfd4e7eca504a71ceec0a2bc1b86b" compoundref="json__reader_8py" startline="21" endline="27">dedoc.readers.json_reader.json_reader.JsonReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.json_reader.json_reader.JsonReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a5fbcf9a222907f9bff5de42552c0f461">read</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>The method return document content with all document&apos;s lines and attachments, tables remain empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This reader considers json lists as list items and adds this information to the <computeroutput>tag_hierarchy_level</computeroutput> of :class:<computeroutput>~dedoc.data_structures.LineMetadata</computeroutput>. The dictionaries are processed by creating key line with type <computeroutput>key</computeroutput> and value line as a child. Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="30" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="30" bodyend="73"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a8ff7cf4ff2abfae2326efd3a8f231b94" compoundref="json__reader_8py" startline="76" endline="81">dedoc.readers.json_reader.json_reader.JsonReader.__exclude_html_fields</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a2a5ce524cc6b6b051b06a7220be152a9" compoundref="json__reader_8py" startline="114" endline="125">dedoc.readers.json_reader.json_reader.JsonReader.__handle_dict</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a45035464145db0dd5211eb4e878e6279" compoundref="json__reader_8py" startline="100" endline="111">dedoc.readers.json_reader.json_reader.JsonReader.__handle_list</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" compoundref="json__reader_8py" startline="128" endline="141">dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6409e031ad09a517f23eeab445b79881" compoundref="json__reader_8py" startline="144" endline="146">dedoc.readers.json_reader.json_reader.JsonReader.__is_flat</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a2ffbdd4176560d545888d52eba62ef0d" compoundref="docx__reader_8py" startline="21">dedoc.readers.docx_reader.docx_reader.DocxReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aa113274d2f0ffaa6ba3bf9079a146533" compoundref="excel__reader_8py" startline="29">dedoc.readers.excel_reader.excel_reader.ExcelReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6e21ebc990ad16dcc7b620a88153e259" compoundref="json__reader_8py" startline="26">dedoc.readers.json_reader.json_reader.JsonReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ad51cc1220d36d4a1990b496447660117" compoundref="pdf__base__reader_8py" startline="56">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.attachment_extractor</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a8ff7cf4ff2abfae2326efd3a8f231b94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.readers.json_reader.json_reader.JsonReader.__exclude_html_fields</definition>
+        <argsstring>(self, dict json_data, List[List[str]] field_keys)</argsstring>
+        <name>__exclude_html_fields</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__exclude_html_fields</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>json_data</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>field_keys</declname>
+          <array>[List[str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="76" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="76" bodyend="81"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a7b134af21ef06dcbb11b51692445cf79" compoundref="json__reader_8py" startline="84" endline="97">dedoc.readers.json_reader.json_reader.JsonReader.__exclude_key</references>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a7b134af21ef06dcbb11b51692445cf79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.json_reader.json_reader.JsonReader.__exclude_key</definition>
+        <argsstring>(self, dict json_data, List[str] keys)</argsstring>
+        <name>__exclude_key</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__exclude_key</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>json_data</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>keys</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="84" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="84" bodyend="97"/>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a8ff7cf4ff2abfae2326efd3a8f231b94" compoundref="json__reader_8py" startline="76" endline="81">dedoc.readers.json_reader.json_reader.JsonReader.__exclude_html_fields</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a45035464145db0dd5211eb4e878e6279" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.json_reader.json_reader.JsonReader.__handle_list</definition>
+        <argsstring>(self, int depth, list element, list result, list stack)</argsstring>
+        <name>__handle_list</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__handle_list</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="100" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="100" bodyend="111"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" compoundref="json__reader_8py" startline="128" endline="141">dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6409e031ad09a517f23eeab445b79881" compoundref="json__reader_8py" startline="144" endline="146">dedoc.readers.json_reader.json_reader.JsonReader.__is_flat</references>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a2a5ce524cc6b6b051b06a7220be152a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.json_reader.json_reader.JsonReader.__handle_dict</definition>
+        <argsstring>(self, int depth, dict element, list result, list stack)</argsstring>
+        <name>__handle_dict</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__handle_dict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>list</type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="114" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="114" bodyend="125"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" compoundref="json__reader_8py" startline="128" endline="141">dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</references>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</definition>
+        <argsstring>(self, int depth, Any value, str line_type, str line_type_meta)</argsstring>
+        <name>__handle_one_element</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line_type</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line_type_meta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="128" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="128" bodyend="141"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1ad05d56f41bc6e5481ad2c6f6744fc5be" compoundref="json__reader_8py" startline="149" endline="155">dedoc.readers.json_reader.json_reader.JsonReader.__get_text</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a452943a0a732b486215f2ba6222b9c7c" compoundref="html__reader_8py" startline="225" endline="231">dedoc.readers.html_reader.html_reader.HtmlReader.__get_text</references>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a2a5ce524cc6b6b051b06a7220be152a9" compoundref="json__reader_8py" startline="114" endline="125">dedoc.readers.json_reader.json_reader.JsonReader.__handle_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a45035464145db0dd5211eb4e878e6279" compoundref="json__reader_8py" startline="100" endline="111">dedoc.readers.json_reader.json_reader.JsonReader.__handle_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6409e031ad09a517f23eeab445b79881" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.json_reader.json_reader.JsonReader.__is_flat</definition>
+        <argsstring>(self, Any value)</argsstring>
+        <name>__is_flat</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__is_flat</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="144" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="144" bodyend="146"/>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a45035464145db0dd5211eb4e878e6279" compoundref="json__reader_8py" startline="100" endline="111">dedoc.readers.json_reader.json_reader.JsonReader.__handle_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1ad05d56f41bc6e5481ad2c6f6744fc5be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.json_reader.json_reader.JsonReader.__get_text</definition>
+        <argsstring>(self, Any value)</argsstring>
+        <name>__get_text</name>
+        <qualifiedname>dedoc.readers.json_reader.json_reader.JsonReader.__get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Any</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/json_reader/json_reader.py" line="149" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="149" bodyend="155"/>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" compoundref="json__reader_8py" startline="128" endline="141">dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" compoundref="html__reader_8py" startline="88" endline="105">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This reader allows handle .json files. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.json_reader.json_reader.JsonReader</label>
+        <link refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.json_reader.json_reader.JsonReader</label>
+        <link refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/json_reader/json_reader.py" line="15" column="1" bodyfile="dedoc/readers/json_reader/json_reader.py" bodystart="15" bodyend="159"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a8ff7cf4ff2abfae2326efd3a8f231b94" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__exclude_html_fields</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a7b134af21ef06dcbb11b51692445cf79" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__exclude_key</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1ad05d56f41bc6e5481ad2c6f6744fc5be" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__get_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a2a5ce524cc6b6b051b06a7220be152a9" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__handle_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a45035464145db0dd5211eb4e878e6279" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__handle_list</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__handle_one_element</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af5edfd4e7eca504a71ceec0a2bc1b86b" prot="public" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6409e031ad09a517f23eeab445b79881" prot="private" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>__is_flat</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6e21ebc990ad16dcc7b620a88153e259" prot="public" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>attachment_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" prot="public" virt="non-virtual"><scope>dedoc::readers::json_reader::json_reader::JsonReader</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

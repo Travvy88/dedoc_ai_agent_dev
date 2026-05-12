@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::feature_extractors::char_features</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a10e3016c324c7f4263792005b5c30836" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::feature_extractors::char_features.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="2" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1adac16f4e78ffb43222da0f7f5f592caf" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.eng</definition>
+        <argsstring></argsstring>
+        <name>eng</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.eng</qualifiedname>
+        <initializer>=  &quot;&quot;.join(list(map(chr, range(ord(&quot;a&quot;), ord(&quot;z&quot;) + 1))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="4" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ac4393dfb2617660212effbb7147629a5" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.rus</definition>
+        <argsstring></argsstring>
+        <name>rus</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.rus</qualifiedname>
+        <initializer>=  &quot;&quot;.join([chr(i) for i in range(ord(&quot;а&quot;), ord(&quot;а&quot;) + 32)] + [&quot;ё&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="5" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a38ba53ea0e20b3283b809b1217a91beb" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.lower_letters</definition>
+        <argsstring></argsstring>
+        <name>lower_letters</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.lower_letters</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1adac16f4e78ffb43222da0f7f5f592caf" kindref="member">eng</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ac4393dfb2617660212effbb7147629a5" kindref="member">rus</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="6" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ab2a619865d350e1279a9c1491de5d371" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.upper_letters</definition>
+        <argsstring></argsstring>
+        <name>upper_letters</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.upper_letters</qualifiedname>
+        <initializer>=  lower_letters.upper()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="7" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1aec341e9a3c14442966a7471274e16324" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.letters</definition>
+        <argsstring></argsstring>
+        <name>letters</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.letters</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ab2a619865d350e1279a9c1491de5d371" kindref="member">upper_letters</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a38ba53ea0e20b3283b809b1217a91beb" kindref="member">lower_letters</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="8" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a714492be45e383402d53ba4dbec39682" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.digits</definition>
+        <argsstring></argsstring>
+        <name>digits</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.digits</qualifiedname>
+        <initializer>=  &quot;&quot;.join([str(i) for i in range(10)])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="9" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1add836348489dba8448b59a678dfb3f4f" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.special_symbols</definition>
+        <argsstring></argsstring>
+        <name>special_symbols</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.special_symbols</qualifiedname>
+        <initializer>=  &quot;&lt;&gt;~!@#$%^&amp;*_+-/\&quot;|?.,:;&apos;`= &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="10" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ab00e9da2a42faf0df253adbe2e75ad84" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.brackets</definition>
+        <argsstring></argsstring>
+        <name>brackets</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.brackets</qualifiedname>
+        <initializer>=  &quot;{}[]()&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="11" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a3a890a29a57b853bb8d98fb6720936ee" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.symbols</definition>
+        <argsstring></argsstring>
+        <name>symbols</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.symbols</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1aec341e9a3c14442966a7471274e16324" kindref="member">letters</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a714492be45e383402d53ba4dbec39682" kindref="member">digits</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ab00e9da2a42faf0df253adbe2e75ad84" kindref="member">brackets</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1add836348489dba8448b59a678dfb3f4f" kindref="member">special_symbols</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="12" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a808ced74e9a240190d6e03361f2ca38c" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_extractors::feature_extractors::char_features.not_chars</definition>
+        <argsstring></argsstring>
+        <name>not_chars</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.not_chars</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a714492be45e383402d53ba4dbec39682" kindref="member">digits</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1ab00e9da2a42faf0df253adbe2e75ad84" kindref="member">brackets</ref> + <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1add836348489dba8448b59a678dfb3f4f" kindref="member">special_symbols</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="13" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a0ec20b7ffc65b0cf9c615ec61d05e044" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc::structure_extractors::feature_extractors::char_features.prohibited_symbols</definition>
+        <argsstring></argsstring>
+        <name>prohibited_symbols</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.prohibited_symbols</qualifiedname>
+        <initializer>=  {s: i for i, s in enumerate(&quot;[]&lt;&quot;)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="15" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a7a954a709f5739a0d29993e6c31604fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.structure_extractors.feature_extractors.char_features.count_symbols</definition>
+        <argsstring>(str text, str symbol_list)</argsstring>
+        <name>count_symbols</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features.count_symbols</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>symbol_list</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  count_symbols utility function \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  3 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="22" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features_1a526026cb8d9d817d9b9adafe21bc9318" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.char_features._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.char_features._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/feature_extractors/char_features: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/feature_extractors/char_features \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC [Weight 5][Utility] =&gt; count_symbols \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="45" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/char_features.py" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/char_features.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

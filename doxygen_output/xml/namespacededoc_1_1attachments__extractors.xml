@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors</compoundname>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1abstract__attachment__extractor">dedoc::attachments_extractors::abstract_attachment_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors">dedoc::attachments_extractors::concrete_attachments_extractors</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__extractors_1a3267243c9f60fc97eb714769129e94de" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::attachments_extractors.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.attachments_extractors.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor" kindref="compound">AbstractAttachmentsExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa" kindref="compound">AbstractOfficeAttachmentsExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba" kindref="compound">DocxAttachmentsExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db" kindref="compound">ExcelAttachmentsExtractor</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1json__attachment__dd467b7a8ddc3dd1bd864c9b62d64b6b" kindref="compound">JsonAttachmentsExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391" kindref="compound">PDFAttachmentsExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21" kindref="compound">PptxAttachmentsExtractor</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/__init__.py" line="40" column="1" bodyfile="dedoc/attachments_extractors/__init__.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1aa2a4ccdba7cc65702c6affca549aa7a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Centralized import surface for all attachment extractors: exposes AbstractAttachmentsExtractor, all Office-format extractors, JSON and PDF extractors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization, symbol re-export, public API surface. \par \b Input\/ \:  None \par \b Output\/ \:  Public symbols: AbstractAttachmentsExtractor, AbstractOfficeAttachmentsExtractor, DocxAttachmentsExtractor, ExcelAttachmentsExtractor, JsonAttachmentsExtractor, PDFAttachmentsExtractor, PptxAttachmentsExtractor \par \b Links\/ \:  [USES_API(9): AbstractAttachmentsExtractor, AbstractOfficeAttachmentsExtractor, DocxAttachmentsExtractor, ExcelAttachmentsExtractor, JsonAttachmentsExtractor, PDFAttachmentsExtractor, PptxAttachmentsExtractor] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> ALWAYS contains all 7 public symbols.</para>
+</listitem><listitem><para>Every concrete extractor listed in <bold>all</bold> is importable from this package. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why re-export everything here instead of importing from subpackages? A: Single import surface simplifies client code: <computeroutput>from <ref refid="namespacededoc_1_1attachments__extractors" kindref="compound">dedoc.attachments_extractors</ref> import DocxAttachmentsExtractor</computeroutput>. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup added] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Abstract base for attachment extraction] =&gt; AbstractAttachmentsExtractor CLASS 9[Abstract base for Office-format attachments (docx, xlsx, pptx)] =&gt; AbstractOfficeAttachmentsExtractor CLASS 8[Extracts attachments from .docx files] =&gt; DocxAttachmentsExtractor CLASS 8[Extracts attachments from .xlsx files] =&gt; ExcelAttachmentsExtractor CLASS 8[Extracts attachments from .json files] =&gt; JsonAttachmentsExtractor CLASS 8[Extracts attachments from .pdf files] =&gt; PDFAttachmentsExtractor CLASS 8[Extracts attachments from .pptx files] =&gt; PptxAttachmentsExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>init</bold>]: CodeAgent (Import) =&gt; ImportExtractor =&gt; GetExtractorInstance </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/__init__.py" line="26" column="1" bodyfile="dedoc/attachments_extractors/__init__.py" bodystart="26" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

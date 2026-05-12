@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1pdf__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::pdf_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1pdf__utils_1a2903bdddab3f110455cfb23e68d9f19e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::pdf_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.pdf_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/pdf_utils.py" line="33" column="1" bodyfile="dedoc/utils/pdf_utils.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1pdf__utils_1acdd4caecdf3eed6a4a984854c156c76e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.pdf_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.pdf_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide PDF-specific utilities for page counting and page-to-image conversion, enabling the Dedoc pipeline to extract visual representations of PDF pages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  PDF page count retrieval, PDF page image rendering. \par \b Input\/ \:  File path to PDF document, page index. \par \b Output\/ \:  Page count (int), page image (PIL.Image). \par \b Links\/ \:  [USES_API(8): pypdf, pdf2image] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>get_pdf_page_count returns None (not raises) on unreadable PDFs.</para>
+</listitem><listitem><para>get_page_image returns None if no images rendered for the given page. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use pypdf instead of PyPDF2? A: pypdf is the actively maintained successor with better error handling. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 7[PDF page count] =&gt; get_pdf_page_count FUNC 8[PDF page to PIL image] =&gt; get_page_image \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_pdf_page_count]: Reader → AssessDocumentLength → Page count reported</para>
+</listitem><listitem><para>[get_page_image]: StructureExtractor → ExtractVisualFeatures → Page image rendered </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/pdf_utils.py" line="22" column="1" bodyfile="dedoc/utils/pdf_utils.py" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1pdf__utils_1ad5cbe01ba02856275e7cb2eed6edd85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[int]</type>
+        <definition> Optional[int] dedoc.utils.pdf_utils.get_pdf_page_count</definition>
+        <argsstring>(str path)</argsstring>
+        <name>get_pdf_page_count</name>
+        <qualifiedname>dedoc.utils.pdf_utils.get_pdf_page_count</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To determine the number of pages in a PDF file, returning None on failure rather than raising an exception for graceful error handling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  pypdf.PdfReader \par \b I/O\/ \:  str -&gt; Optional[int] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/pdf_utils.py" line="41" column="1" bodyfile="dedoc/utils/pdf_utils.py" bodystart="41" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1pdf__utils_1acef8c80e6737c4d23d4771e8c62e337f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[Image]</type>
+        <definition> Optional[Image] dedoc.utils.pdf_utils.get_page_image</definition>
+        <argsstring>(str path, int page_id)</argsstring>
+        <name>get_page_image</name>
+        <qualifiedname>dedoc.utils.pdf_utils.get_page_image</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_id</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To render a specific PDF page as a PIL Image, used for visual feature extraction in document structure analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  pdf2image.convert_from_path \par \b I/O\/ \:  (str, int) -&gt; Optional[Image] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/pdf_utils.py" line="59" column="1" bodyfile="dedoc/utils/pdf_utils.py" bodystart="59" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/pdf_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::tree_node::TreeNode</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.tree_node.TreeNode.__init__</definition>
+        <argsstring>(self, str node_id, str text, List[Annotation] annotations, LineMetadata metadata, List[&quot;TreeNode&quot;] subparagraphs, Optional[&quot;TreeNode&quot;] parent)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>node_id</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>subparagraphs</declname>
+          <array>[&quot;TreeNode&quot;]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parent</declname>
+          <array>[&quot;TreeNode&quot;]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize tree node with ID, text, annotations, metadata, children, and parent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (str, str, List[Annotation], LineMetadata, List[TreeNode], Optional[TreeNode]) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param node_id: node id is unique in one document :param text: text of the node :param annotations: metadata related to the part of the text :param metadata: metadata refers to entire node :param subparagraphs: list of child of this node :param parent: parent node </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="40" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="46" bodyend="62"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a68d36a489ffe480d94986740dc8f5ed9" compoundref="api_2schema_2tree__node_8py" startline="57">dedoc.api.schema.tree_node.TreeNode.node_id</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a3d5503036785dbf8d51da0a671fd2a04" compoundref="table__tree_8py" startline="34">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.parent</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a841116762ba8dcbc2ae46e18553a28e7" compoundref="api_2schema_2tree__node_8py" startline="63">dedoc.api.schema.tree_node.TreeNode.subparagraphs</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1af9e398d0117af698a5eba799c7973e25" compoundref="api_2schema_2line__with__meta_8py" startline="48">dedoc.api.schema.line_with_meta.LineWithMeta.text</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a64c2a1672c3d7826f140a50b4230fc64" compoundref="api_2schema_2tree__node_8py" startline="60">dedoc.api.schema.tree_node.TreeNode.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a9851d243d04b7af0ca3a0e8a8ef6ea91" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="44">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a2bd667b3076078ab1f3305c573960f9a" compoundref="run_8py" startline="25">dedoc.readers.docx_reader.data_structures.run.Run.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a9c41fe96ecf8680633830c421a5bc0e0" compoundref="text__with__bbox_8py" startline="38" endline="40">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a4b20d35224713c5cd88a5bdbea19eba7" compoundref="word__with__bbox_8py" startline="14">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a1daf0b71379194293147ee537484a57e" compoundref="ocr__block_8py" startline="28" endline="30">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a7ec72369995f27b4e3051836bf97cfb2" compoundref="ocr__line_8py" startline="31" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1a7c88a3873ed6a5c4162f6950aecc7fe2" compoundref="ocr__page_8py" startline="65" endline="67">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" compoundref="ocr__paragraph_8py" startline="29" endline="31">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a18fefb80752ac08ae145ad075c5e097e" compoundref="ocr__tuple_8py" startline="35">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a644fbbd2be30fb5c94f6b7068bfe43dc" compoundref="ocr__word_8py" startline="21">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" compoundref="pdf__layout__corrector_8py" startline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.text</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiTreeNode</type>
+        <definition> ApiTreeNode dedoc.data_structures.tree_node.TreeNode.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert tree node to API schema, recursively serializing annotations, metadata, and children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiTreeNode \par \b I/O\/ \:  None -&gt; ApiTreeNode \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="70" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="70" bodyend="75"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a68d36a489ffe480d94986740dc8f5ed9" compoundref="api_2schema_2tree__node_8py" startline="57">dedoc.api.schema.tree_node.TreeNode.node_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a841116762ba8dcbc2ae46e18553a28e7" compoundref="api_2schema_2tree__node_8py" startline="63">dedoc.api.schema.tree_node.TreeNode.subparagraphs</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1af9e398d0117af698a5eba799c7973e25" compoundref="api_2schema_2line__with__meta_8py" startline="48">dedoc.api.schema.line_with_meta.LineWithMeta.text</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a64c2a1672c3d7826f140a50b4230fc64" compoundref="api_2schema_2tree__node_8py" startline="60">dedoc.api.schema.tree_node.TreeNode.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a9851d243d04b7af0ca3a0e8a8ef6ea91" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="44">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a2bd667b3076078ab1f3305c573960f9a" compoundref="run_8py" startline="25">dedoc.readers.docx_reader.data_structures.run.Run.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a9c41fe96ecf8680633830c421a5bc0e0" compoundref="text__with__bbox_8py" startline="38" endline="40">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a4b20d35224713c5cd88a5bdbea19eba7" compoundref="word__with__bbox_8py" startline="14">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a1daf0b71379194293147ee537484a57e" compoundref="ocr__block_8py" startline="28" endline="30">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a7ec72369995f27b4e3051836bf97cfb2" compoundref="ocr__line_8py" startline="31" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1a7c88a3873ed6a5c4162f6950aecc7fe2" compoundref="ocr__page_8py" startline="65" endline="67">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" compoundref="ocr__paragraph_8py" startline="29" endline="31">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a18fefb80752ac08ae145ad075c5e097e" compoundref="ocr__tuple_8py" startline="35">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a644fbbd2be30fb5c94f6b7068bfe43dc" compoundref="ocr__word_8py" startline="21">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" compoundref="pdf__layout__corrector_8py" startline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.text</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1aa69ed3627fe4cbf3f0f801c5eb9eee4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;TreeNode&quot;</type>
+        <definition> &quot;TreeNode&quot; dedoc.data_structures.tree_node.TreeNode.add_child</definition>
+        <argsstring>(self, LineWithMeta line)</argsstring>
+        <name>add_child</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.add_child</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create a new child TreeNode from a LineWithMeta and append it as a subparagraph. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  LineWithMeta -&gt; TreeNode \par \b Complexity\/ \:  3</para>
+<para>Create a new tree node - children of the given node from given line. Return newly created node.</para>
+<para>:param line: Line with meta, new node will be built from this line :return: return created node (child of the self) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="114" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="114" bodyend="132"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a841116762ba8dcbc2ae46e18553a28e7" compoundref="api_2schema_2tree__node_8py" startline="63">dedoc.api.schema.tree_node.TreeNode.subparagraphs</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.tree_node.TreeNode.add_text</definition>
+        <argsstring>(self, LineWithMeta line)</argsstring>
+        <name>add_text</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.add_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Append text and annotations from a line to the current node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __shift_annotations, __add_additional_page_id \par \b I/O\/ \:  LineWithMeta -&gt; None \par \b Complexity\/ \:  3</para>
+<para>Add the text and annotations from given line, text is separated with aa len line symbol.</para>
+<para>:param line: line with text to add </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="140" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="140" bodyend="153"/>
+        <references refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a3a2412bf024e0f26eb567e7f19ce058d" compoundref="data__structures_2tree__node_8py" startline="208" endline="232">dedoc.data_structures.tree_node.TreeNode.__add_additional_page_id</references>
+        <references refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1ad1dfcb9513e2e6927a9f640812362399" compoundref="data__structures_2tree__node_8py" startline="161" endline="166">dedoc.data_structures.tree_node.TreeNode.__shift_annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1af9e398d0117af698a5eba799c7973e25" compoundref="api_2schema_2line__with__meta_8py" startline="48">dedoc.api.schema.line_with_meta.LineWithMeta.text</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1a64c2a1672c3d7826f140a50b4230fc64" compoundref="api_2schema_2tree__node_8py" startline="60">dedoc.api.schema.tree_node.TreeNode.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a9851d243d04b7af0ca3a0e8a8ef6ea91" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="44">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a2bd667b3076078ab1f3305c573960f9a" compoundref="run_8py" startline="25">dedoc.readers.docx_reader.data_structures.run.Run.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a9c41fe96ecf8680633830c421a5bc0e0" compoundref="text__with__bbox_8py" startline="38" endline="40">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a4b20d35224713c5cd88a5bdbea19eba7" compoundref="word__with__bbox_8py" startline="14">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a1daf0b71379194293147ee537484a57e" compoundref="ocr__block_8py" startline="28" endline="30">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a7ec72369995f27b4e3051836bf97cfb2" compoundref="ocr__line_8py" startline="31" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1a7c88a3873ed6a5c4162f6950aecc7fe2" compoundref="ocr__page_8py" startline="65" endline="67">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" compoundref="ocr__paragraph_8py" startline="29" endline="31">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a18fefb80752ac08ae145ad075c5e097e" compoundref="ocr__tuple_8py" startline="35">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a644fbbd2be30fb5c94f6b7068bfe43dc" compoundref="ocr__word_8py" startline="21">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.text</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a7a368d0e987fdb195822a6ad90aac4b4" compoundref="pdf__layout__corrector_8py" startline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.text</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1aa6001a38eba6d655478cfd6b91dae799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;TreeNode&quot;</type>
+        <definition> &quot;TreeNode&quot; dedoc.data_structures.tree_node.TreeNode.get_root</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_root</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.get_root</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Traverse parents up to return the root of the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; TreeNode \par \b Complexity\/ \:  2</para>
+<para>:return: root of the tree </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="173" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="173" bodyend="180"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af2147921320fea180f188156f2fc6a08" compoundref="data__structures_2tree__node_8py" startline="188" endline="200">dedoc.data_structures.tree_node.TreeNode.merge_annotations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af2147921320fea180f188156f2fc6a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.tree_node.TreeNode.merge_annotations</definition>
+        <argsstring>(self)</argsstring>
+        <name>merge_annotations</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.merge_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Merge annotations on all nodes in the tree using DFS traversal and AnnotationMerger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  AnnotationMerger \par \b I/O\/ \:  None -&gt; None \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="188" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="188" bodyend="200"/>
+        <references refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1aa6001a38eba6d655478cfd6b91dae799" compoundref="data__structures_2tree__node_8py" startline="173" endline="180">dedoc.data_structures.tree_node.TreeNode.get_root</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a3fd2562ad0fb2f4baf1604fb15947cac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;TreeNode&quot;</type>
+        <definition> &quot;TreeNode&quot; dedoc.data_structures.tree_node.TreeNode.create</definition>
+        <argsstring>(List[LineWithMeta] lines=None)</argsstring>
+        <name>create</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.create</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create a root TreeNode from a list of LineWithMeta lines, merging annotations across lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  LineMetadata, HierarchyLevel, __shift_annotations, __add_additional_page_id \par \b I/O\/ \:  List[LineWithMeta] -&gt; TreeNode \par \b Complexity\/ \:  5</para>
+<para>Creates a root node with given text.</para>
+<para>:param lines: this lines should be the title of the document (or should be empty for documents without title) :return: root of the document tree </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="84" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="84" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1ad1dfcb9513e2e6927a9f640812362399" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.data_structures.tree_node.TreeNode.__shift_annotations</definition>
+        <argsstring>(LineWithMeta line, int text_length)</argsstring>
+        <name>__shift_annotations</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.__shift_annotations</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>text_length</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Shift annotation start/end positions by text_length offset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (LineWithMeta, int) -&gt; List[Annotation] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="161" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="161" bodyend="166"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a3a2412bf024e0f26eb567e7f19ce058d" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.tree_node.TreeNode.__add_additional_page_id</definition>
+        <argsstring>(int start, LineMetadata metadata, LineWithMeta other_line)</argsstring>
+        <name>__add_additional_page_id</name>
+        <qualifiedname>dedoc.data_structures.tree_node.TreeNode.__add_additional_page_id</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>other_line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Add additional page ID metadata for multi-page nodes — tracks which parts of node text belong to which pages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (int, LineMetadata, LineWithMeta) -&gt; None \par \b Complexity\/ \:  5</para>
+<para>Adds additional page_id metadata for multi-page nodes.</para>
+<para>If node is located on several pages, its metadata will contain &quot;additional_page_id&quot; attribute with list of dicts: { start: start index of the text on the next page, end: end index (not included), page_id: page id, where this textual part (node_text[start:end]) is located } </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/tree_node.py" line="208" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="208" bodyend="232"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Represent document as a recursive tree structure — each node has an ID, text, annotations, metadata, children, and a parent reference. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>TreeNode helps to represent document as recursive tree structure. It has parent node (None for root ot the tree) and list of children nodes (empty list for list node).</para>
+<para>:ivar node_id: unique node identifier :ivar text: text of the node (may contain several lines) :ivar annotations: some metadata related to the part of the text (as font size) :ivar metadata: metadata refers to entire node (as node type) :ivar subparagraphs: list of child of this node :ivar parent: parent node (None for root, not none for other nodes)</para>
+<para>:vartype node_id: str :vartype text: str :vartype annotations: List[Annotation] :vartype metadata: LineMetadata :vartype subparagraphs: List[TreeNode] :vartype parent: TreeNode </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.tree_node.TreeNode</label>
+        <link refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.tree_node.TreeNode</label>
+        <link refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/tree_node.py" line="16" column="1" bodyfile="dedoc/data_structures/tree_node.py" bodystart="16" bodyend="236"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a3a2412bf024e0f26eb567e7f19ce058d" prot="private" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>__add_additional_page_id</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1ad1dfcb9513e2e6927a9f640812362399" prot="private" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>__shift_annotations</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1aa69ed3627fe4cbf3f0f801c5eb9eee4d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>add_child</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>add_text</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a3fd2562ad0fb2f4baf1604fb15947cac" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>create</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1aa6001a38eba6d655478cfd6b91dae799" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>get_root</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af2147921320fea180f188156f2fc6a08" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>merge_annotations</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" prot="public" virt="non-virtual"><scope>dedoc::data_structures::tree_node::TreeNode</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

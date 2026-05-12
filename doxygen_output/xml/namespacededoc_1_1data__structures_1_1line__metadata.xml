@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1line__metadata" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::line_metadata</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" prot="public">dedoc::data_structures::line_metadata::LineMetadata</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1line__metadata_1a162194b92d1822bc511bbb9b2d1491c4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::line_metadata.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.line_metadata.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_metadata.py" line="8" column="1" bodyfile="dedoc/data_structures/line_metadata.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1line__metadata_1a8f74f1dd430da69c2edd98297983ad36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.line_metadata._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.line_metadata._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the LineMetadata data structure — holds per-line metadata: position IDs, dual hierarchy levels, and extensible attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Line metadata: page/line IDs, tag hierarchy (reader-origin), result hierarchy (structure extractor), dynamic attributes. \par \b Input\/ \:  Page ID, line ID, optional tag hierarchy level, optional result hierarchy level, extra kwargs. \par \b Output\/ \:  LineMetadata instance convertible to API schema. \par \b Links\/ \:  [INHERITS(5): Serializable, USES_API(8): ApiLineMetadata, READS_DATA_FROM(9): HierarchyLevel] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>tag_hierarchy_level is never None (defaults to create_unknown()) \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why two separate hierarchy levels (tag vs result)? A: Readers extract format-specific tags (tag_hierarchy_level) while structure extractors compute the final hierarchy (hierarchy_level). Preserving both enables debugging and fallback. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Line metadata container] =&gt; LineMetadata METHOD 6[Constructor] =&gt; <bold>init</bold> METHOD 8[API schema conversion] =&gt; to_api_schema \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[LineMetadata]: Reader → CreateLineMetadata → LineMetadataStored</para>
+</listitem><listitem><para>[LineMetadata]: StructureExtractor → AssignResultHierarchy → hierarchy_levelSet </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_metadata.py" line="95" column="1" bodyfile="dedoc/data_structures/line_metadata.py" bodystart="95" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/line_metadata.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

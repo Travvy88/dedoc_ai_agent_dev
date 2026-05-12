@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1download__models" kind="namespace" language="Python">
+    <compoundname>dedoc::download_models</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1download__models_1a2d7f9bfc3a588434ab2857bca4e9e02a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::download_models.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.download_models.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="5" column="1" bodyfile="dedoc/download_models.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1download__models_1a668c48438b4a342432d01f40976eb45d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::download_models.model_hash_dict</definition>
+        <argsstring></argsstring>
+        <name>model_hash_dict</name>
+        <qualifiedname>dedoc.download_models.model_hash_dict</qualifiedname>
+        <initializer>=  dict(
+    txtlayer_classifier=&quot;9ca1de749d8d37147b00a3a228e03ee1776c695f&quot;,
+    scan_orientation_efficient_net_b0=&quot;c60812552a1be624476c1e5b58599867b36f8d4e&quot;,
+    font_classifier=&quot;db4481ad60ab050cbb42079b64f97f9e431feb07&quot;,
+    paragraph_classifier=&quot;97c4b78bc20d87ec7d53389e09f1ca35c6ade067&quot;,
+    line_type_classifiers=&quot;6ad0eacbfdea065b658cb6f039d13f75245d51ae&quot;,
+    fintoc_classifiers=&quot;6a907b7d2437c3f61ac9c506f67175207982fae8&quot;,
+    torch_cnn=&quot;5333909f858f5f632df478ef5a53af6dfd26f2e1&quot;
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="11" column="1" bodyfile="dedoc/download_models.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1download__models_1aafd470f656c41becfac0fe20e8f75019" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::download_models.resources_path</definition>
+        <argsstring></argsstring>
+        <name>resources_path</name>
+        <qualifiedname>dedoc.download_models.resources_path</qualifiedname>
+        <initializer>=  get_config()[&quot;resources_path&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="115" column="1" bodyfile="dedoc/download_models.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1download__models_1aa087dfa69ac0efe902e2cd33a21cc433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.download_models.download_from_hub</definition>
+        <argsstring>(str out_dir, str out_name, str repo_name, str hub_name, str user_name=&quot;dedoc&quot;)</argsstring>
+        <name>download_from_hub</name>
+        <qualifiedname>dedoc.download_models.download_from_hub</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>out_dir</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>out_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>repo_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>hub_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>user_name</declname>
+          <defval>&quot;dedoc&quot;</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To download a single model file from HuggingFace Hub by repository name and commit hash, moving it to the specified output directory — serving as the atomic download unit for all Dedoc ML models. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  huggingface_hub.hf_hub_download, model_hash_dict \par \b I/O\/ \:  (str, str, str, str, str) -&gt; None \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="27" column="1" bodyfile="dedoc/download_models.py" bodystart="27" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1download__models_1a7a20de723f25cd3713a4fcaa35015bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.download_models.download</definition>
+        <argsstring>(str resources_path)</argsstring>
+        <name>download</name>
+        <qualifiedname>dedoc.download_models.download</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>resources_path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To download all ML models required by Dedoc (text layer classifier, scan orientation, font classifier, paragraph classifier, line type classifiers, Fintoc classifiers, torch CNN) into the specified resources directory, ensuring the container is provisioned with all inference assets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  download_from_hub, model_hash_dict \par \b I/O\/ \:  str -&gt; None \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="47" column="1" bodyfile="dedoc/download_models.py" bodystart="47" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1download__models_1a37c77056037a16f5b85530370ce273a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.download_models._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.download_models._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To download and provision all ML inference models (classifiers, orientation detectors, OCR support models) from HuggingFace Hub into the local resources directory, typically executed during Docker image build to pre-cache models before serving. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Model downloading from HuggingFace Hub, Docker container provisioning, model version management via commit hashes. \par \b Input\/ \:  Resources directory path. \par \b Output\/ \:  Downloaded model files (JSON, PTH, ZIP, PT) placed in the resources directory. \par \b Links\/ \:  [USES_API(9): huggingface_hub.hf_hub_download; READS_DATA_FROM(8): model_hash_dict] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>All models are downloaded with pinned commit hashes from model_hash_dict for reproducibility.</para>
+</listitem><listitem><para>Download failures are not caught — they fail fast during container build. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why download models in advance rather than on-demand? A: Dedoc serves document processing in a Docker container; downloading multi-GB models at request time would cause unacceptable latency. Pre-provisioning ensures instant availability. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>DATA 10[Model version hashes] =&gt; model_hash_dict FUNC 9[Downloads single model from HuggingFace] =&gt; download_from_hub FUNC 10[Downloads all required models] =&gt; download \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[download]: DockerBuilder =&gt; ProvisionAllModels =&gt; ReadyForInference</para>
+</listitem><listitem><para>[download_from_hub]: ModelManager =&gt; FetchSpecificModel =&gt; ModelFileSaved </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/download_models.py" line="105" column="1" bodyfile="dedoc/download_models.py" bodystart="105" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/download_models.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1line__with__meta" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::line_with_meta</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta" prot="public">dedoc::api::schema::line_with_meta::LineWithMeta</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1line__with__meta_1a1f51f2c7affc5546ba3a1eabf8268b87" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::line_with_meta.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.line_with_meta.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_with_meta.py" line="33" column="1" bodyfile="dedoc/api/schema/line_with_meta.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1line__with__meta_1a8734257d7c71d059745494271ac58d6c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.line_with_meta._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.line_with_meta._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the LineWithMeta schema — a Pydantic model for a single text line with its inline annotations (font styles, links, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Text line data model with annotations. \par \b Input\/ \:  None (standalone model, references Annotation). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>LineWithMeta</computeroutput> with text and annotations fields. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel; READS_DATA_FROM(8): Annotation] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>text is the raw line content, may be empty.</para>
+</listitem><listitem><para>annotations list may be empty but never None. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why store annotations as a flat list rather than nested? A: Flat list is simpler for JSON serialization and allows overlapping annotations (e.g., bold+italic on same range). \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Text line with inline annotations] =&gt; LineWithMeta \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[LineWithMeta]: LineExtractor =&gt; AnnotateTextRange =&gt; PassToCellOrNode </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_with_meta.py" line="20" column="1" bodyfile="dedoc/api/schema/line_with_meta.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/line_with_meta.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

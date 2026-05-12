@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_79009a3820e6d24947f39a46d16e7db9" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__utils_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="img__processing_8py">img_processing.py</innerfile>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__utils_2utils_8py">utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/"/>
+  </compounddef>
+</doxygen>

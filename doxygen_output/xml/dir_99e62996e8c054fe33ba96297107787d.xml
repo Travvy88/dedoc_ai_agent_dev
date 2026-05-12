@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_99e62996e8c054fe33ba96297107787d" kind="dir">
+    <compoundname>dedoc/structure_extractors</compoundname>
+    <innerdir refid="dir_3160db9c93224d4f27db381e87fc7111">dedoc/structure_extractors/concrete_structure_extractors</innerdir>
+    <innerdir refid="dir_d91281f4284286534f49ad4c9bbfce9e">dedoc/structure_extractors/feature_extractors</innerdir>
+    <innerdir refid="dir_25bf0415c0645b53989f9b551d7f8e1b">dedoc/structure_extractors/hierarchy_level_builders</innerdir>
+    <innerdir refid="dir_4ccedf54827d976b7a1d1fcad0251c77">dedoc/structure_extractors/line_type_classifiers</innerdir>
+    <innerdir refid="dir_9885485abdc7262bbd89c3079e0d3fa7">dedoc/structure_extractors/patterns</innerdir>
+    <innerfile refid="structure__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__structure__extractor_8py">abstract_structure_extractor.py</innerfile>
+    <innerfile refid="structure__extractor__composition_8py">structure_extractor_composition.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/"/>
+  </compounddef>
+</doxygen>

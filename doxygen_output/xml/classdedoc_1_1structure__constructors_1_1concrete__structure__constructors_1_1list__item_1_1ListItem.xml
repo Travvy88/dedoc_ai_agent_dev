@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem::item</definition>
+        <argsstring></argsstring>
+        <name>item</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="53" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ab15d19b0f900b1caf10cdbbdc462d945" compoundref="list__item_8py" startline="99" endline="100">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1adc3e870e4c63ffa5c3890935987a3e03" compoundref="list__item_8py" startline="79" endline="92">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a7aa92117bb127362597abe120751af84" compoundref="list__item_8py" startline="107" endline="108">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__ne__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1af55fa42f48efd5a20736f6c28c55a5eb" compoundref="list__item_8py" startline="123" endline="124">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__str__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a39266fea3971c6159be9783318931af4" compoundref="list__item_8py" startline="63" endline="72">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.get_parent</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ad5937db003e7b6eb99d0d3919c3fd4c4" compoundref="list__item_8py" startline="115" endline="116">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.is_first_item</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem::end_type</definition>
+        <argsstring></argsstring>
+        <name>end_type</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="54" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ab15d19b0f900b1caf10cdbbdc462d945" compoundref="list__item_8py" startline="99" endline="100">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1adc3e870e4c63ffa5c3890935987a3e03" compoundref="list__item_8py" startline="79" endline="92">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a7aa92117bb127362597abe120751af84" compoundref="list__item_8py" startline="107" endline="108">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__ne__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1af55fa42f48efd5a20736f6c28c55a5eb" compoundref="list__item_8py" startline="123" endline="124">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__str__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a39266fea3971c6159be9783318931af4" compoundref="list__item_8py" startline="63" endline="72">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.get_parent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a1ecf87596dd5a5c9b2927a48525ad9f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__init__</definition>
+        <argsstring>(self, List[int] item, str end)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>item</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize a ListItem from a level list and end delimiter string. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  List[int], str -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="52" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="52" bodyend="56"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a39266fea3971c6159be9783318931af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;ListItem&quot;</type>
+        <definition> &quot;ListItem&quot; dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.get_parent</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_parent</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.get_parent</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compute the parent ListItem by decrementing the last level; remove trailing zero levels. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None (uses self) -&gt; ListItem \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="63" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="63" bodyend="72"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" compoundref="list__item_8py" startline="54">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1adc3e870e4c63ffa5c3890935987a3e03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__lt__</definition>
+        <argsstring>(self, &quot;ListItem&quot; item)</argsstring>
+        <name>__lt__</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__lt__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;ListItem&quot;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compare two ListItems lexicographically by their level lists; return False if end_types differ. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  ListItem -&gt; bool \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="79" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="79" bodyend="92"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" compoundref="list__item_8py" startline="54">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ab15d19b0f900b1caf10cdbbdc462d945" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__eq__</definition>
+        <argsstring>(self, &quot;ListItem&quot; item)</argsstring>
+        <name>__eq__</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__eq__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;ListItem&quot;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check equality: same level list and same end_type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  ListItem -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="99" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="99" bodyend="100"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" compoundref="list__item_8py" startline="54">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a7aa92117bb127362597abe120751af84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__ne__</definition>
+        <argsstring>(self, &quot;ListItem&quot; item)</argsstring>
+        <name>__ne__</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__ne__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;ListItem&quot;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check inequality: different level list or different end_type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  ListItem -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="107" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="107" bodyend="108"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" compoundref="list__item_8py" startline="54">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ad5937db003e7b6eb99d0d3919c3fd4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.is_first_item</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_first_item</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.is_first_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Determine if this item is the root of a list hierarchy (level [1]). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="115" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="115" bodyend="116"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1af55fa42f48efd5a20736f6c28c55a5eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.__str__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Produce a human-readable string representation: &quot;1.2.3.&quot; or &quot;1.2.3)&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="123" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="123" bodyend="124"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" compoundref="list__item_8py" startline="54">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.end_type</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" compoundref="list__item_8py" startline="53">dedoc.structure_constructors.concrete_structure_constructors.list_item.ListItem.item</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1a0c57353795449385f0700ea5647aaa75" compoundref="data__structures_2annotation_8py" startline="77" endline="78">dedoc.data_structures.annotation.Annotation.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a7779b220dda6fc7493fcd0e381d0ff5d" compoundref="cell_8py" startline="79" endline="82">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a565bcd1f42c3995b69b93f3ceaeef88a" compoundref="text__with__bbox_8py" startline="48" endline="50">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a6f05208ffa507d861cc2be9eedeaf6c9" compoundref="word__with__bbox_8py" startline="23" endline="25">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a4c345e691196f07d00ba00134687557f" compoundref="prefix_8py" startline="124" endline="127">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__repr__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Model a multi-level list item (e.g., &quot;1.2.3.&quot; or &quot;1.2.3)&quot;) with hierarchy navigation and lexicographic comparison for tree structure construction. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="47" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="47" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ab15d19b0f900b1caf10cdbbdc462d945" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>__eq__</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a1ecf87596dd5a5c9b2927a48525ad9f4" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1adc3e870e4c63ffa5c3890935987a3e03" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>__lt__</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a7aa92117bb127362597abe120751af84" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>__ne__</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1af55fa42f48efd5a20736f6c28c55a5eb" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>__str__</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1aac1ee4e94c35d4dab75bb418a2c1a2e7" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>end_type</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a39266fea3971c6159be9783318931af4" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>get_parent</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1ad5937db003e7b6eb99d0d3919c3fd4c4" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>is_first_item</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem_1a4144d7271e32e178fb07f0fdd64ef577" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</scope><name>item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

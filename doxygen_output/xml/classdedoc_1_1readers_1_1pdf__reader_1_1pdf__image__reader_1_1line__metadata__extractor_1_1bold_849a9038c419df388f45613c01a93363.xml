@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a06953372b1e76f9597d06bdeb59e4f4d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer::significance_level</definition>
+        <argsstring></argsstring>
+        <name>significance_level</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.significance_level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1ad355d9d9d10eaa2b6d08e209c7682b00" compoundref="agglomerative__clusterizer_8py" startline="81" endline="86">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f_criterion_homogeneous</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a321023bdeed7a38a098aecbe70447344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="13" bodyend="15"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a99c0a37e68e6600ccf213673bb9c796b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.clusterize</definition>
+        <argsstring>(self, np.ndarray x)</argsstring>
+        <name>clusterize</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.clusterize</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="18" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="18" bodyend="23"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a82c8200b4e45e2ef31fafdc9e5a3a59a" compoundref="agglomerative__clusterizer_8py" startline="37" endline="42">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_clusters</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a174c293907382f8cd3f90922f24885f5" compoundref="agglomerative__clusterizer_8py" startline="45" endline="65">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_indicator</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a3bd1862e5e2e9caa5c1328270681463d" compoundref="agglomerative__clusterizer_8py" startline="26" endline="34">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_prop_vectors</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a3bd1862e5e2e9caa5c1328270681463d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_prop_vectors</definition>
+        <argsstring>(self, np.ndarray x)</argsstring>
+        <name>__get_prop_vectors</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_prop_vectors</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="26" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="26" bodyend="34"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a99c0a37e68e6600ccf213673bb9c796b" compoundref="agglomerative__clusterizer_8py" startline="18" endline="23">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.clusterize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a82c8200b4e45e2ef31fafdc9e5a3a59a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_clusters</definition>
+        <argsstring>(self, np.ndarray x_vectors)</argsstring>
+        <name>__get_clusters</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_clusters</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x_vectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="37" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="37" bodyend="42"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a99c0a37e68e6600ccf213673bb9c796b" compoundref="agglomerative__clusterizer_8py" startline="18" endline="23">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.clusterize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a174c293907382f8cd3f90922f24885f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_indicator</definition>
+        <argsstring>(self, np.ndarray x, np.ndarray x_clusters)</argsstring>
+        <name>__get_indicator</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_indicator</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x_clusters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="45" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="45" bodyend="65"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1aaaf718aeb38536e7a5652aac8fda5095" compoundref="agglomerative__clusterizer_8py" startline="68" endline="78">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f1_homogeneous</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1ad355d9d9d10eaa2b6d08e209c7682b00" compoundref="agglomerative__clusterizer_8py" startline="81" endline="86">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f_criterion_homogeneous</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a99c0a37e68e6600ccf213673bb9c796b" compoundref="agglomerative__clusterizer_8py" startline="18" endline="23">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.clusterize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1aaaf718aeb38536e7a5652aac8fda5095" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f1_homogeneous</definition>
+        <argsstring>(self, np.ndarray x, np.ndarray x_clusters)</argsstring>
+        <name>__get_f1_homogeneous</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f1_homogeneous</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>x_clusters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="68" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="68" bodyend="78"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a174c293907382f8cd3f90922f24885f5" compoundref="agglomerative__clusterizer_8py" startline="45" endline="65">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_indicator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1ad355d9d9d10eaa2b6d08e209c7682b00" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f_criterion_homogeneous</definition>
+        <argsstring>(self, int n, int p=2)</argsstring>
+        <name>__get_f_criterion_homogeneous</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_f_criterion_homogeneous</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="81" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="81" bodyend="86"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a06953372b1e76f9597d06bdeb59e4f4d" compoundref="agglomerative__clusterizer_8py" startline="14">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.significance_level</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a174c293907382f8cd3f90922f24885f5" compoundref="agglomerative__clusterizer_8py" startline="45" endline="65">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.agglomerative_clusterizer.BoldAgglomerativeClusterizer.__get_indicator</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/agglomerative_clusterizer.py" bodystart="11" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a82c8200b4e45e2ef31fafdc9e5a3a59a" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__get_clusters</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1aaaf718aeb38536e7a5652aac8fda5095" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__get_f1_homogeneous</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1ad355d9d9d10eaa2b6d08e209c7682b00" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__get_f_criterion_homogeneous</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a174c293907382f8cd3f90922f24885f5" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__get_indicator</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a3bd1862e5e2e9caa5c1328270681463d" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__get_prop_vectors</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a321023bdeed7a38a098aecbe70447344" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a99c0a37e68e6600ccf213673bb9c796b" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>clusterize</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363_1a06953372b1e76f9597d06bdeb59e4f4d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::agglomerative_clusterizer::BoldAgglomerativeClusterizer</scope><name>significance_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1common" kind="namespace" language="Python">
+    <compoundname>dedoc::common</compoundname>
+    <innernamespace refid="namespacededoc_1_1common_1_1exceptions">dedoc::common::exceptions</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1common_1af25e813dc4daa353ac814a8e4cff4d39" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.common._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.common._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To serve as the root package for common dedoc utilities, errors, and shared infrastructure used across all processing modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package namespace initialization, shared exception re-export surface. \par \b Input\/ \:  None \par \b Output\/ \:  None (namespace package marker) \par \b Links\/ \:  [READS_DATA_FROM(8): <ref refid="namespacededoc_1_1common_1_1exceptions" kindref="compound">dedoc.common.exceptions</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This is always a namespace package — no runtime logic. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why does this file exist empty? A: Python requires <bold>init</bold>.py for package discovery in legacy namespace packages. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup added.] \par \b Module Map\/ \:</para>
+<para>PKG 2[Namespace package marker] =&gt; common \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[common]: AnyModule → ImportCommon → SharedUtilitiesAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/__init__.py" line="19" column="1" bodyfile="dedoc/common/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/common/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

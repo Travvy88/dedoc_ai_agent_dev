@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2line__with__meta_8py" kind="file" language="Python">
+    <compoundname>line_with_meta.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta" prot="public">dedoc::api::schema::line_with_meta::LineWithMeta</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1line__with__meta">dedoc::api::schema::line_with_meta</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1line__with__meta" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>TextLine;<sp/>CONCEPT(8):<sp/>AnnotatedText,<sp/>InlineFormatting;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>LineWithMeta<sp/>schema<sp/>—<sp/>a<sp/>Pydantic<sp/>model<sp/>for<sp/>a<sp/>single<sp/>text<sp/>line<sp/>with<sp/>its<sp/>inline<sp/>annotations<sp/>(font<sp/>styles,<sp/>links,<sp/>etc.).</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Text<sp/>line<sp/>data<sp/>model<sp/>with<sp/>annotations.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model,<sp/>references<sp/>Annotation).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`LineWithMeta`<sp/>with<sp/>text<sp/>and<sp/>annotations<sp/>fields.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel;<sp/>READS_DATA_FROM(8):<sp/>Annotation]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>text<sp/>is<sp/>the<sp/>raw<sp/>line<sp/>content,<sp/>may<sp/>be<sp/>empty.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>annotations<sp/>list<sp/>may<sp/>be<sp/>empty<sp/>but<sp/>never<sp/>None.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>store<sp/>annotations<sp/>as<sp/>a<sp/>flat<sp/>list<sp/>rather<sp/>than<sp/>nested?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>Flat<sp/>list<sp/>is<sp/>simpler<sp/>for<sp/>JSON<sp/>serialization<sp/>and<sp/>allows<sp/>overlapping<sp/>annotations<sp/>(e.g.,<sp/>bold+italic<sp/>on<sp/>same<sp/>range).</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>10[Text<sp/>line<sp/>with<sp/>inline<sp/>annotations]<sp/>=&gt;<sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[LineWithMeta]:<sp/>LineExtractor<sp/>=&gt;<sp/>AnnotateTextRange<sp/>=&gt;<sp/>PassToCellOrNode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1api_1_1schema_1_1line__with__meta_1a8734257d7c71d059745494271ac58d6c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1line__with__meta_1a8734257d7c71d059745494271ac58d6c" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>line,<sp/>text,<sp/>annotations,<sp/>inline,<sp/>bold,<sp/>italic,<sp/>font,<sp/>Pydantic,<sp/>schema,<sp/>formatting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>→<sp/>LineWithMeta<sp/>┌text:str,<sp/>annotations:List[Annotation]┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Field</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1annotation" kindref="compound">dedoc.api.schema.annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacededoc_1_1api_1_1schema_1_1line__with__meta_1a1f51f2c7affc5546ba3a1eabf8268b87" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_LineWithMeta<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>AnnotatedText;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Represent<sp/>a<sp/>single<sp/>text<sp/>line<sp/>with<sp/>its<sp/>associated<sp/>character-level<sp/>annotations<sp/>(font<sp/>styles,<sp/>links,<sp/>references)<sp/>for<sp/>rich<sp/>text<sp/>rendering.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">##<sp/>@io<sp/>(text,<sp/>annotations)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Textual<sp/>line<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>text<sp/>annotations.</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>text:<sp/>text<sp/>of<sp/>the<sp/>line</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>annotations:<sp/>text<sp/>annotations<sp/>(font,<sp/>size,<sp/>bold,<sp/>italic,<sp/>etc.)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>text:<sp/>str</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>annotations:<sp/>List[Annotation]</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="48" refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1af9e398d0117af698a5eba799c7973e25" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>text:<sp/>str<sp/>=<sp/>Field(description=&quot;Text<sp/>of<sp/>the<sp/>line&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;Some<sp/>text&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49" refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>annotations:<sp/>List[Annotation]<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Text<sp/>annotations<sp/>(font,<sp/>size,<sp/>bold,<sp/>italic,<sp/>etc.)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_LineWithMeta</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/line_with_meta.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1document__metadata" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::document_metadata</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata" prot="public">dedoc::data_structures::document_metadata::DocumentMetadata</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1document__metadata_1a00e03f3af175ae1cae934012bbdc379a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::document_metadata.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.document_metadata.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/document_metadata.py" line="7" column="1" bodyfile="dedoc/data_structures/document_metadata.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1document__metadata_1a9033e85a0d404e0072841c999dc9cd48" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.document_metadata._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.document_metadata._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the DocumentMetadata data structure — holds file-level metadata and supports dynamic attribute addition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document metadata: file info, timestamps, UID generation, extensible attributes. \par \b Input\/ \:  File name, temp name, size, timestamps, MIME type, optional UID, extra kwargs. \par \b Output\/ \:  DocumentMetadata instance with auto-generated or provided UID. \par \b Links\/ \:  [INHERITS(5): Serializable, USES_API(8): ApiDocumentMetadata] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>uid is always a non-empty string (auto-generated if not provided) \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use **kwargs for extensibility? A: Different document formats have different metadata fields; kwargs enable format-specific extensions without schema changes. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Document metadata container] =&gt; DocumentMetadata METHOD 5[Add dynamic attribute] =&gt; add_attribute METHOD 8[API schema conversion] =&gt; to_api_schema \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DocumentMetadata]: Reader → ExtractFileMetadata → DocumentMetadataStored </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/document_metadata.py" line="117" column="1" bodyfile="dedoc/data_structures/document_metadata.py" bodystart="117" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/document_metadata.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

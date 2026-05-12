@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1cell__with__meta" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::cell_with_meta</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta" prot="public">dedoc::api::schema::cell_with_meta::CellWithMeta</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1cell__with__meta_1ab9e07c339fd2381cf98ff1a366064403" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::cell_with_meta.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="33" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1cell__with__meta_1a8f68d488d297ac08567f55c940fe1d1b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.cell_with_meta._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the CellWithMeta schema — a Pydantic model for a single table cell containing text lines and HTML-like cell properties (colspan, rowspan). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Table cell data model for document tables. \par \b Input\/ \:  None (standalone model, references LineWithMeta). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>CellWithMeta</computeroutput> with lines, colspan, rowspan, invisible fields. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel; READS_DATA_FROM(8): LineWithMeta] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>colspan &gt;= 1, rowspan &gt;= 1.</para>
+</listitem><listitem><para>lines is never empty for visible cells (invisible=False). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why model cells as having multiple LineWithMeta lines? A: A single table cell can contain multiple lines of text with individual annotations, mirroring real document structure. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Table cell with text lines and span attributes] =&gt; CellWithMeta \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[CellWithMeta]: TableRenderer =&gt; IterateCells =&gt; RenderHTMLTableCell </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="20" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/cell_with_meta.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

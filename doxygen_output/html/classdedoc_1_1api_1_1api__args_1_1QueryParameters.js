@@ -1,0 +1,28 @@
+var classdedoc_1_1api_1_1api__args_1_1QueryParameters =
+[
+    [ "to_dict", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ab6a59c3e5e4d4981a2c4457a73dcc341", null ],
+    [ "delimiter", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a561a03655582ea09214fea3b81ff50a3", null ],
+    [ "document_orientation", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a4c82c1802337636beeb2d8ee3fe43192", null ],
+    [ "document_type", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a82d099084746b027f86844eda3813dbd", null ],
+    [ "each_page_textual_layer_detection", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a35e73b65f6e53d6c5f21a7bd1fd53ccc", null ],
+    [ "encoding", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a4c3dedb29862ed749171353f67185bd4", null ],
+    [ "handle_invisible_table", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#abe6c654a9dbfcee300319e86c3092241", null ],
+    [ "html_fields", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ae98b6d63efed82f3e4abf4212d61f9c6", null ],
+    [ "is_one_column_document", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a88fb764609efdf0cafd5f8e7827c97d4", null ],
+    [ "language", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#acb4b04c57178d6bfa561b9811d4c3934", null ],
+    [ "need_binarization", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a78665a86867ba7119c8ab483cff6d276", null ],
+    [ "need_content_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a296df6da3348b2b83958db01c2f5b05a", null ],
+    [ "need_gost_frame_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a073cbe604f9833edca724d936890d083", null ],
+    [ "need_header_footer_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#af9b7cbe307f52a0d0d247c672bc3b3f6", null ],
+    [ "need_pdf_table_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ae0e9ee7ec7b183081cc9ae17b6765f46", null ],
+    [ "pages", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ae6f01091509d030bf17be5f372859c4f", null ],
+    [ "patterns", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ac5bd7021afb50a429e9217ae30a4f2c6", null ],
+    [ "pdf_with_text_layer", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a24b6b8471a62500325d72e55da2026c0", null ],
+    [ "recursion_deep_attachments", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#acdc410e80f47e349a868a0f981997adf", null ],
+    [ "return_base64", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ad9b5f1b85db04a9ba6330be4d599c63a", null ],
+    [ "return_format", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a13e8fba56c45b6d5647f810187aa7b20", null ],
+    [ "structure_type", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a81656c911c1b834069f8512beb6563c9", null ],
+    [ "table_type", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a3bc512c5faa0058ee85a3c326d81e912", null ],
+    [ "textual_layer_classifier", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#af2620b826596b3aba4d1411386a38c17", null ],
+    [ "with_attachments", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#aa687c828fa2922281c2639b771073bfe", null ]
+];

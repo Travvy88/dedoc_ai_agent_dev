@@ -1,0 +1,16 @@
+var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#ae8b6d3e98e9652bdfc8e145f8014265e", null ],
+    [ "__normalize_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#aa2d8c23f205d3b45f16c05c2e149dc69", null ],
+    [ "__process_document", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a72adf950ff1fe03d390a877395dac1a6", null ],
+    [ "_diff_left_right_indent", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#ac62393c3dce92fb78c4e66675201bc69", null ],
+    [ "_get_bbox", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a5f3eee60ecb2f7a74b08a4414799f19b", null ],
+    [ "_intersection", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a66340211fd55556249f3f83ac60c55d0", null ],
+    [ "_one_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a85d20fd0e8a9421169cea2a58226ba96", null ],
+    [ "_relative_indent", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#aed7e28154f261edcb43520d4ebd53ded", null ],
+    [ "_relative_indent_new", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a17fbb90ac4c9042b56e13cc2dde43c63", null ],
+    [ "parameters", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#ace90b31876f64a132b3d69c13635bc99", null ],
+    [ "transform", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a0c66618f6da25205cd7f054263a317fe", null ],
+    [ "config", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#a0a1c3ccb8ace5d6c8b15f636b11c4a2e", null ],
+    [ "list_feature_extractor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor.html#ae664d3cd6d2cb086ccd8a634c7b0ed0f", null ]
+];

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor">dedoc::structure_extractors::abstract_structure_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors">dedoc::structure_extractors::concrete_structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors">dedoc::structure_extractors::feature_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders">dedoc::structure_extractors::hierarchy_level_builders</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers">dedoc::structure_extractors::line_type_classifiers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1patterns">dedoc::structure_extractors::patterns</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1structure__extractor__composition">dedoc::structure_extractors::structure_extractor_composition</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1afb39e4a8d1d349610ed79be48d25f0dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/__init__.py" line="14" column="1" bodyfile="dedoc/structure_extractors/__init__.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1afa756684dcc1b16c7d485e8a7c290d3f" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::structure_extractors.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.structure_extractors.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor" kindref="compound">AbstractStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structu47731f7f502a87b4521a5afc80a3fbcb" kindref="compound">AbstractLawStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b" kindref="compound">ArticleStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4" kindref="compound">ClassifyingLawStructureExtractor</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c" kindref="compound">DefaultStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1diploma__structure__ex1482285342e0b9c8129933f99444e20a" kindref="compound">DiplomaStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693" kindref="compound">FintocStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a" kindref="compound">FoivLawStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor" kindref="compound">LawStructureExtractor</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor" kindref="compound">TzStructureExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__extractors_1_1structure__extractor__composition_1_1StructureExtractorComposition" kindref="compound">StructureExtractorComposition</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/__init__.py" line="16" column="1" bodyfile="dedoc/structure_extractors/__init__.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1af5f1378b532b903eb4a11d816bd07b96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/__init__: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/__init__ \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/__init__.py" line="37" column="1" bodyfile="dedoc/structure_extractors/__init__.py" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

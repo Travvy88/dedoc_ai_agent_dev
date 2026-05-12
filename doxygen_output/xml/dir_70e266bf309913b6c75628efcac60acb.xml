@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_70e266bf309913b6c75628efcac60acb" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer</compoundname>
+    <innerdir refid="dir_f67d3033199ece5642a9b7bf23182349">dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_extractors</innerdir>
+    <innerdir refid="dir_79009a3820e6d24947f39a46d16e7db9">dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils</innerdir>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="cell__splitter_8py">cell_splitter.py</innerfile>
+    <innerfile refid="gost__frame__recognizer_8py">gost_frame_recognizer.py</innerfile>
+    <innerfile refid="split__last__hor__union__cells_8py">split_last_hor_union_cells.py</innerfile>
+    <innerfile refid="table__recognizer_8py">table_recognizer.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/"/>
+  </compounddef>
+</doxygen>

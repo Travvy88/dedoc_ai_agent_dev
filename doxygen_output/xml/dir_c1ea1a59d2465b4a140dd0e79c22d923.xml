@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_c1ea1a59d2465b4a140dd0e79c22d923" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_page</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2ocr_2ocr__page_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="ocr__block_8py">ocr_block.py</innerfile>
+    <innerfile refid="ocr__line_8py">ocr_line.py</innerfile>
+    <innerfile refid="ocr__page_8py">ocr_page.py</innerfile>
+    <innerfile refid="ocr__paragraph_8py">ocr_paragraph.py</innerfile>
+    <innerfile refid="ocr__tuple_8py">ocr_tuple.py</innerfile>
+    <innerfile refid="ocr__word_8py">ocr_word.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_page/"/>
+  </compounddef>
+</doxygen>

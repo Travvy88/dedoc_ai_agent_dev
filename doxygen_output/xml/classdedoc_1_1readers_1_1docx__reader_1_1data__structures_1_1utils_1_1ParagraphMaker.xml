@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a380aad51a914712621dabfdeda2eb26f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.counter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="48" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae13c408f5799b3097501af8cd0593768" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::path_hash</definition>
+        <argsstring></argsstring>
+        <name>path_hash</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.path_hash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="49" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ade7136621f1302c66f1a524adb0f17a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::styles_extractor</definition>
+        <argsstring></argsstring>
+        <name>styles_extractor</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.styles_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="50" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ab9d1921ec4fc9802f342f49c4658edd6" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="123" endline="148">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__make_run_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae0bbb8e7be7632adb2a71b591a8772fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::numbering_extractor</definition>
+        <argsstring></argsstring>
+        <name>numbering_extractor</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.numbering_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="51" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a120227e3a60098ada0fdd72731c73cc9" compoundref="pptx__reader_8py" startline="108" endline="119">dedoc.readers.pptx_reader.pptx_reader.PptxReader.__add_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1a18713b70103e26af33b509143986dafc" compoundref="styles__extractor_8py" startline="49" endline="95">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a95370dcedeb1b8430450b628bf336ccf" compoundref="pptx__reader_8py" startline="31" endline="75">dedoc.readers.pptx_reader.pptx_reader.PptxReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a3e3593a8178538a9baf569614ecbd170" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::footnote_extractor</definition>
+        <argsstring></argsstring>
+        <name>footnote_extractor</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.footnote_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="52" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ab8651aca973f623f6577eadafca769b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::endnote_extractor</definition>
+        <argsstring></argsstring>
+        <name>endnote_extractor</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.endnote_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="53" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae8d26e67725a0b6e6575063de14be347" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker::uids_set</definition>
+        <argsstring></argsstring>
+        <name>uids_set</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.uids_set</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="54" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a9a230b88b44bf2dbe4ef871211c36f16" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="73" endline="84">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__get_paragraph_uid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a169c274a6a8c1d66aff4aa2cd17205b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__init__</definition>
+        <argsstring>(self, str path_hash, Counter counter, StylesExtractor styles_extractor, NumberingExtractor numbering_extractor, FootnoteExtractor footnote_extractor, FootnoteExtractor endnote_extractor)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path_hash</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter" kindref="compound">Counter</ref></type>
+          <declname>counter</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor" kindref="compound">StylesExtractor</ref></type>
+          <declname>styles_extractor</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor" kindref="compound">NumberingExtractor</ref></type>
+          <declname>numbering_extractor</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor" kindref="compound">FootnoteExtractor</ref></type>
+          <declname>footnote_extractor</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor" kindref="compound">FootnoteExtractor</ref></type>
+          <declname>endnote_extractor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="41" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="47" bodyend="55"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph" kindref="compound">Paragraph</ref></type>
+        <definition> Paragraph dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</definition>
+        <argsstring>(self, Tag paragraph_xml, List[Paragraph] paragraph_list)</argsstring>
+        <name>make_paragraph</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>paragraph_xml</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>paragraph_list</declname>
+          <array>[Paragraph]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="58" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="58" bodyend="70"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a9a230b88b44bf2dbe4ef871211c36f16" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="73" endline="84">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__get_paragraph_uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a380aad51a914712621dabfdeda2eb26f" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="48">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.counter</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1abef9f46e565957607ac55399a6d71f6d" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="38">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.endnote_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ab8651aca973f623f6577eadafca769b3" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="53">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.endnote_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a03422181444056fd32add6312ab07055" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="37">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.footnote_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a3e3593a8178538a9baf569614ecbd170" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="52">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.footnote_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1aad662bce80b25d5628a0d2a23a3d401a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="39">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae0bbb8e7be7632adb2a71b591a8772fe" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="51">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1a221fd4a1973da253adf71b7317483c67" compoundref="styles__extractor_8py" startline="35">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a5dfaefe4a9447f2af3c5524a2f781989" compoundref="pptx__reader_2paragraph_8py" startline="33">dedoc.readers.pptx_reader.paragraph.PptxParagraph.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a2dba91fb41514d4f89de6ebd1ddb8d28" compoundref="pptx__reader_8py" startline="27">dedoc.readers.pptx_reader.pptx_reader.PptxReader.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1ab4b8b02f7c4aba4eb8f4300e0f9b0c35" compoundref="shape_8py" startline="27">dedoc.readers.pptx_reader.shape.PptxShape.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1ab1d9270a258f5cb5b215a4b328eb824c" compoundref="readers_2pptx__reader_2table_8py" startline="30">dedoc.readers.pptx_reader.table.PptxTable.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ac49c94390ba8f69018d2faabff3aec89" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="40">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a05fa4a254cb36f933be8a0e713760cc9" compoundref="run_8py" startline="26">dedoc.readers.docx_reader.data_structures.run.Run.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ade7136621f1302c66f1a524adb0f17a4" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="50">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a2b1da8320f872bdb4f38cf545f1ed5da" compoundref="docx__reader_2numbering__extractor_8py" startline="36">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1AbstractNum_1acfa570ebce6a87ff0c164d2634f7a1d9" compoundref="docx__reader_2numbering__extractor_8py" startline="300">dedoc.readers.docx_reader.numbering_extractor.AbstractNum.styles_extractor</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a9a230b88b44bf2dbe4ef871211c36f16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__get_paragraph_uid</definition>
+        <argsstring>(self, Tag paragraph_xml)</argsstring>
+        <name>__get_paragraph_uid</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.__get_paragraph_uid</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>paragraph_xml</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="73" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="73" bodyend="84"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae8d26e67725a0b6e6575063de14be347" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="54">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.uids_set</references>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/data_structures/utils.py" line="38" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/utils.py" bodystart="38" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a9a230b88b44bf2dbe4ef871211c36f16" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>__get_paragraph_uid</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a169c274a6a8c1d66aff4aa2cd17205b2" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a380aad51a914712621dabfdeda2eb26f" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>counter</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ab8651aca973f623f6577eadafca769b3" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>endnote_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a3e3593a8178538a9baf569614ecbd170" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>footnote_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>make_paragraph</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae0bbb8e7be7632adb2a71b591a8772fe" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>numbering_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae13c408f5799b3097501af8cd0593768" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>path_hash</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ade7136621f1302c66f1a524adb0f17a4" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>styles_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae8d26e67725a0b6e6575063de14be347" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::utils::ParagraphMaker</scope><name>uids_set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -17,13 +17,17 @@ from dedoc.utils.image_utils import get_highest_pixel_frequency
 from dedoc.utils.parameter_utils import get_path_param
 
 
+# region CLASS_OCRCellExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class OCRCellExtractor:
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict) -> None:
         super().__init__()
         self.config = config
         self.line_extractor = OCRLineExtractor(config=config)
         self.logger = config.get("logger", logging.getLogger())
 
+    # region METHOD_get_cells_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def get_cells_text(self, page_image: np.ndarray, tree_nodes: List["TableTree"], language: str) -> List[List[LineWithMeta]]:  # noqa
         for node in tree_nodes:
             node.set_crop_text_box(page_image)
@@ -65,6 +69,8 @@ class OCRCellExtractor:
 
         return self.__create_lines_with_meta(tree_nodes, originalbox_to_fastocrbox, page_image)
 
+    # region METHOD___handle_one_batch [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_get_cells_text
     def __handle_one_batch(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"], num_batch: int, language: str = "rus") \
             -> Tuple[OcrPage, List[BBox]]:  # noqa
         concatenated, chunk_boxes = self.__concat_images(src_image=src_image, tree_table_nodes=tree_table_nodes)
@@ -77,6 +83,8 @@ class OCRCellExtractor:
 
         return ocr_result, chunk_boxes
 
+    # region METHOD___concat_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_one_batch
     def __concat_images(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"]) -> Tuple[np.ndarray, List[BBox]]:  # noqa
         space = 10
         width = max((tree_node.crop_text_box.width + space for tree_node in tree_table_nodes))
@@ -107,6 +115,8 @@ class OCRCellExtractor:
         assert len(chunk_boxes) == len(tree_table_nodes)
         return stacked_image, chunk_boxes
 
+    # region METHOD___nodes2batch [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___concat_images
     def __nodes2batch(self, tree_nodes: List["TableTree"]) -> Iterator[List["TableTree"]]:  # noqa
         batch = []
         width = 0
@@ -124,6 +134,8 @@ class OCRCellExtractor:
         if len(batch) > 0:
             yield batch
 
+    # region METHOD___create_lines_with_meta [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___nodes2batch
     def __create_lines_with_meta(self, tree_nodes: List["TableTree"], original_box_to_fast_ocr_box: dict, original_image: np.ndarray) \
             -> List[List[LineWithMeta]]:  # noqa
         nodes_lines = []
@@ -150,7 +162,9 @@ class OCRCellExtractor:
 
         return nodes_lines
 
+    # endregion METHOD___create_lines_with_meta
     @staticmethod
+    # region METHOD_get_line_with_meta [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def get_line_with_meta(text: str,
                            bbox: Optional[BBox] = None,
                            image: Optional[np.ndarray] = None,
@@ -168,7 +182,9 @@ class OCRCellExtractor:
 
         return LineWithMeta(line=text, metadata=LineMetadata(page_id=0, line_id=None), annotations=annotations)
 
+    # endregion METHOD_get_line_with_meta
     @staticmethod
+    # region METHOD_upscale [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def upscale(image: Optional[np.ndarray], padding_px: int = 40) -> Tuple[Optional[np.ndarray], int]:
         if image is None or sum(image.shape) < 5:
             return image, 0
@@ -182,4 +198,32 @@ class OCRCellExtractor:
             bigger_cell = np.full((image.shape[0] + padding_px, image.shape[1] + padding_px, 3), color_backgr)
             bigger_cell[padding_px // 2:-padding_px // 2, padding_px // 2:-padding_px // 2, :] = image
 
+# endregion CLASS_OCRCellExtractor
         return bigger_cell, padding_px // 2
+
+    # endregion METHOD_upscale
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_ocr_cell_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope OCR processing pipeline for document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [16][OCRCellExtractor reader/processor] => OCRCellExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: ocr_cell_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, OCRCellExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [OCRCellExtractor] ○ can_read? → ○ read → [__init__ → get_cells_text → __handle_one_batch] → ⊕ UnstructuredDocument(lines, tables, attachments)

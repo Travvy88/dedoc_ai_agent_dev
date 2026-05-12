@@ -1,0 +1,5 @@
+var onepage__table__extractor_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935" ],
+    [ "_module_contract", "onepage__table__extractor_8py.html#a70381a8e50aa6c7d57fc694bdf3a2ac9", null ]
+];

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_85b9a051600a68424ab0c3907c204bfc" kind="dir">
+    <compoundname>dedoc/api/schema</compoundname>
+    <innerfile refid="api_2schema_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="api_2schema_2annotation_8py">annotation.py</innerfile>
+    <innerfile refid="api_2schema_2cell__with__meta_8py">cell_with_meta.py</innerfile>
+    <innerfile refid="api_2schema_2document__content_8py">document_content.py</innerfile>
+    <innerfile refid="api_2schema_2document__metadata_8py">document_metadata.py</innerfile>
+    <innerfile refid="api_2schema_2line__metadata_8py">line_metadata.py</innerfile>
+    <innerfile refid="api_2schema_2line__with__meta_8py">line_with_meta.py</innerfile>
+    <innerfile refid="api_2schema_2parsed__document_8py">parsed_document.py</innerfile>
+    <innerfile refid="api_2schema_2table_8py">table.py</innerfile>
+    <innerfile refid="api_2schema_2table__metadata_8py">table_metadata.py</innerfile>
+    <innerfile refid="api_2schema_2tree__node_8py">tree_node.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/"/>
+  </compounddef>
+</doxygen>

@@ -3,10 +3,15 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 from dedocutils.data_structures import BBox
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 from dedoc.readers.pdf_reader.data_classes.tables.cell import Cell
 from dedoc.utils.utils import flatten
 
 
+# region CLASS_CellSplitter [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class CellSplitter:
     """
     split merged cells, change table into rectangular
@@ -26,9 +31,12 @@ class CellSplitter:
      V  y
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, eps: float = 0.5) -> None:
         self.eps = eps
 
+    # region METHOD_split [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def split(self, cells: List[List[Cell]]) -> List[List[Cell]]:
         """
         split merged cells
@@ -63,7 +71,9 @@ class CellSplitter:
                     result_matrix[row_id][col_id] = Cell(bbox=bbox)
         return result_matrix
 
+    # endregion METHOD_split
     @staticmethod
+    # region METHOD___split_one_cell [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __split_one_cell(cell: Cell, horizontal_borders: np.ndarray, vertical_borders: np.ndarray, result_matrix: List[List[Cell]]) -> None:
         left_id, right_id = np.searchsorted(vertical_borders, [cell.bbox.x_top_left, cell.bbox.x_bottom_right])
         top_id, bottom_id = np.searchsorted(horizontal_borders, [cell.bbox.y_top_left, cell.bbox.y_bottom_right])
@@ -83,14 +93,18 @@ class CellSplitter:
         result_matrix[top_id][left_id].rowspan = rowspan
         result_matrix[top_id][left_id].invisible = False
 
+    # endregion METHOD___split_one_cell
     @staticmethod
+    # region METHOD___sort_unique [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __sort_unique(borders: List[int]) -> np.ndarray:
         borders = np.array(borders)
         borders.sort()
         borders = np.unique(borders)
         return borders
 
+    # endregion METHOD___sort_unique
     @staticmethod
+    # region METHOD___get_border_dict [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __get_border_dict(borders: List[int], threshold: float) -> Dict[int, int]:
         result = {}
         borders.sort()
@@ -101,6 +115,8 @@ class CellSplitter:
             result[border] = current_border
         return result
 
+    # region METHOD__merge_close_borders [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_border_dict
     def _merge_close_borders(self, cells: List[List[Cell]]) -> List[List[Cell]]:
         """
         merge close borders into one border
@@ -127,7 +143,9 @@ class CellSplitter:
             result.append(new_row)
         return result
 
+    # endregion METHOD__merge_close_borders
     @staticmethod
+    # region METHOD___get_borders [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __get_borders(cells: List[List[Cell]]) -> Tuple[List[int], List[int]]:
         horizontal_borders = []
         vertical_borders = []
@@ -137,4 +155,32 @@ class CellSplitter:
                 horizontal_borders.append(cell.bbox.y_bottom_right)
                 vertical_borders.append(cell.bbox.x_top_left)
                 vertical_borders.append(cell.bbox.x_bottom_right)
+# endregion CLASS_CellSplitter
         return horizontal_borders, vertical_borders
+
+    # endregion METHOD___get_borders
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_cell_splitter; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [14][CellSplitter reader/processor] => CellSplitter
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: cell_splitter, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, CellSplitter
+# STRUCTURE: ▶ Init ┌PDF file┐ → [CellSplitter] ○ can_read? → ○ read → [__init__ → split → __split_one_cell] → ⊕ UnstructuredDocument(lines, tables, attachments)

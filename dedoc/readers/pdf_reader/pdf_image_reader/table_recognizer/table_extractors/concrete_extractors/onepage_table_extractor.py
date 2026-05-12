@@ -16,8 +16,10 @@ from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors
 from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing import detect_tables_by_contours
 
 
+# region CLASS_OnePageTableExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class OnePageTableExtractor(BaseTableExtractor):
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict, logger: logging.Logger) -> None:
         super().__init__(config=config, logger=logger)
 
@@ -29,6 +31,8 @@ class OnePageTableExtractor(BaseTableExtractor):
         self.splitter = CellSplitter()
         self.table_options = TableTypeAdditionalOptions()
 
+    # region METHOD_extract_onepage_tables_from_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def extract_onepage_tables_from_image(self, image: np.ndarray, page_number: int, language: str, table_type: str) -> List[ScanTable]:
         """
         extracts tables from input image
@@ -52,6 +56,8 @@ class OnePageTableExtractor(BaseTableExtractor):
 
         return tables
 
+    # region METHOD___get_matrix_table_from_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_extract_onepage_tables_from_image
     def __get_matrix_table_from_tree(self, table_tree: TableTree) -> ScanTable:
         """
         Function builds matrix table from sorted cells of the tree table
@@ -78,6 +84,8 @@ class OnePageTableExtractor(BaseTableExtractor):
 
         return matrix_table
 
+    # region METHOD___build_structure_table_from_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_matrix_table_from_tree
     def __build_structure_table_from_tree(self, tables_tree: TableTree, table_type: str) -> List[ScanTable]:
         """
         Parsing all tables that exist in the tables_tree
@@ -93,6 +101,8 @@ class OnePageTableExtractor(BaseTableExtractor):
                     self.logger.warning(f"Warning: unrecognized table into page {self.page_number}. {ex}")
         return tables
 
+    # region METHOD_handle_cells [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___build_structure_table_from_tree
     def handle_cells(self, cells: List[List[Cell]], table_type: str = "") -> List[List[Cell]]:
         # Heuristic 1: The table must have 1 or more rows.
         if len(cells) < 1:
@@ -113,4 +123,32 @@ class OnePageTableExtractor(BaseTableExtractor):
         if self.config.get("debug_mode", False):
             self._print_table_attr(cells)
 
+# endregion CLASS_OnePageTableExtractor
         return cells
+
+    # endregion METHOD_handle_cells
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_onepage_table_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [10][OnePageTableExtractor reader/processor] => OnePageTableExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: onepage_table_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, OnePageTableExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [OnePageTableExtractor] ○ can_read? → ○ read → [__init__ → extract_onepage_tables_from_image → __get_matrix_table_from_tree] → ⊕ UnstructuredDocument(lines, tables, attachments)

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures</compoundname>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1annotation">dedoc::data_structures::annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1attached__file">dedoc::data_structures::attached_file</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1cell__with__meta">dedoc::data_structures::cell_with_meta</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations">dedoc::data_structures::concrete_annotations</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1document__content">dedoc::data_structures::document_content</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1document__metadata">dedoc::data_structures::document_metadata</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1hierarchy__level">dedoc::data_structures::hierarchy_level</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1line__metadata">dedoc::data_structures::line_metadata</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1line__with__meta">dedoc::data_structures::line_with_meta</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1parsed__document">dedoc::data_structures::parsed_document</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1serializable">dedoc::data_structures::serializable</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1table">dedoc::data_structures::table</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1table__metadata">dedoc::data_structures::table_metadata</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1tree__node">dedoc::data_structures::tree_node</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1unstructured__document">dedoc::data_structures::unstructured_document</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1a7027c075476383c01f30da123a15efb6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/__init__.py" line="20" column="1" bodyfile="dedoc/data_structures/__init__.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1a1f1bb31c9e0c377eeeebedddddabe75d" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::data_structures.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.data_structures.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" kindref="compound">AttachedFile</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent" kindref="compound">DocumentContent</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata" kindref="compound">DocumentMetadata</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" kindref="compound">Serializable</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1table_1_1Table" kindref="compound">Table</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" kindref="compound">TableMetadata</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta" kindref="compound">CellWithMeta</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref>&apos;, *annotations.__all__]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/__init__.py" line="22" column="1" bodyfile="dedoc/data_structures/__init__.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1ac268a78b86ae0f415c7cb97a38b21e4b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Aggregate all document data structure classes and annotations into a single public namespace for use by readers, converters, and structure extractors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Re-export of all data structure classes and annotation types. \par \b Input\/ \:  None (package-level imports). \par \b Output\/ \:  Unified <bold>all</bold> list containing all public data structure symbols. \par \b Links\/ \:  [EXPORTS(10): Annotation, AttachedFile, CellWithMeta, DocumentContent, DocumentMetadata, HierarchyLevel, LineMetadata, LineWithMeta, ParsedDocument, Serializable, Table, TableMetadata, TreeNode, UnstructuredDocument, all_concrete_annotations] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> includes all public symbols from submodules \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why aggregate all symbols here? A: Provides a single import point for all data structures, simplifying downstream code. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>MODULE 10[Central data structure exports] =&gt; <bold>init</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>init</bold>]: DownstreamModule → ImportDataStructures → AllSymbolsAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/__init__.py" line="45" column="1" bodyfile="dedoc/data_structures/__init__.py" bodystart="45" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

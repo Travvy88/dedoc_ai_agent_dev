@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_9de901488e810f1db12272c7c22a7306" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/data_classes/tables</compoundname>
+    <innerfile refid="readers_2pdf__reader_2data__classes_2tables_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="cell_8py">cell.py</innerfile>
+    <innerfile refid="location_8py">location.py</innerfile>
+    <innerfile refid="scantable_8py">scantable.py</innerfile>
+    <innerfile refid="table__tree_8py">table_tree.py</innerfile>
+    <innerfile refid="table__type_8py">table_type.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/data_classes/tables/"/>
+  </compounddef>
+</doxygen>

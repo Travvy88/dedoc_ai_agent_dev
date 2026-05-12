@@ -1,0 +1,7 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model =
+[
+    [ "CNNModel", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel" ],
+    [ "GlyphRecognitionModel", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model.html#af160c8c63554f511dede798d382350b9", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model.html#acb48ebbd42fbc6bcc3cd81ff702836e2", null ]
+];

@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a30a4312251eb551ac01a13d9b3275450" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader::extractor_layer</definition>
+        <argsstring></argsstring>
+        <name>extractor_layer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.extractor_layer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="33" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1aae9afc6c7d1c68213d5802b8245b78b3" compoundref="pdf__broken__encoding__reader_8py" startline="45" endline="52">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader._postprocess</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab669c5ae43e93b8b7b05a29bb8eaac5e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader::reader_key</definition>
+        <argsstring></argsstring>
+        <name>reader_key</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.reader_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="34" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" compoundref="pdf__txtlayer__reader_8py" startline="38" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed">__init__</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="27" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="27" bodyend="35"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0" compoundref="pdf__txtlayer__reader_8py" startline="27" endline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0" compoundref="pdf__txtlayer__reader_8py" startline="27" endline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</definition>
+        <argsstring>(self, Optional[str] file_path=None, Optional[str] mime=None, Optional[str] extension=None, Optional[dict] parameters=None)</argsstring>
+        <name>can_read</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a74c200b2e9c35e651c9d2341577defda">can_read</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1af70da659e1f2ba64a08e9f625d031860">can_read</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>file_path</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Check if the document extension is suitable for this reader (PDF format is supported only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns <computeroutput>True</computeroutput> only when the key <computeroutput>pdf_with_text_layer</computeroutput> with value <computeroutput>true</computeroutput> is set in the dictionary <computeroutput>parameters</computeroutput>.</para>
+<para>You can look to :ref:<computeroutput>pdf_handling_parameters</computeroutput> to get more information about <computeroutput>parameters</computeroutput> dictionary possible arguments.</para>
+<para>Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.can_read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="38" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="38" bodyend="49"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" compoundref="pdf__txtlayer__reader_8py" startline="38" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1ace2c6f13211c270e34d63b89ec5985d4" compoundref="pdf__broken__encoding__reader_8py" startline="28">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.reader_key</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab669c5ae43e93b8b7b05a29bb8eaac5e" compoundref="pdf__txtlayer__reader_8py" startline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.reader_key</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" compoundref="pdf__txtlayer__reader_8py" startline="38" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a35303570075aac7694451f3e676fa24f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5">read</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>The method return document content with all document&apos;s lines, tables and attachments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This reader is able to add some additional information to the <computeroutput>tag_hierarchy_level</computeroutput> of :class:<computeroutput>~dedoc.data_structures.LineMetadata</computeroutput> (<computeroutput>can_be_multiline</computeroutput> attribute is important for paragraph extraction). Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters.</para>
+<para>You can also see :ref:<computeroutput>pdf_handling_parameters</computeroutput> to get more information about <computeroutput>parameters</computeroutput> dictionary possible arguments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="52" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="52" bodyend="54"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a35303570075aac7694451f3e676fa24f" compoundref="pdf__txtlayer__reader_8py" startline="52" endline="54">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.read</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a35303570075aac7694451f3e676fa24f" compoundref="pdf__txtlayer__reader_8py" startline="52" endline="54">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" kindref="compound">ScanTable</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" kindref="compound">PdfImageAttachment</ref>], List[float]]</type>
+        <definition> Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], List[float]] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</definition>
+        <argsstring>(self, ndarray image, ParametersForParseDoc parameters, int page_number, str path)</argsstring>
+        <name>_process_one_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a7f7ad373211efbc9451dc8228ea1d845">_process_one_page</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>ParametersForParseDoc</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_number</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="57" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="61" bodyend="91"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a88bf5f8675d036d385c63dc24b003d8d" compoundref="pdf__txtlayer__reader_8py" startline="110" endline="120">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__change_table_boxes_page_width_heigth</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afda3b5c6630eaab73fd5d57392c41b8b" compoundref="pdf__base__reader_8py" startline="288" endline="295">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._convert_to_gray</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1abb6a09793d8374d7fc8246f018208bf2" compoundref="pdf__txtlayer__reader_8py" startline="123" endline="135">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._inside_any_unreadable_block</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a9397b55c6f8fa572f41e646c26ee4c30" compoundref="pdf__txtlayer__reader_8py" startline="94" endline="107">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._move_table_cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a9c76f9a56f9d7a35951374e3f4dd66d8" compoundref="pdf__broken__encoding__reader_8py" startline="27">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.extractor_layer</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a30a4312251eb551ac01a13d9b3275450" compoundref="pdf__txtlayer__reader_8py" startline="33">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.extractor_layer</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91459b0c4c8ec06f0c9ecd42addff2d4" compoundref="pdf__base__reader_8py" startline="173">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.gost_frame_boxes</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a2d373189312cd4842d41342c2dfe0fbb" compoundref="pdf__base__reader_8py" startline="55">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.metadata_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afc9f1b5af7931179e681b5b6f9f1501f" compoundref="pdf__base__reader_8py" startline="54">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.table_recognizer</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a9397b55c6f8fa572f41e646c26ee4c30" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._move_table_cells</definition>
+        <argsstring>(self, List[ScanTable] tables, BBox page_shift, Tuple[int, int] page)</argsstring>
+        <name>_move_table_cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._move_table_cells</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>tables</declname>
+          <array>[ScanTable]</array>
+        </param>
+        <param>
+          <type>BBox</type>
+          <declname>page_shift</declname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>page</declname>
+          <array>[int, int]</array>
+        </param>
+        <briefdescription>
+<para>Move tables back to original coordinates when parsing a document containing a gost frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="94" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="94" bodyend="107"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1abb6a09793d8374d7fc8246f018208bf2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._inside_any_unreadable_block</definition>
+        <argsstring>(self, BBox obj_bbox, List[BBox] unreadable_blocks)</argsstring>
+        <name>_inside_any_unreadable_block</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._inside_any_unreadable_block</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>BBox</type>
+          <declname>obj_bbox</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>unreadable_blocks</declname>
+          <array>[BBox]</array>
+        </param>
+        <briefdescription>
+<para>Check obj_bbox inside some unreadable blocks or not :param obj_bbox: [&quot;x_top_left&quot;, &quot;y_top_left&quot;, &quot;width&quot;, &quot;height&quot;] :param unreadable_blocks: List[&quot;x_top_left&quot;, &quot;y_top_left&quot;, &quot;width&quot;, &quot;height&quot;] :return: Boolean. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="123" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="123" bodyend="135"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a88bf5f8675d036d385c63dc24b003d8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__change_table_boxes_page_width_heigth</definition>
+        <argsstring>(self, int pdf_width, int pdf_height, List[ScanTable] tables)</argsstring>
+        <name>__change_table_boxes_page_width_heigth</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.__change_table_boxes_page_width_heigth</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pdf_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pdf_height</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>tables</declname>
+          <array>[ScanTable]</array>
+        </param>
+        <briefdescription>
+<para>Change table boxes&apos; width height into pdf space like textual lines. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="110" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="110" bodyend="120"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class allows to extract content (text, tables, attachments) from the .pdf documents with a textual layer (copyable documents). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It uses a pdfminer library for content extraction.</para>
+<para>For more information, look to <computeroutput>pdf_with_text_layer</computeroutput> option description in :ref:<computeroutput>pdf_handling_parameters</computeroutput>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" line="18" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.py" bodystart="18" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a88bf5f8675d036d385c63dc24b003d8d" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>__change_table_boxes_page_width_heigth</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1abb6a09793d8374d7fc8246f018208bf2" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>_inside_any_unreadable_block</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a9397b55c6f8fa572f41e646c26ee4c30" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>_move_table_cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>_process_one_page</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>can_read</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a30a4312251eb551ac01a13d9b3275450" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>extractor_layer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a35303570075aac7694451f3e676fa24f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>read</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab669c5ae43e93b8b7b05a29bb8eaac5e" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_txtlayer_reader::PdfTxtlayerReader</scope><name>reader_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

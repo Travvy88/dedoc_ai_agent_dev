@@ -1,0 +1,6 @@
+var namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e =
+[
+    [ "LawStructureUnitBuilder", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e.html#a8d7ddb7ca4f3298c1f83e273ff73911e", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e.html#a0b101d1a87c60ded846b672d7b7de562", null ]
+];

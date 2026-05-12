@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+#portal-columns { width: 100% !important; }
+
+#portal-column-one { vertical-align: top; width: 13em; }
+
+#portal-column-content { vertical-align: top; margin: 0px; padding: 0px; }
+
+#portal-column-two { vertical-align: top; width: 12em; }
+
+#portal-column-one .visualPadding { padding: 2em 0em 1em 2em; }
+
+#portal-column-content .visualPadding { padding: 0em 2em 1em; }
+
+#portal-column-two .visualPadding { padding: 2em 2em 1em 0em; }

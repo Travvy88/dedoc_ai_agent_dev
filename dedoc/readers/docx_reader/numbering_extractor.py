@@ -1,6 +1,10 @@
 import re
 from typing import Dict, List, Optional
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 from bs4 import BeautifulSoup, Tag
 
 from dedoc.readers.docx_reader.data_structures.base_props import BaseProperties
@@ -9,12 +13,14 @@ from dedoc.readers.docx_reader.styles_extractor import StyleType, StylesExtracto
 from dedoc.readers.docx_reader.windows_font_mapping import windows_mapping
 
 
+# region CLASS_NumberingExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class NumberingExtractor:
     """
     Parsing of styles of the paragraphs which are list items.
     Gets the text of the list numbering and may add some annotations like boldness, font size, etc.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, xml: Optional[BeautifulSoup], styles_extractor: StylesExtractor) -> None:
         """
         :param xml: BeautifulSoup tree with numberings from word/numberings.xml file
@@ -36,6 +42,8 @@ class NumberingExtractor:
         # dictionary with num properties
         self.num_dict = {num_id: Num(num_id, abstract_num_dict, num_dict, styles_extractor) for num_id in num_dict}
 
+    # region METHOD_parse [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def parse(self, xml: Tag, paragraph_properties: BaseProperties, run_properties: BaseProperties) -> None:
         """
         Parses numPr content and extracts properties for paragraph for given numId and list level.
@@ -85,6 +93,8 @@ class NumberingExtractor:
         run_properties.text = text
         paragraph_properties.list_level = self.state.levels_count
 
+    # region METHOD___get_list_item_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_parse
     def __get_list_item_text(self, ilvl: str, num_id: str) -> str:
         """
         Counts list item number and it's text.
@@ -145,6 +155,8 @@ class NumberingExtractor:
         text += lvl_info.suff
         return text
 
+    # region METHOD___get_next_number [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_list_item_text
     def __get_next_number(self, num_id: str, level: str) -> str:
         """
         Computes the shift from the first item for given list and text of next item according to the shift.
@@ -166,9 +178,12 @@ class NumberingExtractor:
             shift = lvl_info.start
             self.state.numerations_dict[(abstract_num_id, ilvl)] = shift
 
+# endregion CLASS_NumberingExtractor
         return self.numbering_formatter.get_text(lvl_info.num_fmt, shift - 1)
 
 
+# region CLASS_NumberingFormatter [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
+    # endregion METHOD___get_next_number
 class NumberingFormatter:
 
     # this is realization of the numFmtList tag
@@ -184,6 +199,7 @@ class NumberingFormatter:
     )
     roman_mapping = [(1000, "m"), (500, "d"), (100, "c"), (50, "l"), (10, "x"), (5, "v"), (1, "i")]
 
+    # region METHOD_get_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def get_text(self, num_fmt: str, shift: int) -> str:
         """
         Computes the next item of the list sequence.
@@ -214,14 +230,18 @@ class NumberingFormatter:
                 if num_fmt == "upperRoman":
                     letter = chr(ord(letter) + ord("A") - ord("a"))
                 result += letter * cnt
+# endregion CLASS_NumberingFormatter
             return result
 
 
+# region CLASS_NumberingState [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
+    # endregion METHOD_get_text
 class NumberingState:
     """
     Class with intermediate values of list levels and items numbers during document parsing
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self) -> None:
         # {(abstractNumId, ilvl): current number for list element}
         self.numerations_dict = dict()
@@ -239,14 +259,18 @@ class NumberingState:
         self.prev_abstract_num_id = None
 
         # the number of levels for current list
+# endregion CLASS_NumberingState
         self.levels_count = 1
 
 
+# region CLASS_LevelInfo [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
+    # endregion METHOD___init__
 class LevelInfo:
     """
     Stores properties for each list level.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self) -> None:
         # refers to "lvlText", "numFmt", "start", "lvlRestart", "restart", "suff", "styleId", "pPr", "rPr" tags
         self.lvl_text = ""
@@ -257,13 +281,17 @@ class LevelInfo:
         self.suff = "\t"
         self.style_id = None
         self.pPr = None
+# endregion CLASS_LevelInfo
         self.rPr = None
 
 
+# region CLASS_AbstractNum [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
+    # endregion METHOD___init__
 class AbstractNum:
 
     suffix_dict = dict(nothing="", space=" ", tab="\t")
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, tree: Tag, styles_extractor: StylesExtractor) -> None:
         """
         :param tree: BeautifulSoup tree with abstractNum content
@@ -284,6 +312,8 @@ class AbstractNum:
         # properties for each list level {level number: LevelInfo}
         self.level_number2level_info = dict()
 
+    # region METHOD_parse [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def parse(self, lvl_list: List[Tag]) -> None:
         """
         Save information about levels in self.levels
@@ -331,10 +361,14 @@ class AbstractNum:
                 level_info.restart = True
                 level_info.start = int(lvl.startOverride["w:val"])
 
+# endregion CLASS_AbstractNum
             self.level_number2level_info[ilvl] = level_info
 
 
+# region CLASS_Num [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
+    # endregion METHOD_parse
 class Num(AbstractNum):
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, num_id: str, abstract_num_dict: Dict[str, Tag], num_dict: Dict[str, Tag], styles_extractor: StylesExtractor) -> None:
         """
         :param num_id: numId for num element
@@ -359,4 +393,37 @@ class Num(AbstractNum):
         # override some of abstractNum properties
         if num_tree.lvlOverride:
             lvl_list = num_tree.find_all("w:lvlOverride")
+# endregion CLASS_Num
             self.parse(lvl_list)
+
+    # endregion METHOD___init__
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_numbering_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse DOCX documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Feature and metadata extraction from documents.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [8][NumberingExtractor reader/processor] => NumberingExtractor
+## CLASS [2][NumberingFormatter reader/processor] => NumberingFormatter
+## CLASS [2][NumberingState reader/processor] => NumberingState
+## CLASS [2][LevelInfo reader/processor] => LevelInfo
+## CLASS [4][AbstractNum reader/processor] => AbstractNum
+## CLASS [2][Num reader/processor] => Num
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(DOCX) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: numbering_extractor, dedoc, reader, DOCX, DocxReader, BaseReader, DOCX, Word, UnstructuredDocument, LineWithMeta, attachments, numbering, styles, properties, paragraph, footnote, NumberingExtractor, NumberingFormatter, NumberingState, LevelInfo, AbstractNum, Num
+# STRUCTURE: ▶ Init ┌DOCX file┐ → [NumberingExtractor] ○ can_read? → ○ read → [__init__ → parse → __get_list_item_text] → ⊕ UnstructuredDocument(lines, tables, attachments)

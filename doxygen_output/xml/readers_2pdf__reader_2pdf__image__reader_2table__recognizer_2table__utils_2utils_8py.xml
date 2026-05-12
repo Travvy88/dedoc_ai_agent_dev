@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__utils_2utils_8py" kind="file" language="Python">
+    <compoundname>utils.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader">dedoc::readers::pdf_reader::pdf_image_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List,<sp/>Tuple</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1a0c403daed9fba6898d9324a8b8a6b32d" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell" kindref="compound">dedoc.readers.pdf_reader.data_classes.tables.cell</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Cell</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1a0ba5614c7cfa0e25e77b599e9bad3f15" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">equal_with_eps(x:<sp/>int,<sp/>y:<sp/>int,<sp/>eps:<sp/>int<sp/>=<sp/>10)<sp/>-&gt;<sp/>bool:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>y<sp/>+<sp/>eps<sp/>&gt;=<sp/>x<sp/>&gt;=<sp/>y<sp/>-<sp/>eps</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1af3b31cd783bf12ea9e93ef1c3ed11305" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_highest_pixel_frequency(image:<sp/>np.ndarray)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>unique,<sp/>counts<sp/>=<sp/>np.unique(image.reshape(-1,<sp/>1),<sp/>axis=0,<sp/>return_counts=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(counts)<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>np.uint8(255)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/>unique[np.argmax(counts)][0]</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>color<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/>np.uint8(255)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>color</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1a857c93923b2e667c73b9401e7db6507e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">similarity(s1:<sp/>str,<sp/>s2:<sp/>str)<sp/>-&gt;<sp/>float:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;string<sp/>similarity&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>difflib</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>normalized1<sp/>=<sp/>s1.lower()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>normalized2<sp/>=<sp/>s2.lower()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>matcher<sp/>=<sp/>difflib.SequenceMatcher(</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>normalized1,<sp/>normalized2)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matcher.ratio()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1aa492392cd28407675e2aad0386ad8665" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1aa492392cd28407675e2aad0386ad8665" kindref="member">get_statistic_values</ref>(cells:<sp/>List[List[Cell]])<sp/>-&gt;<sp/>Tuple[int,<sp/>int,<sp/>int,<sp/>int]:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt_rows<sp/>=<sp/>len(cells)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt_columns<sp/>=<sp/>len(cells[0])<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cnt_rows<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>0</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt_cell<sp/>=<sp/>cnt_columns<sp/>*<sp/>cnt_rows</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>cnt_attr_cell<sp/>=<sp/>len([cell<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>row<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>cells<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>cell<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>row<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cell.is_attribute])</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cnt_attr_cell,<sp/>cnt_cell,<sp/>cnt_columns,<sp/>cnt_rows</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_utils;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>PDF<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@scope<sp/>Table<sp/>recognition<sp/>and<sp/>extraction<sp/>from<sp/>document<sp/>images.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>FUNC<sp/>[5][equal_with_eps<sp/>utility/helper]<sp/>=&gt;<sp/>equal_with_eps</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>FUNC<sp/>[5][get_highest_pixel_frequency<sp/>utility/helper]<sp/>=&gt;<sp/>get_highest_pixel_frequency</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>FUNC<sp/>[5][similarity<sp/>utility/helper]<sp/>=&gt;<sp/>similarity</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">##<sp/>FUNC<sp/>[5][get_statistic_values<sp/>utility/helper]<sp/>=&gt;<sp/>get_statistic_values</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(PDF)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1a3dc09b1ba335f8907d560e7ab7a23005" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1utils_1a3dc09b1ba335f8907d560e7ab7a23005" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>utils,<sp/>dedoc,<sp/>reader,<sp/>PDF,<sp/>PdfReader,<sp/>BaseReader,<sp/>PDF,<sp/>pdfminer,<sp/>tabby,<sp/>OCR,<sp/>tables,<sp/>image,<sp/>txtlayer,<sp/>columns,<sp/>orientation,<sp/>paragraphs,<sp/>metadata,<sp/>extraction,<sp/>line,<sp/>bbox,<sp/>equal_with_eps,<sp/>get_highest_pixel_frequency,<sp/>similarity,<sp/>get_statistic_values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Input<sp/>→<sp/>○<sp/>equal_with_eps<sp/>→<sp/>get_highest_pixel_frequency<sp/>→<sp/>similarity<sp/>→<sp/>⊕<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/utils.py"/>
+  </compounddef>
+</doxygen>

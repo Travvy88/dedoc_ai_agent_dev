@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="serializable_8py" kind="file" language="Python">
+    <compoundname>serializable.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public">dedoc::data_structures::serializable::Serializable</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1serializable">dedoc::data_structures::serializable</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1serializable" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>abc<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ABC,<sp/>abstractmethod</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacededoc_1_1data__structures_1_1serializable_1a1a346df4f07f0e84c0cdb4270b15c4c0" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_Serializable<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>DataStructures;<sp/>CONCEPT(9):<sp/>Serialization,<sp/>AbstractBase;<sp/>TECH(6):<sp/>Python,<sp/>ABC,<sp/>Pydantic]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Abstract<sp/>base<sp/>class<sp/>for<sp/>all<sp/>data<sp/>structures<sp/>that<sp/>must<sp/>be<sp/>convertible<sp/>to<sp/>API<sp/>schema<sp/>Pydantic<sp/>models.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" kindref="compound">Serializable</ref>(ABC):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Base<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">for<sp/>the<sp/>API<sp/>schema<sp/>objects<sp/>which<sp/>we<sp/>later<sp/>need<sp/>convert<sp/>to<sp/>dict.</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_to_api_schema<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>Serialization;<sp/>TECH(6):<sp/>Python,<sp/>Pydantic]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Convert<sp/>class<sp/>data<sp/>to<sp/>the<sp/>corresponding<sp/>API<sp/>schema<sp/>Pydantic<sp/>model.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>None<sp/>-&gt;<sp/>BaseModel</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@abstractmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d" kindref="member">to_api_schema</ref>(self)<sp/>-&gt;<sp/>BaseModel:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Convert<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">data<sp/>into<sp/>the<sp/>corresponding<sp/>API<sp/>schema<sp/>class.</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">:<sp/>API<sp/>schema<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_to_api_schema</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_Serializable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>DataStructures;<sp/>CONCEPT(9):<sp/>Serialization,<sp/>AbstractBase;<sp/>TECH(6):<sp/>Python,<sp/>ABC,<sp/>Pydantic]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>Serializable<sp/>abstract<sp/>base<sp/>class<sp/>—<sp/>the<sp/>contract<sp/>that<sp/>all<sp/>data<sp/>structures<sp/>must<sp/>implement<sp/>to<sp/>enable<sp/>API<sp/>schema<sp/>conversion.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">##<sp/>@scope<sp/>Abstract<sp/>base<sp/>for<sp/>API<sp/>serialization:<sp/>single<sp/>abstract<sp/>method<sp/>to_api_schema.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(abstract).</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">##<sp/>@output<sp/>BaseModel<sp/>(API<sp/>schema<sp/>instance).</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">##<sp/>@links<sp/>[USES_API(10):<sp/>pydantic.BaseModel,<sp/>INHERITED_BY(10):<sp/>Annotation,<sp/>CellWithMeta,<sp/>DocumentContent,<sp/>DocumentMetadata,<sp/>LineMetadata,<sp/>LineWithMeta,<sp/>ParsedDocument,<sp/>Table,<sp/>TableMetadata,<sp/>TreeNode]</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">##<sp/>-<sp/>All<sp/>subclasses<sp/>must<sp/>implement<sp/>to_api_schema<sp/>returning<sp/>a<sp/>BaseModel</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>use<sp/>ABC<sp/>instead<sp/>of<sp/>Protocol?</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">##<sp/>A:<sp/>ABC<sp/>enforces<sp/>implementation<sp/>at<sp/>class<sp/>definition<sp/>time,<sp/>catching<sp/>errors<sp/>early.<sp/>It&apos;s<sp/>simpler<sp/>and<sp/>more<sp/>explicit<sp/>than<sp/>typing.Protocol<sp/>for<sp/>this<sp/>use<sp/>case.</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>CLASS<sp/>10[Serializable<sp/>abstract<sp/>base]<sp/>=&gt;<sp/>Serializable</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>METHOD<sp/>10[API<sp/>schema<sp/>conversion]<sp/>=&gt;<sp/>to_api_schema</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>-<sp/>[Serializable]:<sp/>APIHandler<sp/>→<sp/>ConvertToApiSchema<sp/>→<sp/>ApiResponseBuilt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="namespacededoc_1_1data__structures_1_1serializable_1a22f24fa65a823741f2297935a6ffe8b9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1serializable_1a22f24fa65a823741f2297935a6ffe8b9" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>Serializable,<sp/>abstract,<sp/>base,<sp/>ABC,<sp/>API,<sp/>schema,<sp/>Pydantic,<sp/>BaseModel,<sp/>to_api_schema,<sp/>serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Serializable<sp/>(ABC)<sp/>→<sp/>◇<sp/>@abstractmethod<sp/>to_api_schema()<sp/>→<sp/>⎋<sp/>BaseModel<sp/>(subclass<sp/>contract)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/serializable.py"/>
+  </compounddef>
+</doxygen>

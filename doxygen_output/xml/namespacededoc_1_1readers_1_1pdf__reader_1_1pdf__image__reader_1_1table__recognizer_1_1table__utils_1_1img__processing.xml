@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils::img_processing</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ada3295f4e9521e2d5a86f5620b129cd8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils::img_processing.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.logger</qualifiedname>
+        <initializer>=  get_config().get(&quot;logger&quot;, logging.getLogger())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1aa6c491f9a5633aedaf2954013245c597" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils::img_processing.table_options</definition>
+        <argsstring></argsstring>
+        <name>table_options</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.table_options</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions" kindref="compound">TableTypeAdditionalOptions</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="16" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a6f3c5a70a9f1f659ba7b1111b115e875" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_utils::img_processing.ROTATE_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>ROTATE_THRESHOLD</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.ROTATE_THRESHOLD</qualifiedname>
+        <initializer>=  0.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="18" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ac48a36bdac7a8c9ac8cde76fc04ff778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.rotate_with_threshold</definition>
+        <argsstring>(np.ndarray img, float angle, float threshold=None, *dict config)</argsstring>
+        <name>rotate_with_threshold</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.rotate_with_threshold</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>rotates a table image and saving image.shape during rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It is important for word bounding box extraction </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="21" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="21" bodyend="33"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" compoundref="img__processing_8py" startline="67" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ae416a6bfec258914781eb4d163f9bc92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[np.ndarray, int]</type>
+        <definition> Tuple[np.ndarray, int] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.apply_houph_line</definition>
+        <argsstring>(np.ndarray img, int threshold_gap=10, *dict config)</argsstring>
+        <name>apply_houph_line</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.apply_houph_line</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threshold_gap</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="34" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="34" bodyend="66"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a4d5bd7e6cdf5c708a1a9644d57a50829" compoundref="img__processing_8py" startline="169" endline="188">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__apply_houph_lines_and_detect_angle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[Any, Any, np.ndarray, float]</type>
+        <definition> [Any, Any, np.ndarray, float] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</definition>
+        <argsstring>(np.ndarray img, str table_type, *dict config)</argsstring>
+        <name>get_contours_cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>table_type</declname>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>function&apos;s steps: 1) detects Houph lines for detecting rotate angle. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Then input image has rotated on the rotate angle. 2) performs morphological operations under rotated images for detecting horizontal and vertical lines 3) on found lines detects tree contours with help cv2.findContours :param img: input image :param config: dict from <ref refid="config_8py" kindref="compound">config.py</ref> :return: contours, contours&apos;s hierarchy, rotated image, rotate angle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="67" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="67" bodyend="117"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a4d5bd7e6cdf5c708a1a9644d57a50829" compoundref="img__processing_8py" startline="169" endline="188">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__apply_houph_lines_and_detect_angle</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a89131415233dcb9c89868bb8952cde69" compoundref="img__processing_8py" startline="118" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_contours_for_table_wo_external_bounds</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a995ab946cc036d06692267eeb0ba2567" compoundref="img__processing_8py" startline="241" endline="252">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__paint_bounds</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ac48a36bdac7a8c9ac8cde76fc04ff778" compoundref="img__processing_8py" startline="21" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.rotate_with_threshold</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ad91be9556a90ddfdaf05234b47460398" compoundref="img__processing_8py" startline="253" endline="278">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.detect_tables_by_contours</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a89131415233dcb9c89868bb8952cde69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[Any, Any]</type>
+        <definition> [Any, Any] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_contours_for_table_wo_external_bounds</definition>
+        <argsstring>(np.ndarray img, np.ndarray img_with_contours, List contours, List hierarchy, dict config)</argsstring>
+        <name>__get_contours_for_table_wo_external_bounds</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_contours_for_table_wo_external_bounds</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img_with_contours</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>contours</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>hierarchy</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="118" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="118" bodyend="146"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a1b2e637918a74922fcd0f3280d57717b" compoundref="img__processing_8py" startline="147" endline="162">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__filter_table</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a25c0b9b69ff6b8b6d5fa437b2cae5317" compoundref="img__processing_8py" startline="163" endline="168">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_table_contours</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" compoundref="img__processing_8py" startline="67" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a1b2e637918a74922fcd0f3280d57717b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__filter_table</definition>
+        <argsstring>(np.ndarray image, np.ndarray table_image)</argsstring>
+        <name>__filter_table</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__filter_table</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>table_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="147" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="147" bodyend="162"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a89131415233dcb9c89868bb8952cde69" compoundref="img__processing_8py" startline="118" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_contours_for_table_wo_external_bounds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a25c0b9b69ff6b8b6d5fa437b2cae5317" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[np.ndarray, np.ndarray]</type>
+        <definition> [np.ndarray, np.ndarray] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_table_contours</definition>
+        <argsstring>(np.ndarray contours, List hierarchy)</argsstring>
+        <name>__get_table_contours</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_table_contours</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>contours</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>hierarchy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="163" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="163" bodyend="168"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a89131415233dcb9c89868bb8952cde69" compoundref="img__processing_8py" startline="118" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__get_contours_for_table_wo_external_bounds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a4d5bd7e6cdf5c708a1a9644d57a50829" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[np.ndarray, float]</type>
+        <definition> [np.ndarray, float] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__apply_houph_lines_and_detect_angle</definition>
+        <argsstring>(np.ndarray image, dict config)</argsstring>
+        <name>__apply_houph_lines_and_detect_angle</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__apply_houph_lines_and_detect_angle</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="169" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="169" bodyend="188"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ae416a6bfec258914781eb4d163f9bc92" compoundref="img__processing_8py" startline="34" endline="66">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.apply_houph_line</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" compoundref="img__processing_8py" startline="67" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ac4989917ad4c8a0eb43b08a7c0053f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.detect_horizontal_and_vertical_lines</definition>
+        <argsstring>(np.ndarray img_bin, dict config, str task)</argsstring>
+        <name>detect_horizontal_and_vertical_lines</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.detect_horizontal_and_vertical_lines</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img_bin</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="189" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="189" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a995ab946cc036d06692267eeb0ba2567" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__paint_bounds</definition>
+        <argsstring>(np.ndarray image)</argsstring>
+        <name>__paint_bounds</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.__paint_bounds</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="241" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="241" bodyend="252"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" compoundref="img__processing_8py" startline="67" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1ad91be9556a90ddfdaf05234b47460398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree" kindref="compound">TableTree</ref>, List[np.ndarray], float]</type>
+        <definition> [TableTree, List[np.ndarray], float] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.detect_tables_by_contours</definition>
+        <argsstring>(np.ndarray img, str language=&quot;rus&quot;, str table_type=&quot;&quot;, *dict config)</argsstring>
+        <name>detect_tables_by_contours</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.detect_tables_by_contours</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+          <defval>&quot;rus&quot;</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>table_type</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>detecting contours and TreeTable with help contour analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TreeTable is :param img: input image :param language: parameter language for Tesseract :param config: dict from <ref refid="config_8py" kindref="compound">config.py</ref> :return: TreeTable, contour, rotate angle </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="253" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="253" bodyend="278"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a2c424c0bb0d11c252334320ddc160dc5" compoundref="img__processing_8py" startline="67" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing.get_contours_cells</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__utils_1_1img__processing_1a47b881d82ef3f921c19928f9c4d97012" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_processing._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Table recognition and extraction from document images. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][rotate_with_threshold utility/helper] =&gt; rotate_with_threshold FUNC [5][apply_houph_line utility/helper] =&gt; apply_houph_line FUNC [5][get_contours_cells utility/helper] =&gt; get_contours_cells FUNC [5][__get_contours_for_table_wo_external_bounds utility/helper] =&gt; __get_contours_for_table_wo_external_bounds FUNC [5][__filter_table utility/helper] =&gt; __filter_table FUNC [5][__get_table_contours utility/helper] =&gt; __get_table_contours FUNC [5][__apply_houph_lines_and_detect_angle utility/helper] =&gt; __apply_houph_lines_and_detect_angle FUNC [5][detect_horizontal_and_vertical_lines utility/helper] =&gt; detect_horizontal_and_vertical_lines FUNC [5][__paint_bounds utility/helper] =&gt; __paint_bounds FUNC [5][detect_tables_by_contours utility/helper] =&gt; detect_tables_by_contours \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="305" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" bodystart="305" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_utils/img_processing.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

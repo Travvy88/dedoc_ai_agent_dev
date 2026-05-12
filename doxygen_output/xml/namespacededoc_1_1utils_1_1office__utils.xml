@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1office__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::office_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1office__utils_1a7bb4c372fc5d708b1c8d905e225ae083" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::office_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.office_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/office_utils.py" line="37" column="1" bodyfile="dedoc/utils/office_utils.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1office__utils_1abe2d60dac0f762dd65866cb8d23a91fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.office_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.office_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To extract and parse XML content from Office Open XML format files (docx, pptx, xlsx) via zipfile + BeautifulSoup, serving as a shared utility for Office format readers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  ZIP archive XML extraction, whitespace normalization, BeautifulSoup tree construction. \par \b Input\/ \:  Path to office format file, internal XML path. \par \b Output\/ \:  BeautifulSoup XML tree or None if the file is not found inside the archive. \par \b Links\/ \:  [USES_API(7): zipfile, BeautifulSoup] \par \b Links to Spec\/ \:  REQ-OFFICE-001 \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Returns None for missing internal XML paths without raising.</para>
+</listitem><listitem><para>Raises BadFileFormatError on corrupted ZIP archives. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why remove whitespace between XML tags? A: Office XML files often contain formatting whitespace that interferes with BeautifulSoup parsing. Pre-cleaning yields cleaner parse trees. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 8[XML extraction from Office ZIP] =&gt; get_bs_from_zip \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_bs_from_zip]: DocxReader → ExtractDocumentXML → BeautifulSoup tree for parsing </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/office_utils.py" line="21" column="1" bodyfile="dedoc/utils/office_utils.py" bodystart="21" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1office__utils_1a0f7bccdb62c274272ab9c6b2a81e0b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[BeautifulSoup]</type>
+        <definition> Optional[BeautifulSoup] dedoc.utils.office_utils.get_bs_from_zip</definition>
+        <argsstring>(str zip_path, str xml_path, bool remove_spaces=False)</argsstring>
+        <name>get_bs_from_zip</name>
+        <qualifiedname>dedoc.utils.office_utils.get_bs_from_zip</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>zip_path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>xml_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>remove_spaces</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract a specific XML file from an Office Open XML archive and parse it into a BeautifulSoup tree, with optional inter-tag whitespace removal for pptx. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  zipfile, re, BeautifulSoup, BadFileFormatError \par \b I/O\/ \:  (str, str, bool) -&gt; Optional[BeautifulSoup] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/office_utils.py" line="45" column="1" bodyfile="dedoc/utils/office_utils.py" bodystart="45" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/office_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

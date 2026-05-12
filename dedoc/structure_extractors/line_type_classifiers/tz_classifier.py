@@ -7,15 +7,32 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.structure_extractors.feature_extractors.tz_feature_extractor import TzTextFeatures
 from dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier import AbstractPickledLineTypeClassifier
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_TzLineTypeClassifier [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @purpose TzLineTypeClassifier for document structure extraction pipeline
 class TzLineTypeClassifier(AbstractPickledLineTypeClassifier):
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, classifier_type: str, path: str, *, config: dict) -> None:
         super().__init__(config=config)
+
+        self.logger.debug(f"[IMP:4][TzLineTypeClassifier][__init___INIT] Starting")
         self.classifier, feature_extractor_parameters = self.load(classifier_type, path)
         self.feature_extractor = TzTextFeatures(**feature_extractor_parameters)
 
+    # endregion METHOD___init__
+    # region METHOD_predict [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose predict method
+    ## @io Input -> Output
+    ## @complexity 5
     def predict(self, lines: List[LineWithMeta]) -> List[str]:
+        self.logger.debug(f"[IMP:4][TzLineTypeClassifier][predict_INIT] Starting")
         """
         get predictions from xgb classifier and patch them according to our prior knowledge. For example we know that
         title can not be interrupted with other structures. Empty line can not be item or toc item (but can be part of
@@ -71,14 +88,26 @@ class TzLineTypeClassifier(AbstractPickledLineTypeClassifier):
         assert len(predictions) == len(lines)
         return predictions
 
+    # endregion METHOD_predict
+    # region METHOD___is_auto_toc_line [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __is_auto_toc_line method
+    ## @io Input -> Output
+    ## @complexity 5
     def __is_auto_toc_line(self, line: LineWithMeta) -> bool:
+        self.logger.debug(f"[IMP:4][TzLineTypeClassifier][__is_auto_toc_line_INIT] Starting")
         annotations = line.annotations
         for annotation in annotations:
             if annotation.name == "style":
                 return annotation.value.lower().startswith("toc") or annotation.value.lower().startswith("contents")
         return False
 
+    # endregion METHOD___is_auto_toc_line
+    # region METHOD__postprocess_labels [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _postprocess_labels method
+    ## @io Input -> Output
+    ## @complexity 5
     def _postprocess_labels(self, lines: List[LineWithMeta], predictions: List[str]) -> List[str]:
+        self.logger.debug(f"[IMP:4][TzLineTypeClassifier][_postprocess_labels_INIT] Starting")
         assert len(lines) == len(predictions)
         sizes = [self._get_size(line) for line in lines]
         median_size = np.median(sizes)
@@ -92,9 +121,41 @@ class TzLineTypeClassifier(AbstractPickledLineTypeClassifier):
                 result.append(prediction)
         return result
 
+    # endregion METHOD__postprocess_labels
+    # region METHOD__get_size [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _get_size method
+    ## @io Input -> Output
+    ## @complexity 5
     def _get_size(self, line: LineWithMeta) -> float:
+        self.logger.debug(f"[IMP:4][TzLineTypeClassifier][_get_size_INIT] Starting")
         caps = 1 if line.line.isupper() and len(line.line.strip()) > 4 else 0
         for annotation in line.annotations:
             if annotation.name == SizeAnnotation.name:
                 return float(annotation.value) + caps
         return 0 + caps
+
+    # endregion METHOD__get_size
+# endregion CLASS_TzLineTypeClassifier
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/line_type_classifiers/tz_classifier: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/line_type_classifiers/tz_classifier
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => TzLineTypeClassifier
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, line type classifiers, tz classifier
+# STRUCTURE: ▶ structure_extractors/line_type_classifiers/tz_classifier → ○ TzLineTypeClassifier.cls → ⎋ result

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="readers_2archive__reader_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1archive__reader">dedoc::readers::archive_reader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1archive__reader" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_archive_reader;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Package<sp/>init<sp/>—<sp/>marks<sp/>archive_reader<sp/>as<sp/>a<sp/>dedoc<sp/>reader<sp/>subpackage.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Symbol<sp/>re-export.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>None.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>-<sp/>This<sp/>file<sp/>may<sp/>be<sp/>empty.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup.]</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>[10][Empty<sp/>package<sp/>init<sp/>—<sp/>as<sp/>designed.]</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>-<sp/>[init]:<sp/>Python<sp/>(Import)<sp/>→<sp/>LoadSubpackage<sp/>→<sp/>ModuleReady</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacededoc_1_1readers_1_1archive__reader_1acfeb4c9b03dac82c9030b22df658c222" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1archive__reader_1acfeb4c9b03dac82c9030b22df658c222" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>archive_reader,<sp/>reader,<sp/>dedoc,<sp/>package,<sp/>init,<sp/>__init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>imports<sp/>→<sp/>⊕<sp/>symbol<sp/>re-exports</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/archive_reader/__init__.py"/>
+  </compounddef>
+</doxygen>

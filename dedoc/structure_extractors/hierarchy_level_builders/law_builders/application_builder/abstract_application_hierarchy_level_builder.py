@@ -10,7 +10,12 @@ from dedoc.structure_extractors.hierarchy_level_builders.abstract_hierarchy_leve
 from dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit import AbstractStructureUnit
 from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexps_item_with_bracket, regexps_number, roman_regexp
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_AbstractApplicationHierarchyLevelBuilder [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @purpose AbstractApplicationHierarchyLevelBuilder for document structure extraction pipeline
 class AbstractApplicationHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
     starting_line_types = ["application"]
     regexps_item = regexps_item_with_bracket
@@ -18,12 +23,23 @@ class AbstractApplicationHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, ab
     regexp_application_begin = LawTextFeatures.regexp_application_begin
     roman_regexp = roman_regexp
 
+    # region METHOD_structure_unit_builder [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose structure_unit_builder method
+    ## @io Input -> Output
+    ## @complexity 5
     @property
     @abc.abstractmethod
     def structure_unit_builder(self) -> AbstractStructureUnit:
+        self.logger.debug(f"[IMP:4][AbstractApplicationHierarchyLevelBuilder][structure_unit_builder_INIT] Starting")
         pass
 
+    # endregion METHOD_structure_unit_builder
+    # region METHOD_get_lines_with_hierarchy [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_lines_with_hierarchy method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_lines_with_hierarchy(self, lines_with_labels: List[Tuple[LineWithMeta, str]], init_hl_depth: int) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractApplicationHierarchyLevelBuilder][get_lines_with_hierarchy_INIT] Starting")
         if len(lines_with_labels) == 0:
             return []
         result = []
@@ -56,7 +72,13 @@ class AbstractApplicationHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, ab
 
         return result
 
+    # endregion METHOD_get_lines_with_hierarchy
+    # region METHOD__line_2level [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _line_2level method
+    ## @io Input -> Output
+    ## @complexity 5
     def _line_2level(self, text: str, label: str, init_hl_depth: int, previous_hl: HierarchyLevel = None) -> Tuple[HierarchyLevel, Optional[HierarchyLevel]]:
+        self.logger.debug(f"[IMP:4][AbstractApplicationHierarchyLevelBuilder][_line_2level_INIT] Starting")
         text = text.strip()
         if len(text) == 0:
             label = HierarchyLevel.raw_text
@@ -89,3 +111,29 @@ class AbstractApplicationHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, ab
                 return HierarchyLevel.create_raw_text(), None
         else:
             raise Exception(f"{text} {label}")
+
+    # endregion METHOD__line_2level
+# endregion CLASS_AbstractApplicationHierarchyLevelBuilder
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/hierarchy_level_builders/law_builders/application_builder/abstract_application_hierarchy_level_builder: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/hierarchy_level_builders/law_builders/application_builder/abstract_application_hierarchy_level_builder
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => AbstractApplicationHierarchyLevelBuilder
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, hierarchy level builders, law builders, application builder, abstract application hierarchy level builder
+# STRUCTURE: ▶ structure_extractors/hierarchy_level_builders/law_builders/application_builder/abstract_application_hierarchy_level_builder → ○ AbstractApplicationHierarchyLevelBuilder.cls → ⎋ result

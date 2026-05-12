@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="size__annotation_8py" kind="file" language="Python">
+    <compoundname>size_annotation.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation" prot="public">dedoc::data_structures::concrete_annotations::size_annotation::SizeAnnotation</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations">dedoc::data_structures::concrete_annotations</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation">dedoc::data_structures::concrete_annotations::size_annotation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1annotation" kindref="compound">dedoc.data_structures.annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1a52a0e97c0dcfb31db0c2e9dc3d42f799" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_SizeAnnotation<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>FontSize;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Store<sp/>font<sp/>size<sp/>of<sp/>some<sp/>part<sp/>of<sp/>the<sp/>line<sp/>in<sp/>points<sp/>(1/72<sp/>of<sp/>an<sp/>inch).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation" kindref="compound">SizeAnnotation</ref>(<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/>annotation<sp/>contains<sp/>the<sp/>font<sp/>size<sp/>of<sp/>some<sp/>part<sp/>of<sp/>the<sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>points<sp/>(1/72<sp/>of<sp/>an<sp/>inch).</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>These<sp/>units<sp/>of<sp/>measurement<sp/>are<sp/>taken<sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>the<sp/>standard<sp/>Office<sp/>Open<sp/>XML<sp/>File<sp/>Formats.</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="15" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation_1a1df7b390fde99ffcc1c00648c5fb217d" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;size&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Initialize<sp/>size<sp/>annotation<sp/>with<sp/>validated<sp/>numeric<sp/>value.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>Annotation.__init__</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(int,<sp/>int,<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation_1a5808d7466f043fcc0300d2dc4e995f1f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation_1a5808d7466f043fcc0300d2dc4e995f1f" kindref="member">__init__</ref>(self,<sp/>start:<sp/>int,<sp/>end:<sp/>int,<sp/>value:<sp/>str)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>start:<sp/>start<sp/>of<sp/>the<sp/>annotated<sp/>text</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>end:<sp/>end<sp/>of<sp/>the<sp/>annotated<sp/>text<sp/>(</highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>included)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>value:<sp/>font<sp/>size<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>points<sp/>(1/72<sp/>of<sp/>an<sp/>inch)<sp/>how<sp/>it</highlight><highlight class="stringliteral">&apos;s<sp/>defined<sp/>in<sp/>DOCX<sp/>format</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f&quot;[IMP:4][SizeAnnotation][INIT]<sp/>start={start},<sp/>end={end},<sp/>value={value}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>float(value)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>ValueError:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&quot;the<sp/>value<sp/>of<sp/>size<sp/>annotation<sp/>should<sp/>be<sp/>a<sp/>number&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation_1a5808d7466f043fcc0300d2dc4e995f1f" kindref="member">__init__</ref>(start=start,<sp/>end=end,<sp/>name=SizeAnnotation.name,<sp/>value=value)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][SizeAnnotation][INIT]<sp/>SizeAnnotation<sp/>created<sp/>successfully&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_SizeAnnotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>FontSize;<sp/>TECH(3):<sp/>DataStructure,<sp/>Python,<sp/>DOCX]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>font<sp/>size<sp/>annotation<sp/>—<sp/>stores<sp/>font<sp/>size<sp/>in<sp/>points<sp/>(DOCX<sp/>standard).</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>@scope<sp/>Text<sp/>annotation<sp/>for<sp/>font<sp/>size<sp/>formatting.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">##<sp/>@input<sp/>Font<sp/>size<sp/>value<sp/>as<sp/>string<sp/>(numeric,<sp/>points).</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">##<sp/>@output<sp/>SizeAnnotation<sp/>instance.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">##<sp/>@links<sp/>[INHERITS(9):<sp/>Annotation,<sp/>READS_DATA_FROM(8):<sp/>DOCX_format]</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>-<sp/>value<sp/>is<sp/>parseable<sp/>as<sp/>float</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>store<sp/>font<sp/>size<sp/>in<sp/>points?</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>A:<sp/>Points<sp/>(1/72<sp/>inch)<sp/>is<sp/>the<sp/>standard<sp/>DOCX<sp/>font<sp/>size<sp/>unit,<sp/>preserving<sp/>precision.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>CLASS<sp/>10[Font<sp/>size<sp/>text<sp/>annotation]<sp/>=&gt;<sp/>SizeAnnotation</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>-<sp/>[SizeAnnotation]:<sp/>Reader<sp/>→<sp/>ExtractFontSize<sp/>→<sp/>SizeAnnotationStored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1a09aa63ca85c0be3d72d285ac4f9cb648" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1a09aa63ca85c0be3d72d285ac4f9cb648" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>size,<sp/>font,<sp/>annotation,<sp/>text,<sp/>document,<sp/>points,<sp/>DOCX,<sp/>formatting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>[start,<sp/>end,<sp/>value]<sp/>→<sp/>◇<sp/>float(value)<sp/>check<sp/>→<sp/>⊕<sp/>super().__init__(name=&quot;size&quot;)<sp/>→<sp/>⎋<sp/>SizeAnnotation</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/concrete_annotations/size_annotation.py"/>
+  </compounddef>
+</doxygen>

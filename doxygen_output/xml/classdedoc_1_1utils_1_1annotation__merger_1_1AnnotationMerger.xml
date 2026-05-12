@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::utils::annotation_merger::AnnotationMerger</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.AnnotationMerger::spaces</definition>
+        <argsstring></argsstring>
+        <name>spaces</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger.spaces</qualifiedname>
+        <initializer>=  re.compile(r&quot;\s+&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="134" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="134" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a65c6ee59fce48a94e0dd425e0344399e" compoundref="annotation__merger_8py" startline="213" endline="234">dedoc.utils.annotation_merger.AnnotationMerger.__filter_contradicting_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" compoundref="annotation__merger_8py" startline="91" endline="92">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" compoundref="annotation__merger_8py" startline="141" endline="156">dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</definition>
+        <argsstring>(self, List[Annotation] annotations, str text)</argsstring>
+        <name>merge_annotations</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To merge annotations across the full document text: group by name+value, merge overlapping groups, then filter contradicting overlaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _group_annotations, _merge_one_group, __filter_contradicting_annotations \par \b I/O\/ \:  (List[Annotation], str) -&gt; List[Annotation] \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="141" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="141" bodyend="156"/>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a65c6ee59fce48a94e0dd425e0344399e" compoundref="annotation__merger_8py" startline="213" endline="234">dedoc.utils.annotation_merger.AnnotationMerger.__filter_contradicting_annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aeaba31d060e62a62c1393aca546369f8" compoundref="annotation__merger_8py" startline="202" endline="206">dedoc.utils.annotation_merger.AnnotationMerger._group_annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a52209257d7799db045208d1b227bc5b6" compoundref="annotation__merger_8py" startline="163" endline="182">dedoc.utils.annotation_merger.AnnotationMerger._merge_one_group</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" compoundref="annotation__merger_8py" startline="58">dedoc.utils.annotation_merger.ExtendedAnnotation.spaces</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" compoundref="annotation__merger_8py" startline="134">dedoc.utils.annotation_merger.AnnotationMerger.spaces</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a52209257d7799db045208d1b227bc5b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.utils.annotation_merger.AnnotationMerger._merge_one_group</definition>
+        <argsstring>(self, List[Annotation] annotations, List[Space] spaces)</argsstring>
+        <name>_merge_one_group</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger._merge_one_group</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>spaces</declname>
+          <array>[Space]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To merge one group of same-name/same-value annotations, interleaving with spaces to detect adjacency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[Annotation], List[Space]) -&gt; List[Annotation] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="163" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="163" bodyend="182"/>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aaf3c6ba069266e32a34716df6cc60eee" compoundref="annotation__merger_8py" startline="189" endline="194">dedoc.utils.annotation_merger.AnnotationMerger.__check_annotations_group</references>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" compoundref="annotation__merger_8py" startline="141" endline="156">dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aaf3c6ba069266e32a34716df6cc60eee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.utils.annotation_merger.AnnotationMerger.__check_annotations_group</definition>
+        <argsstring>(self, List[Annotation] annotations)</argsstring>
+        <name>__check_annotations_group</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger.__check_annotations_group</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To assert that all annotations in a group share the same name and value, enforcing the invariant required for correct merging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  List[Annotation] -&gt; None \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="189" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="189" bodyend="194"/>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a52209257d7799db045208d1b227bc5b6" compoundref="annotation__merger_8py" startline="163" endline="182">dedoc.utils.annotation_merger.AnnotationMerger._merge_one_group</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a65c6ee59fce48a94e0dd425e0344399e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.utils.annotation_merger.AnnotationMerger.__filter_contradicting_annotations</definition>
+        <argsstring>(self, List[Annotation] annotations, str text)</argsstring>
+        <name>__filter_contradicting_annotations</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger.__filter_contradicting_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To filter out merged annotations that contradict each other by overlapping in position, keeping only the latest valid annotation per position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[Annotation], str) -&gt; List[Annotation] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="213" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="213" bodyend="234"/>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" compoundref="annotation__merger_8py" startline="58">dedoc.utils.annotation_merger.ExtendedAnnotation.spaces</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" compoundref="annotation__merger_8py" startline="134">dedoc.utils.annotation_merger.AnnotationMerger.spaces</references>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" compoundref="annotation__merger_8py" startline="141" endline="156">dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aeaba31d060e62a62c1393aca546369f8" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[str, List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]]</type>
+        <definition> Dict[str, List[Annotation]] dedoc.utils.annotation_merger.AnnotationMerger._group_annotations</definition>
+        <argsstring>(List[Annotation] annotations)</argsstring>
+        <name>_group_annotations</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger._group_annotations</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To group annotations by (name, value) tuple into a dictionary for batch processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  List[Annotation] -&gt; Dict[str, List[Annotation]] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="202" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="202" bodyend="206"/>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" compoundref="annotation__merger_8py" startline="141" endline="156">dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aa110d19e5919c61a147f83bc9b3208f4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.utils.annotation_merger.AnnotationMerger.delete_previous_merged</definition>
+        <argsstring>(List[Annotation] merged, Annotation new_annotations)</argsstring>
+        <name>delete_previous_merged</name>
+        <qualifiedname>dedoc.utils.annotation_merger.AnnotationMerger.delete_previous_merged</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>merged</declname>
+          <array>[Annotation]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref></type>
+          <declname>new_annotations</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To remove previously merged annotations that have been superseded by a new larger merge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[Annotation], Annotation) -&gt; List[Annotation] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="242" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="242" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To merge overlapping and adjacent annotations of the same type/value into contiguous spans, filter out contradictions, and clean up stale merges. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/annotation_merger.py" line="133" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="133" bodyend="257"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aaf3c6ba069266e32a34716df6cc60eee" prot="private" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>__check_annotations_group</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a65c6ee59fce48a94e0dd425e0344399e" prot="private" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>__filter_contradicting_annotations</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aeaba31d060e62a62c1393aca546369f8" prot="protected" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>_group_annotations</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a52209257d7799db045208d1b227bc5b6" prot="protected" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>_merge_one_group</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1aa110d19e5919c61a147f83bc9b3208f4" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>delete_previous_merged</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>merge_annotations</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::AnnotationMerger</scope><name>spaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

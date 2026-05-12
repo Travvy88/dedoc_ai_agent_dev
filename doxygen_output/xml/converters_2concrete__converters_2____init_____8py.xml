@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="converters_2concrete__converters_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters">dedoc::converters</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters">dedoc::converters::concrete_converters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1converters_1_1concrete__converters" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="namespacededoc_1_1converters_1_1concrete__converters_1a58e0a8c6ed29b64e5abec9d8f9db2ddf" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Conversion;<sp/>TECH(6):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>mark<sp/>the<sp/>concrete_converters<sp/>directory<sp/>as<sp/>a<sp/>Python<sp/>package<sp/>and<sp/>serve<sp/>as<sp/>a<sp/>namespace<sp/>container<sp/>for<sp/>format-specific<sp/>converter<sp/>implementations.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>namespace<sp/>declaration.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>@input<sp/>None.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@output<sp/>Valid<sp/>Python<sp/>package.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.converters.concrete_converters.*]</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>-<sp/>This<sp/>package<sp/>always<sp/>contains<sp/>at<sp/>least<sp/>AbstractConverter.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>an<sp/>empty<sp/>__init__.py?</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>A:<sp/>The<sp/>concrete<sp/>converters<sp/>are<sp/>imported<sp/>individually<sp/>by<sp/>the<sp/>parent<sp/>package;<sp/>no<sp/>re-export<sp/>needed<sp/>here.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>FUNC<sp/>1[package<sp/>init]<sp/>=&gt;<sp/>__init__</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">##<sp/>-<sp/>[__init__]:<sp/>PythonRuntime<sp/>→<sp/>ImportPackage<sp/>→<sp/>PackageAvailable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="namespacededoc_1_1converters_1_1concrete__converters_1a2258430420cb79f69285feb9dd3da78a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1converters_1_1concrete__converters_1a2258430420cb79f69285feb9dd3da78a" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>concrete_converters,<sp/>package,<sp/>namespace,<sp/>format-specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌empty<sp/>init┐<sp/>→<sp/>⎋<sp/>package<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/converters/concrete_converters/__init__.py"/>
+  </compounddef>
+</doxygen>

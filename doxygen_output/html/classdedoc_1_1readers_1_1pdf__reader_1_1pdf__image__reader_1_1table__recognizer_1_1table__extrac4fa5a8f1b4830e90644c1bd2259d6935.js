@@ -1,0 +1,15 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a8ca600a4a1dc30c3a331f5dc4797ecbd", null ],
+    [ "__build_structure_table_from_tree", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#abd0a09e2eab55b1ec3cd64bb2e80bf30", null ],
+    [ "__get_matrix_table_from_tree", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a21e641c531dfbe482bba8ff7d9b93eb7", null ],
+    [ "extract_onepage_tables_from_image", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a7715ae2cc01e15cbad56930afe0af262", null ],
+    [ "handle_cells", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a7461fba8bc0af5cd1647a48628697bc6", null ],
+    [ "count_vertical_extended", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#af99ee3a1f1be2168e5b2041657488078", null ],
+    [ "image", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a339f525cd60e38aa207dd300f018508a", null ],
+    [ "language", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a706565be9ed9187bc5c8ae935f40de3a", null ],
+    [ "page_number", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a7834ac27298cc32d87f979c0b773359c", null ],
+    [ "splitter", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#afe133218fb2f45895003c6e30f276806", null ],
+    [ "table_header_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#ad2c2495d1f9aa41a2b9ab49dc006c174", null ],
+    [ "table_options", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a8e6048103a8ce75c2dee1ed32e29cd37", null ]
+];

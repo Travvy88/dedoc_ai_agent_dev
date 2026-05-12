@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1unstructured__document" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::unstructured_document</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" prot="public">dedoc::data_structures::unstructured_document::UnstructuredDocument</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1unstructured__document_1a87eb11d1bc385189ce5eb6303bec9831" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::unstructured_document.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.unstructured_document.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/unstructured_document.py" line="8" column="1" bodyfile="dedoc/data_structures/unstructured_document.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1unstructured__document_1a53ad2de43a7964215268daf0c2dde2e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.unstructured_document._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.unstructured_document._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the UnstructuredDocument data structure — the intermediate output of document readers containing flat lines, tables, and attachments before structure extraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Raw document content: flat line list, tables, attachments, metadata, warnings. \par \b Input\/ \:  Tables, lines, attachments, optional warnings and metadata. \par \b Output\/ \:  UnstructuredDocument instance consumed by structure extractors. \par \b Links\/ \:  [READS_DATA_FROM(9): LineWithMeta, Table, AttachedFile] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>warnings is never None (defaults to empty list)</para>
+</listitem><listitem><para>metadata is never None (defaults to empty dict) \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate &quot;unstructured&quot; phase? A: Readers output flat line lists with format-specific tags; structure extractors then assign hierarchy levels and build the document tree. This separation enables independent reader and extractor development. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Unstructured document container] =&gt; UnstructuredDocument METHOD 5[Get full raw text] =&gt; get_text \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[UnstructuredDocument]: Reader → ReturnRawDocument → UnstructuredDocumentProduced</para>
+</listitem><listitem><para>[UnstructuredDocument]: StructureExtractor → BuildDocumentTree → ParsedDocumentCreated </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/unstructured_document.py" line="91" column="1" bodyfile="dedoc/data_structures/unstructured_document.py" bodystart="91" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/unstructured_document.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

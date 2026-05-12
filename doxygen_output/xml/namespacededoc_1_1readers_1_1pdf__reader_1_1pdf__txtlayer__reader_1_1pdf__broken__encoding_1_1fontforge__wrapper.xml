@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a326bc2cf5146157996bb8443d022c0a9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="7" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1aca1e7567fb4a8dbff0b0605a0623ee88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper.image_size</definition>
+        <argsstring></argsstring>
+        <name>image_size</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.image_size</qualifiedname>
+        <initializer>=  80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a2a8a2fc0100c35e94c778cf4fc852198" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper.args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.args</qualifiedname>
+        <initializer>=  sys.argv[1:]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="156" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1aede234a33cbd6cb7b271221dfeea8223" prot="public" static="no" mutable="no">
+        <type>List[str]</type>
+        <definition>Tuple[List[str], Dict[str, str], List[str], List[int]] dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper.result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.result</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1e78e71b810b3b8d41e0f6ae50115ad2" kindref="member">generate_images</ref>(Path(<ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a2a8a2fc0100c35e94c778cf4fc852198" kindref="member">args</ref>[1]), Path(<ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a2a8a2fc0100c35e94c778cf4fc852198" kindref="member">args</ref>[2]), int(<ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a2a8a2fc0100c35e94c778cf4fc852198" kindref="member">args</ref>[3]), <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a2a8a2fc0100c35e94c778cf4fc852198" kindref="member">args</ref>[4:])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="158" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1e78e71b810b3b8d41e0f6ae50115ad2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.generate_images</definition>
+        <argsstring>(Path save_path, Path font_path, int index, List[str] uni_char_pool)</argsstring>
+        <name>generate_images</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.generate_images</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>save_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>font_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>uni_char_pool</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+<para>Generate images for specified unicode characters from font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="14" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a92745cf6e8096339a6b403f1b56420d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[str], Dict[str, str], List[str], List[int]]</type>
+        <definition> Tuple[List[str], Dict[str, str], List[str], List[int]] dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.generate_all_images</definition>
+        <argsstring>(Path save_path, Path font_path)</argsstring>
+        <name>generate_all_images</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.generate_all_images</qualifiedname>
+        <param>
+          <type>Path</type>
+          <declname>save_path</declname>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>font_path</declname>
+        </param>
+        <briefdescription>
+<para>Generate images for all glyphs in font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="43" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="43" bodyend="57"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</definition>
+        <argsstring>(str name, Dict[str, any] font, Path save_path, List[str] save_paths, Dict[str, str] font_white_spaces, List[str] names, List[int] codes, List[str] not_worth_outputting)</argsstring>
+        <name>process_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>font</declname>
+          <array>[str, any]</array>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>save_path</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>save_paths</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>font_white_spaces</declname>
+          <array>[str, str]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>names</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>codes</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>not_worth_outputting</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+<para>Process individual glyph from font. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="67" bodyend="84"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a233df3c82dfd75b777268b6b85ece480" compoundref="fontforge__wrapper_8py" startline="141" endline="152">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.export_glyph</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a501b1c116f41ac8aea250a90f0180336" compoundref="fontforge__wrapper_8py" startline="107" endline="111">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_filename</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a798cb3ccdb3d0f4292c255f0d7d85d44" compoundref="fontforge__wrapper_8py" startline="96" endline="106">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_unicode_value</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a0e846b8b7ab15d5b3e19fc3e102481ee" compoundref="fontforge__wrapper_8py" startline="122" endline="132">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.handle_empty_glyph</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a81b6ff66bf2f79c5d9a02d52767e30c7" compoundref="fontforge__wrapper_8py" startline="112" endline="121">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.is_empty_glyph</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a327d4594d05d6be1009c61cea24499cc" compoundref="fontforge__wrapper_8py" startline="85" endline="95">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.should_skip_glyph</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a92745cf6e8096339a6b403f1b56420d5" compoundref="fontforge__wrapper_8py" startline="43" endline="57">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.generate_all_images</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a327d4594d05d6be1009c61cea24499cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.should_skip_glyph</definition>
+        <argsstring>(str name, Dict[str, any] font)</argsstring>
+        <name>should_skip_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.should_skip_glyph</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>font</declname>
+          <array>[str, any]</array>
+        </param>
+        <briefdescription>
+<para>Check if glyph should be skipped. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="85" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="85" bodyend="95"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a798cb3ccdb3d0f4292c255f0d7d85d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_unicode_value</definition>
+        <argsstring>(str name, Dict[str, any] font)</argsstring>
+        <name>get_unicode_value</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_unicode_value</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>font</declname>
+          <array>[str, any]</array>
+        </param>
+        <briefdescription>
+<para>Get unicode value for glyph name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="96" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="96" bodyend="106"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a501b1c116f41ac8aea250a90f0180336" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_filename</definition>
+        <argsstring>(str name, int unicode_val)</argsstring>
+        <name>get_filename</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.get_filename</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unicode_val</declname>
+        </param>
+        <briefdescription>
+<para>Get filename for glyph based on unicode value or name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="107" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="107" bodyend="111"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a81b6ff66bf2f79c5d9a02d52767e30c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.is_empty_glyph</definition>
+        <argsstring>(Dict[str, any] font, str name)</argsstring>
+        <name>is_empty_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.is_empty_glyph</qualifiedname>
+        <param>
+          <type>Dict</type>
+          <declname>font</declname>
+          <array>[str, any]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Check if glyph is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="112" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="112" bodyend="121"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a0e846b8b7ab15d5b3e19fc3e102481ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.handle_empty_glyph</definition>
+        <argsstring>(str filename, Dict[str, str] font_white_spaces, List[str] not_worth_outputting)</argsstring>
+        <name>handle_empty_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.handle_empty_glyph</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>font_white_spaces</declname>
+          <array>[str, str]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>not_worth_outputting</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+<para>Handle empty glyph case. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="122" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="122" bodyend="132"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a233df3c82dfd75b777268b6b85ece480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.export_glyph</definition>
+        <argsstring>(str name, Dict[str, Dict[str, any]] font, Path save_path, str filename, List[str] save_paths, List[str] names, List[int] codes, int unicode_val)</argsstring>
+        <name>export_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.export_glyph</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Dict]</type>
+          <declname>font</declname>
+          <array>[str, Dict[str, any]</array>
+        </param>
+        <param>
+          <type>Path</type>
+          <declname>save_path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>save_paths</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>names</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>codes</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>unicode_val</declname>
+        </param>
+        <briefdescription>
+<para>Export glyph to image file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="133" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="141" bodyend="152"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a1714ef8a70275eeeca4b7ac7aeddba39" compoundref="fontforge__wrapper_8py" startline="67" endline="84">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper.process_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper_1a6979b1c8fc274f6b7753a068b6a011e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.fontforge_wrapper._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document parsing pipeline: PDF format reading. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][generate_images utility/helper] =&gt; generate_images FUNC [5][generate_all_images utility/helper] =&gt; generate_all_images FUNC [5][process_glyph utility/helper] =&gt; process_glyph FUNC [5][should_skip_glyph utility/helper] =&gt; should_skip_glyph FUNC [5][get_unicode_value utility/helper] =&gt; get_unicode_value FUNC [5][get_filename utility/helper] =&gt; get_filename FUNC [5][is_empty_glyph utility/helper] =&gt; is_empty_glyph FUNC [5][handle_empty_glyph utility/helper] =&gt; handle_empty_glyph FUNC [5][export_glyph utility/helper] =&gt; export_glyph \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="191" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" bodystart="191" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/fontforge_wrapper.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

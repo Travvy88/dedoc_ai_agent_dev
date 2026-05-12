@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1base__metadata__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::metadata_extractors::concrete_metadata_extractors::base_metadata_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1base__metadata__extractor_1_1BaseMetadataExtractor" prot="public">dedoc::metadata_extractors::concrete_metadata_extractors::base_metadata_extractor::BaseMetadataExtractor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1base__metadata__extractor_1ad5833596012f5672f14fc1677eb824b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.metadata_extractors.concrete_metadata_extractors.base_metadata_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.metadata_extractors.concrete_metadata_extractors.base_metadata_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide a universal fallback metadata extractor that works for ANY file format, returning OS-level file attributes (name, size, timestamps, MIME type) and optional base64 encoding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Extracting basic file metadata for all file formats, base64-encoding of file content. \par \b Input\/ \:  file_path via extract(), optional parameters dict. \par \b Output\/ \:  dict with keys: file_name, temporary_file_name, file_type, size, access_time, created_time, modified_time, [base64_encode]. \par \b Links\/ \:  [USES_API(7): AbstractMetadataExtractor, os.stat, dedoc.utils.get_file_mime_type] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>can_extract ALWAYS returns True (universal extractor).</para>
+</listitem><listitem><para>_get_base_meta_information ALWAYS calls os.stat and returns a dict with 7 fixed keys. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why have a universal extractor that matches everything? A: Serves as the safety net in the extraction chain. Even if no format-specific extractor handles a file, BaseMetadataExtractor provides essential OS metadata. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Universal metadata extractor for any file format] =&gt; BaseMetadataExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[BaseMetadataExtractor]: MetadataExtractorComposition → ExtractAnyFile → ReturnOSAttributes → MetadataDict </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/concrete_metadata_extractors/base_metadata_extractor.py" line="20" column="1" bodyfile="dedoc/metadata_extractors/concrete_metadata_extractors/base_metadata_extractor.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/concrete_metadata_extractors/base_metadata_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

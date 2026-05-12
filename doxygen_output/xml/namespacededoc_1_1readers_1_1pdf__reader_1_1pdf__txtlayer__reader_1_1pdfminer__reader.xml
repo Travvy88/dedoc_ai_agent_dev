@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader</compoundname>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor">dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader::pdfminer_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils">dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader::pdfminer_utils</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1a34919398e0a432289406570508957c07" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Package init — marks pdfminer_reader as a dedoc reader subpackage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Symbol re-export. \par \b Input\/ \:  None. \par \b Output\/ \:  None. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This file may be empty. \par \b Changes\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup.] \par \b Module Map\/ \:</para>
+<para>[10][Empty package init — as designed.] \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[init]: Python (Import) → LoadSubpackage → ModuleReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/__init__.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/__init__.py" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

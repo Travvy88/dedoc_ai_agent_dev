@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::line_with_meta::LineWithMeta</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Sized</basecompoundref>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.line_with_meta.LineWithMeta::_line</definition>
+        <argsstring></argsstring>
+        <name>_line</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta._line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="37" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0966b0651700bd962ca6579636dacb43" compoundref="data__structures_2line__with__meta_8py" startline="48" endline="49">dedoc.data_structures.line_with_meta.LineWithMeta.__len__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" compoundref="data__structures_2line__with__meta_8py" startline="178" endline="182">dedoc.data_structures.line_with_meta.LineWithMeta.line</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ac414815b44b9b7afe1ea011c34e225f4" compoundref="data__structures_2line__with__meta_8py" startline="225" endline="227">dedoc.data_structures.line_with_meta.LineWithMeta.set_line</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e" compoundref="data__structures_2line__with__meta_8py" startline="281" endline="284">dedoc.data_structures.line_with_meta.LineWithMeta.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a7b41415c310d6633fe3a5d30f2539651" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.line_with_meta.LineWithMeta::_metadata</definition>
+        <argsstring></argsstring>
+        <name>_metadata</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta._metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="38" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5feba5b48b4d2558931e8bfca760794d" compoundref="data__structures_2line__with__meta_8py" startline="234" endline="236">dedoc.data_structures.line_with_meta.LineWithMeta.set_metadata</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad09523cbd5cef61a07b4ec3a56d16f78" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.line_with_meta.LineWithMeta::_annotations</definition>
+        <argsstring></argsstring>
+        <name>_annotations</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta._annotations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="39" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1fdebf0acb2d0a4314f23b6f0f94171" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.line_with_meta.LineWithMeta::_uid</definition>
+        <argsstring></argsstring>
+        <name>_uid</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta._uid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="40" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.line_with_meta.LineWithMeta::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="112" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="112" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" compoundref="data__structures_2line__with__meta_8py" startline="88" endline="89">dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ae47e49bba8cc4399b7d47510416df6a6" compoundref="toc__feature__extractor_8py" startline="34" endline="41">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.filter_toc_line</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1abc7436804d0b35c641446216d33174c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.line_with_meta.LineWithMeta.__init__</definition>
+        <argsstring>(self, str line, Optional[LineMetadata] metadata=None, Optional[List[Annotation]] annotations=None, str uid=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1a53861773b915038e3b2c852217ead675">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>metadata</declname>
+          <array>[LineMetadata]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>annotations</declname>
+          <array>[List[Annotation]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize line with raw text, optional metadata, annotations, and auto-generated UID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  uuid.uuid1 \par \b I/O\/ \:  (str, Optional[LineMetadata], Optional[List[Annotation]], Optional[str]) -&gt; None \par \b Complexity\/ \:  3</para>
+<para>:param line: raw text of the document line :param metadata: metadata (related to the entire line, as line or page number, its hierarchy level) :param annotations: metadata that refers to some part of the text, for example, font size, font type, etc. :param uid: unique identifier of the line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="27" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="27" bodyend="41"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0966b0651700bd962ca6579636dacb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.data_structures.line_with_meta.LineWithMeta.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__len__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return length of the raw text line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; int \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="48" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="48" bodyend="49"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" compoundref="data__structures_2line__with__meta_8py" startline="37">dedoc.data_structures.line_with_meta.LineWithMeta._line</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</definition>
+        <argsstring>(self, &quot;LineWithMeta&quot; other)</argsstring>
+        <name>__lt__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;LineWithMeta&quot;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compare lines by raw text for ordering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (LineWithMeta) -&gt; bool \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="88" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="88" bodyend="89"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" compoundref="data__structures_2line__with__meta_8py" startline="112">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" compoundref="data__structures_2line__with__meta_8py" startline="178" endline="182">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" compoundref="line__with__meta__converter_8py" startline="38">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a80c77bb9644bba849f140ca912194088" compoundref="toc__feature__extractor_8py" startline="26">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.line</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aba81b5037823d0e593a5c346dd6b2afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[&quot;LineWithMeta&quot;]</type>
+        <definition> List[&quot;LineWithMeta&quot;] dedoc.data_structures.line_with_meta.LineWithMeta.split</definition>
+        <argsstring>(self, str sep)</argsstring>
+        <name>split</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.split</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>sep</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Split this line by separator, keeping annotations consistent using regex boundary detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  re \par \b I/O\/ \:  str -&gt; List[LineWithMeta] \par \b Complexity\/ \:  6</para>
+<para>Split this line into a list of lines, keep annotations consistent. This method does not remove any text from the line.</para>
+<para>:param sep: separator for splitting :return: list of split lines </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="97" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="97" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;LineWithMeta&quot;</type>
+        <definition> &quot;LineWithMeta&quot; dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</definition>
+        <argsstring>(self, Union[slice, int] index)</argsstring>
+        <name>__getitem__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>index</declname>
+          <array>[slice, int]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Slice line with annotation consistency. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Supports int index and slice (start:stop). \par \b Uses\/ \:  __extract_annotations_by_slice \par \b I/O\/ \:  (Union[slice, int]) -&gt; LineWithMeta \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="131" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="131" bodyend="149"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad455d9ba04204f4fe895a98299963616" compoundref="data__structures_2line__with__meta_8py" startline="156" endline="170">dedoc.data_structures.line_with_meta.LineWithMeta.__extract_annotations_by_slice</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" compoundref="data__structures_2line__with__meta_8py" startline="112">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" compoundref="data__structures_2line__with__meta_8py" startline="178" endline="182">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" compoundref="line__with__meta__converter_8py" startline="38">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a80c77bb9644bba849f140ca912194088" compoundref="toc__feature__extractor_8py" startline="26">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.line</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.line_with_meta.LineWithMeta.line</definition>
+        <argsstring>(self)</argsstring>
+        <name>line</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Get raw text of the document line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1</para>
+<para>Raw text of the document line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="178" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="178" bodyend="182"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" compoundref="data__structures_2line__with__meta_8py" startline="37">dedoc.data_structures.line_with_meta.LineWithMeta._line</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" compoundref="data__structures_2line__with__meta_8py" startline="88" endline="89">dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ae47e49bba8cc4399b7d47510416df6a6" compoundref="toc__feature__extractor_8py" startline="34" endline="41">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.filter_toc_line</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref></type>
+        <definition> LineMetadata dedoc.data_structures.line_with_meta.LineWithMeta.metadata</definition>
+        <argsstring>(self)</argsstring>
+        <name>metadata</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.metadata</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Get line metadata (page ID, line ID, hierarchy level). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; LineMetadata \par \b Complexity\/ \:  1</para>
+<para>Line metadata related to the entire line, as line or page number, hierarchy level </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="190" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="190" bodyend="194"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a7b41415c310d6633fe3a5d30f2539651" compoundref="data__structures_2line__with__meta_8py" startline="38">dedoc.data_structures.line_with_meta.LineWithMeta._metadata</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.data_structures.line_with_meta.LineWithMeta.annotations</definition>
+        <argsstring>(self)</argsstring>
+        <name>annotations</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Get list of annotations (font size, font type, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; List[Annotation] \par \b Complexity\/ \:  1</para>
+<para>Metadata that refers to some part of the text, for example, font size, font type, etc. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="202" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="202" bodyend="206"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad09523cbd5cef61a07b4ec3a56d16f78" compoundref="data__structures_2line__with__meta_8py" startline="39">dedoc.data_structures.line_with_meta.LineWithMeta._annotations</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad455d9ba04204f4fe895a98299963616" compoundref="data__structures_2line__with__meta_8py" startline="156" endline="170">dedoc.data_structures.line_with_meta.LineWithMeta.__extract_annotations_by_slice</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" compoundref="annotation__merger_8py" startline="91" endline="92">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1aafb49313631dd1bf933f4225c71a7f5b" compoundref="annotation__merger_8py" startline="119" endline="126">dedoc.utils.annotation_merger.ExtendedAnnotation.merge</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a94b74406294549e9749439775a99e399" compoundref="annotation__merger_8py" startline="79" endline="80">dedoc.utils.annotation_merger.ExtendedAnnotation.name</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a23e51b13196dc47e65940f9c4960f6ad" compoundref="data__structures_2line__with__meta_8py" startline="292" endline="302">dedoc.data_structures.line_with_meta.LineWithMeta.shift</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e" compoundref="data__structures_2line__with__meta_8py" startline="281" endline="284">dedoc.data_structures.line_with_meta.LineWithMeta.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ad236d83118754f7c422ab67145e8e4a3" compoundref="annotation__merger_8py" startline="85" endline="86">dedoc.utils.annotation_merger.ExtendedAnnotation.value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.line_with_meta.LineWithMeta.uid</definition>
+        <argsstring>(self)</argsstring>
+        <name>uid</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.uid</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Get unique identifier of the line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1</para>
+<para>Unique identifier of the line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="214" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="214" bodyend="218"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1fdebf0acb2d0a4314f23b6f0f94171" compoundref="data__structures_2line__with__meta_8py" startline="40">dedoc.data_structures.line_with_meta.LineWithMeta._uid</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" compoundref="attached__file_8py" startline="27" endline="39">dedoc.data_structures.attached_file.AttachedFile.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ac414815b44b9b7afe1ea011c34e225f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.line_with_meta.LineWithMeta.set_line</definition>
+        <argsstring>(self, str line)</argsstring>
+        <name>set_line</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.set_line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Set raw text of the line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  str -&gt; None \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="225" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="225" bodyend="227"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" compoundref="data__structures_2line__with__meta_8py" startline="37">dedoc.data_structures.line_with_meta.LineWithMeta._line</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5feba5b48b4d2558931e8bfca760794d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.line_with_meta.LineWithMeta.set_metadata</definition>
+        <argsstring>(self, LineMetadata metadata)</argsstring>
+        <name>set_metadata</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.set_metadata</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Set line metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  LineMetadata -&gt; None \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="234" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="234" bodyend="236"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a7b41415c310d6633fe3a5d30f2539651" compoundref="data__structures_2line__with__meta_8py" startline="38">dedoc.data_structures.line_with_meta.LineWithMeta._metadata</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1ab1e61cd6d7af9362a36e81a902710735">__repr__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return repr with truncated text and hierarchy level info. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="243" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="243" bodyend="249"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" compoundref="data__structures_2line__with__meta_8py" startline="112">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" compoundref="data__structures_2line__with__meta_8py" startline="178" endline="182">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" compoundref="line__with__meta__converter_8py" startline="38">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a80c77bb9644bba849f140ca912194088" compoundref="toc__feature__extractor_8py" startline="26">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.line</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1aa08b490b363ae8fc5b7d7f72676a18bc" compoundref="line__with__location_8py" startline="36" endline="39">dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation.__str__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;LineWithMeta&quot;</type>
+        <definition> &quot;LineWithMeta&quot; dedoc.data_structures.line_with_meta.LineWithMeta.__add__</definition>
+        <argsstring>(self, Union[&quot;LineWithMeta&quot;, str] other)</argsstring>
+        <name>__add__</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__add__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>other</declname>
+          <array>[&quot;LineWithMeta&quot;, str]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Concatenate two LineWithMeta or a LineWithMeta with a string, merging annotations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  AnnotationMerger \par \b I/O\/ \:  (Union[LineWithMeta, str]) -&gt; LineWithMeta \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="257" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="257" bodyend="273"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a7b41415c310d6633fe3a5d30f2539651" compoundref="data__structures_2line__with__meta_8py" startline="38">dedoc.data_structures.line_with_meta.LineWithMeta._metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" compoundref="data__structures_2line__with__meta_8py" startline="112">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" compoundref="data__structures_2line__with__meta_8py" startline="178" endline="182">dedoc.data_structures.line_with_meta.LineWithMeta.line</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" compoundref="line__with__meta__converter_8py" startline="38">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a80c77bb9644bba849f140ca912194088" compoundref="toc__feature__extractor_8py" startline="26">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.line</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1af6051fa5b06028afd24bf93eedf6b8c8" compoundref="api_2schema_2table__metadata_8py" startline="51">dedoc.api.schema.table_metadata.TableMetadata.uid</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a4153dc3d63d44f47023732651e4c537a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="35">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1af3745f216df9501f06924d81dd45163a" compoundref="text__with__bbox_8py" startline="33">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiLineWithMeta</type>
+        <definition> ApiLineWithMeta dedoc.data_structures.line_with_meta.LineWithMeta.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert line with metadata to API schema, serializing annotations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiLineWithMeta \par \b I/O\/ \:  None -&gt; ApiLineWithMeta \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="281" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="281" bodyend="284"/>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" compoundref="data__structures_2line__with__meta_8py" startline="37">dedoc.data_structures.line_with_meta.LineWithMeta._line</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a23e51b13196dc47e65940f9c4960f6ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.line_with_meta.LineWithMeta.shift</definition>
+        <argsstring>(self, int shift_x, int shift_y, int image_width, int image_height)</argsstring>
+        <name>shift</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.shift</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1a198d085d585511eb4a418150bc617c07">shift</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Shift bounding box annotations by given deltas and update relative coordinates. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  BBoxAnnotation, json \par \b I/O\/ \:  (int, int, int, int) -&gt; None \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="292" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="292" bodyend="302"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a96438d588aa02875acbc59a6dcaaf0bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;LineWithMeta&quot;</type>
+        <definition> &quot;LineWithMeta&quot; dedoc.data_structures.line_with_meta.LineWithMeta.join</definition>
+        <argsstring>(List[&quot;LineWithMeta&quot;] lines, str delimiter=&quot;\n&quot;)</argsstring>
+        <name>join</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.join</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[&quot;LineWithMeta&quot;]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>delimiter</declname>
+          <defval>&quot;\n&quot;</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Join list of LineWithMeta with a delimiter, keeping annotations consistent via deepcopy and concatenation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  deepcopy \par \b I/O\/ \:  (List[LineWithMeta], str) -&gt; LineWithMeta \par \b Complexity\/ \:  5</para>
+<para>Join list of lines with the given delimiter, keep annotations consistent. This method is similar to the python built-it join method for strings.</para>
+<para>:param lines: list of lines to join :param delimiter: delimiter to insert between lines :return: merged line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="58" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="58" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad455d9ba04204f4fe895a98299963616" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.data_structures.line_with_meta.LineWithMeta.__extract_annotations_by_slice</definition>
+        <argsstring>(self, int start, int stop)</argsstring>
+        <name>__extract_annotations_by_slice</name>
+        <qualifiedname>dedoc.data_structures.line_with_meta.LineWithMeta.__extract_annotations_by_slice</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Extract annotations that overlap with the given slice, adjusting their start/end positions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (int, int) -&gt; List[Annotation] \par \b Complexity\/ \:  4</para>
+<para>Extract annotations for given slice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_with_meta.py" line="156" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="156" bodyend="170"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Structural unit of document — a line (or paragraph) of text with metadata and annotations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Supports slicing, joining, and splitting with annotation consistency.</para>
+<para>Structural unit of document - line (or paragraph) of text and its metadata. One LineWithMeta should not contain text from different logical parts of the document (for example, document title and raw text of the document should not be in the same line). Still the logical part of the document may be represented by more than one line (for example, document title may consist of many lines). </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.line_with_meta.LineWithMeta</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sized</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.line_with_meta.LineWithMeta</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Sized</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/line_with_meta.py" line="14" column="1" bodyfile="dedoc/data_structures/line_with_meta.py" bodystart="14" bodyend="306"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__add__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad455d9ba04204f4fe895a98299963616" prot="private" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__extract_annotations_by_slice</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__getitem__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1abc7436804d0b35c641446216d33174c9" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0966b0651700bd962ca6579636dacb43" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__len__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__lt__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>__repr__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad09523cbd5cef61a07b4ec3a56d16f78" prot="protected" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>_annotations</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a0dacb5aa0d76c93146cd8891a953129e" prot="protected" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>_line</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a7b41415c310d6633fe3a5d30f2539651" prot="protected" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>_metadata</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1fdebf0acb2d0a4314f23b6f0f94171" prot="protected" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>_uid</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>annotations</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a96438d588aa02875acbc59a6dcaaf0bc" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>join</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1e0eddda78e0f188929f0013864d2932" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>line</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aa1d60eb0ed26623f2babcdbcf12395e4" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>line</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>metadata</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ac414815b44b9b7afe1ea011c34e225f4" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>set_line</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5feba5b48b4d2558931e8bfca760794d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>set_metadata</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a23e51b13196dc47e65940f9c4960f6ad" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>shift</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1aba81b5037823d0e593a5c346dd6b2afe" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>split</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>to_api_schema</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_with_meta::LineWithMeta</scope><name>uid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

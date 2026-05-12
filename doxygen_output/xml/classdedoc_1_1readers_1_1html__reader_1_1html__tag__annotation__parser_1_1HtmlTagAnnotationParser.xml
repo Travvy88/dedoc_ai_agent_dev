@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aaa8916523c38b8ce9f350c680565ae03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.parse</definition>
+        <argsstring>(self, Tag tag)</argsstring>
+        <name>parse</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.parse</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="27" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="27" bodyend="30"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" compoundref="html__tag__annotation__parser_8py" startline="33" endline="54">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[int, List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]]</type>
+        <definition> Tuple[int, List[Annotation]] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</definition>
+        <argsstring>(self, Tag tag, int start=0)</argsstring>
+        <name>__parse_annotations</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="33" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="33" bodyend="54"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aa37d84a477ecba42e06b9408f549329e" compoundref="html__tag__annotation__parser_8py" startline="57" endline="75">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__create_annotations</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" compoundref="html__tag__annotation__parser_8py" startline="33" endline="54">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a7e64a4b2edf45396f30f908227c89061" compoundref="pdfminer__extractor_8py" startline="272" endline="290">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.__parse_style_string</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad50dececf0f850a4e74e509e3817a615" compoundref="html__tag__annotation__parser_8py" startline="78" endline="99">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_style_string</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" compoundref="html__tag__annotation__parser_8py" startline="33" endline="54">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aaa8916523c38b8ce9f350c680565ae03" compoundref="html__tag__annotation__parser_8py" startline="27" endline="30">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aa37d84a477ecba42e06b9408f549329e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__create_annotations</definition>
+        <argsstring>(self, Union[str, Tag] tag, int start, int end)</argsstring>
+        <name>__create_annotations</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__create_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>tag</declname>
+          <array>[str, Tag]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="57" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="57" bodyend="75"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" compoundref="html__tag__annotation__parser_8py" startline="33" endline="54">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad50dececf0f850a4e74e509e3817a615" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_style_string</definition>
+        <argsstring>(self, str styles_string, int start, int end)</argsstring>
+        <name>__parse_style_string</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_style_string</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>styles_string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="78" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="78" bodyend="99"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1a6d964633bdfcbed352b324098dea240f" compoundref="html__tag__annotation__parser_8py" startline="102" endline="131">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__get_annotation</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8b2ee70a8512e8237d61d4b49911dce7" compoundref="pdfminer__extractor_8py" startline="201" endline="238">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.__get_line_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" compoundref="html__tag__annotation__parser_8py" startline="33" endline="54">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_annotations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1a6d964633bdfcbed352b324098dea240f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> Optional[Annotation] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__get_annotation</definition>
+        <argsstring>(self, str key, str value, int start, int end)</argsstring>
+        <name>__get_annotation</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__get_annotation</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="102" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="102" bodyend="131"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1afb15d8b45a4f5d1f58285745c7693c19" compoundref="html__tag__annotation__parser_8py" startline="134" endline="146">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_font_size_style</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad50dececf0f850a4e74e509e3817a615" compoundref="html__tag__annotation__parser_8py" startline="78" endline="99">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_style_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1afb15d8b45a4f5d1f58285745c7693c19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[str]</type>
+        <definition> Optional[str] dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_font_size_style</definition>
+        <argsstring>(self, str value)</argsstring>
+        <name>__parse_font_size_style</name>
+        <qualifiedname>dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__parse_font_size_style</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="134" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="134" bodyend="146"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1a6d964633bdfcbed352b324098dea240f" compoundref="html__tag__annotation__parser_8py" startline="102" endline="131">dedoc.readers.html_reader.html_tag_annotation_parser.HtmlTagAnnotationParser.__get_annotation</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/html_reader/html_tag_annotation_parser.py" line="24" column="1" bodyfile="dedoc/readers/html_reader/html_tag_annotation_parser.py" bodystart="24" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aa37d84a477ecba42e06b9408f549329e" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>__create_annotations</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1a6d964633bdfcbed352b324098dea240f" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>__get_annotation</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad384befd019371ebd8b5e55240b2ce56" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>__parse_annotations</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1afb15d8b45a4f5d1f58285745c7693c19" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>__parse_font_size_style</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1ad50dececf0f850a4e74e509e3817a615" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>__parse_style_string</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__tag__annotation__parser_1_1HtmlTagAnnotationParser_1aaa8916523c38b8ce9f350c680565ae03" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_tag_annotation_parser::HtmlTagAnnotationParser</scope><name>parse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

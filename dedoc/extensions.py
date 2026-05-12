@@ -1,5 +1,8 @@
+import logging
 from collections import namedtuple
 from typing import List
+
+logger = logging.getLogger(__name__)
 
 
 Extensions = namedtuple("Parts", [
@@ -123,12 +126,49 @@ mime2extension = {
 }
 
 
+# region FUNC_get_image_extensions [DOMAIN(7): FileTypes; CONCEPT(6): MimeMapping; TECH(5): SetOperations]
+## @purpose To aggregate all known image file extensions (from both recognized and converted MIME sets) into a single list, used for image format detection throughout the pipeline.
+## @uses get_extensions_by_mimes, converted_mimes, recognized_mimes, converted_extensions, recognized_extensions
+## @io None -> List[str]
+## @complexity 4
 def get_image_extensions() -> List[str]:
     from dedoc.utils.utils import get_extensions_by_mimes
+
+    # LDD-log: collecting image extensions
+    logger.debug(f"[IMP:4][get_image_extensions][COLLECT] Aggregating image extensions from MIME mappings")
 
     image_extensions = get_extensions_by_mimes(converted_mimes.image_like_format)
     image_extensions.extend(get_extensions_by_mimes(recognized_mimes.image_like_format))
     image_extensions.extend(converted_extensions.image_like_format)
     image_extensions.extend(recognized_extensions.image_like_format)
 
+    logger.debug(f"[IMP:4][get_image_extensions][RESULT] Collected {len(image_extensions)} image extensions")
     return image_extensions
+# endregion FUNC_get_image_extensions
+
+# region MODULE_CONTRACT [DOMAIN(8): FileTypes, MimeMapping; CONCEPT(7): FormatRegistry; TECH(6): namedtuple, MIMEDetection]
+## @modulecontract
+## @purpose To serve as the central registry of all supported file formats in Dedoc, mapping file extensions to MIME types and vice versa across three categories (recognized, converted, and recognized MIMEs), enabling the pipeline to identify and route documents to appropriate readers/converters.
+## @scope File extension-to-MIME mapping, image format detection, format categorization (excel, docx, pptx, html, eml, archive, image, pdf, csv, txt, json).
+## @input None (statically defined mappings).
+## @output Extension/MIME mapping tables, image extension lists.
+## @links [USES_API(6): collections.namedtuple; READS_DATA_FROM(5): dedoc.utils.utils.get_extensions_by_mimes]
+## @invariants
+## - mime2extension dictionary is a bijective-like mapping from MIME to extension (primary extension per MIME).
+## - All mappings are partitioned into three categories: recognized, converted, and recognized_mimes.
+## @rationale
+## Q: Why use namedtuple for the extension groups?
+## A: Provides named access (e.g., `extensions.image_like_format`) with immutability, making the mapping tables self-documenting and resistant to accidental modification.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging]
+## @modulemap
+## DATA 10[Extension/MIME mapping registry] => Extensions, converted_extensions, converted_mimes, recognized_extensions, recognized_mimes, mime2extension
+## FUNC 8[Aggregates all image extensions] => get_image_extensions
+## @usecases
+## - [mime2extension]: MimeDetector => LookupExtensionByMime => FileExtension
+## - [get_image_extensions]: ImageReader => GetAllSupportedFormats => ExtensionList
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: extensions, MIME types, file formats, image extensions, mime2extension, namedtuple, format registry, excel, docx, pptx, html, eml, archive, pdf, csv, txt, json
+# STRUCTURE: ◇ Extensions namedtuple → ⊕ converted_extensions | converted_mimes | recognized_extensions | recognized_mimes → ⚡ mime2extension dict → ⊕ get_image_extensions() → ∑ List[str]

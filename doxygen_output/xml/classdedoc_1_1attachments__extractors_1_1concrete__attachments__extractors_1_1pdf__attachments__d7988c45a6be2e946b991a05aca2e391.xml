@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</compoundname>
+    <basecompoundref refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor" prot="public" virt="non-virtual">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a85ae2d3e0d9de68884f8a121ee1f4b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1a3ab9f7d6ee861c0667a6c18f3d8faafe">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize the PDF extractor with recognized pdf-like file extensions and MIME types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  <ref refid="namespacededoc_1_1extensions_1addf2824fdd828a891fa08439c61645d1" kindref="member">dedoc.extensions.recognized_extensions</ref>, <ref refid="namespacededoc_1_1extensions_1a6db08442f7f49c0e6048e13ad9dbda80" kindref="member">dedoc.extensions.recognized_mimes</ref> \par \b I/O\/ \:  Optional[dict] -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="58" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="58" bodyend="61"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a85ae2d3e0d9de68884f8a121ee1f4b82" compoundref="pdf__attachments__extractor_8py" startline="58" endline="61">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__init__</references>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a85ae2d3e0d9de68884f8a121ee1f4b82" compoundref="pdf__attachments__extractor_8py" startline="58" endline="61">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a0c122e557d94525ec81b6ca80ac13983" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" kindref="compound">AttachedFile</ref>]</type>
+        <definition> List[AttachedFile] dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.extract</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>extract</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.extract</qualifiedname>
+        <reimplements refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ab8466f750370a3a81f794807ccb15f24">extract</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Extract all attachments from a PDF: root-level embedded files, page-level file annotations, and text notes (as JSON). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __get_root_attachments, __get_page_level_attachments, AbstractAttachmentsExtractor._content2attach_file \par \b I/O\/ \:  str, Optional[dict] -&gt; List[AttachedFile] \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="69" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="69" bodyend="105"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a21ed82544f47ff38677a64f89c4bec77" compoundref="pdf__attachments__extractor_8py" startline="144" endline="150">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_page_level_attachments</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a54b7677fc2003b817ed5135b3c2ffaab" compoundref="pdf__attachments__extractor_8py" startline="157" endline="174">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_root_attachments</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1afa419ab8e7d68cb3afb7cb5faae297aa" compoundref="abstract__attachment__extractor_8py" startline="105" endline="127">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor._content2attach_file</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a1572fff7417f7e6cb1f1166fa48cd963" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[Tuple[str, bytes]]</type>
+        <definition> List[Tuple[str, bytes]] dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_notes</definition>
+        <argsstring>(self, PageObject page)</argsstring>
+        <name>__get_notes</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_notes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>PageObject</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Extract annotations from a single PDF page: /FileAttachment annotations and /Text /Comment notes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  <ref refid="namespacededoc_1_1utils_1_1utils_1aaccf6a72325f1b14e36c5977249aa6bb" kindref="member">dedoc.utils.utils.convert_datetime</ref>, __create_note \par \b I/O\/ \:  PageObject -&gt; List[Tuple[str, bytes]] \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="113" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="113" bodyend="136"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a95953067c7e2775bbd0d43b2ac1c94f7" compoundref="pdf__attachments__extractor_8py" startline="182" endline="196">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__create_note</references>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a21ed82544f47ff38677a64f89c4bec77" compoundref="pdf__attachments__extractor_8py" startline="144" endline="150">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_page_level_attachments</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a21ed82544f47ff38677a64f89c4bec77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[Tuple[str, bytes]]</type>
+        <definition> List[Tuple[str, bytes]] dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_page_level_attachments</definition>
+        <argsstring>(self, PdfReader reader)</argsstring>
+        <name>__get_page_level_attachments</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_page_level_attachments</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>PdfReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Iterate over all pages in the PDF reader and collect attachments from each page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __get_notes \par \b I/O\/ \:  PdfReader -&gt; List[Tuple[str, bytes]] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="144" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="144" bodyend="150"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a1572fff7417f7e6cb1f1166fa48cd963" compoundref="pdf__attachments__extractor_8py" startline="113" endline="136">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_notes</references>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a0c122e557d94525ec81b6ca80ac13983" compoundref="pdf__attachments__extractor_8py" startline="69" endline="105">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.extract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a54b7677fc2003b817ed5135b3c2ffaab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[Tuple[str, bytes]]</type>
+        <definition> List[Tuple[str, bytes]] dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_root_attachments</definition>
+        <argsstring>(self, PdfReader reader)</argsstring>
+        <name>__get_root_attachments</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_root_attachments</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>PdfReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Extract root-level embedded files from the PDF catalog&apos;s /Names → /EmbeddedFiles dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  PdfReader -&gt; List[Tuple[str, bytes]] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="157" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="157" bodyend="174"/>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a0c122e557d94525ec81b6ca80ac13983" compoundref="pdf__attachments__extractor_8py" startline="69" endline="105">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.extract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a95953067c7e2775bbd0d43b2ac1c94f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[str, bytes]</type>
+        <definition> [str, bytes] dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__create_note</definition>
+        <argsstring>(self, str content, int modified_time, int created_time, str author, int size=None)</argsstring>
+        <name>__create_note</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__create_note</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modified_time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>created_time</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>author</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Serialize a PDF text note into a JSON file with metadata (content, timestamps, author, size). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  <ref refid="namespacededoc_1_1utils_1_1utils_1a01d2971c0b3b6d76056a7ff4d25acd9e" kindref="member">dedoc.utils.utils.get_unique_name</ref>, json.dumps \par \b I/O\/ \:  str, int, int, str, Optional[int] -&gt; Tuple[str, bytes] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="182" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="182" bodyend="196"/>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a1572fff7417f7e6cb1f1166fa48cd963" compoundref="pdf__attachments__extractor_8py" startline="113" endline="136">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor.__get_notes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Extract attachments from PDF files: root-level embedded files, page-level file annotations, and text annotation notes. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.PDFAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="52" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="52" bodyend="199"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a95953067c7e2775bbd0d43b2ac1c94f7" prot="private" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>__create_note</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a1572fff7417f7e6cb1f1166fa48cd963" prot="private" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>__get_notes</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a21ed82544f47ff38677a64f89c4bec77" prot="private" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>__get_page_level_attachments</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a54b7677fc2003b817ed5135b3c2ffaab" prot="private" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>__get_root_attachments</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a85ae2d3e0d9de68884f8a121ee1f4b82" prot="public" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391_1a0c122e557d94525ec81b6ca80ac13983" prot="public" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</scope><name>extract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

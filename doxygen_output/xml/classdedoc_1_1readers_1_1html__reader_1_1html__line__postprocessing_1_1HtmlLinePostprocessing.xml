@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::html_reader::html_line_postprocessing::HtmlLinePostprocessing</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a684e83d00e2f7876f37841bb9a0aecf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.postprocess</definition>
+        <argsstring>(self, UnstructuredDocument document)</argsstring>
+        <name>postprocess</name>
+        <qualifiedname>dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.postprocess</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_line_postprocessing.py" line="16" column="1" bodyfile="dedoc/readers/html_reader/html_line_postprocessing.py" bodystart="16" bodyend="20"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ad65f6c656986681f80bf2705080db26f" compoundref="html__line__postprocessing_8py" startline="23" endline="29">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__lines_postprocessing</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ad65f6c656986681f80bf2705080db26f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__lines_postprocessing</definition>
+        <argsstring>(self, List[LineWithMeta] lines)</argsstring>
+        <name>__lines_postprocessing</name>
+        <qualifiedname>dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__lines_postprocessing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_line_postprocessing.py" line="23" column="1" bodyfile="dedoc/readers/html_reader/html_line_postprocessing.py" bodystart="23" bodyend="29"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ab635758c1aaec8e706301e89f0b64dab" compoundref="html__line__postprocessing_8py" startline="32" endline="38">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__add_newlines</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a6860160c0754e2dc887c03ca108e9e49" compoundref="html__line__postprocessing_8py" startline="41" endline="53">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__fix_special_symbols</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a684e83d00e2f7876f37841bb9a0aecf3" compoundref="html__line__postprocessing_8py" startline="16" endline="20">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.postprocess</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ab635758c1aaec8e706301e89f0b64dab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__add_newlines</definition>
+        <argsstring>(self, List[LineWithMeta] lines)</argsstring>
+        <name>__add_newlines</name>
+        <qualifiedname>dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__add_newlines</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_line_postprocessing.py" line="32" column="1" bodyfile="dedoc/readers/html_reader/html_line_postprocessing.py" bodystart="32" bodyend="38"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ad65f6c656986681f80bf2705080db26f" compoundref="html__line__postprocessing_8py" startline="23" endline="29">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__lines_postprocessing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a6860160c0754e2dc887c03ca108e9e49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__fix_special_symbols</definition>
+        <argsstring>(self, List[LineWithMeta] lines)</argsstring>
+        <name>__fix_special_symbols</name>
+        <qualifiedname>dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__fix_special_symbols</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>replace some special symbols to common symbols, e.q. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&quot;\xa0&quot; -&gt; &quot; &quot; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_line_postprocessing.py" line="41" column="1" bodyfile="dedoc/readers/html_reader/html_line_postprocessing.py" bodystart="41" bodyend="53"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ad65f6c656986681f80bf2705080db26f" compoundref="html__line__postprocessing_8py" startline="23" endline="29">dedoc.readers.html_reader.html_line_postprocessing.HtmlLinePostprocessing.__lines_postprocessing</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/html_reader/html_line_postprocessing.py" line="13" column="1" bodyfile="dedoc/readers/html_reader/html_line_postprocessing.py" bodystart="13" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ab635758c1aaec8e706301e89f0b64dab" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_line_postprocessing::HtmlLinePostprocessing</scope><name>__add_newlines</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a6860160c0754e2dc887c03ca108e9e49" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_line_postprocessing::HtmlLinePostprocessing</scope><name>__fix_special_symbols</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1ad65f6c656986681f80bf2705080db26f" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_line_postprocessing::HtmlLinePostprocessing</scope><name>__lines_postprocessing</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__line__postprocessing_1_1HtmlLinePostprocessing_1a684e83d00e2f7876f37841bb9a0aecf3" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_line_postprocessing::HtmlLinePostprocessing</scope><name>postprocess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

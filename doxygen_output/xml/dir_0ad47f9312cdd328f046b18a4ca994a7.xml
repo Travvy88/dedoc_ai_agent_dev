@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_0ad47f9312cdd328f046b18a4ca994a7" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor</compoundname>
+    <innerdir refid="dir_55ed26b0db3027a35f2a106c2b06fa1a">dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier</innerdir>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2line__metadata__extractor_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="font__type__classifier_8py">font_type_classifier.py</innerfile>
+    <innerfile refid="metadata__extractor_8py">metadata_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/"/>
+  </compounddef>
+</doxygen>

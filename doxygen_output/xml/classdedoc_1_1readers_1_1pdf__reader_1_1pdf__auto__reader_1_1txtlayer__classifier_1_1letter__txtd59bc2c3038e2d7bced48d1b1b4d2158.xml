@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::letter_txtlayer_classifier::LetterTxtlayerClassifier</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a5b8af5ab34acec26782c27ca099d223a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier::__symbol_threshold</definition>
+        <argsstring></argsstring>
+        <name>__symbol_threshold</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__symbol_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" line="22" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a947dc1c1d2b09bc3ca512a0f8485af97" compoundref="letter__txtlayer__classifier_8py" startline="26" endline="38">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.predict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a9ca0cd09c0512da191b6ad47897b3531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__init__</definition>
+        <argsstring>(self, *dict config)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1afee0a60f195b9d9b8f059b271c79880a">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" line="20" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" bodystart="20" bodyend="23"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a9ca0cd09c0512da191b6ad47897b3531" compoundref="letter__txtlayer__classifier_8py" startline="20" endline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a9ca0cd09c0512da191b6ad47897b3531" compoundref="letter__txtlayer__classifier_8py" startline="20" endline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a947dc1c1d2b09bc3ca512a0f8485af97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.predict</definition>
+        <argsstring>(self, List[List[LineWithMeta]] lines)</argsstring>
+        <name>predict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.predict</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1afe7177a4ad74f9942361d065a837d1bc">predict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>lines</declname>
+          <array>[List[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>Classifies the correctness of the text layer in a PDF document. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param lines: list of lists with document textual lines. :returns: array of bool values - True if the textual layer is correct, False otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" line="26" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" bodystart="26" bodyend="38"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a5b8af5ab34acec26782c27ca099d223a" compoundref="letter__txtlayer__classifier_8py" startline="22">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier.__symbol_threshold</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple multilingual textual layer correctness classification. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Textual layer is considered as correct if percent of letters in the text &gt; 50%. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/letter_txtlayer_classifier.py" bodystart="14" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a9ca0cd09c0512da191b6ad47897b3531" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::letter_txtlayer_classifier::LetterTxtlayerClassifier</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a5b8af5ab34acec26782c27ca099d223a" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::letter_txtlayer_classifier::LetterTxtlayerClassifier</scope><name>__symbol_threshold</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158_1a947dc1c1d2b09bc3ca512a0f8485af97" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::letter_txtlayer_classifier::LetterTxtlayerClassifier</scope><name>predict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

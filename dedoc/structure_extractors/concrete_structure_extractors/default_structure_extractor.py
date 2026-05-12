@@ -7,7 +7,12 @@ from dedoc.structure_extractors.abstract_structure_extractor import AbstractStru
 from dedoc.structure_extractors.patterns.abstract_pattern import AbstractPattern
 from dedoc.structure_extractors.patterns.pattern_composition import PatternComposition
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_DefaultStructureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @purpose DefaultStructureExtractor for document structure extraction pipeline
 class DefaultStructureExtractor(AbstractStructureExtractor):
     """
     This class corresponds the basic structure extraction from the documents.
@@ -16,7 +21,12 @@ class DefaultStructureExtractor(AbstractStructureExtractor):
     """
     document_type = "other"
 
+    # region METHOD_extract [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose extract method
+    ## @io Input -> Output
+    ## @complexity 5
     def extract(self, document: UnstructuredDocument, parameters: Optional[dict] = None) -> UnstructuredDocument:
+        self.logger.debug(f"[IMP:4][DefaultStructureExtractor][extract_INIT] Starting")
         """
         Extract basic structure from the given document and add additional information to the lines' metadata.
         To get the information about the method's parameters look at the documentation of the class \
@@ -32,7 +42,13 @@ class DefaultStructureExtractor(AbstractStructureExtractor):
             line.metadata.hierarchy_level = pattern_composition.get_hierarchy_level(line=line)
         return document
 
+    # endregion METHOD_extract
+    # region METHOD___get_pattern_composition [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_pattern_composition method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_pattern_composition(self, parameters: dict) -> PatternComposition:
+        self.logger.debug(f"[IMP:4][DefaultStructureExtractor][__get_pattern_composition_INIT] Starting")
         patterns = parameters.get("patterns")
         if not patterns:
             from dedoc.structure_extractors.patterns.bracket_list_pattern import BracketListPattern
@@ -79,3 +95,29 @@ class DefaultStructureExtractor(AbstractStructureExtractor):
                 raise StructureExtractorError(msg="Pattern should be dict or `AbstractPattern`")
 
         return PatternComposition(patterns=pattern_classes)
+
+    # endregion METHOD___get_pattern_composition
+# endregion CLASS_DefaultStructureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/concrete_structure_extractors/default_structure_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/concrete_structure_extractors/default_structure_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => DefaultStructureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, concrete structure extractors, default structure extractor
+# STRUCTURE: ▶ structure_extractors/concrete_structure_extractors/default_structure_extractor → ○ DefaultStructureExtractor.cls → ⎋ result

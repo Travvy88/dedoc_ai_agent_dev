@@ -1,0 +1,25 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a3fe07c23ae44e96bc384b36f77d269ca", null ],
+    [ "__extract", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#ab17d34ac9da20ef486bed34657f4dd83", null ],
+    [ "__get_attached_images", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a2d8ab0123562a192b5bc51d159c8f01d", null ],
+    [ "__get_lines_with_location", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a7c86dd2be5647d7b9225bbdf4ac92a6b", null ],
+    [ "__get_tables", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a10b6733c4d22057b62cbe3254a80d272", null ],
+    [ "__get_tag", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#af362548c212eb78a19865bb95de8089f", null ],
+    [ "__jar_path", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a7d6f2f51c0263b48db088353775ad780", null ],
+    [ "__process_pdf", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#adacf72e06ed891c6554ed03531c23877", null ],
+    [ "__run", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#af2e5f3b975cab1a3a792b35ad2d5cd3f", null ],
+    [ "__save_gost_frame_boxes_to_json", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#af610bcb90773e6b0d74c2e99c8f6a5ec", null ],
+    [ "__save_objects_bboxes", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a1c290015450d4422d873bc2a0a7bf1d8", null ],
+    [ "_process_one_page", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#af08dec23a61c92addae3d3fa44ceff71", null ],
+    [ "can_read", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a12dfeac28b1f54d389d1cab65522f959", null ],
+    [ "read", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#ac0ccd9d10886bcef55ec216d0ca13063", null ],
+    [ "debug_save_path", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#aa2ba71a6b27bae0161a3580939be3e66", null ],
+    [ "default_config", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#af5324dc4f20643a7a0efb54d7a6d17c7", null ],
+    [ "jar_dir", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#ab6652e6c392ca5a4ec7df449a715dd22", null ],
+    [ "jar_name", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a04186543053cd738e4eac50be723b750", null ],
+    [ "java_not_found_error", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a0a5439d7507a33de6ce6839f6cac7dfb", null ],
+    [ "tabby_java_version", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#a708797bca2d02813a4454e8436998918", null ],
+    [ "table_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#ac55ff13eb3c23a82f02f1760f1a9a92b", null ],
+    [ "table_header_selector", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader.html#aa5fca5562652da9f0984be40cc23f1ac", null ]
+];

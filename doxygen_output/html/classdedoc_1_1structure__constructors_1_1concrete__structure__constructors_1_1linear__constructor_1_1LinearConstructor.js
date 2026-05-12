@@ -1,0 +1,4 @@
+var classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor =
+[
+    [ "construct", "classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor.html#afd8416a8c111ce6af4676e527300c59d", null ]
+];

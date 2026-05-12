@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1utils_1_1annotation__merger_1_1Space" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::utils::annotation_merger::Space</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a6dae1ee812924021a40e6920070e10b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.Space::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>dedoc.utils.annotation_merger.Space.start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="44" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a37a5f8dbacc694ff76e045daef516701" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.Space::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>dedoc.utils.annotation_merger.Space.end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="45" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a75cb566639a6d0bb7b35984defe9bbe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.utils.annotation_merger.Space.__init__</definition>
+        <argsstring>(self, int start, int end)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.utils.annotation_merger.Space.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="43" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="43" bodyend="49"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To represent a whitespace interval in text, used as a bridge element between mergeable annotations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/annotation_merger.py" line="41" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="41" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a75cb566639a6d0bb7b35984defe9bbe0" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::Space</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a37a5f8dbacc694ff76e045daef516701" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::Space</scope><name>end</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a6dae1ee812924021a40e6920070e10b5" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::Space</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

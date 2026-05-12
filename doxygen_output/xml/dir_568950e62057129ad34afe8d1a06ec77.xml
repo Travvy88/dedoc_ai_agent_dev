@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_568950e62057129ad34afe8d1a06ec77" kind="dir">
+    <compoundname>dedoc/data_structures/concrete_annotations</compoundname>
+    <innerfile refid="data__structures_2concrete__annotations_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="alignment__annotation_8py">alignment_annotation.py</innerfile>
+    <innerfile refid="attach__annotation_8py">attach_annotation.py</innerfile>
+    <innerfile refid="bbox__annotation_8py">bbox_annotation.py</innerfile>
+    <innerfile refid="bold__annotation_8py">bold_annotation.py</innerfile>
+    <innerfile refid="color__annotation_8py">color_annotation.py</innerfile>
+    <innerfile refid="confidence__annotation_8py">confidence_annotation.py</innerfile>
+    <innerfile refid="indentation__annotation_8py">indentation_annotation.py</innerfile>
+    <innerfile refid="italic__annotation_8py">italic_annotation.py</innerfile>
+    <innerfile refid="linked__text__annotation_8py">linked_text_annotation.py</innerfile>
+    <innerfile refid="reference__annotation_8py">reference_annotation.py</innerfile>
+    <innerfile refid="size__annotation_8py">size_annotation.py</innerfile>
+    <innerfile refid="spacing__annotation_8py">spacing_annotation.py</innerfile>
+    <innerfile refid="strike__annotation_8py">strike_annotation.py</innerfile>
+    <innerfile refid="style__annotation_8py">style_annotation.py</innerfile>
+    <innerfile refid="subscript__annotation_8py">subscript_annotation.py</innerfile>
+    <innerfile refid="superscript__annotation_8py">superscript_annotation.py</innerfile>
+    <innerfile refid="table__annotation_8py">table_annotation.py</innerfile>
+    <innerfile refid="underlined__annotation_8py">underlined_annotation.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/concrete_annotations/"/>
+  </compounddef>
+</doxygen>

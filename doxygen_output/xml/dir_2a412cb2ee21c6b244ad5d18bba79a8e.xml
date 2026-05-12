@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2a412cb2ee21c6b244ad5d18bba79a8e" kind="dir">
+    <compoundname>dedoc/metadata_extractors</compoundname>
+    <innerdir refid="dir_e41e5dae75db0846fd958e20553a544b">dedoc/metadata_extractors/concrete_metadata_extractors</innerdir>
+    <innerfile refid="metadata__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__metadata__extractor_8py">abstract_metadata_extractor.py</innerfile>
+    <innerfile refid="metadata__extractor__composition_8py">metadata_extractor_composition.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/"/>
+  </compounddef>
+</doxygen>

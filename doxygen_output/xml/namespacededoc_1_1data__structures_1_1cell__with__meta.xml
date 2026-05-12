@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1cell__with__meta" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::cell_with_meta</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta" prot="public">dedoc::data_structures::cell_with_meta::CellWithMeta</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1cell__with__meta_1a584d39dc678872ad875705fcde793b9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::cell_with_meta.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.cell_with_meta.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/cell_with_meta.py" line="9" column="1" bodyfile="dedoc/data_structures/cell_with_meta.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1cell__with__meta_1a7fe812409a282cd1b33820dc37745d03" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.cell_with_meta._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.cell_with_meta._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the CellWithMeta data structure — represents a single table cell with text lines, merge spans, and visibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Table cell data: lines, colspan, rowspan, annotations, serialization. \par \b Input\/ \:  Lines list, colspan, rowspan, invisible flag. \par \b Output\/ \:  CellWithMeta instance convertible to API schema. \par \b Links\/ \:  [INHERITS(5): Serializable, USES_API(8): ApiCellWithMeta, READS_DATA_FROM(9): LineWithMeta] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>lines is never None (defaults to empty list)</para>
+</listitem><listitem><para>colspan &gt;= 1, rowspan &gt;= 1 \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use colspan/rowspan rather than pre-expanded cells? A: This preserves the original table structure information, allowing the consumer to decide how to flatten/display. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Table cell with metadata] =&gt; CellWithMeta METHOD 6[Get merged text] =&gt; get_text METHOD 7[Merge annotations] =&gt; get_annotations METHOD 8[API schema conversion] =&gt; to_api_schema \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[CellWithMeta]: TableReader → CreateCell → CellWithMetaStoredInTable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/cell_with_meta.py" line="126" column="1" bodyfile="dedoc/data_structures/cell_with_meta.py" bodystart="126" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/cell_with_meta.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

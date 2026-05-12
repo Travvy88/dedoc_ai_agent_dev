@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1document__metadata" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::document_metadata</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" prot="public">dedoc::api::schema::document_metadata::DocumentMetadata</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1document__metadata_1aa457c78f64fffb4dea87861be258152d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::document_metadata.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="31" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1document__metadata_1a6b5d999c89a54130dbbc0ea215113044" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.document_metadata._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.document_metadata._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the DocumentMetadata schema — a Pydantic model holding file-level metadata (name, size, timestamps, MIME type, UID) with support for extra attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document file metadata model. \par \b Input\/ \:  None (standalone model with extra attributes support). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>DocumentMetadata</computeroutput> with uid, file_name, size, timestamps, file_type, plus arbitrary extra fields. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel, pydantic.Extra] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>uid is always a non-empty unique string.</para>
+</listitem><listitem><para>file_name is always present (original document name).</para>
+</listitem><listitem><para>Extra fields are preserved and serialized. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why Extra.allow? A: Different document formats carry different metadata (author, pages, etc.). Extra.allow prevents data loss while keeping the schema flexible. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Document metadata with extra attributes support] =&gt; DocumentMetadata \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DocumentMetadata]: MetadataExtractor =&gt; PopulateMetadata =&gt; ReturnToAPI </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="21" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="21" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/document_metadata.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

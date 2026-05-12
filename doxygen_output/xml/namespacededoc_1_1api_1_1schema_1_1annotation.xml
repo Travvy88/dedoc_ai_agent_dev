@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1annotation" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::annotation</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation" prot="public">dedoc::api::schema::annotation::Annotation</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1annotation_1afd0ee1cc5a8a3967285df52641087db0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::annotation.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.annotation.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="30" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1annotation_1aba300db2766c74f4f883296e10f2dbed" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.annotation._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.annotation._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the Annotation schema — a Pydantic model describing a piece of inline text metadata (font style, links, etc.) with character-level range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Text annotation data model for document lines. \par \b Input\/ \:  None (standalone model). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>Annotation</computeroutput> with start, end, name, value fields. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Annotation.start &lt;= Annotation.end for all valid annotations.</para>
+</listitem><listitem><para>Annotation.name is always a non-empty string identifying the annotation type. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use Pydantic BaseModel instead of dataclass? A: Pydantic provides built-in JSON serialization, Field descriptions for OpenAPI schema generation, and FastAPI integration. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Inline text annotation with character range] =&gt; Annotation \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Annotation]: APIConsumer =&gt; DeserializeAnnotationJSON =&gt; RenderStyledText </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/annotation.py" line="20" column="1" bodyfile="dedoc/api/schema/annotation.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/annotation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4 =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a510950946f73ae97f73606543dfb5052", null ],
+    [ "__add_whitespace_match", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a2e70537eb358f3981eb30dd5c149c4a6", null ],
+    [ "__create_line_batches", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#ac43ea9a0fea80087eb005dc77d50739b", null ],
+    [ "__get_extractor_by_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a9f4fa591608feb894449304460b5e760", null ],
+    [ "__text_clean", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#aff079282a2de985f28bb47a1f2a3b5b0", null ],
+    [ "__type_detect", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#af9e7bac278663ab0a4225b22b1aeaf3e", null ],
+    [ "_predict_extractor", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a2099cb827b690b3cfc33827d4511f9e2", null ],
+    [ "extract", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#aac8bbadc8f20900b27b82eb8f7793d46", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a5cc8cde047621cf437dec34c285c6c29", null ],
+    [ "extractors", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a3230c152788defa6c5a1c8b9a1abb0db", null ],
+    [ "hat_batch_count", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a69fcb7b339558d07f00c673d5636dcad", null ],
+    [ "hat_batch_size", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#adb0bc35b5ee94ee0661f247d49bfc827", null ],
+    [ "main_templates", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html#a28560be12631bc50adb4b6dd39b8012e", null ]
+];

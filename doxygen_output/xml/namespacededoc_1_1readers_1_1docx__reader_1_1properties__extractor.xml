@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::docx_reader::properties_extractor</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9205efa76d744e03196a4d9c3787c11d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::docx_reader::properties_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="7" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aad55f1fa1548d7a3a359299546354e08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.docx_reader.properties_extractor.spacing_to_float</definition>
+        <argsstring>(Union[str, int, float] spacing)</argsstring>
+        <name>spacing_to_float</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.spacing_to_float</qualifiedname>
+        <param>
+          <type>Union</type>
+          <declname>spacing</declname>
+          <array>[str, int, float]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="12" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="12" bodyend="17"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1ab7974ab064a3dd7d1a14ead86006cf07" compoundref="docx__reader_2properties__extractor_8py" startline="72" endline="116">dedoc.readers.docx_reader.properties_extractor.change_indent</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a6739ac6606000431bf8f5134aa079225" compoundref="docx__reader_2properties__extractor_8py" startline="117" endline="127">dedoc.readers.docx_reader.properties_extractor.change_size</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a820ae4fefec1e67940923969b422d350" compoundref="docx__reader_2properties__extractor_8py" startline="171" endline="215">dedoc.readers.docx_reader.properties_extractor.change_spacing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a7ad24162cf0140716cdf13ab02c53b27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.docx_reader.properties_extractor.check_if_true</definition>
+        <argsstring>(str value)</argsstring>
+        <name>check_if_true</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.check_if_true</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="18" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="18" bodyend="23"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aa15b5962c81759478cec7153df23d819" compoundref="docx__reader_2properties__extractor_8py" startline="158" endline="170">dedoc.readers.docx_reader.properties_extractor.change_caps</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1afc5a2c794c49d2e70df6ff280a7d5f3d" compoundref="docx__reader_2properties__extractor_8py" startline="128" endline="157">dedoc.readers.docx_reader.properties_extractor.change_jc</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a01cc0feda17647e9e133e4248b559d7c" compoundref="docx__reader_2properties__extractor_8py" startline="36" endline="71">dedoc.readers.docx_reader.properties_extractor.change_run_properties</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a820ae4fefec1e67940923969b422d350" compoundref="docx__reader_2properties__extractor_8py" startline="171" endline="215">dedoc.readers.docx_reader.properties_extractor.change_spacing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9a19ca221c901a72c114264f15e2b2a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_paragraph_properties</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old properties indent, size, jc, spacing_before, spacing_after if they were found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param old_properties: Paragraph :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="24" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="24" bodyend="35"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1ab7974ab064a3dd7d1a14ead86006cf07" compoundref="docx__reader_2properties__extractor_8py" startline="72" endline="116">dedoc.readers.docx_reader.properties_extractor.change_indent</references>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1afc5a2c794c49d2e70df6ff280a7d5f3d" compoundref="docx__reader_2properties__extractor_8py" startline="128" endline="157">dedoc.readers.docx_reader.properties_extractor.change_jc</references>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a6739ac6606000431bf8f5134aa079225" compoundref="docx__reader_2properties__extractor_8py" startline="117" endline="127">dedoc.readers.docx_reader.properties_extractor.change_size</references>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a820ae4fefec1e67940923969b422d350" compoundref="docx__reader_2properties__extractor_8py" startline="171" endline="215">dedoc.readers.docx_reader.properties_extractor.change_spacing</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a01cc0feda17647e9e133e4248b559d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_run_properties</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_run_properties</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_run_properties</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old properties: bold, italic, underlined, size if they were found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param old_properties: Run :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="36" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="36" bodyend="71"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a6739ac6606000431bf8f5134aa079225" compoundref="docx__reader_2properties__extractor_8py" startline="117" endline="127">dedoc.readers.docx_reader.properties_extractor.change_size</references>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a7ad24162cf0140716cdf13ab02c53b27" compoundref="docx__reader_2properties__extractor_8py" startline="18" endline="23">dedoc.readers.docx_reader.properties_extractor.check_if_true</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1ab7974ab064a3dd7d1a14ead86006cf07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_indent</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_indent</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_indent</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old properties: indentation if it was found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Indentation is changed according to the following attributes in paragraph properties:<itemizedlist>
+<listitem><para>firstLine describes additional indentation to current indentation, if hanging is present firstLine is ignored</para>
+</listitem><listitem><para>firstLineChars differs from firstLine only in measurement (one hundredths of a character unit)</para>
+</listitem><listitem><para>hanging removes indentation from current indentation (analogous hangingChars)</para>
+</listitem><listitem><para>start (startChars) describes classical indentation</para>
+</listitem><listitem><para>left isn&apos;t specified in the documentation, F Main measurement 1/1440 of an inch: 1 inch is 12 char units, 1/100 char unit = 1/1200 inch = 1.2 * (1/1440 of an inch)</para>
+</listitem></itemizedlist>
+</para>
+<para>:param old_properties: Paragraph :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="72" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="72" bodyend="116"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aad55f1fa1548d7a3a359299546354e08" compoundref="docx__reader_2properties__extractor_8py" startline="12" endline="17">dedoc.readers.docx_reader.properties_extractor.spacing_to_float</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9a19ca221c901a72c114264f15e2b2a5" compoundref="docx__reader_2properties__extractor_8py" startline="24" endline="35">dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a6739ac6606000431bf8f5134aa079225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_size</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_size</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_size</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old properties: size if it was found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param old_properties: Paragraph or Run :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="117" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="117" bodyend="127"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aad55f1fa1548d7a3a359299546354e08" compoundref="docx__reader_2properties__extractor_8py" startline="12" endline="17">dedoc.readers.docx_reader.properties_extractor.spacing_to_float</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9a19ca221c901a72c114264f15e2b2a5" compoundref="docx__reader_2properties__extractor_8py" startline="24" endline="35">dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a01cc0feda17647e9e133e4248b559d7c" compoundref="docx__reader_2properties__extractor_8py" startline="36" endline="71">dedoc.readers.docx_reader.properties_extractor.change_run_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1afc5a2c794c49d2e70df6ff280a7d5f3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_jc</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_jc</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_jc</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old_properties: jc (alignment) if tag jc was found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Alignment values: left, right, center, both, left is default. :param old_properties: Paragraph :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="128" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="128" bodyend="157"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a7ad24162cf0140716cdf13ab02c53b27" compoundref="docx__reader_2properties__extractor_8py" startline="18" endline="23">dedoc.readers.docx_reader.properties_extractor.check_if_true</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9a19ca221c901a72c114264f15e2b2a5" compoundref="docx__reader_2properties__extractor_8py" startline="24" endline="35">dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aa15b5962c81759478cec7153df23d819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_caps</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_caps</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_caps</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old_properties: caps if tag caps was found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param old_properties: Paragraph or Run :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="158" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="158" bodyend="170"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a7ad24162cf0140716cdf13ab02c53b27" compoundref="docx__reader_2properties__extractor_8py" startline="18" endline="23">dedoc.readers.docx_reader.properties_extractor.check_if_true</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a820ae4fefec1e67940923969b422d350" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.properties_extractor.change_spacing</definition>
+        <argsstring>(BaseProperties old_properties, Tag tree)</argsstring>
+        <name>change_spacing</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor.change_spacing</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>old_properties</declname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Changes old_properties: spacing_before, spacing_after if tag spacing was found in tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Spacing is changed according to the following attributes of tag &lt;spacing&gt;:<itemizedlist>
+<listitem><para>after / before (measured in twentieths of a point), ignored if afterLines or afterAutospacing are specified</para>
+</listitem><listitem><para>afterAutospacing / beforeAutospacing (we set 0 if specified) if is specified, other attributes are ignored</para>
+</listitem><listitem><para>afterLines / beforeLines (measured in one hundredths of a line) If we have spacing &quot;after&quot; for the previous paragraph and spacing &quot;before&quot; for the next paragraph, we choose maximum between these two values.</para>
+</listitem></itemizedlist>
+</para>
+<para>:param old_properties: Paragraph :param tree: BeautifulSoup tree with properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="171" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="171" bodyend="215"/>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a7ad24162cf0140716cdf13ab02c53b27" compoundref="docx__reader_2properties__extractor_8py" startline="18" endline="23">dedoc.readers.docx_reader.properties_extractor.check_if_true</references>
+        <references refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1aad55f1fa1548d7a3a359299546354e08" compoundref="docx__reader_2properties__extractor_8py" startline="12" endline="17">dedoc.readers.docx_reader.properties_extractor.spacing_to_float</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1a9a19ca221c901a72c114264f15e2b2a5" compoundref="docx__reader_2properties__extractor_8py" startline="24" endline="35">dedoc.readers.docx_reader.properties_extractor.change_paragraph_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1properties__extractor_1ab9755260edda4dc4eb69b5b85f479fba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.properties_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.docx_reader.properties_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse DOCX documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Feature and metadata extraction from documents. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][spacing_to_float utility/helper] =&gt; spacing_to_float FUNC [5][check_if_true utility/helper] =&gt; check_if_true FUNC [5][change_paragraph_properties utility/helper] =&gt; change_paragraph_properties FUNC [5][change_run_properties utility/helper] =&gt; change_run_properties FUNC [5][change_indent utility/helper] =&gt; change_indent FUNC [5][change_size utility/helper] =&gt; change_size FUNC [5][change_jc utility/helper] =&gt; change_jc FUNC [5][change_caps utility/helper] =&gt; change_caps FUNC [5][change_spacing utility/helper] =&gt; change_spacing \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(DOCX) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/properties_extractor.py" line="241" column="1" bodyfile="dedoc/readers/docx_reader/properties_extractor.py" bodystart="241" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/properties_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

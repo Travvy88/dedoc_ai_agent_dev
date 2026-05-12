@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1api__args" kind="namespace" language="Python">
+    <compoundname>dedoc::api::api_args</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters" prot="public">dedoc::api::api_args::QueryParameters</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1api__args_1a13f6b16799f5c7bc3a62b43d2b09459f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::api_args.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.api_args.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="33" column="1" bodyfile="dedoc/api/api_args.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__args_1a44525b5949b7cea12b2174b9b9b59b96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.api_args._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.api_args._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define QueryParameters — a dataclass-based FastAPI Form model that captures all dedoc API query parameters for document parsing configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  API request parameter parsing — document type, structure options, PDF handling, table analysis, attachments, etc. \par \b Input\/ \:  FastAPI Form fields from HTTP request. \par \b Output\/ \:  QueryParameters instance with typed fields and <computeroutput>to_dict()</computeroutput> serialization. \par \b Links\/ \:  [USES_API(8): fastapi.Form; USES_API(6): dataclasses.asdict] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>All Form fields have defaults (no required parameters at this level).</para>
+</listitem><listitem><para>to_dict() always returns a flat dict with parameter_name -&gt; default_value. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why dataclass with Form() instead of Pydantic BaseModel? A: FastAPI&apos;s Form() with dataclass provides direct mapping from multipart form data and enum validation without Pydantic overhead. Fields use string enums for request validation. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 8[API query parameters as Form dataclass] =&gt; QueryParameters METHOD 5[Serializes dataclass to flat dict] =&gt; to_dict \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[QueryParameters]: ApiEndpoint =&gt; ParseFormData =&gt; ConfigureParsingPipeline </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="21" column="1" bodyfile="dedoc/api/api_args.py" bodystart="21" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/api_args.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

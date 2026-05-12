@@ -2,12 +2,17 @@ import re
 from collections import Counter
 from typing import List, Optional, Tuple
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import numpy as np
 
 from dedoc.readers.pdf_reader.data_classes.line_with_location import LineWithLocation
 from dedoc.utils.utils import similarity
 
 
+# region CLASS_HeaderFooterDetector [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class HeaderFooterDetector:
     """
     Class detects header and footer textual lines.
@@ -30,6 +35,7 @@ class HeaderFooterDetector:
         4. The more pages, the better. Remember that the parameter `pages` limits the number of pages in a document.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self) -> None:
         # 1 - first 4 weight for header, last 4 weight for footer
         self.weights = [1.0, 1.0, 0.85, 0.75, 0.75, 0.85, 1.0, 1.0]
@@ -37,6 +43,8 @@ class HeaderFooterDetector:
         self.pattern_roman = r"\b[IVXLCDM]+\.?\b|\b[ivxlcdm]+\.?\b"
         self.pattern_digits = r"\d+"
 
+    # region METHOD_detect [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def detect(self, lines: List[List[LineWithLocation]], is_header_footer_threshold: float = 0.5) \
             -> Tuple[List[List[LineWithLocation]], List[List[LineWithLocation]], List[List[LineWithLocation]]]:
 
@@ -100,6 +108,8 @@ class HeaderFooterDetector:
 
         return lines, headers, footers
 
+    # region METHOD__replace_roman_and_digits_strict [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_detect
     def _replace_roman_and_digits_strict(self, text: str) -> str:
         result = re.sub(self.pattern_roman, "@", text)
         result = re.sub(self.pattern_digits, "@", result)
@@ -107,11 +117,15 @@ class HeaderFooterDetector:
 
         return result.strip()
 
+    # region METHOD__similarity [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__replace_roman_and_digits_strict
     def _similarity(self, s1: str, s2: str) -> float:
         if len(s1) == 0 or len(s2) == 0:
             return 0.0
         return similarity(s1, s2)
 
+    # region METHOD__strip_empty_lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__similarity
     def _strip_empty_lines(self, lines: List[List[LineWithLocation]]) -> List[List[LineWithLocation]]:
         reg_empty_string = re.compile(r"^\s*\n$")
         for page_id in range(len(lines)):
@@ -132,6 +146,8 @@ class HeaderFooterDetector:
 
         return lines
 
+    # region METHOD__remove_header_footer [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__strip_empty_lines
     def _remove_header_footer(self, is_footer_header: np.ndarray,
                               popular_patterns: List[List[str]],
                               lines: List[List[LineWithLocation]],
@@ -148,6 +164,8 @@ class HeaderFooterDetector:
 
         return None
 
+    # region METHOD__get_popular_pattern [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__remove_header_footer
     def _get_popular_pattern(self, is_footer_header: np.ndarray, threshold: float, patterns: List[List[str]]) -> List[List[str]]:
         # Algorithm if header takes more than 40% of changed header-footer of doc
         #                       and more 70% in the doc with const header-footers
@@ -165,4 +183,32 @@ class HeaderFooterDetector:
             freqs = np.array(list(Counter(filter_pattern).values())) / len(filter_pattern)
             popular_patterns[num].extend([pattern for num, pattern in enumerate(uniques) if freqs[num] > threshold])
 
+# endregion CLASS_HeaderFooterDetector
         return popular_patterns
+
+    # endregion METHOD__get_popular_pattern
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_header_footers_analysis; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Utility functions for document processing.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [14][HeaderFooterDetector reader/processor] => HeaderFooterDetector
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: header_footers_analysis, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, HeaderFooterDetector
+# STRUCTURE: ▶ Init ┌PDF file┐ → [HeaderFooterDetector] ○ can_read? → ○ read → [__init__ → detect → _replace_roman_and_digits_strict] → ⊕ UnstructuredDocument(lines, tables, attachments)

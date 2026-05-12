@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body { background: url("https://www.mofa.gov.vn/en/logo.jpg") 95% 95% no-repeat fixed white; font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif; color: black; margin: 0px; padding: 0px; font-size: 50px !important; min-width: 0px !important; }
+
+#visual-portal-wrapper { width: 100% !important; min-width: 0px !important; }
+
+#portal-column-content { margin: 0px !important; }
+
+#portal-column-content #content { padding: 1em; margin: 0px !important; }
+
+h1, h2 { background-color: rgb(237, 245, 251); border-color: rgb(140, 172, 187); border-style: solid; border-width: 1px; padding-top: 0em; padding-left: 0.5em; padding-right: 0.5em; margin: 1em 0px 0px; break-before: page; font-weight: normal; font-size: 50px !important; }
+
+h1.documentFirstHeading { break-before: avoid; }
+
+dl, ol, ul { text-align: left; margin-top: 0.5em; font-size: 40px !important; }
+
+dt { background-color: rgb(237, 245, 251); border-color: rgb(140, 172, 187); border-style: solid; border-width: 1px; display: inline; padding-right: 0.5em; }
+
+dd { margin-bottom: 0.25em; }
+
+li { margin: 0px 0px 0.5em; }
+
+p { display: none; }
+
+.documentDescription { font-weight: normal; margin-top: 4em; font-size: 40px !important; text-align: center !important; }
+
+ul { list-style-image: url("https://www.mofa.gov.vn/en/bulletBig.gif"); }
+
+pre { font-size: 25px; padding: 0.5em; font-weight: bold; background-color: rgb(237, 245, 251); border: 1px dashed rgb(140, 172, 187); }
+
+code { background-color: rgb(237, 245, 251); border-color: rgb(140, 172, 187); border-style: dashed; border-width: 1px; padding: 0.1em 0.25em; }
+
+a { color: rgb(0, 51, 102) !important; }
+
+div.top, #portal-logo, .hiddenStructure, #portal-searchbox, #portal-globalnav, #portal-personaltools, #portal-breadcrumbs, #portal-column-one, #portal-column-two, .contentViews, .contentActions, .help, .legend, div.portalMessage, div.documentActions, .documentByLine, .netscape4, #portal-footer, #portal-colophon, input, .skipnav { display: none; }
+
+div#portal-columns div#visual-column-wrapper, div#portal-columns div#visual-column-wrapper div#portal-column-content { width: 100%; }
+
+div#portal-columns div#visual-column-wrapper div#portal-column-content { padding: 0px; margin: 0px; }
+
+div#portal-columns div#visual-column-wrapper div#portal-column-content * { text-align: left; }
+
+#content, .group { background: transparent; border: none; padding: 0px; margin: 0px; }
+
+#content { margin: 0px 1em; }
+
+table.listing, table.listing td { border: 1pt solid black; border-collapse: collapse; }
+
+a, a:link, a:visited { color: rgb(85, 34, 0); background: transparent; text-decoration: underline; }

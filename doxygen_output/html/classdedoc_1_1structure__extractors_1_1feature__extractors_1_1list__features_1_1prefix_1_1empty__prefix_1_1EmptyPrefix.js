@@ -1,0 +1,7 @@
+var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix.html#a34b30e02ef894a5b74d810e923397753", null ],
+    [ "is_valid", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix.html#a0233d7caa000989a3a68a02b9d6aa068", null ],
+    [ "predecessor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix.html#a80d3e8078f18b0b61a35cc9f41935b89", null ],
+    [ "name", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix.html#a8a444ddc9797e5b65c8954633c111912", null ]
+];

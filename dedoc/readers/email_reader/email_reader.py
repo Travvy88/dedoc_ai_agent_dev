@@ -7,17 +7,21 @@ from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
 
+# region CLASS_EmailReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class EmailReader(BaseReader):
     """
     This class is used for parsing documents with .eml extension (e-mail messages saved into files).
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedoc.extensions import recognized_extensions, recognized_mimes
         from dedoc.readers.html_reader.html_reader import HtmlReader
         super().__init__(config=config, recognized_extensions=recognized_extensions.eml_like_format, recognized_mimes=recognized_mimes.eml_like_format)
         self.html_reader = HtmlReader(config=self.config)
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if the document extension or mime is suitable for this reader.
@@ -30,6 +34,8 @@ class EmailReader(BaseReader):
             return extension.lower() in self._recognized_extensions
         return mime in self._recognized_mimes
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines, tables and attachments.
@@ -106,6 +112,8 @@ class EmailReader(BaseReader):
 
         return UnstructuredDocument(lines=lines, tables=tables, attachments=attachments)
 
+    # region METHOD___add_attachment [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __add_attachment(self, message: Message, attachments_dir: str, attachments: list, need_content_analysis: bool) -> None:
         import mimetypes
         import os
@@ -137,6 +145,8 @@ class EmailReader(BaseReader):
                                         uid=f"attach_{uuid.uuid1()}",
                                         need_content_analysis=need_content_analysis))
 
+    # region METHOD___add_content_from_html [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___add_attachment
     def __add_content_from_html(self, message: Message, lines: list, tables: list, parameters: dict) -> None:
         from tempfile import NamedTemporaryFile
 
@@ -159,6 +169,8 @@ class EmailReader(BaseReader):
         tables.extend(document.tables)
         file.close()
 
+    # region METHOD___add_text_content [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___add_content_from_html
     def __add_text_content(self, message: Message, lines: list) -> None:
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
 
@@ -176,6 +188,8 @@ class EmailReader(BaseReader):
                                       metadata=LineMetadata(tag_hierarchy_level=HierarchyLevel.create_unknown(), page_id=0, line_id=0),
                                       annotations=[]))
 
+    # region METHOD___fix_filename [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___add_text_content
     def __fix_filename(self, filename: str) -> str:
         import re
 
@@ -183,6 +197,8 @@ class EmailReader(BaseReader):
         filename = re.sub(r"\s+", " ", filename)
         return filename
 
+    # region METHOD___get_decoded [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___fix_filename
     def __get_decoded(self, text: str) -> str:
         from email.header import decode_header
 
@@ -196,10 +212,14 @@ class EmailReader(BaseReader):
         part = "".join(part)
         return part
 
+    # region METHOD___get_field [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_decoded
     def __get_field(self, message: Message, key: str, line_metadata: LineMetadata) -> LineWithMeta:
         text = self.__get_decoded(message.get(key.lower(), ""))
         return LineWithMeta(line=text, metadata=line_metadata)
 
+    # region METHOD___get_main_fields [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_field
     def __get_main_fields(self, message: Message) -> List[LineWithMeta]:
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
 
@@ -214,4 +234,32 @@ class EmailReader(BaseReader):
             if len(line.line) > 0:
                 lines.append(line)
 
+# endregion CLASS_EmailReader
         return lines
+
+    # endregion METHOD___get_main_fields
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_email_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse email (.eml) documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: email (.eml) format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [20][EmailReader reader/processor] => EmailReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(email (.eml)) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: email_reader, dedoc, reader, email (.eml), EmailReader, BaseReader, EML, email, MIME, attachments, header, HTML, subject, from, to, cc, EmailReader
+# STRUCTURE: ▶ Init ┌email (.eml) file┐ → [EmailReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)

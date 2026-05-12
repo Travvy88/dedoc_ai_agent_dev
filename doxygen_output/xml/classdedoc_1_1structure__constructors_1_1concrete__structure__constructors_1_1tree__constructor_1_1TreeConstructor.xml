@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</compoundname>
+    <basecompoundref refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor" prot="public" virt="non-virtual">dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1ac7bead4284fc7d3c2708218634c1ecc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref></type>
+        <definition> ParsedDocument dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.construct</definition>
+        <argsstring>(self, UnstructuredDocument document, Optional[dict] parameters=None)</argsstring>
+        <name>construct</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.construct</qualifiedname>
+        <reimplements refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor_1a39c56b6a39b90c937fc852e5971b88cc">construct</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Build the full hierarchical tree: extract document name, insert list auxiliary nodes, add lines with hierarchy-aware positioning, merge root. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  TreeNode, DocumentContent, DocumentMetadata, __get_document_name, __add_lists \par \b I/O\/ \:  UnstructuredDocument, Optional[dict] -&gt; ParsedDocument \par \b Complexity\/ \:  8</para>
+<para>Build the tree structure representation for the given document intermediate representation. To get the information about the parameters look at the documentation of :class:<computeroutput>~dedoc.structure_constructors.AbstractStructureConstructor</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="72" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="72" bodyend="114"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1aa1e3ede1c60f15d469b91a6f2ffe32d8" compoundref="tree__constructor_8py" startline="140" endline="156">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__add_lists</references>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a23f9ba099ff81b78c4453bab2d7431be" compoundref="tree__constructor_8py" startline="122" endline="132">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__get_document_name</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a23f9ba099ff81b78c4453bab2d7431be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>], List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]]</type>
+        <definition> Tuple[List[LineWithMeta], List[LineWithMeta]] dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__get_document_name</definition>
+        <argsstring>(self, List[LineWithMeta] lines)</argsstring>
+        <name>__get_document_name</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__get_document_name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Separate lines with hierarchy level (0, 0) (document title/name) from all other content lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  LineWithMeta \par \b I/O\/ \:  List[LineWithMeta] -&gt; Tuple[List[LineWithMeta], List[LineWithMeta]] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="122" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="122" bodyend="132"/>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1ac7bead4284fc7d3c2708218634c1ecc5" compoundref="tree__constructor_8py" startline="72" endline="114">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.construct</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1aa1e3ede1c60f15d469b91a6f2ffe32d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__add_lists</definition>
+        <argsstring>(self, List[LineWithMeta] not_document_name)</argsstring>
+        <name>__add_lists</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__add_lists</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>not_document_name</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Insert auxiliary &quot;list&quot; nodes before consecutive list-item lines that share the same hierarchy level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  LineWithMeta, __create_list_line, HierarchyLevel.is_list_item \par \b I/O\/ \:  List[LineWithMeta] -&gt; List[LineWithMeta] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="140" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="140" bodyend="156"/>
+        <references refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a78842671a1ec77c7af2d0387acad50a0" compoundref="tree__constructor_8py" startline="165" endline="177">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__create_list_line</references>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1ac7bead4284fc7d3c2708218634c1ecc5" compoundref="tree__constructor_8py" startline="72" endline="114">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.construct</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a78842671a1ec77c7af2d0387acad50a0" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__create_list_line</definition>
+        <argsstring>(LineWithMeta line)</argsstring>
+        <name>__create_list_line</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__create_list_line</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create an auxiliary &quot;list&quot; line with adjusted hierarchy level (level_2 -= 0.5) to serve as a container for list-item children. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  HierarchyLevel, LineMetadata, LineWithMeta \par \b I/O\/ \:  LineWithMeta -&gt; LineWithMeta \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="165" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="165" bodyend="177"/>
+        <referencedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1aa1e3ede1c60f15d469b91a6f2ffe32d8" compoundref="tree__constructor_8py" startline="140" endline="156">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor.__add_lists</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Build the primary hierarchical document structure: construct a tree from lines with hierarchy levels, merging headers, and inserting auxiliary list nodes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used to form a basic hierarchical document structure representation as a tree.</para>
+<para>The structure is built according to the lines&apos; hierarchy levels and their types:<itemizedlist>
+<listitem><para>lines with hierarchy level (0, 0) are merged and become a root of the document;</para>
+</listitem><listitem><para>lines with a type <computeroutput>list_item</computeroutput> become children of a new empty auxiliary node <computeroutput>list</computeroutput>;</para>
+</listitem><listitem><para>each line is added as a separate tree node in the document hierarchy according to its hierarchy level:<itemizedlist>
+<listitem><para>if the level of the current line is less then the previous line level, the current line becomes its child;</para>
+</listitem><listitem><para>else the line becomes a child of the first line which have less hierarchy level that the current line has.</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>Hierarchy levels of the lines are compared lexicographically.</para>
+<para><bold>Example:</bold><itemizedlist>
+<listitem><para><bold>root line (0, 0)</bold><itemizedlist>
+<listitem><para><bold>first child line (1, 0)</bold><itemizedlist>
+<listitem><para><bold>line (2, 0)</bold><itemizedlist>
+<listitem><para><bold>line (2, 1)</bold></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>line (2, 0)</bold></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><bold>second child line (1, 0)</bold> </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="45" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="45" bodyend="180"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1aa1e3ede1c60f15d469b91a6f2ffe32d8" prot="private" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</scope><name>__add_lists</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a78842671a1ec77c7af2d0387acad50a0" prot="private" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</scope><name>__create_list_line</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1a23f9ba099ff81b78c4453bab2d7431be" prot="private" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</scope><name>__get_document_name</name></member>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1ac7bead4284fc7d3c2708218634c1ecc5" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

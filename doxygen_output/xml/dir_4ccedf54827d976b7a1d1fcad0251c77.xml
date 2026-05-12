@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_4ccedf54827d976b7a1d1fcad0251c77" kind="dir">
+    <compoundname>dedoc/structure_extractors/line_type_classifiers</compoundname>
+    <innerfile refid="structure__extractors_2line__type__classifiers_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__line__type__classifier_8py">abstract_line_type_classifier.py</innerfile>
+    <innerfile refid="abstract__pickled__classifier_8py">abstract_pickled_classifier.py</innerfile>
+    <innerfile refid="diploma__classifier_8py">diploma_classifier.py</innerfile>
+    <innerfile refid="fintoc__classifier_8py">fintoc_classifier.py</innerfile>
+    <innerfile refid="law__classifier_8py">law_classifier.py</innerfile>
+    <innerfile refid="tz__classifier_8py">tz_classifier.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/line_type_classifiers/"/>
+  </compounddef>
+</doxygen>

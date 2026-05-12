@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1config" kind="namespace" language="Python">
+    <compoundname>dedoc::config</compoundname>
+    <innerclass refid="classdedoc_1_1config_1_1Configuration" prot="public">dedoc::config::Configuration</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1config_1a8f2afb523e406266688cdadca6b68436" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::config.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.config.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/config.py" line="5" column="1" bodyfile="dedoc/config.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.config.get_config</definition>
+        <argsstring>()</argsstring>
+        <name>get_config</name>
+        <qualifiedname>dedoc.config.get_config</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convenience function that delegates to the Configuration singleton to retrieve the application configuration dictionary, providing a terse import-time interface for downstream modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  Configuration.get_instance().get_config \par \b I/O\/ \:  None -&gt; dict \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/config.py" line="101" column="1" bodyfile="dedoc/config.py" bodystart="101" bodyend="107"/>
+        <references refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="101" endline="107">dedoc.config.get_config</references>
+        <referencedby refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="101" endline="107">dedoc.config.get_config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1config_1a0623370a4bb42e30406b1c59866f1a98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.config._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.config._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide a centralized, lazily-initialized, singleton-based configuration service that assembles all application-level settings (paths, API ports, OCR thresholds, GPU flags, debug modes) for the Dedoc document processing system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Application configuration assembly, environment variable reading, default value provision, logging setup. \par \b Input\/ \:  Environment variables (RESOURCES_PATH, DOCREADER_PORT) and OS filesystem paths. \par \b Output\/ \:  A singleton Configuration instance providing a unified configuration dictionary. \par \b Links\/ \:  [USES_API(8): os.environ, logging; READS_DATA_FROM(7): filesystem paths] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>get_config()</computeroutput> always returns the same dictionary reference (single-init via __config caching).</para>
+</listitem><listitem><para>Configuration singleton is created exactly once per process lifetime. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why Singleton + lazy initialization for configuration? A: Dedoc has many components (readers, converters, extractors) that all need config. Singleton ensures consistency; lazy init avoids expensive config assembly on import. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Singleton configuration holder] =&gt; Configuration FUNC 8[Shortcut to get config dict] =&gt; get_config \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Configuration.get_config]: DocumentProcessor =&gt; GetApplicationSettings =&gt; AllSettingsAvailable</para>
+</listitem><listitem><para>[get_config]: ExternalModule =&gt; QuickConfigRetrieval =&gt; ConfigDictReturned </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/config.py" line="128" column="1" bodyfile="dedoc/config.py" bodystart="128" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/config.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

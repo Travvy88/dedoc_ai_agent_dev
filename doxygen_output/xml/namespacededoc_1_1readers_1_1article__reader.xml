@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1article__reader" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::article_reader</compoundname>
+    <innernamespace refid="namespacededoc_1_1readers_1_1article__reader_1_1article__reader">dedoc::readers::article_reader::article_reader</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1article__reader_1a22026a3d62934ad3c8be108ce36b6b41" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.article_reader._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.article_reader._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Package init — marks article_reader as a dedoc reader subpackage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Symbol re-export. \par \b Input\/ \:  None. \par \b Output\/ \:  None. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This file may be empty. \par \b Changes\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup.] \par \b Module Map\/ \:</para>
+<para>[10][Empty package init — as designed.] \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[init]: Python (Import) → LoadSubpackage → ModuleReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/article_reader/__init__.py" line="15" column="1" bodyfile="dedoc/readers/article_reader/__init__.py" bodystart="15" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/article_reader/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

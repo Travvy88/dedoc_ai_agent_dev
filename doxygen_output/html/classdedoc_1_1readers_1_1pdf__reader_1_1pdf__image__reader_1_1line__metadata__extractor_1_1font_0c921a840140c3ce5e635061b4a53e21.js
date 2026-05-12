@@ -1,0 +1,6 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21.html#a71e576367c31aead8ce83e14c9d0426b", null ],
+    [ "predict_annotations", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21.html#a02fbe62147589a57ba072a495e1c4353", null ],
+    [ "bold_classifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21.html#a37ca629b88ebc18faf8ee80b8c55383f", null ]
+];

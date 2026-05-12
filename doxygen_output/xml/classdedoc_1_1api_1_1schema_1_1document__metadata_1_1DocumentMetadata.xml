@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::document_metadata::DocumentMetadata</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config" prot="public">dedoc::api::schema::document_metadata::DocumentMetadata::Config</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1ac2874c0819c3cff5d60da142cfcbdb0a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.document_metadata.DocumentMetadata::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="63" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.document_metadata.DocumentMetadata::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="63" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.document_metadata.DocumentMetadata::example</definition>
+        <argsstring></argsstring>
+        <name>example</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.example</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="63" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aaa7b5dfad3a3f524c73f3085c16380c4" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1ac2874c0819c3cff5d60da142cfcbdb0a" kindref="member">str</ref></type>
+        <definition>str dedoc.api.schema.document_metadata.DocumentMetadata::file_name</definition>
+        <argsstring></argsstring>
+        <name>file_name</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.file_name</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;Original document name before rename and conversion&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=&quot;example.odt&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="64" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a776a1a9dafcfb93f5107bfadb57d60e8" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1ac2874c0819c3cff5d60da142cfcbdb0a" kindref="member">str</ref></type>
+        <definition>str dedoc.api.schema.document_metadata.DocumentMetadata::temporary_file_name</definition>
+        <argsstring></argsstring>
+        <name>temporary_file_name</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.temporary_file_name</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;File name during parsing (unique name after rename and conversion)&quot;, example=&quot;123.odt&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="65" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a85233336e19ef9fff56c4e307eb3a06e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.document_metadata.DocumentMetadata::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.size</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;File size in bytes&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=20060)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="66" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aea3c842b5dd4cd210b7b11e104a7c7ce" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.document_metadata.DocumentMetadata::modified_time</definition>
+        <argsstring></argsstring>
+        <name>modified_time</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.modified_time</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;Modification time of the document in the UnixTime format&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=1590579805)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="67" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a24e0ad35f394a6e3eeed20c31c2a06be" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.document_metadata.DocumentMetadata::created_time</definition>
+        <argsstring></argsstring>
+        <name>created_time</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.created_time</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;Creation time of the document in the UnixTime format&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=1590579805)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="68" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a7023d715a7e6412be1f0fabb0549ee03" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.document_metadata.DocumentMetadata::access_time</definition>
+        <argsstring></argsstring>
+        <name>access_time</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.access_time</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;File access time in the UnixTime format&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=1590579805)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="69" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a42043714e4919cfddfb64d66498f49a9" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1ac2874c0819c3cff5d60da142cfcbdb0a" kindref="member">str</ref></type>
+        <definition>str dedoc.api.schema.document_metadata.DocumentMetadata::file_type</definition>
+        <argsstring></argsstring>
+        <name>file_type</name>
+        <qualifiedname>dedoc.api.schema.document_metadata.DocumentMetadata.file_type</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" kindref="member">description</ref>=&quot;Mime type of the file&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" kindref="member">example</ref>=&quot;application/vnd.oasis.opendocument.text&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_metadata.py" line="70" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold document file metadata (name, size, timestamps, MIME type) with open extension for format-specific attributes via Extra.allow. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (uid, file_name, size, timestamps, file_type, **extra) -&gt; JSON serializable model</para>
+<para>Document metadata like its name, size, author, etc.</para>
+<para>:ivar file_name: original document name (before rename and conversion, so it can contain non-ascii symbols, spaces and so on) :ivar temporary_file_name: file name during parsing (unique name after rename and conversion) :ivar size: size of the original file in bytes :ivar modified_time: time of the last modification in unix time format (seconds since the epoch) :ivar created_time: time of the creation in unixtime :ivar access_time: time of the last access to the file in unixtime :ivar file_type: mime type of the file :ivar uid: document unique identifier (useful for attached files)</para>
+<para>:vartype file_name: str :vartype temporary_file_name: str :vartype size: int :vartype modified_time: int :vartype created_time: int :vartype access_time: int :vartype file_type: str :vartype uid: str</para>
+<para>Additional variables may be added with other file metadata. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.document_metadata.DocumentMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.document_metadata.DocumentMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/document_metadata.py" line="36" column="1" bodyfile="dedoc/api/schema/document_metadata.py" bodystart="36" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a7023d715a7e6412be1f0fabb0549ee03" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>access_time</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a24e0ad35f394a6e3eeed20c31c2a06be" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>created_time</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1acf3325c65ce4f75e8440340fc03ccc02" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>description</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a1da32bde279f3b85220b80e3888e6a90" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>example</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aaa7b5dfad3a3f524c73f3085c16380c4" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>file_name</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a42043714e4919cfddfb64d66498f49a9" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>file_type</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1aea3c842b5dd4cd210b7b11e104a7c7ce" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>modified_time</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a85233336e19ef9fff56c4e307eb3a06e" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>size</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1ac2874c0819c3cff5d60da142cfcbdb0a" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>str</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1a776a1a9dafcfb93f5107bfadb57d60e8" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_metadata::DocumentMetadata</scope><name>temporary_file_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

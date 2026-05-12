@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__handler_1_1attachments__handler" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_handler::attachments_handler</compoundname>
+    <innerclass refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler" prot="public">dedoc::attachments_handler::attachments_handler::AttachmentsHandler</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__handler_1_1attachments__handler_1a37e9cfc27632627c119669eb80ff8dc0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::attachments_handler::attachments_handler.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.attachments_handler.attachments_handler.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_handler/attachments_handler.py" line="49" column="1" bodyfile="dedoc/attachments_handler/attachments_handler.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__handler_1_1attachments__handler_1a8b36fa894d2a533a39452cf960a33f49" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_handler.attachments_handler._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_handler.attachments_handler._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Orchestrate the handling of document attachments: iterate over UnstructuredDocument attachments, optionally parse them via DedocManager (recursion with depth limit), and collect parsed results with metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Attachment handling orchestration: recursion depth control, per-attachment parsing or metadata-only extraction, error resilience (DedocError → empty document), metadata enrichment. \par \b Input\/ \:  UnstructuredDocument (with attachments), DedocManager (document parser), parameters dict. \par \b Output\/ \:  List of ParsedDocument objects (one per attachment, with metadata). \par \b Links\/ \:  [USES_API(10): DedocManager.parse, DedocManager.document_metadata_extractor] \par \b Links\/ \:  [USES_API(9): ParsedDocument, UnstructuredDocument, AttachedFile, DocumentMetadata] \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1utils_1_1parameter__utils_1ab58db53632a50dde55624730dffba632" kindref="member">dedoc.utils.parameter_utils.get_param_with_attachments</ref>] \par \b Links\/ \:  [USES_API(6): <ref refid="namespacededoc_1_1utils_1_1utils_1a610540a9c72a27267d5251ab2d692c9c" kindref="member">dedoc.utils.utils.get_empty_content</ref>] \par \b Links\/ \:  [USES_API(5): DedocError] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>handle_attachments ALWAYS returns List[ParsedDocument] (may be empty).</para>
+</listitem><listitem><para>Recursion depth (recursion_deep_attachments) is decremented per level; stops at 0.</para>
+</listitem><listitem><para>If with_attachments is false or recursion depth exhausted, returns empty list.</para>
+</listitem><listitem><para>DedocError on a single attachment is caught; the attachment is replaced with an empty ParsedDocument containing metadata.</para>
+</listitem><listitem><para>Logging of attachment processing is rate-limited to at most one message per 3 seconds. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why catch DedocError and return empty ParsedDocument instead of propagating? A: One broken attachment should not prevent processing of other attachments. Returning an empty document with metadata preserves the attachment&apos;s identity (filename, uid) for downstream consumers. Q: Why rate-limit attachment processing logs? A: Documents can have hundreds of attachments; logging each one individually floods the log. A 3-second throttle keeps the log informative without spamming. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup + LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Orchestrates attachment processing with recursion + error resilience] =&gt; AttachmentsHandler METHOD 5[Constructor: stores config and logger] =&gt; <bold>init</bold> METHOD 9[Main handler: iterates attachments, parses or metadata-only] =&gt; handle_attachments METHOD 6[Creates an empty ParsedDocument with metadata for failed attachments] =&gt; __get_empty_document \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[handle_attachments]: DedocManager =&gt; HandleDocumentAttachments =&gt; List[ParsedDocument] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_handler/attachments_handler.py" line="32" column="1" bodyfile="dedoc/attachments_handler/attachments_handler.py" bodystart="32" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_handler/attachments_handler.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

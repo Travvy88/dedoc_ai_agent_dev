@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cancellationprocesshandler_0',['CancellationProcessHandler',['../classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler.html',1,'dedoc::api::process_handler']]],
+  ['cell_1',['Cell',['../classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell.html',1,'dedoc::readers::pdf_reader::data_classes::tables::cell']]],
+  ['cellarhierarchylevelbuilder_2',['CellarHierarchyLevelBuilder',['../classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__bucaa5c91d5d2c49b60afdb32f1e7a9dfa.html',1,'dedoc::structure_extractors::hierarchy_level_builders::law_builders::cellar_builder']]],
+  ['cellsplitter_3',['CellSplitter',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter.html',1,'dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter']]],
+  ['cellwithmeta_4',['CellWithMeta',['../classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta.html',1,'dedoc.api.schema.cell_with_meta.CellWithMeta'],['../classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta.html',1,'dedoc.data_structures.cell_with_meta.CellWithMeta']]],
+  ['classificationmodeltorch_5',['ClassificationModelTorch',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14.html',1,'dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::model']]],
+  ['classifyinglawstructureextractor_6',['ClassifyingLawStructureExtractor',['../classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html',1,'dedoc::structure_extractors::concrete_structure_extractors::classifying_law_structure_extractor']]],
+  ['cnnmodel_7',['CNNModel',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel.html',1,'dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model']]],
+  ['colorannotation_8',['ColorAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation.html',1,'dedoc::data_structures::concrete_annotations::color_annotation']]],
+  ['columnsorientationclassifier_9',['ColumnsOrientationClassifier',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html',1,'dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::columns_orientation_classifier']]],
+  ['confidenceannotation_10',['ConfidenceAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation_1_1ConfidenceAnnotation.html',1,'dedoc::data_structures::concrete_annotations::confidence_annotation']]],
+  ['config_11',['Config',['../classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata_1_1Config.html',1,'dedoc.api.schema.document_metadata.DocumentMetadata.Config'],['../classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config.html',1,'dedoc.api.schema.line_metadata.LineMetadata.Config']]],
+  ['configuration_12',['Configuration',['../classdedoc_1_1config_1_1Configuration.html',1,'dedoc::config']]],
+  ['configurationmanager_13',['ConfigurationManager',['../classdedoc_1_1manager__config_1_1ConfigurationManager.html',1,'dedoc::manager_config']]],
+  ['conversionerror_14',['ConversionError',['../classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError.html',1,'dedoc::common::exceptions::conversion_error']]],
+  ['convertercomposition_15',['ConverterComposition',['../classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition.html',1,'dedoc::converters::converter_composition']]],
+  ['counter_16',['Counter',['../classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter.html',1,'dedoc::readers::docx_reader::data_structures::utils']]],
+  ['csvreader_17',['CSVReader',['../classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader.html',1,'dedoc::readers::csv_reader::csv_reader']]]
+];

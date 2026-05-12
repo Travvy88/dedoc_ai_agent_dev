@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::feature_extractors::list_features</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor">dedoc::structure_extractors::feature_extractors::list_features::list_features_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils">dedoc::structure_extractors::feature_extractors::list_features::list_utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

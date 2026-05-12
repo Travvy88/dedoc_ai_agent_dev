@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::linear_constructor</compoundname>
+    <innerclass refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor" prot="public">dedoc::structure_constructors::concrete_structure_constructors::linear_constructor::LinearConstructor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1a82433d37918fb5e9b9cee5c3335cb8dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_constructors::concrete_structure_constructors::linear_constructor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" line="36" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1a4ee93679db39e3509cfe70ef23e9c87b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Build a flat, linear document structure where all lines are direct children of an empty root node — the simplest possible document representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Flat structure construction, TreeNode assembly, metadata propagation. \par \b Input\/ \:  UnstructuredDocument (lines + tables + metadata). \par \b Output\/ \:  ParsedDocument with a flat line tree. \par \b Links\/ \:  [USES_API(8): AbstractStructureConstructor, TreeNode, DocumentContent, DocumentMetadata] \par \b Links to Spec\/ \:  REQ-STR-003: A linear (flat) structure must be available as the simplest document representation. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Root node ALWAYS has the empty lines list.</para>
+</listitem><listitem><para>All document lines become direct children of the root.</para>
+</listitem><listitem><para>Metadata is copied from the UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why an empty root node instead of making the first line the root? A: A uniform root with empty lines ensures all constructors produce the same TreeNode shape, simplifying downstream consumers. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Flat linear structure constructor] =&gt; LinearConstructor METHOD 9[Assemble flat document tree from lines] =&gt; construct \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[construct]: StructureExtractor → AssembleFlatTree → ProduceLinearParsedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" line="23" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

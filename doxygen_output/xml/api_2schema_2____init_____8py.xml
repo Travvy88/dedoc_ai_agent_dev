@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing,<sp/>APISchema;<sp/>CONCEPT(7):<sp/>SchemaAggregation,<sp/>PublicAPI;<sp/>TECH(6):<sp/>Pydantic,<sp/>FastAPI]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Aggregate<sp/>and<sp/>re-export<sp/>all<sp/>API<sp/>schema<sp/>classes<sp/>for<sp/>external<sp/>consumers,<sp/>providing<sp/>a<sp/>single<sp/>import<sp/>point<sp/>for<sp/>the<sp/>dedoc<sp/>API<sp/>schema<sp/>layer.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Public<sp/>API<sp/>schema<sp/>surface<sp/>—<sp/>Pydantic<sp/>models<sp/>for<sp/>document<sp/>representation.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(re-exports<sp/>from<sp/>sibling<sp/>modules).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Flat<sp/>namespace<sp/>of<sp/>all<sp/>schema<sp/>classes<sp/>via<sp/>__all__.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>__all__<sp/>always<sp/>contains<sp/>all<sp/>public<sp/>schema<sp/>class<sp/>names.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>All<sp/>names<sp/>in<sp/>__all__<sp/>resolve<sp/>to<sp/>actual<sp/>classes<sp/>via<sp/>relative<sp/>imports.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>centralize<sp/>exports?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>Provides<sp/>a<sp/>stable<sp/>public<sp/>API<sp/>contract.<sp/>External<sp/>consumers<sp/>import<sp/>from<sp/>`dedoc.api.schema`<sp/>without<sp/>knowing<sp/>internal<sp/>module<sp/>layout.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>EXPORT<sp/>[Aggregates<sp/>schema<sp/>classes<sp/>for<sp/>public<sp/>API]<sp/>=&gt;<sp/>__all__</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[__all__]:<sp/>ExternalConsumer<sp/>=&gt;<sp/>ImportSchemaNamespace<sp/>=&gt;<sp/>DiscoverAvailableSchemaClasses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1api_1_1schema_1aa76eba77d09551919c65b602acba941c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1aa76eba77d09551919c65b602acba941c" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>schema,<sp/>API,<sp/>Pydantic,<sp/>models,<sp/>exports,<sp/>__all__,<sp/>aggregated,<sp/>public<sp/>surface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Imports<sp/>┌Annotation,CellWithMeta,DocumentContent,...┐<sp/>→<sp/>⊕<sp/>__all__<sp/>list<sp/>→<sp/>⎋<sp/>export</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.annotation<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.cell_with_meta<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>CellWithMeta</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.document_content<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocumentContent</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.document_metadata<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocumentMetadata</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.line_metadata<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineMetadata</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.line_with_meta<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.parsed_document<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ParsedDocument</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.table<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Table</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.table_metadata<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TableMetadata</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.tree_node<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TreeNode</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="namespacededoc_1_1api_1_1schema_1a67e9511f4bb7baa6b0e5b0914c88bad3" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;Annotation&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CellWithMeta&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DocumentContent&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DocumentMetadata&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;LineMetadata&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;LineWithMeta&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ParsedDocument&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Table&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;TableMetadata&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;TreeNode&quot;</highlight><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/__init__.py"/>
+  </compounddef>
+</doxygen>

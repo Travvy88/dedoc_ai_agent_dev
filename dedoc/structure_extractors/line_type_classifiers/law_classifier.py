@@ -7,18 +7,35 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.structure_extractors.feature_extractors.law_text_features import LawTextFeatures
 from dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier import AbstractPickledLineTypeClassifier
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_LawLineTypeClassifier [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @purpose LawLineTypeClassifier for document structure extraction pipeline
 class LawLineTypeClassifier(AbstractPickledLineTypeClassifier):
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, classifier_type: str, path: str, *, config: dict) -> None:
         super().__init__(config=config)
+
+        self.logger.debug(f"[IMP:4][LawLineTypeClassifier][__init___INIT] Starting")
         self.classifier, feature_extractor_parameters = self.load(classifier_type, path)
         self.feature_extractor = LawTextFeatures(**feature_extractor_parameters)
         self.regexp_application_begin = re.compile(
             r"^(\'|\")?((приложение)|(утвержден)[оаы]?){1}(( )*([№n]?( )*(\d){1,3})?( )*)"
             r"((к распоряжению)|(к постановлению)|(к приказу))?\s*$")
 
+    # endregion METHOD___init__
+    # region METHOD_predict [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose predict method
+    ## @io Input -> Output
+    ## @complexity 5
     def predict(self, lines: List[LineWithMeta]) -> List[str]:
+        self.logger.debug(f"[IMP:4][LawLineTypeClassifier][predict_INIT] Starting")
         if len(lines) == 0:
             return []
 
@@ -41,7 +58,39 @@ class LawLineTypeClassifier(AbstractPickledLineTypeClassifier):
         labels = [self.classifier.classes_[label_id] for label_id in labels_probability.argmax(1)]
         return labels
 
+    # endregion METHOD_predict
+    # region METHOD___match_body_begin [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __match_body_begin method
+    ## @io Input -> Output
+    ## @complexity 5
     def __match_body_begin(self, text: str, label: str) -> bool:
+        self.logger.debug(f"[IMP:4][LawLineTypeClassifier][__match_body_begin_INIT] Starting")
         body_started = label in ("header", "raw_text") and any(regexp.match(text.strip()) for regexp in LawTextFeatures.named_regexp)
         application_started = self.regexp_application_begin.match(text.lower().strip())
         return label == "structure_unit" or body_started or application_started
+
+    # endregion METHOD___match_body_begin
+# endregion CLASS_LawLineTypeClassifier
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/line_type_classifiers/law_classifier: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/line_type_classifiers/law_classifier
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => LawLineTypeClassifier
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, line type classifiers, law classifier
+# STRUCTURE: ▶ structure_extractors/line_type_classifiers/law_classifier → ○ LawLineTypeClassifier.cls → ⎋ result

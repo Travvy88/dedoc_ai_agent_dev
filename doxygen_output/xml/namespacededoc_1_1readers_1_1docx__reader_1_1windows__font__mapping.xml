@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1docx__reader_1_1windows__font__mapping" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::docx_reader::windows_font_mapping</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1docx__reader_1_1windows__font__mapping_1a7cefc655c626c3d01dca89e6b4de71c7" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc::readers::docx_reader::windows_font_mapping.windows_mapping</definition>
+        <argsstring></argsstring>
+        <name>windows_mapping</name>
+        <qualifiedname>dedoc.readers.docx_reader.windows_font_mapping.windows_mapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/windows_font_mapping.py" line="1" column="1" bodyfile="dedoc/readers/docx_reader/windows_font_mapping.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1docx__reader_1_1windows__font__mapping_1a2db97d87921aafb6a17dce45b9907237" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.windows_font_mapping._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.docx_reader.windows_font_mapping._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Map Windows Symbol font code points (0xf0xx range) to their Unicode equivalents — corrects garbled text from legacy .doc/.docx documents that use Symbol encoding. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Font glyph substitution — Windows Symbol → Unicode character mapping. \par \b Input\/ \:  None (static dictionary evaluated at import time). \par \b Output\/ \:  Dict[str, str] — hex code point → Unicode character. \par \b Links\/ \:  [USES_API(0): None — pure data module] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>windows_mapping ALWAYS contains string keys (hex) and string values (Unicode chars). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate module for font mapping? A: The mapping table is large and format-specific — isolation keeps the docx reader code clean and makes the mapping auditable. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup.] \par \b Module Map\/ \:</para>
+<para>DATA [10][Windows Symbol → Unicode glyph mapping] =&gt; windows_mapping \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[windows_mapping]: DocxReader (Parse) → CorrectEncoding(text) → UnicodeText </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/windows_font_mapping.py" line="232" column="1" bodyfile="dedoc/readers/docx_reader/windows_font_mapping.py" bodystart="232" bodyend="237"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/windows_font_mapping.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

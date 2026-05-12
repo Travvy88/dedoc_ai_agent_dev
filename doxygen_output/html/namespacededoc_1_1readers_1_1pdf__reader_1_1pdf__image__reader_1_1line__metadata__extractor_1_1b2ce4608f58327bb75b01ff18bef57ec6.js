@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b2ce4608f58327bb75b01ff18bef57ec6 =
+[
+    [ "BoldClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b2ce4608f58327bb75b01ff18bef57ec6.html#a798e984bb3482695f724881feef8017a", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b2ce4608f58327bb75b01ff18bef57ec6.html#a4a77e1093f02aaf8db9feae04cbe6dc6", null ]
+];

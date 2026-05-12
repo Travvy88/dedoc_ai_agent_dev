@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="attachments__extractors_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors">dedoc::attachments_extractors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1attachments__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>AttachmentExtraction;<sp/>TECH(3):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Centralized<sp/>import<sp/>surface<sp/>for<sp/>all<sp/>attachment<sp/>extractors:<sp/>exposes<sp/>AbstractAttachmentsExtractor,<sp/>all<sp/>Office-format<sp/>extractors,<sp/>JSON<sp/>and<sp/>PDF<sp/>extractors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization,<sp/>symbol<sp/>re-export,<sp/>public<sp/>API<sp/>surface.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols:<sp/>AbstractAttachmentsExtractor,<sp/>AbstractOfficeAttachmentsExtractor,<sp/>DocxAttachmentsExtractor,<sp/>ExcelAttachmentsExtractor,<sp/>JsonAttachmentsExtractor,<sp/>PDFAttachmentsExtractor,<sp/>PptxAttachmentsExtractor</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>AbstractAttachmentsExtractor,<sp/>AbstractOfficeAttachmentsExtractor,<sp/>DocxAttachmentsExtractor,<sp/>ExcelAttachmentsExtractor,<sp/>JsonAttachmentsExtractor,<sp/>PDFAttachmentsExtractor,<sp/>PptxAttachmentsExtractor]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>__all__<sp/>ALWAYS<sp/>contains<sp/>all<sp/>7<sp/>public<sp/>symbols.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>Every<sp/>concrete<sp/>extractor<sp/>listed<sp/>in<sp/>__all__<sp/>is<sp/>importable<sp/>from<sp/>this<sp/>package.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>re-export<sp/>everything<sp/>here<sp/>instead<sp/>of<sp/>importing<sp/>from<sp/>subpackages?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>Single<sp/>import<sp/>surface<sp/>simplifies<sp/>client<sp/>code:<sp/>`from<sp/>dedoc.attachments_extractors<sp/>import<sp/>DocxAttachmentsExtractor`.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Semantic<sp/>markup<sp/>added]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>10[Abstract<sp/>base<sp/>for<sp/>attachment<sp/>extraction]<sp/>=&gt;<sp/>AbstractAttachmentsExtractor</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>CLASS<sp/>9[Abstract<sp/>base<sp/>for<sp/>Office-format<sp/>attachments<sp/>(docx,<sp/>xlsx,<sp/>pptx)]<sp/>=&gt;<sp/>AbstractOfficeAttachmentsExtractor</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>CLASS<sp/>8[Extracts<sp/>attachments<sp/>from<sp/>.docx<sp/>files]<sp/>=&gt;<sp/>DocxAttachmentsExtractor</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>CLASS<sp/>8[Extracts<sp/>attachments<sp/>from<sp/>.xlsx<sp/>files]<sp/>=&gt;<sp/>ExcelAttachmentsExtractor</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">##<sp/>CLASS<sp/>8[Extracts<sp/>attachments<sp/>from<sp/>.json<sp/>files]<sp/>=&gt;<sp/>JsonAttachmentsExtractor</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">##<sp/>CLASS<sp/>8[Extracts<sp/>attachments<sp/>from<sp/>.pdf<sp/>files]<sp/>=&gt;<sp/>PDFAttachmentsExtractor</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">##<sp/>CLASS<sp/>8[Extracts<sp/>attachments<sp/>from<sp/>.pptx<sp/>files]<sp/>=&gt;<sp/>PptxAttachmentsExtractor</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">##<sp/>-<sp/>[__init__]:<sp/>CodeAgent<sp/>(Import)<sp/>=&gt;<sp/>ImportExtractor<sp/>=&gt;<sp/>GetExtractorInstance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="namespacededoc_1_1attachments__extractors_1aa2a4ccdba7cc65702c6affca549aa7a9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1attachments__extractors_1aa2a4ccdba7cc65702c6affca549aa7a9" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>attachments,<sp/>extractors,<sp/>docx,<sp/>xlsx,<sp/>pptx,<sp/>pdf,<sp/>json,<sp/>abstract,<sp/>office,<sp/>package_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Import<sp/>┌all<sp/>extractor<sp/>classes┐<sp/>→<sp/>○<sp/>__all__<sp/>←<sp/>[...7<sp/>symbols]<sp/>→<sp/>⎋</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.abstract_attachment_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractAttachmentsExtractor</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.abstract_office_attachments_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractOfficeAttachmentsExtractor</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.docx_attachments_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocxAttachmentsExtractor</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.excel_attachments_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ExcelAttachmentsExtractor</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.json_attachment_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>JsonAttachmentsExtractor</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.pdf_attachments_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PDFAttachmentsExtractor</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_attachments_extractors.pptx_attachments_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PptxAttachmentsExtractor</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="namespacededoc_1_1attachments__extractors_1a3267243c9f60fc97eb714769129e94de" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;AbstractAttachmentsExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;AbstractOfficeAttachmentsExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;DocxAttachmentsExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;ExcelAttachmentsExtractor&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;JsonAttachmentsExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;PDFAttachmentsExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;PptxAttachmentsExtractor&apos;</highlight><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/attachments_extractors/__init__.py"/>
+  </compounddef>
+</doxygen>

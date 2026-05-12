@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2line__metadata_8py" kind="file" language="Python">
+    <compoundname>line_metadata.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata" prot="public">dedoc::api::schema::line_metadata::LineMetadata</innerclass>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config" prot="public">dedoc::api::schema::line_metadata::LineMetadata::Config</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1line__metadata">dedoc::api::schema::line_metadata</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1line__metadata" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>LineMetadata;<sp/>CONCEPT(7):<sp/>ParagraphMetadata,<sp/>LineAttributes;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel,<sp/>Extra]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>LineMetadata<sp/>schema<sp/>—<sp/>a<sp/>Pydantic<sp/>model<sp/>for<sp/>paragraph/line-level<sp/>metadata<sp/>(paragraph<sp/>type,<sp/>page<sp/>number,<sp/>line<sp/>number)<sp/>with<sp/>extra<sp/>attributes<sp/>support.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>line/paragraph<sp/>metadata<sp/>model.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model<sp/>with<sp/>Extra.allow).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`LineMetadata`<sp/>with<sp/>paragraph_type,<sp/>page_id,<sp/>line_id<sp/>+<sp/>extra<sp/>fields.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel,<sp/>pydantic.Extra]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>page_id<sp/>&gt;=<sp/>0.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>paragraph_type<sp/>is<sp/>always<sp/>a<sp/>non-empty<sp/>string<sp/>(e.g.,<sp/>&quot;raw_text&quot;,<sp/>&quot;header&quot;,<sp/>&quot;list_item&quot;).</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>-<sp/>Extra<sp/>fields<sp/>preserved<sp/>for<sp/>format-specific<sp/>metadata.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>Extra.allow<sp/>for<sp/>line<sp/>metadata?</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>A:<sp/>Different<sp/>parsers<sp/>attach<sp/>different<sp/>metadata<sp/>(heading<sp/>levels,<sp/>indentation,<sp/>list<sp/>numbering).<sp/>Extra.allow<sp/>prevents<sp/>loss.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>CLASS<sp/>9[Line/paragraph<sp/>metadata<sp/>with<sp/>extra<sp/>attributes]<sp/>=&gt;<sp/>LineMetadata</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>-<sp/>[LineMetadata]:<sp/>StructureExtractor<sp/>=&gt;<sp/>AnnotateParagraph<sp/>=&gt;<sp/>PassToTreeNode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacededoc_1_1api_1_1schema_1_1line__metadata_1ab2709b60ef16ae1ab68540ceeb86775b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1line__metadata_1ab2709b60ef16ae1ab68540ceeb86775b" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>line,<sp/>metadata,<sp/>paragraph,<sp/>type,<sp/>page,<sp/>line_id,<sp/>extra,<sp/>Pydantic,<sp/>schema</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>(Extra.allow)<sp/>→<sp/>LineMetadata<sp/>┌paragraph_type:str,<sp/>page_id:int,<sp/>line_id:Optional[int],<sp/>+extra┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Extra,<sp/>Field</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespacededoc_1_1api_1_1schema_1_1line__metadata_1a72951d17227c438ddec6d161cd349d8b" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_LineMetadata<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>LineMetadata;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Hold<sp/>paragraph/line-level<sp/>metadata<sp/>(type,<sp/>page,<sp/>line<sp/>number)<sp/>with<sp/>extensible<sp/>extra<sp/>attributes<sp/>for<sp/>format-specific<sp/>annotations.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">##<sp/>@io<sp/>(paragraph_type,<sp/>page_id,<sp/>line_id,<sp/>**extra)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Holds<sp/>information<sp/>about<sp/>document<sp/>node/line<sp/>metadata,<sp/>such<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>page<sp/>number<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>line<sp/>type.</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>paragraph_type:<sp/>type<sp/>of<sp/>the<sp/>document<sp/>line/paragraph<sp/>(header,<sp/>list_item,<sp/>list,<sp/>etc.)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>page_id:<sp/>page<sp/>number<sp/>where<sp/>paragraph<sp/>starts,<sp/>the<sp/>numeration<sp/>starts<sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>page<sp/>0</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>line_id:<sp/>line<sp/>number<sp/>inside<sp/>the<sp/>entire<sp/>document,<sp/>the<sp/>numeration<sp/>starts<sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>line<sp/>0</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>paragraph_type:<sp/>str</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>page_id:<sp/>int</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>line_id:<sp/>Optional[int]</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Additional<sp/>variables<sp/>may<sp/>be<sp/>added<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>other<sp/>line<sp/>metadata.</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="51" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config" refkind="compound"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config" kindref="compound">Config</ref>:</highlight></codeline>
+<codeline lineno="52" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config_1ace233763e499e5763ccea95f3c848065" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extra<sp/>=<sp/>Extra.allow</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a00bc807dd77df3fb146088ccc828036e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>paragraph_type:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Type<sp/>of<sp/>the<sp/>document<sp/>line/paragraph<sp/>(header,<sp/>list_item,<sp/>list,<sp/>etc.)&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;raw_text&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>page_id:<sp/>int<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Page<sp/>number<sp/>of<sp/>the<sp/>line/paragraph<sp/>beginning&quot;</highlight><highlight class="normal">,<sp/>example=0)</highlight></codeline>
+<codeline lineno="56" refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1acda89367be241224baf7bd24f171650a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>line_id:<sp/>Optional[int]<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Line<sp/>number&quot;</highlight><highlight class="normal">,<sp/>example=1)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_LineMetadata</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/line_metadata.py"/>
+  </compounddef>
+</doxygen>

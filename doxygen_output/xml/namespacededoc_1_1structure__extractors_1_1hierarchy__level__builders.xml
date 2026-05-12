@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level__builder">dedoc::structure_extractors::hierarchy_level_builders::abstract_hierarchy_level_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder">dedoc::structure_extractors::hierarchy_level_builders::diploma_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder">dedoc::structure_extractors::hierarchy_level_builders::header_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders">dedoc::structure_extractors::hierarchy_level_builders::law_builders</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder">dedoc::structure_extractors::hierarchy_level_builders::toc_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder">dedoc::structure_extractors::hierarchy_level_builders::tz_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg">dedoc::structure_extractors::hierarchy_level_builders::utils_reg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

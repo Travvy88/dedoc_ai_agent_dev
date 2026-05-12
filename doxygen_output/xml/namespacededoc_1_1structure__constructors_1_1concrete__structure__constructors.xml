@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor">dedoc::structure_constructors::concrete_structure_constructors::linear_constructor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item">dedoc::structure_constructors::concrete_structure_constructors::list_item</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor">dedoc::structure_constructors::concrete_structure_constructors::tree_constructor</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1a495d29d540c65dbb46a17c20c60254a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Mark the concrete_structure_constructors subpackage as a Python package, grouping tree, linear, and list-item structure constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization, subpackage grouping. \par \b Input\/ \:  None. \par \b Output\/ \:  None (empty init — package marker only). \par \b Links\/ \:  [USES_API(7): TreeConstructor, LinearConstructor, ListItem] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This file is an empty package marker. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why an empty init? A: Constructors are imported explicitly from their modules; the package init serves only as a namespace marker. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup added] \par \b Module Map\/ \:</para>
+<para>(Empty package marker — no entities) \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Package]: Python (ImportSystem) → ResolveSubpackage → EnableDirectImports </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/__init__.py" line="19" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

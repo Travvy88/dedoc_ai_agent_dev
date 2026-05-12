@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</compoundname>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph" prot="public" virt="non-virtual">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run" prot="public" virt="non-virtual">dedoc.readers.docx_reader.data_structures.run.Run</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ad01725ba9b61b2a27a2e6d300d392070" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::jc</definition>
+        <argsstring></argsstring>
+        <name>jc</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.jc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="17" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a5baa666cb5624d50d7bf896e2c5dd427" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::indentation</definition>
+        <argsstring></argsstring>
+        <name>indentation</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.indentation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="18" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a14f398a0ce4491e3829014149994e318" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="19" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a1e59085ed251edc8843188d342b1268a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::bold</definition>
+        <argsstring></argsstring>
+        <name>bold</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.bold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="20" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1aac2c8cddfceb5a67304e641925f1fc14" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::italic</definition>
+        <argsstring></argsstring>
+        <name>italic</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.italic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="21" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a7136b24b76cae29dee1c202034d0dee6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::underlined</definition>
+        <argsstring></argsstring>
+        <name>underlined</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.underlined</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="22" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a6d5210815d1226ffd5ae590bdaa70792" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::strike</definition>
+        <argsstring></argsstring>
+        <name>strike</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.strike</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="23" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ae4b5678f00d4f92ded7d5bc4d441bd1c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::superscript</definition>
+        <argsstring></argsstring>
+        <name>superscript</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.superscript</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="24" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ad3ceda9e26373e101b423bedc3be558e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties::subscript</definition>
+        <argsstring></argsstring>
+        <name>subscript</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.subscript</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="26" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a3fdefcbfeca834eba58579f499dbc6c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.__init__</definition>
+        <argsstring>(self, Optional[&quot;BaseProperties&quot;] properties=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a44dbfd393bf0763685b47d031fffe9b4">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a0da5a1df3203f04e28aecf7d0deb9be5">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>properties</declname>
+          <array>[&quot;BaseProperties&quot;]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Contains style properties for paragraphs and runs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param properties: Paragraph or Run for copying its properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="12" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="12" bodyend="27"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.docx_reader.data_structures.base_props.BaseProperties</label>
+        <link refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties"/>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.docx_reader.data_structures.paragraph.Paragraph</label>
+        <link refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.docx_reader.data_structures.run.Run</label>
+        <link refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="dedoc/readers/docx_reader/data_structures/base_props.py" line="9" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/base_props.py" bodystart="9" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a3fdefcbfeca834eba58579f499dbc6c1" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a1e59085ed251edc8843188d342b1268a" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>bold</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a5baa666cb5624d50d7bf896e2c5dd427" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>indentation</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1aac2c8cddfceb5a67304e641925f1fc14" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>italic</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ad01725ba9b61b2a27a2e6d300d392070" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>jc</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a14f398a0ce4491e3829014149994e318" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>size</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a6d5210815d1226ffd5ae590bdaa70792" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>strike</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ad3ceda9e26373e101b423bedc3be558e" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>subscript</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1ae4b5678f00d4f92ded7d5bc4d441bd1c" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>superscript</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties_1a7136b24b76cae29dee1c202034d0dee6" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::base_props::BaseProperties</scope><name>underlined</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

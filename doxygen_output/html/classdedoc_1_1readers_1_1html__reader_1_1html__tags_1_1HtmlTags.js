@@ -1,0 +1,27 @@
+var classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags =
+[
+    [ "available_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a03b5eec45d7851e1791a1e561127c76d", null ],
+    [ "available_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a8c16ac6208760086425d197b2ce9d9b9", null ],
+    [ "block_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a75ab8e04361eaee02447e06745e4bfad", null ],
+    [ "bold_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#accc4f6e74d3638180a2ed395e847fd3d", null ],
+    [ "header_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a2bc2ed5698f911385f5c93903dd56d08", null ],
+    [ "italic_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#ad04b6cd82c73282cff7f841e49635536", null ],
+    [ "link_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a9018158b2a31c7444a2b699f91315305", null ],
+    [ "list_items", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a7ca06749e91bf638d18f0aae946c4bfb", null ],
+    [ "list_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#ad844fdc5d2070b0fb28988840795a8b6", null ],
+    [ "ordered_list", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#ab1b11ef962cc20eda885996760ed130b", null ],
+    [ "paragraphs", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a3001b874a708040ab803b54ea85135a1", null ],
+    [ "service_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#aaf31c343caa7e52f06e3ba781a580324", null ],
+    [ "simple_text_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a7a1fa36ac2183aad4ab1e7bcc4af8e21", null ],
+    [ "special_symbol_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a163c5784166bfbd1c727c2319bcd2873", null ],
+    [ "strike_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a426454bdb4a71dbc5a2bf71ce2cf1ae6", null ],
+    [ "styled_tag", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a7fc81b49b9c08e98ed6dd2b496d26254", null ],
+    [ "subscript_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#aa8ba31bd815584e14e3a47f5d74c60d8", null ],
+    [ "superscript_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a271230102c25ed91066ee00e11672a33", null ],
+    [ "table_cells", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#abdf8542b81f2a9686e9a7a2400c903cc", null ],
+    [ "table_rows", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#aaef31992f24809a47a7d362bc4203407", null ],
+    [ "table_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a7a1393c8cb7f4151e5be47d910b8ad02", null ],
+    [ "text_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a20b20f9ec41b31785fa2fcf0637fb79c", null ],
+    [ "underlined_tags", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#ae3e0ca7a62f5abd94d826b7fe46ae22e", null ],
+    [ "unordered_list", "classdedoc_1_1readers_1_1html__reader_1_1html__tags_1_1HtmlTags.html#a13b96037c0e95737ce3006fd0cb0c083", null ]
+];

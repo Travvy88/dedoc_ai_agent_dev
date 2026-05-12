@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1table__metadata" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::table_metadata</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata" prot="public">dedoc::api::schema::table_metadata::TableMetadata</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1table__metadata_1af750e1cec74183dbc5dbc328b88a6f60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::table_metadata.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.table_metadata.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table_metadata.py" line="31" column="1" bodyfile="dedoc/api/schema/table_metadata.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1table__metadata_1ad519200cd666408b995bf9d1835f98ff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.table_metadata._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.table_metadata._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the TableMetadata schema — a Pydantic model for table-level metadata: unique identifier, page number, rotation angle, and title. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Table metadata model. \par \b Input\/ \:  None (standalone model). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>TableMetadata</computeroutput> with page_id, uid, rotated_angle, title. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>uid is always a non-empty unique string.</para>
+</listitem><listitem><para>rotated_angle is in degrees, may be 0.0 for non-rotated tables. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why include rotated_angle? A: OCR-based table recognition on scanned documents may detect tables at non-zero angles; this metadata preserves that information for correct rendering. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Table-level metadata — UID, page, rotation, title] =&gt; TableMetadata \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[TableMetadata]: TableDetector =&gt; AnnotateTableLocation =&gt; LinkTableToPage </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table_metadata.py" line="20" column="1" bodyfile="dedoc/api/schema/table_metadata.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/table_metadata.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

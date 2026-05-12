@@ -1,0 +1,13 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#ad2ad396af420f0925a062a41d526ec6b", null ],
+    [ "_postprocess_lines", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a315236632c450609501f25f7ea190055", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a279ace7c767abd45776282ca6e2ec12c", null ],
+    [ "hierarchy_level_builders", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a1c4bcb86510ead8b77a6650036399e50", null ],
+    [ "hl_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#aac0f0eb795b8829ec8222f811724e3b5", null ],
+    [ "init_hl_depth", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#ad8bd167fb85fd553d100ae33bddc2181", null ],
+    [ "regexps_ends_of_number", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a673b7efd6a5e5ad24d97ca9c7732525f", null ],
+    [ "regexps_item", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a5da807fff8f21860f9d5589d4d163a9c", null ],
+    [ "regexps_part", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#a824072db2fb0718bd781518ea9a71beb", null ],
+    [ "regexps_subitem", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor.html#ac8dea1b8504cad05aeb3897e0925e980", null ]
+];

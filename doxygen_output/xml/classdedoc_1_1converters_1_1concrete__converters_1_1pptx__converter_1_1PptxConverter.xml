@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::converters::concrete_converters::pptx_converter::PptxConverter</compoundname>
+    <basecompoundref refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter" prot="public" virt="non-virtual">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a1c055cb3742216f6ae97f10c370e7c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.converters.concrete_converters.pptx_converter.PptxConverter.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.converters.concrete_converters.pptx_converter.PptxConverter.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1afbbdf9aba2bb004ccbe2179acb1c7aab">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize the converter with pptx-like extension and MIME type registries from the global extensions configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  converted_extensions, converted_mimes \par \b I/O\/ \:  config: Optional[dict] -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="22" column="1" bodyfile="dedoc/converters/concrete_converters/pptx_converter.py" bodystart="22" bodyend="25"/>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a1c055cb3742216f6ae97f10c370e7c8c" compoundref="pptx__converter_8py" startline="22" endline="25">dedoc.converters.concrete_converters.pptx_converter.PptxConverter.__init__</references>
+        <referencedby refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a1c055cb3742216f6ae97f10c370e7c8c" compoundref="pptx__converter_8py" startline="22" endline="25">dedoc.converters.concrete_converters.pptx_converter.PptxConverter.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a488b4dd43364ad1df1eff4eb97f2d97a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.converters.concrete_converters.pptx_converter.PptxConverter.convert</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>convert</name>
+        <qualifiedname>dedoc.converters.concrete_converters.pptx_converter.PptxConverter.convert</qualifiedname>
+        <reimplements refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a41be8163cfc882c5297b9e131e98394a">convert</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert a pptx-like document to .pptx by invoking soffice <ndash/>headless <ndash/>convert-to pptx and waiting for the output file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  os, splitext_, _run_subprocess \par \b I/O\/ \:  file_path: str, parameters: Optional[dict] -&gt; str \par \b Complexity\/ \:  4</para>
+<para>Convert the pptx-like documents into files with .pptx extension using the soffice application. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="33" column="1" bodyfile="dedoc/converters/concrete_converters/pptx_converter.py" bodystart="33" bodyend="48"/>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a540d53114244284f763bc88d81b8d594" compoundref="abstract__converter_8py" startline="90" endline="112">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter._run_subprocess</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To convert pptx-like documents (.ppt, .odp) into PPTX format using the LibreOffice soffice headless application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Converts pptx-like documents (.ppt, .odp) into PPTX using the soffice application. Look to the :class:<computeroutput>~dedoc.converters.AbstractConverter</computeroutput> documentation to get the information about the methods&apos; parameters. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.converters.concrete_converters.pptx_converter.PptxConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.converters.concrete_converters.pptx_converter.PptxConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="11" column="1" bodyfile="dedoc/converters/concrete_converters/pptx_converter.py" bodystart="11" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a1c055cb3742216f6ae97f10c370e7c8c" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::pptx_converter::PptxConverter</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter_1a488b4dd43364ad1df1eff4eb97f2d97a" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::pptx_converter::PptxConverter</scope><name>convert</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

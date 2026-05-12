@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1api__args_1_1QueryParameters" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::api_args::QueryParameters</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a82d099084746b027f86844eda3813dbd" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::document_type</definition>
+        <argsstring></argsstring>
+        <name>document_type</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.document_type</qualifiedname>
+        <initializer>=  Form(&quot;&quot;, enum=[&quot;&quot;, &quot;law&quot;, &quot;tz&quot;, &quot;diploma&quot;, &quot;article&quot;, &quot;fintoc&quot;], description=&quot;Document domain&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="41" column="1" bodyfile="dedoc/api/api_args.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ac5bd7021afb50a429e9217ae30a4f2c6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::patterns</definition>
+        <argsstring></argsstring>
+        <name>patterns</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.patterns</qualifiedname>
+        <initializer>=  Form(&quot;&quot;, description=&apos;Patterns for default document type (when <ref refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a82d099084746b027f86844eda3813dbd" kindref="member">document_type</ref>=&quot;&quot;)&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="42" column="1" bodyfile="dedoc/api/api_args.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1adcf7a61cb8a9f14cc905cf8c328e051f" compoundref="pattern__composition_8py" startline="56" endline="73">dedoc.structure_extractors.patterns.pattern_composition.PatternComposition.get_hierarchy_level</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a81656c911c1b834069f8512beb6563c9" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::structure_type</definition>
+        <argsstring></argsstring>
+        <name>structure_type</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.structure_type</qualifiedname>
+        <initializer>=  Form(&quot;tree&quot;, enum=[&quot;linear&quot;, &quot;tree&quot;], description=&quot;Output structure type&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="43" column="1" bodyfile="dedoc/api/api_args.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a13e8fba56c45b6d5647f810187aa7b20" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::return_format</definition>
+        <argsstring></argsstring>
+        <name>return_format</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.return_format</qualifiedname>
+        <initializer>=  Form(&quot;json&quot;, enum=[&quot;json&quot;, &quot;html&quot;, &quot;plain_text&quot;, &quot;tree&quot;, &quot;collapsed_tree&quot;, &quot;ujson&quot;, &quot;pretty_json&quot;],
+                              description=&quot;Response representation, most types (except json) are used for debug purposes only&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="44" column="1" bodyfile="dedoc/api/api_args.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1aa687c828fa2922281c2639b771073bfe" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::with_attachments</definition>
+        <argsstring></argsstring>
+        <name>with_attachments</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.with_attachments</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Enable attached files extraction&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="48" column="1" bodyfile="dedoc/api/api_args.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a296df6da3348b2b83958db01c2f5b05a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::need_content_analysis</definition>
+        <argsstring></argsstring>
+        <name>need_content_analysis</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.need_content_analysis</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Enable parsing contents of the attached files&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="49" column="1" bodyfile="dedoc/api/api_args.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" compoundref="attached__file_8py" startline="27" endline="39">dedoc.data_structures.attached_file.AttachedFile.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1acdc410e80f47e349a868a0f981997adf" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::recursion_deep_attachments</definition>
+        <argsstring></argsstring>
+        <name>recursion_deep_attachments</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.recursion_deep_attachments</qualifiedname>
+        <initializer>=  Form(&quot;10&quot;, description=&quot;Depth on which nested attachments will be parsed if <ref refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a296df6da3348b2b83958db01c2f5b05a" kindref="member">need_content_analysis</ref>=true&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="50" column="1" bodyfile="dedoc/api/api_args.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ad9b5f1b85db04a9ba6330be4d599c63a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::return_base64</definition>
+        <argsstring></argsstring>
+        <name>return_base64</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.return_base64</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Save attached images to the document metadata in base64 format&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="51" column="1" bodyfile="dedoc/api/api_args.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae0e9ee7ec7b183081cc9ae17b6765f46" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::need_pdf_table_analysis</definition>
+        <argsstring></argsstring>
+        <name>need_pdf_table_analysis</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.need_pdf_table_analysis</qualifiedname>
+        <initializer>=  Form(&quot;true&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Enable table recognition for pdf&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="54" column="1" bodyfile="dedoc/api/api_args.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a3bc512c5faa0058ee85a3c326d81e912" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::table_type</definition>
+        <argsstring></argsstring>
+        <name>table_type</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.table_type</qualifiedname>
+        <initializer>=  Form(&quot;&quot;, description=&quot;Pipeline mode for table recognition&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="55" column="1" bodyfile="dedoc/api/api_args.py" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a272065f55e5a646c232331d59a4ede3c" compoundref="table__recognizer_8py" startline="73" endline="92">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.__rec_tables_from_img</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a24b6b8471a62500325d72e55da2026c0" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::pdf_with_text_layer</definition>
+        <argsstring></argsstring>
+        <name>pdf_with_text_layer</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.pdf_with_text_layer</qualifiedname>
+        <initializer>=  Form(&quot;auto_tabby&quot;, enum=[&quot;true&quot;, &quot;false&quot;, &quot;auto&quot;, &quot;auto_tabby&quot;, &quot;tabby&quot;, &quot;bad_encoding&quot;],
+                                    description=&quot;Extract text from a text layer of PDF or using OCR methods for image-like documents&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="58" column="1" bodyfile="dedoc/api/api_args.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1af2620b826596b3aba4d1411386a38c17" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::textual_layer_classifier</definition>
+        <argsstring></argsstring>
+        <name>textual_layer_classifier</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.textual_layer_classifier</qualifiedname>
+        <initializer>=  Form(&quot;ml&quot;, enum=[&quot;ml&quot;, &quot;simple&quot;, &quot;letter&quot;], description=&quot;Type of classifier for PDF textual layer detection&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="60" column="1" bodyfile="dedoc/api/api_args.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a35e73b65f6e53d6c5f21a7bd1fd53ccc" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::each_page_textual_layer_detection</definition>
+        <argsstring></argsstring>
+        <name>each_page_textual_layer_detection</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.each_page_textual_layer_detection</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Detect textual layer on each page. Slower but more accurate.&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="61" column="1" bodyfile="dedoc/api/api_args.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1acb4b04c57178d6bfa561b9811d4c3934" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::language</definition>
+        <argsstring></argsstring>
+        <name>language</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.language</qualifiedname>
+        <initializer>=  Form(&quot;rus+eng&quot;, description=&quot;Recognition language (&apos;rus+eng&apos;, &apos;rus&apos;, &apos;eng&apos;, &apos;fra&apos;, &apos;spa&apos;)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="62" column="1" bodyfile="dedoc/api/api_args.py" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7715ae2cc01e15cbad56930afe0af262" compoundref="onepage__table__extractor_8py" startline="36" endline="58">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.extract_onepage_tables_from_image</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7461fba8bc0af5cd1647a48628697bc6" compoundref="onepage__table__extractor_8py" startline="106" endline="128">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.handle_cells</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae6f01091509d030bf17be5f372859c4f" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::pages</definition>
+        <argsstring></argsstring>
+        <name>pages</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.pages</qualifiedname>
+        <initializer>=  Form(&quot;:&quot;, description=&apos;Page numbers range for reading PDF or images, &quot;left:right&quot; means read pages from left to right&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="63" column="1" bodyfile="dedoc/api/api_args.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a88fb764609efdf0cafd5f8e7827c97d4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::is_one_column_document</definition>
+        <argsstring></argsstring>
+        <name>is_one_column_document</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.is_one_column_document</qualifiedname>
+        <initializer>=  Form(&quot;auto&quot;, enum=[&quot;auto&quot;, &quot;true&quot;, &quot;false&quot;],
+                                       description=&apos;One or multiple column document, &quot;auto&quot; - predict number of page columns automatically&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="64" column="1" bodyfile="dedoc/api/api_args.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c82c1802337636beeb2d8ee3fe43192" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::document_orientation</definition>
+        <argsstring></argsstring>
+        <name>document_orientation</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.document_orientation</qualifiedname>
+        <initializer>=  Form(&quot;auto&quot;, enum=[&quot;auto&quot;, &quot;no_change&quot;],
+                                     description=&apos;Orientation of the document <ref refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae6f01091509d030bf17be5f372859c4f" kindref="member">pages</ref>, &quot;auto&quot; - predict orientation (0, 90, 180, 270 degrees), &apos;
+                                                 &apos;&quot;no_change&quot; - set vertical orientation of the document without using an orientation classifier&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="66" column="1" bodyfile="dedoc/api/api_args.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1af9b7cbe307f52a0d0d247c672bc3b3f6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::need_header_footer_analysis</definition>
+        <argsstring></argsstring>
+        <name>need_header_footer_analysis</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.need_header_footer_analysis</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Exclude headers and footers from PDF parsing result&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="69" column="1" bodyfile="dedoc/api/api_args.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a78665a86867ba7119c8ab483cff6d276" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::need_binarization</definition>
+        <argsstring></argsstring>
+        <name>need_binarization</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.need_binarization</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Binarize document <ref refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae6f01091509d030bf17be5f372859c4f" kindref="member">pages</ref> (for images or PDF without a textual layer)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="70" column="1" bodyfile="dedoc/api/api_args.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a073cbe604f9833edca724d936890d083" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::need_gost_frame_analysis</definition>
+        <argsstring></argsstring>
+        <name>need_gost_frame_analysis</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.need_gost_frame_analysis</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Parameter for detecting and ignoring GOST frame of the document&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="71" column="1" bodyfile="dedoc/api/api_args.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a561a03655582ea09214fea3b81ff50a3" prot="public" static="yes" mutable="no">
+        <type>Optional</type>
+        <definition>Optional dedoc.api.api_args.QueryParameters::delimiter</definition>
+        <argsstring></argsstring>
+        <name>delimiter</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.delimiter</qualifiedname>
+        <initializer>=  Form(None, description=&quot;Column separator for CSV files&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="74" column="1" bodyfile="dedoc/api/api_args.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c3dedb29862ed749171353f67185bd4" prot="public" static="yes" mutable="no">
+        <type>Optional</type>
+        <definition>Optional dedoc.api.api_args.QueryParameters::encoding</definition>
+        <argsstring></argsstring>
+        <name>encoding</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.encoding</qualifiedname>
+        <initializer>=  Form(None, description=&quot;Document encoding&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="75" column="1" bodyfile="dedoc/api/api_args.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae98b6d63efed82f3e4abf4212d61f9c6" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::html_fields</definition>
+        <argsstring></argsstring>
+        <name>html_fields</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.html_fields</qualifiedname>
+        <initializer>=  Form(&quot;&quot;, description=&quot;List of fields for JSON documents to be parsed as HTML documents&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="76" column="1" bodyfile="dedoc/api/api_args.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1abe6c654a9dbfcee300319e86c3092241" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::handle_invisible_table</definition>
+        <argsstring></argsstring>
+        <name>handle_invisible_table</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.handle_invisible_table</qualifiedname>
+        <initializer>=  Form(&quot;false&quot;, enum=[&quot;true&quot;, &quot;false&quot;], description=&quot;Handle tables without visible borders as tables in HTML&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="77" column="1" bodyfile="dedoc/api/api_args.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ab6a59c3e5e4d4981a2c4457a73dcc341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.api.api_args.QueryParameters.to_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_dict</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.to_dict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert the QueryParameters dataclass to a flat dict with defaults resolved for downstream pipeline configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  dataclasses.asdict \par \b I/O\/ \:  None -&gt; dict \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="84" column="1" bodyfile="dedoc/api/api_args.py" bodystart="84" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Capture all dedoc API query parameters from multipart form data with enum-validated defaults for document parsing configuration. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  FastAPI Form(...) fields -&gt; QueryParameters instance </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.api_args.QueryParameters</label>
+        <link refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>delimiter</edgelabel>
+          <edgelabel>encoding</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/api_args.py" line="39" column="1" bodyfile="dedoc/api/api_args.py" bodystart="39" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a561a03655582ea09214fea3b81ff50a3" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>delimiter</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c82c1802337636beeb2d8ee3fe43192" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>document_orientation</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a82d099084746b027f86844eda3813dbd" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>document_type</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a35e73b65f6e53d6c5f21a7bd1fd53ccc" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>each_page_textual_layer_detection</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c3dedb29862ed749171353f67185bd4" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>encoding</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1abe6c654a9dbfcee300319e86c3092241" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>handle_invisible_table</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae98b6d63efed82f3e4abf4212d61f9c6" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>html_fields</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a88fb764609efdf0cafd5f8e7827c97d4" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>is_one_column_document</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1acb4b04c57178d6bfa561b9811d4c3934" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>language</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a78665a86867ba7119c8ab483cff6d276" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_binarization</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a296df6da3348b2b83958db01c2f5b05a" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_content_analysis</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a073cbe604f9833edca724d936890d083" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_gost_frame_analysis</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1af9b7cbe307f52a0d0d247c672bc3b3f6" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_header_footer_analysis</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae0e9ee7ec7b183081cc9ae17b6765f46" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_pdf_table_analysis</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae6f01091509d030bf17be5f372859c4f" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>pages</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ac5bd7021afb50a429e9217ae30a4f2c6" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>patterns</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a24b6b8471a62500325d72e55da2026c0" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>pdf_with_text_layer</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1acdc410e80f47e349a868a0f981997adf" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>recursion_deep_attachments</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ad9b5f1b85db04a9ba6330be4d599c63a" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>return_base64</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a13e8fba56c45b6d5647f810187aa7b20" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>return_format</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a81656c911c1b834069f8512beb6563c9" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>structure_type</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a3bc512c5faa0058ee85a3c326d81e912" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>table_type</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1af2620b826596b3aba4d1411386a38c17" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>textual_layer_classifier</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ab6a59c3e5e4d4981a2c4457a73dcc341" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>to_dict</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1aa687c828fa2922281c2639b771073bfe" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>with_attachments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -21,10 +21,22 @@ from dedoc.structure_extractors.feature_extractors.toc_feature_extractor import 
 from dedoc.structure_extractors.feature_extractors.utils_feature_extractor import normalization_by_min_max
 from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexps_year
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_FintocFeatureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @purpose FintocFeatureExtractor for document structure extraction pipeline
 class FintocFeatureExtractor(AbstractFeatureExtractor):
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self) -> None:
+        super().__init__()
+
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__init___INIT] Starting")
         self.paired_feature_extractor = PairedFeatureExtractor()
         self.prefix_list = [BulletPrefix, AnyLetterPrefix, LetterPrefix, BracketPrefix, BracketRomanPrefix, DottedPrefix, RomanPrefix]
         self.list_feature_extractors = [
@@ -35,10 +47,22 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
         self.prefix2number = {prefix.name: i for i, prefix in enumerate(self.prefix_list, start=1)}
         self.prefix2number[EmptyPrefix.name] = 0
 
+    # endregion METHOD___init__
+    # region METHOD_parameters [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose parameters method
+    ## @io Input -> Output
+    ## @complexity 5
     def parameters(self) -> dict:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][parameters_INIT] Starting")
         return {}
 
+    # endregion METHOD_parameters
+    # region METHOD_transform [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose transform method
+    ## @io Input -> Output
+    ## @complexity 5
     def transform(self, documents: List[List[LineWithMeta]], toc_lines: Optional[List[List[TocItem]]] = None) -> pd.DataFrame:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][transform_INIT] Starting")
         assert len(documents) > 0
         result_matrix = pd.concat([self.__process_document(document, d_toc_lines) for document, d_toc_lines in zip(documents, toc_lines)], ignore_index=True)
         result_matrix = pd.concat([result_matrix, self.paired_feature_extractor.transform(documents)], axis=1)
@@ -46,7 +70,13 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
         result_matrix = result_matrix[features].astype(float)
         return result_matrix[features]
 
+    # endregion METHOD_transform
+    # region METHOD___process_document [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __process_document method
+    ## @io Input -> Output
+    ## @complexity 5
     def __process_document(self, lines: List[LineWithMeta], toc: Optional[List[TocItem]] = None) -> pd.DataFrame:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__process_document_INIT] Starting")
         features_df = pd.DataFrame(self.__look_at_prev_line(document=lines, n=1))
         features_df["line_relative_length"] = self.__get_line_relative_length(lines)
 
@@ -70,7 +100,13 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
         result_matrix["page_id"] = [line.metadata.page_id for line in lines]
         return result_matrix
 
+    # endregion METHOD___process_document
+    # region METHOD___look_at_prev_line [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __look_at_prev_line method
+    ## @io Input -> Output
+    ## @complexity 5
     def __look_at_prev_line(self, document: List[LineWithMeta], n: int = 1) -> Dict[str, List]:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__look_at_prev_line_INIT] Starting")
         """
         Look at previous line and compare with current line
 
@@ -91,12 +127,24 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
                 res["prev_is_space"].append(False)
         return res
 
+    # endregion METHOD___look_at_prev_line
+    # region METHOD___get_line_relative_length [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_line_relative_length method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_line_relative_length(self, lines: List[LineWithMeta]) -> List[float]:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__get_line_relative_length_INIT] Starting")
         max_len = max([len(line.line) for line in lines])
         relative_lengths = [len(line.line) / max_len for line in lines]
         return relative_lengths
 
+    # endregion METHOD___get_line_relative_length
+    # region METHOD___one_line_features [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __one_line_features method
+    ## @io Input -> Output
+    ## @complexity 5
     def __one_line_features(self, line: LineWithMeta, total_lines: int, start_page: int, finish_page: int, toc: Optional[List[TocItem]]) -> Iterator[tuple]:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__one_line_features_INIT] Starting")
         yield "normalized_page_id", normalization_by_min_max(line.metadata.page_id, min_v=start_page, max_v=finish_page)
         yield "indentation", self._get_indentation(line)
         yield "spacing", self._get_spacing(line)
@@ -131,7 +179,13 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
         yield "number_percent", sum((1 for letter in line.line if letter.isnumeric())) / line_length
         yield "words_number", len(line.line.split())
 
+    # endregion METHOD___one_line_features
+    # region METHOD___find_in_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __find_in_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def __find_in_toc(self, line: LineWithMeta, toc: Optional[List[TocItem]]) -> Iterator[Tuple[str, int]]:
+        self.logger.debug(f"[IMP:4][FintocFeatureExtractor][__find_in_toc_INIT] Starting")
         if toc is None:
             yield "is_toc", 0
             yield "in_toc", 0
@@ -153,3 +207,29 @@ class FintocFeatureExtractor(AbstractFeatureExtractor):
             yield "is_toc", is_toc
             yield "in_toc", in_toc
             yield "toc_exists", toc_exists
+
+    # endregion METHOD___find_in_toc
+# endregion CLASS_FintocFeatureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/feature_extractors/fintoc_feature_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/feature_extractors/fintoc_feature_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => FintocFeatureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, feature extractors, fintoc feature extractor
+# STRUCTURE: ▶ structure_extractors/feature_extractors/fintoc_feature_extractor → ○ FintocFeatureExtractor.cls → ⎋ result

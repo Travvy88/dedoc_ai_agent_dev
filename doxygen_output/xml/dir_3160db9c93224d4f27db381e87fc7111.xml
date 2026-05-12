@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_3160db9c93224d4f27db381e87fc7111" kind="dir">
+    <compoundname>dedoc/structure_extractors/concrete_structure_extractors</compoundname>
+    <innerfile refid="structure__extractors_2concrete__structure__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__law__structure__extractor_8py">abstract_law_structure_extractor.py</innerfile>
+    <innerfile refid="article__structure__extractor_8py">article_structure_extractor.py</innerfile>
+    <innerfile refid="classifying__law__structure__extractor_8py">classifying_law_structure_extractor.py</innerfile>
+    <innerfile refid="default__structure__extractor_8py">default_structure_extractor.py</innerfile>
+    <innerfile refid="diploma__structure__extractor_8py">diploma_structure_extractor.py</innerfile>
+    <innerfile refid="fintoc__structure__extractor_8py">fintoc_structure_extractor.py</innerfile>
+    <innerfile refid="foiv__law__structure__extractor_8py">foiv_law_structure_extractor.py</innerfile>
+    <innerfile refid="law__structure__excractor_8py">law_structure_excractor.py</innerfile>
+    <innerfile refid="tz__structure__extractor_8py">tz_structure_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/concrete_structure_extractors/"/>
+  </compounddef>
+</doxygen>

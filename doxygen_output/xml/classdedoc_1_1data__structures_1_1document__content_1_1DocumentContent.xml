@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::document_content::DocumentContent</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1afbee9622393a5d0002ce2d8f736a05f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.document_content.DocumentContent.__init__</definition>
+        <argsstring>(self, List[Table] tables, TreeNode structure, Optional[List[str]] warnings=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.document_content.DocumentContent.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>tables</declname>
+          <array>[Table]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>structure</declname>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>warnings</declname>
+          <array>[List[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize document content with tables, tree structure, and optional warnings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[Table], TreeNode, Optional[List[str]]) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param tables: list of document tables :param structure: tree structure in which content of the document is organized :param warnings: list of warnings </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/document_content.py" line="31" column="1" bodyfile="dedoc/data_structures/document_content.py" bodystart="31" bodyend="41"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1ac3532103f3e948163be2ce1010556c0f" compoundref="api_2schema_2document__content_8py" startline="49">dedoc.api.schema.document_content.DocumentContent.structure</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" compoundref="api_2schema_2document__content_8py" startline="50">dedoc.api.schema.document_content.DocumentContent.tables</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a0ae3a5301fa8933c32c51073866c2618" compoundref="docx__document_8py" startline="37">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.tables</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1ac786dfbd75371b745f1649ca5206b266" compoundref="api_2schema_2parsed__document_8py" startline="59">dedoc.api.schema.parsed_document.ParsedDocument.warnings</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1a8613df3dc05b9a95529c2afdb0fa9353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiDocumentContent</type>
+        <definition> ApiDocumentContent dedoc.data_structures.document_content.DocumentContent.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.document_content.DocumentContent.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert document content to API schema, serializing structure and tables recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiDocumentContent \par \b I/O\/ \:  None -&gt; ApiDocumentContent \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/document_content.py" line="49" column="1" bodyfile="dedoc/data_structures/document_content.py" bodystart="49" bodyend="53"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1ac3532103f3e948163be2ce1010556c0f" compoundref="api_2schema_2document__content_8py" startline="49">dedoc.api.schema.document_content.DocumentContent.structure</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" compoundref="api_2schema_2document__content_8py" startline="50">dedoc.api.schema.document_content.DocumentContent.tables</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a0ae3a5301fa8933c32c51073866c2618" compoundref="docx__document_8py" startline="37">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.tables</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold the structured document content — tree-structured text (TreeNode) and list of tables, plus warnings. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class holds the document content - structured text and tables.</para>
+<para>:ivar tables: list of document tables :ivar structure: tree structure of the document nodes with text and additional metadata :ivar warnings: list of warnings, obtained in the process of the document parsing</para>
+<para>:vartype tables: List[Table] :vartype structure: TreeNode :vartype warnings: List[str] </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/document_content.py" line="14" column="1" bodyfile="dedoc/data_structures/document_content.py" bodystart="14" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1afbee9622393a5d0002ce2d8f736a05f1" prot="public" virt="non-virtual"><scope>dedoc::data_structures::document_content::DocumentContent</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1a8613df3dc05b9a95529c2afdb0fa9353" prot="public" virt="non-virtual"><scope>dedoc::data_structures::document_content::DocumentContent</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

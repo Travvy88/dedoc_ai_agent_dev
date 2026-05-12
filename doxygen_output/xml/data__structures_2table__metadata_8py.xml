@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="data__structures_2table__metadata_8py" kind="file" language="Python">
+    <compoundname>table_metadata.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" prot="public">dedoc::data_structures::table_metadata::TableMetadata</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1table__metadata">dedoc::data_structures::table_metadata</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1table__metadata" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1table__metadata" kindref="compound">dedoc.api.schema.table_metadata</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TableMetadata<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>ApiTableMetadata</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1serializable" kindref="compound">dedoc.data_structures.serializable</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Serializable</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1data__structures_1_1table__metadata_1a166398f61e9e4c33ddccef4282523a09" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_TableMetadata<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>DataStructures;<sp/>CONCEPT(9):<sp/>Table,<sp/>Metadata;<sp/>TECH(6):<sp/>Python,<sp/>API]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Hold<sp/>table-level<sp/>metadata:<sp/>page<sp/>ID,<sp/>unique<sp/>identifier,<sp/>rotation<sp/>angle,<sp/>and<sp/>title.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata" kindref="compound">TableMetadata</ref>(<ref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" kindref="compound">Serializable</ref>):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">holds<sp/>the<sp/>information<sp/>about<sp/>table<sp/>unique<sp/>identifier,<sp/>rotation<sp/>angle<sp/>(if<sp/>table<sp/>has<sp/>been<sp/>rotated<sp/>-<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>images)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>so<sp/>on.</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>page_id:<sp/>number<sp/>of<sp/>the<sp/>page<sp/>where<sp/>table<sp/>starts</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>uid:<sp/>unique<sp/>identifier<sp/>of<sp/>the<sp/>table<sp/>(used<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>linking<sp/>table<sp/>to<sp/>text)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>rotated_angle:<sp/>value<sp/>of<sp/>the<sp/>rotation<sp/>angle<sp/>by<sp/>which<sp/>the<sp/>table<sp/>was<sp/>rotated<sp/>during<sp/>recognition</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>title:<sp/>table</highlight><highlight class="stringliteral">&apos;s<sp/>title</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:vartype<sp/>page_id:<sp/>Optional[int]</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:vartype<sp/>uid:<sp/>str</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:vartype<sp/>rotated_angle:<sp/>float</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:vartype<sp/>title:<sp/>str</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>Table;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Initialize<sp/>table<sp/>metadata<sp/>with<sp/>page<sp/>ID,<sp/>auto-generated<sp/>UID,<sp/>rotation<sp/>angle,<sp/>and<sp/>title.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>uuid</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(Optional[int],<sp/>Optional[str],<sp/>float,<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>page_id:<sp/>Optional[int],<sp/>uid:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>rotated_angle:<sp/>float<sp/>=<sp/>0.0,<sp/>title:<sp/>str<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>page_id:<sp/>number<sp/>of<sp/>the<sp/>page<sp/>where<sp/>table<sp/>starts</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>uid:<sp/>unique<sp/>identifier<sp/>of<sp/>the<sp/>table</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>rotated_angle:<sp/>rotation<sp/>angle<sp/>by<sp/>which<sp/>the<sp/>table<sp/>was<sp/>rotated<sp/>during<sp/>recognition</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>title:<sp/>table&apos;s<sp/>title</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>uuid</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][TableMetadata][INIT]<sp/>page_id={page_id},<sp/>uid={uid},<sp/>rotated_angle={rotated_angle},<sp/>title={title}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.page_id:<sp/>Optional[int]<sp/>=<sp/>page_id</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.uid:<sp/>str<sp/>=<sp/>str(uuid.uuid4())<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>uid<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>uid</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.rotated_angle:<sp/>float<sp/>=<sp/>rotated_angle</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.title:<sp/>str<sp/>=<sp/>title</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][TableMetadata][INIT]<sp/>TableMetadata<sp/>created:<sp/>uid={self.uid}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_to_api_schema<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>Serialization;<sp/>TECH(6):<sp/>API]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Convert<sp/>table<sp/>metadata<sp/>to<sp/>API<sp/>schema.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>ApiTableMetadata</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>None<sp/>-&gt;<sp/>ApiTableMetadata</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">to_api_schema(self)<sp/>-&gt;<sp/>ApiTableMetadata:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][TableMetadata][TO_API]<sp/>Converting<sp/>to<sp/>API<sp/>schema&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ApiTableMetadata(uid=self.uid,<sp/>page_id=self.page_id,<sp/>rotated_angle=self.rotated_angle,<sp/>title=self.title)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_to_api_schema</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_TableMetadata</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>DataStructures;<sp/>CONCEPT(9):<sp/>Table,<sp/>Metadata;<sp/>TECH(6):<sp/>Python,<sp/>API]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>TableMetadata<sp/>data<sp/>structure<sp/>—<sp/>holds<sp/>table<sp/>identification,<sp/>location,<sp/>rotation,<sp/>and<sp/>title.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>@scope<sp/>Table<sp/>metadata:<sp/>page<sp/>location,<sp/>UID<sp/>generation,<sp/>rotation<sp/>angle,<sp/>title.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>@input<sp/>Page<sp/>ID,<sp/>optional<sp/>UID,<sp/>rotation<sp/>angle,<sp/>title.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">##<sp/>@output<sp/>TableMetadata<sp/>instance<sp/>with<sp/>auto-generated<sp/>UID.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">##<sp/>@links<sp/>[INHERITS(5):<sp/>Serializable,<sp/>USES_API(8):<sp/>ApiTableMetadata]</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">##<sp/>-<sp/>uid<sp/>is<sp/>always<sp/>a<sp/>non-empty<sp/>string<sp/>(auto-generated<sp/>with<sp/>uuid4<sp/>if<sp/>not<sp/>provided)</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>auto-generate<sp/>UID<sp/>with<sp/>uuid4?</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">##<sp/>A:<sp/>Tables<sp/>need<sp/>globally<sp/>unique<sp/>identifiers<sp/>for<sp/>cross-referencing<sp/>from<sp/>text<sp/>annotations.<sp/>UUID4<sp/>provides<sp/>collision-resistant<sp/>IDs<sp/>without<sp/>coordination.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">##<sp/>CLASS<sp/>10[Table<sp/>metadata<sp/>container]<sp/>=&gt;<sp/>TableMetadata</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">##<sp/>METHOD<sp/>6[Constructor]<sp/>=&gt;<sp/>__init__</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">##<sp/>METHOD<sp/>8[API<sp/>schema<sp/>conversion]<sp/>=&gt;<sp/>to_api_schema</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">##<sp/>-<sp/>[TableMetadata]:<sp/>Reader<sp/>→<sp/>ExtractTableMetadata<sp/>→<sp/>TableMetadataStored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="namespacededoc_1_1data__structures_1_1table__metadata_1a487ed5cc10f9173fd20a2e09d1bda0b4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1table__metadata_1a487ed5cc10f9173fd20a2e09d1bda0b4" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>TableMetadata,<sp/>table,<sp/>metadata,<sp/>page_id,<sp/>uid,<sp/>rotated_angle,<sp/>title,<sp/>API,<sp/>serializable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>TableMetadata<sp/>┌page_id?,<sp/>uid?,<sp/>rotated_angle,<sp/>title┐<sp/>→<sp/>◇<sp/>uid<sp/>auto-gen<sp/>(uuid4)<sp/>→<sp/>⊕<sp/>to_api_schema<sp/>→<sp/>⎋<sp/>ApiTableMetadata</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/table_metadata.py"/>
+  </compounddef>
+</doxygen>

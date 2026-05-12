@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::unstructured_document::UnstructuredDocument</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</definition>
+        <argsstring>(self, List[Table] tables, List[LineWithMeta] lines, List[AttachedFile] attachments, Optional[List[str]] warnings=None, Optional[dict] metadata=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>tables</declname>
+          <array>[Table]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>attachments</declname>
+          <array>[AttachedFile]</array>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>warnings</declname>
+          <array>[List[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>metadata</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize unstructured document with tables, lines, attachments, warnings, and metadata dict. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[Table], List[LineWithMeta], List[AttachedFile], Optional[List[str]], Optional[dict]) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param tables: list of document tables :param lines: list of raw document lines :param attachments: list of documents attachments :param warnings: list of warnings, obtained in the process of the document parsing :param metadata: additional data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/unstructured_document.py" line="35" column="1" bodyfile="dedoc/data_structures/unstructured_document.py" bodystart="40" bodyend="54"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14b1bc6856d6049c2f55ea28cc225b0a" compoundref="api_2schema_2parsed__document_8py" startline="60">dedoc.api.schema.parsed_document.ParsedDocument.attachments</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a79a21034c655c9b9cea4a5a50e60d5ed" compoundref="data__structures_2parsed__document_8py" startline="59">dedoc.data_structures.parsed_document.ParsedDocument.attachments</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox_1a1bdde77a317549e9068f9324b8ee775f" compoundref="page__with__bboxes_8py" startline="22">dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox.attachments</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a09be81f39212f7abbcaadfce82d859ce" compoundref="api_2schema_2cell__with__meta_8py" startline="52">dedoc.api.schema.cell_with_meta.CellWithMeta.lines</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1abc6cf72821707c7601796f6a9cdd7907" compoundref="docx__document_8py" startline="39">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" compoundref="api_2schema_2document__content_8py" startline="50">dedoc.api.schema.document_content.DocumentContent.tables</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a0ae3a5301fa8933c32c51073866c2618" compoundref="docx__document_8py" startline="37">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.tables</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1ac786dfbd75371b745f1649ca5206b266" compoundref="api_2schema_2parsed__document_8py" startline="59">dedoc.api.schema.parsed_document.ParsedDocument.warnings</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1abef4944ea2967e85ca324d97d53fe701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.unstructured_document.UnstructuredDocument.get_text</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>dedoc.data_structures.unstructured_document.UnstructuredDocument.get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Join all lines to get the full raw text of the document. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  LineWithMeta.join \par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/unstructured_document.py" line="62" column="1" bodyfile="dedoc/data_structures/unstructured_document.py" bodystart="62" bodyend="66"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a09be81f39212f7abbcaadfce82d859ce" compoundref="api_2schema_2cell__with__meta_8py" startline="52">dedoc.api.schema.cell_with_meta.CellWithMeta.lines</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1abc6cf72821707c7601796f6a9cdd7907" compoundref="docx__document_8py" startline="39">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold raw (pre-structure-extraction) document content — flat line list, tables, attachments, metadata dict, and warnings from a reader. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class holds information about raw document content: its text, tables and attachments, that have been procured using one of the readers. Text is represented as a flat list of lines, hierarchy level of each line isn&apos;t defined (only tag hierarchy level may exist).</para>
+<para>:ivar lines: list of textual lines with metadata returned by a reader :ivar tables: list of document tables returned by a reader :ivar attachments: list of document attached files :ivar metadata: information about the document (like in :class:<computeroutput>~dedoc.data_structures.DocumentMetadata</computeroutput>) :ivar warnings: list of warnings, obtained in the process of the document parsing</para>
+<para>:vartype lines: List[LineWithMeta] :vartype tables: List[Table] :vartype attachments: List[AttachedFile] :vartype metadata: dict :vartype warnings: List[str] </para>
+    </detaileddescription>
+    <location file="dedoc/data_structures/unstructured_document.py" line="13" column="1" bodyfile="dedoc/data_structures/unstructured_document.py" bodystart="13" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" prot="public" virt="non-virtual"><scope>dedoc::data_structures::unstructured_document::UnstructuredDocument</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1abef4944ea2967e85ca324d97d53fe701" prot="public" virt="non-virtual"><scope>dedoc::data_structures::unstructured_document::UnstructuredDocument</scope><name>get_text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

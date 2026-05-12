@@ -11,12 +11,16 @@ from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors
 from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.utils import equal_with_eps
 
 
+# region CLASS_MultiPageTableExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class MultiPageTableExtractor(BaseTableExtractor):
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict, logger: logging.Logger) -> None:
         super().__init__(config=config, logger=logger)
         self.single_tables = [[]]  # simple tables on all pages
 
+    # region METHOD_extract_multipage_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def extract_multipage_tables(self, single_tables: List[ScanTable], lines_with_meta: List[LineWithMeta]) -> List[ScanTable]:
         if len(single_tables) == 0 or len(single_tables) == 1:
             return single_tables
@@ -60,6 +64,8 @@ class MultiPageTableExtractor(BaseTableExtractor):
 
         return multipages_tables
 
+    # region METHOD___handle_multipage_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_extract_multipage_tables
     def __handle_multipage_table(self,
                                  cur_page: int,
                                  lines_with_meta: List[LineWithMeta],
@@ -96,6 +102,8 @@ class MultiPageTableExtractor(BaseTableExtractor):
 
             cur_page += 1
 
+    # region METHOD___delete_ref_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_multipage_table
     def __delete_ref_table(self, lines: List[LineWithMeta], table_name: str) -> None:
         for line in lines:
             for num, ann in enumerate(line.annotations):
@@ -103,7 +111,9 @@ class MultiPageTableExtractor(BaseTableExtractor):
                     line.annotations.pop(num)
                     return
 
+    # endregion METHOD___delete_ref_table
     @staticmethod
+    # region METHOD___get_width_cell_wo_separating [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __get_width_cell_wo_separating(row: List[Cell]) -> List[int]:
         widths = []
         prev_cell_uuid = None
@@ -127,6 +137,8 @@ class MultiPageTableExtractor(BaseTableExtractor):
 
         return widths
 
+    # region METHOD___is_equal_width_cells [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_width_cell_wo_separating
     def __is_equal_width_cells(self, table_part_1: List[List[Cell]], table_part_2: List[List[Cell]]) -> bool:
         width_cell1 = self.__get_width_cell_wo_separating(table_part_1[-1])
         width_cell2 = self.__get_width_cell_wo_separating(table_part_2[0])
@@ -142,6 +154,8 @@ class MultiPageTableExtractor(BaseTableExtractor):
 
         return True
 
+    # region METHOD___is_one_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___is_equal_width_cells
     def __is_one_table(self, t1: ScanTable, t2: ScanTable) -> bool:
         # condition 1. Width1 == Width2. Tables widths should be equal
         width1 = abs(t1.locations[-1].bbox.width)
@@ -187,4 +201,32 @@ class MultiPageTableExtractor(BaseTableExtractor):
                 return False
 
         t2.cells = copy.deepcopy(t2_update.cells)  # save changes
+# endregion CLASS_MultiPageTableExtractor
         return True
+
+    # endregion METHOD___is_one_table
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_multipage_table_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [14][MultiPageTableExtractor reader/processor] => MultiPageTableExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: multipage_table_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, MultiPageTableExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [MultiPageTableExtractor] ○ can_read? → ○ read → [__init__ → extract_multipage_tables → __handle_multipage_table] → ⊕ UnstructuredDocument(lines, tables, attachments)

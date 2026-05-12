@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1train__dataset__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::train_dataset_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1train__dataset__utils_1acee97dc9cfc32ab25159f6a1d761ff2d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::train_dataset_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="42" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1af2bab9d2cbefaa94633cae374a94f388" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.train_dataset_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide utilities for preparing training datasets from document processing results: saving LineWithMeta objects as JSON lines, merging lines with same BBox, and managing image/document paths for ML model training workflows. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Training dataset creation, line postprocessing (BBox deduplication), image path management, document path resolution. \par \b Input\/ \:  LineWithMeta objects, config dict, original document path. \par \b Output\/ \:  JSON lines files, image directories, document paths. \par \b Links\/ \:  [USES_API(6): PIL, numpy, json] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>__postprocess_lines merges consecutive lines with identical bounding boxes.</para>
+</listitem><listitem><para>save_line_with_meta always creates intermediate directories if they do not exist. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why merge lines with identical BBox? A: Some readers produce multiple LineWithMeta fragments for the same visual region. Pre-merging simplifies annotation and reduces dataset noise. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 3[numpy to PIL] =&gt; __to_pil FUNC 4[Create images path] =&gt; __create_images_path FUNC 5[Original documents path] =&gt; get_path_original_documents FUNC 4[Per-document images path] =&gt; _get_images_path FUNC 7[Save lines as JSON] =&gt; save_line_with_meta FUNC 6[Merge lines with same BBox] =&gt; __postprocess_lines FUNC 4[Get original document file path] =&gt; get_original_document_path \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[save_line_with_meta]: DataPipeline → ExportTrainingData → Lines written to JSON lines file </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="26" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1af501e16f4a6d95c739d576988ee8482a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Image</type>
+        <definition> Image dedoc.utils.train_dataset_utils.__to_pil</definition>
+        <argsstring>(np.ndarray image)</argsstring>
+        <name>__to_pil</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.__to_pil</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert a numpy array to a PIL Image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PIL.Image \par \b I/O\/ \:  np.ndarray -&gt; Image \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="50" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1aa9cbd3ab0725afc889ab1fa385ad8790" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.utils.train_dataset_utils.__create_images_path</definition>
+        <argsstring>(dict config)</argsstring>
+        <name>__create_images_path</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.__create_images_path</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To assert labeling mode is configured and create the intermediate data directory if missing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  dict -&gt; None \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="59" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="59" bodyend="68"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1train__dataset__utils_1a04b4cf0fe3b906e6fc69d782424c2e8f" compoundref="train__dataset__utils_8py" startline="96" endline="111">dedoc.utils.train_dataset_utils.save_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1aa3c26634eabc6ad411921bdb2ad45cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.train_dataset_utils.get_path_original_documents</definition>
+        <argsstring>(dict config)</argsstring>
+        <name>get_path_original_documents</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.get_path_original_documents</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve and create the directory path for original training documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  dict -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="72" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="72" bodyend="79"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1train__dataset__utils_1a1440c9238a35247c2cf5c3e320afd7d5" compoundref="train__dataset__utils_8py" startline="84" endline="91">dedoc.utils.train_dataset_utils._get_images_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1a1440c9238a35247c2cf5c3e320afd7d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.train_dataset_utils._get_images_path</definition>
+        <argsstring>(dict config, str document_name)</argsstring>
+        <name>_get_images_path</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils._get_images_path</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>document_name</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve and create the per-document images directory for storing rendered page images. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_path_original_documents \par \b I/O\/ \:  (dict, str) -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="84" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="84" bodyend="91"/>
+        <references refid="namespacededoc_1_1utils_1_1train__dataset__utils_1aa3c26634eabc6ad411921bdb2ad45cfb" compoundref="train__dataset__utils_8py" startline="72" endline="79">dedoc.utils.train_dataset_utils.get_path_original_documents</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1a04b4cf0fe3b906e6fc69d782424c2e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.utils.train_dataset_utils.save_line_with_meta</definition>
+        <argsstring>(List[LineWithMeta] lines, str original_document, *dict config)</argsstring>
+        <name>save_line_with_meta</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.save_line_with_meta</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>original_document</declname>
+        </param>
+        <param>
+          <type>*dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To save a list of LineWithMeta objects as JSON lines in the training dataset, merging lines with identical bounding boxes before writing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __create_images_path, __postprocess_lines \par \b I/O\/ \:  (List[LineWithMeta], str, *, config: dict) -&gt; None \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="96" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="96" bodyend="111"/>
+        <references refid="namespacededoc_1_1utils_1_1train__dataset__utils_1aa9cbd3ab0725afc889ab1fa385ad8790" compoundref="train__dataset__utils_8py" startline="59" endline="68">dedoc.utils.train_dataset_utils.__create_images_path</references>
+        <references refid="namespacededoc_1_1utils_1_1train__dataset__utils_1ac3084b32131f8463bddf91833201c3c4" compoundref="train__dataset__utils_8py" startline="115" endline="136">dedoc.utils.train_dataset_utils.__postprocess_lines</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1ac3084b32131f8463bddf91833201c3c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.utils.train_dataset_utils.__postprocess_lines</definition>
+        <argsstring>(List[LineWithMeta] lines)</argsstring>
+        <name>__postprocess_lines</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.__postprocess_lines</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To merge consecutive lines that share the same bounding box, reducing dataset fragmentation for ML training. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  List[LineWithMeta] -&gt; List[LineWithMeta] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="115" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="115" bodyend="136"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1train__dataset__utils_1a04b4cf0fe3b906e6fc69d782424c2e8f" compoundref="train__dataset__utils_8py" startline="96" endline="111">dedoc.utils.train_dataset_utils.save_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1train__dataset__utils_1aa65ac8a187da0e3e0b9a0524f6359354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.train_dataset_utils.get_original_document_path</definition>
+        <argsstring>(str path2documents, List[dict] page)</argsstring>
+        <name>get_original_document_path</name>
+        <qualifiedname>dedoc.utils.train_dataset_utils.get_original_document_path</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path2documents</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>page</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve the full filesystem path to an original document from a page metadata entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (str, List[dict]) -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/train_dataset_utils.py" line="140" column="1" bodyfile="dedoc/utils/train_dataset_utils.py" bodystart="140" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/train_dataset_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

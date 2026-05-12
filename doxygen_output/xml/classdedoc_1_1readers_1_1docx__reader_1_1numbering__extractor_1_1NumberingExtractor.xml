@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a536f53d45e834a541ca14c44d1a38808" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor::numbering</definition>
+        <argsstring></argsstring>
+        <name>numbering</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.numbering</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="35" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a2b1da8320f872bdb4f38cf545f1ed5da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor::styles_extractor</definition>
+        <argsstring></argsstring>
+        <name>styles_extractor</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.styles_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="36" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ab9d1921ec4fc9802f342f49c4658edd6" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="123" endline="148">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__make_run_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aae41036921c7622427f874e02c78a062" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor::numbering_formatter</definition>
+        <argsstring></argsstring>
+        <name>numbering_formatter</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.numbering_formatter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="37" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" compoundref="docx__reader_2numbering__extractor_8py" startline="160" endline="185">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af35c2de46622846b679705a1552e18bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="38" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" compoundref="docx__reader_2numbering__extractor_8py" startline="98" endline="157">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" compoundref="docx__reader_2numbering__extractor_8py" startline="160" endline="185">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ad86ac2116e7dc1f012bff74f2faec978" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor::num_dict</definition>
+        <argsstring></argsstring>
+        <name>num_dict</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.num_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="43" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" compoundref="docx__reader_2numbering__extractor_8py" startline="98" endline="157">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" compoundref="docx__reader_2numbering__extractor_8py" startline="160" endline="185">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a8f8d65210f12c206fb5af739145346dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__init__</definition>
+        <argsstring>(self, Optional[BeautifulSoup] xml, StylesExtractor styles_extractor)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>xml</declname>
+          <array>[BeautifulSoup]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor" kindref="compound">StylesExtractor</ref></type>
+          <declname>styles_extractor</declname>
+        </param>
+        <briefdescription>
+<para>:param xml: BeautifulSoup tree with numberings from word/numberings.xml file :param styles_extractor: StylesExtractor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="24" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="24" bodyend="44"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</definition>
+        <argsstring>(self, Tag xml, BaseProperties paragraph_properties, BaseProperties run_properties)</argsstring>
+        <name>parse</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>paragraph_properties</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1base__props_1_1BaseProperties" kindref="compound">BaseProperties</ref></type>
+          <declname>run_properties</declname>
+        </param>
+        <briefdescription>
+<para>Parses numPr content and extracts properties for paragraph for given numId and list level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes old_paragraph properties according to list properties. Changes run_properties adding text of numeration and it&apos;s properties. :param xml: BeautifulSoup tree with numPr from document.xml or styles.xml (style content) :param paragraph_properties: Paragraph for changing :param run_properties: Run for changing </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="47" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="47" bodyend="95"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" compoundref="docx__reader_2numbering__extractor_8py" startline="98" endline="157">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ad86ac2116e7dc1f012bff74f2faec978" compoundref="docx__reader_2numbering__extractor_8py" startline="43">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.num_dict</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af35c2de46622846b679705a1552e18bb" compoundref="docx__reader_2numbering__extractor_8py" startline="38">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.state</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType_1ab4755334b3a441f39ced00ba191e523f" compoundref="classifying__law__structure__extractor_8py" startline="25">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.LawDocType.state</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ac49c94390ba8f69018d2faabff3aec89" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="40">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a05fa4a254cb36f933be8a0e713760cc9" compoundref="run_8py" startline="26">dedoc.readers.docx_reader.data_structures.run.Run.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ade7136621f1302c66f1a524adb0f17a4" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="50">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a2b1da8320f872bdb4f38cf545f1ed5da" compoundref="docx__reader_2numbering__extractor_8py" startline="36">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.styles_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1AbstractNum_1acfa570ebce6a87ff0c164d2634f7a1d9" compoundref="docx__reader_2numbering__extractor_8py" startline="300">dedoc.readers.docx_reader.numbering_extractor.AbstractNum.styles_extractor</references>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</definition>
+        <argsstring>(self, str ilvl, str num_id)</argsstring>
+        <name>__get_list_item_text</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>ilvl</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>num_id</declname>
+        </param>
+        <briefdescription>
+<para>Counts list item number and it&apos;s text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param ilvl: string with list ilvl :param num_id: string with list numId :return: text of the list numeration </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="98" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="98" bodyend="157"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" compoundref="docx__reader_2numbering__extractor_8py" startline="160" endline="185">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ad86ac2116e7dc1f012bff74f2faec978" compoundref="docx__reader_2numbering__extractor_8py" startline="43">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.num_dict</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af35c2de46622846b679705a1552e18bb" compoundref="docx__reader_2numbering__extractor_8py" startline="38">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.state</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType_1ab4755334b3a441f39ced00ba191e523f" compoundref="classifying__law__structure__extractor_8py" startline="25">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.LawDocType.state</references>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" compoundref="docx__reader_2numbering__extractor_8py" startline="47" endline="95">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</definition>
+        <argsstring>(self, str num_id, str level)</argsstring>
+        <name>__get_next_number</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_next_number</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>num_id</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Computes the shift from the first item for given list and text of next item according to the shift. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param num_id: string with list numId :param level: list level = ilvl + 1 :return: text of the next item in numbering </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="160" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="160" bodyend="185"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ad86ac2116e7dc1f012bff74f2faec978" compoundref="docx__reader_2numbering__extractor_8py" startline="43">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.num_dict</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aae41036921c7622427f874e02c78a062" compoundref="docx__reader_2numbering__extractor_8py" startline="37">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.numbering_formatter</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af35c2de46622846b679705a1552e18bb" compoundref="docx__reader_2numbering__extractor_8py" startline="38">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.state</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType_1ab4755334b3a441f39ced00ba191e523f" compoundref="classifying__law__structure__extractor_8py" startline="25">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.LawDocType.state</references>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" compoundref="docx__reader_2numbering__extractor_8py" startline="98" endline="157">dedoc.readers.docx_reader.numbering_extractor.NumberingExtractor.__get_list_item_text</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parsing of styles of the paragraphs which are list items. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gets the text of the list numbering and may add some annotations like boldness, font size, etc. </para>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="17" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="17" bodyend="186"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ae6fd87bfc73628b9e9ff69ec3485737f" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>__get_list_item_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84d5fad6987b961bd20b95068b748016" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>__get_next_number</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a8f8d65210f12c206fb5af739145346dd" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1ad86ac2116e7dc1f012bff74f2faec978" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>num_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a536f53d45e834a541ca14c44d1a38808" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>numbering</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aae41036921c7622427f874e02c78a062" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>numbering_formatter</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1adcc3d57ba81ed83e142ec168224b38b2" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>parse</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af35c2de46622846b679705a1552e18bb" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>state</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a2b1da8320f872bdb4f38cf545f1ed5da" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingExtractor</scope><name>styles_extractor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

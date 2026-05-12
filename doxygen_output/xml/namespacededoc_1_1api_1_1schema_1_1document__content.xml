@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1document__content" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::document_content</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" prot="public">dedoc::api::schema::document_content::DocumentContent</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1document__content_1a3ad0a6bdb74e9d790fd8e08f74b657dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::document_content.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.document_content.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_content.py" line="34" column="1" bodyfile="dedoc/api/schema/document_content.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1document__content_1a4a681f156b8321d7943eaf20b9b56d95" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.document_content._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.document_content._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the DocumentContent schema — the core container for parsed document content: a tree structure of text nodes and a list of tables. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document content data model — structure and tables. \par \b Input\/ \:  None (standalone model, references TreeNode and Table). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>DocumentContent</computeroutput> with structure (TreeNode) and tables (List[Table]). \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel; READS_DATA_FROM(8): TreeNode, Table] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>structure is always a valid TreeNode (root of document tree).</para>
+</listitem><listitem><para>tables list may be empty but never None. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why separate structure from tables? A: Tables have fundamentally different layout (grid vs. tree). Separating them allows specialized rendering and querying. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Document content container — tree + tables] =&gt; DocumentContent \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DocumentContent]: APIResponseBuilder =&gt; SerializeContent =&gt; ReturnParsedDocumentJSON </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_content.py" line="20" column="1" bodyfile="dedoc/api/schema/document_content.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/document_content.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1feature__extractors" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::feature_extractors</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor">dedoc::structure_extractors::feature_extractors::abstract_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1char__features">dedoc::structure_extractors::feature_extractors::char_features</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor">dedoc::structure_extractors::feature_extractors::diploma_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1fintoc__feature__extractor">dedoc::structure_extractors::feature_extractors::fintoc_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features">dedoc::structure_extractors::feature_extractors::law_text_features</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features">dedoc::structure_extractors::feature_extractors::list_features</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1paired__feature__extractor">dedoc::structure_extractors::feature_extractors::paired_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor">dedoc::structure_extractors::feature_extractors::paragraph_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor">dedoc::structure_extractors::feature_extractors::toc_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor">dedoc::structure_extractors::feature_extractors::tz_feature_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1utils__feature__extractor">dedoc::structure_extractors::feature_extractors::utils_feature_extractor</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

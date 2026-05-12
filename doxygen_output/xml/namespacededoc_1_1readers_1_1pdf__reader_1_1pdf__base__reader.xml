@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_base_reader</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader" prot="public">dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a481ea4b5d2f49838090860b3022c4779" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_base_reader.ParametersForParseDoc</definition>
+        <argsstring></argsstring>
+        <name>ParametersForParseDoc</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.ParametersForParseDoc</qualifiedname>
+        <initializer>=  namedtuple(&quot;ParametersForParseDoc&quot;, [
+    &quot;is_one_column_document&quot;,
+    &quot;document_orientation&quot;,
+    &quot;language&quot;,
+    &quot;need_header_footers_analysis&quot;,
+    &quot;need_pdf_table_analysis&quot;,
+    &quot;first_page&quot;,
+    &quot;last_page&quot;,
+    &quot;need_binarization&quot;,
+    &quot;table_type&quot;,
+    &quot;with_attachments&quot;,
+    &quot;attachments_dir&quot;,
+    &quot;need_content_analysis&quot;,
+    &quot;need_gost_frame_analysis&quot;,
+    &quot;pdf_with_txt_layer&quot;
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="17" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a56d7cc22b6283c7ecea68650207eb0f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document parsing pipeline: PDF format reading. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [20][PdfBaseReader reader/processor] =&gt; PdfBaseReader \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="328" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="328" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors::docx_attachments_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba" prot="public">dedoc::attachments_extractors::concrete_attachments_extractors::docx_attachments_extractor::DocxAttachmentsExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments__extractor_1a2ee275f84ef12a051ac36b49863c4fe6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::attachments_extractors::concrete_attachments_extractors::docx_attachments_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.py" line="44" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments__extractor_1ab7c69acc6ba5bc1476f618d69fe3cc43" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Extract attachments from .docx files: OLE objects from word/ folder, plus diagram extraction (each diagram paragraph becomes a separate .docx attachment via BeautifulSoup reconstruction). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  docx attachment extraction: ZIP traversal, diagram isolation via BeautifulSoup XML parsing, OLE stream handling via base class. \par \b Input\/ \:  File path to .docx document; optional parameters dict. \par \b Output\/ \:  List of AttachedFile objects (images, OLE objects from word/; reconstructed diagram .docx files). \par \b Links\/ \:  [USES_API(9): AbstractOfficeAttachmentsExtractor._get_attachments, AbstractAttachmentsExtractor._content2attach_file] \par \b Links\/ \:  [USES_API(8): BeautifulSoup (bs4), zipfile.ZipFile, hashlib] \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1utils_1_1parameter__utils_1a00eda381e302a11b7fb8014e85481f96" kindref="member">dedoc.utils.parameter_utils.get_param_need_content_analysis</ref>] \par \b Links\/ \:  [USES_API(6): BadFileFormatError (<ref refid="namespacededoc_1_1common_1_1exceptions" kindref="compound">dedoc.common.exceptions</ref>)] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>extract ALWAYS returns a List[AttachedFile] (may be empty).</para>
+</listitem><listitem><para>BadZipFile is caught and re-raised as BadFileFormatError with a descriptive message.</para>
+</listitem><listitem><para>Diagram extraction is attempted first; word/ attachments are added second. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why extract diagrams as separate .docx files? A: Docx diagram paragraphs contain embedded drawing data. Reconstructing each diagram paragraph as its own .docx allows downstream parsers to handle each diagram independently, providing better document structure. Q: Why read word/document.xml first, falling back to word/document2.xml? A: Some docx variants (older templates) use document2.xml as the main body. The fallback ensures compatibility. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup + LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Extracts attachments from .docx files] =&gt; DocxAttachmentsExtractor METHOD 5[Constructor: registers recognized docx extensions/mimes] =&gt; <bold>init</bold> METHOD 9[Main extraction: diagrams + word/ attachments] =&gt; extract METHOD 8[Extracts diagram paragraphs as individual .docx files] =&gt; __extract_diagrams \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[extract]: DedocManager =&gt; ExtractDocxAttachments =&gt; List[AttachedFile] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.py" line="29" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.py" bodystart="29" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

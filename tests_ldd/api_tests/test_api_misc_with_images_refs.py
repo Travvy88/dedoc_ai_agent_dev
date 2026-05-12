@@ -1,0 +1,210 @@
+# region MODULE_CONTRACT [DOMAIN(7): Testing; CONCEPT(7): ImageReferences, Annotations; TECH(7): unittest]
+## @modulecontract
+## @purpose Test Dedoc API image reference annotations in documents, verifying correct image-to-annotation linking.
+## @scope Image reference handling: detecting image annotations in document structure, verifying cross-references.
+## @input Document files via Dedoc API upload endpoint.
+## @output unittest assertions validating response structure and content.
+## @links [USES_API(9): Dedoc /upload endpoint; READS_DATA_FROM(7): tests/data/]
+## @invariants
+## - All test methods follow arrange-act-assert pattern via _send_request.
+## - Test data files reside in tests/data/ subdirectories.
+## @rationale
+## Q: Why API-level integration tests instead of unit tests?
+## A: These tests validate the full pipeline from HTTP request through parsing to structured output, ensuring end-to-end correctness.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Initial LDD migration: added semantic markup and LDD telemetry]
+## @modulemap
+## CLASS [API integration test class] => TestApiImageRefs
+## @usecases
+## - [TestClass]: Developer (Run) => VerifyAPIBehavior => TestPassOrFail
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: image, reference, annotation, linking, API test
+# STRUCTURE: ▶ ┌document with images┐ → ○ _send_request → ⊕ detect image refs → ⎋ annotation validation
+
+import os
+
+from dedoc.data_structures.concrete_annotations.attach_annotation import AttachAnnotation
+from tests.api_tests.abstract_api_test import AbstractTestApiDocReader
+
+
+# region CLASS_TestApiImageRefs [DOMAIN(7): Testing, DocumentProcessing; CONCEPT(7): APITest; TECH(7): unittest]
+## @purpose API integration tests for Dedoc document processing — TestApiImageRefs.
+class TestApiImageRefs(AbstractTestApiDocReader):
+
+    data_directory_path = os.path.join(AbstractTestApiDocReader.data_directory_path, "with_attachments")
+
+
+# region FUNC_test_docx_with_images [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for docx with images
+## @complexity 6
+    def test_docx_with_images(self) -> None:
+        file_name = "docx_with_images.docx"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear"))
+        attachments_name2uid = {attachment["metadata"]["file_name"]: attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        content = result["content"]["structure"]
+
+        image_paragraph = content["subparagraphs"][0]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image1.png"])
+
+        image_paragraph = content["subparagraphs"][2]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image2.jpeg"])
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image3.jpeg"])
+
+        image_paragraph = content["subparagraphs"][5]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image4.jpeg"])
+
+        image_paragraph = content["subparagraphs"][6]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image5.jpeg"])
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image6.jpeg"])
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image7.jpeg"])
+
+# endregion FUNC_test_docx_with_images
+
+# region FUNC_test_odt_with_images [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for odt with images
+## @complexity 6
+    def test_odt_with_images(self) -> None:
+        file_name = "odt_with_images.odt"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear"))
+        attachments_name2uid = {attachment["metadata"]["file_name"]: attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        content = result["content"]["structure"]
+
+        image_paragraph = content["subparagraphs"][0]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image1.jpeg"])
+
+        image_paragraph = content["subparagraphs"][7]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image2.jpeg"])
+
+        image_paragraph = content["subparagraphs"][8]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image3.jpeg"])
+
+# endregion FUNC_test_odt_with_images
+
+# region FUNC_test_docx_with_images_from_mac [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for docx with images from mac
+## @complexity 6
+    def test_docx_with_images_from_mac(self) -> None:
+        file_name = "doc_with_images.docx"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear"))
+        attachments_name2uid = {attachment["metadata"]["file_name"]: attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        content = result["content"]["structure"]
+
+        image_paragraph = content["subparagraphs"][2]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image1.jpeg"])
+
+        image_paragraph = content["subparagraphs"][3]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image2.jpeg"])
+
+        image_paragraph = content["subparagraphs"][5]
+        self.__check_image_paragraph(image_paragraph=image_paragraph, image_uid=attachments_name2uid["image3.png"])
+
+# endregion FUNC_test_docx_with_images_from_mac
+
+# region FUNC_test_pdf_pdfminer_images_refs [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for pdf pdfminer images refs
+## @complexity 6
+    def test_pdf_pdfminer_images_refs(self) -> None:
+        file_name = "with_attachments_1.docx.pdf"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear", pdf_with_text_layer="true"))
+        structure = result["content"]["structure"]
+
+        attachment_uids = {attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        print("[LDD_TEST] Test result obtained, proceeding to assertions")
+        self.assertEqual(len(attachment_uids), 3)
+
+        attach_annotation = structure["subparagraphs"][0]["annotations"][-1]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+        attach_annotation = structure["subparagraphs"][2]["annotations"][-2]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+        attach_annotation = structure["subparagraphs"][2]["annotations"][-1]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+# endregion FUNC_test_pdf_pdfminer_images_refs
+
+# region FUNC_test_pdf_tabby_images_refs [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for pdf tabby images refs
+## @complexity 6
+    def test_pdf_tabby_images_refs(self) -> None:
+        file_name = "with_attachments_1.docx.pdf"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear", pdf_with_text_layer="tabby"))
+        structure = result["content"]["structure"]
+
+        attachment_uids = {attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        print("[LDD_TEST] Test result obtained, proceeding to assertions")
+        self.assertEqual(len(attachment_uids), 3)
+
+        attach_annotation = structure["subparagraphs"][0]["annotations"][-1]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+        attach_annotation = structure["subparagraphs"][1]["annotations"][-1]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+        attach_annotation = structure["subparagraphs"][2]["annotations"][-1]
+        self.assertEqual(attach_annotation["name"], "attachment")
+        self.assertIn(attach_annotation["value"], attachment_uids)
+
+# endregion FUNC_test_pdf_tabby_images_refs
+
+# region FUNC_test_pptx_images_refs [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for pptx images refs
+## @complexity 6
+    def test_pptx_images_refs(self) -> None:
+        file_name = "with_attachments_1.pptx"
+        result = self._send_request(file_name, dict(with_attachments=True, structure_type="linear"))
+
+        attachment_uids = {attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        print("[LDD_TEST] Test result obtained, proceeding to assertions")
+        self.assertEqual(len(attachment_uids), 5)
+
+        subparagraphs = result["content"]["structure"]["subparagraphs"]
+        attach_annotations = [ann for ann in subparagraphs[1]["annotations"] if ann["name"] == AttachAnnotation.name]
+        self.assertEqual(len(attach_annotations), 1)
+        self.assertIn(attach_annotations[0]["value"], attachment_uids)
+
+        attach_annotations = [ann for ann in subparagraphs[3]["annotations"] if ann["name"] == AttachAnnotation.name]
+        self.assertEqual(len(attach_annotations), 1)
+        self.assertIn(attach_annotations[0]["value"], attachment_uids)
+
+# endregion FUNC_test_pptx_images_refs
+
+# region FUNC_test_pdf_article_images_refs [DOMAIN(7): Testing; CONCEPT(7): ResponseValidation; TECH(7): unittest]
+## @purpose Verify API response for pdf article images refs
+## @complexity 6
+    def test_pdf_article_images_refs(self) -> None:
+        file_name = "../pdf_with_text_layer/article.pdf"
+        result = self._send_request(file_name, dict(with_attachments=True, document_type="article", structure_type="linear"))
+
+        attachment_uids = {attachment["metadata"]["uid"] for attachment in result["attachments"]}
+        print("[LDD_TEST] Test result obtained, proceeding to assertions")
+        self.assertEqual(len(attachment_uids), 18)
+
+        attach_annotations_uids = set()
+        for subparagraph in result["content"]["structure"]["subparagraphs"]:
+            for annotation in subparagraph["annotations"]:
+                if annotation["name"] == AttachAnnotation.name:
+                    attach_annotations_uids.add(annotation["value"])
+
+        self.assertTrue(attach_annotations_uids)
+        self.assertTrue(attach_annotations_uids.issubset(attachment_uids))
+
+# endregion FUNC_test_pdf_article_images_refs
+
+# region METHOD___check_image_paragraph [DOMAIN(6): Testing; CONCEPT(6): Helper; TECH(6): unittest]
+## @purpose Helper method for test assertions
+## @complexity 4
+    def __check_image_paragraph(self, image_paragraph: dict, image_uid: str) -> None:
+        text = image_paragraph["text"]
+        image_annotations = image_paragraph["annotations"]
+        self.assertIn({"start": 0, "end": len(text), "name": "attachment", "value": image_uid}, image_annotations)
+
+# endregion METHOD___check_image_paragraph
+# endregion CLASS_TestApiImageRefs

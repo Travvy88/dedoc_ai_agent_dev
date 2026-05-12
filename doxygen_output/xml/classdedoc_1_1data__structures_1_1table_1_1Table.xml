@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1table_1_1Table" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::table::Table</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.table.Table.__init__</definition>
+        <argsstring>(self, List[List[CellWithMeta]] cells, TableMetadata metadata)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.table.Table.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab49eb08b6f318700f9a7b30cce0caf70">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>cells</declname>
+          <array>[List[CellWithMeta]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" kindref="compound">TableMetadata</ref></type>
+          <declname>metadata</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize table with cells (list of cell rows) and table metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[List[CellWithMeta]], TableMetadata) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param cells: a list of lists of cells :param metadata: table metadata </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/table.py" line="32" column="1" bodyfile="dedoc/data_structures/table.py" bodystart="32" bodyend="40"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" compoundref="api_2schema_2table_8py" startline="51">dedoc.api.schema.table.Table.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" compoundref="scantable_8py" startline="42">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.cells</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiTable</type>
+        <definition> ApiTable dedoc.data_structures.table.Table.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.table.Table.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert table to API schema, serializing all cells recursively. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiTable \par \b I/O\/ \:  None -&gt; ApiTable \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/table.py" line="48" column="1" bodyfile="dedoc/data_structures/table.py" bodystart="48" bodyend="51"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" compoundref="api_2schema_2table_8py" startline="51">dedoc.api.schema.table.Table.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" compoundref="scantable_8py" startline="42">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.cells</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold a complete table — row-based list of cells and table-level metadata. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Assumes rectangular form with colspan/rowspan for merges.</para>
+<para>This class holds information about tables in the document. We assume that a table has rectangle form (has the same number of columns in each row). If some cells are merged, they are duplicated and information about merge is stored in rowspan and colspan. Table representation is row-based i.e. external list contains list of rows.</para>
+<para>:ivar metadata: a list of lists of table cells (cell has text lines, colspan and rowspan attributes) :ivar cells: table metadata as location, title and so on</para>
+<para>:vartype metadata: TableMetadata :vartype cells: List[List[CellWithMeta]] </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.table.Table</label>
+        <link refid="classdedoc_1_1data__structures_1_1table_1_1Table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.table.Table</label>
+        <link refid="classdedoc_1_1data__structures_1_1table_1_1Table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/table.py" line="14" column="1" bodyfile="dedoc/data_structures/table.py" bodystart="14" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" prot="public" virt="non-virtual"><scope>dedoc::data_structures::table::Table</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" prot="public" virt="non-virtual"><scope>dedoc::data_structures::table::Table</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+td { font-family: Arial; line-height: 130%; color: rgb(0, 0, 0); text-align: justify; font-size: 9pt; }
+
+p { margin: 0.5em 0em; }
+
+.menu { font-family: Arial; font-size: 8pt; color: rgb(255, 255, 255); font-weight: bold; text-decoration: none; text-transform: none; }
+
+.menu a { font-family: Arial; font-size: 8pt; color: rgb(255, 255, 255); text-decoration: none; }
+
+.menu a:hover { font-family: Arial; font-size: 8pt; color: rgb(255, 248, 205); text-decoration: underline; }
+
+.submenu { font-family: Arial; font-size: 8pt; font-weight: bold; color: rgb(156, 1, 1); text-decoration: none; }
+
+.submenu a { font-family: Arial; font-size: 8pt; font-weight: bold; color: rgb(156, 1, 1); text-decoration: none; }
+
+.submenu a:hover { font-family: Arial; font-size: 8pt; font-weight: bold; color: rgb(255, 150, 12); text-decoration: none; }
+
+.topmenu { font-family: verdana; font-size: 8pt; color: rgb(255, 255, 255); text-align: center; font-weight: bold; text-decoration: none; text-transform: none; }
+
+.topmenu a { font-family: verdana; font-size: 8pt; color: rgb(255, 255, 255); text-align: center; font-weight: bold; text-decoration: none; text-transform: none; }
+
+.topmenu a:hover { font-family: verdana; font-size: 8pt; color: rgb(255, 248, 205); text-align: center; font-weight: bold; text-decoration: underline; text-transform: none; }
+
+.titlenews { font-family: Arial; font-size: 9pt; color: rgb(0, 0, 0); text-decoration: none; text-transform: none; }
+
+.titlenews a { font-family: Arial; font-size: 9pt; color: rgb(0, 0, 0); text-decoration: none; text-transform: none; }
+
+.titlenews a:hover { font-family: Arial; font-size: 9pt; color: rgb(0, 88, 151); text-decoration: underline; text-transform: none; }
+
+.newdetail { font-family: Arial; font-size: 9pt; color: rgb(106, 106, 106); font-weight: bold; text-decoration: none; text-transform: none; }
+
+.titlenewdetail { font-family: Arial; font-size: 11pt; color: rgb(0, 0, 0); font-weight: bold; text-decoration: none; text-transform: none; }

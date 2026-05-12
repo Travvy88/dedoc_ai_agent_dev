@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2table_8py" kind="file" language="Python">
+    <compoundname>table.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table" prot="public">dedoc::api::schema::table::Table</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1table">dedoc::api::schema::table</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1table" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>TableModel;<sp/>CONCEPT(8):<sp/>TableStructure,<sp/>GridData;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>Table<sp/>schema<sp/>—<sp/>a<sp/>Pydantic<sp/>model<sp/>for<sp/>a<sp/>document<sp/>table<sp/>with<sp/>row-based<sp/>cell<sp/>grid<sp/>and<sp/>table-level<sp/>metadata.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>table<sp/>data<sp/>model.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model,<sp/>references<sp/>CellWithMeta,<sp/>TableMetadata).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`Table`<sp/>with<sp/>cells<sp/>(List[List[CellWithMeta]])<sp/>and<sp/>metadata<sp/>(TableMetadata).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel;<sp/>READS_DATA_FROM(8):<sp/>CellWithMeta,<sp/>TableMetadata]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>cells<sp/>grid<sp/>is<sp/>rectangular<sp/>(all<sp/>rows<sp/>have<sp/>equal<sp/>column<sp/>count).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>metadata.uid<sp/>uniquely<sp/>identifies<sp/>the<sp/>table<sp/>within<sp/>the<sp/>document.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>row-based<sp/>cell<sp/>storage?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>Matches<sp/>natural<sp/>document<sp/>table<sp/>layout<sp/>and<sp/>simplifies<sp/>HTML<sp/>rendering<sp/>(iterate<sp/>rows,<sp/>then<sp/>cells).</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>9[Document<sp/>table<sp/>with<sp/>cell<sp/>grid<sp/>and<sp/>metadata]<sp/>=&gt;<sp/>Table</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[Table]:<sp/>TableExtractor<sp/>=&gt;<sp/>PopulateCellGrid<sp/>=&gt;<sp/>RenderOrQueryTable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1api_1_1schema_1_1table_1a83806e847bb600bda50248d3c26eb0fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1table_1a83806e847bb600bda50248d3c26eb0fa" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>table,<sp/>cells,<sp/>grid,<sp/>metadata,<sp/>colspan,<sp/>rowspan,<sp/>Pydantic,<sp/>schema,<sp/>document,<sp/>CellWithMeta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>→<sp/>Table<sp/>┌cells:List[List[CellWithMeta]],<sp/>metadata:TableMetadata┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Field</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1cell__with__meta" kindref="compound">dedoc.api.schema.cell_with_meta</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>CellWithMeta</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1table__metadata" kindref="compound">dedoc.api.schema.table_metadata</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TableMetadata</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespacededoc_1_1api_1_1schema_1_1table_1ac4303607627d31fae36f12a5f8da659b" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_Table<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>TableStructure;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Represent<sp/>a<sp/>document<sp/>table<sp/>as<sp/>a<sp/>rectangular<sp/>grid<sp/>of<sp/>cells<sp/>(row-based)<sp/>with<sp/>associated<sp/>table-level<sp/>metadata<sp/>(UID,<sp/>title,<sp/>page).</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>@io<sp/>(cells,<sp/>metadata)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table" kindref="compound">Table</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Holds<sp/>information<sp/>about<sp/>tables<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>document.</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>We<sp/>assume<sp/>that<sp/>a<sp/>table<sp/>has<sp/>rectangle<sp/>form<sp/>(has<sp/>the<sp/>same<sp/>number<sp/>of<sp/>columns<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>each<sp/>row).</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>Table<sp/>representation<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>row-based<sp/>i.e.<sp/>external<sp/>list<sp/>contains<sp/>list<sp/>of<sp/>rows.</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>metadata:<sp/>a<sp/>list<sp/>of<sp/>lists<sp/>of<sp/>table<sp/>cells<sp/>(cell<sp/>has<sp/>text<sp/>lines,<sp/>colspan<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>rowspan<sp/>attributes)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>cells:<sp/>table<sp/>metadata<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>location,<sp/>title<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>so<sp/>on</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>metadata:<sp/>TableMetadata</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>cells:<sp/>List[List[CellWithMeta]]</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="51" refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>cells:<sp/>List[List[CellWithMeta]]<sp/>=<sp/>Field(description=&quot;List<sp/>of<sp/>lists<sp/>of<sp/>table<sp/>cells<sp/>(cell<sp/>has<sp/>text,<sp/>colspan<sp/>and<sp/>rowspan<sp/>attributes)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="52" refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>metadata:<sp/>TableMetadata<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Table<sp/>meta<sp/>information&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_Table</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/table.py"/>
+  </compounddef>
+</doxygen>

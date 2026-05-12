@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::model::ClassificationModelTorch</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1affa9c268bad5f290f9f6aceaea2a6006" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch::efficientnet_b0</definition>
+        <argsstring></argsstring>
+        <name>efficientnet_b0</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.efficientnet_b0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" line="24" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1ab3103f9bc1aae295b3f7c4dd99f9d2fc" compoundref="pdf__image__reader_2columns__orientation__classifier_2model_8py" startline="29" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.forward</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1a5d9f9f631cdc72ecc44840b4bab14068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.__init__</definition>
+        <argsstring>(self, Optional[str] model_path, int num_classes=6)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>model_path</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_classes</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+<para>first 2 classes mean columns number last 4 classes mean orientation </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" line="18" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" bodystart="18" bodyend="26"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1a5d9f9f631cdc72ecc44840b4bab14068" compoundref="pdf__image__reader_2columns__orientation__classifier_2model_8py" startline="18" endline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1a5d9f9f631cdc72ecc44840b4bab14068" compoundref="pdf__image__reader_2columns__orientation__classifier_2model_8py" startline="18" endline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1ab3103f9bc1aae295b3f7c4dd99f9d2fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>torch.Tensor</type>
+        <definition> torch.Tensor dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.forward</definition>
+        <argsstring>(self, torch.Tensor x)</argsstring>
+        <name>forward</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>torch.Tensor</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" line="29" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" bodystart="29" bodyend="33"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1affa9c268bad5f290f9f6aceaea2a6006" compoundref="pdf__image__reader_2columns__orientation__classifier_2model_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch.efficientnet_b0</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class detects EfficientNet B0 model. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.model.ClassificationModelTorch</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn::Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/model.py" bodystart="13" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1a5d9f9f631cdc72ecc44840b4bab14068" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::model::ClassificationModelTorch</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1affa9c268bad5f290f9f6aceaea2a6006" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::model::ClassificationModelTorch</scope><name>efficientnet_b0</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_117f2b9c8e110942419cc872e9d572a14_1ab3103f9bc1aae295b3f7c4dd99f9d2fc" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::model::ClassificationModelTorch</scope><name>forward</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

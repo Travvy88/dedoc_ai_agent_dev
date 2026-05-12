@@ -1,0 +1,7 @@
+var namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor =
+[
+    [ "TOCFeatureExtractor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TOCFeatureExtractor.html", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TOCFeatureExtractor" ],
+    [ "TocItem", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem.html", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor.html#a8601d5025ec06f29d1d704044d237226", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor.html#a69b24750052d6afba1400875b4809c5b", null ]
+];

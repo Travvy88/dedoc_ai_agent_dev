@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_d91281f4284286534f49ad4c9bbfce9e" kind="dir">
+    <compoundname>dedoc/structure_extractors/feature_extractors</compoundname>
+    <innerdir refid="dir_b418dfc70fd3f6f04b3da31062e288fe">dedoc/structure_extractors/feature_extractors/list_features</innerdir>
+    <innerfile refid="structure__extractors_2feature__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__extractor_8py">abstract_extractor.py</innerfile>
+    <innerfile refid="char__features_8py">char_features.py</innerfile>
+    <innerfile refid="diploma__feature__extractor_8py">diploma_feature_extractor.py</innerfile>
+    <innerfile refid="fintoc__feature__extractor_8py">fintoc_feature_extractor.py</innerfile>
+    <innerfile refid="law__text__features_8py">law_text_features.py</innerfile>
+    <innerfile refid="paired__feature__extractor_8py">paired_feature_extractor.py</innerfile>
+    <innerfile refid="paragraph__feature__extractor_8py">paragraph_feature_extractor.py</innerfile>
+    <innerfile refid="toc__feature__extractor_8py">toc_feature_extractor.py</innerfile>
+    <innerfile refid="tz__feature__extractor_8py">tz_feature_extractor.py</innerfile>
+    <innerfile refid="utils__feature__extractor_8py">utils_feature_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/"/>
+  </compounddef>
+</doxygen>

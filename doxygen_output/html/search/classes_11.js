@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['scanparagraphclassifierextractor_0',['ScanParagraphClassifierExtractor',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html',1,'dedoc::readers::pdf_reader::pdf_image_reader::paragraph_extractor::scan_paragraph_classifier_extractor']]],
+  ['scantable_1',['ScanTable',['../classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable.html',1,'dedoc::readers::pdf_reader::data_classes::tables::scantable']]],
+  ['serializable_2',['Serializable',['../classdedoc_1_1data__structures_1_1serializable_1_1Serializable.html',1,'dedoc::data_structures::serializable']]],
+  ['simpletxtlayerclassifier_3',['SimpleTxtlayerClassifier',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a.html',1,'dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::simple_txtlayer_classifier']]],
+  ['sizeannotation_4',['SizeAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation.html',1,'dedoc::data_structures::concrete_annotations::size_annotation']]],
+  ['space_5',['Space',['../classdedoc_1_1utils_1_1annotation__merger_1_1Space.html',1,'dedoc::utils::annotation_merger']]],
+  ['spacingannotation_6',['SpacingAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1spacing__annotation_1_1SpacingAnnotation.html',1,'dedoc::data_structures::concrete_annotations::spacing_annotation']]],
+  ['startwordpattern_7',['StartWordPattern',['../classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern.html',1,'dedoc::structure_extractors::patterns::start_word_pattern']]],
+  ['strikeannotation_8',['StrikeAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1strike__annotation_1_1StrikeAnnotation.html',1,'dedoc::data_structures::concrete_annotations::strike_annotation']]],
+  ['structureconstructorcomposition_9',['StructureConstructorComposition',['../classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition.html',1,'dedoc::structure_constructors::structure_constructor_composition']]],
+  ['structureextractorcomposition_10',['StructureExtractorComposition',['../classdedoc_1_1structure__extractors_1_1structure__extractor__composition_1_1StructureExtractorComposition.html',1,'dedoc::structure_extractors::structure_extractor_composition']]],
+  ['structureextractorerror_11',['StructureExtractorError',['../classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError.html',1,'dedoc::common::exceptions::structure_extractor_error']]],
+  ['stubhierarchylevelbuilder_12',['StubHierarchyLevelBuilder',['../classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1stub__hiera7f6125d2526c21e79f733c27d6951b8.html',1,'dedoc::structure_extractors::hierarchy_level_builders::law_builders::stub_hierarchy_level_builder']]],
+  ['styleannotation_13',['StyleAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1style__annotation_1_1StyleAnnotation.html',1,'dedoc::data_structures::concrete_annotations::style_annotation']]],
+  ['stylesextractor_14',['StylesExtractor',['../classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor.html',1,'dedoc::readers::docx_reader::styles_extractor']]],
+  ['styletype_15',['StyleType',['../classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType.html',1,'dedoc::readers::docx_reader::styles_extractor']]],
+  ['subscriptannotation_16',['SubscriptAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1subscript__annotation_1_1SubscriptAnnotation.html',1,'dedoc::data_structures::concrete_annotations::subscript_annotation']]],
+  ['superscriptannotation_17',['SuperscriptAnnotation',['../classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation.html',1,'dedoc::data_structures::concrete_annotations::superscript_annotation']]]
+];

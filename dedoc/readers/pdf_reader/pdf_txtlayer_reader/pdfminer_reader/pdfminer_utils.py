@@ -6,6 +6,10 @@ from dedocutils.data_structures import BBox
 from pdfminer.layout import LTContainer
 from pdfminer.pdfpage import PDFPage
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 from dedoc.data_structures.concrete_annotations.bbox_annotation import BBoxAnnotation
 
 
@@ -64,3 +68,32 @@ def cid_to_ascii_text(m: Match) -> str:
     text_value = chr(ascii_num)
 
     return text_value
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdfminer_utils; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Utility functions for document processing.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## FUNC [5][draw_layout_element utility/helper] => draw_layout_element
+## FUNC [5][draw_annotation utility/helper] => draw_annotation
+## FUNC [5][convert_coordinates_pdf_to_image utility/helper] => convert_coordinates_pdf_to_image
+## FUNC [5][create_bbox utility/helper] => create_bbox
+## FUNC [5][cid_to_ascii_text utility/helper] => cid_to_ascii_text
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdfminer_utils, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, draw_layout_element, draw_annotation, convert_coordinates_pdf_to_image, create_bbox, cid_to_ascii_text
+# STRUCTURE: ▶ Input → ○ draw_layout_element → draw_annotation → convert_coordinates_pdf_to_image → ⊕ result

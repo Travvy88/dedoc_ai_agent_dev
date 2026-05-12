@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1converters_1_1concrete__converters_1_1pptx__converter" kind="namespace" language="Python">
+    <compoundname>dedoc::converters::concrete_converters::pptx_converter</compoundname>
+    <innerclass refid="classdedoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1_1PptxConverter" prot="public">dedoc::converters::concrete_converters::pptx_converter::PptxConverter</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1a7d3190b568d174e67335c11af6080310" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::converters::concrete_converters::pptx_converter.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.converters.concrete_converters.pptx_converter.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="6" column="1" bodyfile="dedoc/converters/concrete_converters/pptx_converter.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1converters_1_1concrete__converters_1_1pptx__converter_1a2467ae70e888e6e5217c8851ce54408d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.converters.concrete_converters.pptx_converter._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.converters.concrete_converters.pptx_converter._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To normalize pptx-like documents (.ppt, .odp) into the PPTX format via LibreOffice headless conversion, providing a uniform input format for downstream presentation readers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Pptx-like document format normalization via soffice. \par \b Input\/ \:  Files with pptx-like extensions or MIME types. \par \b Output\/ \:  Converted .pptx file path. \par \b Links\/ \:  [USES_API(9): LibreOffice soffice; READS_DATA_FROM(7): <ref refid="namespacededoc_1_1extensions_1aac3b199243c8795f127aefef6c73fa04" kindref="member">dedoc.extensions.converted_extensions</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>convert() always invokes soffice with <ndash/>headless <ndash/>convert-to pptx.</para>
+</listitem><listitem><para>Output file path is always {dir}/{name_wo_ext}.pptx. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why soffice instead of python-pptx for conversion? A: soffice handles legacy binary .ppt and .odp formats that python-pptx cannot read. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Converts pptx-like formats to PPTX via LibreOffice] =&gt; PptxConverter \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[PptxConverter.convert]: User (Upload) → NormalizeToPptx → PptxFileReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="71" column="1" bodyfile="dedoc/converters/concrete_converters/pptx_converter.py" bodystart="71" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/concrete_converters/pptx_converter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

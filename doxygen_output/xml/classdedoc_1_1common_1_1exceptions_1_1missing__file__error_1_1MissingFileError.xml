@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::common::exceptions::missing_file_error::MissingFileError</compoundname>
+    <basecompoundref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" prot="public" virt="non-virtual">dedoc.common.exceptions.dedoc_error.DedocError</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a044cc5855e9780a619bbb88766f65426" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.common.exceptions.missing_file_error.MissingFileError.__init__</definition>
+        <argsstring>(self, str msg, Optional[str] msg_api=None, Optional[str] filename=None, Optional[str] version=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.common.exceptions.missing_file_error.MissingFileError.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a017a20e4f531348995fffc3e7cb3b094">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>msg_api</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>filename</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>version</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize the error, using DedocError&apos;s default code=400 for bad requests. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  DedocError.__init__ \par \b I/O\/ \:  (msg: str, msg_api: Optional[str], filename: Optional[str], version: Optional[str]) -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/missing_file_error.py" line="42" column="1" bodyfile="dedoc/common/exceptions/missing_file_error.py" bodystart="42" bodyend="45"/>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a044cc5855e9780a619bbb88766f65426" compoundref="missing__file__error_8py" startline="42" endline="45">dedoc.common.exceptions.missing_file_error.MissingFileError.__init__</references>
+        <referencedby refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a044cc5855e9780a619bbb88766f65426" compoundref="missing__file__error_8py" startline="42" endline="45">dedoc.common.exceptions.missing_file_error.MissingFileError.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a5d63f429c60f9fbcc447f2e0806760a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.common.exceptions.missing_file_error.MissingFileError.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>dedoc.common.exceptions.missing_file_error.MissingFileError.__str__</qualifiedname>
+        <reimplements refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1aa91e048236906e7e7e5007faf5b92f28">__str__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To provide a human-readable string representation of the error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/missing_file_error.py" line="52" column="1" bodyfile="dedoc/common/exceptions/missing_file_error.py" bodystart="52" bodyend="53"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1a0c57353795449385f0700ea5647aaa75" compoundref="data__structures_2annotation_8py" startline="77" endline="78">dedoc.data_structures.annotation.Annotation.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a7779b220dda6fc7493fcd0e381d0ff5d" compoundref="cell_8py" startline="79" endline="82">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a565bcd1f42c3995b69b93f3ceaeef88a" compoundref="text__with__bbox_8py" startline="48" endline="50">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a6f05208ffa507d861cc2be9eedeaf6c9" compoundref="word__with__bbox_8py" startline="23" endline="25">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a4c345e691196f07d00ba00134687557f" compoundref="prefix_8py" startline="124" endline="127">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__repr__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To signal that no file was provided in the API request, resulting in an HTTP 400 response. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>dedoc.common.exceptions.missing_file_error.MissingFileError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.common.exceptions.dedoc_error.DedocError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>dedoc.common.exceptions.missing_file_error.MissingFileError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.common.exceptions.dedoc_error.DedocError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/common/exceptions/missing_file_error.py" line="35" column="1" bodyfile="dedoc/common/exceptions/missing_file_error.py" bodystart="35" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a044cc5855e9780a619bbb88766f65426" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::missing_file_error::MissingFileError</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a5d63f429c60f9fbcc447f2e0806760a9" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::missing_file_error::MissingFileError</scope><name>__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

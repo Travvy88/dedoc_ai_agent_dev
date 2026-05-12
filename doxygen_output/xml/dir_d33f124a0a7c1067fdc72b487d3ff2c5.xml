@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_d33f124a0a7c1067fdc72b487d3ff2c5" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__txtlayer__reader_2tabbypdf_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="tabbypdf_8py">tabbypdf.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/"/>
+  </compounddef>
+</doxygen>

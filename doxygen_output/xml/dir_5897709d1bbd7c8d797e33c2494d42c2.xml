@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_5897709d1bbd7c8d797e33c2494d42c2" kind="dir">
+    <compoundname>dedoc/readers/html2pdf_reader</compoundname>
+    <innerfile refid="readers_2html2pdf__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="html2pdf__reader_8py">html2pdf_reader.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/html2pdf_reader/"/>
+  </compounddef>
+</doxygen>

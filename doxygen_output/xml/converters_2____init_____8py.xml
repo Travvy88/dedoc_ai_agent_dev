@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="converters_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters">dedoc::converters</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1converters" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.abstract_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractConverter</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.binary_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BinaryConverter</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.docx_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocxConverter</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.excel_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ExcelConverter</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.pdf_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PDFConverter</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.png_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PNGConverter</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.pptx_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PptxConverter</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_converters.txt_converter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TxtConverter</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.converter_composition<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ConverterComposition</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacededoc_1_1converters_1a89be5560944ea48661d0548b5ba7a45a" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="namespacededoc_1_1converters_1abc3a81d3092ce75731761c1d63a00ff2" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;AbstractConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BinaryConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DocxConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ExcelConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ConverterComposition&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;PDFConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;PNGConverter&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;PptxConverter&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;TxtConverter&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Conversion;<sp/>TECH(7):<sp/>PythonImport]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>expose<sp/>all<sp/>converter<sp/>classes<sp/>and<sp/>ConverterComposition<sp/>from<sp/>a<sp/>single<sp/>public<sp/>entry<sp/>point,<sp/>enabling<sp/>the<sp/>rest<sp/>of<sp/>the<sp/>system<sp/>to<sp/>import<sp/>converters<sp/>without<sp/>knowledge<sp/>of<sp/>internal<sp/>file<sp/>layout.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">##<sp/>@scope<sp/>Public<sp/>API<sp/>surface<sp/>for<sp/>the<sp/>converters<sp/>subsystem.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(re-exports<sp/>internal<sp/>modules).</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">##<sp/>@output<sp/>Re-exported<sp/>symbols:<sp/>AbstractConverter,<sp/>BinaryConverter,<sp/>DocxConverter,<sp/>ExcelConverter,<sp/>ConverterComposition,<sp/>PDFConverter,<sp/>PNGConverter,<sp/>PptxConverter,<sp/>TxtConverter.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>dedoc.converters.concrete_converters.*]</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">##<sp/>-<sp/>__all__<sp/>always<sp/>lists<sp/>every<sp/>public<sp/>converter<sp/>symbol.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>gather<sp/>all<sp/>imports<sp/>here?</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">##<sp/>A:<sp/>Single<sp/>import<sp/>point<sp/>simplifies<sp/>dependency<sp/>management<sp/>for<sp/>agents<sp/>and<sp/>consumers.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">##<sp/>FUNC<sp/>5[init<sp/>re-exports]<sp/>=&gt;<sp/>__init__</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">##<sp/>-<sp/>[__init__]:<sp/>System<sp/>(Startup)<sp/>→<sp/>ImportConverters<sp/>→<sp/>AllConvertersAvailable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespacededoc_1_1converters_1a3da3afd700538b681854e0e435f04acc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1converters_1a3da3afd700538b681854e0e435f04acc" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>converters,<sp/>import,<sp/>public<sp/>API,<sp/>AbstractConverter,<sp/>BinaryConverter,<sp/>DocxConverter,<sp/>ExcelConverter,<sp/>ConverterComposition,<sp/>PDFConverter,<sp/>PNGConverter,<sp/>PptxConverter,<sp/>TxtConverter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌internal<sp/>modules┐<sp/>→<sp/>⊕<sp/>re-export<sp/>symbols<sp/>→<sp/>⎋<sp/>__all__<sp/>public<sp/>surface</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/converters/__init__.py"/>
+  </compounddef>
+</doxygen>

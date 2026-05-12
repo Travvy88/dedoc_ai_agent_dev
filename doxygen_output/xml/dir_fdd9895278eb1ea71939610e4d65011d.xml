@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_fdd9895278eb1ea71939610e4d65011d" kind="dir">
+    <compoundname>dedoc/data_structures</compoundname>
+    <innerdir refid="dir_568950e62057129ad34afe8d1a06ec77">dedoc/data_structures/concrete_annotations</innerdir>
+    <innerfile refid="data__structures_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="data__structures_2annotation_8py">annotation.py</innerfile>
+    <innerfile refid="attached__file_8py">attached_file.py</innerfile>
+    <innerfile refid="data__structures_2cell__with__meta_8py">cell_with_meta.py</innerfile>
+    <innerfile refid="data__structures_2document__content_8py">document_content.py</innerfile>
+    <innerfile refid="data__structures_2document__metadata_8py">document_metadata.py</innerfile>
+    <innerfile refid="hierarchy__level_8py">hierarchy_level.py</innerfile>
+    <innerfile refid="data__structures_2line__metadata_8py">line_metadata.py</innerfile>
+    <innerfile refid="data__structures_2line__with__meta_8py">line_with_meta.py</innerfile>
+    <innerfile refid="data__structures_2parsed__document_8py">parsed_document.py</innerfile>
+    <innerfile refid="serializable_8py">serializable.py</innerfile>
+    <innerfile refid="data__structures_2table_8py">table.py</innerfile>
+    <innerfile refid="data__structures_2table__metadata_8py">table_metadata.py</innerfile>
+    <innerfile refid="data__structures_2tree__node_8py">tree_node.py</innerfile>
+    <innerfile refid="unstructured__document_8py">unstructured_document.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/"/>
+  </compounddef>
+</doxygen>

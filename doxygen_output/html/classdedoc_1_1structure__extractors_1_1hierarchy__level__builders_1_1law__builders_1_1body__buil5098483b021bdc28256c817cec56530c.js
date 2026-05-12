@@ -1,0 +1,13 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c =
+[
+    [ "_line_2level", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a59b69b251647a7fd2a308fad1262284d", null ],
+    [ "get_body_line", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#ab0987f068b85886f397f856be1115e98", null ],
+    [ "get_lines_with_hierarchy", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#adab86fa91827f68faeec1d825cc404e7", null ],
+    [ "structure_unit_builder", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#afeaebb4480db01d90301b37203ff7606", null ],
+    [ "ends_of_number", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a30150c0b31b848cbd7937545fb9d8145", null ],
+    [ "regexps_item", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a71ea104a6fbdb8e76b99ab056a0147dc", null ],
+    [ "regexps_part", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a2b26eaecc050d2cde90b724221341e57", null ],
+    [ "regexps_subitem", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a3fec1d37e5dc06f3341a5057b603e597", null ],
+    [ "roman_regexp", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#a88e0047523af0aa8df6346e746d7ea5b", null ],
+    [ "starting_line_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil5098483b021bdc28256c817cec56530c.html#ad9cc5c8e1062c184f964fd98993bfa0e", null ]
+];

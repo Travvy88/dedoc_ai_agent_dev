@@ -5,7 +5,12 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.structure_extractors.abstract_structure_extractor import AbstractStructureExtractor
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_DiplomaStructureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @purpose DiplomaStructureExtractor for document structure extraction pipeline
 class DiplomaStructureExtractor(AbstractStructureExtractor):
     """
     This class is used for extraction structure from russian diplomas, master dissertations, thesis, etc.
@@ -14,11 +19,17 @@ class DiplomaStructureExtractor(AbstractStructureExtractor):
     """
     document_type = "diploma"
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, *, config: Optional[dict] = None) -> None:
         """
         :param config: some configuration for document parsing
         """
         super().__init__(config=config)
+
+        self.logger.debug(f"[IMP:4][DiplomaStructureExtractor][__init___INIT] Starting")
         import os
         import re
         from dedoc.config import get_config
@@ -34,7 +45,13 @@ class DiplomaStructureExtractor(AbstractStructureExtractor):
         self.classifier = DiplomaLineTypeClassifier(path=os.path.join(path, "diploma_classifier.zip"), config=self.config)
         self.footnote_start_regexp = re.compile(r"^\d+ ")
 
+    # endregion METHOD___init__
+    # region METHOD_extract [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose extract method
+    ## @io Input -> Output
+    ## @complexity 5
     def extract(self, document: UnstructuredDocument, parameters: Optional[dict] = None) -> UnstructuredDocument:
+        self.logger.debug(f"[IMP:4][DiplomaStructureExtractor][extract_INIT] Starting")
         """
         Extract diploma structure from the given document and add additional information to the lines' metadata.
         To get the information about the method's parameters look at the documentation of the class \
@@ -69,7 +86,13 @@ class DiplomaStructureExtractor(AbstractStructureExtractor):
 
         return document
 
+    # endregion METHOD_extract
+    # region METHOD__replace_toc_lines [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _replace_toc_lines method
+    ## @io Input -> Output
+    ## @complexity 5
     def _replace_toc_lines(self, lines: List[LineWithMeta]) -> Tuple[List[LineWithMeta]]:
+        self.logger.debug(f"[IMP:4][DiplomaStructureExtractor][_replace_toc_lines_INIT] Starting")
         toc_items = self.classifier.feature_extractor.toc_extractor.get_toc(lines)
         if len(toc_items) == 0:
             return lines
@@ -99,7 +122,13 @@ class DiplomaStructureExtractor(AbstractStructureExtractor):
         lines = sorted(lines, key=lambda x: (x.metadata.page_id, x.metadata.line_id))
         return lines
 
+    # endregion METHOD__replace_toc_lines
+    # region METHOD__replace_footnote_lines [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _replace_footnote_lines method
+    ## @io Input -> Output
+    ## @complexity 5
     def _replace_footnote_lines(self, lines: List[LineWithMeta]) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][DiplomaStructureExtractor][_replace_footnote_lines_INIT] Starting")
         fixed_lines = []
         current_footnote = None
         for line in lines:
@@ -133,9 +162,41 @@ class DiplomaStructureExtractor(AbstractStructureExtractor):
             fixed_lines.append(current_footnote)
         return fixed_lines
 
+    # endregion METHOD__replace_footnote_lines
+    # region METHOD__add_page_id_lines [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _add_page_id_lines method
+    ## @io Input -> Output
+    ## @complexity 5
     def _add_page_id_lines(self, lines: List[LineWithMeta]) -> None:
+        self.logger.debug(f"[IMP:4][DiplomaStructureExtractor][_add_page_id_lines_INIT] Starting")
         for i in range(1, len(lines) - 1):
             line = lines[i]
             if (lines[i - 1].metadata.page_id < line.metadata.page_id or line.metadata.page_id < lines[i + 1].metadata.page_id) \
                     and line.line.strip().isdigit():
                 line.metadata.tag_hierarchy_level.line_type = "page_id"
+
+    # endregion METHOD__add_page_id_lines
+# endregion CLASS_DiplomaStructureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/concrete_structure_extractors/diploma_structure_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/concrete_structure_extractors/diploma_structure_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => DiplomaStructureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, concrete structure extractors, diploma structure extractor
+# STRUCTURE: ▶ structure_extractors/concrete_structure_extractors/diploma_structure_extractor → ○ DiplomaStructureExtractor.cls → ⎋ result

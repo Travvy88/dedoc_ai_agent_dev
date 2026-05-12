@@ -1,0 +1,884 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</compoundname>
+    <basecompoundref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor" prot="public" virt="non-virtual">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a36925360a6f99e06e1d88a52393bbbf0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::list_feature_extractor</definition>
+        <argsstring></argsstring>
+        <name>list_feature_extractor</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.list_feature_extractor</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e" kindref="compound">ListFeaturesExtractor</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="22" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a72adf950ff1fe03d390a877395dac1a6" compoundref="paragraph__feature__extractor_8py" startline="49" endline="69">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1ad097ed6b5685ff8a05da5a851a6cb57e" compoundref="diploma__feature__extractor_8py" startline="87" endline="107">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" compoundref="law__text__features_8py" startline="67" endline="76">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab81f8f23294042fce2fcee6c7f5582f7" compoundref="tz__feature__extractor_8py" startline="62" endline="73">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.transform</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a6c133784bba9af22fa99d45e462e20d2" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::named_regexp</definition>
+        <argsstring></argsstring>
+        <name>named_regexp</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.named_regexp</qualifiedname>
+        <initializer>=  [
+        re.compile(r&quot;^(Статья|(Г|г)лава|ГЛАВА|ЧАСТЬ|Часть|Раздел|РАЗДЕЛ|\$|§)\s*((\d+\.*)+|[IVXХxхviУП]{1,3}\.?)\s*&quot;)
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="24" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" compoundref="law__text__features_8py" startline="284" endline="291">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe1f27b8ec8a7d0b19446929848d6484" compoundref="law__text__features_8py" startline="224" endline="231">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_body</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a34c8de44f339d529a713252c9df5a414" compoundref="law__text__features_8py" startline="120" endline="150">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._look_at_prev_line</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac6dc01c4dda216c86405cca1e5b82fbd" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexp_application_begin</definition>
+        <argsstring></argsstring>
+        <name>regexp_application_begin</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexp_application_begin</qualifiedname>
+        <initializer>=  re.compile(
+        r&quot;^(\&apos;|\&quot;)?(((П|п)риложение)|((У|у)твержден)[оаы]?){1}(( )*([№nN]?( )*(\d){1,3})?( )*)&quot;
+        r&quot;((к распоряжению)|(к постановлению)|(к приказу))?\s*$&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="27" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a55e56cc8651e5682178db3b7ff0fb3be" compoundref="law__text__features_8py" startline="237" endline="243">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_application</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier_1_1LawLineTypeClassifier_1a68440cd8b45ba7d0efc652945c8216b6" compoundref="law__classifier_8py" startline="65" endline="70">dedoc.structure_extractors.line_type_classifiers.law_classifier.LawLineTypeClassifier.__match_body_begin</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ab8927d0779c50758140242c974f817aa" compoundref="law__text__features_8py" startline="156" endline="218">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._one_line_features</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicatioc169dc0c1d729a8a16df35c7ed859764_1a268e3b4b4accf196ea7d76a6c80eae52" compoundref="abstract__application__hierarchy__level__builder_8py" startline="41" endline="74">dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.abstract_application_hierarchy_level_builder.AbstractApplicationHierarchyLevelBuilder.get_lines_with_hierarchy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac1ffb840babe5eea2105f3f114bcf391" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexps_items</definition>
+        <argsstring></argsstring>
+        <name>regexps_items</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_items</qualifiedname>
+        <initializer>=  [
+        re.compile(r&quot;^\s*(\d{1,3}\.)+\s*[a-zA-Zа-яА-ЯёЁ]&quot;),
+        re.compile(r&quot;^\s*\d{1,3}(\)|\})&quot;),
+
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="31" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a12bb35e6aabe8aae97378d1ca1ccb2b1" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexps_subitem</definition>
+        <argsstring></argsstring>
+        <name>regexps_subitem</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_subitem</qualifiedname>
+        <initializer>=  [
+        re.compile(r&quot;^\s*[а-яё]\)&quot;),
+    ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="36" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor_1a315236632c450609501f25f7ea190055" compoundref="law__structure__excractor_8py" startline="54" endline="60">dedoc.structure_extractors.concrete_structure_extractors.law_structure_excractor.LawStructureExtractor._postprocess_lines</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da_1a51dafd87573d66c96f469d5b2fc7a0bb" compoundref="law__structure__unit_8py" startline="26" endline="59">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.law_structure_unit.LawStructureUnitBuilder.structure_unit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a031824493312bc11e5aa3e406cec12f9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::quote_start</definition>
+        <argsstring></argsstring>
+        <name>quote_start</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.quote_start</qualifiedname>
+        <initializer>=  re.compile(r&quot;^([\&quot;&apos;«])&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="39" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a44a910b061b1137023e47622301e6955" compoundref="law__text__features_8py" startline="249" endline="278">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._inside_quotes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a56da12c7433b2eb3103e1f5916f1bc46" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::quote_end</definition>
+        <argsstring></argsstring>
+        <name>quote_end</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.quote_end</qualifiedname>
+        <initializer>=  re.compile(r&quot;.*[\&quot;&apos;»][.;]?$&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="40" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a44a910b061b1137023e47622301e6955" compoundref="law__text__features_8py" startline="249" endline="278">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._inside_quotes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aabbe1d90a9b054cbdd0d33acf090bc45" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexps_start</definition>
+        <argsstring></argsstring>
+        <name>regexps_start</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="50" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" compoundref="law__text__features_8py" startline="284" endline="291">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe1f27b8ec8a7d0b19446929848d6484" compoundref="law__text__features_8py" startline="224" endline="231">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_body</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ae282ea0ed5211ecf8cfd9712c5bdfac0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::text_features_only</definition>
+        <argsstring></argsstring>
+        <name>text_features_only</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.text_features_only</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="51" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" compoundref="law__text__features_8py" startline="82" endline="114">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ab8927d0779c50758140242c974f817aa" compoundref="law__text__features_8py" startline="156" endline="218">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._one_line_features</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1a141da297ee3a7166760398e1a7a48efe" compoundref="tz__feature__extractor_8py" startline="111" endline="143">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures._one_line_features</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a181bacc4edff2617e5a746b7866061f3" compoundref="law__text__features_8py" startline="58" endline="61">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.parameters</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab99db73b9d0c0ef3dd76987eea4ad839" compoundref="tz__feature__extractor_8py" startline="53" endline="56">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.parameters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a64e251fbde5cc114c1ccb46ae7fb18b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::named_regexp</definition>
+        <argsstring></argsstring>
+        <name>named_regexp</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.named_regexp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="199" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="199" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" compoundref="law__text__features_8py" startline="284" endline="291">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe1f27b8ec8a7d0b19446929848d6484" compoundref="law__text__features_8py" startline="224" endline="231">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_body</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a34c8de44f339d529a713252c9df5a414" compoundref="law__text__features_8py" startline="120" endline="150">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._look_at_prev_line</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a65853529cb13bf12fcb8b0c926d62cbf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexps_items</definition>
+        <argsstring></argsstring>
+        <name>regexps_items</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_items</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="200" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aa3d9737997ffbee54a75b52ce6ae4483" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures::regexps_subitem</definition>
+        <argsstring></argsstring>
+        <name>regexps_subitem</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_subitem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="201" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="201" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor_1a315236632c450609501f25f7ea190055" compoundref="law__structure__excractor_8py" startline="54" endline="60">dedoc.structure_extractors.concrete_structure_extractors.law_structure_excractor.LawStructureExtractor._postprocess_lines</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da_1a51dafd87573d66c96f469d5b2fc7a0bb" compoundref="law__structure__unit_8py" startline="26" endline="59">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.law_structure_unit.LawStructureUnitBuilder.structure_unit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe01146e4c30869f79d1dbcd39ed5043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__init__</definition>
+        <argsstring>(self, bool text_features_only=False)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>text_features_only</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  <bold>init</bold> method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="46" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="46" bodyend="52"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe01146e4c30869f79d1dbcd39ed5043" compoundref="law__text__features_8py" startline="46" endline="52">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__init__</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe01146e4c30869f79d1dbcd39ed5043" compoundref="law__text__features_8py" startline="46" endline="52">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a181bacc4edff2617e5a746b7866061f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.parameters</definition>
+        <argsstring>(self)</argsstring>
+        <name>parameters</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.parameters</qualifiedname>
+        <reimplements refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1aadcf633163d20944734922090bae130c">parameters</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  parameters method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="58" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="58" bodyend="61"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ae282ea0ed5211ecf8cfd9712c5bdfac0" compoundref="law__text__features_8py" startline="51">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.text_features_only</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab633a413eb81a067095e4330451abf34" compoundref="tz__feature__extractor_8py" startline="45">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.text_features_only</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pd.DataFrame</type>
+        <definition> pd.DataFrame dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</definition>
+        <argsstring>(self, List[List[LineWithMeta]] documents, Optional[List[List[TocItem]]] toc_lines=None)</argsstring>
+        <name>transform</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</qualifiedname>
+        <reimplements refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ab4b859be1ed6c974b8a02a41303da75b">transform</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>documents</declname>
+          <array>[List[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>Optional]]</type>
+          <declname>toc_lines</declname>
+          <array>[List[List[TocItem]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  transform method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="67" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="67" bodyend="76"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a72adf950ff1fe03d390a877395dac1a6" compoundref="paragraph__feature__extractor_8py" startline="49" endline="69">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.__process_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1afe4da4210188db1de065c572fc169306" compoundref="tz__feature__extractor_8py" startline="79" endline="105">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.__process_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" compoundref="law__text__features_8py" startline="82" endline="114">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1ad097ed6b5685ff8a05da5a851a6cb57e" compoundref="diploma__feature__extractor_8py" startline="87" endline="107">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.__process_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1fintoc__feature__extractor_1_1FintocFeatureExtractor_1abb3aca763189569509f594a42cd2980a" compoundref="fintoc__feature__extractor_8py" startline="76" endline="100">dedoc.structure_extractors.feature_extractors.fintoc_feature_extractor.FintocFeatureExtractor.__process_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1a5143679dc35adcb340a74dc0df6a9f4e" compoundref="diploma__feature__extractor_8py" startline="46">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.list_feature_extractor</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a36925360a6f99e06e1d88a52393bbbf0" compoundref="law__text__features_8py" startline="22">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.list_feature_extractor</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1ae664d3cd6d2cb086ccd8a634c7b0ed0f" compoundref="paragraph__feature__extractor_8py" startline="33">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.list_feature_extractor</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1a87399dc9fb734515290a88ddee4486ef" compoundref="tz__feature__extractor_8py" startline="46">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.list_feature_extractor</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" compoundref="law__text__features_8py" startline="67" endline="76">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75_1a30bc5cdd55641764869218d1aac944e2" compoundref="transforms_8py" startline="56" endline="63">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.TransformWithLabels.__call__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform_1a8d26c75b0b70cd711e37937ffdc5ea55" compoundref="transforms_8py" startline="31" endline="38">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.ImageTransform.__call__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1e14fe026c18a6c753ae3e138ab091d3c_1aaab46d13e24b202855fd0a1d850ba15c" compoundref="dataset__executor_8py" startline="42" endline="62">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DatasetImageOrient.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a968937c16782e110faf4677e8008b19b" compoundref="columns__orientation__classifier_8py" startline="107" endline="115">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.get_features</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf96c5430c511f3407d544c21ad6c0ce" compoundref="dataset__executor_8py" startline="75" endline="81">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.load_dataset</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" compoundref="law__text__features_8py" startline="67" endline="76">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pd.DataFrame</type>
+        <definition> pd.DataFrame dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</definition>
+        <argsstring>(self, List[LineWithMeta] lines, bool with_prev_next=True)</argsstring>
+        <name>__process_document</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>with_prev_next</declname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  __process_document method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="82" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="82" bodyend="114"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a55e56cc8651e5682178db3b7ff0fb3be" compoundref="law__text__features_8py" startline="237" endline="243">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_application</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a42040a0c8d15a32ef058036473fc4c2b" compoundref="abstract__extractor_8py" startline="387" endline="408">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._before_special_line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1abe6ff506ab53b6e82b0da035a5e3e118" compoundref="abstract__extractor_8py" startline="415" endline="455">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._list_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a34c8de44f339d529a713252c9df5a414" compoundref="law__text__features_8py" startline="120" endline="150">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._look_at_prev_line</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ab2086f429581aaee2357f9c7c74959e1" compoundref="abstract__extractor_8py" startline="481" endline="492">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._normalize_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e_1a5359eb087caffc8f4209b81ead624aed" compoundref="list__features__extractor_8py" startline="111" endline="134">dedoc.structure_extractors.feature_extractors.list_features.list_features_extractor.ListFeaturesExtractor._one_line_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1a6d5aa01d1d330460651ad3791f086f8f" compoundref="diploma__feature__extractor_8py" startline="113" endline="150">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor._one_line_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ab8927d0779c50758140242c974f817aa" compoundref="law__text__features_8py" startline="156" endline="218">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._one_line_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1a141da297ee3a7166760398e1a7a48efe" compoundref="tz__feature__extractor_8py" startline="111" endline="143">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures._one_line_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a85d20fd0e8a9421169cea2a58226ba96" compoundref="paragraph__feature__extractor_8py" startline="103" endline="149">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor._one_line_features</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ae6bbd6467aa4f4ae2f032d32d6a77f52" compoundref="abstract__extractor_8py" startline="64" endline="89">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor.prev_next_line_features</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ae282ea0ed5211ecf8cfd9712c5bdfac0" compoundref="law__text__features_8py" startline="51">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.text_features_only</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab633a413eb81a067095e4330451abf34" compoundref="tz__feature__extractor_8py" startline="45">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.text_features_only</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1aa3f12f1222b152626e272bd844addc1b" compoundref="diploma__feature__extractor_8py" startline="63" endline="72">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.transform</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1fintoc__feature__extractor_1_1FintocFeatureExtractor_1a6ea4a78f8e6f50f092a4a17cffc6752f" compoundref="fintoc__feature__extractor_8py" startline="62" endline="70">dedoc.structure_extractors.feature_extractors.fintoc_feature_extractor.FintocFeatureExtractor.transform</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" compoundref="law__text__features_8py" startline="67" endline="76">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0c66618f6da25205cd7f054263a317fe" compoundref="paragraph__feature__extractor_8py" startline="92" endline="97">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.transform</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab81f8f23294042fce2fcee6c7f5582f7" compoundref="tz__feature__extractor_8py" startline="62" endline="73">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.transform</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe1f27b8ec8a7d0b19446929848d6484" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[Tuple[int, int, int]]</type>
+        <definition> Optional[Tuple[int, int, int]] dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_body</definition>
+        <argsstring>(self, List[LineWithMeta] document)</argsstring>
+        <name>__find_body</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_body</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>document</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  __find_body method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="224" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="224" bodyend="231"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a0a0e8b1a5a56d427fd609def3c639126" compoundref="abstract__extractor_8py" startline="138" endline="164">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._start_regexp</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a6c133784bba9af22fa99d45e462e20d2" compoundref="law__text__features_8py" startline="24">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.named_regexp</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aabbe1d90a9b054cbdd0d33acf090bc45" compoundref="law__text__features_8py" startline="50">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_start</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a55e56cc8651e5682178db3b7ff0fb3be" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[Tuple[int, int, int]]</type>
+        <definition> Optional[Tuple[int, int, int]] dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_application</definition>
+        <argsstring>(self, List[LineWithMeta] document)</argsstring>
+        <name>__find_application</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__find_application</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>document</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  __find_application method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="237" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="237" bodyend="243"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac6dc01c4dda216c86405cca1e5b82fbd" compoundref="law__text__features_8py" startline="27">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexp_application_begin</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicatioc169dc0c1d729a8a16df35c7ed859764_1ad6dd68491f51abb807fb886810f5d602" compoundref="abstract__application__hierarchy__level__builder_8py" startline="23">dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.abstract_application_hierarchy_level_builder.AbstractApplicationHierarchyLevelBuilder.regexp_application_begin</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier_1_1LawLineTypeClassifier_1a7237b11c827023fdf0dde075418cd577" compoundref="law__classifier_8py" startline="27">dedoc.structure_extractors.line_type_classifiers.law_classifier.LawLineTypeClassifier.regexp_application_begin</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" compoundref="law__text__features_8py" startline="82" endline="114">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</definition>
+        <argsstring>(self, str text)</argsstring>
+        <name>__any_item_found</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  __any_item_found method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="284" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="284" bodyend="291"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a6c133784bba9af22fa99d45e462e20d2" compoundref="law__text__features_8py" startline="24">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.named_regexp</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aabbe1d90a9b054cbdd0d33acf090bc45" compoundref="law__text__features_8py" startline="50">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexps_start</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a44a910b061b1137023e47622301e6955" compoundref="law__text__features_8py" startline="249" endline="278">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._inside_quotes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a34c8de44f339d529a713252c9df5a414" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[str, List]</type>
+        <definition> Dict[str, List] dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._look_at_prev_line</definition>
+        <argsstring>(self, List[LineWithMeta] document, int n=1)</argsstring>
+        <name>_look_at_prev_line</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._look_at_prev_line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>document</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  _look_at_prev_line method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="120" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="120" bodyend="150"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a6c133784bba9af22fa99d45e462e20d2" compoundref="law__text__features_8py" startline="24">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.named_regexp</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" compoundref="law__text__features_8py" startline="82" endline="114">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ab8927d0779c50758140242c974f817aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[Tuple[str, int]]</type>
+        <definition> Iterator[Tuple[str, int]] dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._one_line_features</definition>
+        <argsstring>(self, LineWithMeta line, int total_lines, int start_page, int finish_page)</argsstring>
+        <name>_one_line_features</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._one_line_features</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_lines</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>finish_page</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  _one_line_features method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="156" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="156" bodyend="218"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a4316657668c9749f4d2144f824f9e722" compoundref="abstract__extractor_8py" startline="186" endline="194">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._get_bold</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a915b445d04d86d385a8e71ef30bc5203" compoundref="abstract__extractor_8py" startline="336" endline="344">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._get_indentation</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a766303cb7094fed849a83f6b20dddda8" compoundref="abstract__extractor_8py" startline="171" endline="179">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._get_size</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1tz__classifier_1_1TzLineTypeClassifier_1ab2ed32604c4932287fd158308f8858a0" compoundref="tz__classifier_8py" startline="128" endline="135">dedoc.structure_extractors.line_type_classifiers.tz_classifier.TzLineTypeClassifier._get_size</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac6dc01c4dda216c86405cca1e5b82fbd" compoundref="law__text__features_8py" startline="27">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.regexp_application_begin</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicatioc169dc0c1d729a8a16df35c7ed859764_1ad6dd68491f51abb807fb886810f5d602" compoundref="abstract__application__hierarchy__level__builder_8py" startline="23">dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.abstract_application_hierarchy_level_builder.AbstractApplicationHierarchyLevelBuilder.regexp_application_begin</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier_1_1LawLineTypeClassifier_1a7237b11c827023fdf0dde075418cd577" compoundref="law__classifier_8py" startline="27">dedoc.structure_extractors.line_type_classifiers.law_classifier.LawLineTypeClassifier.regexp_application_begin</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ae282ea0ed5211ecf8cfd9712c5bdfac0" compoundref="law__text__features_8py" startline="51">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.text_features_only</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab633a413eb81a067095e4330451abf34" compoundref="tz__feature__extractor_8py" startline="45">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.text_features_only</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a72adf950ff1fe03d390a877395dac1a6" compoundref="paragraph__feature__extractor_8py" startline="49" endline="69">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" compoundref="law__text__features_8py" startline="82" endline="114">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1ad097ed6b5685ff8a05da5a851a6cb57e" compoundref="diploma__feature__extractor_8py" startline="87" endline="107">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.__process_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e_1a4058b2c89438f4256212fa9502e11a39" compoundref="list__features__extractor_8py" startline="90" endline="105">dedoc.structure_extractors.feature_extractors.list_features.list_features_extractor.ListFeaturesExtractor.one_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a44a910b061b1137023e47622301e6955" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[int]</type>
+        <definition> List[int] dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._inside_quotes</definition>
+        <argsstring>(self, List[LineWithMeta] lines)</argsstring>
+        <name>_inside_quotes</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures._inside_quotes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  _inside_quotes method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="249" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="249" bodyend="278"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" compoundref="law__text__features_8py" startline="284" endline="291">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.__any_item_found</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a56da12c7433b2eb3103e1f5916f1bc46" compoundref="law__text__features_8py" startline="40">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.quote_end</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a031824493312bc11e5aa3e406cec12f9" compoundref="law__text__features_8py" startline="39">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.quote_start</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  LawTextFeatures for document structure extraction pipeline </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_extractors/feature_extractors/law_text_features.py" line="20" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/law_text_features.py" bodystart="20" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a804bbac50fd2504de96bddfd45fcab7c" prot="private" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>__any_item_found</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a55e56cc8651e5682178db3b7ff0fb3be" prot="private" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>__find_application</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe1f27b8ec8a7d0b19446929848d6484" prot="private" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>__find_body</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1afe01146e4c30869f79d1dbcd39ed5043" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a2fc19b58a331d2699c7625d383bc40cc" prot="private" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>__process_document</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a44a910b061b1137023e47622301e6955" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>_inside_quotes</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a34c8de44f339d529a713252c9df5a414" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>_look_at_prev_line</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ab8927d0779c50758140242c974f817aa" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>_one_line_features</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a36925360a6f99e06e1d88a52393bbbf0" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>list_feature_extractor</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a6c133784bba9af22fa99d45e462e20d2" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>named_regexp</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a64e251fbde5cc114c1ccb46ae7fb18b3" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>named_regexp</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a181bacc4edff2617e5a746b7866061f3" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>parameters</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a56da12c7433b2eb3103e1f5916f1bc46" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>quote_end</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a031824493312bc11e5aa3e406cec12f9" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>quote_start</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac6dc01c4dda216c86405cca1e5b82fbd" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexp_application_begin</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ac1ffb840babe5eea2105f3f114bcf391" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexps_items</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a65853529cb13bf12fcb8b0c926d62cbf" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexps_items</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aabbe1d90a9b054cbdd0d33acf090bc45" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexps_start</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1a12bb35e6aabe8aae97378d1ca1ccb2b1" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexps_subitem</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1aa3d9737997ffbee54a75b52ce6ae4483" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>regexps_subitem</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1ae282ea0ed5211ecf8cfd9712c5bdfac0" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>text_features_only</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::feature_extractors::law_text_features::LawTextFeatures</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

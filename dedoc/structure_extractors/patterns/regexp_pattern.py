@@ -5,9 +5,14 @@ from dedoc.data_structures.hierarchy_level import HierarchyLevel
 from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.structure_extractors.patterns.abstract_pattern import AbstractPattern
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_RegexpPattern [DOMAIN(DocumentProcessing): ...; CONCEPT(PatternMatching): ...; TECH(Regexp): ...]
+## @purpose RegexpPattern for document structure extraction pipeline
 class RegexpPattern(AbstractPattern):
-    """
+    r"""
     Pattern for matching line text by a regular expression.
 
     .. note::
@@ -50,6 +55,10 @@ class RegexpPattern(AbstractPattern):
     """ # noqa
     _name = "regexp"
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self,
                  regexp: str or re.Pattern,
                  line_type: str,
@@ -68,9 +77,17 @@ class RegexpPattern(AbstractPattern):
             if line can be multiline, it can be joined with another line. If ``None`` is given, can_be_multiline is set to ``True``.
         """
         super().__init__(line_type=line_type, level_1=level_1, level_2=level_2, can_be_multiline=can_be_multiline)
+
+        self.logger.debug(f"[IMP:4][RegexpPattern][__init___INIT] Starting")
         self._regexp = re.compile(regexp) if isinstance(regexp, str) else regexp
 
+    # endregion METHOD___init__
+    # region METHOD_match [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose match method
+    ## @io Input -> Output
+    ## @complexity 5
     def match(self, line: LineWithMeta) -> bool:
+        self.logger.debug(f"[IMP:4][RegexpPattern][match_INIT] Starting")
         """
         Check if the pattern is suitable for the given line.
         Line text is checked by applying pattern's regular expression, text is stripped and made lowercase beforehand.
@@ -79,7 +96,13 @@ class RegexpPattern(AbstractPattern):
         match = self._regexp.match(text)
         return match is not None
 
+    # endregion METHOD_match
+    # region METHOD_get_hierarchy_level [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_hierarchy_level method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_hierarchy_level(self, line: LineWithMeta) -> HierarchyLevel:
+        self.logger.debug(f"[IMP:4][RegexpPattern][get_hierarchy_level_INIT] Starting")
         """
         This method should be applied only when :meth:`~dedoc.structure_extractors.patterns.RegexpPattern.match`
         returned ``True`` for the given line.
@@ -88,3 +111,29 @@ class RegexpPattern(AbstractPattern):
         The attributes ``line_type``, ``level_1``, ``level_2``, ``can_be_multiline`` are equal to values given during class initialisation.
         """
         return HierarchyLevel(line_type=self._line_type, level_1=self._level_1, level_2=self._level_2, can_be_multiline=self._can_be_multiline)
+
+    # endregion METHOD_get_hierarchy_level
+# endregion CLASS_RegexpPattern
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(PatternMatching): ...; TECH(Regexp): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/patterns/regexp_pattern: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/patterns/regexp_pattern
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => RegexpPattern
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, patterns, regexp pattern
+# STRUCTURE: ▶ structure_extractors/patterns/regexp_pattern → ○ RegexpPattern.cls → ⎋ result

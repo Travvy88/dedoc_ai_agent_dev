@@ -5,11 +5,13 @@ from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
 
+# region CLASS_MhtmlReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class MhtmlReader(BaseReader):
     """
     This reader can process files with the following extensions: .mhtml, .mht, .mhtml.gz, .mht.gz
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedoc.extensions import recognized_extensions, recognized_mimes
         from dedoc.readers.html_reader.html_reader import HtmlReader
@@ -17,6 +19,8 @@ class MhtmlReader(BaseReader):
         super().__init__(config=config, recognized_extensions=recognized_extensions.mhtml_like_format, recognized_mimes=recognized_mimes.mhtml_like_format)
         self.html_reader = HtmlReader(config=self.config)
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if the document extension is suitable for this reader.
@@ -30,6 +34,8 @@ class MhtmlReader(BaseReader):
             return extension.lower() in self._recognized_extensions
         return mime in self._recognized_mimes
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines, tables and attachments.
@@ -69,6 +75,8 @@ class MhtmlReader(BaseReader):
 
         return UnstructuredDocument(tables=tables, lines=lines, attachments=attachments)
 
+    # region METHOD___extract_files [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __extract_files(self, path: str, save_dir: str) -> Tuple[List[str], List[str]]:
         import email
         import gzip
@@ -102,6 +110,8 @@ class MhtmlReader(BaseReader):
             original_names_list.append(content_name)
         return names_list, original_names_list
 
+    # region METHOD___find_html [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract_files
     def __find_html(self, names_list: List[str]) -> List[str]:
         from bs4 import BeautifulSoup
         from dedoc.utils import supported_image_types
@@ -123,6 +133,8 @@ class MhtmlReader(BaseReader):
                 self.logger.error(e)
         return html_list
 
+    # region METHOD___get_attachments [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___find_html
     def __get_attachments(self, save_dir: str, tmp_names_list: List[str], original_names_list: List[str], need_content_analysis: bool) -> List[AttachedFile]:
         import os
         import uuid
@@ -138,4 +150,32 @@ class MhtmlReader(BaseReader):
                                       uid=f"attach_{uuid.uuid4()}",
                                       need_content_analysis=need_content_analysis)
             attachments.append(attachment)
+# endregion CLASS_MhtmlReader
         return attachments
+
+    # endregion METHOD___get_attachments
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_mhtml_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse HTML documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: HTML format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [12][MhtmlReader reader/processor] => MhtmlReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(HTML) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: mhtml_reader, dedoc, reader, HTML, MhtmlReader, BaseReader, MHTML, email, HTML, attachments, MhtmlReader
+# STRUCTURE: ▶ Init ┌HTML file┐ → [MhtmlReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::line_type_classifiers</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier">dedoc::structure_extractors::line_type_classifiers::abstract_line_type_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier">dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1diploma__classifier">dedoc::structure_extractors::line_type_classifiers::diploma_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier">dedoc::structure_extractors::line_type_classifiers::fintoc_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier">dedoc::structure_extractors::line_type_classifiers::law_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1tz__classifier">dedoc::structure_extractors::line_type_classifiers::tz_classifier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/line_type_classifiers/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

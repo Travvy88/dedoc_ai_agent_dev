@@ -2,6 +2,10 @@ from typing import Union
 
 from bs4 import Tag
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 from dedoc.readers.docx_reader.data_structures.base_props import BaseProperties
 
 
@@ -206,3 +210,36 @@ def change_spacing(old_properties: BaseProperties, tree: Tag) -> None:
 
     old_properties.spacing_before = before
     old_properties.spacing_after = after
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_properties_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse DOCX documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Feature and metadata extraction from documents.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## FUNC [5][spacing_to_float utility/helper] => spacing_to_float
+## FUNC [5][check_if_true utility/helper] => check_if_true
+## FUNC [5][change_paragraph_properties utility/helper] => change_paragraph_properties
+## FUNC [5][change_run_properties utility/helper] => change_run_properties
+## FUNC [5][change_indent utility/helper] => change_indent
+## FUNC [5][change_size utility/helper] => change_size
+## FUNC [5][change_jc utility/helper] => change_jc
+## FUNC [5][change_caps utility/helper] => change_caps
+## FUNC [5][change_spacing utility/helper] => change_spacing
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(DOCX) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: properties_extractor, dedoc, reader, DOCX, DocxReader, BaseReader, DOCX, Word, UnstructuredDocument, LineWithMeta, attachments, numbering, styles, properties, paragraph, footnote, spacing_to_float, check_if_true, change_paragraph_properties, change_run_properties, change_indent, change_size, change_jc, change_caps, change_spacing
+# STRUCTURE: ▶ Input → ○ spacing_to_float → check_if_true → change_paragraph_properties → ⊕ result

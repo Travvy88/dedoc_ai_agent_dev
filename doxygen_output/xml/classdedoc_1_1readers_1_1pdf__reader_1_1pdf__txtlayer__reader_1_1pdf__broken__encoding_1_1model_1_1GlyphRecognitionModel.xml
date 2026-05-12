@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5920410bd55731822074bec887f1239d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel::labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.labels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="60" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1aa694257ddef09688fda4480847f322ce" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="84" endline="86">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__assert_labels_and_model</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ab8951b0ba816c6015556810bff66e2ea" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="89" endline="111">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.recognize_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ad2dff7b60a1536f6d4edfd21d6aa724c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="61" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1ae6427c0a50f0820c1ec18533cc400ebd" compoundref="ml__txtlayer__classifier_8py" startline="32" endline="50">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.__get_model</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a486b2abed8a19386500a1e676ebd0ea1" compoundref="docx__document_8py" startline="43" endline="57">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__get_paragraph_maker</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1ab07407e792836dfd8fa7f215d90ae18b" compoundref="docx__document_8py" startline="145" endline="167">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__handle_images_xml</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a1655384328ff7929dd264e270af9c718" compoundref="scan__paragraph__classifier__extractor_8py" startline="51" endline="72">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor._unpickle</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="67" endline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5d107fd5e84cd97f7a4a4583496a34c0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel::__model</definition>
+        <argsstring></argsstring>
+        <name>__model</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__model</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="62" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1ae6427c0a50f0820c1ec18533cc400ebd" compoundref="ml__txtlayer__classifier_8py" startline="32" endline="50">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.__get_model</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="67" endline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a75af8cd84d597b2d3b146e4a7fa115c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="58" bodyend="63"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel" kindref="compound">CNNModel</ref></type>
+        <definition> CNNModel dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</definition>
+        <argsstring>(self)</argsstring>
+        <name>model</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="67" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="67" bodyend="81"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1afad0559a00af2aae150908a0eb8cb563" compoundref="ml__txtlayer__classifier_8py" startline="27">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.__model</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5d107fd5e84cd97f7a4a4583496a34c0" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="62">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__model</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a1579a09b46eb04121f610cda83bb4466" compoundref="docx__document_8py" startline="28">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.path</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1a82dd27a82a625d1e4407557d0ae9fcfb" compoundref="ml__txtlayer__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.path</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a788d60658d326112a44dded200e0094f" compoundref="scan__paragraph__classifier__extractor_8py" startline="28">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.path</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ad2dff7b60a1536f6d4edfd21d6aa724c" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="61">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.path</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1aa694257ddef09688fda4480847f322ce" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="84" endline="86">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__assert_labels_and_model</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a87f3fb548a61fb0fb1f950105736cca7" compoundref="pdf__layout__corrector_8py" startline="167" endline="191">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.__match_glyphs_and_encoding</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ab8951b0ba816c6015556810bff66e2ea" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="89" endline="111">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.recognize_glyph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ab8951b0ba816c6015556810bff66e2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.recognize_glyph</definition>
+        <argsstring>(self, List[str] images)</argsstring>
+        <name>recognize_glyph</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.recognize_glyph</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>images</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="89" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="89" bodyend="111"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5920410bd55731822074bec887f1239d" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="60">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.labels</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="67" endline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a1e1a9e97e5bfc1e5e92e692e85926927" compoundref="pdf__layout__corrector_8py" startline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.model</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1aa694257ddef09688fda4480847f322ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__assert_labels_and_model</definition>
+        <argsstring>(self)</argsstring>
+        <name>__assert_labels_and_model</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.__assert_labels_and_model</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="84" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="84" bodyend="86"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5920410bd55731822074bec887f1239d" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="60">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.labels</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="67" endline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.GlyphRecognitionModel.model</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1pdf__l7384164167b4b0714cd2a86fe0421546_1a1e1a9e97e5bfc1e5e92e692e85926927" compoundref="pdf__layout__corrector_8py" startline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.pdf_layout_corrector.PDFLayoutCorrector.model</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PyTorch CNN model for font&apos;s glyphs prediction. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Used in PDFBrokenEncodingReader. </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="51" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="51" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1aa694257ddef09688fda4480847f322ce" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>__assert_labels_and_model</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a75af8cd84d597b2d3b146e4a7fa115c3" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5d107fd5e84cd97f7a4a4583496a34c0" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>__model</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a5920410bd55731822074bec887f1239d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>labels</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1a3e5e7d97e49e99d7a875e5c9efe504b7" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>model</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ad2dff7b60a1536f6d4edfd21d6aa724c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>path</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1GlyphRecognitionModel_1ab8951b0ba816c6015556810bff66e2ea" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::GlyphRecognitionModel</scope><name>recognize_glyph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

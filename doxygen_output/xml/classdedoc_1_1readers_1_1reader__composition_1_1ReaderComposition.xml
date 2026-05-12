@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::reader_composition::ReaderComposition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1add7dbfd7eb48d36ee8fbf7e40a4fc765" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.reader_composition.ReaderComposition::readers</definition>
+        <argsstring></argsstring>
+        <name>readers</name>
+        <qualifiedname>dedoc.readers.reader_composition.ReaderComposition.readers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/reader_composition.py" line="25" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" compoundref="reader__composition_8py" startline="29" endline="56">dedoc.readers.reader_composition.ReaderComposition.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1afbbdcfa1ff9a04785da15d99488396e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.reader_composition.ReaderComposition.__init__</definition>
+        <argsstring>(self, List[BaseReader] readers)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.reader_composition.ReaderComposition.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>readers</declname>
+          <array>[BaseReader]</array>
+        </param>
+        <briefdescription>
+<para>:param readers: the list of readers for documents of different formats that will be used for parsing </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/reader_composition.py" line="21" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="21" bodyend="26"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.reader_composition.ReaderComposition.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None, Optional[str] extension=None, Optional[str] mime=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.reader_composition.ReaderComposition.read</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Get intermediate representation for the document of any format which one of the available readers can parse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If there is no suitable reader for the given document, the BadFileFormatException will be raised.</para>
+<para>:param file_path: path of the file to be parsed :param parameters: dict with additional parameters for document readers, see :ref:<computeroutput>parameters_description</computeroutput> for more details :param extension: file extension, for example .doc or .pdf :param mime: MIME type of file :return: intermediate representation of the document with lines, tables and attachments </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/reader_composition.py" line="29" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="29" bodyend="56"/>
+        <references refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1add7dbfd7eb48d36ee8fbf7e40a4fc765" compoundref="reader__composition_8py" startline="25">dedoc.readers.reader_composition.ReaderComposition.readers</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class allows to read any document of the predefined list of formats according to the available list of readers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The list of readers is set via the class constructor. The first suitable reader is used for parsing (the one whose method :meth:<computeroutput>~dedoc.readers.BaseReader.can_read</computeroutput> returns True), \ so the order of the given readers is important. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.reader_composition.ReaderComposition</label>
+        <link refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.reader_composition.ReaderComposition</label>
+        <link refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/reader_composition.py" line="13" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="13" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1afbbdcfa1ff9a04785da15d99488396e6" prot="public" virt="non-virtual"><scope>dedoc::readers::reader_composition::ReaderComposition</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" prot="public" virt="non-virtual"><scope>dedoc::readers::reader_composition::ReaderComposition</scope><name>read</name></member>
+      <member refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1add7dbfd7eb48d36ee8fbf7e40a4fc765" prot="public" virt="non-virtual"><scope>dedoc::readers::reader_composition::ReaderComposition</scope><name>readers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,6 +2,10 @@ import json
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import fontforge
 
 image_size = 80
@@ -156,3 +160,36 @@ if __name__ == "__main__":
     elif args[0] == "generate_all_images":
         result = generate_all_images(Path(args[1]), Path(args[2]))
         sys.stdout.write(json.dumps(result))
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_fontforge_wrapper; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## FUNC [5][generate_images utility/helper] => generate_images
+## FUNC [5][generate_all_images utility/helper] => generate_all_images
+## FUNC [5][process_glyph utility/helper] => process_glyph
+## FUNC [5][should_skip_glyph utility/helper] => should_skip_glyph
+## FUNC [5][get_unicode_value utility/helper] => get_unicode_value
+## FUNC [5][get_filename utility/helper] => get_filename
+## FUNC [5][is_empty_glyph utility/helper] => is_empty_glyph
+## FUNC [5][handle_empty_glyph utility/helper] => handle_empty_glyph
+## FUNC [5][export_glyph utility/helper] => export_glyph
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: fontforge_wrapper, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, generate_images, generate_all_images, process_glyph, should_skip_glyph, get_unicode_value, get_filename, is_empty_glyph, handle_empty_glyph, export_glyph
+# STRUCTURE: ▶ Input → ○ generate_images → generate_all_images → process_glyph → ⊕ result

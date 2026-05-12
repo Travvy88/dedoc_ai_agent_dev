@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1utils_1a77e3de2164e594e37f2ecfacb016dde3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="68" column="1" bodyfile="dedoc/utils/utils.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::utils.T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <qualifiedname>dedoc.utils.utils.T</qualifiedname>
+        <initializer>=  TypeVar(&quot;T&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="70" column="1" bodyfile="dedoc/utils/utils.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1utils_1a5f4bfe44c9d3790663327f1f35093e67" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple dedoc::utils::utils.double_dot_extensions</definition>
+        <argsstring></argsstring>
+        <name>double_dot_extensions</name>
+        <qualifiedname>dedoc.utils.utils.double_dot_extensions</qualifiedname>
+        <initializer>=  (&quot;.txt.gz&quot;, &quot;.tar.gz&quot;, &quot;.mht.gz&quot;, &quot;.mhtml.gz&quot;, &quot;.note.pickle&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="71" column="1" bodyfile="dedoc/utils/utils.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a3818e528043a5a53ec748f2613b391a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide general-purpose utility functions for file handling, MIME type detection, encoding detection, text similarity, and datetime conversion across the Dedoc document processing pipeline. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  File I/O, MIME type inference, encoding detection, string similarity, datetime parsing, file hashing, batch iteration. \par \b Input\/ \:  File paths, binary data, text strings, UploadFile objects. \par \b Output\/ \:  File paths, MIME types, encodings, hashes, similarity scores, Unix timestamps. \par \b Links\/ \:  [USES_API(7): mimetypes, hashlib, charset_normalizer, Levenshtein, requests] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>get_file_mime_type ALWAYS returns a non-empty string.</para>
+</listitem><listitem><para>calculate_file_hash ALWAYS returns a hex digest string.</para>
+</listitem><listitem><para>splitext_ correctly handles multi-dot extensions (e.g., .tar.gz). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use charset_normalizer instead of chardet? A: charset_normalizer provides more accurate encoding detection and is actively maintained. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 3[List access with default] =&gt; list_get FUNC 2[Flatten nested lists] =&gt; flatten FUNC 1[Identity function] =&gt; identity FUNC 4[Batch iterator] =&gt; get_batch FUNC 6[Extension splitting with multi-dot support] =&gt; splitext_ FUNC 7[MIME and extension resolver] =&gt; get_mime_extension FUNC 5[Document dict to text] =&gt; document2txt FUNC 6[Unique filename generator] =&gt; get_unique_name FUNC 7[Upload file saver] =&gt; save_upload_file FUNC 6[Binary data to unique file] =&gt; save_data_to_unique_file FUNC 7[MIME type from path] =&gt; get_file_mime_type FUNC 8[MIME type from file content] =&gt; get_file_mime_by_content FUNC 4[Extensions by MIME] =&gt; get_extensions_by_mime FUNC 4[Extensions by multiple MIMEs] =&gt; get_extensions_by_mimes FUNC 3[Regex character class match] =&gt; special_match FUNC 7[MD5 file hash] =&gt; calculate_file_hash FUNC 5[Empty DocumentContent factory] =&gt; get_empty_content FUNC 8[File encoding detection] =&gt; get_encoding FUNC 6[String similarity ratio] =&gt; similarity FUNC 6[Levenshtein similarity ratio] =&gt; similarity_levenshtein FUNC 8[ISO/IEC 8824 to Unix timestamp] =&gt; convert_datetime FUNC 5[Filename length trimmer] =&gt; check_filename_length FUNC 7[HTTP file upload sender] =&gt; send_file \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_mime_extension]: Reader → ResolveFileType → MIME and extension determined</para>
+</listitem><listitem><para>[save_upload_file]: API → ReceiveFileUpload → File saved to disk</para>
+</listitem><listitem><para>[get_encoding]: Reader → DetectFileEncoding → Encoding identified for text extraction </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="45" column="1" bodyfile="dedoc/utils/utils.py" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a1935ea782d62443cd4e312ebc4951595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" kindref="member">T</ref>]</type>
+        <definition> Optional[T] dedoc.utils.utils.list_get</definition>
+        <argsstring>(List[T] ls, int index, Optional[T] default=None)</argsstring>
+        <name>list_get</name>
+        <qualifiedname>dedoc.utils.utils.list_get</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>ls</declname>
+          <array>[T]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>default</declname>
+          <array>[T]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To safely access list elements by index, returning a default value when the index is out of bounds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  typing \par \b I/O\/ \:  (List[T], int, Optional[T]) -&gt; Optional[T] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="79" column="1" bodyfile="dedoc/utils/utils.py" bodystart="79" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1ab3799d1c7304898f2083ed4aba489a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterable[<ref refid="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" kindref="member">T</ref>]</type>
+        <definition> Iterable[T] dedoc.utils.utils.flatten</definition>
+        <argsstring>(List[List[T]] data)</argsstring>
+        <name>flatten</name>
+        <qualifiedname>dedoc.utils.utils.flatten</qualifiedname>
+        <param>
+          <type>List]</type>
+          <declname>data</declname>
+          <array>[List[T]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To flatten a nested list-of-lists structure into a single iterable sequence, enabling sequential processing of grouped data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  typing \par \b I/O\/ \:  List[List[T]] -&gt; Iterable[T] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="92" column="1" bodyfile="dedoc/utils/utils.py" bodystart="92" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a091493602e3ae8e4e36969a2e3db2644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" kindref="member">T</ref></type>
+        <definition> T dedoc.utils.utils.identity</definition>
+        <argsstring>(T x)</argsstring>
+        <name>identity</name>
+        <qualifiedname>dedoc.utils.utils.identity</qualifiedname>
+        <param>
+          <type><ref refid="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" kindref="member">T</ref></type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To return its input unchanged, serving as a no-op transform in functional pipelines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  T -&gt; T \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="103" column="1" bodyfile="dedoc/utils/utils.py" bodystart="103" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1ab2d87ebf58e93c27545522986e12055c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[List[<ref refid="namespacededoc_1_1utils_1_1utils_1ac71c7de497baf1a48d8150db053b5704" kindref="member">T</ref>]]</type>
+        <definition> Iterator[List[T]] dedoc.utils.utils.get_batch</definition>
+        <argsstring>(int size, Iterator[T] iterable)</argsstring>
+        <name>get_batch</name>
+        <qualifiedname>dedoc.utils.utils.get_batch</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>iterable</declname>
+          <array>[T]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To partition an iterator into fixed-size batches, enabling chunked processing of large data streams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  typing \par \b I/O\/ \:  (int, Iterator[T]) -&gt; Iterator[List[T]] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="113" column="1" bodyfile="dedoc/utils/utils.py" bodystart="113" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a1fbf7b6fbf5d593b57b84e4330876c2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[str, str]</type>
+        <definition> Tuple[str, str] dedoc.utils.utils.splitext_</definition>
+        <argsstring>(str path)</argsstring>
+        <name>splitext_</name>
+        <qualifiedname>dedoc.utils.utils.splitext_</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To split a filename into (name, extension) correctly handling multi-dot extensions like .tar.gz that are common in compressed document formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  os.path \par \b I/O\/ \:  str -&gt; Tuple[str, str] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="132" column="1" bodyfile="dedoc/utils/utils.py" bodystart="132" bodyend="141"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a06faef508e7797765510888a4302680c" compoundref="utils_2utils_8py" startline="435" endline="445">dedoc.utils.utils.check_filename_length</referencedby>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a0229d30283f3fe207a4d19bfb9667dfe" compoundref="utils_2utils_8py" startline="146" endline="164">dedoc.utils.utils.get_mime_extension</referencedby>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a01d2971c0b3b6d76056a7ff4d25acd9e" compoundref="utils_2utils_8py" startline="195" endline="207">dedoc.utils.utils.get_unique_name</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a0229d30283f3fe207a4d19bfb9667dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[str, str]</type>
+        <definition> Tuple[str, str] dedoc.utils.utils.get_mime_extension</definition>
+        <argsstring>(Optional[str] file_path=None, Optional[str] mime=None, Optional[str] extension=None)</argsstring>
+        <name>get_mime_extension</name>
+        <qualifiedname>dedoc.utils.utils.get_mime_extension</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>file_path</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve the MIME type and file extension from a file path or explicit parameters, providing a single entry point for file type identification throughout the pipeline. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  splitext_, get_file_mime_type \par \b I/O\/ \:  (Optional[str], Optional[str], Optional[str]) -&gt; Tuple[str, str] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="146" column="1" bodyfile="dedoc/utils/utils.py" bodystart="146" bodyend="164"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a079f05dff8460437352c40e06bf449a2" compoundref="utils_2utils_8py" startline="248" endline="255">dedoc.utils.utils.get_file_mime_type</references>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a1fbf7b6fbf5d593b57b84e4330876c2d" compoundref="utils_2utils_8py" startline="132" endline="141">dedoc.utils.utils.splitext_</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a47e87d1d6790cf47b5624822ae439634" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils._text_from_item</definition>
+        <argsstring>(dict item)</argsstring>
+        <name>_text_from_item</name>
+        <qualifiedname>dedoc.utils.utils._text_from_item</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To recursively extract text from a document item dict, descending into subparagraphs to build a complete text representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  dict -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="168" column="1" bodyfile="dedoc/utils/utils.py" bodystart="168" bodyend="176"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a47e87d1d6790cf47b5624822ae439634" compoundref="utils_2utils_8py" startline="168" endline="176">dedoc.utils.utils._text_from_item</references>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a47e87d1d6790cf47b5624822ae439634" compoundref="utils_2utils_8py" startline="168" endline="176">dedoc.utils.utils._text_from_item</referencedby>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a981d3f6c059dbd3a806e73eb38105bac" compoundref="utils_2utils_8py" startline="181" endline="190">dedoc.utils.utils.document2txt</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a981d3f6c059dbd3a806e73eb38105bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.document2txt</definition>
+        <argsstring>(dict doc)</argsstring>
+        <name>document2txt</name>
+        <qualifiedname>dedoc.utils.utils.document2txt</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert a structured document dictionary into a flat text string, combining header and item texts for downstream NLP processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _text_from_item \par \b I/O\/ \:  dict -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="181" column="1" bodyfile="dedoc/utils/utils.py" bodystart="181" bodyend="190"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a47e87d1d6790cf47b5624822ae439634" compoundref="utils_2utils_8py" startline="168" endline="176">dedoc.utils.utils._text_from_item</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a01d2971c0b3b6d76056a7ff4d25acd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.get_unique_name</definition>
+        <argsstring>(str filename)</argsstring>
+        <name>get_unique_name</name>
+        <qualifiedname>dedoc.utils.utils.get_unique_name</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To generate a collision-resistant unique filename using a timestamp and random suffix, ensuring safe concurrent file writes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  splitext_, time, random \par \b I/O\/ \:  str -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="195" column="1" bodyfile="dedoc/utils/utils.py" bodystart="195" bodyend="207"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a1fbf7b6fbf5d593b57b84e4330876c2d" compoundref="utils_2utils_8py" startline="132" endline="141">dedoc.utils.utils.splitext_</references>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a25eaa4646fa6946852bf5cd219f62711" compoundref="utils_2utils_8py" startline="233" endline="243">dedoc.utils.utils.save_data_to_unique_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1acb721b6e6a3ebe1a071bf6bf7f2a12c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.save_upload_file</definition>
+        <argsstring>(UploadFile upload_file, str output_dir)</argsstring>
+        <name>save_upload_file</name>
+        <qualifiedname>dedoc.utils.utils.save_upload_file</qualifiedname>
+        <param>
+          <type>UploadFile</type>
+          <declname>upload_file</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>output_dir</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To persist an uploaded file from a FastAPI endpoint to disk with filename length validation, ensuring safe storage before processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  shutil, check_filename_length \par \b I/O\/ \:  (UploadFile, str) -&gt; str \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="212" column="1" bodyfile="dedoc/utils/utils.py" bodystart="212" bodyend="228"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a06faef508e7797765510888a4302680c" compoundref="utils_2utils_8py" startline="435" endline="445">dedoc.utils.utils.check_filename_length</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a25eaa4646fa6946852bf5cd219f62711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.save_data_to_unique_file</definition>
+        <argsstring>(str directory, str filename, bytes binary_data)</argsstring>
+        <name>save_data_to_unique_file</name>
+        <qualifiedname>dedoc.utils.utils.save_data_to_unique_file</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>directory</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>binary_data</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To write binary data to a uniquely-named file in a target directory, avoiding collisions from concurrent writes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_unique_name \par \b I/O\/ \:  (str, str, bytes) -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="233" column="1" bodyfile="dedoc/utils/utils.py" bodystart="233" bodyend="243"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a01d2971c0b3b6d76056a7ff4d25acd9e" compoundref="utils_2utils_8py" startline="195" endline="207">dedoc.utils.utils.get_unique_name</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a079f05dff8460437352c40e06bf449a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.get_file_mime_type</definition>
+        <argsstring>(str path)</argsstring>
+        <name>get_file_mime_type</name>
+        <qualifiedname>dedoc.utils.utils.get_file_mime_type</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To detect the MIME type of a file from its path/extension using the mimetypes standard library. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  mimetypes \par \b I/O\/ \:  str -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="248" column="1" bodyfile="dedoc/utils/utils.py" bodystart="248" bodyend="255"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a0229d30283f3fe207a4d19bfb9667dfe" compoundref="utils_2utils_8py" startline="146" endline="164">dedoc.utils.utils.get_mime_extension</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1ad01e25c4b47c4829bd86893afa86113a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.get_file_mime_by_content</definition>
+        <argsstring>(str path)</argsstring>
+        <name>get_file_mime_by_content</name>
+        <qualifiedname>dedoc.utils.utils.get_file_mime_by_content</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To determine the MIME type by inspecting file content bytes (magic number detection), falling back to puremagic when libmagic returns octet-stream. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  magic, puremagic \par \b I/O\/ \:  str -&gt; str \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="260" column="1" bodyfile="dedoc/utils/utils.py" bodystart="260" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a59d6256ac29b3d0e40da99a67b5a0ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] dedoc.utils.utils.get_extensions_by_mime</definition>
+        <argsstring>(str mime)</argsstring>
+        <name>get_extensions_by_mime</name>
+        <qualifiedname>dedoc.utils.utils.get_extensions_by_mime</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>mime</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To retrieve all known file extensions for a given MIME type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  mimetypes \par \b I/O\/ \:  str -&gt; List[str] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="283" column="1" bodyfile="dedoc/utils/utils.py" bodystart="283" bodyend="288"/>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1a206f2c493f11c36f1e7a952517c7324b" compoundref="utils_2utils_8py" startline="293" endline="301">dedoc.utils.utils.get_extensions_by_mimes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a206f2c493f11c36f1e7a952517c7324b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] dedoc.utils.utils.get_extensions_by_mimes</definition>
+        <argsstring>(Set[str] mimes)</argsstring>
+        <name>get_extensions_by_mimes</name>
+        <qualifiedname>dedoc.utils.utils.get_extensions_by_mimes</qualifiedname>
+        <param>
+          <type>Set</type>
+          <declname>mimes</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To aggregate all file extensions for a set of MIME types, useful for filtering input by multiple accepted formats. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_extensions_by_mime \par \b I/O\/ \:  Set[str] -&gt; List[str] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="293" column="1" bodyfile="dedoc/utils/utils.py" bodystart="293" bodyend="301"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a59d6256ac29b3d0e40da99a67b5a0ed2" compoundref="utils_2utils_8py" startline="283" endline="288">dedoc.utils.utils.get_extensions_by_mime</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1afe5c7cd9556c0135d1cdaf9278fb472f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.utils.special_match</definition>
+        <argsstring>(str strg, str regular_pattern=r&quot;[^.?!,:;&apos;\&quot;\n\r ]&quot;)</argsstring>
+        <name>special_match</name>
+        <qualifiedname>dedoc.utils.utils.special_match</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>strg</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>regular_pattern</declname>
+          <defval>r&quot;[^.?!,:;&apos;\&quot;\n\r ]&quot;</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To check if a string consists only of a specific character class (default: non-punctuation), used for content validation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  re \par \b I/O\/ \:  (str, str) -&gt; bool \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="306" column="1" bodyfile="dedoc/utils/utils.py" bodystart="306" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1abb490ce78f9107bde4b215a6e5387d54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.calculate_file_hash</definition>
+        <argsstring>(str path)</argsstring>
+        <name>calculate_file_hash</name>
+        <qualifiedname>dedoc.utils.utils.calculate_file_hash</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To compute an MD5 hash of a file for content-based deduplication and integrity verification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  hashlib \par \b I/O\/ \:  str -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="317" column="1" bodyfile="dedoc/utils/utils.py" bodystart="317" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a610540a9c72a27267d5251ab2d692c9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent" kindref="compound">DocumentContent</ref></type>
+        <definition> DocumentContent dedoc.utils.utils.get_empty_content</definition>
+        <argsstring>()</argsstring>
+        <name>get_empty_content</name>
+        <qualifiedname>dedoc.utils.utils.get_empty_content</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To create an empty DocumentContent instance with a minimal valid structure, serving as a safe default for error-handling and initialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  DocumentContent, TreeNode, LineMetadata, HierarchyLevel \par \b I/O\/ \:  None -&gt; DocumentContent \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="337" column="1" bodyfile="dedoc/utils/utils.py" bodystart="337" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a16b89940cfa02e33d665c2645251e9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[str]</type>
+        <definition> Optional[str] dedoc.utils.utils.get_encoding</definition>
+        <argsstring>(str path, str default=None)</argsstring>
+        <name>get_encoding</name>
+        <qualifiedname>dedoc.utils.utils.get_encoding</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>default</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To detect the character encoding of a file (including gzip-compressed), enabling correct text extraction from diverse document sources. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  gzip, charset_normalizer \par \b I/O\/ \:  (str, Optional[str]) -&gt; Optional[str] \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="355" column="1" bodyfile="dedoc/utils/utils.py" bodystart="355" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a06e03a4dddb989fdacc5ff986f083523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.utils.utils.similarity</definition>
+        <argsstring>(str s1, str s2)</argsstring>
+        <name>similarity</name>
+        <qualifiedname>dedoc.utils.utils.similarity</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To compute a case-insensitive string similarity ratio using difflib.SequenceMatcher, enabling fuzzy text matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  difflib \par \b I/O\/ \:  (str, str) -&gt; float \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="381" column="1" bodyfile="dedoc/utils/utils.py" bodystart="381" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1af90d434f3c18f239d2c70fe7de2df89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.utils.utils.similarity_levenshtein</definition>
+        <argsstring>(str str1, str str2)</argsstring>
+        <name>similarity_levenshtein</name>
+        <qualifiedname>dedoc.utils.utils.similarity_levenshtein</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>str1</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>str2</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To compute a case-insensitive Levenshtein ratio for high-quality fuzzy string comparison. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  Levenshtein \par \b I/O\/ \:  (str, str) -&gt; float \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="396" column="1" bodyfile="dedoc/utils/utils.py" bodystart="396" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1aaccf6a72325f1b14e36c5977249aa6bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.utils.utils.convert_datetime</definition>
+        <argsstring>(str time_string)</argsstring>
+        <name>convert_datetime</name>
+        <qualifiedname>dedoc.utils.utils.convert_datetime</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>time_string</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To parse ISO/IEC 8824 datetime strings (common in PDF metadata) into Unix timestamps, handling multiple format variants including UTC offsets. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  datetime, dateutil, re \par \b I/O\/ \:  str -&gt; int \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="410" column="1" bodyfile="dedoc/utils/utils.py" bodystart="410" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a06faef508e7797765510888a4302680c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.utils.check_filename_length</definition>
+        <argsstring>(str filename)</argsstring>
+        <name>check_filename_length</name>
+        <qualifiedname>dedoc.utils.utils.check_filename_length</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To truncate filenames exceeding the POSIX 255-character limit, preserving the extension to maintain file type integrity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  splitext_ \par \b I/O\/ \:  str -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="435" column="1" bodyfile="dedoc/utils/utils.py" bodystart="435" bodyend="445"/>
+        <references refid="namespacededoc_1_1utils_1_1utils_1a1fbf7b6fbf5d593b57b84e4330876c2d" compoundref="utils_2utils_8py" startline="132" endline="141">dedoc.utils.utils.splitext_</references>
+        <referencedby refid="namespacededoc_1_1utils_1_1utils_1acb721b6e6a3ebe1a071bf6bf7f2a12c9" compoundref="utils_2utils_8py" startline="212" endline="228">dedoc.utils.utils.save_upload_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1utils_1a479e7b52e0ffe365b03f42d53cf4b7b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[str, Any]</type>
+        <definition> Dict[str, Any] dedoc.utils.utils.send_file</definition>
+        <argsstring>(str host, str file_name, str file_path, dict parameters)</argsstring>
+        <name>send_file</name>
+        <qualifiedname>dedoc.utils.utils.send_file</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To send a file via HTTP POST multipart upload to a remote dedoc endpoint, enabling distributed document processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  requests, json \par \b I/O\/ \:  (str, str, str, dict) -&gt; Dict[str, Any] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/utils.py" line="450" column="1" bodyfile="dedoc/utils/utils.py" bodystart="450" bodyend="462"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

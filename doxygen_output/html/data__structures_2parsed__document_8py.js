@@ -1,0 +1,6 @@
+var data__structures_2parsed__document_8py =
+[
+    [ "dedoc.data_structures.parsed_document.ParsedDocument", "classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument.html", "classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" ],
+    [ "_module_contract", "data__structures_2parsed__document_8py.html#ac0f4a7dfe283744d5672d732506674dc", null ],
+    [ "logger", "data__structures_2parsed__document_8py.html#ab419fa3ad3d3f4e59057603f950e7f4f", null ]
+];

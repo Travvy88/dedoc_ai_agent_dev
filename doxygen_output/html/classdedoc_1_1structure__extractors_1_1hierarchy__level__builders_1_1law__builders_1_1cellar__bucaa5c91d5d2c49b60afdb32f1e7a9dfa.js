@@ -1,0 +1,6 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__bucaa5c91d5d2c49b60afdb32f1e7a9dfa =
+[
+    [ "get_lines_with_hierarchy", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__bucaa5c91d5d2c49b60afdb32f1e7a9dfa.html#a14828a452e3e144e43fd044a57117f53", null ],
+    [ "document_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__bucaa5c91d5d2c49b60afdb32f1e7a9dfa.html#ae069ed2adc4d887732f1309d8d90c97c", null ],
+    [ "starting_line_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__bucaa5c91d5d2c49b60afdb32f1e7a9dfa.html#afbdfb9b4a34d448cd7a5d1813c858feb", null ]
+];

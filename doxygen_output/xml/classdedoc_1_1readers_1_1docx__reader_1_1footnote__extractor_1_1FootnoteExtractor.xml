@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::footnote_extractor::FootnoteExtractor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor_1a8c468d5f13b175c2c907def9c02b845b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.footnote_extractor.FootnoteExtractor::id2footnote</definition>
+        <argsstring></argsstring>
+        <name>id2footnote</name>
+        <qualifiedname>dedoc.readers.docx_reader.footnote_extractor.FootnoteExtractor.id2footnote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/footnote_extractor.py" line="19" column="1" bodyfile="dedoc/readers/docx_reader/footnote_extractor.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor_1ae273905219103039efd10871d707a8a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.footnote_extractor.FootnoteExtractor.__init__</definition>
+        <argsstring>(self, Optional[BeautifulSoup] xml, str key=&quot;footnote&quot;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.footnote_extractor.FootnoteExtractor.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>xml</declname>
+          <array>[BeautifulSoup]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>key</declname>
+          <defval>&quot;footnote&quot;</defval>
+        </param>
+        <briefdescription>
+<para>:param xml: BeautifulSoup tree with styles :param key: footnote or endnote </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/footnote_extractor.py" line="14" column="1" bodyfile="dedoc/readers/docx_reader/footnote_extractor.py" bodystart="14" bodyend="29"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/footnote_extractor.py" line="11" column="1" bodyfile="dedoc/readers/docx_reader/footnote_extractor.py" bodystart="11" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor_1ae273905219103039efd10871d707a8a3" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::footnote_extractor::FootnoteExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1footnote__extractor_1_1FootnoteExtractor_1a8c468d5f13b175c2c907def9c02b845b" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::footnote_extractor::FootnoteExtractor</scope><name>id2footnote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

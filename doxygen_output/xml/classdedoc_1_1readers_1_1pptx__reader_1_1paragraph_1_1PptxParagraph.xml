@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pptx_reader::paragraph::PptxParagraph</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a4833b7d3fc0970ed4b9f1ab906e11b2b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::xml</definition>
+        <argsstring></argsstring>
+        <name>xml</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.xml</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="30" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ab9d1921ec4fc9802f342f49c4658edd6" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="123" endline="148">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__make_run_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a97e671a04d494fff5433cc1fd1325111" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::numbered_list_type</definition>
+        <argsstring></argsstring>
+        <name>numbered_list_type</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.numbered_list_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="31" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1aa28659cb59328e224bca0022385aa723" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="32" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a5dfaefe4a9447f2af3c5524a2f781989" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::numbering_extractor</definition>
+        <argsstring></argsstring>
+        <name>numbering_extractor</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.numbering_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="33" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a120227e3a60098ada0fdd72731c73cc9" compoundref="pptx__reader_8py" startline="108" endline="119">dedoc.readers.pptx_reader.pptx_reader.PptxReader.__add_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1a2d9262072ed108322ad9e0cfe2ad5b7e" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="58" endline="70">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.make_paragraph</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1a18713b70103e26af33b509143986dafc" compoundref="styles__extractor_8py" startline="49" endline="95">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a95370dcedeb1b8430450b628bf336ccf" compoundref="pptx__reader_8py" startline="31" endline="75">dedoc.readers.pptx_reader.pptx_reader.PptxReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a53bd5e40112851d711117540e529b81b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::properties_extractor</definition>
+        <argsstring></argsstring>
+        <name>properties_extractor</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.properties_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="34" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1ad2263eba421511d2be0b43e8637a95ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::annotation_merger</definition>
+        <argsstring></argsstring>
+        <name>annotation_merger</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.annotation_merger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="35" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" compoundref="line__with__meta__converter_8py" startline="42" endline="66">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a31507dd5cc60badae7ba9bcc8ca64b48" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.paragraph.PptxParagraph::dict2annotation</definition>
+        <argsstring></argsstring>
+        <name>dict2annotation</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.dict2annotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="37" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="37" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" compoundref="line__with__meta__converter_8py" startline="42" endline="66">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a6350b00581da500a9c28428666ac19b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.paragraph.PptxParagraph.__init__</definition>
+        <argsstring>(self, Tag xml, NumberingExtractor numbering_extractor, PropertiesExtractor properties_extractor)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor" kindref="compound">NumberingExtractor</ref></type>
+          <declname>numbering_extractor</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor" kindref="compound">PropertiesExtractor</ref></type>
+          <declname>properties_extractor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="29" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="29" bodyend="38"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</definition>
+        <argsstring>(self, int page_id, int line_id, bool is_title, int shift=0)</argsstring>
+        <name>get_line_with_meta</name>
+        <qualifiedname>dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_title</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/paragraph.py" line="41" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="41" bodyend="74"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a243dc6d159678d66b00dc48acc6170f3" compoundref="line__with__meta__converter_8py" startline="35">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.annotation_merger</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1ad2263eba421511d2be0b43e8637a95ae" compoundref="pptx__reader_2paragraph_8py" startline="35">dedoc.readers.pptx_reader.paragraph.PptxParagraph.annotation_merger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1ac50fc007e00c6300aebd7e46b4b47a" compoundref="line__with__meta__converter_8py" startline="34">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.dict2annotation</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a31507dd5cc60badae7ba9bcc8ca64b48" compoundref="pptx__reader_2paragraph_8py" startline="37">dedoc.readers.pptx_reader.paragraph.PptxParagraph.dict2annotation</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1a10929962cf91e49de2251446176af55d" compoundref="ocr__block_8py" startline="16">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.level</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1abf08c30f1ccd231bcaa2915ad8d1a3af" compoundref="ocr__line_8py" startline="19">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.level</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ab8a34800ec96fde41775884aad7464f3" compoundref="ocr__page_8py" startline="56">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.level</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ac7c6584f423ef95a099de4a08d66a238" compoundref="ocr__paragraph_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.level</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a4bc1011ff60ab1bf2954c1a69a1506f1" compoundref="ocr__tuple_8py" startline="32">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement.level</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a6b4bb5fe334c7f6d5863561fe665f50b" compoundref="ocr__word_8py" startline="10">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.level</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1aa28659cb59328e224bca0022385aa723" compoundref="pptx__reader_2paragraph_8py" startline="32">dedoc.readers.pptx_reader.paragraph.PptxParagraph.level</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a97e671a04d494fff5433cc1fd1325111" compoundref="pptx__reader_2paragraph_8py" startline="31">dedoc.readers.pptx_reader.paragraph.PptxParagraph.numbered_list_type</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1aad662bce80b25d5628a0d2a23a3d401a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="39">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker_1ae0bbb8e7be7632adb2a71b591a8772fe" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="51">dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1a221fd4a1973da253adf71b7317483c67" compoundref="styles__extractor_8py" startline="35">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a5dfaefe4a9447f2af3c5524a2f781989" compoundref="pptx__reader_2paragraph_8py" startline="33">dedoc.readers.pptx_reader.paragraph.PptxParagraph.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader_1a2dba91fb41514d4f89de6ebd1ddb8d28" compoundref="pptx__reader_8py" startline="27">dedoc.readers.pptx_reader.pptx_reader.PptxReader.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1ab4b8b02f7c4aba4eb8f4300e0f9b0c35" compoundref="shape_8py" startline="27">dedoc.readers.pptx_reader.shape.PptxShape.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1ab1d9270a258f5cb5b215a4b328eb824c" compoundref="readers_2pptx__reader_2table_8py" startline="30">dedoc.readers.pptx_reader.table.PptxTable.numbering_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a53bd5e40112851d711117540e529b81b" compoundref="pptx__reader_2paragraph_8py" startline="34">dedoc.readers.pptx_reader.paragraph.PptxParagraph.properties_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a5aa02a6d4dd2f7f04e172168440787dd" compoundref="shape_8py" startline="28">dedoc.readers.pptx_reader.shape.PptxShape.properties_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1ac86268040fac715c58b63ca8cbb5e63a" compoundref="readers_2pptx__reader_2table_8py" startline="31">dedoc.readers.pptx_reader.table.PptxTable.properties_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a06ed9c22352d75972efeea064af756b3" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="36">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.xml</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a4edf11731222afa5a36a4b2295816d0f" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="27">dedoc.readers.docx_reader.data_structures.table.DocxTable.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a4833b7d3fc0970ed4b9f1ab906e11b2b" compoundref="pptx__reader_2paragraph_8py" startline="30">dedoc.readers.pptx_reader.paragraph.PptxParagraph.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1ac7a97861d77c8c4d6a461becd67c0e2c" compoundref="shape_8py" startline="24">dedoc.readers.pptx_reader.shape.PptxShape.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a1c345be085799071e36c2ecaf7f5aea3" compoundref="readers_2pptx__reader_2table_8py" startline="28">dedoc.readers.pptx_reader.table.PptxTable.xml</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class corresponds to one textual paragraph of some entity, e.g. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>shape or table cell (tag &lt;a:p&gt;). </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/paragraph.py" line="24" column="1" bodyfile="dedoc/readers/pptx_reader/paragraph.py" bodystart="24" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a6350b00581da500a9c28428666ac19b3" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1ad2263eba421511d2be0b43e8637a95ae" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>annotation_merger</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a31507dd5cc60badae7ba9bcc8ca64b48" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>dict2annotation</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>get_line_with_meta</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1aa28659cb59328e224bca0022385aa723" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>level</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a97e671a04d494fff5433cc1fd1325111" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>numbered_list_type</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a5dfaefe4a9447f2af3c5524a2f781989" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>numbering_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a53bd5e40112851d711117540e529b81b" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>properties_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a4833b7d3fc0970ed4b9f1ab906e11b2b" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::paragraph::PptxParagraph</scope><name>xml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

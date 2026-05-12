@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="attachments__extractors_2concrete__attachments__extractors_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors">dedoc::attachments_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors">dedoc::attachments_extractors::concrete_attachments_extractors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>PackageInit;<sp/>TECH(3):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Register<sp/>the<sp/>concrete_attachments_extractors<sp/>subpackage:<sp/>docx,<sp/>xlsx,<sp/>pptx,<sp/>pdf,<sp/>json<sp/>attachment<sp/>extractor<sp/>implementations.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization,<sp/>no<sp/>runtime<sp/>logic.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>None<sp/>(namespace<sp/>registration<sp/>only)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>AbstractOfficeAttachmentsExtractor,<sp/>AbstractAttachmentsExtractor]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>This<sp/>file<sp/>is<sp/>intentionally<sp/>empty;<sp/>all<sp/>imports<sp/>happen<sp/>via<sp/>the<sp/>parent<sp/>package<sp/>__init__.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>file<sp/>empty?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Re-exports<sp/>are<sp/>centralized<sp/>in<sp/>the<sp/>parent<sp/>`dedoc/attachments_extractors/__init__.py`<sp/>to<sp/>provide<sp/>a<sp/>single<sp/>import<sp/>surface.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Semantic<sp/>markup<sp/>added]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>PKG<sp/>10[Concrete<sp/>attachment<sp/>extractors<sp/>subpackage]<sp/>=&gt;<sp/>concrete_attachments_extractors</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>-<sp/>[concrete_attachments_extractors]:<sp/>CodeAgent<sp/>(Navigation)<sp/>=&gt;<sp/>LocateExtractorImplementations<sp/>=&gt;<sp/>InstantiateCorrectExtractor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1ad20406d9ee315c0d5b8b85d28dc1120c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1ad20406d9ee315c0d5b8b85d28dc1120c" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>attachments,<sp/>extractors,<sp/>concrete,<sp/>docx,<sp/>xlsx,<sp/>pptx,<sp/>pdf,<sp/>json,<sp/>office,<sp/>package_init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>┌empty<sp/>package┐<sp/>→<sp/>○<sp/>namespace<sp/>registration<sp/>→<sp/>⎋<sp/>(imports<sp/>delegated<sp/>to<sp/>parent)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/__init__.py"/>
+  </compounddef>
+</doxygen>

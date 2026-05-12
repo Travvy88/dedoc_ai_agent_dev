@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1converters" kind="namespace" language="Python">
+    <compoundname>dedoc::converters</compoundname>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters">dedoc::converters::concrete_converters</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1converter__composition">dedoc::converters::converter_composition</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1a89be5560944ea48661d0548b5ba7a45a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::converters.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.converters.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/__init__.py" line="13" column="1" bodyfile="dedoc/converters/__init__.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1abc3a81d3092ce75731761c1d63a00ff2" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::converters.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.converters.__all__</qualifiedname>
+        <initializer>=  [&quot;AbstractConverter&quot;, &quot;BinaryConverter&quot;, &quot;DocxConverter&quot;, &quot;ExcelConverter&quot;, &quot;ConverterComposition&quot;, &quot;PDFConverter&quot;, &quot;PNGConverter&quot;,
+           &quot;PptxConverter&quot;, &quot;TxtConverter&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/__init__.py" line="15" column="1" bodyfile="dedoc/converters/__init__.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1converters_1a3da3afd700538b681854e0e435f04acc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.converters._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.converters._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To expose all converter classes and ConverterComposition from a single public entry point, enabling the rest of the system to import converters without knowledge of internal file layout. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Public API surface for the converters subsystem. \par \b Input\/ \:  None (re-exports internal modules). \par \b Output\/ \:  Re-exported symbols: AbstractConverter, BinaryConverter, DocxConverter, ExcelConverter, ConverterComposition, PDFConverter, PNGConverter, PptxConverter, TxtConverter. \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1converters_1_1concrete__converters" kindref="compound">dedoc.converters.concrete_converters</ref>.*] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> always lists every public converter symbol. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why gather all imports here? A: Single import point simplifies dependency management for agents and consumers. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 5[init re-exports] =&gt; <bold>init</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>init</bold>]: System (Startup) → ImportConverters → AllConvertersAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/__init__.py" line="36" column="1" bodyfile="dedoc/converters/__init__.py" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

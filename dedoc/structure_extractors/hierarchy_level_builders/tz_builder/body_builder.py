@@ -9,10 +9,20 @@ from dedoc.structure_extractors.hierarchy_level_builders.law_builders.body_build
     AbstractBodyHierarchyLevelBuilder
 from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexps_number, regexps_subitem
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_TzBodyBuilder [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @purpose TzBodyBuilder for document structure extraction pipeline
 class TzBodyBuilder(AbstractHierarchyLevelBuilder):
 
+    # region METHOD_get_lines_with_hierarchy [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_lines_with_hierarchy method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_lines_with_hierarchy(self, lines_with_labels: List[Tuple[LineWithMeta, str]], init_hl_depth: int) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][TzBodyBuilder][get_lines_with_hierarchy_INIT] Starting")
         if len(lines_with_labels) > 0:
             line = lines_with_labels[0][0]
             page_id = line.metadata.page_id
@@ -37,7 +47,13 @@ class TzBodyBuilder(AbstractHierarchyLevelBuilder):
                 result.append(line)
         return result
 
+    # endregion METHOD_get_lines_with_hierarchy
+    # region METHOD___handle_item [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __handle_item method
+    ## @io Input -> Output
+    ## @complexity 5
     def __handle_item(self, init_hl_depth: int, line: LineWithMeta, prediction: str, previous_hl: Optional[HierarchyLevel]) -> LineWithMeta:
+        self.logger.debug(f"[IMP:4][TzBodyBuilder][__handle_item_INIT] Starting")
         text = line.line.lower().strip()
         item_min_depth = 5 + init_hl_depth
         if prediction == "part":
@@ -65,3 +81,29 @@ class TzBodyBuilder(AbstractHierarchyLevelBuilder):
                 hierarchy_level.line_type = previous_hl.line_type
         line.metadata.hierarchy_level = hierarchy_level
         return line
+
+    # endregion METHOD___handle_item
+# endregion CLASS_TzBodyBuilder
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/hierarchy_level_builders/tz_builder/body_builder: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/hierarchy_level_builders/tz_builder/body_builder
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => TzBodyBuilder
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, hierarchy level builders, tz builder, body builder
+# STRUCTURE: ▶ structure_extractors/hierarchy_level_builders/tz_builder/body_builder → ○ TzBodyBuilder.cls → ⎋ result

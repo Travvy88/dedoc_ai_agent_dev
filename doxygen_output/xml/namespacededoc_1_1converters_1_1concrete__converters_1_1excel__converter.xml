@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1converters_1_1concrete__converters_1_1excel__converter" kind="namespace" language="Python">
+    <compoundname>dedoc::converters::concrete_converters::excel_converter</compoundname>
+    <innerclass refid="classdedoc_1_1converters_1_1concrete__converters_1_1excel__converter_1_1ExcelConverter" prot="public">dedoc::converters::concrete_converters::excel_converter::ExcelConverter</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1_1concrete__converters_1_1excel__converter_1a3b1ff1cff4e76e0c7c27b621e3c4385c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::converters::concrete_converters::excel_converter.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.converters.concrete_converters.excel_converter.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/excel_converter.py" line="6" column="1" bodyfile="dedoc/converters/concrete_converters/excel_converter.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1converters_1_1concrete__converters_1_1excel__converter_1aea204cddbbbd38fbb7731be77d3bb823" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.converters.concrete_converters.excel_converter._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.converters.concrete_converters.excel_converter._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To normalize xlsx-like documents (.xls, .ods) into the XLSX format via LibreOffice headless conversion, providing a uniform input format for downstream spreadsheet readers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Excel-like document format normalization via soffice. \par \b Input\/ \:  Files with excel-like extensions or MIME types. \par \b Output\/ \:  Converted .xlsx file path. \par \b Links\/ \:  [USES_API(9): LibreOffice soffice; READS_DATA_FROM(7): <ref refid="namespacededoc_1_1extensions_1aac3b199243c8795f127aefef6c73fa04" kindref="member">dedoc.extensions.converted_extensions</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>convert() always invokes soffice with <ndash/>headless <ndash/>convert-to xlsx.</para>
+</listitem><listitem><para>Output file path is always {dir}/{name_wo_ext}.xlsx. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why soffice instead of openpyxl for conversion? A: soffice handles legacy binary .xls and .ods formats that openpyxl cannot read. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Converts excel-like formats to XLSX via LibreOffice] =&gt; ExcelConverter \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ExcelConverter.convert]: User (Upload) → NormalizeToXlsx → XlsxFileReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/excel_converter.py" line="71" column="1" bodyfile="dedoc/converters/concrete_converters/excel_converter.py" bodystart="71" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/concrete_converters/excel_converter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

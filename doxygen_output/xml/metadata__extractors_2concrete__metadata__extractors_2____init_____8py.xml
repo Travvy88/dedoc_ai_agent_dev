@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="metadata__extractors_2concrete__metadata__extractors_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors">dedoc::metadata_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors">dedoc::metadata_extractors::concrete_metadata_extractors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(7):<sp/>DocumentProcessing,<sp/>MetadataExtraction;<sp/>CONCEPT(5):<sp/>PackageInit;<sp/>TECH(5):<sp/>PythonInits]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>mark<sp/>the<sp/>concrete_metadata_extractors<sp/>subpackage<sp/>as<sp/>an<sp/>importable<sp/>Python<sp/>module,<sp/>containing<sp/>format-specific<sp/>metadata<sp/>extractor<sp/>implementations.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Subpackage<sp/>initialization<sp/>namespace.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>None<sp/>(empty<sp/>init<sp/>—<sp/>extractors<sp/>imported<sp/>via<sp/>explicit<sp/>module<sp/>paths).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(0):<sp/>None]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Package<sp/>remains<sp/>empty<sp/>(extractors<sp/>are<sp/>imported<sp/>by<sp/>path,<sp/>not<sp/>via<sp/>__init__).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>__init__<sp/>empty?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Extractors<sp/>are<sp/>imported<sp/>by<sp/>their<sp/>own<sp/>module<sp/>paths<sp/>(e.g.,<sp/>.base_metadata_extractor).<sp/>Re-export<sp/>happens<sp/>at<sp/>the<sp/>parent<sp/>package<sp/>level.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Semantic<sp/>template<sp/>markup<sp/>added.]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>NONE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>-<sp/>[PackageInit]:<sp/>PythonRuntime<sp/>→<sp/>ImportSubpackage<sp/>→<sp/>NamespaceAvailable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1ae56e994ad8f601cc5c9ab07cb0377221" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1ae56e994ad8f601cc5c9ab07cb0377221" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>concrete_metadata_extractors,<sp/>subpackage,<sp/>format-specific,<sp/>init</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>┌subpackage<sp/>namespace┐<sp/>→<sp/>⎋<sp/>empty<sp/>(no<sp/>re-exports)</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/metadata_extractors/concrete_metadata_extractors/__init__.py"/>
+  </compounddef>
+</doxygen>

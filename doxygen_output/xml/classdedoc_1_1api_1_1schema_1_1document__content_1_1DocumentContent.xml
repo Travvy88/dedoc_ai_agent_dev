@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::document_content::DocumentContent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1ac3532103f3e948163be2ce1010556c0f" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+        <definition>TreeNode dedoc.api.schema.document_content.DocumentContent::structure</definition>
+        <argsstring></argsstring>
+        <name>structure</name>
+        <qualifiedname>dedoc.api.schema.document_content.DocumentContent.structure</qualifiedname>
+        <initializer>=  Field(description=&quot;Tree structure where content of the document is organized&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_content.py" line="49" column="1" bodyfile="dedoc/api/schema/document_content.py" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1afbee9622393a5d0002ce2d8f736a05f1" compoundref="data__structures_2document__content_8py" startline="31" endline="41">dedoc.data_structures.document_content.DocumentContent.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1a8613df3dc05b9a95529c2afdb0fa9353" compoundref="data__structures_2document__content_8py" startline="49" endline="53">dedoc.data_structures.document_content.DocumentContent.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.api.schema.document_content.DocumentContent::tables</definition>
+        <argsstring></argsstring>
+        <name>tables</name>
+        <qualifiedname>dedoc.api.schema.document_content.DocumentContent.tables</qualifiedname>
+        <initializer>=  Field(description=&quot;List of document tables&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/document_content.py" line="50" column="1" bodyfile="dedoc/api/schema/document_content.py" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a78a7b8fcfe02ba5e553300692e480c8c" compoundref="docx__document_8py" startline="131" endline="142">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__handle_table_xml</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1afbee9622393a5d0002ce2d8f736a05f1" compoundref="data__structures_2document__content_8py" startline="31" endline="41">dedoc.data_structures.document_content.DocumentContent.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1a8613df3dc05b9a95529c2afdb0fa9353" compoundref="data__structures_2document__content_8py" startline="49" endline="53">dedoc.data_structures.document_content.DocumentContent.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Container for the full parsed document content: a hierarchical tree of text nodes and a flat list of tables with their cells. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (structure, tables) -&gt; JSON serializable model</para>
+<para>Content of the document - structured text and tables.</para>
+<para>:ivar tables: list of document tables :ivar structure: tree structure of the document nodes with text and additional metadata</para>
+<para>:vartype tables: List[Table] :vartype structure: TreeNode </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>structure</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tables</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.api.schema.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>line_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.api.schema.tree_node.TreeNode</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>annotations</edgelabel>
+          <edgelabel>subparagraphs</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="4">
+        <label>List</label>
+      </node>
+      <node id="6">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/document_content.py" line="39" column="1" bodyfile="dedoc/api/schema/document_content.py" bodystart="39" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1ac3532103f3e948163be2ce1010556c0f" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_content::DocumentContent</scope><name>structure</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" prot="public" virt="non-virtual"><scope>dedoc::api::schema::document_content::DocumentContent</scope><name>tables</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,7 +3,12 @@ from typing import Optional
 from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.structure_extractors.abstract_structure_extractor import AbstractStructureExtractor
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_TzStructureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @purpose TzStructureExtractor for document structure extraction pipeline
 class TzStructureExtractor(AbstractStructureExtractor):
     """
     This class is used for extraction structure from technical tasks.
@@ -12,12 +17,17 @@ class TzStructureExtractor(AbstractStructureExtractor):
     """
     document_type = "tz"
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, *, config: Optional[dict] = None) -> None:
         """
         :param config: some configuration for document parsing
         """
         super().__init__(config=config)
 
+        self.logger.debug(f"[IMP:4][TzStructureExtractor][__init___INIT] Starting")
         import os
         from dedoc.config import get_config
         from dedoc.structure_extractors.hierarchy_level_builders.header_builder.header_hierarchy_level_builder import HeaderHierarchyLevelBuilder
@@ -32,7 +42,13 @@ class TzStructureExtractor(AbstractStructureExtractor):
         self.classifier = TzLineTypeClassifier(classifier_type="tz", path=os.path.join(path, "tz_classifier.zip"), config=self.config)
         self.txt_classifier = TzLineTypeClassifier(classifier_type="tz_txt", path=os.path.join(path, "tz_txt_classifier.zip"), config=self.config)
 
+    # endregion METHOD___init__
+    # region METHOD_extract [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose extract method
+    ## @io Input -> Output
+    ## @complexity 5
     def extract(self, document: UnstructuredDocument, parameters: Optional[dict] = None) -> UnstructuredDocument:
+        self.logger.debug(f"[IMP:4][TzStructureExtractor][extract_INIT] Starting")
         """
         Extract technical task structure from the given document and add additional information to the lines' metadata.
         To get the information about the method's parameters look at the documentation of the class \
@@ -76,3 +92,29 @@ class TzStructureExtractor(AbstractStructureExtractor):
                                            regexps=[BulletPrefix.regexp, regexps_number, regexps_subitem],
                                            excluding_regexps=[None, regexps_ends_of_number, regexps_ends_of_number])
         return document
+
+    # endregion METHOD_extract
+# endregion CLASS_TzStructureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/concrete_structure_extractors/tz_structure_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/concrete_structure_extractors/tz_structure_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => TzStructureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, concrete structure extractors, tz structure extractor
+# STRUCTURE: ▶ structure_extractors/concrete_structure_extractors/tz_structure_extractor → ○ TzStructureExtractor.cls → ⎋ result

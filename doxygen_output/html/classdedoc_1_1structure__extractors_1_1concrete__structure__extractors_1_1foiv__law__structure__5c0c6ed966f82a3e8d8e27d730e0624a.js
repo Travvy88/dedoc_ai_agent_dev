@@ -1,0 +1,12 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#a7232b12731aea05e74dc1f9b61447f9f", null ],
+    [ "_postprocess_lines", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#a9039bc65e92ba4afb92a8e970af43f9f", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#a09b9d5720ed00f1340cf6f58d3ee371d", null ],
+    [ "hierarchy_level_builders", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#ab22d77596955cbbb07bad90be34bf0d1", null ],
+    [ "hl_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#aed4b39367dea5acf9cc6ff7ba8665e23", null ],
+    [ "init_hl_depth", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#ac02b44ccea90d0320521904a29b3980d", null ],
+    [ "regexps_ends_of_number", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#a7fed106d8cb01d544a06ce839b40e7dc", null ],
+    [ "regexps_subitem_with_char", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#a4e071b59f5475182fcf492f0586cb2b3", null ],
+    [ "regexps_subitem_with_number", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a.html#aaa9689809e44167e66a2cd831740c8ab", null ]
+];

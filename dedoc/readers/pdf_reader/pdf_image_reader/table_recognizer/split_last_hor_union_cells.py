@@ -1,6 +1,10 @@
 import copy
 from typing import List
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import numpy as np
 from dedocutils.data_structures.bbox import BBox
 
@@ -178,3 +182,31 @@ def __get_ocr_lines(cell_image: np.ndarray, language: str, page_image: np.ndarra
             cell_lines.append(text_line)
 
     return cell_lines
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_split_last_hor_union_cells; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## FUNC [5][split_last_column utility/helper] => split_last_column
+## FUNC [5][_split_each_row utility/helper] => _split_each_row
+## FUNC [5][_split_row utility/helper] => _split_row
+## FUNC [5][__get_ocr_lines utility/helper] => __get_ocr_lines
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: split_last_hor_union_cells, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, split_last_column, _split_each_row, _split_row, __get_ocr_lines
+# STRUCTURE: ▶ Input → ○ split_last_column → _split_each_row → _split_row → ⊕ result

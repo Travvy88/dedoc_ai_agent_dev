@@ -1,0 +1,5 @@
+var multipage__table__extractor_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.multipage_table_extractor.MultiPageTableExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extracd4d6977a631d1e12859fc513b78e481f.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extracd4d6977a631d1e12859fc513b78e481f" ],
+    [ "_module_contract", "multipage__table__extractor_8py.html#a269d38a7eb2e5833acdd6d8646557c6b", null ]
+];

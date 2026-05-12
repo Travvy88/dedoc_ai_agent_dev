@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor" kind="namespace" language="Python">
+    <compoundname>dedoc::metadata_extractors::concrete_metadata_extractors::note_metadata_extarctor</compoundname>
+    <innerclass refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor_1_1NoteMetadataExtractor" prot="public">dedoc::metadata_extractors::concrete_metadata_extractors::note_metadata_extarctor::NoteMetadataExtractor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor_1a3dee02de86cf8d68cdabb41d7e6e5b90" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To extract metadata from .note.pickle documents — a custom serialized format containing author, file size, and timestamps stored as a pickled dictionary. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Note (.note.pickle) file metadata extraction, pickle deserialization. \par \b Input\/ \:  file_path via extract(), config with logger. \par \b Output\/ \:  dict with keys: file_name, file_type (&quot;note&quot;), size, access_time, created_time, modified_time, author. \par \b Links\/ \:  [USES_API(6): pickle.load, BadFileFormatError] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>can_extract checks for &quot;.note.pickle&quot; suffix (case-insensitive).</para>
+</listitem><listitem><para>On pickle deserialization failure, raises BadFileFormatError. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why override can_extract with a suffix check? A: .note.pickle files have no standard MIME type and no consistent extension registry — suffix matching is the most reliable detection method. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 7[Note metadata extractor from .note.pickle files] =&gt; NoteMetadataExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[NoteMetadataExtractor]: MetadataExtractorComposition → DetectNotePickle → DeserializePickle → MetadataDict </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/concrete_metadata_extractors/note_metadata_extarctor.py" line="20" column="1" bodyfile="dedoc/metadata_extractors/concrete_metadata_extractors/note_metadata_extarctor.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/concrete_metadata_extractors/note_metadata_extarctor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

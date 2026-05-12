@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="note__reader_8py" kind="file" language="Python">
+    <compoundname>note_reader.py</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader" prot="public">dedoc::readers::note_reader::note_reader::NoteReader</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1note__reader">dedoc::readers::note_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1note__reader_1_1note__reader">dedoc::readers::note_reader::note_reader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1note__reader_1_1note__reader" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1unstructured__document" kindref="compound">dedoc.data_structures.unstructured_document</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>UnstructuredDocument</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1readers_1_1base__reader" kindref="compound">dedoc.readers.base_reader</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseReader</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_NoteReader<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader" kindref="compound">NoteReader</ref>(<ref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" kindref="compound">BaseReader</ref>):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">is<sp/>used<sp/>for<sp/>parsing<sp/>documents<sp/>with<sp/>.note.pickle<sp/>extension.</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(6):<sp/>Method;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader_1a50556b86d585ca97aa79ce546d29107e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader_1a50556b86d585ca97aa79ce546d29107e" kindref="member">__init__</ref>(self,<sp/>*,<sp/>config:<sp/>Optional[dict]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader_1a50556b86d585ca97aa79ce546d29107e" kindref="member">__init__</ref>(config=config,<sp/>recognized_extensions={</highlight><highlight class="stringliteral">&quot;.note.pickle&quot;</highlight><highlight class="normal">})</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_read<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(6):<sp/>Method;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader_1ab859ebd1a07d529d013345c982074f54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader_1ab859ebd1a07d529d013345c982074f54" kindref="member">read</ref>(self,<sp/>file_path:<sp/>str,<sp/>parameters:<sp/>Optional[dict]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/>UnstructuredDocument:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>method<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>document<sp/>content<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>all<sp/>document</highlight><highlight class="stringliteral">&apos;s<sp/>lines.</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Look<sp/>to<sp/>the<sp/>documentation<sp/>of<sp/>:meth:`~dedoc.readers.BaseReader.read`<sp/>to<sp/>get<sp/>information<sp/>about<sp/>the<sp/>method&apos;s<sp/>parameters.</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pickle</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1common_1_1exceptions_1_1bad__file__error" kindref="compound">dedoc.common.exceptions.bad_file_error</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BadFileFormatError</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1line__with__meta" kindref="compound">dedoc.data_structures.line_with_meta</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(file_path,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>infile:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>note_dict<sp/>=<sp/>pickle.load(infile)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/>note_dict[</highlight><highlight class="stringliteral">&quot;content&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(text,<sp/>bytes):</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text<sp/>=<sp/>text.decode()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lines<sp/>=<sp/>[LineWithMeta(line=text)]</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unstructured<sp/>=<sp/><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref>(tables=[],<sp/>lines=lines,<sp/>attachments=[])</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unstructured</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>Exception<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" kindref="member">logger</ref>.warning(f</highlight><highlight class="stringliteral">&quot;Can&apos;t<sp/>handle<sp/>{file_path}\n{e}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_NoteReader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>BadFileFormatError(f</highlight><highlight class="stringliteral">&quot;Bad<sp/>note<sp/>file:\n<sp/>file_name<sp/>=<sp/>{os.path.basename(file_path)}.<sp/>Seems<sp/>note-format<sp/>is<sp/>broken&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_note_reader;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>note<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>parsing<sp/>pipeline:<sp/>note<sp/>format<sp/>reading.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>CLASS<sp/>[4][NoteReader<sp/>reader/processor]<sp/>=&gt;<sp/>NoteReader</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(note)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespacededoc_1_1readers_1_1note__reader_1_1note__reader_1a0be4a4f7951bbe234d62ecb89057e364" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1note__reader_1_1note__reader_1a0be4a4f7951bbe234d62ecb89057e364" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>note_reader,<sp/>dedoc,<sp/>reader,<sp/>note,<sp/>NoteReader,<sp/>BaseReader,<sp/>note,<sp/>text,<sp/>plain,<sp/>UnstructuredDocument,<sp/>NoteReader</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>┌note<sp/>file┐<sp/>→<sp/>[NoteReader]<sp/>○<sp/>can_read?<sp/>→<sp/>○<sp/>read<sp/>→<sp/>[__init__<sp/>→<sp/>read]<sp/>→<sp/>⊕<sp/>UnstructuredDocument(lines,<sp/>tables,<sp/>attachments)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/note_reader/note_reader.py"/>
+  </compounddef>
+</doxygen>

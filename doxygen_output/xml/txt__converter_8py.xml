@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="txt__converter_8py" kind="file" language="Python">
+    <compoundname>txt_converter.py</compoundname>
+    <innerclass refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter" prot="public">dedoc::converters::concrete_converters::txt_converter::TxtConverter</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters">dedoc::converters</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters">dedoc::converters::concrete_converters</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter">dedoc::converters::concrete_converters::txt_converter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1converters_1_1concrete__converters_1_1abstract__converter" kindref="compound">dedoc.converters.concrete_converters.abstract_converter</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractConverter</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter_1ae366471e49770280304132a1bf94af3f" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_TxtConverter<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Conversion,<sp/>FileRename;<sp/>TECH(6):<sp/>shutil]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>convert<sp/>txt-like<sp/>documents<sp/>(.xml)<sp/>into<sp/>TXT<sp/>format<sp/>by<sp/>renaming/copying<sp/>the<sp/>file<sp/>to<sp/>a<sp/>.txt<sp/>extension,<sp/>normalizing<sp/>XML-based<sp/>text<sp/>for<sp/>downstream<sp/>processing.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter" kindref="compound">TxtConverter</ref>(<ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter" kindref="compound">AbstractConverter</ref>):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Converts<sp/>txt-like<sp/>documents<sp/>(.xml)<sp/>into<sp/>TXT<sp/>by<sp/>simple<sp/>renaming.</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Look<sp/>to<sp/>the<sp/>:</highlight><highlight class="keyword">class</highlight><highlight class="normal">:`~<ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter" kindref="compound">dedoc.converters.AbstractConverter</ref>`<sp/>documentation<sp/>to<sp/>get<sp/>the<sp/>information<sp/>about<sp/>the<sp/>methods</highlight><highlight class="stringliteral">&apos;<sp/>parameters.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(8):<sp/>Initialization;<sp/>CONCEPT(7):<sp/>Configuration;<sp/>TECH(6):<sp/>PythonConstructor]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>initialize<sp/>the<sp/>converter<sp/>with<sp/>txt-like<sp/>extension<sp/>and<sp/>MIME<sp/>type<sp/>registries<sp/>from<sp/>the<sp/>global<sp/>extensions<sp/>configuration.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>converted_extensions,<sp/>converted_mimes</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>config:<sp/>Optional[dict]<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter_1aad7571426340e7ee03c14cae2b89b776" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter_1aad7571426340e7ee03c14cae2b89b776" kindref="member">__init__</ref>(self,<sp/>*,<sp/>config:<sp/>Optional[dict]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1extensions" kindref="compound">dedoc.extensions</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>converted_extensions,<sp/>converted_mimes</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter_1aad7571426340e7ee03c14cae2b89b776" kindref="member">__init__</ref>(config=config,<sp/>converted_extensions=converted_extensions.txt_like_format,<sp/>converted_mimes=converted_mimes.txt_like_format)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][TxtConverter][INIT]<sp/>Registered<sp/>txt-like<sp/>formats&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_convert<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Conversion,<sp/>FileRename;<sp/>TECH(6):<sp/>shutil,<sp/>FileIO]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>convert<sp/>a<sp/>txt-like<sp/>document<sp/>to<sp/>.txt<sp/>by<sp/>copying<sp/>the<sp/>file<sp/>to<sp/>a<sp/>new<sp/>path<sp/>with<sp/>the<sp/>.txt<sp/>extension.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>os,<sp/>shutil,<sp/>splitext_</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>file_path:<sp/>str,<sp/>parameters:<sp/>Optional[dict]<sp/>-&gt;<sp/>str</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter_1a4deb623487710891660586843df4b31c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter_1a4deb623487710891660586843df4b31c" kindref="member">convert</ref>(self,<sp/>file_path:<sp/>str,<sp/>parameters:<sp/>Optional[dict]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Convert<sp/>the<sp/>txt-like<sp/>documents<sp/>into<sp/>files<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>.txt<sp/>extension<sp/>by<sp/>renaming<sp/>it.</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>shutil</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1utils_1_1utils" kindref="compound">dedoc.utils.utils</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>splitext_</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_dir,<sp/>file_name<sp/>=<sp/>os.path.split(file_path)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name_wo_ext,<sp/>_<sp/>=<sp/>splitext_(file_name)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converted_file_path<sp/>=<sp/>os.path.join(file_dir,<sp/>f</highlight><highlight class="stringliteral">&quot;{name_wo_ext}.txt&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:7][TxtConverter][CONVERT]<sp/>Copying<sp/>file_path={file_path}<sp/>to<sp/>{converted_file_path}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shutil.copy(file_path,<sp/>converted_file_path)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:9][TxtConverter][RESULT]<sp/>Converted<sp/>to<sp/>{converted_file_path}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>converted_file_path</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_convert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_TxtConverter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Conversion,<sp/>FileRename;<sp/>TECH(6):<sp/>shutil]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>normalize<sp/>txt-like<sp/>documents<sp/>(.xml)<sp/>into<sp/>.txt<sp/>format<sp/>by<sp/>simple<sp/>file<sp/>copy<sp/>(preserving<sp/>original),<sp/>enabling<sp/>downstream<sp/>text<sp/>readers<sp/>to<sp/>consume<sp/>them<sp/>with<sp/>a<sp/>uniform<sp/>extension.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>@scope<sp/>Txt-like<sp/>document<sp/>format<sp/>normalization<sp/>via<sp/>file<sp/>copy.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@input<sp/>Files<sp/>with<sp/>txt-like<sp/>extensions<sp/>(e.g.<sp/>.xml).</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>@output<sp/>Converted<sp/>.txt<sp/>file<sp/>path.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>@links<sp/>[USES_API(6):<sp/>shutil.copy;<sp/>READS_DATA_FROM(7):<sp/>dedoc.extensions.converted_extensions]</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>-<sp/>convert()<sp/>always<sp/>copies<sp/>the<sp/>file<sp/>(original<sp/>preserved).</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>-<sp/>Output<sp/>file<sp/>path<sp/>is<sp/>always<sp/>{dir}/{name_wo_ext}.txt.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>copy<sp/>instead<sp/>of<sp/>rename?</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>A:<sp/>Preserving<sp/>the<sp/>original<sp/>file<sp/>avoids<sp/>breaking<sp/>upstream<sp/>references<sp/>and<sp/>supports<sp/>idempotent<sp/>operation.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">##<sp/>CLASS<sp/>7[Converts<sp/>txt-like<sp/>formats<sp/>to<sp/>TXT<sp/>via<sp/>file<sp/>copy]<sp/>=&gt;<sp/>TxtConverter</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">##<sp/>-<sp/>[TxtConverter.convert]:<sp/>User<sp/>(Upload)<sp/>→<sp/>NormalizeToTxt<sp/>→<sp/>TxtFileReady</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter_1a41261e9e43c500615ebdbc0d1620b6ac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter_1a41261e9e43c500615ebdbc0d1620b6ac" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>txt<sp/>converter,<sp/>file<sp/>copy,<sp/>shutil,<sp/>xml,<sp/>txt,<sp/>renaming</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌file_path┐<sp/>→<sp/>◇<sp/>splitext_<sp/>→<sp/>⟦shutil.copy<sp/>→<sp/>{dir}/{name_wo_ext}.txt⟧<sp/>→<sp/>⎋<sp/>.txt<sp/>path</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/converters/concrete_converters/txt_converter.py"/>
+  </compounddef>
+</doxygen>

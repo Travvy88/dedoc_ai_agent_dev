@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1dedoc__manager" kind="namespace" language="Python">
+    <compoundname>dedoc::dedoc_manager</compoundname>
+    <innerclass refid="classdedoc_1_1dedoc__manager_1_1DedocManager" prot="public">dedoc::dedoc_manager::DedocManager</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1dedoc__manager_1ab3d28e887242be143906c170131e07ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::dedoc_manager.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.dedoc_manager.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/dedoc_manager.py" line="11" column="1" bodyfile="dedoc/dedoc_manager.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1dedoc__manager_1a311264c801eb18f8279dc66f48324913" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.dedoc_manager._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.dedoc_manager._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To serve as the central orchestrator of the Dedoc document processing system, composing all specialized processors (converters, readers, extractors, constructors, attachment handlers) into a single, resilient <computeroutput>parse</computeroutput> pipeline with automatic MIME detection, error enrichment, and labeling mode support. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document parsing orchestration, pipeline composition, error handling with metadata enrichment, MIME-based format auto-detection, labeling mode persistence. \par \b Input\/ \:  File paths, optional processing parameters, configuration dictionaries. \par \b Output\/ \:  ParsedDocument with content, structure, metadata, and attachments. \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1config" kindref="compound">dedoc.config</ref>, <ref refid="namespacededoc_1_1manager__config" kindref="compound">dedoc.manager_config</ref>; READS_DATA_FROM(8): filesystem; CALLS_COMPOSITION(9): ConverterComposition, ReaderComposition, StructureExtractorComposition, StructureConstructorComposition, MetadataExtractorComposition, AttachmentsHandler] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Every <computeroutput>parse()</computeroutput> call returns a ParsedDocument or raises a DedocError with enriched metadata.</para>
+</listitem><listitem><para>Pipeline steps execute in fixed order: convert → read → metadata → structure extract → output construct → attachments.</para>
+</listitem><listitem><para>MIME fallback is attempted exactly once on ConversionError/BadFileFormatError. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why compose via dependency injection in <bold>init</bold> rather than hardcoding all components? A: Dedoc supports 17+ document formats each with specific readers and converters. DI allows testing with mock components and selective replacement of pipeline stages without touching orchestration logic. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and comprehensive LDD logging across all pipeline stages] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Central document processing orchestrator] =&gt; DedocManager \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DedocManager.parse]: APIHandler =&gt; ParseDocument =&gt; ParsedDocumentWithMetadata</para>
+</listitem><listitem><para>[DedocManager.__parse_no_error_handling]: Orchestrator =&gt; ExecutePipeline =&gt; StructuredOutput</para>
+</listitem><listitem><para>[DedocManager.__read_with_mime_auto_detection]: ContentReader =&gt; DetectMimeAndRead =&gt; UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/dedoc_manager.py" line="297" column="1" bodyfile="dedoc/dedoc_manager.py" bodystart="297" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/dedoc_manager.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1pdf__auto__reader =
+[
+    [ "PdfAutoReader", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1pdf__auto__reader_1_1PdfAutoReader.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1pdf__auto__reader_1_1PdfAutoReader" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1pdf__auto__reader.html#a27f87e39f77cf7a5a109e8a8bb227b68", null ]
+];

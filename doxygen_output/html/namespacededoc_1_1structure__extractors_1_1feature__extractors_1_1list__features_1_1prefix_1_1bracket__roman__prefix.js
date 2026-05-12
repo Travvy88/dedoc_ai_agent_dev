@@ -1,0 +1,6 @@
+var namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bracket__roman__prefix =
+[
+    [ "BracketRomanPrefix", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1brackebf60f5c4e760e0939db20b7171dd4238.html", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1brackebf60f5c4e760e0939db20b7171dd4238" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bracket__roman__prefix.html#aad60afc03182b02dd945f2bc5ad1b8d0", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1bracket__roman__prefix.html#a38f7050c3ae528e437a1bfdb851153de", null ]
+];

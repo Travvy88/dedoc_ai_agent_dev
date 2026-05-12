@@ -1,0 +1,6 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform.html#a80304c16a9e8399b91e74d233a57f6cf", null ],
+    [ "__call__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform.html#a8d26c75b0b70cd711e37937ffdc5ea55", null ],
+    [ "transform", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform.html#a50665be8f729bbd6d617a5a24253eb83", null ]
+];

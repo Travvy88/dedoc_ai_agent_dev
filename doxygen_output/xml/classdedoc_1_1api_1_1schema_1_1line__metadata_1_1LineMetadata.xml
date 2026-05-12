@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::line_metadata::LineMetadata</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config" prot="public">dedoc::api::schema::line_metadata::LineMetadata::Config</innerclass>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a0d21ba8226ba9de3620e2249e293cda7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.line_metadata.LineMetadata::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="54" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a00bc807dd77df3fb146088ccc828036e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.line_metadata.LineMetadata::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="54" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1abd8636de360cdbdf8193c5a582bff34d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.line_metadata.LineMetadata::example</definition>
+        <argsstring></argsstring>
+        <name>example</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.example</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="54" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.line_metadata.LineMetadata::page_id</definition>
+        <argsstring></argsstring>
+        <name>page_id</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.page_id</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a00bc807dd77df3fb146088ccc828036e" kindref="member">description</ref>=&quot;Page number of the line/paragraph beginning&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1abd8636de360cdbdf8193c5a582bff34d" kindref="member">example</ref>=0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="55" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a202f559cf3beb89bb071c23a76bbd449" compoundref="data__structures_2line__metadata_8py" startline="41" endline="55">dedoc.data_structures.line_metadata.LineMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d" compoundref="data__structures_2line__metadata_8py" startline="63" endline="70">dedoc.data_structures.line_metadata.LineMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1acda89367be241224baf7bd24f171650a" prot="public" static="yes" mutable="no">
+        <type>Optional</type>
+        <definition>Optional dedoc.api.schema.line_metadata.LineMetadata::line_id</definition>
+        <argsstring></argsstring>
+        <name>line_id</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.line_id</qualifiedname>
+        <initializer>=  Field(<ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a00bc807dd77df3fb146088ccc828036e" kindref="member">description</ref>=&quot;Line number&quot;, <ref refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1abd8636de360cdbdf8193c5a582bff34d" kindref="member">example</ref>=1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="56" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a202f559cf3beb89bb071c23a76bbd449" compoundref="data__structures_2line__metadata_8py" startline="41" endline="55">dedoc.data_structures.line_metadata.LineMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d" compoundref="data__structures_2line__metadata_8py" startline="63" endline="70">dedoc.data_structures.line_metadata.LineMetadata.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold paragraph/line-level metadata (type, page, line number) with extensible extra attributes for format-specific annotations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (paragraph_type, page_id, line_id, **extra) -&gt; JSON serializable model</para>
+<para>Holds information about document node/line metadata, such as page number or line type.</para>
+<para>:ivar paragraph_type: type of the document line/paragraph (header, list_item, list, etc.) :ivar page_id: page number where paragraph starts, the numeration starts from page 0 :ivar line_id: line number inside the entire document, the numeration starts from line 0</para>
+<para>:vartype paragraph_type: str :vartype page_id: int :vartype line_id: Optional[int]</para>
+<para>Additional variables may be added with other line metadata. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>line_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/line_metadata.py" line="37" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="37" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a00bc807dd77df3fb146088ccc828036e" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata</scope><name>description</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1abd8636de360cdbdf8193c5a582bff34d" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata</scope><name>example</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1acda89367be241224baf7bd24f171650a" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata</scope><name>line_id</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata</scope><name>page_id</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a0d21ba8226ba9de3620e2249e293cda7" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata</scope><name>str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

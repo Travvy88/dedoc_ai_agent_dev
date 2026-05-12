@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_616e14847f782746868ff37f7cb0edd6" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__txtlayer__reader_2pdfminer__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="pdfminer__extractor_8py">pdfminer_extractor.py</innerfile>
+    <innerfile refid="pdfminer__utils_8py">pdfminer_utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/"/>
+  </compounddef>
+</doxygen>

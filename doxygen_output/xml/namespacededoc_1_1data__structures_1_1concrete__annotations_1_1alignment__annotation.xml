@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::concrete_annotations::alignment_annotation</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation_1_1AlignmentAnnotation" prot="public">dedoc::data_structures::concrete_annotations::alignment_annotation::AlignmentAnnotation</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation_1a2b4a93e1bb94658aecda6bd83938bbb1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::concrete_annotations::alignment_annotation.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.alignment_annotation.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/alignment_annotation.py" line="5" column="1" bodyfile="dedoc/data_structures/concrete_annotations/alignment_annotation.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation_1a8e8b450f0bfded0ee1cf5de9c3126e60" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.alignment_annotation._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.alignment_annotation._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide alignment annotation for document lines — describes horizontal text alignment (left, right, both, center). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Text annotation data structure for line alignment. \par \b Input\/ \:  Alignment value string (left/right/both/center). \par \b Output\/ \:  AlignmentAnnotation instance. \par \b Links\/ \:  [INHERITS(9): Annotation] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>value is always one of [&quot;left&quot;, &quot;right&quot;, &quot;both&quot;, &quot;center&quot;] \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why validate value in <bold>init</bold> rather than at serialization time? A: Fail-fast validation prevents downstream errors in structure extraction. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Alignment text annotation] =&gt; AlignmentAnnotation \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[AlignmentAnnotation]: Reader → ExtractLineAlignment → AlignmentAnnotationStored </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/alignment_annotation.py" line="54" column="1" bodyfile="dedoc/data_structures/concrete_annotations/alignment_annotation.py" bodystart="54" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/concrete_annotations/alignment_annotation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

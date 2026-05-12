@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pptx_reader::properties_extractor::Properties</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a1042db1961c4d383823a1add669cb48a" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::bold</definition>
+        <argsstring></argsstring>
+        <name>bold</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.bold</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="14" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1ab757e2d8ead7fc2059bc179183ce10a4" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::italic</definition>
+        <argsstring></argsstring>
+        <name>italic</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.italic</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="15" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a88a2a9008e34e8f305e444b86f548c44" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::underlined</definition>
+        <argsstring></argsstring>
+        <name>underlined</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.underlined</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="16" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a2a812f4f2664e9a762d91cf694dde8e1" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::superscript</definition>
+        <argsstring></argsstring>
+        <name>superscript</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.superscript</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="17" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a7d7ae73c0d08eef5a3719d8b24c0f9fa" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::subscript</definition>
+        <argsstring></argsstring>
+        <name>subscript</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.subscript</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="18" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a7da76da05114447a474a5f9a5dc6afe4" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::strike</definition>
+        <argsstring></argsstring>
+        <name>strike</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.strike</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="19" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1aea56bb332ab776617986b8f3e006de6f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.readers.pptx_reader.properties_extractor.Properties::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.size</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="20" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1run_1_1Run_1a85e46e28b9f7a5ea9f3b6c08c8c52505" compoundref="run_8py" startline="64" endline="73">dedoc.readers.docx_reader.data_structures.run.Run.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a5836086ded7ad8ab4d204d55ee2c0c57" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.readers.pptx_reader.properties_extractor.Properties::alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.alignment</qualifiedname>
+        <initializer>=  &quot;left&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="21" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a0c6a5e5ec2ab4c5655a9b4aebd56fe9f" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pptx_reader.properties_extractor.Properties::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.Properties.title</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="23" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="13" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="13" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a5836086ded7ad8ab4d204d55ee2c0c57" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>alignment</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a1042db1961c4d383823a1add669cb48a" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>bold</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1ab757e2d8ead7fc2059bc179183ce10a4" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>italic</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1aea56bb332ab776617986b8f3e006de6f" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>size</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a7da76da05114447a474a5f9a5dc6afe4" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>strike</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a7d7ae73c0d08eef5a3719d8b24c0f9fa" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>subscript</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a2a812f4f2664e9a762d91cf694dde8e1" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>superscript</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a0c6a5e5ec2ab4c5655a9b4aebd56fe9f" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>title</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a88a2a9008e34e8f305e444b86f548c44" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::Properties</scope><name>underlined</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

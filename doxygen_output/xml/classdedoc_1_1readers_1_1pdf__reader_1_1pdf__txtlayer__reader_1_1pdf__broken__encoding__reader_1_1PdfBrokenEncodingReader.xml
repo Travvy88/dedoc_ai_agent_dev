@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a9c76f9a56f9d7a35951374e3f4dd66d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader::extractor_layer</definition>
+        <argsstring></argsstring>
+        <name>extractor_layer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.extractor_layer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="27" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1aae9afc6c7d1c68213d5802b8245b78b3" compoundref="pdf__broken__encoding__reader_8py" startline="45" endline="52">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader._postprocess</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1ace2c6f13211c270e34d63b89ec5985d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader::reader_key</definition>
+        <argsstring></argsstring>
+        <name>reader_key</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.reader_key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="28" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa" compoundref="pdf__txtlayer__reader_8py" startline="38" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.can_read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="23" bodyend="29"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0" compoundref="pdf__broken__encoding__reader_8py" startline="23" endline="29">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0" compoundref="pdf__broken__encoding__reader_8py" startline="23" endline="29">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1af70da659e1f2ba64a08e9f625d031860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.can_read</definition>
+        <argsstring>(self, Optional[str] file_path=None, Optional[str] mime=None, Optional[str] extension=None, Optional[dict] parameters=None)</argsstring>
+        <name>can_read</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.can_read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ae59e16a1dc096adba2339fe8e2ba40fa">can_read</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>file_path</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>Check if the document extension is suitable for this reader (PDF format is supported only). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method returns <computeroutput>True</computeroutput> only when the key <computeroutput>pdf_with_text_layer</computeroutput> with value <computeroutput>bad_encoding</computeroutput> is set in the dictionary <computeroutput>parameters</computeroutput>.</para>
+<para>You can look to :ref:<computeroutput>pdf_handling_parameters</computeroutput> to get more information about <computeroutput>parameters</computeroutput> dictionary possible arguments.</para>
+<para>Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.can_read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="32" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="32" bodyend="42"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1af70da659e1f2ba64a08e9f625d031860" compoundref="pdf__broken__encoding__reader_8py" startline="32" endline="42">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.can_read</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1af70da659e1f2ba64a08e9f625d031860" compoundref="pdf__broken__encoding__reader_8py" startline="32" endline="42">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.can_read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1aae9afc6c7d1c68213d5802b8245b78b3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader._postprocess</definition>
+        <argsstring>(self, UnstructuredDocument document)</argsstring>
+        <name>_postprocess</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader._postprocess</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1ab8efc3b9ad794aee101965429fe8c2c9">_postprocess</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+<para>Perform document postprocessing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="45" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="45" bodyend="52"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a9c76f9a56f9d7a35951374e3f4dd66d8" compoundref="pdf__broken__encoding__reader_8py" startline="27">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader.extractor_layer</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a30a4312251eb551ac01a13d9b3275450" compoundref="pdf__txtlayer__reader_8py" startline="33">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader.extractor_layer</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1foiv__law__structure__5c0c6ed966f82a3e8d8e27d730e0624a_1a9039bc65e92ba4afb92a8e970af43f9f" compoundref="foiv__law__structure__extractor_8py" startline="53" endline="60">dedoc.structure_extractors.concrete_structure_extractors.foiv_law_structure_extractor.FoivLawStructureExtractor._postprocess_lines</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1law__structure__excractor_1_1LawStructureExtractor_1a315236632c450609501f25f7ea190055" compoundref="law__structure__excractor_8py" startline="54" endline="60">dedoc.structure_extractors.concrete_structure_extractors.law_structure_excractor.LawStructureExtractor._postprocess_lines</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor_1a85461db213a7d506d94c96e7dd62fd42" compoundref="tz__structure__extractor_8py" startline="50" endline="95">dedoc.structure_extractors.concrete_structure_extractors.tz_structure_extractor.TzStructureExtractor.extract</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063" compoundref="pdf__tabby__reader_8py" startline="64" endline="89">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader_1ab4819ba0c5dbd83b54f7e83fe613ce56" compoundref="raw__text__reader_8py" startline="40" endline="51">dedoc.readers.txt_reader.raw_text_reader.RawTextReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class allows to extract content (text, tables, attachments) from the .pdf documents with a textual layer with broken encoding (copyable documents, but copied text is incorrect) with complex background. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>It uses a pdfminer library for text extraction and CNN for font&apos;s glyphs prediction. Currently, only Russian and English languages are supported.</para>
+<para>For more information, look to <computeroutput>pdf_with_text_layer</computeroutput> option description in :ref:<computeroutput>pdf_handling_parameters</computeroutput>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" line="12" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.py" bodystart="12" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1aae9afc6c7d1c68213d5802b8245b78b3" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</scope><name>_postprocess</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1af70da659e1f2ba64a08e9f625d031860" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</scope><name>can_read</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a9c76f9a56f9d7a35951374e3f4dd66d8" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</scope><name>extractor_layer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1ace2c6f13211c270e34d63b89ec5985d4" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding_reader::PdfBrokenEncodingReader</scope><name>reader_key</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

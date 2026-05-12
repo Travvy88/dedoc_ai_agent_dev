@@ -1,0 +1,9 @@
+var namespacededoc_1_1structure__extractors_1_1line__type__classifiers =
+[
+    [ "abstract_line_type_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier" ],
+    [ "abstract_pickled_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier" ],
+    [ "diploma_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1diploma__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1diploma__classifier" ],
+    [ "fintoc_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier" ],
+    [ "law_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier" ],
+    [ "tz_classifier", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1tz__classifier.html", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1tz__classifier" ]
+];

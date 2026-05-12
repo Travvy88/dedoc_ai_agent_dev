@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a41ec23b1db9c5c523743984194b4a725" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier::permissible_h_bbox</definition>
+        <argsstring></argsstring>
+        <name>permissible_h_bbox</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.permissible_h_bbox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="22" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a03b3dd9ab9ae7c394bb6da6f88c91a0a" compoundref="bold__classifier_8py" startline="101" endline="128">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_base_line_image</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a516913c07d8e01eb60cb2260b6775531" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier::binarizer</definition>
+        <argsstring></argsstring>
+        <name>binarizer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.binarizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a8c7b733532f1455ec1e70ef42a7aec3f" compoundref="bold__classifier_8py" startline="48" endline="50">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__preprocessing</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b" compoundref="pdf__image__reader_8py" startline="71" endline="106">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a295ca1349775fdfea0377b82d1696d9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier::clusterizer</definition>
+        <argsstring></argsstring>
+        <name>clusterizer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.clusterizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="24" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ad17e14cf874030b3ddaf44f6a8704a4c" compoundref="bold__classifier_8py" startline="84" endline="89">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__clusterize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a71271e063dcd6f0bdba6abfeb899483a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="21" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="21" bodyend="25"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1adc140b3f750396d7711c16fa33eef98d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.classify</definition>
+        <argsstring>(self, np.ndarray image, List[BBox] bboxes)</argsstring>
+        <name>classify</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.classify</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>bboxes</declname>
+          <array>[BBox]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="28" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="28" bodyend="38"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ad17e14cf874030b3ddaf44f6a8704a4c" compoundref="bold__classifier_8py" startline="84" endline="89">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__clusterize</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a24ce530f0f4405fd720262c6d46fe289" compoundref="bold__classifier_8py" startline="41" endline="45">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_bboxes_evaluation</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a24ce530f0f4405fd720262c6d46fe289" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_bboxes_evaluation</definition>
+        <argsstring>(self, np.ndarray image, List[BBox] bboxes)</argsstring>
+        <name>__get_bboxes_evaluation</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_bboxes_evaluation</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>bboxes</declname>
+          <array>[BBox]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="41" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="41" bodyend="45"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a411072d5fc0039a7f0fb78692ff81490" compoundref="bold__classifier_8py" startline="53" endline="56">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_evaluation_bboxes</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a8c7b733532f1455ec1e70ef42a7aec3f" compoundref="bold__classifier_8py" startline="48" endline="50">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__preprocessing</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1adc140b3f750396d7711c16fa33eef98d" compoundref="bold__classifier_8py" startline="28" endline="38">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.classify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a8c7b733532f1455ec1e70ef42a7aec3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__preprocessing</definition>
+        <argsstring>(self, np.ndarray image)</argsstring>
+        <name>__preprocessing</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__preprocessing</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="48" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="48" bodyend="50"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a516913c07d8e01eb60cb2260b6775531" compoundref="bold__classifier_8py" startline="23">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.binarizer</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a5f20021860c78f3c590a76785d6aa209" compoundref="pdf__image__reader_8py" startline="56">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader.binarizer</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a24ce530f0f4405fd720262c6d46fe289" compoundref="bold__classifier_8py" startline="41" endline="45">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_bboxes_evaluation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a411072d5fc0039a7f0fb78692ff81490" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_evaluation_bboxes</definition>
+        <argsstring>(self, np.ndarray image, List[BBox] bboxes)</argsstring>
+        <name>__get_evaluation_bboxes</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_evaluation_bboxes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>bboxes</declname>
+          <array>[BBox]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="53" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="53" bodyend="56"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ac572da6de9456afd31439c814fea2ed2" compoundref="bold__classifier_8py" startline="59" endline="62">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a24ce530f0f4405fd720262c6d46fe289" compoundref="bold__classifier_8py" startline="41" endline="45">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_bboxes_evaluation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ac572da6de9456afd31439c814fea2ed2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox</definition>
+        <argsstring>(self, np.ndarray image, BBox bbox)</argsstring>
+        <name>__evaluation_one_bbox</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>BBox</type>
+          <declname>bbox</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="59" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="59" bodyend="62"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a5c1db12df59638f2c2556151526a8913" compoundref="bold__classifier_8py" startline="65" endline="81">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox_image</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a47bd89709b31b23e6af4c7cbe6063d96" compoundref="bold__classifier_8py" startline="131" endline="135">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__is_correct_bbox_image</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a411072d5fc0039a7f0fb78692ff81490" compoundref="bold__classifier_8py" startline="53" endline="56">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_evaluation_bboxes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a5c1db12df59638f2c2556151526a8913" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox_image</definition>
+        <argsstring>(self, np.ndarray image)</argsstring>
+        <name>__evaluation_one_bbox_image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox_image</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="65" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="65" bodyend="81"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a03b3dd9ab9ae7c394bb6da6f88c91a0a" compoundref="bold__classifier_8py" startline="101" endline="128">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_base_line_image</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a40fd957cedb904767c1a1d2ddb50a41f" compoundref="bold__classifier_8py" startline="92" endline="98">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_rid_spaces</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ac572da6de9456afd31439c814fea2ed2" compoundref="bold__classifier_8py" startline="59" endline="62">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ad17e14cf874030b3ddaf44f6a8704a4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[float]</type>
+        <definition> List[float] dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__clusterize</definition>
+        <argsstring>(self, List[float] bboxes_evaluation)</argsstring>
+        <name>__clusterize</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__clusterize</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>bboxes_evaluation</declname>
+          <array>[float]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="84" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="84" bodyend="89"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a295ca1349775fdfea0377b82d1696d9d" compoundref="bold__classifier_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.clusterizer</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1adc140b3f750396d7711c16fa33eef98d" compoundref="bold__classifier_8py" startline="28" endline="38">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.classify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a40fd957cedb904767c1a1d2ddb50a41f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_rid_spaces</definition>
+        <argsstring>(self, np.ndarray image)</argsstring>
+        <name>__get_rid_spaces</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_rid_spaces</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="92" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="92" bodyend="98"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a5c1db12df59638f2c2556151526a8913" compoundref="bold__classifier_8py" startline="65" endline="81">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox_image</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a03b3dd9ab9ae7c394bb6da6f88c91a0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_base_line_image</definition>
+        <argsstring>(self, np.ndarray image)</argsstring>
+        <name>__get_base_line_image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__get_base_line_image</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="101" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="101" bodyend="128"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a41ec23b1db9c5c523743984194b4a725" compoundref="bold__classifier_8py" startline="22">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.permissible_h_bbox</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a5c1db12df59638f2c2556151526a8913" compoundref="bold__classifier_8py" startline="65" endline="81">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox_image</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a47bd89709b31b23e6af4c7cbe6063d96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__is_correct_bbox_image</definition>
+        <argsstring>(self, np.ndarray image)</argsstring>
+        <name>__is_correct_bbox_image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__is_correct_bbox_image</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="131" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="131" bodyend="135"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ac572da6de9456afd31439c814fea2ed2" compoundref="bold__classifier_8py" startline="59" endline="62">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.bold_classifier.bold_classifier.BoldClassifier.__evaluation_one_bbox</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class classifies words (or lines) in bboxes as bold or non-bold. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Given a list of bboxes and an image, it returns a list of boldness probabilities (actually only 0 and 1 for now) </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/bold_classifier.py" bodystart="15" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ad17e14cf874030b3ddaf44f6a8704a4c" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__clusterize</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1ac572da6de9456afd31439c814fea2ed2" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__evaluation_one_bbox</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a5c1db12df59638f2c2556151526a8913" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__evaluation_one_bbox_image</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a03b3dd9ab9ae7c394bb6da6f88c91a0a" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__get_base_line_image</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a24ce530f0f4405fd720262c6d46fe289" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__get_bboxes_evaluation</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a411072d5fc0039a7f0fb78692ff81490" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__get_evaluation_bboxes</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a40fd957cedb904767c1a1d2ddb50a41f" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__get_rid_spaces</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a71271e063dcd6f0bdba6abfeb899483a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a47bd89709b31b23e6af4c7cbe6063d96" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__is_correct_bbox_image</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a8c7b733532f1455ec1e70ef42a7aec3f" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>__preprocessing</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a516913c07d8e01eb60cb2260b6775531" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>binarizer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1adc140b3f750396d7711c16fa33eef98d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>classify</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a295ca1349775fdfea0377b82d1696d9d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>clusterizer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_612f498574906a1e8c91ddd911c98faf_1a41ec23b1db9c5c523743984194b4a725" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::bold_classifier::BoldClassifier</scope><name>permissible_h_bbox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

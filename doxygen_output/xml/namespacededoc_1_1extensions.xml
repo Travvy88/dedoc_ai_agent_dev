@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1extensions" kind="namespace" language="Python">
+    <compoundname>dedoc::extensions</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1ae3d5637e7bf5d4cac283cb9e0b63e796" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.extensions.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="5" column="1" bodyfile="dedoc/extensions.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1aae0d1b8404114cc407d6e2ae2c0545ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.Extensions</definition>
+        <argsstring></argsstring>
+        <name>Extensions</name>
+        <qualifiedname>dedoc.extensions.Extensions</qualifiedname>
+        <initializer>=  namedtuple(&quot;Parts&quot;, [
+    &quot;excel_like_format&quot;,
+    &quot;docx_like_format&quot;,
+    &quot;pptx_like_format&quot;,
+    &quot;html_like_format&quot;,
+    &quot;eml_like_format&quot;,
+    &quot;mhtml_like_format&quot;,
+    &quot;archive_like_format&quot;,
+    &quot;image_like_format&quot;,
+    &quot;pdf_like_format&quot;,
+    &quot;csv_like_format&quot;,
+    &quot;txt_like_format&quot;,
+    &quot;json_like_format&quot;
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="8" column="1" bodyfile="dedoc/extensions.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1aac3b199243c8795f127aefef6c73fa04" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.converted_extensions</definition>
+        <argsstring></argsstring>
+        <name>converted_extensions</name>
+        <qualifiedname>dedoc.extensions.converted_extensions</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1extensions_1aae0d1b8404114cc407d6e2ae2c0545ef" kindref="member">Extensions</ref>(
+    excel_like_format={&quot;.ods&quot;, &quot;.xls&quot;},
+    docx_like_format={&quot;.odt&quot;, &quot;.doc&quot;, &quot;.rtf&quot;},
+    pptx_like_format={&quot;.odp&quot;, &quot;.ppt&quot;},
+    html_like_format={},
+    eml_like_format={},
+    mhtml_like_format={},
+    archive_like_format={},
+    image_like_format={
+        &quot;.bmp&quot;, &quot;.dib&quot;, &quot;.eps&quot;, &quot;.gif&quot;, &quot;.hdr&quot;, &quot;.j2k&quot;, &quot;.jfif&quot;, &quot;.jp2&quot;, &quot;.jpe&quot;, &quot;.jpeg&quot;, &quot;.jpg&quot;, &quot;.pbm&quot;, &quot;.pcx&quot;, &quot;.pgm&quot;, &quot;.pic&quot;, &quot;.pnm&quot;, &quot;.ppm&quot;, &quot;.ras&quot;,
+        &quot;.sgi&quot;, &quot;.sr&quot;, &quot;.tiff&quot;, &quot;.webp&quot;
+    },
+    pdf_like_format={&quot;.djvu&quot;},
+    csv_like_format={},
+    txt_like_format={&quot;.xml&quot;},
+    json_like_format={}
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="24" column="1" bodyfile="dedoc/extensions.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1a70277c4e52e3e164bb34435b46ec8baf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.converted_mimes</definition>
+        <argsstring></argsstring>
+        <name>converted_mimes</name>
+        <qualifiedname>dedoc.extensions.converted_mimes</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1extensions_1aae0d1b8404114cc407d6e2ae2c0545ef" kindref="member">Extensions</ref>(
+    excel_like_format={&quot;application/vnd.oasis.opendocument.spreadsheet&quot;, &quot;application/vnd.ms-excel&quot;},
+    docx_like_format={&quot;application/msword&quot;, &quot;application/vnd.oasis.opendocument.text&quot;, &quot;text/rtf&quot;, &quot;application/rtf&quot;},
+    pptx_like_format={&quot;application/vnd.ms-powerpoint&quot;, &quot;application/vnd.oasis.opendocument.presentation&quot;},
+    html_like_format={},
+    eml_like_format={},
+    mhtml_like_format={},
+    archive_like_format={},
+    image_like_format={
+        &quot;image/bmp&quot;, &quot;image/x-ms-bmp&quot;, &quot;image/dib&quot;, &quot;image/x-eps&quot;, &quot;application/postscript&quot;, &quot;image/gif&quot;, &quot;image/jpeg&quot;, &quot;image/jp2&quot;, &quot;image/x-jp2&quot;, &quot;image/jpg&quot;,
+        &quot;image/x-portable-pixmap&quot;, &quot;image/x-portable-anymap&quot;, &quot;image/x-portable-graymap&quot;, &quot;image/x-portable-bitmap&quot;, &quot;image/x-pcx&quot;, &quot;image/x-pict&quot;,
+        &quot;image/ras&quot;, &quot;image/x-sun-raster&quot;, &quot;image/sgi&quot;, &quot;image/x-sgi&quot;, &quot;image/tiff&quot;, &quot;image/webp&quot;, &quot;image/x-cmu-raster&quot;, &quot;image/x-jp2-codestream&quot;
+    },
+    pdf_like_format={&quot;image/vnd.djvu&quot;},
+    csv_like_format={},
+    txt_like_format={&quot;application/xml&quot;, &quot;text/xml&quot;},
+    json_like_format={}
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="42" column="1" bodyfile="dedoc/extensions.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1addf2824fdd828a891fa08439c61645d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.recognized_extensions</definition>
+        <argsstring></argsstring>
+        <name>recognized_extensions</name>
+        <qualifiedname>dedoc.extensions.recognized_extensions</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1extensions_1aae0d1b8404114cc407d6e2ae2c0545ef" kindref="member">Extensions</ref>(
+    excel_like_format={&quot;.xlsx&quot;},
+    docx_like_format={&quot;.docx&quot;},
+    pptx_like_format={&quot;.pptx&quot;},
+    html_like_format={&quot;.htm&quot;, &quot;.html&quot;, &quot;.shtml&quot;},
+    eml_like_format={&quot;.eml&quot;},
+    mhtml_like_format={&quot;.mhtml&quot;, &quot;.mht&quot;, &quot;.mhtml.gz&quot;, &quot;.mht.gz&quot;},
+    archive_like_format={&quot;.zip&quot;, &quot;.tar&quot;, &quot;.tar.gz&quot;, &quot;.rar&quot;, &quot;.7z&quot;},
+    image_like_format={&quot;.png&quot;, &quot;.jpg&quot;, &quot;.jpeg&quot;, &quot;.tiff&quot;, &quot;.tif&quot;},
+    pdf_like_format={&quot;.pdf&quot;},
+    csv_like_format={&quot;.csv&quot;, &quot;.tsv&quot;},
+    txt_like_format={&quot;.txt&quot;, &quot;.txt.gz&quot;},
+    json_like_format={&quot;.json&quot;}
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="61" column="1" bodyfile="dedoc/extensions.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1a6db08442f7f49c0e6048e13ad9dbda80" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::extensions.recognized_mimes</definition>
+        <argsstring></argsstring>
+        <name>recognized_mimes</name>
+        <qualifiedname>dedoc.extensions.recognized_mimes</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1extensions_1aae0d1b8404114cc407d6e2ae2c0545ef" kindref="member">Extensions</ref>(
+    excel_like_format={&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;},
+    docx_like_format={&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document&quot;},
+    pptx_like_format={&quot;application/vnd.openxmlformats-officedocument.presentationml.presentation&quot;},
+    html_like_format={&quot;text/html&quot;},
+    eml_like_format={&quot;message/rfc822&quot;},
+    mhtml_like_format={&quot;message/rfc822&quot;},
+    archive_like_format={
+        &quot;application/zip&quot;, &quot;application/x-gzip&quot;, &quot;application/gzip&quot;, &quot;application/x-tar&quot;, &quot;application/x-rar-compressed&quot;, &quot;application/rar&quot;,
+        &quot;application/x-rar&quot;, &quot;application/x-7z-compressed&quot;
+    },
+    image_like_format={&quot;image/png&quot;},
+    pdf_like_format={&quot;application/pdf&quot;},
+    csv_like_format={&quot;text/csv&quot;, &quot;application/csv&quot;, &quot;text/tab-separated-values&quot;},
+    txt_like_format={&quot;text/plain&quot;},
+    json_like_format={&quot;application/json&quot;}
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="76" column="1" bodyfile="dedoc/extensions.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1extensions_1a340c5e69ae7f7ba154bec8b4edc50124" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc::extensions.mime2extension</definition>
+        <argsstring></argsstring>
+        <name>mime2extension</name>
+        <qualifiedname>dedoc.extensions.mime2extension</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="95" column="1" bodyfile="dedoc/extensions.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1extensions_1a9ddf18946110e6a938c8633edfaba45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[str]</type>
+        <definition> List[str] dedoc.extensions.get_image_extensions</definition>
+        <argsstring>()</argsstring>
+        <name>get_image_extensions</name>
+        <qualifiedname>dedoc.extensions.get_image_extensions</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To aggregate all known image file extensions (from both recognized and converted MIME sets) into a single list, used for image format detection throughout the pipeline. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_extensions_by_mimes, converted_mimes, recognized_mimes, converted_extensions, recognized_extensions \par \b I/O\/ \:  None -&gt; List[str] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="134" column="1" bodyfile="dedoc/extensions.py" bodystart="134" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1extensions_1ac1103173e38555391330c1f33c7a6b4b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.extensions._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.extensions._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To serve as the central registry of all supported file formats in Dedoc, mapping file extensions to MIME types and vice versa across three categories (recognized, converted, and recognized MIMEs), enabling the pipeline to identify and route documents to appropriate readers/converters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  File extension-to-MIME mapping, image format detection, format categorization (excel, docx, pptx, html, eml, archive, image, pdf, csv, txt, json). \par \b Input\/ \:  None (statically defined mappings). \par \b Output\/ \:  Extension/MIME mapping tables, image extension lists. \par \b Links\/ \:  [USES_API(6): collections.namedtuple; READS_DATA_FROM(5): <ref refid="namespacededoc_1_1utils_1_1utils_1a206f2c493f11c36f1e7a952517c7324b" kindref="member">dedoc.utils.utils.get_extensions_by_mimes</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>mime2extension dictionary is a bijective-like mapping from MIME to extension (primary extension per MIME).</para>
+</listitem><listitem><para>All mappings are partitioned into three categories: recognized, converted, and recognized_mimes. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use namedtuple for the extension groups? A: Provides named access (e.g., <computeroutput>extensions.image_like_format</computeroutput>) with immutability, making the mapping tables self-documenting and resistant to accidental modification. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>DATA 10[Extension/MIME mapping registry] =&gt; Extensions, converted_extensions, converted_mimes, recognized_extensions, recognized_mimes, mime2extension FUNC 8[Aggregates all image extensions] =&gt; get_image_extensions \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[mime2extension]: MimeDetector =&gt; LookupExtensionByMime =&gt; FileExtension</para>
+</listitem><listitem><para>[get_image_extensions]: ImageReader =&gt; GetAllSupportedFormats =&gt; ExtensionList </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/extensions.py" line="170" column="1" bodyfile="dedoc/extensions.py" bodystart="170" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/extensions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

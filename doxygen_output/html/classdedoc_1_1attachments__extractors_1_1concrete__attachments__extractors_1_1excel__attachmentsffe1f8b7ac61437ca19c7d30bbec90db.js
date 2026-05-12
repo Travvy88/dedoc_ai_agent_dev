@@ -1,0 +1,5 @@
+var classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db =
+[
+    [ "__init__", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db.html#a7bc4306dbfb3c86cc1e4fb4872920d4c", null ],
+    [ "extract", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db.html#a73e88d71561e8e18dac385143d6e504b", null ]
+];

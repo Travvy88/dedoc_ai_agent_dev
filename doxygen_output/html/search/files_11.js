@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['scan_5fparagraph_5fclassifier_5fextractor_2epy_0',['scan_paragraph_classifier_extractor.py',['../scan__paragraph__classifier__extractor_8py.html',1,'']]],
+  ['scantable_2epy_1',['scantable.py',['../scantable_8py.html',1,'']]],
+  ['serializable_2epy_2',['serializable.py',['../serializable_8py.html',1,'']]],
+  ['shape_2epy_3',['shape.py',['../shape_8py.html',1,'']]],
+  ['simple_5ftxtlayer_5fclassifier_2epy_4',['simple_txtlayer_classifier.py',['../simple__txtlayer__classifier_8py.html',1,'']]],
+  ['size_5fannotation_2epy_5',['size_annotation.py',['../size__annotation_8py.html',1,'']]],
+  ['spacing_5fannotation_2epy_6',['spacing_annotation.py',['../spacing__annotation_8py.html',1,'']]],
+  ['split_5flast_5fhor_5funion_5fcells_2epy_7',['split_last_hor_union_cells.py',['../split__last__hor__union__cells_8py.html',1,'']]],
+  ['start_5fword_5fpattern_2epy_8',['start_word_pattern.py',['../start__word__pattern_8py.html',1,'']]],
+  ['strike_5fannotation_2epy_9',['strike_annotation.py',['../strike__annotation_8py.html',1,'']]],
+  ['structure_5fconstructor_5fcomposition_2epy_10',['structure_constructor_composition.py',['../structure__constructor__composition_8py.html',1,'']]],
+  ['structure_5fextractor_5fcomposition_2epy_11',['structure_extractor_composition.py',['../structure__extractor__composition_8py.html',1,'']]],
+  ['structure_5fextractor_5ferror_2epy_12',['structure_extractor_error.py',['../structure__extractor__error_8py.html',1,'']]],
+  ['stub_5fhierarchy_5flevel_5fbuilder_2epy_13',['stub_hierarchy_level_builder.py',['../stub__hierarchy__level__builder_8py.html',1,'']]],
+  ['style_5fannotation_2epy_14',['style_annotation.py',['../style__annotation_8py.html',1,'']]],
+  ['styles_5fextractor_2epy_15',['styles_extractor.py',['../styles__extractor_8py.html',1,'']]],
+  ['subscript_5fannotation_2epy_16',['subscript_annotation.py',['../subscript__annotation_8py.html',1,'']]],
+  ['superscript_5fannotation_2epy_17',['superscript_annotation.py',['../superscript__annotation_8py.html',1,'']]]
+];

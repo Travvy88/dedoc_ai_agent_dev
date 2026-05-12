@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1abstract__structure__constructor" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::abstract_structure_constructor</compoundname>
+    <innerclass refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor" prot="public">dedoc::structure_constructors::abstract_structure_constructor::AbstractStructureConstructor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1abstract__structure__constructor_1a86ea7100294aa4885e484036b8aa5e8d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_constructors::abstract_structure_constructor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_constructors.abstract_structure_constructor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/abstract_structure_constructor.py" line="35" column="1" bodyfile="dedoc/structure_constructors/abstract_structure_constructor.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1abstract__structure__constructor_1a6553f034f23853e44d37148e5eeaab6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.abstract_structure_constructor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.abstract_structure_constructor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the abstract interface that all structure constructors must implement, ensuring a uniform contract for transforming unstructured documents into parsed documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Abstract base class for document structure construction. \par \b Input\/ \:  None (interface definition only). \par \b Output\/ \:  Abstract class with a single abstract method <computeroutput>construct</computeroutput>. \par \b Links\/ \:  [USES_API(9): abc.ABC, abc.abstractmethod] \par \b Links to Spec\/ \:  REQ-STR-001: All structure constructors must implement construct(UnstructuredDocument) → ParsedDocument. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>AbstractStructureConstructor is an ABC and cannot be instantiated directly.</para>
+</listitem><listitem><para>construct returns ParsedDocument or raises an exception. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why ABC instead of protocol? A: ABC provides runtime enforcement via <computeroutput>@abstractmethod</computeroutput>, catching missing implementations at import time rather than at call time. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Abstract interface for structure constructors] =&gt; AbstractStructureConstructor METHOD 9[Transforms unstructured document to parsed document] =&gt; construct \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[construct]: StructureExtractor → TransformUnstructuredDocument → ProduceParsedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/abstract_structure_constructor.py" line="22" column="1" bodyfile="dedoc/structure_constructors/abstract_structure_constructor.py" bodystart="22" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/abstract_structure_constructor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

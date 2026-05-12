@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1parameter__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::parameter_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1parameter__utils_1a7dd8c079f9ad08f14fad9db9fb65a3df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::parameter_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.parameter_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="53" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1af5d36d11a5ab507299dfd4feb7b86602" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.parameter_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.parameter_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide a centralized set of parameter extraction and validation functions for the Dedoc API, normalizing user-supplied query parameters into typed values with sensible defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Boolean parameter parsing, language normalization, document type resolution, page slicing, GPU availability checking, path resolution. \par \b Input\/ \:  Optional dict of user parameters, logger instance. \par \b Output\/ \:  Typed primitive values (bool, str, int, Optional[int]). \par \b Links\/ \:  [USES_API(6): <ref refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" kindref="member">dedoc.config.get_config</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>All boolean extractors return False when parameters is None.</para>
+</listitem><listitem><para>get_param_page_slice raises ValueError on malformed page range strings.</para>
+</listitem><listitem><para>get_path_param always creates the target directory if it does not exist. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why have individual getters instead of a generic config object? A: Explicit per-parameter functions provide type safety, documented defaults, and IDE autocomplete — critical for a large API surface. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 5[Bool value coercion] =&gt; get_bool_value FUNC 6[Dict bool param extractor] =&gt; get_bool_parameter FUNC 5[Language normalization] =&gt; get_param_language FUNC 4[Document type extractor] =&gt; get_param_document_type FUNC 5[With attachments flag] =&gt; get_param_with_attachments FUNC 5[Content analysis flag] =&gt; get_param_need_content_analysis FUNC 5[Header/footer analysis flag] =&gt; get_param_need_header_footers_analysis FUNC 5[PDF table analysis flag] =&gt; get_param_need_pdf_table_analysis FUNC 5[GOST frame analysis flag] =&gt; get_param_need_gost_frame_analysis FUNC 5[Binarization flag] =&gt; get_param_need_binarization FUNC 5[One column document flag] =&gt; get_param_is_one_column_document FUNC 4[Document orientation] =&gt; get_param_document_orientation FUNC 5[PDF text layer mode] =&gt; get_param_pdf_with_txt_layer FUNC 4[Table type] =&gt; get_param_table_type FUNC 7[Page slice parsing] =&gt; get_param_page_slice FUNC 6[GPU availability check] =&gt; get_param_gpu_available FUNC 6[Path parameter resolver] =&gt; get_path_param FUNC 6[Attachments dir resolver] =&gt; get_param_attachments_dir \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_param_page_slice]: API → ParsePageRange → (first_page, last_page) tuple</para>
+</listitem><listitem><para>[get_param_gpu_available]: DedocManager → CheckGPU → Configuration updated </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="39" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a4d75875bfca0aa0e09e7f02af98dd280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_bool_value</definition>
+        <argsstring>(Optional[bool or str] parameter, bool default_value=False)</argsstring>
+        <name>get_bool_value</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_bool_value</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameter</declname>
+          <array>[bool or str]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>default_value</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To coerce an optional parameter into a boolean value, normalizing string &quot;true&quot;/&quot;false&quot; to Python bool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Optional[bool or str], bool) -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="60" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1adced58dc869048a18fd922f3980fe06d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_bool_parameter</definition>
+        <argsstring>(Optional[dict] parameters, str parameter_name, bool default_value=False)</argsstring>
+        <name>get_bool_parameter</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_bool_parameter</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>parameter_name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>default_value</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract a named boolean parameter from a dictionary with a default fallback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_bool_value \par \b I/O\/ \:  (Optional[dict], str, bool) -&gt; bool \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="73" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1adbbce47efd5d9f41b015290c11dca81c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_param_language</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_language</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_language</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To normalize a user-supplied language parameter into canonical short forms (rus, eng, rus+eng) for downstream OCR and NLP components. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="83" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="83" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a8561f21d2178192ad010ed48b45fe3ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_param_document_type</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_document_type</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_document_type</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract and normalize the document type parameter, defaulting to &quot;other&quot; for unrecognized types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="102" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1ab58db53632a50dde55624730dffba632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_with_attachments</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_with_attachments</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_with_attachments</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To determine whether the document processing should include attachment extraction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="114" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="114" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a00eda381e302a11b7fb8014e85481f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_need_content_analysis</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_need_content_analysis</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_need_content_analysis</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the content analysis flag controlling whether deep document content analysis is performed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="125" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="125" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1ad71c382954d40498df5f169503133b6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_need_header_footers_analysis</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_need_header_footers_analysis</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_need_header_footers_analysis</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the header/footer analysis flag for PDF document processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="136" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="136" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a00cca9e10fc74b40b19b49cd02d40e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_need_pdf_table_analysis</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_need_pdf_table_analysis</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_need_pdf_table_analysis</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the PDF table analysis flag, defaulting to True for table detection in PDF documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="148" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="148" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a22fcef39262ef75419f48dcfc0c184a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_need_gost_frame_analysis</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_need_gost_frame_analysis</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_need_gost_frame_analysis</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the GOST frame analysis flag for documents following Russian GOST standards. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="160" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="160" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a8b6aa9f537dd4482aaee130032d7e8d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_need_binarization</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_need_binarization</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_need_binarization</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the binarization flag for image preprocessing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="172" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="172" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a7926b44e5c37ab9e164f30b1489f6fd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[bool]</type>
+        <definition> Optional[bool] dedoc.utils.parameter_utils.get_param_is_one_column_document</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_is_one_column_document</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_is_one_column_document</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the one-column document layout flag, returning None for auto-detection mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; Optional[bool] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="184" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="184" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a57750adc72f908ceae7302f69e5d1eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[bool]</type>
+        <definition> Optional[bool] dedoc.utils.parameter_utils.get_param_document_orientation</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_document_orientation</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_document_orientation</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the document orientation parameter, returning None for auto-detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; Optional[bool] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="200" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="200" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1affb36c75e254b90f1003049900baf45e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_param_pdf_with_txt_layer</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_pdf_with_txt_layer</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_pdf_with_txt_layer</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To determine the PDF text layer processing mode (true, false, tabby, auto_tabby) which selects the appropriate reader strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="215" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="215" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a03ead768bfc765a557e21584b9d5b74f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_param_table_type</definition>
+        <argsstring>(Optional[dict] parameters)</argsstring>
+        <name>get_param_table_type</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_table_type</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract the table type parameter for specialized table handling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict] -&gt; str \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="227" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="227" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1ac6c54c68840a0974b848b6c60664bb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[Optional[int], Optional[int]]</type>
+        <definition> Tuple[Optional[int], Optional[int]] dedoc.utils.parameter_utils.get_param_page_slice</definition>
+        <argsstring>(Dict[str, Any] parameters)</argsstring>
+        <name>get_param_page_slice</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_page_slice</qualifiedname>
+        <param>
+          <type>Dict</type>
+          <declname>parameters</declname>
+          <array>[str, Any]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To parse a &quot;pages&quot; parameter string (e.g., &quot;1:5&quot;) into zero-indexed first and last page numbers, supporting open-ended ranges. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Dict[str, Any] -&gt; Tuple[Optional[int], Optional[int]] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="239" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="239" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1aa1db6bbfdd2495d8331d0cddd64b9934" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.utils.parameter_utils.get_param_gpu_available</definition>
+        <argsstring>(Optional[dict] parameters, Logger logger)</argsstring>
+        <name>get_param_gpu_available</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_gpu_available</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <param>
+          <type>Logger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To check GPU availability via nvidia-smi and update the parameter dict accordingly, preventing runtime errors from missing GPU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  subprocess \par \b I/O\/ \:  (Optional[dict], Logger) -&gt; bool \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="264" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="264" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a1ba9169bb893a06b3c83dd1698fa7fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_path_param</definition>
+        <argsstring>(Optional[dict] parameters, str path_key)</argsstring>
+        <name>get_path_param</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_path_param</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path_key</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve a path parameter from user input or config defaults, creating the directory if it does not exist. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_config \par \b I/O\/ \:  (Optional[dict], str) -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="287" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="287" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1parameter__utils_1a017f9af2c6e949025eb9fbaf808b6ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.parameter_utils.get_param_attachments_dir</definition>
+        <argsstring>(Optional[dict] parameters, str file_path)</argsstring>
+        <name>get_param_attachments_dir</name>
+        <qualifiedname>dedoc.utils.parameter_utils.get_param_attachments_dir</qualifiedname>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To resolve the attachments directory from user parameters or derive it from the input file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Optional[dict], str) -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/parameter_utils.py" line="305" column="1" bodyfile="dedoc/utils/parameter_utils.py" bodystart="305" bodyend="315"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/parameter_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

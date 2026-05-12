@@ -11,11 +11,13 @@ from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
 
+# region CLASS_ArticleReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class ArticleReader(BaseReader):
     """
     This class is used for parsing scientific articles with .pdf extension using `GROBID <https://grobid.readthedocs.io/en/latest/>`_ system.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, config: Optional[dict] = None) -> None:
         import os
         from dedoc.extensions import recognized_extensions, recognized_mimes
@@ -33,6 +35,8 @@ class ArticleReader(BaseReader):
         self.request_headers = {"Authorization": auth_key} if auth_key else {}
         self.grobid_is_alive = False
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method calls the service GROBID method ``/api/processFulltextDocument`` and analyzes the result (format XML/TEI) of the recognized article
@@ -78,6 +82,8 @@ class ArticleReader(BaseReader):
 
             return UnstructuredDocument(tables=tables, lines=lines, attachments=attachments, warnings=["use GROBID (version: 0.8.0)"])
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if:
@@ -99,6 +105,8 @@ class ArticleReader(BaseReader):
 
         return super().can_read(file_path=file_path, mime=mime, extension=extension)
 
+    # region METHOD___update_grobid_alive [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def __update_grobid_alive(self, grobid_url: str, max_attempts: int = 2) -> None:
         import time
         import requests
@@ -121,6 +129,8 @@ class ArticleReader(BaseReader):
 
         self.grobid_is_alive = False
 
+    # region METHOD___get_tag_by_hierarchy_path [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___update_grobid_alive
     def __get_tag_by_hierarchy_path(self, source: Tag, hierarchy_path: List[str]) -> Optional[str]:
         cur_tag = source
         for path_item in hierarchy_path:
@@ -131,6 +141,8 @@ class ArticleReader(BaseReader):
 
         return ArticleReader.__tag2text(cur_tag)
 
+    # region METHOD___create_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_tag_by_hierarchy_path
     def __create_line(self, text: str, hierarchy_level_id: Optional[int] = None, paragraph_type: Optional[str] = None,
                       annotations: Optional[List[Annotation]] = None, other_fields: Optional[Dict] = None) -> LineWithMeta:
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -151,6 +163,8 @@ class ArticleReader(BaseReader):
                             metadata=LineMetadata(page_id=0, line_id=0, tag_hierarchy_level=hierarchy_level, **other_fields),
                             annotations=annotations)
 
+    # region METHOD___parse_affiliation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___create_line
     def __parse_affiliation(self, affiliation_tag: Tag) -> List[LineWithMeta]:
         lines = [self.__create_line(text=affiliation_tag.get("key"), hierarchy_level_id=2, paragraph_type="author_affiliation")]
 
@@ -164,6 +178,8 @@ class ArticleReader(BaseReader):
 
         return lines
 
+    # region METHOD___parse_author [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_affiliation
     def __parse_author(self, author_tag: Tag) -> List[LineWithMeta]:
         """
         Example:
@@ -207,6 +223,8 @@ class ArticleReader(BaseReader):
 
         return lines
 
+    # region METHOD___parse_keywords [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_author
     def __parse_keywords(self, keywords_tag: Tag) -> List[LineWithMeta]:
         """
         <keywords>
@@ -222,6 +240,8 @@ class ArticleReader(BaseReader):
         lines += [self.__create_line(text=item.text, hierarchy_level_id=2, paragraph_type="keyword") for item in keywords_tag.find_all("term")]
         return lines
 
+    # region METHOD___create_line_with_refs [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_keywords
     def __create_line_with_refs(self, content: List[Tuple[str, Tag]], bib2uid: dict, table2uid: dict, attachment2uid: dict) -> LineWithMeta:
         from dedoc.data_structures.concrete_annotations.attach_annotation import AttachAnnotation
         from dedoc.data_structures.concrete_annotations.reference_annotation import ReferenceAnnotation
@@ -249,6 +269,8 @@ class ArticleReader(BaseReader):
 
         return self.__create_line(text=text, hierarchy_level_id=None, paragraph_type=None, annotations=annotations)
 
+    # region METHOD___parse_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___create_line_with_refs
     def __parse_text(self, soup: Tag, bib2uid: dict, table2uid: dict, attachment2uid: dict) -> List[LineWithMeta]:
         """
         Example of section XML tag:
@@ -270,6 +292,8 @@ class ArticleReader(BaseReader):
 
         return lines
 
+    # region METHOD___parse_section [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_text
     def __parse_section(self, section_tag: Tag, bib2uid: dict, table2uid: dict, attachment2uid: dict) -> List[LineWithMeta]:
         from dedoc.structure_extractors.feature_extractors.list_features.list_utils import get_dotted_item_depth
 
@@ -290,10 +314,14 @@ class ArticleReader(BaseReader):
 
         return lines
 
+    # endregion METHOD___parse_section
     @staticmethod
+    # region METHOD___tag2text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __tag2text(tag: Tag) -> str:
         return "" if not tag or not tag.string else tag.string
 
+    # region METHOD___parse_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___tag2text
     def __parse_tables(self, soup: Tag) -> Tuple[List[Table], dict]:
         """
         Example Table with table's ref:
@@ -346,6 +374,8 @@ class ArticleReader(BaseReader):
 
         return tables, table2uid
 
+    # region METHOD___parse_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_tables
     def __parse_images(self, soup: Tag, file_path: str, parameters: Optional[dict]) -> Tuple[List[AttachedFile], dict]:
         """
         Example Figure with figure's ref:
@@ -402,6 +432,8 @@ class ArticleReader(BaseReader):
 
         return attachments, attachment2uid
 
+    # region METHOD___get_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_images
     def __get_image(self, figure_tag: Tag, file_path: str, page_sizes: List[Tuple[float, float]]) -> Optional[ndarray]:
         """
         Crop the PDF page according to the figure's coordinates.
@@ -446,6 +478,8 @@ class ArticleReader(BaseReader):
         cropped = page_image[x_min:x_max, y_min:y_max]
         return cropped
 
+    # region METHOD___parse_bibliography [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_image
     def __parse_bibliography(self, soup: Tag) -> Tuple[List[LineWithMeta], dict]:
         """
         Reference Example:
@@ -532,11 +566,43 @@ class ArticleReader(BaseReader):
 
         return lines, cites
 
+    # region METHOD___parse_title [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_bibliography
     def __parse_title(self, soup: Tag) -> List[LineWithMeta]:
         return [self.__create_line(text=self.__tag2text(soup.title), hierarchy_level_id=0, paragraph_type="root")]
 
+    # region METHOD___remove_newlines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_title
     def __remove_newlines(self, tag: Tag) -> Tag:
         for item in tag:
             if not isinstance(item, Tag):
                 item.extract()
+# endregion CLASS_ArticleReader
         return tag
+
+    # endregion METHOD___remove_newlines
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_article_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse article documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: article format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [38][ArticleReader reader/processor] => ArticleReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(article) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: article_reader, dedoc, reader, article, ArticleReader, BaseReader, GROBID, scientific, article, PDF, TEI, XML, bibliography, references, authors, sections, figures, tables, BeautifulSoup, ArticleReader
+# STRUCTURE: ▶ Init ┌article file┐ → [ArticleReader] ○ can_read? → ○ read → [__init__ → read → can_read] → ⊕ UnstructuredDocument(lines, tables, attachments)

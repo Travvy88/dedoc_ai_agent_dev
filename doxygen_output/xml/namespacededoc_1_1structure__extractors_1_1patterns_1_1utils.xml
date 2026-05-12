@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1patterns_1_1utils" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::patterns::utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1patterns_1_1utils_1ac62a9eaed470621664ef7916459bae36" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::patterns::utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/utils.py" line="7" column="1" bodyfile="dedoc/structure_extractors/patterns/utils.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1patterns_1_1utils_1ac310a017a41f62184c48892ca393ca8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern" kindref="compound">AbstractPattern</ref></type>
+        <definition> AbstractPattern dedoc.structure_extractors.patterns.utils.get_pattern</definition>
+        <argsstring>(dict pattern_parameters)</argsstring>
+        <name>get_pattern</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.utils.get_pattern</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>pattern_parameters</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  get_pattern utility function \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  3 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/utils.py" line="14" column="1" bodyfile="dedoc/structure_extractors/patterns/utils.py" bodystart="14" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1patterns_1_1utils_1a11eb8c93c550152492357c0af2876a8c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.patterns.utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/patterns/utils: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/patterns/utils \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC [Weight 5][Utility] =&gt; get_pattern \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/utils.py" line="54" column="1" bodyfile="dedoc/structure_extractors/patterns/utils.py" bodystart="54" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/patterns/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

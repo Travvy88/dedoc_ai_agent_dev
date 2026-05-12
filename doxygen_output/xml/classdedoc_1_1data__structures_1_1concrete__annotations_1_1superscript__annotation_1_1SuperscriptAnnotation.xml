@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::concrete_annotations::superscript_annotation::SuperscriptAnnotation</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" prot="public" virt="non-virtual">dedoc.data_structures.annotation.Annotation</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1ab68487b1a1e13a2240631bd2d6297553" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.name</qualifiedname>
+        <initializer>=  &quot;superscript&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/superscript_annotation.py" line="14" column="1" bodyfile="dedoc/data_structures/concrete_annotations/superscript_annotation.py" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1aa4be844cf7e544b579317f262f824da4" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation::valid_values</definition>
+        <argsstring></argsstring>
+        <name>valid_values</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.valid_values</qualifiedname>
+        <initializer>=  [&quot;True&quot;, &quot;False&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/superscript_annotation.py" line="15" column="1" bodyfile="dedoc/data_structures/concrete_annotations/superscript_annotation.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1adf946abfa787d6447b653b7a1f1b959e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.__init__</definition>
+        <argsstring>(self, int start, int end, str value)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize superscript annotation with validated boolean value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  Annotation.__init__ \par \b I/O\/ \:  (int, int, str) -&gt; None \par \b Complexity\/ \:  3</para>
+<para>:param start: start of the superscript text :param end: end of the superscript text (not included) :param value: True if superscript else False (False usually isn&apos;t used because you may not use this annotation at all) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/superscript_annotation.py" line="22" column="1" bodyfile="dedoc/data_structures/concrete_annotations/superscript_annotation.py" bodystart="22" bodyend="34"/>
+        <references refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1adf946abfa787d6447b653b7a1f1b959e" compoundref="superscript__annotation_8py" startline="22" endline="34">dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.__init__</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1adf946abfa787d6447b653b7a1f1b959e" compoundref="superscript__annotation_8py" startline="22" endline="34">dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Mark superscript text inside the line. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Superscript text inside the line. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/concrete_annotations/superscript_annotation.py" line="10" column="1" bodyfile="dedoc/data_structures/concrete_annotations/superscript_annotation.py" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1adf946abfa787d6447b653b7a1f1b959e" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::superscript_annotation::SuperscriptAnnotation</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1ab68487b1a1e13a2240631bd2d6297553" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::superscript_annotation::SuperscriptAnnotation</scope><name>name</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation_1aa4be844cf7e544b579317f262f824da4" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::superscript_annotation::SuperscriptAnnotation</scope><name>valid_values</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

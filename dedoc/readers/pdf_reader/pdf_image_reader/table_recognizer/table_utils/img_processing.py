@@ -273,3 +273,37 @@ def detect_tables_by_contours(img: np.ndarray, language: str = "rus", table_type
         tree_table.print_tree(depth=0)
 
     return tree_table, contours, angle_rotate
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_img_processing; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## FUNC [5][rotate_with_threshold utility/helper] => rotate_with_threshold
+## FUNC [5][apply_houph_line utility/helper] => apply_houph_line
+## FUNC [5][get_contours_cells utility/helper] => get_contours_cells
+## FUNC [5][__get_contours_for_table_wo_external_bounds utility/helper] => __get_contours_for_table_wo_external_bounds
+## FUNC [5][__filter_table utility/helper] => __filter_table
+## FUNC [5][__get_table_contours utility/helper] => __get_table_contours
+## FUNC [5][__apply_houph_lines_and_detect_angle utility/helper] => __apply_houph_lines_and_detect_angle
+## FUNC [5][detect_horizontal_and_vertical_lines utility/helper] => detect_horizontal_and_vertical_lines
+## FUNC [5][__paint_bounds utility/helper] => __paint_bounds
+## FUNC [5][detect_tables_by_contours utility/helper] => detect_tables_by_contours
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: img_processing, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, rotate_with_threshold, apply_houph_line, get_contours_cells, __get_contours_for_table_wo_external_bounds, __filter_table, __get_table_contours, __apply_houph_lines_and_detect_angle, detect_horizontal_and_vertical_lines, __paint_bounds, detect_tables_by_contours
+# STRUCTURE: ▶ Input → ○ rotate_with_threshold → apply_houph_line → get_contours_cells → ⊕ result

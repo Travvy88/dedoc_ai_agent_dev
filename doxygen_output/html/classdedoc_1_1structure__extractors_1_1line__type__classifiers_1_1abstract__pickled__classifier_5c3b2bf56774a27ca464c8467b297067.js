@@ -1,0 +1,8 @@
+var classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067 =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html#ac0846961d0fcae6445c19d875fc60270", null ],
+    [ "load", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html#a540c7df69fecca4fa7cc3ae8e3c53ac8", null ],
+    [ "save", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html#a67f370da72eb8f579889fa0dd775bef3", null ],
+    [ "config", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html#a70fbab63d7211444622481ff8bbfe01f", null ],
+    [ "logger", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html#a615c6049d4bbdbec0cd52ab1c42e3992", null ]
+];

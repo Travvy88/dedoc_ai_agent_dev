@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_constructors::abstract_structure_constructor::AbstractStructureConstructor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor" prot="public" virt="non-virtual">dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor" prot="public" virt="non-virtual">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition" prot="public" virt="non-virtual">dedoc.structure_constructors.structure_constructor_composition.StructureConstructorComposition</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor_1a39c56b6a39b90c937fc852e5971b88cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref></type>
+        <definition> ParsedDocument dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor.construct</definition>
+        <argsstring>(self, UnstructuredDocument document, Optional[dict] parameters=None)</argsstring>
+        <name>construct</name>
+        <qualifiedname>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor.construct</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor_1afd8416a8c111ce6af4676e527300c59d">construct</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor_1ac7bead4284fc7d3c2708218634c1ecc5">construct</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition_1ae9594591843ff52e696bb587ca0f53d5">construct</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Transform an intermediate UnstructuredDocument into a final ParsedDocument by applying the specific structure construction algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  UnstructuredDocument, ParsedDocument \par \b I/O\/ \:  UnstructuredDocument, Optional[dict] -&gt; ParsedDocument \par \b Complexity\/ \:  10 (dispatched to concrete implementations)</para>
+<para>Process unstructured document and build parsed document representation on this basis.</para>
+<para>:param document: intermediate representation of the document received from some structure extractor \ (there should be filled hierarchy levels for all lines) :param parameters: additional parameters for document parsing, see :ref:<computeroutput>structure_type_parameters</computeroutput> for more details :return: the structured representation of the given document </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/abstract_structure_constructor.py" line="58" column="1" bodyfile="dedoc/structure_constructors/abstract_structure_constructor.py" bodystart="58" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Define a uniform contract for all structure constructors: given an intermediate document representation, produce a fully structured parsed document. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class construct structured representation of the document from unstructured document (list of lines).</para>
+<para>The result class :class:<computeroutput>~dedoc.data_structures.ParsedDocument</computeroutput> contains :class:<computeroutput>~dedoc.data_structures.DocumentContent</computeroutput> consisting of tables and the structure itself. This structure is formed based on the list of :class:<computeroutput>~dedoc.data_structures.LineWithMeta</computeroutput> with their types and hierarchy levels, that are retrieved with the help of some structure extractor.</para>
+<para>The order of the document lines and their hierarchy can be represented in different ways, e.g. standard tree of lines hierarchy. Also, some other custom structure can be defined by the specific constructor. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.TreeConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.structure_constructors.structure_constructor_composition.StructureConstructorComposition</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_constructors/abstract_structure_constructor.py" line="39" column="1" bodyfile="dedoc/structure_constructors/abstract_structure_constructor.py" bodystart="39" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor_1a39c56b6a39b90c937fc852e5971b88cc" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::abstract_structure_constructor::AbstractStructureConstructor</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

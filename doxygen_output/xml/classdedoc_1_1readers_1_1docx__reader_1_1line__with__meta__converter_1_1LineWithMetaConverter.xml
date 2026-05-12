@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1ac50fc007e00c6300aebd7e46b4b47a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter::dict2annotation</definition>
+        <argsstring></argsstring>
+        <name>dict2annotation</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.dict2annotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="34" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" compoundref="line__with__meta__converter_8py" startline="42" endline="66">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a243dc6d159678d66b00dc48acc6170f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter::annotation_merger</definition>
+        <argsstring></argsstring>
+        <name>annotation_merger</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.annotation_merger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="35" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" compoundref="line__with__meta__converter_8py" startline="42" endline="66">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a6fcf28f17ce5fb688105da968324a7aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter::paragraph</definition>
+        <argsstring></argsstring>
+        <name>paragraph</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.paragraph</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="37" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.line</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="38" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" compoundref="data__structures_2line__with__meta_8py" startline="88" endline="89">dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ae47e49bba8cc4399b7d47510416df6a6" compoundref="toc__feature__extractor_8py" startline="34" endline="41">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.filter_toc_line</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1e4ffd4a538ee55ef92850fab12e7988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__init__</definition>
+        <argsstring>(self, Paragraph paragraph, int paragraph_id)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph" kindref="compound">Paragraph</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>paragraph_id</declname>
+        </param>
+        <briefdescription>
+<para>Converts custom DOCX Paragraph to LineWithMeta class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param paragraph: Paragraph for converting its properties to the unified representation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="28" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="28" bodyend="39"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</definition>
+        <argsstring>(self, Paragraph paragraph, int paragraph_id)</argsstring>
+        <name>__parse</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph" kindref="compound">Paragraph</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>paragraph_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="42" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="42" bodyend="66"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af362548c212eb78a19865bb95de8089f" compoundref="pdf__tabby__reader_8py" startline="347" endline="359">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__get_tag</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a98c93cf6612030940bc879f0f72f72d9" compoundref="line__with__meta__converter_8py" startline="69" endline="79">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__get_tag</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a243dc6d159678d66b00dc48acc6170f3" compoundref="line__with__meta__converter_8py" startline="35">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.annotation_merger</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1ad2263eba421511d2be0b43e8637a95ae" compoundref="pptx__reader_2paragraph_8py" startline="35">dedoc.readers.pptx_reader.paragraph.PptxParagraph.annotation_merger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1ac50fc007e00c6300aebd7e46b4b47a" compoundref="line__with__meta__converter_8py" startline="34">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.dict2annotation</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a31507dd5cc60badae7ba9bcc8ca64b48" compoundref="pptx__reader_2paragraph_8py" startline="37">dedoc.readers.pptx_reader.paragraph.PptxParagraph.dict2annotation</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a98c93cf6612030940bc879f0f72f72d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref></type>
+        <definition> HierarchyLevel dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__get_tag</definition>
+        <argsstring>(self, Paragraph paragraph)</argsstring>
+        <name>__get_tag</name>
+        <qualifiedname>dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__get_tag</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph" kindref="compound">Paragraph</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="69" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="69" bodyend="79"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1a7c86dd2be5647d7b9225bbdf4ac92a6b" compoundref="pdf__tabby__reader_8py" startline="280" endline="344">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__get_lines_with_location</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" compoundref="line__with__meta__converter_8py" startline="42" endline="66">dedoc.readers.docx_reader.line_with_meta_converter.LineWithMetaConverter.__parse</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/line_with_meta_converter.py" line="25" column="1" bodyfile="dedoc/readers/docx_reader/line_with_meta_converter.py" bodystart="25" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a98c93cf6612030940bc879f0f72f72d9" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>__get_tag</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1e4ffd4a538ee55ef92850fab12e7988" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a5281dea6631f8c70db86f427f68f268a" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>__parse</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a243dc6d159678d66b00dc48acc6170f3" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>annotation_merger</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a1ac50fc007e00c6300aebd7e46b4b47a" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>dict2annotation</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1ad543265690f3070e47bde185c4e4445d" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>line</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1line__with__meta__converter_1_1LineWithMetaConverter_1a6fcf28f17ce5fb688105da968324a7aa" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::line_with_meta_converter::LineWithMetaConverter</scope><name>paragraph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

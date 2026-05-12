@@ -14,8 +14,10 @@ from dedoc.readers.pdf_reader.data_classes.tables.location import Location
 from dedoc.readers.pdf_reader.data_classes.tables.scantable import ScanTable
 
 
+# region CLASS_LineObjectLinker [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class LineObjectLinker:
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict) -> None:
         """
         link page object (as table, image etc) with text line. Add annotation about page object location to line
@@ -24,6 +26,8 @@ class LineObjectLinker:
         self.config = config
         self.logger = config.get("logger", logging.getLogger())
 
+    # region METHOD_link_objects [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def link_objects(self, lines: List[LineWithLocation], tables: List[ScanTable], images: List[PdfImageAttachment]) -> List[LineWithLocation]:
         """
         add annotations to lines. Add annotations with links to the tables, images and other objects. Add spacing links
@@ -60,6 +64,8 @@ class LineObjectLinker:
             best_line.annotations.append(annotation)
         return lines
 
+    # region METHOD__add_lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_link_objects
     def _add_lines(self, all_objects: List[Union[LineWithLocation, ScanTable, PdfImageAttachment]], lines_key: str, objects_with_line_candidate: dict) -> None:
         lines_deque = deque(maxlen=self.n_lines)
         for page_object in all_objects:
@@ -70,6 +76,8 @@ class LineObjectLinker:
                 objects_with_line_candidate[page_object.uid]["object"] = page_object
                 objects_with_line_candidate[page_object.uid][lines_key] = lines
 
+    # region METHOD__find_closest_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__add_lines
     def _find_closest_line(self,
                            page_object: Union[ScanTable, PdfImageAttachment],
                            lines_before: List[LineWithLocation],
@@ -97,7 +105,9 @@ class LineObjectLinker:
         line_with_distance = [(self._distance_bboxes(line, page_object.location.bbox), line) for line in line_on_same_page]
         return min(line_with_distance, key=lambda t: t[0])[1]
 
+    # endregion METHOD__find_closest_line
     @staticmethod
+    # region METHOD__distance_bboxes [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def _distance_bboxes(line: LineWithLocation, object_bbox: BBox) -> float:
         """
         calculate the "distance between two bboxes"
@@ -120,8 +130,38 @@ class LineObjectLinker:
         assert horizontal_intersection >= 0
         return vertical_distance - horizontal_intersection + special_distance
 
+    # region METHOD__get_last_page_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__distance_bboxes
     def _get_last_page_line(self, lines: List[LineWithLocation]) -> Dict[int, LineWithLocation]:
         result = {}
         for line in lines:
             result[line.location.page_number] = line
+# endregion CLASS_LineObjectLinker
         return result
+
+    # endregion METHOD__get_last_page_line
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_line_object_linker; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Utility functions for document processing.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [12][LineObjectLinker reader/processor] => LineObjectLinker
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: line_object_linker, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, LineObjectLinker
+# STRUCTURE: ▶ Init ┌PDF file┐ → [LineObjectLinker] ○ can_read? → ○ read → [__init__ → link_objects → _add_lines] → ⊕ UnstructuredDocument(lines, tables, attachments)

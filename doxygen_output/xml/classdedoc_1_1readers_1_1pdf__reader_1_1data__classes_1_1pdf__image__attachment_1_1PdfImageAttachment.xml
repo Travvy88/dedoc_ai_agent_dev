@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment::PdfImageAttachment</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" prot="public" virt="non-virtual">dedoc.data_structures.attached_file.AttachedFile</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1a6839a6820611833dfc636b1bff17f037" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment.location</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1ad1aac9fe4ed6f829148f82140b8eab48" compoundref="columns__orientation__classifier_8py" startline="72" endline="85">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier._load_weights</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1a198d085d585511eb4a418150bc617c07" compoundref="line__with__location_8py" startline="24" endline="27">dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation.shift</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1a9560c52bacb375766e38aff350c7425d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment.order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix_1af5902c63fcbead8464b8bfe33ad9a673" compoundref="letter__prefix_8py" startline="47" endline="50">dedoc.structure_extractors.feature_extractors.list_features.prefix.letter_prefix.LetterPrefix.predecessor</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1ad49100cbb4bd59d4dd6eb98e034c561c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment.__init__</definition>
+        <argsstring>(self, str original_name, str tmp_file_path, bool need_content_analysis, str uid, Location location, int order=-1)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>original_name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>tmp_file_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>need_content_analysis</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location" kindref="compound">Location</ref></type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize attached file metadata with original name, temp path, content analysis flag, and UID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (str, str, bool, str) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param original_name: original name of the attached file :param tmp_file_path: path to the attachment file :param need_content_analysis: indicator should we parse the attachment&apos;s content or simply save it without parsing :param uid: unique identifier of the attachment </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="13" bodyend="18"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.attached_file.AttachedFile</label>
+        <link refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.attached_file.AttachedFile</label>
+        <link refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile"/>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="10" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="10" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1ad49100cbb4bd59d4dd6eb98e034c561c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment::PdfImageAttachment</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1a6839a6820611833dfc636b1bff17f037" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment::PdfImageAttachment</scope><name>location</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1a9560c52bacb375766e38aff350c7425d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment::PdfImageAttachment</scope><name>order</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

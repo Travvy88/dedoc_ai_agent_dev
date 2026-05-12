@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::converters::converter_composition::ConverterComposition</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a134f7db61cf6c81db9c978a7d4bf445b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.converters.converter_composition.ConverterComposition::converters</definition>
+        <argsstring></argsstring>
+        <name>converters</name>
+        <qualifiedname>dedoc.converters.converter_composition.ConverterComposition.converters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/converter_composition.py" line="29" column="1" bodyfile="dedoc/converters/converter_composition.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a950b172da7cf38dc5cfa52edf7f81120" compoundref="converter__composition_8py" startline="37" endline="63">dedoc.converters.converter_composition.ConverterComposition.convert</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1aca2df69d5eb9b7eb64881d4c56102cb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.converters.converter_composition.ConverterComposition.__init__</definition>
+        <argsstring>(self, List[AbstractConverter] converters)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.converters.converter_composition.ConverterComposition.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>converters</declname>
+          <array>[AbstractConverter]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize the converter chain with an ordered list of converters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  List, AbstractConverter \par \b I/O\/ \:  converters: List[AbstractConverter] -&gt; None \par \b Complexity\/ \:  1</para>
+<para>:param converters: the list of converters that have methods can_convert() and convert(), they are used for files converting into specified formats </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/converter_composition.py" line="24" column="1" bodyfile="dedoc/converters/converter_composition.py" bodystart="24" bodyend="29"/>
+        <references refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a950b172da7cf38dc5cfa52edf7f81120" compoundref="converter__composition_8py" startline="37" endline="63">dedoc.converters.converter_composition.ConverterComposition.convert</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a950b172da7cf38dc5cfa52edf7f81120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.converters.converter_composition.ConverterComposition.convert</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None, Optional[str] extension=None, Optional[str] mime=None)</argsstring>
+        <name>convert</name>
+        <qualifiedname>dedoc.converters.converter_composition.ConverterComposition.convert</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert a file using the first suitable converter from the chain, falling back to the original file if no converter matches. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  os, stat, get_mime_extension, AbstractConverter.can_convert, AbstractConverter.convert \par \b I/O\/ \:  file_path: str, parameters: Optional[dict], extension: Optional[str], mime: Optional[str] -&gt; str \par \b Complexity\/ \:  5</para>
+<para>Convert file if there is the converter that can do it. If there isn&apos;t any converter that is able to convert the file, it isn&apos;t changed.</para>
+<para>:param file_path: path of the file to convert :param parameters: parameters of converting, see :ref:<computeroutput>parameters_description</computeroutput> for more details :param extension: file extension, for example .doc or .pdf :param mime: MIME type of file :return: path of converted file if conversion was executed else path of the original file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/converter_composition.py" line="37" column="1" bodyfile="dedoc/converters/converter_composition.py" bodystart="37" bodyend="63"/>
+        <references refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a134f7db61cf6c81db9c978a7d4bf445b" compoundref="converter__composition_8py" startline="29">dedoc.converters.converter_composition.ConverterComposition.converters</references>
+        <referencedby refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1aca2df69d5eb9b7eb64881d4c56102cb7" compoundref="converter__composition_8py" startline="24" endline="29">dedoc.converters.converter_composition.ConverterComposition.__init__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To orchestrate a chain of format-specific converters, applying the first suitable one to a given file, so the caller does not need to know which converter handles which format. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class allows to convert any document into the predefined list of formats according to the available list of converters. The list of converters is set via the class constructor. The first suitable converter is used (the one whose method :meth:<computeroutput>~dedoc.converters.AbstractConverter.can_convert</computeroutput> returns True), \ so the order of converters is important. </para>
+    </detaileddescription>
+    <location file="dedoc/converters/converter_composition.py" line="11" column="1" bodyfile="dedoc/converters/converter_composition.py" bodystart="11" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1aca2df69d5eb9b7eb64881d4c56102cb7" prot="public" virt="non-virtual"><scope>dedoc::converters::converter_composition::ConverterComposition</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a950b172da7cf38dc5cfa52edf7f81120" prot="public" virt="non-virtual"><scope>dedoc::converters::converter_composition::ConverterComposition</scope><name>convert</name></member>
+      <member refid="classdedoc_1_1converters_1_1converter__composition_1_1ConverterComposition_1a134f7db61cf6c81db9c978a7d4bf445b" prot="public" virt="non-virtual"><scope>dedoc::converters::converter_composition::ConverterComposition</scope><name>converters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

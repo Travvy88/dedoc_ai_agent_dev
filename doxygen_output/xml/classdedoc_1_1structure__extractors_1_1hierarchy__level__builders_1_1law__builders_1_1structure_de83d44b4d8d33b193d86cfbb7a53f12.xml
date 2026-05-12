@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit::AbstractStructureUnit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">abc.ABC</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138" prot="public" virt="non-virtual">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.foiv_structure_unit.FoivStructureUnitBuilder</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da" prot="public" virt="non-virtual">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.law_structure_unit.LawStructureUnitBuilder</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12_1aada7dfb53baff36b19dcd80b6cbcf93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[<ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref>, Optional[<ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref>]]</type>
+        <definition> Tuple[HierarchyLevel, Optional[HierarchyLevel]] dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit.AbstractStructureUnit.structure_unit</definition>
+        <argsstring>(self, str text, int init_hl_depth, Optional[HierarchyLevel] previous_hl)</argsstring>
+        <name>structure_unit</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit.AbstractStructureUnit.structure_unit</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138_1a903a1d7001e305c649d91fdaedafbb73">structure_unit</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da_1a51dafd87573d66c96f469d5b2fc7a0bb">structure_unit</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>init_hl_depth</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>previous_hl</declname>
+          <array>[HierarchyLevel]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  structure_unit method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit.py" line="19" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit.py" bodystart="19" bodyend="22"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  AbstractStructureUnit for document structure extraction pipeline </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>abc.ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit.AbstractStructureUnit</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.foiv_structure_unit.FoivStructureUnitBuilder</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.law_structure_unit.LawStructureUnitBuilder</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>abc.ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit.AbstractStructureUnit</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit.py" line="12" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit.py" bodystart="12" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12_1aada7dfb53baff36b19dcd80b6cbcf93e" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit::AbstractStructureUnit</scope><name>structure_unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

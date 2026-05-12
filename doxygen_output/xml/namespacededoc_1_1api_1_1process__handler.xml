@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1process__handler" kind="namespace" language="Python">
+    <compoundname>dedoc::api::process_handler</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler" prot="public">dedoc::api::process_handler::AbstractProcessHandler</innerclass>
+    <innerclass refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler" prot="public">dedoc::api::process_handler::CancellationProcessHandler</innerclass>
+    <innerclass refid="classdedoc_1_1api_1_1process__handler_1_1ProcessHandler" prot="public">dedoc::api::process_handler::ProcessHandler</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1process__handler_1a3c95a1d62c36f6af04a0edf2b27b2188" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::process_handler.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.process_handler.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/process_handler.py" line="55" column="1" bodyfile="dedoc/api/process_handler.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1process__handler_1aa2fd64b615bc7026fd075ba4741d0df4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.process_handler._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.process_handler._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Implement document parsing request handlers with support for client disconnect cancellation via multiprocessing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides a synchronous handler and an async handler with child process isolation. \par \b Scope\/ \:  Request processing pipeline — synchronous parsing (ProcessHandler) and cancellable multiprocessing parsing (CancellationProcessHandler). \par \b Input\/ \:  Request, parameters dict, file_path, tmpdir. \par \b Output\/ \:  Optional[ParsedDocument] — parsed document or None if cancelled. \par \b Links\/ \:  [USES_API(9): multiprocessing.Process, multiprocessing.Queue; USES_API(8): anyio.get_cancelled_exc_class; READS_DATA_FROM(9): <ref refid="classdedoc_1_1dedoc__manager_1_1DedocManager" kindref="compound">dedoc.dedoc_manager.DedocManager</ref>, <ref refid="namespacededoc_1_1api_1_1cancellation" kindref="compound">dedoc.api.cancellation</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>CancellationProcessHandler.process is always restarted if terminated (None check in handle).</para>
+</listitem><listitem><para>_parse_file runs in a background process with signal isolation to prevent master process termination.</para>
+</listitem><listitem><para>Pickle is used for IPC (Queue) between master and child processes. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why multiprocessing for cancellation? A: FastAPI&apos;s asyncio cannot forcefully terminate CPU-bound document parsing. A separate process allows full process termination on client disconnect, freeing resources immediately. Q: Why pickle-based IPC? A: Python&apos;s multiprocessing.Queue requires picklable objects. Pickle is the standard serialization for this use case, though it requires ParsedDocument and DedocError to be picklable. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 7[Abstract base for process handlers] =&gt; AbstractProcessHandler METHOD 5[Attaches base64-encoded data to attachment metadata] =&gt; _add_base64_info_to_attachments CLASS 8[Synchronous document handler using DedocManager directly] =&gt; ProcessHandler CLASS 10[Async handler with multiprocessing child process for cancellable parsing] =&gt; CancellationProcessHandler METHOD 9[Handle request with client disconnect monitoring and IPC] =&gt; CancellationProcessHandler.handle METHOD 9[Background child process loop — parses files from input queue] =&gt; _parse_file \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ProcessHandler]: ApiEndpoint =&gt; ParseDocumentSynchronously =&gt; ReturnResult</para>
+</listitem><listitem><para>[CancellationProcessHandler]: ApiEndpoint =&gt; ParseWithDisconnectSupport =&gt; CancelOnClientDisconnect </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/process_handler.py" line="29" column="1" bodyfile="dedoc/api/process_handler.py" bodystart="29" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/process_handler.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

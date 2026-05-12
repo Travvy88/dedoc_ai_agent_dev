@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_a6fe454910d2c6f456b75ad2bdfd4b6b" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2columns__orientation__classifier_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="columns__orientation__classifier_8py">columns_orientation_classifier.py</innerfile>
+    <innerfile refid="dataset__executor_8py">dataset_executor.py</innerfile>
+    <innerfile refid="pdf__image__reader_2columns__orientation__classifier_2model_8py">model.py</innerfile>
+    <innerfile refid="transforms_8py">transforms.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/"/>
+  </compounddef>
+</doxygen>

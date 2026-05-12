@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="letter__list__pattern_8py" kind="file" language="Python">
+    <compoundname>letter_list_pattern.py</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern" prot="public">dedoc::structure_extractors::patterns::letter_list_pattern::LetterListPattern</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1patterns">dedoc::structure_extractors::patterns</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern">dedoc::structure_extractors::patterns::letter_list_pattern</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional,<sp/>Union</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1any__letter__prefix" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features.prefix.any_letter_prefix</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AnyLetterPrefix</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern" kindref="compound">dedoc.structure_extractors.patterns.regexp_pattern</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>RegexpPattern</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1ad756e2758ada4f612e2ce2d0c68adc37" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_LetterListPattern<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(PatternMatching):<sp/>...;<sp/>TECH(Regexp):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>LetterListPattern<sp/>for<sp/>document<sp/>structure<sp/>extraction<sp/>pipeline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern" kindref="compound">LetterListPattern</ref>(<ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern" kindref="compound">RegexpPattern</ref>):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Pattern<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>matching<sp/>lists<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>letters<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>brackets,<sp/>e.g.</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>::</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a)<sp/>first<sp/>element</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b)<sp/>second<sp/>element</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>(example<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>Armenian<sp/>language)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>::</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ա)<sp/>տեղաբաշխել</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>բ)<sp/>Հայաստանի<sp/>Հանրապետության</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>գ)<sp/>սահմանապահ<sp/>վերակարգերի</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>..<sp/>note::</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>pattern<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>case-insensitive<sp/>(lower<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>upper<sp/>letters<sp/>are<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>differed).</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Example<sp/>of<sp/>library<sp/>usage:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>..<sp/>code-block::<sp/>python</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors" kindref="compound">dedoc.structure_extractors</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DefaultStructureExtractor</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1patterns" kindref="compound">dedoc.structure_extractors.patterns</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LetterListPattern</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reader<sp/>=<sp/>...</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>structure_extractor<sp/>=<sp/><ref refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c" kindref="compound">DefaultStructureExtractor</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>patterns<sp/>=<sp/>[<ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern" kindref="compound">LetterListPattern</ref>(line_type=</highlight><highlight class="stringliteral">&quot;list_item&quot;</highlight><highlight class="normal">,<sp/>level_1=1,<sp/>level_2=1,<sp/>can_be_multiline=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document<sp/>=<sp/>reader.read(file_path=file_path)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>document<sp/>=<sp/>structure_extractor.extract(document=document,<sp/>parameters={</highlight><highlight class="stringliteral">&quot;patterns&quot;</highlight><highlight class="normal">:<sp/>patterns})</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>Example<sp/>of<sp/>API<sp/>usage:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>..<sp/>code-block::<sp/>python</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>requests</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>patterns<sp/>=<sp/>[{</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;letter_list&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;line_type&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;list_item&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;level_1&quot;</highlight><highlight class="normal">:<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;level_2&quot;</highlight><highlight class="normal">:<sp/>1,<sp/></highlight><highlight class="stringliteral">&quot;can_be_multiline&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;false&quot;</highlight><highlight class="normal">}]</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parameters<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;patterns&quot;</highlight><highlight class="normal">:<sp/>str(patterns)}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(file_path,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>file:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>files<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;file&quot;</highlight><highlight class="normal">:<sp/>(file_name,<sp/>file)}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>requests.post(</highlight><highlight class="stringliteral">&quot;http://localhost:1231/upload&quot;</highlight><highlight class="normal">,<sp/>files=files,<sp/>data=parameters)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="58" refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a975117dbdb52b1eccc5e1c4d4e5c7808" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>_name<sp/>=<sp/>&quot;letter_list&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>__init__<sp/>method</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a4e97a4b330c5c9e9ce6328c73777e904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a4e97a4b330c5c9e9ce6328c73777e904" kindref="member">__init__</ref>(self,<sp/>line_type:<sp/>str,<sp/>level_1:<sp/>int,<sp/>level_2:<sp/>int,<sp/>can_be_multiline:<sp/>Optional[Union[bool,<sp/>str]]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][LetterListPattern][__init___INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a4e97a4b330c5c9e9ce6328c73777e904" kindref="member">__init__</ref>(regexp=AnyLetterPrefix.regexp,<sp/>line_type=line_type,<sp/>level_1=level_1,<sp/>level_2=level_2,<sp/>can_be_multiline=can_be_multiline)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_LetterListPattern</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(PatternMatching):<sp/>...;<sp/>TECH(Regexp):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/patterns/letter_list_pattern:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/patterns/letter_list_pattern</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">##<sp/>CLASS<sp/>[Weight<sp/>7][Structure<sp/>extraction]<sp/>=&gt;<sp/>LetterListPattern</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1a7d49f1c7b1f3f5db29ed1291dcb04aae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1a7d49f1c7b1f3f5db29ed1291dcb04aae" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>patterns,<sp/>letter<sp/>list<sp/>pattern</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/patterns/letter_list_pattern<sp/>→<sp/>○<sp/>LetterListPattern.cls<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/patterns/letter_list_pattern.py"/>
+  </compounddef>
+</doxygen>

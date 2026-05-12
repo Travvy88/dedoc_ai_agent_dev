@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::concrete_structure_extractors::tz_structure_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor" prot="public">dedoc::structure_extractors::concrete_structure_extractors::tz_structure_extractor::TzStructureExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1a5ddcc1ecbba2f2072bb21179b02e8d3b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::concrete_structure_extractors::tz_structure_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.concrete_structure_extractors.tz_structure_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.py" line="7" column="1" bodyfile="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1aa4d6a5e67b3676ac3c1dc24b0d5a8adf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.concrete_structure_extractors.tz_structure_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.concrete_structure_extractors.tz_structure_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/concrete_structure_extractors/tz_structure_extractor: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/concrete_structure_extractors/tz_structure_extractor \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS [Weight 7][Structure extraction] =&gt; TzStructureExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.py" line="116" column="1" bodyfile="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.py" bodystart="116" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_result::TxtLayerResult</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a64a32f6f7994914b9a371e0de198a81c" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult::correct</definition>
+        <argsstring></argsstring>
+        <name>correct</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.correct</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" line="21" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a39b65906f60fb85be9a40cbf6a5df7f9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" line="22" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a38a8240c88175f1b9568892e6383f7ac" prot="public" static="yes" mutable="no">
+        <type>Optional</type>
+        <definition>Optional dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.end</qualifiedname>
+        <initializer>[int]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a8392753ea0cadfb72707fa54c5b1c4d5" prot="public" static="yes" mutable="no">
+        <type>Optional</type>
+        <definition>Optional dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult::document</definition>
+        <argsstring></argsstring>
+        <name>document</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.document</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for saving information about textual layer correctness of the document chunk. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>correct - if the document chunk contains correct textual layer or not</para>
+</listitem><listitem><para>start - start page of the document chunk (numeration starts with 1)</para>
+</listitem><listitem><para>end - end page of the document chunk (numeration starts with 1, end included)</para>
+</listitem><listitem><para>document - UnstructuredDocument of document pages[start:end] </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>document</edgelabel>
+          <edgelabel>end</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_result.py" bodystart="13" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a64a32f6f7994914b9a371e0de198a81c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_result::TxtLayerResult</scope><name>correct</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a8392753ea0cadfb72707fa54c5b1c4d5" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_result::TxtLayerResult</scope><name>document</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a38a8240c88175f1b9568892e6383f7ac" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_result::TxtLayerResult</scope><name>end</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a39b65906f60fb85be9a40cbf6a5df7f9" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_result::TxtLayerResult</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
