@@ -15,8 +15,10 @@ from dedoc.utils.parameter_utils import get_bool_parameter, get_param_page_slice
 from dedoc.utils.pdf_utils import get_pdf_page_count
 
 
+# region CLASS_TxtLayerDetector [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class TxtLayerDetector:
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, pdf_reader: PdfTabbyReader, *, config: dict) -> None:
         self.config = config
         self.logger = config.get("logger", logging.getLogger())
@@ -24,6 +26,8 @@ class TxtLayerDetector:
         self.classifiers = get_classifiers(config=config)
         self.pdf_reader = pdf_reader
 
+    # region METHOD_detect_txtlayer [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def detect_txtlayer(self, path: str, parameters: dict) -> List[TxtLayerResult]:
         """
         Detect if the PDF document has a textual layer.
@@ -45,6 +49,8 @@ class TxtLayerDetector:
             self.logger.debug(f"Error occurred white detecting PDF textual layer ({e})")
             return [TxtLayerResult(correct=False, start=1, end=None)]
 
+    # region METHOD___classify_all_pages [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_detect_txtlayer
     def __classify_all_pages(self, path: str, parameters: dict, txtlayer_classifier: AbstractTxtlayerClassifier) -> List[TxtLayerResult]:
         """
         Check only first 8 pages of the document, use classification results for the entire document.
@@ -72,6 +78,8 @@ class TxtLayerDetector:
         else:
             return [TxtLayerResult(correct=False, start=start, end=start), TxtLayerResult(correct=True, start=start + 1, end=end)]
 
+    # region METHOD___classify_each_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___classify_all_pages
     def __classify_each_page(self, path: str, parameters: dict, txtlayer_classifier: AbstractTxtlayerClassifier) -> List[TxtLayerResult]:
         """
         Classify each page of the document correct/not correct textual layer.
@@ -129,4 +137,32 @@ class TxtLayerDetector:
             else:
                 result.append(TxtLayerResult(start=start_value, end=end_value, correct=False))
 
+# endregion CLASS_TxtLayerDetector
         return result
+
+    # endregion METHOD___classify_each_page
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_txtlayer_detector; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [8][TxtLayerDetector reader/processor] => TxtLayerDetector
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: txtlayer_detector, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, TxtLayerDetector
+# STRUCTURE: ▶ Init ┌PDF file┐ → [TxtLayerDetector] ○ can_read? → ○ read → [__init__ → detect_txtlayer → __classify_all_pages] → ⊕ UnstructuredDocument(lines, tables, attachments)

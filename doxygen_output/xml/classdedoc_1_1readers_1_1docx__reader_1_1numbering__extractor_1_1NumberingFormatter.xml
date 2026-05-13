@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::numbering_extractor::NumberingFormatter</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a6ccca5017f308285313e34c1ee9d2277" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter::list_type2start_value</definition>
+        <argsstring></argsstring>
+        <name>list_type2start_value</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.list_type2start_value</qualifiedname>
+        <initializer>=  dict(
+        decimal=&quot;1&quot;,  # 1, 2, 3, ..., 10, 11, 12, ...
+        lowerLette=&quot;a&quot;,  # a, b, c, ..., y, z, aa, bb, cc, ..., yy, zz, aaa, bbb, ccc, ...
+        lowerRoman=&quot;i&quot;,  # i, ii, iii, iv, ..., xviii, xix, xx, xxi, ...
+        none=&quot;&quot;,
+        russianLower=&quot;а&quot;,  # а, б, в, ..., ю, я, аа, бб, вв, ..., юю, яя, ааа, ббб, ввв, ...
+        russianUpper=&quot;А&quot;,  # А, Б, В, ..., Ю, Я, АА, ББ, ВВ, ..., ЮЮ, ЯЯ, ААА, БББ, ВВВ, ...
+        upperLetter=&quot;A&quot;,  # A, B, C, ..., Y, Z, AA, BB, CC, ..., YY, ZZ, AAA, BBB, CCC, ...
+        upperRoman=&quot;I&quot;,  # I, II, III, IV, ..., XVIII, XIX, XX, XXI, ...
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="190" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="190" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1ab57d4b9bcfd3136d1ac1777fbd345075" compoundref="docx__reader_2numbering__extractor_8py" startline="203" endline="237">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.get_text</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a603f9a1e056fbf112f209dd2b20d262d" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter::roman_mapping</definition>
+        <argsstring></argsstring>
+        <name>roman_mapping</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.roman_mapping</qualifiedname>
+        <initializer>=  [(1000, &quot;m&quot;), (500, &quot;d&quot;), (100, &quot;c&quot;), (50, &quot;l&quot;), (10, &quot;x&quot;), (5, &quot;v&quot;), (1, &quot;i&quot;)]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="200" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="200" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1ab57d4b9bcfd3136d1ac1777fbd345075" compoundref="docx__reader_2numbering__extractor_8py" startline="203" endline="237">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" compoundref="pptx__reader_2numbering__extractor_8py" startline="43" endline="68">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1ab57d4b9bcfd3136d1ac1777fbd345075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.get_text</definition>
+        <argsstring>(self, str num_fmt, int shift)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>num_fmt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+<para>Computes the next item of the list sequence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param num_fmt: some value from numFmtList :param shift: shift from the beginning of list numbering :return: string representation of the next numbering item </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="203" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="203" bodyend="237"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a6ccca5017f308285313e34c1ee9d2277" compoundref="docx__reader_2numbering__extractor_8py" startline="190">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.list_type2start_value</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a603f9a1e056fbf112f209dd2b20d262d" compoundref="docx__reader_2numbering__extractor_8py" startline="200">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.roman_mapping</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a6ea393472ed030c495383e9fc6a839b1" compoundref="pptx__reader_2numbering__extractor_8py" startline="35">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.roman_mapping</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="187" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="187" bodyend="238"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1ab57d4b9bcfd3136d1ac1777fbd345075" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingFormatter</scope><name>get_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a6ccca5017f308285313e34c1ee9d2277" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingFormatter</scope><name>list_type2start_value</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a603f9a1e056fbf112f209dd2b20d262d" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingFormatter</scope><name>roman_mapping</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

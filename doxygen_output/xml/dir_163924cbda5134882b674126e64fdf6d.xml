@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_163924cbda5134882b674126e64fdf6d" kind="dir">
+    <compoundname>dedoc/common/exceptions</compoundname>
+    <innerfile refid="common_2exceptions_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="bad__file__error_8py">bad_file_error.py</innerfile>
+    <innerfile refid="bad__parameters__error_8py">bad_parameters_error.py</innerfile>
+    <innerfile refid="conversion__error_8py">conversion_error.py</innerfile>
+    <innerfile refid="dedoc__error_8py">dedoc_error.py</innerfile>
+    <innerfile refid="java__not__found__error_8py">java_not_found_error.py</innerfile>
+    <innerfile refid="missing__file__error_8py">missing_file_error.py</innerfile>
+    <innerfile refid="recognize__error_8py">recognize_error.py</innerfile>
+    <innerfile refid="structure__extractor__error_8py">structure_extractor_error.py</innerfile>
+    <innerfile refid="tabby__pdf__error_8py">tabby_pdf_error.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/common/exceptions/"/>
+  </compounddef>
+</doxygen>

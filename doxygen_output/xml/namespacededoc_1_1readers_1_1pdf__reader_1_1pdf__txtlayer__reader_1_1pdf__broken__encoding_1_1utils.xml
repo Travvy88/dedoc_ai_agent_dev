@@ -1,0 +1,329 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language" prot="public">dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a1649655e2fff3742ed203090ca2b8956" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="7" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1aa18248405db634ab48cdac292eb04d34" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.junk_string</definition>
+        <argsstring></argsstring>
+        <name>junk_string</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.junk_string</qualifiedname>
+        <initializer>=  &quot;_junkstring&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="9" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.char_pool</definition>
+        <argsstring></argsstring>
+        <name>char_pool</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.char_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1ab44db456c7275b8916fe76ebd19f757e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.other</definition>
+        <argsstring></argsstring>
+        <name>other</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.other</qualifiedname>
+        <initializer>=  dict(
+    bottom_align=[&quot;,&quot;, &quot;.&quot;, &quot;_&quot;],
+    dont_aug=[
+        &quot;,&quot;, &quot;dot&quot;, &quot;\\&quot;, &quot;`&quot;, &quot;_&quot;, &quot;-&quot;, &quot;=&quot;, &quot;;&quot;, &quot;:&quot;, &quot;quotedbl&quot;, &quot;colon&quot;, &quot;backslash&quot;, &quot;)&quot;, &quot;(&quot;, &quot;[&quot;, &quot;]&quot;, &quot;&lt;&quot;,
+        &quot;&gt;&quot;, &quot;~&quot;, &quot;+&quot;, &quot;&apos;&quot;
+    ]
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="59" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a45ce917528998bf599bec39c3f17f34a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.convert</definition>
+        <argsstring></argsstring>
+        <name>convert</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.convert</qualifiedname>
+        <initializer>=  dict(
+    convert_chars_to_rus={
+        &quot;a&quot;: &quot;а&quot;, &quot;b&quot;: &quot;в&quot;, &quot;c&quot;: &quot;с&quot;, &quot;d&quot;: &quot;д&quot;, &quot;e&quot;: &quot;е&quot;, &quot;h&quot;: &quot;н&quot;, &quot;k&quot;: &quot;к&quot;, &quot;m&quot;: &quot;м&quot;, &quot;o&quot;: &quot;о&quot;, &quot;p&quot;: &quot;р&quot;, &quot;r&quot;: &quot;г&quot;,
+        &quot;y&quot;: &quot;у&quot;, &quot;t&quot;: &quot;т&quot;, &quot;u&quot;: &quot;и&quot;, &quot;x&quot;: &quot;х&quot;
+    }
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="67" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a8521828f9df1f8e71dc8943a71a99725" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.convertdictrus</definition>
+        <argsstring></argsstring>
+        <name>convertdictrus</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.convertdictrus</qualifiedname>
+        <initializer>=  convert.get(&quot;convert_chars_to_rus&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="100" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a849d728da4744c79e36cd7986a315296" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.convertdicteng</definition>
+        <argsstring></argsstring>
+        <name>convertdicteng</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.convertdicteng</qualifiedname>
+        <initializer>=  dict((v, k) for k, v in convertdictrus.items())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="101" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a19cfb57b3606904672458dcd0bb3c673" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.rus</definition>
+        <argsstring></argsstring>
+        <name>rus</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.rus</qualifiedname>
+        <initializer>=  [
+    &quot;а&quot;, &quot;б&quot;, &quot;в&quot;, &quot;г&quot;, &quot;д&quot;, &quot;е&quot;, &quot;ж&quot;, &quot;з&quot;, &quot;и&quot;, &quot;й&quot;, &quot;к&quot;, &quot;л&quot;, &quot;м&quot;, &quot;н&quot;, &quot;о&quot;, &quot;п&quot;, &quot;р&quot;, &quot;с&quot;, &quot;т&quot;, &quot;у&quot;, &quot;ф&quot;, &quot;х&quot;,
+    &quot;ц&quot;, &quot;ч&quot;, &quot;ш&quot;, &quot;щ&quot;, &quot;ъ&quot;, &quot;ы&quot;, &quot;ь&quot;, &quot;э&quot;, &quot;ю&quot;, &quot;я&quot;, &quot;o&quot;, &quot;a&quot;, &quot;c&quot;, &quot;e&quot;, &quot;x&quot;, &quot;k&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="103" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1ab9a5933633618a6634abf495dfed0c63" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.eng</definition>
+        <argsstring></argsstring>
+        <name>eng</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.eng</qualifiedname>
+        <initializer>=  [
+    &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;,
+    &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;о&quot;, &quot;а&quot;, &quot;с&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="107" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a636281bc961a2fb0cb1bb3cf1041b0fd" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.only_rus</definition>
+        <argsstring></argsstring>
+        <name>only_rus</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.only_rus</qualifiedname>
+        <initializer>=  [&quot;я&quot;, &quot;й&quot;, &quot;ц&quot;, &quot;б&quot;, &quot;ж&quot;, &quot;з&quot;, &quot;д&quot;, &quot;л&quot;, &quot;ф&quot;, &quot;ш&quot;, &quot;щ&quot;, &quot;ч&quot;, &quot;ъ&quot;, &quot;ь&quot;, &quot;э&quot;, &quot;ю&quot;, &quot;г&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="111" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a4c2f84e11fbb6055038f0de002219e1c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils.only_eng</definition>
+        <argsstring></argsstring>
+        <name>only_eng</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.only_eng</qualifiedname>
+        <initializer>=  [&quot;q&quot;, &quot;w&quot;, &quot;f&quot;, &quot;i&quot;, &quot;j&quot;, &quot;l&quot;, &quot;z&quot;, &quot;s&quot;, &quot;v&quot;, &quot;g&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="112" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a294caeace633577d5cc2e63900dbee3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_string_incorrect_chars</definition>
+        <argsstring>(str input_string)</argsstring>
+        <name>correct_string_incorrect_chars</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_string_incorrect_chars</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>input_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="115" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="115" bodyend="124"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a0f6cf489fcc4b29fe2a4745c8e226c62" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="125" endline="142">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_word_incorrect_chars</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a0f6cf489fcc4b29fe2a4745c8e226c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_word_incorrect_chars</definition>
+        <argsstring>(str input_string)</argsstring>
+        <name>correct_word_incorrect_chars</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_word_incorrect_chars</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>input_string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="125" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="125" bodyend="142"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a7ad9f5a27e2944d2d70273367645eed0" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="143" endline="151">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.substitute_chars_by_dict</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a294caeace633577d5cc2e63900dbee3a" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="115" endline="124">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_string_incorrect_chars</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a7ad9f5a27e2944d2d70273367645eed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.substitute_chars_by_dict</definition>
+        <argsstring>(dict substitutions_dict, Union[str, List[str]] word)</argsstring>
+        <name>substitute_chars_by_dict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.substitute_chars_by_dict</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>substitutions_dict</declname>
+        </param>
+        <param>
+          <type>Union]</type>
+          <declname>word</declname>
+          <array>[str, List[str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="143" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="143" bodyend="151"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a0f6cf489fcc4b29fe2a4745c8e226c62" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="125" endline="142">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correct_word_incorrect_chars</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a3dab69b65c34d1c6d2ceaa89886a6c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correctly_resize</definition>
+        <argsstring>(str image_path, tuple size=(28, 28))</argsstring>
+        <name>correctly_resize</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.correctly_resize</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>image_path</declname>
+        </param>
+        <param>
+          <type>tuple</type>
+          <declname>size</declname>
+          <defval>(28, 28)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="152" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="152" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a8faeb228589c8f212f9f4a83c7edbe9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.is_empty</definition>
+        <argsstring>(str image_path)</argsstring>
+        <name>is_empty</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.is_empty</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>image_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="165" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="165" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a67f3c35cf53ac181337a0c76ac0dd0d9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Utility functions for document processing. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [2][Language reader/processor] =&gt; Language FUNC [5][correct_string_incorrect_chars utility/helper] =&gt; correct_string_incorrect_chars FUNC [5][correct_word_incorrect_chars utility/helper] =&gt; correct_word_incorrect_chars FUNC [5][substitute_chars_by_dict utility/helper] =&gt; substitute_chars_by_dict FUNC [5][correctly_resize utility/helper] =&gt; correctly_resize FUNC [5][is_empty utility/helper] =&gt; is_empty \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="200" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="200" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

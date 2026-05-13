@@ -1,0 +1,4 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12 =
+[
+    [ "structure_unit", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12.html#aada7dfb53baff36b19dcd80b6cbcf93e", null ]
+];

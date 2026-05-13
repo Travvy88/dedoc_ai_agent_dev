@@ -1,0 +1,18 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693 =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a6d8c70cdb8f078dc7a039945c0a7bdc4", null ],
+    [ "__filter_lines", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a11e22b3810054aa98ad3a4389b1b4b1f", null ],
+    [ "__get_automatic_toc", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a160450eebc1575f2f76da5e59e7c502e", null ],
+    [ "__get_param_language", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a2a8601b3f10dd5ee8d662c0819525b56", null ],
+    [ "__get_toc", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#ad77a178b3eef2b2a5a9f091fd314b0fd", null ],
+    [ "extract", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a881e0b6aa1e926efd6a173ec1a30ea74", null ],
+    [ "get_features", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a51c6c940b6a29d6557d49278394e1326", null ],
+    [ "classifiers", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#ad91f916a42fd447a108a0d68b69cbb29", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#accf10c91eaec063e0d85640704939ac6", null ],
+    [ "empty_string_regexp", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a6d3939948d2d4d3d387ba778b6763bb4", null ],
+    [ "features_extractor", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a4adba2d19b38ccc32f558164819b8191", null ],
+    [ "languages", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a1df4a20016d9238ef6351b8bdf358e95", null ],
+    [ "pdf_reader", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a59d6c7ac37d8979f7ecca3f923a40261", null ],
+    [ "toc_extractor", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#a185909cd527764ce095d9cde203a2386", null ],
+    [ "toc_item_regexp", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1fintoc__structure__ext8141c06b2fccdb48fcfe27a171cf3693.html#ac03bbda28f44c82d50bf9d527e14a6a4", null ]
+];

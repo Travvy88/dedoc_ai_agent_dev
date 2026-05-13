@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="split__last__hor__union__cells_8py" kind="file" language="Python">
+    <compoundname>split_last_hor_union_cells.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader">dedoc::readers::pdf_reader::pdf_image_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::split_last_hor_union_cells</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>copy</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1aa74b640308a4fadb35c4f49e47b342a6" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dedocutils.data_structures.bbox<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BBox</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation" kindref="compound">dedoc.data_structures.concrete_annotations.confidence_annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ConfidenceAnnotation</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1line__with__meta" kindref="compound">dedoc.data_structures.line_with_meta</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell" kindref="compound">dedoc.readers.pdf_reader.data_classes.tables.cell</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Cell</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor" kindref="compound">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>OCRCellExtractor</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils" kindref="compound">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>get_text_with_bbox_from_cells</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a9c30964f0ef9afe42d8788cd1ed213bf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">split_last_column(matrix_table:<sp/>List[List[Cell]],<sp/>language:<sp/>str,<sp/>image:<sp/>np.array)<sp/>-&gt;<sp/>List[List[Cell]]:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B<sp/><sp/><sp/><sp/><sp/><sp/><sp/>C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>D</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Cell1<sp/>|<sp/>word1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>------------------<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>Cell2<sp/>|<sp/>word2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>We<sp/>need<sp/>split<sp/>last<sp/>union<sp/>column<sp/>(C<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>D<sp/>position)<sp/>by<sp/>y<sp/>coordinates<sp/>of<sp/>column<sp/>B.</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>We<sp/>don</highlight><highlight class="stringliteral">&apos;t<sp/>want<sp/>simple<sp/>copy<sp/>all<sp/>text<sp/>&quot;word1\nword2&quot;.<sp/>We<sp/>want<sp/>split<sp/>with<sp/>correct<sp/>content.<sp/>Result<sp/>below:</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>word1<sp/><sp/><sp/>|<sp/>word1<sp/><sp/>|</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>------------------<sp/>|--------<sp/>|-------<sp/>|</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>word2<sp/><sp/>|<sp/>word1<sp/><sp/>|</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--------------------------------------</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(matrix_table)<sp/>==<sp/>0<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>len(matrix_table[0])<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matrix_table</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>last_column<sp/>=<sp/>[row[-1]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>row<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>matrix_table]<sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>last<sp/>column</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>result_matrix<sp/>=<sp/>copy.deepcopy(matrix_table)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>union<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>row_id,<sp/>cell<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(last_column):</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>row_id<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/>cell</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[prev_cell]</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>row_id<sp/>==<sp/>len(last_column)<sp/>-<sp/>1<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>len(union_cells)<sp/>&gt;<sp/>1<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>cell.id_con<sp/>!=<sp/>prev_cell.id_con<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>len(union_cells)<sp/>&gt;<sp/>1:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_matrix[start_union_cell:start_union_cell<sp/>+<sp/>len(union_cells)]<sp/>=<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a2b5380194e5b160861c149ef4a8a4fb3" kindref="member">_split_each_row</ref>(union_cells,<sp/>matrix_table[start_union_cell:start_union_cell<sp/>+<sp/>len(union_cells)],<sp/>language=language,<sp/>image=image)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[cell]</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cell.id_con<sp/>==<sp/>prev_cell.id_con:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>start_union_cell<sp/>==<sp/>-1:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>row_id<sp/>-<sp/>1</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells.append(cell)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[cell]</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/>cell</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_matrix</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a2b5380194e5b160861c149ef4a8a4fb3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a2b5380194e5b160861c149ef4a8a4fb3" kindref="member">_split_each_row</ref>(union_cells:<sp/>List[Cell],<sp/>matrix_table:<sp/>List[List[Cell]],<sp/>language:<sp/>str,<sp/>image:<sp/>np.array)<sp/>-&gt;<sp/>List[List[Cell]]:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>len(union_cells)<sp/>==<sp/>len(matrix_table)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(matrix_table[0])<sp/>&lt;<sp/>1:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>matrix_table</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>row_id<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>-1</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>result_matrix<sp/>=<sp/>copy.deepcopy(matrix_table)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>For<sp/>each<sp/>row<sp/>we<sp/>from<sp/>the<sp/>last<sp/>column<sp/>find<sp/>cell<sp/>in<sp/>the<sp/>same<sp/>id_con<sp/>(it<sp/>is<sp/>the<sp/>union<sp/>one<sp/>cell)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>row_id<sp/>&lt;<sp/>len(matrix_table):</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row<sp/>=<sp/>matrix_table[row_id]</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_id<sp/>=<sp/>len(row)<sp/>-<sp/>1</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>col_id<sp/>&gt;<sp/>1:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell<sp/>=<sp/>row[col_id]</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>col_id<sp/>==<sp/>len(row)<sp/>-<sp/>1:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/>cell</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[prev_cell]</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_id<sp/>-=<sp/>1</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>cell.id_con<sp/>==<sp/>prev_cell.id_con:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>start_union_cell<sp/>==<sp/>-1:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_union_cell<sp/>=<sp/>col_id<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells.append(cell)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>len(union_cells)<sp/>&gt;=<sp/>1:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end_union_cell<sp/>=<sp/>col_id<sp/>+<sp/>1</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_matrix[row_id][end_union_cell:start_union_cell<sp/>+<sp/>1]<sp/>=<sp/>\</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a24eab2266705b9676c289ef62a1c9502" kindref="member">_split_row</ref>(cell_splitter=matrix_table[row_id][col_id],</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cell=matrix_table[row_id][end_union_cell:start_union_cell<sp/>+<sp/>1],</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>language=language,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image=image)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cells<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>start_union_cell,<sp/>end_union_cell<sp/>=<sp/>-1,<sp/>-1</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev_cell<sp/>=<sp/>cell</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_id<sp/>-=<sp/>1</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row_id<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_matrix</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a24eab2266705b9676c289ef62a1c9502" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a24eab2266705b9676c289ef62a1c9502" kindref="member">_split_row</ref>(cell_splitter:<sp/>Cell,<sp/>union_cell:<sp/>List[Cell],<sp/>language:<sp/>str,<sp/>image:<sp/>np.array)<sp/>-&gt;<sp/>List[Cell]:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(union_cell)<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>union_cell</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>width<sp/>of<sp/>all<sp/>union<sp/>cell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>eps<sp/>=<sp/>len(union_cell)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>x_left<sp/>=<sp/>union_cell[0].bbox.x_top_left<sp/>+<sp/>eps</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>x_right<sp/>=<sp/>union_cell[-1].bbox.x_bottom_right</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>get<sp/>y<sp/>coordinate<sp/>from<sp/>cell<sp/>before<sp/>union<sp/>cell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>y_top_split<sp/>=<sp/>cell_splitter.contour_coord.y_top_left</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>y_bottom_split<sp/>=<sp/>cell_splitter.contour_coord.y_top_left<sp/>+<sp/>cell_splitter.contour_coord.height</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>abs(y_bottom_split<sp/>-<sp/>y_top_split)<sp/>&lt;<sp/>10:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>cell<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>union_cell:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell.lines<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>union_cell</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>update<sp/>y<sp/>coordinates<sp/>and<sp/>text<sp/>of<sp/>union<sp/>cell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>col_id<sp/>=<sp/>len(union_cell)<sp/>-<sp/>1</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>result_row<sp/>=<sp/>copy.deepcopy(union_cell)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>col_id<sp/>&gt;=<sp/>0:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cell[col_id].bbox.y_top_left<sp/>=<sp/>y_top_split</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>union_cell[col_id].bbox.height<sp/>=<sp/>y_bottom_split<sp/>-<sp/>union_cell[col_id].bbox.y_top_left</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_image,<sp/>padding_value<sp/>=<sp/>OCRCellExtractor.upscale(image[y_top_split:y_bottom_split,<sp/>x_left:x_right])</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result_row[col_id].lines<sp/>=<sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a48a9479e8a0fe33a463edb2596d75373" kindref="member">__get_ocr_lines</ref>(cell_image,<sp/>language,<sp/>page_image=image,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_bbox=BBox(x_top_left=x_left,<sp/>y_top_left=y_top_split,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>width=x_right<sp/>-<sp/>x_left,<sp/>height=y_bottom_split<sp/>-<sp/>y_top_split),</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>padding_cell_value=padding_value)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>col_id<sp/>-=<sp/>1</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result_row</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a48a9479e8a0fe33a463edb2596d75373" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1a48a9479e8a0fe33a463edb2596d75373" kindref="member">__get_ocr_lines</ref>(cell_image:<sp/>np.ndarray,<sp/>language:<sp/>str,<sp/>page_image:<sp/>np.ndarray,<sp/>cell_bbox:<sp/>BBox,<sp/>padding_cell_value:<sp/>int)<sp/>-&gt;<sp/>List[LineWithMeta]:</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>ocr_result<sp/>=<sp/>get_text_with_bbox_from_cells(cell_image,<sp/>language)</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_lines<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>list(ocr_result.lines):</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text_line<sp/>=<sp/>OCRCellExtractor.get_line_with_meta(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>word<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>line.words:</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>do<sp/>absolute<sp/>coordinates<sp/>on<sp/>src_image<sp/>(inside<sp/>src_image)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>word.bbox.shift(shift_x=cell_bbox.x_top_left<sp/>-<sp/>padding_cell_value,<sp/>shift_y=cell_bbox.y_top_left<sp/>-<sp/>padding_cell_value)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>space<sp/>between<sp/>words</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(text_line)<sp/>!=<sp/>0:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text_line<sp/>+=<sp/>OCRCellExtractor.get_line_with_meta(</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">,<sp/>bbox=word.bbox,<sp/>image=page_image)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>confidence<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text_line<sp/>+=<sp/>OCRCellExtractor.get_line_with_meta(</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text=word.text,<sp/>bbox=word.bbox,<sp/>image=page_image,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>confidences=[<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation_1_1ConfidenceAnnotation" kindref="compound">ConfidenceAnnotation</ref>(start=0,<sp/>end=len(word.text),<sp/>value=0.<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>word.confidence<sp/>&lt;<sp/>0<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>word.confidence<sp/>/<sp/>100.)]</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(text_line)<sp/>&gt;<sp/>0:<sp/><sp/></highlight><highlight class="comment">#<sp/>add<sp/>new<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_lines.append(text_line)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cell_lines</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_split_last_hor_union_cells;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="189"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>PDF<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="190"><highlight class="comment">##<sp/>@scope<sp/>Table<sp/>recognition<sp/>and<sp/>extraction<sp/>from<sp/>document<sp/>images.</highlight></codeline>
+<codeline lineno="191"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="192"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="193"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="194"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="195"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="196"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="197"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="198"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="199"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="200"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="201"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="202"><highlight class="comment">##<sp/>FUNC<sp/>[5][split_last_column<sp/>utility/helper]<sp/>=&gt;<sp/>split_last_column</highlight></codeline>
+<codeline lineno="203"><highlight class="comment">##<sp/>FUNC<sp/>[5][_split_each_row<sp/>utility/helper]<sp/>=&gt;<sp/>_split_each_row</highlight></codeline>
+<codeline lineno="204"><highlight class="comment">##<sp/>FUNC<sp/>[5][_split_row<sp/>utility/helper]<sp/>=&gt;<sp/>_split_row</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">##<sp/>FUNC<sp/>[5][__get_ocr_lines<sp/>utility/helper]<sp/>=&gt;<sp/>__get_ocr_lines</highlight></codeline>
+<codeline lineno="206"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="207"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(PDF)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1aff0c0ce67b36da3935c0e1d839b46959" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1split__last__hor__union__cells_1aff0c0ce67b36da3935c0e1d839b46959" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>split_last_hor_union_cells,<sp/>dedoc,<sp/>reader,<sp/>PDF,<sp/>PdfReader,<sp/>BaseReader,<sp/>PDF,<sp/>pdfminer,<sp/>tabby,<sp/>OCR,<sp/>tables,<sp/>image,<sp/>txtlayer,<sp/>columns,<sp/>orientation,<sp/>paragraphs,<sp/>metadata,<sp/>extraction,<sp/>line,<sp/>bbox,<sp/>split_last_column,<sp/>_split_each_row,<sp/>_split_row,<sp/>__get_ocr_lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Input<sp/>→<sp/>○<sp/>split_last_column<sp/>→<sp/>_split_each_row<sp/>→<sp/>_split_row<sp/>→<sp/>⊕<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/split_last_hor_union_cells.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil0d07d016a21df4d6abd9c6f9fadb22c1 =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil0d07d016a21df4d6abd9c6f9fadb22c1.html#aa75a079721d476c8de242e59879264f5", null ],
+    [ "structure_unit_builder", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil0d07d016a21df4d6abd9c6f9fadb22c1.html#a99f2e97475cd1a234083f5d249ea3c4e", null ],
+    [ "_structure_unit_builder", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil0d07d016a21df4d6abd9c6f9fadb22c1.html#ad82d3010bd4b8bdf7dca3bc34ef2f255", null ],
+    [ "document_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__buil0d07d016a21df4d6abd9c6f9fadb22c1.html#a443c1e846f43d94303451fd1d5da9d99", null ]
+];

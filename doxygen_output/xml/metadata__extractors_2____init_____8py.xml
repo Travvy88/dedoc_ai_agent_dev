@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="metadata__extractors_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors">dedoc::metadata_extractors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1metadata__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(7):<sp/>DocumentProcessing,<sp/>MetadataExtraction;<sp/>CONCEPT(6):<sp/>PackageInit,<sp/>PublicAPI;<sp/>TECH(5):<sp/>PythonInits]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>expose<sp/>the<sp/>public<sp/>API<sp/>of<sp/>the<sp/>metadata_extractors<sp/>package<sp/>—<sp/>all<sp/>extractor<sp/>classes<sp/>and<sp/>the<sp/>composition<sp/>facade.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization,<sp/>re-export<sp/>of<sp/>concrete<sp/>extractors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level<sp/>imports).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols:<sp/>AbstractMetadataExtractor,<sp/>BaseMetadataExtractor,<sp/>DocxMetadataExtractor,<sp/>ImageMetadataExtractor,<sp/>NoteMetadataExtractor,<sp/>PdfMetadataExtractor,<sp/>MetadataExtractorComposition.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>AbstractMetadataExtractor,<sp/>MetadataExtractorComposition]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>__all__<sp/>always<sp/>lists<sp/>exactly<sp/>7<sp/>extractor<sp/>symbols.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>use<sp/>__all__<sp/>with<sp/>explicit<sp/>re-exports?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Provides<sp/>a<sp/>stable<sp/>public<sp/>API<sp/>surface<sp/>—<sp/>consumers<sp/>import<sp/>from<sp/>dedoc.metadata_extractors<sp/>without<sp/>knowing<sp/>internal<sp/>module<sp/>paths.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Semantic<sp/>template<sp/>markup<sp/>added.]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>VAR<sp/>5[Public<sp/>API<sp/>surface]<sp/>=&gt;<sp/>__all__</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>-<sp/>[Package]:<sp/>ExternalConsumer<sp/>→<sp/>ImportExtractors<sp/>→<sp/>GetAvailableExtractors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacededoc_1_1metadata__extractors_1aac8c1f9dd49e55c104359987a0fe2717" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1metadata__extractors_1aac8c1f9dd49e55c104359987a0fe2717" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>metadata_extractors,<sp/>package,<sp/>public<sp/>API,<sp/>extractors,<sp/>re-export,<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌imports<sp/>from<sp/>submodules┐<sp/>→<sp/>⊕<sp/>__all__<sp/>⟅7<sp/>extractor<sp/>classes⟆<sp/>→<sp/>⎋<sp/>expose<sp/>public<sp/>API</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.abstract_metadata_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractMetadataExtractor</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_metadata_extractors.base_metadata_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseMetadataExtractor</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_metadata_extractors.docx_metadata_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocxMetadataExtractor</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_metadata_extractors.image_metadata_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ImageMetadataExtractor</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_metadata_extractors.note_metadata_extarctor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>NoteMetadataExtractor</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_metadata_extractors.pdf_metadata_extractor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PdfMetadataExtractor</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.metadata_extractor_composition<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>MetadataExtractorComposition</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespacededoc_1_1metadata__extractors_1a7ffd6c6e20140f418563e6ccc651ae1b" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;AbstractMetadataExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;BaseMetadataExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;DocxMetadataExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;ImageMetadataExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;NoteMetadataExtractor&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;PdfMetadataExtractor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;MetadataExtractorComposition&apos;</highlight><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/metadata_extractors/__init__.py"/>
+  </compounddef>
+</doxygen>

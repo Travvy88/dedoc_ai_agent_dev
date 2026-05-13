@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_aa3fac2405921d10cec5466835c515bd" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader</compoundname>
+    <innerdir refid="dir_dfe68683a5ca73dfeffc2931000edc76">dedoc/readers/pdf_reader/data_classes</innerdir>
+    <innerdir refid="dir_e2c48e4bf64ca3ce75ae6754b808ea20">dedoc/readers/pdf_reader/pdf_auto_reader</innerdir>
+    <innerdir refid="dir_d9bf7be372d7a08171eda18666cee908">dedoc/readers/pdf_reader/pdf_image_reader</innerdir>
+    <innerdir refid="dir_617003c33d8f12b2ceb086e9ba26a86e">dedoc/readers/pdf_reader/pdf_txtlayer_reader</innerdir>
+    <innerdir refid="dir_63101df1c72f77f06f44c7826fb9c60e">dedoc/readers/pdf_reader/utils</innerdir>
+    <innerfile refid="readers_2pdf__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="pdf__base__reader_8py">pdf_base_reader.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor =
+[
+    [ "scan_paragraph_classifier_extractor", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__0d74854eba1fcc939f6bcb21bc4c6629.html", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__0d74854eba1fcc939f6bcb21bc4c6629" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor.html#a2579c0c9280251c6b0117b045c0851f7", null ]
+];

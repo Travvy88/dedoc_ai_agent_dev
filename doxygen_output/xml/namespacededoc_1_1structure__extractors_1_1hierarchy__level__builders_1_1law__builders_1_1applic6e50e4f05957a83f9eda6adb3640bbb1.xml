@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_law_hierarchy_level_builder</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicatiobcf4a280812b2a74eb54788a5c596695" prot="public">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_law_hierarchy_level_builder::ApplicationLawHierarchyLevelBuilder</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1_1ab2a9f16689b08f854bd7cf22a47d21e3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_law_hierarchy_level_builder.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.application_law_hierarchy_level_builder.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder.py" line="7" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1_1a1b77209ea0e2cf7995b552d72bfe9120" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.application_law_hierarchy_level_builder._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder.application_law_hierarchy_level_builder._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS [Weight 7][Structure extraction] =&gt; ApplicationLawHierarchyLevelBuilder \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder.py" line="55" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder.py" bodystart="55" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/application_law_hierarchy_level_builder.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

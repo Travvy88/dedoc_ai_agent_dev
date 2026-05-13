@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1cancellation" kind="namespace" language="Python">
+    <compoundname>dedoc::api::cancellation</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1cancellation_1a16e4ac6250ab078e74043f2f0165b1ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.cancellation._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.cancellation._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide async context management for FastAPI endpoints: monitors client connection and cancels long-running processing when the client disconnects prematurely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Request lifecycle — client disconnect detection and task cancellation. \par \b Input\/ \:  FastAPI Request object and logger. \par \b Output\/ \:  Async context manager that yields for the duration of client connection; cancels tasks on disconnect. \par \b Links\/ \:  [USES_API(9): fastapi.Request, anyio.create_task_group] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>cancel_scope is always cancelled in the finally block to ensure cleanup.</para>
+</listitem><listitem><para>watch_disconnect loop breaks only on http.disconnect message. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use anyio instead of asyncio directly? A: FastAPI/Starlette is built on anyio, which provides structured concurrency and better cancellation semantics than raw asyncio. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>FUNC 8[Async context manager for disconnect-based cancellation] =&gt; cancel_on_disconnect \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[cancel_on_disconnect]: ProcessHandler =&gt; MonitorClientConnection =&gt; CancelProcessingOnDisconnect </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/cancellation.py" line="20" column="1" bodyfile="dedoc/api/cancellation.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1cancellation_1ace3ce5611f95c5413006d2049673444f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.api.cancellation.cancel_on_disconnect</definition>
+        <argsstring>(Request request, logging.Logger logger)</argsstring>
+        <name>cancel_on_disconnect</name>
+        <qualifiedname>dedoc.api.cancellation.cancel_on_disconnect</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>logging.Logger</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Async context manager for async code that needs to be cancelled if client disconnects prematurely. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The client disconnect is monitored through the Request object. \par \b Uses\/ \:  anyio.create_task_group, fastapi.Request \par \b I/O\/ \:  (Request, Logger) -&gt; AsyncContextManager[None] \par \b Complexity\/ \:  6</para>
+<para>Source: <ulink url="https://github.com/dorinclisu/runner-with-api">https://github.com/dorinclisu/runner-with-api</ulink> See discussion: <ulink url="https://github.com/fastapi/fastapi/discussions/8805">https://github.com/fastapi/fastapi/discussions/8805</ulink> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/cancellation.py" line="39" column="1" bodyfile="dedoc/api/cancellation.py" bodystart="39" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/cancellation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

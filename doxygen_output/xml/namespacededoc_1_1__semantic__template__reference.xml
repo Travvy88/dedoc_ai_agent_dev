@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1__semantic__template__reference" kind="namespace" language="Python">
+    <compoundname>dedoc::_semantic_template_reference</compoundname>
+    <innerclass refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass" prot="public">dedoc::_semantic_template_reference::ExampleClass</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1__semantic__template__reference_1a0cf975d613e119c3d65aaccbf03b7a71" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::_semantic_template_reference.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc._semantic_template_reference.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/_semantic_template_reference.py" line="33" column="1" bodyfile="dedoc/_semantic_template_reference.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1__semantic__template__reference_1a0c1a85624ee84dbdfcbfeeffc82df52b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc._semantic_template_reference._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc._semantic_template_reference._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  [Describe the GOAL of the module — what business/operational need it fulfills. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>] \par \b Scope\/ \:  [Main functional areas covered by the module.] \par \b Input\/ \:  [Module-wide input data.] \par \b Output\/ \:  [What the module provides to the rest of the system.] \par \b Links\/ \:  [USES_API(X): ...; READS_DATA_FROM(Y): ...] \par \b Links to Spec\/ \:  [Technical requirements points, if applicable] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Condition/State that always holds] \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: [Why was it implemented this way?] A: [Justification, environmental constraints.] \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [Current version - Brief description of latest changes] \par \b Module Map\/ \:</para>
+<para>FUNC/CLASS [Weight 1-10][Entity description] =&gt; [entity_name] \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Entity]: [Actor] =&gt; [Action] =&gt; [Goal] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/_semantic_template_reference.py" line="25" column="1" bodyfile="dedoc/_semantic_template_reference.py" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1__semantic__template__reference_1abe94dcb74dc97546b80898c012b5b29b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc._semantic_template_reference.example_function</definition>
+        <argsstring>(list data)</argsstring>
+        <name>example_function</name>
+        <qualifiedname>dedoc._semantic_template_reference.example_function</qualifiedname>
+        <param>
+          <type>list</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  [Describe the GOAL of this function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>] \par \b Uses\/ \:  [APIs or modules used] \par \b I/O\/ \:  [Input types] -&gt; [Output types] \par \b Complexity\/ \:  [1-10] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/_semantic_template_reference.py" line="58" column="1" bodyfile="dedoc/_semantic_template_reference.py" bodystart="58" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/_semantic_template_reference.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

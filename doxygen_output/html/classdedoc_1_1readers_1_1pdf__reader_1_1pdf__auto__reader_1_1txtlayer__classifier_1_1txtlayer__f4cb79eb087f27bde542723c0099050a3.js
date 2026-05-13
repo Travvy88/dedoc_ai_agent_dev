@@ -1,0 +1,4 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__f4cb79eb087f27bde542723c0099050a3 =
+[
+    [ "transform", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__f4cb79eb087f27bde542723c0099050a3.html#a80222fd56a0148eedc20e97e7f50edee", null ]
+];

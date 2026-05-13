@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_55ed26b0db3027a35f2a106c2b06fa1a" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2line__metadata__extractor_2bold__classifier_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="agglomerative__clusterizer_8py">agglomerative_clusterizer.py</innerfile>
+    <innerfile refid="bold__classifier_8py">bold_classifier.py</innerfile>
+    <innerfile refid="valley__emphasis__binarizer_8py">valley_emphasis_binarizer.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/"/>
+  </compounddef>
+</doxygen>

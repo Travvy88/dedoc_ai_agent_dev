@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2parsed__document_8py" kind="file" language="Python">
+    <compoundname>parsed_document.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument" prot="public">dedoc::api::schema::parsed_document::ParsedDocument</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1parsed__document">dedoc::api::schema::parsed_document</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1parsed__document" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>APIModel;<sp/>CONCEPT(8):<sp/>ParsingResult,<sp/>DocumentAggregate;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>ParsedDocument<sp/>schema<sp/>—<sp/>the<sp/>top-level<sp/>API<sp/>response<sp/>model<sp/>aggregating<sp/>document<sp/>content,<sp/>metadata,<sp/>attachments,<sp/>warnings,<sp/>and<sp/>version<sp/>info.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Root<sp/>API<sp/>response<sp/>model<sp/>—<sp/>full<sp/>document<sp/>parsing<sp/>result.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model,<sp/>references<sp/>DocumentContent,<sp/>DocumentMetadata,<sp/>self<sp/>for<sp/>attachments).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`ParsedDocument`<sp/>with<sp/>content,<sp/>metadata,<sp/>version,<sp/>warnings,<sp/>attachments.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel;<sp/>READS_DATA_FROM(8):<sp/>DocumentContent,<sp/>DocumentMetadata]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>content<sp/>is<sp/>always<sp/>present<sp/>(may<sp/>have<sp/>empty<sp/>tables<sp/>and<sp/>root-only<sp/>structure).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>attachments<sp/>list<sp/>may<sp/>be<sp/>empty<sp/>if<sp/>with_attachments=False.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>-<sp/>version<sp/>matches<sp/>dedoc.version.__version__.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>self-referential<sp/>for<sp/>attachments?</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>A:<sp/>Attached<sp/>files<sp/>are<sp/>parsed<sp/>into<sp/>ParsedDocument<sp/>themselves,<sp/>forming<sp/>a<sp/>recursive<sp/>structure<sp/>that<sp/>matches<sp/>the<sp/>nested<sp/>nature<sp/>of<sp/>document<sp/>attachments.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>CLASS<sp/>10[Top-level<sp/>API<sp/>response<sp/>—<sp/>content<sp/>+<sp/>metadata<sp/>+<sp/>attachments]<sp/>=&gt;<sp/>ParsedDocument</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>-<sp/>[ParsedDocument]:<sp/>ApiEndpoint<sp/>=&gt;<sp/>SerializeParsingResult<sp/>=&gt;<sp/>ReturnJSONToClient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="namespacededoc_1_1api_1_1schema_1_1parsed__document_1ac1bd611ac271cc101fb2b5d4213ab9a9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1parsed__document_1ac1bd611ac271cc101fb2b5d4213ab9a9" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>parsed,<sp/>document,<sp/>content,<sp/>metadata,<sp/>attachments,<sp/>warnings,<sp/>version,<sp/>API,<sp/>response,<sp/>Pydantic,<sp/>schema</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>→<sp/>ParsedDocument<sp/>┌content:DocumentContent,<sp/>metadata:DocumentMetadata,<sp/>version:str,<sp/>warnings:List[str],<sp/>attachments:List[ParsedDocument]┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Field</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1document__content" kindref="compound">dedoc.api.schema.document_content</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocumentContent</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1document__metadata" kindref="compound">dedoc.api.schema.document_metadata</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DocumentMetadata</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespacededoc_1_1api_1_1schema_1_1parsed__document_1aed5b2c63bfc3bc731ef8e6f29a2c4a41" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_ParsedDocument<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>APIResponse;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Top-level<sp/>API<sp/>response<sp/>model:<sp/>aggregates<sp/>document<sp/>content,<sp/>metadata,<sp/>nested<sp/>attachments,<sp/>warnings,<sp/>and<sp/>version<sp/>into<sp/>a<sp/>single<sp/>JSON-serializable<sp/>entity.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">##<sp/>@io<sp/>(content,<sp/>metadata,<sp/>version,<sp/>warnings,<sp/>attachments)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Holds<sp/>information<sp/>about<sp/>the<sp/>document<sp/>content,<sp/>metadata<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>attachments.</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>content:<sp/>document<sp/>text<sp/>(hierarchy<sp/>of<sp/>nodes)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>tables</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>attachments:<sp/>result<sp/>of<sp/>analysis<sp/>of<sp/>attached<sp/>files<sp/>(empty<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>with_attachments=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>metadata:<sp/>document<sp/>metadata<sp/>such<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>size,<sp/>creation<sp/>date<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>so<sp/>on.</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>warnings:<sp/>list<sp/>of<sp/>warnings<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>possible<sp/>errors,<sp/>arising<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>process<sp/>of<sp/>document<sp/>parsing</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>version:<sp/>version<sp/>of<sp/>the<sp/>program<sp/>that<sp/>parsed<sp/>this<sp/>document</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>content:<sp/>DocumentContent</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>attachments:<sp/>List[ParsedDocument]</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>metadata:<sp/>DocumentMetadata</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>warnings:<sp/>List[str]</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>version:<sp/>str</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="56" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a27bd65c9145f61a218b13cd81d17444f" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>content:<sp/>DocumentContent<sp/>=<sp/>Field(description=&quot;Document<sp/>text<sp/>and<sp/>tables&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>metadata:<sp/>DocumentMetadata<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Document<sp/>metadata<sp/>such<sp/>as<sp/>size,<sp/>creation<sp/>date<sp/>and<sp/>so<sp/>on&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="58" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a94aca0fbb54cc709bd5595de14889663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>version:<sp/>str<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Version<sp/>of<sp/>the<sp/>program<sp/>that<sp/>parsed<sp/>this<sp/>document&quot;</highlight><highlight class="normal">,<sp/>example=</highlight><highlight class="stringliteral">&quot;0.9.1&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1ac786dfbd75371b745f1649ca5206b266" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>warnings:<sp/>List[str]<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;List<sp/>of<sp/>warnings<sp/>and<sp/>possible<sp/>errors,<sp/>arising<sp/>in<sp/>the<sp/>process<sp/>of<sp/>document<sp/>parsing&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60" refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14b1bc6856d6049c2f55ea28cc225b0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>attachments:<sp/>List[</highlight><highlight class="stringliteral">&quot;ParsedDocument&quot;</highlight><highlight class="normal">]<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;Result<sp/>of<sp/>analysis<sp/>of<sp/>attached<sp/>files<sp/>-<sp/>list<sp/>of<sp/>`ParsedDocument`&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_ParsedDocument</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/parsed_document.py"/>
+  </compounddef>
+</doxygen>

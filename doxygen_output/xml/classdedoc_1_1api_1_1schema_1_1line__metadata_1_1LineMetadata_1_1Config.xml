@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::line_metadata::LineMetadata::Config</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config_1ace233763e499e5763ccea95f3c848065" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.api.schema.line_metadata.LineMetadata.Config::extra</definition>
+        <argsstring></argsstring>
+        <name>extra</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.LineMetadata.Config.extra</qualifiedname>
+        <initializer>=  Extra.allow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="52" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/line_metadata.py" line="51" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="51" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1_1Config_1ace233763e499e5763ccea95f3c848065" prot="public" virt="non-virtual"><scope>dedoc::api::schema::line_metadata::LineMetadata::Config</scope><name>extra</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

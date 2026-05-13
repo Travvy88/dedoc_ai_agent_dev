@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="bold__annotation_8py" kind="file" language="Python">
+    <compoundname>bold_annotation.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation" prot="public">dedoc::data_structures::concrete_annotations::bold_annotation::BoldAnnotation</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations">dedoc::data_structures::concrete_annotations</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation">dedoc::data_structures::concrete_annotations::bold_annotation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1annotation" kindref="compound">dedoc.data_structures.annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1a86d0dfc681d47983d3e878c689647ea9" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_BoldAnnotation<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Bold;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Mark<sp/>boldness<sp/>of<sp/>some<sp/>text<sp/>inside<sp/>the<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation" kindref="compound">BoldAnnotation</ref>(<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Boldness<sp/>of<sp/>some<sp/>text<sp/>inside<sp/>the<sp/>line.</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="14" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation_1aee77d8531489d7625e9762cff0e99113" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;bold&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation_1a247d8e94577054e69e5300aeb78ca29a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>valid_values<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;True&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;False&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Initialize<sp/>bold<sp/>annotation<sp/>with<sp/>validated<sp/>boolean<sp/>value.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>Annotation.__init__</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(int,<sp/>int,<sp/>str)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation_1a7111b576e1676b7d29fef7f7f80304fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation_1a7111b576e1676b7d29fef7f7f80304fc" kindref="member">__init__</ref>(self,<sp/>start:<sp/>int,<sp/>end:<sp/>int,<sp/>value:<sp/>str)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>start:<sp/>start<sp/>of<sp/>the<sp/>bold<sp/>text</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>end:<sp/>end<sp/>of<sp/>the<sp/>bold<sp/>text<sp/>(</highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>included)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>value:<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>bold<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">False</highlight><highlight class="normal"><sp/>usually<sp/>isn</highlight><highlight class="stringliteral">&apos;t<sp/>used<sp/>because<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>annotation<sp/>at<sp/>all)</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f&quot;[IMP:4][BoldAnnotation][INIT]<sp/>start={start},<sp/>end={end},<sp/>value={value}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool(value)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>ValueError:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&quot;the<sp/>value<sp/>of<sp/>bold<sp/>annotation<sp/>should<sp/>be<sp/>True<sp/>or<sp/>False&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation_1a7111b576e1676b7d29fef7f7f80304fc" kindref="member">__init__</ref>(start=start,<sp/>end=end,<sp/>name=BoldAnnotation.name,<sp/>value=value)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][BoldAnnotation][INIT]<sp/>BoldAnnotation<sp/>created<sp/>successfully&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_BoldAnnotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Bold;<sp/>TECH(3):<sp/>DataStructure,<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>bold<sp/>text<sp/>annotation<sp/>—<sp/>marks<sp/>which<sp/>portion<sp/>of<sp/>text<sp/>is<sp/>rendered<sp/>in<sp/>bold.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>@scope<sp/>Text<sp/>annotation<sp/>for<sp/>bold<sp/>formatting.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">##<sp/>@input<sp/>Bold<sp/>boolean<sp/>value<sp/>(&quot;True&quot;/&quot;False&quot;).</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">##<sp/>@output<sp/>BoldAnnotation<sp/>instance.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">##<sp/>@links<sp/>[INHERITS(9):<sp/>Annotation]</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>-<sp/>value<sp/>is<sp/>always<sp/>&quot;True&quot;<sp/>or<sp/>&quot;False&quot;</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>use<sp/>string<sp/>boolean<sp/>rather<sp/>than<sp/>native<sp/>bool?</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>A:<sp/>Annotation.value<sp/>is<sp/>str-typed<sp/>to<sp/>support<sp/>uniform<sp/>serialization<sp/>across<sp/>all<sp/>annotation<sp/>types.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>CLASS<sp/>10[Bold<sp/>text<sp/>annotation]<sp/>=&gt;<sp/>BoldAnnotation</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>-<sp/>[BoldAnnotation]:<sp/>Reader<sp/>→<sp/>ExtractBoldFormatting<sp/>→<sp/>BoldAnnotationStored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1a6db30a5fb94dd9d74d2419d6820de234" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1a6db30a5fb94dd9d74d2419d6820de234" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>bold,<sp/>annotation,<sp/>text,<sp/>formatting,<sp/>document,<sp/>font,<sp/>boolean</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>[start,<sp/>end,<sp/>value]<sp/>→<sp/>◇<sp/>bool(value)<sp/>check<sp/>→<sp/>⊕<sp/>super().__init__(name=&quot;bold&quot;)<sp/>→<sp/>⎋<sp/>BoldAnnotation</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/concrete_annotations/bold_annotation.py"/>
+  </compounddef>
+</doxygen>

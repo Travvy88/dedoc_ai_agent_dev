@@ -8,10 +8,15 @@ from dedoc.data_structures.line_metadata import LineMetadata
 from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.structure_extractors.hierarchy_level_builders.abstract_hierarchy_level_builder import AbstractHierarchyLevelBuilder
 from dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit.abstract_structure_unit import AbstractStructureUnit
+
+import logging
+logger = logging.getLogger(__name__)
 from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexps_ends_of_number, regexps_item_with_bracket, regexps_number, \
     regexps_subitem, roman_regexp
 
 
+# region CLASS_AbstractBodyHierarchyLevelBuilder [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @purpose AbstractBodyHierarchyLevelBuilder for document structure extraction pipeline
 class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
     starting_line_types = ["body"]
     regexps_item = regexps_item_with_bracket
@@ -20,13 +25,25 @@ class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
     regexps_subitem = regexps_subitem
     roman_regexp = roman_regexp
 
+    # region METHOD_structure_unit_builder [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose structure_unit_builder method
+    ## @io Input -> Output
+    ## @complexity 5
     @property
     @abc.abstractmethod
     def structure_unit_builder(self) -> AbstractStructureUnit:
+        self.logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][structure_unit_builder_INIT] Starting")
         pass
 
+    # endregion METHOD_structure_unit_builder
+    # region METHOD_get_body_line [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_body_line method
+    ## @io Input -> Output
+    ## @complexity 5
     @staticmethod
     def get_body_line(page_id: int = 0, line_id: int = 0, init_hl_depth: int = 1) -> LineWithMeta:
+        logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][get_body_line_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger недоступен в @staticmethod; заменён на модульный logger
         # if line_with_label is None:
         line_uid = str(uuid1()) + "_body"
         page_id = page_id
@@ -36,7 +53,13 @@ class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
                             annotations=[],
                             uid=line_uid)
 
+    # endregion METHOD_get_body_line
+    # region METHOD_get_lines_with_hierarchy [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_lines_with_hierarchy method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_lines_with_hierarchy(self, lines_with_labels: List[Tuple[LineWithMeta, str]], init_hl_depth: int = 2) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][get_lines_with_hierarchy_INIT] Starting")
         result = []
         # detect begin of body
         is_body_begun = False
@@ -64,7 +87,13 @@ class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
             result.append(self.get_body_line(init_hl_depth=init_hl_depth))
         return result
 
+    # endregion METHOD_get_lines_with_hierarchy
+    # region METHOD__line_2level [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _line_2level method
+    ## @io Input -> Output
+    ## @complexity 5
     def _line_2level(self, text: str, label: str, init_hl_depth: int, previous_hl: HierarchyLevel = None) -> Tuple[HierarchyLevel, Optional[HierarchyLevel]]:
+        self.logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][_line_2level_INIT] Starting")
         text = text.strip()
         if label == "header":
             label = "raw_text"
@@ -89,3 +118,29 @@ class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
             return HierarchyLevel(None, None, False, HierarchyLevel.raw_text), None
         else:
             raise Exception(f"{text} {label}")
+
+    # endregion METHOD__line_2level
+# endregion CLASS_AbstractBodyHierarchyLevelBuilder
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/hierarchy_level_builders/law_builders/body_builder/abstract_body_hierarchy_level_builder: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/hierarchy_level_builders/law_builders/body_builder/abstract_body_hierarchy_level_builder
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => AbstractBodyHierarchyLevelBuilder
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, hierarchy level builders, law builders, body builder, abstract body hierarchy level builder
+# STRUCTURE: ▶ structure_extractors/hierarchy_level_builders/law_builders/body_builder/abstract_body_hierarchy_level_builder → ○ AbstractBodyHierarchyLevelBuilder.cls → ⎋ result

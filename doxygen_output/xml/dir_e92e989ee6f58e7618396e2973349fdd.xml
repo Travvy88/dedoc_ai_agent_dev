@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_e92e989ee6f58e7618396e2973349fdd" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/paragraph_extractor</compoundname>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2paragraph__extractor_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="scan__paragraph__classifier__extractor_8py">scan_paragraph_classifier_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/paragraph_extractor/"/>
+  </compounddef>
+</doxygen>

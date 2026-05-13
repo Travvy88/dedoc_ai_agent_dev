@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::numbering_extractor::NumberingState</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1acf523d475f45c3c20c14d8f1c98dc5ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::numerations_dict</definition>
+        <argsstring></argsstring>
+        <name>numerations_dict</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.numerations_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="247" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1ad904921c17f04beb3de0ed6292c8835d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::prev_ilvl_dict</definition>
+        <argsstring></argsstring>
+        <name>prev_ilvl_dict</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.prev_ilvl_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="250" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a08c3e47f160a9aea836b1f0a4b8bda9a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::prev_num_id_dict</definition>
+        <argsstring></argsstring>
+        <name>prev_num_id_dict</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.prev_num_id_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="253" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a0e666faba54dab57f1ca1cbea4e02d61" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::shift_dict</definition>
+        <argsstring></argsstring>
+        <name>shift_dict</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.shift_dict</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="256" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a9c5f6e38ed8613ed19e16a6513976dbe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::prev_num_id</definition>
+        <argsstring></argsstring>
+        <name>prev_num_id</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.prev_num_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="258" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1afe354b1f7dac4dd60d694030481b1af2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::prev_abstract_num_id</definition>
+        <argsstring></argsstring>
+        <name>prev_abstract_num_id</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.prev_abstract_num_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="259" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1acd4d76c0c7ea4d96a82a9e4d9e1fb940" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.numbering_extractor.NumberingState::levels_count</definition>
+        <argsstring></argsstring>
+        <name>levels_count</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.levels_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="263" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a03b61de3cc0dbf5f3e317cc3d32c6ea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.numbering_extractor.NumberingState.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.numbering_extractor.NumberingState.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="245" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="245" bodyend="266"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class with intermediate values of list levels and items numbers during document parsing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/numbering_extractor.py" line="239" column="1" bodyfile="dedoc/readers/docx_reader/numbering_extractor.py" bodystart="239" bodyend="267"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a03b61de3cc0dbf5f3e317cc3d32c6ea9" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1acd4d76c0c7ea4d96a82a9e4d9e1fb940" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>levels_count</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1acf523d475f45c3c20c14d8f1c98dc5ef" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>numerations_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1afe354b1f7dac4dd60d694030481b1af2" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>prev_abstract_num_id</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1ad904921c17f04beb3de0ed6292c8835d" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>prev_ilvl_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a9c5f6e38ed8613ed19e16a6513976dbe" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>prev_num_id</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a08c3e47f160a9aea836b1f0a4b8bda9a" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>prev_num_id_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingState_1a0e666faba54dab57f1ca1cbea4e02d61" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::numbering_extractor::NumberingState</scope><name>shift_dict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

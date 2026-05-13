@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::line_metadata::LineMetadata</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a202f559cf3beb89bb071c23a76bbd449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.line_metadata.LineMetadata.__init__</definition>
+        <argsstring>(self, int page_id, Optional[int] line_id, Optional[HierarchyLevel] tag_hierarchy_level=None, Optional[HierarchyLevel] hierarchy_level=None, **Dict[str, Union[str, int, float]] kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.line_metadata.LineMetadata.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_id</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>line_id</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>tag_hierarchy_level</declname>
+          <array>[HierarchyLevel]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>hierarchy_level</declname>
+          <array>[HierarchyLevel]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**Dict]</type>
+          <declname>kwargs</declname>
+          <array>[str, Union[str, int, float]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize line metadata with page/line IDs, hierarchy levels, and extra kwargs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (int, Optional[int], Optional[HierarchyLevel], Optional[HierarchyLevel], **kwargs) -&gt; None \par \b Complexity\/ \:  3</para>
+<para>:param page_id: page number where paragraph starts, the numeration starts from page 0 :param line_id: line number inside the entire document, the numeration starts from line 0 :param tag_hierarchy_level: the hierarchy level of the line with its type directly extracted by some of the readers :param hierarchy_level: the hierarchy level of the line extracted by some of the structure extractors - the result type and level of the line. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_metadata.py" line="36" column="1" bodyfile="dedoc/data_structures/line_metadata.py" bodystart="41" bodyend="55"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1acda89367be241224baf7bd24f171650a" compoundref="api_2schema_2line__metadata_8py" startline="56">dedoc.api.schema.line_metadata.LineMetadata.line_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" compoundref="api_2schema_2line__metadata_8py" startline="55">dedoc.api.schema.line_metadata.LineMetadata.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a291da4a2c96592ed3309c82ea906b766" compoundref="api_2schema_2table__metadata_8py" startline="50">dedoc.api.schema.table_metadata.TableMetadata.page_id</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" compoundref="hierarchy__level_8py" startline="43">dedoc.data_structures.hierarchy_level.HierarchyLevel.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a9aabb3bcb59af01a2c40694cd2d71733" compoundref="shape_8py" startline="25">dedoc.readers.pptx_reader.shape.PptxShape.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a647e66337cd7242f37f0518a25ded097" compoundref="readers_2pptx__reader_2table_8py" startline="29">dedoc.readers.pptx_reader.table.PptxTable.page_id</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiLineMetadata</type>
+        <definition> ApiLineMetadata dedoc.data_structures.line_metadata.LineMetadata.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.line_metadata.LineMetadata.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert line metadata to API schema, mapping hierarchy level to paragraph type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiLineMetadata \par \b I/O\/ \:  None -&gt; ApiLineMetadata \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/line_metadata.py" line="63" column="1" bodyfile="dedoc/data_structures/line_metadata.py" bodystart="63" bodyend="70"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1acda89367be241224baf7bd24f171650a" compoundref="api_2schema_2line__metadata_8py" startline="56">dedoc.api.schema.line_metadata.LineMetadata.line_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" compoundref="api_2schema_2line__metadata_8py" startline="55">dedoc.api.schema.line_metadata.LineMetadata.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a291da4a2c96592ed3309c82ea906b766" compoundref="api_2schema_2table__metadata_8py" startline="50">dedoc.api.schema.table_metadata.TableMetadata.page_id</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" compoundref="hierarchy__level_8py" startline="43">dedoc.data_structures.hierarchy_level.HierarchyLevel.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a9aabb3bcb59af01a2c40694cd2d71733" compoundref="shape_8py" startline="25">dedoc.readers.pptx_reader.shape.PptxShape.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a647e66337cd7242f37f0518a25ded097" compoundref="readers_2pptx__reader_2table_8py" startline="29">dedoc.readers.pptx_reader.table.PptxTable.page_id</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold line-level metadata: page number, line ID, tag hierarchy level (from reader), result hierarchy level (from structure extractor), and extensible attributes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class holds information about document node (and document line) metadata, such as page number or line level in a document hierarchy.</para>
+<para>:ivar tag_hierarchy_level: the hierarchy level of the line with its type directly extracted by some of the readers (usually information got from tags e.g. in docx or html readers) :ivar hierarchy_level: the hierarchy level of the line extracted by some of the structure extractors - the result type and level of the line. The lower the level of the hierarchy, the closer it is to the root, it&apos;s used to construct document tree. :ivar page_id: page number where paragraph starts, the numeration starts from page 0 :ivar line_id: line number inside the entire document, the numeration starts from line 0</para>
+<para>:vartype tag_hierarchy_level: HierarchyLevel :vartype hierarchy_level: Optional[HierarchyLevel] :vartype page_id: int :vartype line_id: Optional[int]</para>
+<para>Additional variables may be added with other line metadata. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/line_metadata.py" line="13" column="1" bodyfile="dedoc/data_structures/line_metadata.py" bodystart="13" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a202f559cf3beb89bb071c23a76bbd449" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_metadata::LineMetadata</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::line_metadata::LineMetadata</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

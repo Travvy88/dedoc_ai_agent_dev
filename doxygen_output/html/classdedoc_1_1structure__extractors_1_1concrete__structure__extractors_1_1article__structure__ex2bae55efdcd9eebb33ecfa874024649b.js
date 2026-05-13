@@ -1,0 +1,6 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b =
+[
+    [ "_postprocess", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b.html#a453fc0b83d61a571c6a6fc9a8ed5fbaa", null ],
+    [ "extract", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b.html#af20300c5203842de80136cbf1cd9b988", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b.html#aa4b86efd0b1956ad885d835aa2c55a6f", null ]
+];

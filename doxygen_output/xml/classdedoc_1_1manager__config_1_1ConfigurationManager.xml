@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1manager__config_1_1ConfigurationManager" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::manager_config::ConfigurationManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1manager__config_1_1ConfigurationManager_1a57ca6cc258a12cf4e81123a0e3cdec05" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.manager_config.ConfigurationManager::__instance</definition>
+        <argsstring></argsstring>
+        <name>__instance</name>
+        <qualifiedname>dedoc.manager_config.ConfigurationManager.__instance</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="141" column="1" bodyfile="dedoc/manager_config.py" bodystart="141" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1config_1_1Configuration_1a488d2c4396156c6f665aa362d7ffe076" compoundref="config_8py" startline="23" endline="33">dedoc.config.Configuration.get_instance</referencedby>
+        <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae42cacadd173679dbc5e3c0c503496de" compoundref="manager__config_8py" startline="150" endline="159">dedoc.manager_config.ConfigurationManager.get_instance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae35d4650a27a757942f79b16c846159e" prot="private" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.manager_config.ConfigurationManager::__config</definition>
+        <argsstring></argsstring>
+        <name>__config</name>
+        <qualifiedname>dedoc.manager_config.ConfigurationManager.__config</qualifiedname>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="142" column="1" bodyfile="dedoc/manager_config.py" bodystart="142" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1config_1_1Configuration_1af2987152c5357b915a11e231360e2d3c" compoundref="config_8py" startline="41" endline="92">dedoc.config.Configuration.get_config</referencedby>
+        <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" compoundref="manager__config_8py" startline="181" endline="185">dedoc.manager_config.ConfigurationManager.get_config</referencedby>
+        <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" compoundref="manager__config_8py" startline="167" endline="173">dedoc.manager_config.ConfigurationManager.init_config</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae42cacadd173679dbc5e3c0c503496de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;ConfigurationManager&quot;</type>
+        <definition> &quot;ConfigurationManager&quot; dedoc.manager_config.ConfigurationManager.get_instance</definition>
+        <argsstring>(&quot;ConfigurationManager&quot; cls)</argsstring>
+        <name>get_instance</name>
+        <qualifiedname>dedoc.manager_config.ConfigurationManager.get_instance</qualifiedname>
+        <param>
+          <type>&quot;ConfigurationManager&quot;</type>
+          <declname>cls</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To return the singleton ConfigurationManager instance, creating it on first access. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  cls.__instance \par \b I/O\/ \:  None -&gt; ConfigurationManager \par \b Complexity\/ \:  3</para>
+<para>Actual object creation will happen when we use ConfigurationManager.getInstance() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="150" column="1" bodyfile="dedoc/manager_config.py" bodystart="150" bodyend="159"/>
+        <references refid="classdedoc_1_1config_1_1Configuration_1ab7cddd64512e4136ea1f97ffeb450da4" compoundref="config_8py" startline="14">dedoc.config.Configuration.__instance</references>
+        <references refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a57ca6cc258a12cf4e81123a0e3cdec05" compoundref="manager__config_8py" startline="141">dedoc.manager_config.ConfigurationManager.__instance</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.manager_config.ConfigurationManager.init_config</definition>
+        <argsstring>(self, dict config, Optional[dict] new_config=None)</argsstring>
+        <name>init_config</name>
+        <qualifiedname>dedoc.manager_config.ConfigurationManager.init_config</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>new_config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize or override the cached manager configuration, accepting either a pre-built config or delegating to _get_manager_config for assembly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _get_manager_config \par \b I/O\/ \:  (dict, Optional[dict]) -&gt; None \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="167" column="1" bodyfile="dedoc/manager_config.py" bodystart="167" bodyend="173"/>
+        <references refid="classdedoc_1_1config_1_1Configuration_1a7db2b693c869582659e99980ae601210" compoundref="config_8py" startline="15">dedoc.config.Configuration.__config</references>
+        <references refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae35d4650a27a757942f79b16c846159e" compoundref="manager__config_8py" startline="142">dedoc.manager_config.ConfigurationManager.__config</references>
+        <references refid="namespacededoc_1_1manager__config_1ac9fd246302c2a9f13fc5c89bc004377f" compoundref="manager__config_8py" startline="12" endline="132">dedoc.manager_config._get_manager_config</references>
+        <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" compoundref="manager__config_8py" startline="181" endline="185">dedoc.manager_config.ConfigurationManager.get_config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.manager_config.ConfigurationManager.get_config</definition>
+        <argsstring>(self, dict config)</argsstring>
+        <name>get_config</name>
+        <qualifiedname>dedoc.manager_config.ConfigurationManager.get_config</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To return the cached manager configuration, triggering lazy assembly via init_config if not yet initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  init_config \par \b I/O\/ \:  dict -&gt; dict \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="181" column="1" bodyfile="dedoc/manager_config.py" bodystart="181" bodyend="185"/>
+        <references refid="classdedoc_1_1config_1_1Configuration_1a7db2b693c869582659e99980ae601210" compoundref="config_8py" startline="15">dedoc.config.Configuration.__config</references>
+        <references refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae35d4650a27a757942f79b16c846159e" compoundref="manager__config_8py" startline="142">dedoc.manager_config.ConfigurationManager.__config</references>
+        <references refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" compoundref="manager__config_8py" startline="167" endline="173">dedoc.manager_config.ConfigurationManager.init_config</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To provide a singleton caching layer for the manager configuration, ensuring the expensive assembly of all pipeline components happens at most once per process. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Pattern Singleton for configuration service INFO: Configuration class and config are created once at the first call For initialization ConfigurationManager call ConfigurationManager.getInstance().initConfig(new_config: dict) If you need default config, call ConfigurationManager.getInstance() </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.manager_config.ConfigurationManager</label>
+        <link refid="classdedoc_1_1manager__config_1_1ConfigurationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.manager_config.ConfigurationManager</label>
+        <link refid="classdedoc_1_1manager__config_1_1ConfigurationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/manager_config.py" line="134" column="1" bodyfile="dedoc/manager_config.py" bodystart="134" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae35d4650a27a757942f79b16c846159e" prot="private" virt="non-virtual"><scope>dedoc::manager_config::ConfigurationManager</scope><name>__config</name></member>
+      <member refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a57ca6cc258a12cf4e81123a0e3cdec05" prot="private" virt="non-virtual"><scope>dedoc::manager_config::ConfigurationManager</scope><name>__instance</name></member>
+      <member refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" prot="public" virt="non-virtual"><scope>dedoc::manager_config::ConfigurationManager</scope><name>get_config</name></member>
+      <member refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae42cacadd173679dbc5e3c0c503496de" prot="public" virt="non-virtual"><scope>dedoc::manager_config::ConfigurationManager</scope><name>get_instance</name></member>
+      <member refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" prot="public" virt="non-virtual"><scope>dedoc::manager_config::ConfigurationManager</scope><name>init_config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

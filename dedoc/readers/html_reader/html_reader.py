@@ -8,11 +8,13 @@ from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
 
+# region CLASS_HtmlReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class HtmlReader(BaseReader):
     """
     This reader allows to handle documents with the following extensions: .htm, .html, .shtml
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedoc.extensions import recognized_extensions, recognized_mimes
         from dedoc.readers.html_reader.html_line_postprocessing import HtmlLinePostprocessing
@@ -22,6 +24,8 @@ class HtmlReader(BaseReader):
         self.postprocessor = HtmlLinePostprocessing()
         self.tag_annotation_parser = HtmlTagAnnotationParser()
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines and tables, attachments remain empty.
@@ -45,6 +49,8 @@ class HtmlReader(BaseReader):
         document_postprocess = self.postprocessor.postprocess(document)
         return document_postprocess
 
+    # region METHOD___handle_block [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __handle_block(self, tag: Union[Tag], filepath_hash: str, handle_invisible_table: bool, table: Optional[bool] = False,
                        uid: Optional[str] = "") -> List[LineWithMeta]:
         import hashlib
@@ -77,6 +83,8 @@ class HtmlReader(BaseReader):
                 line.metadata.html_tag = tag.name
         return block_lines
 
+    # region METHOD___handle_single_tag [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_block
     def __handle_single_tag(self, tag: Tag, filepath_hash: str, uid: str, table: Optional[bool] = False) -> List[LineWithMeta]:
         import hashlib
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -95,6 +103,8 @@ class HtmlReader(BaseReader):
         line.metadata.html_tag = tag.name
         return [line]
 
+    # region METHOD___read_blocks [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_single_tag
     def __read_blocks(self, block: Tag, filepath_hash: str = "", handle_invisible_table: bool = False, table: Optional[bool] = False,
                       uid: Optional[str] = "") -> List[LineWithMeta]:
         import hashlib
@@ -111,6 +121,8 @@ class HtmlReader(BaseReader):
             lines.extend(block_lines)
         return lines
 
+    # region METHOD__handle_text_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___read_blocks
     def _handle_text_line(self, block: str, filepath_hash: str, uid: str, ignore_space: bool = True) -> List[LineWithMeta]:
         import hashlib
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -121,6 +133,8 @@ class HtmlReader(BaseReader):
         line = self.__make_line(block, HierarchyLevel.unknown, 0, uid=tag_uid, filepath_hash=filepath_hash)
         return [line]
 
+    # region METHOD___make_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__handle_text_line
     def __make_line(self, line: str, line_type: str, header_level: int = 0, uid: str = None, filepath_hash: str = None,
                     annotations: List = None) -> LineWithMeta:
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -135,6 +149,8 @@ class HtmlReader(BaseReader):
         uid = f"{filepath_hash}_{uid}"
         return LineWithMeta(line=line, metadata=metadata, annotations=annotations, uid=uid)
 
+    # region METHOD___get_li_header [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___make_line
     def __get_li_header(self, list_type: str, index: int) -> LineWithMeta:
         import string
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -159,6 +175,8 @@ class HtmlReader(BaseReader):
         header_line = LineWithMeta(line=header, metadata=metadata)
         return header_line
 
+    # region METHOD___read_list [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_li_header
     def __read_list(self, lst: Tag, uid: str, filepath_hash: str, handle_invisible_table: bool) -> List[LineWithMeta]:
         import hashlib
         from dedoc.readers.html_reader.html_tags import HtmlTags
@@ -180,6 +198,8 @@ class HtmlReader(BaseReader):
                 lines.extend(item_lines)
         return lines
 
+    # region METHOD___handle_list_item [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___read_list
     def __handle_list_item(self, item: Tag, item_index: int, list_type: str, filepath_hash: str, uid: str, handle_invisible_table: bool) -> List[LineWithMeta]:
         import hashlib
 
@@ -200,6 +220,8 @@ class HtmlReader(BaseReader):
         return lines
 
     # not currently used, but may be useful in the future
+    # region METHOD___get_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_list_item
     def __get_text(self, tag: Tag, table: Optional[bool] = False) -> [str, int, int]:
         for br in tag.find_all("br"):
             br.replace_with("\n")
@@ -207,6 +229,8 @@ class HtmlReader(BaseReader):
         text = "" if text is None else text
         return text
 
+    # region METHOD___is_content_tag [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_text
     def __is_content_tag(self, tag: Tag, handle_invisible_table: bool = False) -> bool:
         """
         check if given tag is a content tag
@@ -222,6 +246,8 @@ class HtmlReader(BaseReader):
             return True
         return not isinstance(tag, Doctype) and not isinstance(tag, Comment)
 
+    # region METHOD___handle_invisible_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___is_content_tag
     def __handle_invisible_table(self, block: Tag, filepath_hash: str, uid: str) -> List[LineWithMeta]:
         import hashlib
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
@@ -236,6 +262,8 @@ class HtmlReader(BaseReader):
                 result.append(line)
         return result
 
+    # region METHOD___clone_cell [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_invisible_table
     def __clone_cell(self, el: Tuple[Tag, NavigableString]) -> Tuple[Tag, NavigableString]:
         from dedoc.readers.html_reader.html_tags import HtmlTags
 
@@ -253,6 +281,8 @@ class HtmlReader(BaseReader):
             copy.append(self.__clone_cell(child))
         return copy
 
+    # region METHOD___split_table_cells [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___clone_cell
     def __split_table_cells(self, table: Tag, table_list: List[List[Tag]]) -> None:
         from dedoc.readers.html_reader.html_tags import HtmlTags
 
@@ -266,6 +296,8 @@ class HtmlReader(BaseReader):
                     for index in range(row_index + 1, row_index + cell_rowspan):
                         table_list[index][cell_index:cell_index] = [cell_copy] * cell_colspan
 
+    # region METHOD___fix_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___split_table_cells
     def __fix_table(self, table: Tag) -> List[List[Tag]]:
         from dedoc.readers.html_reader.html_tags import HtmlTags
 
@@ -282,6 +314,8 @@ class HtmlReader(BaseReader):
 
         return table_list
 
+    # region METHOD__read_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___fix_table
     def _read_table(self, table: Tag, filepath_hash: str) -> Table:
         from dedoc.data_structures.cell_with_meta import CellWithMeta
         from dedoc.data_structures.table_metadata import TableMetadata
@@ -303,6 +337,8 @@ class HtmlReader(BaseReader):
 
         return Table(cells=cells_with_meta, metadata=TableMetadata(page_id=0))
 
+    # region METHOD__visible_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__read_table
     def _visible_table(self, table: Tag, handle_invisible_table: bool) -> bool:
         if handle_invisible_table:
             return True
@@ -311,4 +347,32 @@ class HtmlReader(BaseReader):
             style = td.attrs.get("style", "")
             if "border-bottom-style:solid" in style or "border-top-style:solid" in style:
                 return True
+# endregion CLASS_HtmlReader
         return table.attrs.get("border", "0") != "0"
+
+    # endregion METHOD__visible_table
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_html_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse HTML documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: HTML format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [36][HtmlReader reader/processor] => HtmlReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(HTML) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: html_reader, dedoc, reader, HTML, HtmlReader, BaseReader, HTML, tags, annotation, BeautifulSoup, line postprocessing, tag_hierarchy_level, HtmlReader
+# STRUCTURE: ▶ Init ┌HTML file┐ → [HtmlReader] ○ can_read? → ○ read → [__init__ → read → __handle_block] → ⊕ UnstructuredDocument(lines, tables, attachments)

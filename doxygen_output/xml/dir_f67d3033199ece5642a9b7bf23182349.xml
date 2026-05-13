@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f67d3033199ece5642a9b7bf23182349" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_extractors</compoundname>
+    <innerdir refid="dir_0c015316c4507b43d421815de3f4bc6a">dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_extractors/concrete_extractors</innerdir>
+    <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="base__table__extractor_8py">base_table_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_extractors/"/>
+  </compounddef>
+</doxygen>

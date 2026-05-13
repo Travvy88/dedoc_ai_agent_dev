@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1structure__constructor__composition" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::structure_constructor_composition</compoundname>
+    <innerclass refid="classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition" prot="public">dedoc::structure_constructors::structure_constructor_composition::StructureConstructorComposition</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1structure__constructor__composition_1a5bd9f15e6f48719c3290923fe145b5fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_constructors::structure_constructor_composition.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_constructors.structure_constructor_composition.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/structure_constructor_composition.py" line="38" column="1" bodyfile="dedoc/structure_constructors/structure_constructor_composition.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1structure__constructor__composition_1a95d209ef011388ae1ab67ff4073db95e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.structure_constructor_composition._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.structure_constructor_composition._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Implement the Composite pattern for structure constructors: route a document to the correct constructor based on the <computeroutput>structure_type</computeroutput> parameter, with a fallback to a default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure-type-based dispatch, composition of multiple structure constructors. \par \b Input\/ \:  Dict[str, AbstractStructureConstructor] (constructor registry), default AbstractStructureConstructor. \par \b Output\/ \:  ParsedDocument via the selected concrete constructor. \par \b Links\/ \:  [USES_API(9): AbstractStructureConstructor] \par \b Links to Spec\/ \:  REQ-STR-002: Multiple structure types must be supported via runtime dispatch. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>If structure_type is empty/None, the default_constructor is ALWAYS used.</para>
+</listitem><listitem><para>If structure_type is unknown, StructureExtractorError is ALWAYS raised.</para>
+</listitem><listitem><para>constructors dictionary keys are the valid structure_type values. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a composition class instead of inheritance? A: This pattern allows adding new structure types at runtime without modifying the constructor hierarchy — new constructors are simply registered in the dict. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Composite dispatcher for structure constructors] =&gt; StructureConstructorComposition METHOD 6[Constructor with registry injection] =&gt; <bold>init</bold> METHOD 9[Dispatch to correct constructor by structure_type] =&gt; construct \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[construct]: DedocManager (ParseRequest) → ResolveStructureType → DispatchToConstructor → ProduceParsedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/structure_constructor_composition.py" line="24" column="1" bodyfile="dedoc/structure_constructors/structure_constructor_composition.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/structure_constructor_composition.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

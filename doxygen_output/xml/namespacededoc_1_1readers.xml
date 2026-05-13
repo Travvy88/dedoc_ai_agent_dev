@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers" kind="namespace" language="Python">
+    <compoundname>dedoc::readers</compoundname>
+    <innernamespace refid="namespacededoc_1_1readers_1_1archive__reader">dedoc::readers::archive_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1article__reader">dedoc::readers::article_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1base__reader">dedoc::readers::base_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1csv__reader">dedoc::readers::csv_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1docx__reader">dedoc::readers::docx_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1email__reader">dedoc::readers::email_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1excel__reader">dedoc::readers::excel_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1html2pdf__reader">dedoc::readers::html2pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1html__reader">dedoc::readers::html_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1json__reader">dedoc::readers::json_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1mhtml__reader">dedoc::readers::mhtml_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1note__reader">dedoc::readers::note_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pptx__reader">dedoc::readers::pptx_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1reader__composition">dedoc::readers::reader_composition</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1txt__reader">dedoc::readers::txt_reader</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1a6f0c6651a22f32c121b091d6c04032cc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/__init__.py" line="24" column="1" bodyfile="dedoc/readers/__init__.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1a7ea45cf722841e529861f1ba64b05c21" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::readers.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.readers.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1readers_1_1archive__reader_1_1archive__reader_1_1ArchiveReader" kindref="compound">ArchiveReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader" kindref="compound">ArticleReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" kindref="compound">BaseReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader" kindref="compound">CSVReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader" kindref="compound">DocxReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1email__reader_1_1email__reader_1_1EmailReader" kindref="compound">EmailReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader" kindref="compound">ExcelReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader" kindref="compound">HtmlReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader" kindref="compound">JsonReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1mhtml__reader_1_1mhtml__reader_1_1MhtmlReader" kindref="compound">MhtmlReader</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1readers_1_1note__reader_1_1note__reader_1_1NoteReader" kindref="compound">NoteReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1pptx__reader_1_1PptxReader" kindref="compound">PptxReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition" kindref="compound">ReaderComposition</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader" kindref="compound">RawTextReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader" kindref="compound">PdfBaseReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader" kindref="compound">PdfImageReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader" kindref="compound">PdfTabbyReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader" kindref="compound">PdfTxtlayerReader</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1pdf__auto__reader_1_1PdfAutoReader" kindref="compound">PdfAutoReader</ref>&apos;, &apos;<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader" kindref="compound">PdfBrokenEncodingReader</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/__init__.py" line="26" column="1" bodyfile="dedoc/readers/__init__.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1a47aab360ef7b8b8606c11c23272702ae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Re-export symbols for the reader subpackage of dedoc/readers/. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Symbol re-export. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>[10][Module entry point / symbol re-exports] \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(document) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/__init__.py" line="49" column="1" bodyfile="dedoc/readers/__init__.py" bodystart="49" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['handle_0',['handle',['../classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler.html#a089a07dc5e7d78da4f0982509d6a7b20',1,'dedoc.api.process_handler.AbstractProcessHandler.handle()'],['../classdedoc_1_1api_1_1process__handler_1_1ProcessHandler.html#a0d5c266bd2b46f852ce6485b5b0b3e1e',1,'dedoc.api.process_handler.ProcessHandler.handle()'],['../classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler.html#a6a962b807f687e38680f49e9317b3d17',1,'dedoc.api.process_handler.CancellationProcessHandler.handle()']]],
+  ['handle_5fattachments_1',['handle_attachments',['../classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler.html#a95286a8d1fc577130073ec9265ae4e5c',1,'dedoc::attachments_handler::attachments_handler::AttachmentsHandler']]],
+  ['handle_5fcells_2',['handle_cells',['../classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935.html#a7461fba8bc0af5cd1647a48628697bc6',1,'dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_extractors::concrete_extractors::onepage_table_extractor::OnePageTableExtractor']]],
+  ['handle_5fempty_5fglyph_3',['handle_empty_glyph',['../namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1fontforge__wrapper.html#a0e846b8b7ab15d5b3e19fc3e102481ee',1,'dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::fontforge_wrapper']]]
+];

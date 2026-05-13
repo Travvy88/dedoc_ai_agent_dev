@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1abstract__structure__constructor">dedoc::structure_constructors::abstract_structure_constructor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors">dedoc::structure_constructors::concrete_structure_constructors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors_1_1structure__constructor__composition">dedoc::structure_constructors::structure_constructor_composition</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1ae7e59be6edba37c7e3fb5095d2981a3d" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::structure_constructors.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.structure_constructors.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor" kindref="compound">AbstractStructureConstructor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor" kindref="compound">LinearConstructor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor" kindref="compound">TreeConstructor</ref>&apos;, &apos;<ref refid="classdedoc_1_1structure__constructors_1_1structure__constructor__composition_1_1StructureConstructorComposition" kindref="compound">StructureConstructorComposition</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/__init__.py" line="30" column="1" bodyfile="dedoc/structure_constructors/__init__.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1affaaf3fd9cc717e3f7a4243c02658c54" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide a unified public API surface for the structure_constructors package, re-exporting all concrete and abstract structure constructors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization, public symbol export. \par \b Input\/ \:  None (package-level init). \par \b Output\/ \:  <bold>all</bold> list with exported class names. \par \b Links\/ \:  [USES_API(7): AbstractStructureConstructor, LinearConstructor, TreeConstructor, StructureConstructorComposition] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> ALWAYS contains all 4 exported class names. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate init with explicit <bold>all</bold>? A: Explicit exports prevent namespace pollution and give agents a clear contract of what this package provides. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup added] \par \b Module Map\/ \:</para>
+<para>CONST 5[Package public symbol list] =&gt; <bold>all</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>all</bold>]: Agent (Import discovery) → ReadPackageAPI → KnowExportedSymbols </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/__init__.py" line="19" column="1" bodyfile="dedoc/structure_constructors/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::font_type_classifier::FontTypeClassifier</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a37ca629b88ebc18faf8ee80b8c55383f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier::bold_classifier</definition>
+        <argsstring></argsstring>
+        <name>bold_classifier</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.bold_classifier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a02fbe62147589a57ba072a495e1c4353" compoundref="font__type__classifier_8py" startline="19" endline="40">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.predict_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a71e576367c31aead8ce83e14c9d0426b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" bodystart="13" bodyend="16"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a71e576367c31aead8ce83e14c9d0426b" compoundref="font__type__classifier_8py" startline="13" endline="16">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a71e576367c31aead8ce83e14c9d0426b" compoundref="font__type__classifier_8py" startline="13" endline="16">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a02fbe62147589a57ba072a495e1c4353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox" kindref="compound">PageWithBBox</ref></type>
+        <definition> PageWithBBox dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.predict_annotations</definition>
+        <argsstring>(self, PageWithBBox page)</argsstring>
+        <name>predict_annotations</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.predict_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox" kindref="compound">PageWithBBox</ref></type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" line="19" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" bodystart="19" bodyend="40"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a37ca629b88ebc18faf8ee80b8c55383f" compoundref="font__type__classifier_8py" startline="15">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier.FontTypeClassifier.bold_classifier</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8_1a5be6f4a7b8859e0676fc94875eef9dd6" compoundref="metadata__extractor_8py" startline="46" endline="67">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.metadata_extractor.LineMetadataExtractor.extract_metadata_and_set_annotations</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/font_type_classifier.py" bodystart="11" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a71e576367c31aead8ce83e14c9d0426b" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::font_type_classifier::FontTypeClassifier</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a37ca629b88ebc18faf8ee80b8c55383f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::font_type_classifier::FontTypeClassifier</scope><name>bold_classifier</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21_1a02fbe62147589a57ba072a495e1c4353" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::font_type_classifier::FontTypeClassifier</scope><name>predict_annotations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

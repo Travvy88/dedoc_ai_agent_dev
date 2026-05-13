@@ -1,0 +1,7 @@
+var namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor =
+[
+    [ "ListFeaturesExtractor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e.html", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e" ],
+    [ "Window", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor.html#ae030a35dd81e96920694cd1c7a607fc5", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor.html#a8a35a8405db0f1623cb435690e2ff5ad", null ]
+];

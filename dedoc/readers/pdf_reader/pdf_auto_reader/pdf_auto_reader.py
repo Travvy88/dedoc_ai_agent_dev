@@ -5,6 +5,7 @@ from dedoc.readers.base_reader import BaseReader
 from dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result import TxtLayerResult
 
 
+# region CLASS_PdfAutoReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PdfAutoReader(BaseReader):
     """
     This class allows to extract content from the .pdf documents of any kind.
@@ -20,6 +21,7 @@ class PdfAutoReader(BaseReader):
     For more information, look to `pdf_with_text_layer` option description in :ref:`pdf_handling_parameters`.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedoc.extensions import recognized_extensions, recognized_mimes
         from dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector import TxtLayerDetector
@@ -34,6 +36,8 @@ class PdfAutoReader(BaseReader):
         self.pdf_image_reader = PdfImageReader(config=self.config)
         self.txtlayer_detector = TxtLayerDetector(pdf_reader=self.pdf_tabby_reader, config=self.config)
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if the document extension is suitable for this reader (PDF format is supported only).
@@ -46,6 +50,8 @@ class PdfAutoReader(BaseReader):
         from dedoc.utils.parameter_utils import get_param_pdf_with_txt_layer
         return super().can_read(file_path=file_path, mime=mime, extension=extension) and get_param_pdf_with_txt_layer(parameters) in ("auto", "auto_tabby")
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines, tables and attachments.
@@ -66,6 +72,8 @@ class PdfAutoReader(BaseReader):
         result_document.warnings.extend(warnings)
         return result_document
 
+    # region METHOD___parse_document [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __parse_document(self, txtlayer_result: TxtLayerResult, parameters: dict, path: str, warnings: list) -> UnstructuredDocument:
         import os
 
@@ -91,6 +99,8 @@ class PdfAutoReader(BaseReader):
         result = reader.read(file_path=path, parameters=copy_parameters)
         return result
 
+    # region METHOD___merge_documents [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_document
     def __merge_documents(self, documents: List[UnstructuredDocument]) -> UnstructuredDocument:
         if len(documents) == 0:
             raise ValueError("No documents to merge")
@@ -123,6 +133,8 @@ class PdfAutoReader(BaseReader):
 
         return UnstructuredDocument(tables=tables, lines=lines, attachments=attachments, metadata=documents[0].metadata, warnings=warnings)
 
+    # region METHOD___prepare_tables_attachments [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___merge_documents
     def __prepare_tables_attachments(self, documents: List[UnstructuredDocument]) -> Tuple[list, list]:
         from dedoc.readers.pdf_reader.data_classes.pdf_image_attachment import PdfImageAttachment
 
@@ -142,4 +154,32 @@ class PdfAutoReader(BaseReader):
                 if isinstance(attachment, PdfImageAttachment) and min_page <= attachment.location.page_number <= max_page:
                     attachments.append(attachment)
 
+# endregion CLASS_PdfAutoReader
         return tables, attachments
+
+    # endregion METHOD___prepare_tables_attachments
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_auto_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [12][PdfAutoReader reader/processor] => PdfAutoReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdf_auto_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfAutoReader
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PdfAutoReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::csv_reader::csv_reader::CSVReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" prot="public" virt="non-virtual">dedoc.readers.base_reader.BaseReader</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1abce2e6278a3bfdf98d4de4e6a6b58a45" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.csv_reader.csv_reader.CSVReader::default_separator</definition>
+        <argsstring></argsstring>
+        <name>default_separator</name>
+        <qualifiedname>dedoc.readers.csv_reader.csv_reader.CSVReader.default_separator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/csv_reader/csv_reader.py" line="21" column="1" bodyfile="dedoc/readers/csv_reader/csv_reader.py" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a10a2dddc204303f429844d9ff2991a23" compoundref="csv__reader_8py" startline="25" endline="58">dedoc.readers.csv_reader.csv_reader.CSVReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a330173f5ca8b10e286c78dd2f966813e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.csv_reader.csv_reader.CSVReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.csv_reader.csv_reader.CSVReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a552713056ee6b03298dd298321be30ef">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/csv_reader/csv_reader.py" line="18" column="1" bodyfile="dedoc/readers/csv_reader/csv_reader.py" bodystart="18" bodyend="22"/>
+        <references refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a330173f5ca8b10e286c78dd2f966813e" compoundref="csv__reader_8py" startline="18" endline="22">dedoc.readers.csv_reader.csv_reader.CSVReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a330173f5ca8b10e286c78dd2f966813e" compoundref="csv__reader_8py" startline="18" endline="22">dedoc.readers.csv_reader.csv_reader.CSVReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a10a2dddc204303f429844d9ff2991a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.csv_reader.csv_reader.CSVReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.csv_reader.csv_reader.CSVReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a5fbcf9a222907f9bff5de42552c0f461">read</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>The method will place all extracted content inside tables of the :class:<computeroutput>~dedoc.data_structures.UnstructuredDocument</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The lines and attachments remain empty. Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/csv_reader/csv_reader.py" line="25" column="1" bodyfile="dedoc/readers/csv_reader/csv_reader.py" bodystart="25" bodyend="58"/>
+        <references refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1aedd1c5441133470bf8abdb409e3f04a6" compoundref="csv__reader_8py" startline="61" endline="70">dedoc.readers.csv_reader.csv_reader.CSVReader.__get_encoding</references>
+        <references refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader_1a3deaf4aff4f4ad5264b6ef0c64fca2b7" compoundref="raw__text__reader_8py" startline="54" endline="61">dedoc.readers.txt_reader.raw_text_reader.RawTextReader.__get_encoding</references>
+        <references refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1abce2e6278a3bfdf98d4de4e6a6b58a45" compoundref="csv__reader_8py" startline="21">dedoc.readers.csv_reader.csv_reader.CSVReader.default_separator</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1aedd1c5441133470bf8abdb409e3f04a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[str, List[str]]</type>
+        <definition> Tuple[str, List[str]] dedoc.readers.csv_reader.csv_reader.CSVReader.__get_encoding</definition>
+        <argsstring>(self, str path, dict parameters)</argsstring>
+        <name>__get_encoding</name>
+        <qualifiedname>dedoc.readers.csv_reader.csv_reader.CSVReader.__get_encoding</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/csv_reader/csv_reader.py" line="61" column="1" bodyfile="dedoc/readers/csv_reader/csv_reader.py" bodystart="61" bodyend="70"/>
+        <referencedby refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a10a2dddc204303f429844d9ff2991a23" compoundref="csv__reader_8py" startline="25" endline="58">dedoc.readers.csv_reader.csv_reader.CSVReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader_1ab4819ba0c5dbd83b54f7e83fe613ce56" compoundref="raw__text__reader_8py" startline="40" endline="51">dedoc.readers.txt_reader.raw_text_reader.RawTextReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class allows to parse files with the following extensions: .csv, .tsv. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.csv_reader.csv_reader.CSVReader</label>
+        <link refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.csv_reader.csv_reader.CSVReader</label>
+        <link refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/csv_reader/csv_reader.py" line="12" column="1" bodyfile="dedoc/readers/csv_reader/csv_reader.py" bodystart="12" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1aedd1c5441133470bf8abdb409e3f04a6" prot="private" virt="non-virtual"><scope>dedoc::readers::csv_reader::csv_reader::CSVReader</scope><name>__get_encoding</name></member>
+      <member refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a330173f5ca8b10e286c78dd2f966813e" prot="public" virt="non-virtual"><scope>dedoc::readers::csv_reader::csv_reader::CSVReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1abce2e6278a3bfdf98d4de4e6a6b58a45" prot="public" virt="non-virtual"><scope>dedoc::readers::csv_reader::csv_reader::CSVReader</scope><name>default_separator</name></member>
+      <member refid="classdedoc_1_1readers_1_1csv__reader_1_1csv__reader_1_1CSVReader_1a10a2dddc204303f429844d9ff2991a23" prot="public" virt="non-virtual"><scope>dedoc::readers::csv_reader::csv_reader::CSVReader</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

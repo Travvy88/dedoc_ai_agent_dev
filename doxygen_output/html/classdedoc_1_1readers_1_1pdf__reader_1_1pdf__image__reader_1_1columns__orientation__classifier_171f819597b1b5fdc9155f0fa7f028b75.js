@@ -1,0 +1,6 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75.html#a82e669f248ec06473dea908132bb4edf", null ],
+    [ "__call__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75.html#a30bc5cdd55641764869218d1aac944e2", null ],
+    [ "transform", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75.html#a305868c778c76e67a91c9dee7b6392d5", null ]
+];

@@ -1,0 +1,6 @@
+var namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder =
+[
+    [ "DiplomaBodyBuilder", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder_1_1DiplomaBodyBuilder.html", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder_1_1DiplomaBodyBuilder" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder.html#a003ee75f6a4346df26265c0e0e9f8d20", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder.html#a7835551a55198ec64733a7e4dae40a77", null ]
+];

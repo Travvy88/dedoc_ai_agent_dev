@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple =
+[
+    [ "OcrElement", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple.html#a5856b73100782ec61bc7cce77423f4c7", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple.html#a16a14fe2050898ab7eb6f2d5fe5373bb", null ]
+];

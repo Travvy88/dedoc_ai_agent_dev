@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font__type__classifier =
+[
+    [ "FontTypeClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font_0c921a840140c3ce5e635061b4a53e21" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font__type__classifier.html#ac91b52b26193f772a35ad358559eb1d8", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1font__type__classifier.html#ab56e2be177d466715460b18ba3995901", null ]
+];

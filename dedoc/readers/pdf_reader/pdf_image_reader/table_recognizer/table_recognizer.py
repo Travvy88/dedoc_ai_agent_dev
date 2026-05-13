@@ -19,6 +19,7 @@ from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors
 """-------------------------------------entry class of Table Recognizer Module---------------------------------------"""
 
 
+# region CLASS_TableRecognizer [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class TableRecognizer:
     """
     The class recognizes tables from document images. This class is internal to the system.
@@ -30,6 +31,7 @@ class TableRecognizer:
       :meth:`~dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.convert_to_multipages_tables`
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict = None) -> None:
         self.logger = config.get("logger", logging.getLogger())
         self.onepage_tables_extractor = OnePageTableExtractor(config=config, logger=self.logger)
@@ -37,6 +39,8 @@ class TableRecognizer:
         self.config = config
         self.table_type = TableTypeAdditionalOptions()
 
+    # region METHOD_convert_to_multipages_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def convert_to_multipages_tables(self, all_single_tables: List[ScanTable], lines_with_meta: List[LineWithMeta]) -> List[ScanTable]:
         """
         The function analyzes recognized tables from the entire document (all pages) to see if they are multi-page.
@@ -45,6 +49,8 @@ class TableRecognizer:
         multipage_tables = self.multipage_tables_extractor.extract_multipage_tables(single_tables=all_single_tables, lines_with_meta=lines_with_meta)
         return multipage_tables
 
+    # region METHOD_recognize_tables_from_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_convert_to_multipages_tables
     def recognize_tables_from_image(self, image: np.ndarray, page_number: int, language: str, table_type: str = "") -> Tuple[np.ndarray, List[ScanTable]]:
         """
         The function recognizes tables with borders from scanned document image.
@@ -62,6 +68,8 @@ class TableRecognizer:
 
             return image, []
 
+    # region METHOD___rec_tables_from_img [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_recognize_tables_from_image
     def __rec_tables_from_img(self, src_image: np.ndarray, page_num: int, language: str, table_type: str) -> Tuple[np.ndarray, List[ScanTable]]:
         gray_image = cv2.cvtColor(src_image, cv2.COLOR_BGR2GRAY) if len(src_image.shape) == 3 else src_image
 
@@ -82,7 +90,9 @@ class TableRecognizer:
 
         return cleaned_image, filtered_tables
 
+    # endregion METHOD___rec_tables_from_img
     @staticmethod
+    # region METHOD___clean_image_from_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __clean_image_from_table(image: np.ndarray, tables: List[ScanTable]) -> np.ndarray:
         image_copy = np.copy(image)
         for table in tables:
@@ -90,7 +100,9 @@ class TableRecognizer:
                 image_copy = TableRecognizer.__clean_image(image_copy, location.bbox)
         return image_copy
 
+    # endregion METHOD___clean_image_from_table
     @staticmethod
+    # region METHOD___clean_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __clean_image(image: np.ndarray, bbox: BBox, color: int = 255) -> np.ndarray:
         """
         replace bboxes with given color (for example to remove tables from images)
@@ -112,6 +124,8 @@ class TableRecognizer:
 
         return image
 
+    # region METHOD___filter_bad_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___clean_image
     def __filter_bad_tables(self, tables: List[ScanTable], image: np.ndarray) -> List[ScanTable]:
         filtered = []
         for table in tables:
@@ -119,6 +133,8 @@ class TableRecognizer:
                 filtered.append(table)
         return filtered
 
+    # region METHOD___is_not_table [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___filter_bad_tables
     def __is_not_table(self, table: ScanTable, image: np.ndarray) -> bool:
         bbox = table.location.bbox
         height, width = image.shape
@@ -134,6 +150,8 @@ class TableRecognizer:
         res = (white_mean < 0.5) or (black_mean > 0.3) or (std < 30) or (mean < 150) or (mean < 200 and std < 80) or ratio < 0.65
         return res
 
+    # region METHOD___save_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___is_not_table
     def __save_tables(self, tables: List[ScanTable], image: np.ndarray, table_path: Optional[str] = None) -> None:
         image = Image.fromarray(image)
         os.makedirs(table_path, exist_ok=True)
@@ -143,4 +161,32 @@ class TableRecognizer:
             jsons_path = os.path.join(table_path, f"{file_name}.json")
             image.save(image_path)
             with open(jsons_path, "w") as out:
+# endregion CLASS_TableRecognizer
                 json.dump(obj=table.to_dict(), fp=out, indent=4, ensure_ascii=False)
+
+    # endregion METHOD___save_tables
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_table_recognizer; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [18][TableRecognizer reader/processor] => TableRecognizer
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: table_recognizer, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, TableRecognizer
+# STRUCTURE: ▶ Init ┌PDF file┐ → [TableRecognizer] ○ can_read? → ○ read → [__init__ → convert_to_multipages_tables → recognize_tables_from_image] → ⊕ UnstructuredDocument(lines, tables, attachments)

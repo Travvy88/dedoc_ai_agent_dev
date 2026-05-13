@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::tz_builder</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder_1_1body__builder">dedoc::structure_extractors::hierarchy_level_builders::tz_builder::body_builder</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/tz_builder/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1pdf__metadata__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::metadata_extractors::concrete_metadata_extractors::pdf_metadata_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1pdf__metadata__extractor_1_1PdfMetadataExtractor" prot="public">dedoc::metadata_extractors::concrete_metadata_extractors::pdf_metadata_extractor::PdfMetadataExtractor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1pdf__metadata__extractor_1a707ee12901369276669b3d59359d72da" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.metadata_extractors.concrete_metadata_extractors.pdf_metadata_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.metadata_extractors.concrete_metadata_extractors.pdf_metadata_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To extract metadata from PDF documents — reads document info dictionary (author, title, subject, producer, creation/modification dates) via pypdf and merges with base file metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  PDF metadata: document information dictionary, producer, creator, author, title, dates. \par \b Input\/ \:  file_path via extract(), config with recognized PDF formats. \par \b Output\/ \:  dict merging BaseMetadataExtractor fields + PDF document info fields (producer, creator, author, title, subject, keywords, creation_date, modification_date). \par \b Links\/ \:  [USES_API(8): BaseMetadataExtractor, pypdf.PdfReader, dedoc.utils.convert_datetime] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>_get_pdf_info NEVER raises — on PdfReadError or general Exception returns {&quot;broken_pdf&quot;: True} (unless debug_mode is on).</para>
+</listitem><listitem><para>__prettify_metadata filters out empty-string values and unmapped keys. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use pypdf instead of PyPDF2 or pdfplumber? A: pypdf is the actively maintained successor to PyPDF2 and provides a clean metadata dictionary via PdfReader.metadata with minimal overhead. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 8[PDF metadata extractor with document info] =&gt; PdfMetadataExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[PdfMetadataExtractor]: MetadataExtractorComposition → ExtractPDF → MergeBaseAndPdfInfo → MetadataDict </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/concrete_metadata_extractors/pdf_metadata_extractor.py" line="20" column="1" bodyfile="dedoc/metadata_extractors/concrete_metadata_extractors/pdf_metadata_extractor.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/concrete_metadata_extractors/pdf_metadata_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

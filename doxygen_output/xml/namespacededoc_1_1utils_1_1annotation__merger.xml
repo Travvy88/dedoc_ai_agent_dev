@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1annotation__merger" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::annotation_merger</compoundname>
+    <innerclass refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger" prot="public">dedoc::utils::annotation_merger::AnnotationMerger</innerclass>
+    <innerclass refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation" prot="public">dedoc::utils::annotation_merger::ExtendedAnnotation</innerclass>
+    <innerclass refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space" prot="public">dedoc::utils::annotation_merger::Space</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1annotation__merger_1ae104b53f48b388128d5bccf8aa2c69dc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::annotation_merger.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.annotation_merger.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="36" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1annotation__merger_1afb4529571c29be99858306b6b7004d12" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.annotation_merger._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To merge overlapping and adjacent text annotations (like bold, italic spans) into contiguous annotation regions, resolving contradictions by type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Critical for producing clean annotation output from fragmented reader results. \par \b Scope\/ \:  Annotation grouping, merging overlapping annotations, filtering contradicting annotations, delete previous merged cleanup. \par \b Input\/ \:  List of Annotation objects, source text string. \par \b Output\/ \:  Merged and filtered list of Annotation objects. \par \b Links\/ \:  [USES_API(6): re, collections.defaultdict] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>merge_annotations returns an empty list for empty input.</para>
+</listitem><listitem><para>Annotations with different name/value pairs are never merged into a single annotation.</para>
+</listitem><listitem><para>Non-mergeable annotations are passed through unmodified. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why handle spaces explicitly as Space objects? A: Whitespace between annotations can bridge mergeable spans. Explicit space tracking prevents over-merging across paragraph breaks. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 5[Whitespace interval model] =&gt; Space CLASS 7[Grouped annotation container] =&gt; ExtendedAnnotation CLASS 9[Core annotation merging logic] =&gt; AnnotationMerger \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[AnnotationMerger.merge_annotations]: Reader → NormalizeAnnotations → Clean annotation list </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="23" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/annotation_merger.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

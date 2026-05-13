@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1broken__encoding__extractor =
+[
+    [ "BrokenEncodingExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1broken794985d13d2a829949213ccfc4ace907.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1broken794985d13d2a829949213ccfc4ace907" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1broken__encoding__extractor.html#a39e23a947648a8d852a125c7a7acb53b", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1broken__encoding__extractor.html#a9c8c51fe7c45d76b7a65da62932196a7", null ]
+];

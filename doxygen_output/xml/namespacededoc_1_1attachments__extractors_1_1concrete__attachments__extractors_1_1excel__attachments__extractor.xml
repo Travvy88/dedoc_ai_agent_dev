@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachments__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors::excel_attachments_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db" prot="public">dedoc::attachments_extractors::concrete_attachments_extractors::excel_attachments_extractor::ExcelAttachmentsExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachments__extractor_1ad955c6cf50380d7ab8874e8ea1d9f802" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::attachments_extractors::concrete_attachments_extractors::excel_attachments_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.py" line="36" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachments__extractor_1a5725725cf56ef13989d298ff34860bcb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Extract embedded attachments (images, charts, OLE objects) from Excel (.xlsx) files via ZIP+OLE introspection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  xlsx file attachment extraction: reads zip archive, locates media/embeddings in xl/ folder, parses OLE streams. \par \b Input\/ \:  File path to .xlsx document; optional parameters dict (with_attachments, need_content_analysis, attachments_dir). \par \b Output\/ \:  List of AttachedFile objects extracted from the xlsx archive. \par \b Links\/ \:  [USES_API(9): AbstractOfficeAttachmentsExtractor._get_attachments] \par \b Links\/ \:  [USES_API(8): recognized_extensions.excel_like_format, recognized_mimes.excel_like_format] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>extract ALWAYS returns a List[AttachedFile] (may be empty).</para>
+</listitem><listitem><para>Parameters dict defaults to {} if None is passed. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why delegate to _get_attachments with attachments_dir=&quot;xl&quot;? A: xlsx is an OpenXML format; the media folder resides under xl/ in the zip. The base class handles the zip iteration and OLE parsing generically. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup + LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Extracts attachments from .xlsx files] =&gt; ExcelAttachmentsExtractor METHOD 5[Constructor: registers recognized excel extensions/mimes] =&gt; <bold>init</bold> METHOD 8[Main extraction entry point for xlsx] =&gt; extract \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[extract]: DedocManager =&gt; ExtractXlsxAttachments =&gt; List[AttachedFile] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.py" line="23" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

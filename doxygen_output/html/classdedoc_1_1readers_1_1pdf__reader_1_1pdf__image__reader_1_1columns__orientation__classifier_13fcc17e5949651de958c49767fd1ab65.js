@@ -1,0 +1,20 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a162644669c49d80e407ea88db25c2729", null ],
+    [ "_load_weights", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#ad1aac9fe4ed6f829148f82140b8eab48", null ],
+    [ "_set_device", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a32a135bdedf062cc03be4944200876bc", null ],
+    [ "_set_transform_image", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a6963c935c2d81b14250f35f272202aa6", null ],
+    [ "get_features", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a968937c16782e110faf4677e8008b19b", null ],
+    [ "my_resize", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a23504d9b38335fc8f6f96b5ee05742a6", null ],
+    [ "net", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#aa78858392b0b1e8c22a711c8e101b570", null ],
+    [ "predict", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#ab3d727b43021a67d15ef59d36e6c8684", null ],
+    [ "save_weights", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a0d699b872145c05ca93d7e94c39d642b", null ],
+    [ "_net", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a956e5f0825cdad1607f3bc62ef00dd5e", null ],
+    [ "checkpoint_path", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#acd212239374492ea9c40fa8211db4cc1", null ],
+    [ "classes", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a8b7ff8a36d69355476413ed8568f60c2", null ],
+    [ "device", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a4a94bb58700335a292ed7a64da086e4c", null ],
+    [ "location", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a50bb3e1cdb3541743b6bd9edf38a839c", null ],
+    [ "logger", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a6eb34c775844526ea9916d5e3c5a69c9", null ],
+    [ "my_resize", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a2ce799d6de13d1bf06f7226a728ec9b2", null ],
+    [ "transform", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html#a71adb28d7f6a537eef846f232e85d1fa", null ]
+];

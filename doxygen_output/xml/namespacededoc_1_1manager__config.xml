@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1manager__config" kind="namespace" language="Python">
+    <compoundname>dedoc::manager_config</compoundname>
+    <innerclass refid="classdedoc_1_1manager__config_1_1ConfigurationManager" prot="public">dedoc::manager_config::ConfigurationManager</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1manager__config_1aa2832afba73e03c9465d1b639c01669a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::manager_config.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.manager_config.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="4" column="1" bodyfile="dedoc/manager_config.py" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1manager__config_1ac9fd246302c2a9f13fc5c89bc004377f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.manager_config._get_manager_config</definition>
+        <argsstring>(dict config)</argsstring>
+        <name>_get_manager_config</name>
+        <qualifiedname>dedoc.manager_config._get_manager_config</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To assemble the full dependency injection graph for DedocManager by instantiating all converters, readers, metadata extractors, structure extractors, structure constructors, and attachment handlers with their concrete implementations, wiring them together as compositions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  All concrete converters, readers, extractors, constructors, handlers \par \b I/O\/ \:  dict -&gt; dict \par \b Complexity\/ \:  8</para>
+<para>Imports are here in order not to do all of them when someone does <computeroutput>import dedoc</computeroutput> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="12" column="1" bodyfile="dedoc/manager_config.py" bodystart="12" bodyend="132"/>
+        <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" compoundref="manager__config_8py" startline="167" endline="173">dedoc.manager_config.ConfigurationManager.init_config</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1manager__config_1a61218e785dbf433c7119780abff72338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.manager_config.get_manager_config</definition>
+        <argsstring>(dict config)</argsstring>
+        <name>get_manager_config</name>
+        <qualifiedname>dedoc.manager_config.get_manager_config</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convenience function that delegates to the ConfigurationManager singleton to retrieve the assembled manager configuration, providing a clean import-time interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ConfigurationManager.get_instance().get_config \par \b I/O\/ \:  dict -&gt; dict \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="195" column="1" bodyfile="dedoc/manager_config.py" bodystart="195" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1manager__config_1a3e1d2cbc39c076e79676bcaa82636aee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.manager_config._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.manager_config._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To assemble and cache the complete dependency injection graph for DedocManager — instantiating all 7 converters, 17 readers, 5 metadata extractors, 6 structure extractors, 2 structure constructors, and 1 attachments handler — wiring them together as composable pipeline stages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Dependency assembly for document processing pipeline, singleton caching, component instantiation. \par \b Input\/ \:  Application configuration dictionary. \par \b Output\/ \:  Manager configuration dictionary with all pipeline components ready for injection into DedocManager. \par \b Links\/ \:  [USES_API(9): All concrete converters, readers, extractors, constructors, handlers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Manager config is assembled at most once per process lifetime (singleton + caching).</para>
+</listitem><listitem><para>All mandatory components (reader, structure_extractor, structure_constructor, metadata_extractor, attachments_handler) are never None. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why lazy imports inside _get_manager_config and not at module level? A: Dedoc supports 17+ document formats; importing all readers/converters eagerly on <computeroutput>import dedoc</computeroutput> would be prohibitively slow. Lazy imports defer cost to first use. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 10[Assembles complete component graph] =&gt; _get_manager_config CLASS 9[Singleton cache for manager config] =&gt; ConfigurationManager FUNC 8[Facade to get manager config] =&gt; get_manager_config \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[_get_manager_config]: Orchestrator =&gt; AssemblePipelineComponents =&gt; CompleteManagerConfig</para>
+</listitem><listitem><para>[ConfigurationManager]: Startup =&gt; CacheExpensiveInit =&gt; ReuseAcrossCalls </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/manager_config.py" line="222" column="1" bodyfile="dedoc/manager_config.py" bodystart="222" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/manager_config.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

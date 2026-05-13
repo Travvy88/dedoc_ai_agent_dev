@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">enum.Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1ac03a0f8ccb45de7356a290abb2be2d79" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::Russian_and_English_no_reg_diff</definition>
+        <argsstring></argsstring>
+        <name>Russian_and_English_no_reg_diff</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian_and_English_no_reg_diff</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;rus_eng_no_reg_diff&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="77" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1aa9bfc5dfa96cb245b776950819ec9258" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::Russian_no_reg_diff</definition>
+        <argsstring></argsstring>
+        <name>Russian_no_reg_diff</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian_no_reg_diff</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;rus_no_reg_diff&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="78" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a460583c1b519f76c8c36b0e22539ce46" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::English_no_reg_diff</definition>
+        <argsstring></argsstring>
+        <name>English_no_reg_diff</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.English_no_reg_diff</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;eng_no_reg_diff&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="79" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1acc6afa0b6870d5c713d6a06cc4cda0c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::Russian_and_English</definition>
+        <argsstring></argsstring>
+        <name>Russian_and_English</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian_and_English</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;rus_eng&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="80" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a6ad69c5d457015e1db39055342bbf215" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="86" endline="98">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.from_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a53914284d910613219b1ce7b2dbe8b9c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::Russian</definition>
+        <argsstring></argsstring>
+        <name>Russian</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;rus&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="81" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a6ad69c5d457015e1db39055342bbf215" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="86" endline="98">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.from_string</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a09c483753af59f9081e9e6fa9274a31f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language::English</definition>
+        <argsstring></argsstring>
+        <name>English</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.English</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1a9d0ec67eadbb194fd8a2657ae4e370e4" kindref="member">char_pool</ref>[&quot;eng&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="82" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a6ad69c5d457015e1db39055342bbf215" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="86" endline="98">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.from_string</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a6ad69c5d457015e1db39055342bbf215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;Language&quot;</type>
+        <definition> &quot;Language&quot; dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.from_string</definition>
+        <argsstring>(Type[&quot;Language&quot;] cls, str model_name)</argsstring>
+        <name>from_string</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.from_string</qualifiedname>
+        <param>
+          <type>Type</type>
+          <declname>cls</declname>
+          <array>[&quot;Language&quot;]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>model_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="86" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="86" bodyend="98"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a09c483753af59f9081e9e6fa9274a31f" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="82">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.English</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a53914284d910613219b1ce7b2dbe8b9c" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="81">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1acc6afa0b6870d5c713d6a06cc4cda0c3" compoundref="readers_2pdf__reader_2pdf__txtlayer__reader_2pdf__broken__encoding_2utils_8py" startline="80">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language.Russian_and_English</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>enum::Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils.Language</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>enum::Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" line="76" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/utils.py" bodystart="76" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a09c483753af59f9081e9e6fa9274a31f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>English</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a460583c1b519f76c8c36b0e22539ce46" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>English_no_reg_diff</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a6ad69c5d457015e1db39055342bbf215" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>from_string</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1a53914284d910613219b1ce7b2dbe8b9c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>Russian</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1acc6afa0b6870d5c713d6a06cc4cda0c3" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>Russian_and_English</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1ac03a0f8ccb45de7356a290abb2be2d79" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>Russian_and_English_no_reg_diff</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1utils_1_1Language_1aa9bfc5dfa96cb245b776950819ec9258" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::utils::Language</scope><name>Russian_no_reg_diff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#abfb6ab1cd865ef08bbb057ec3cc96046", null ],
+    [ "extract", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#a85461db213a7d506d94c96e7dd62fd42", null ],
+    [ "body_builder", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#a5d3a4111cc1a9d71c14893e245db5fe3", null ],
+    [ "classifier", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#af617b9e0f5a449f369a6657ffa355ed8", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#aaefe9a9709b6f5842ca2a31d3413e63e", null ],
+    [ "header_builder", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#ac4593ae8089cfed4890b52888c33288c", null ],
+    [ "toc_builder", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#a36e00ad7e9c19285b92634c70e26e685", null ],
+    [ "txt_classifier", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1_1TzStructureExtractor.html#adc537cba7d5e53a3121537fcc13a3a50", null ]
+];

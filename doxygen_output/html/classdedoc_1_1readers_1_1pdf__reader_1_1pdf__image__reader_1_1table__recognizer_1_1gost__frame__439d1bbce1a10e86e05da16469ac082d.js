@@ -1,0 +1,8 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html#a5d251665697dc6c64191f8b8c71c366b", null ],
+    [ "_analyze_cells_on_frame", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html#ad3a31cd1a1fea5fcffd3cc3db679858c", null ],
+    [ "rec_and_clean_frame", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html#afe3adf1b5fb0790cab7b342208dd925a", null ],
+    [ "config", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html#a53d296b337ed302146ef972b08010dda", null ],
+    [ "logger", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d.html#a0b576466a5a92e03141013c82b1ac878", null ]
+];

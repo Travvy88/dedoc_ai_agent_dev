@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::concrete_annotations::color_annotation</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation" prot="public">dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1ae8c6b2a93aa90657a67b77f9d729b575" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::concrete_annotations::color_annotation.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="7" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1a2c6ed40f517b8fb9364c37e0e58b7aa3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.color_annotation._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide RGB color annotation — stores the mean color of text pixels in a bounding box as JSON-encoded RGB. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Text annotation for color formatting. \par \b Input\/ \:  RGB float values (red, green, blue). \par \b Output\/ \:  ColorAnnotation instance with JSON-serialized color value. \par \b Links\/ \:  [INHERITS(9): Annotation] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>red &gt;= 0, green &gt;= 0, blue &gt;= 0</para>
+</listitem><listitem><para>value is JSON-encoded OrderedDict with &quot;red&quot;, &quot;green&quot;, &quot;blue&quot; keys \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why store color as JSON string rather than tuple? A: Annotation.value is str-typed; JSON provides a structured yet serializable format. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Color text annotation] =&gt; ColorAnnotation \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ColorAnnotation]: Reader → ExtractTextColor → ColorAnnotationStored </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="77" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="77" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

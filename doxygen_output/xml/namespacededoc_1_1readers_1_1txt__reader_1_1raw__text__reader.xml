@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1txt__reader_1_1raw__text__reader" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::txt_reader::raw_text_reader</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader" prot="public">dedoc::readers::txt_reader::raw_text_reader::RawTextReader</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1ae3c28e8dc06a3fa584defd0fc2815e0b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.txt_reader.raw_text_reader._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.txt_reader.raw_text_reader._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse plain text documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document parsing pipeline: plain text format reading. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [20][RawTextReader reader/processor] =&gt; RawTextReader \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(plain text) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/txt_reader/raw_text_reader.py" line="174" column="1" bodyfile="dedoc/readers/txt_reader/raw_text_reader.py" bodystart="174" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/txt_reader/raw_text_reader.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

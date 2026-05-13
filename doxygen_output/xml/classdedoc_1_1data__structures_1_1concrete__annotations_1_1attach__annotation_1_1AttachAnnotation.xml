@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::concrete_annotations::attach_annotation::AttachAnnotation</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" prot="public" virt="non-virtual">dedoc.data_structures.annotation.Annotation</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1a163872757dcbf06cc6c98838688f6b05" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation.name</qualifiedname>
+        <initializer>=  &quot;attachment&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/attach_annotation.py" line="16" column="1" bodyfile="dedoc/data_structures/concrete_annotations/attach_annotation.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1af81fb69553228f2bae7c6e875b6a7bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation.__init__</definition>
+        <argsstring>(self, str attach_uid, int start, int end)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>attach_uid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize attachment annotation with attachment UID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  Annotation.__init__ \par \b I/O\/ \:  (str, int, int) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param attach_uid: unique identifier of the attachment which is referenced inside this annotation :param start: start of the annotated text (usually zero) :param end: end of the annotated text (usually end of the line) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/attach_annotation.py" line="23" column="1" bodyfile="dedoc/data_structures/concrete_annotations/attach_annotation.py" bodystart="23" bodyend="31"/>
+        <references refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1af81fb69553228f2bae7c6e875b6a7bc3" compoundref="attach__annotation_8py" startline="23" endline="31">dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation.__init__</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1af81fb69553228f2bae7c6e875b6a7bc3" compoundref="attach__annotation_8py" startline="23" endline="31">dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Indicate the place of the attachment in the original document (e.g. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>where an image was placed in a docx document).</para>
+<para>This annotation indicate the place of the attachment in the original document (for example, the place where image was placed in the docx document). The line containing this annotation is placed directly before the referred attachment. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/concrete_annotations/attach_annotation.py" line="10" column="1" bodyfile="dedoc/data_structures/concrete_annotations/attach_annotation.py" bodystart="10" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1af81fb69553228f2bae7c6e875b6a7bc3" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::attach_annotation::AttachAnnotation</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation_1a163872757dcbf06cc6c98838688f6b05" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::attach_annotation::AttachAnnotation</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

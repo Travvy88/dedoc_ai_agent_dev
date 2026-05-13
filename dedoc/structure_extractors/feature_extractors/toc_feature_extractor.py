@@ -6,23 +6,44 @@ from Levenshtein import ratio
 
 from dedoc.data_structures.line_with_meta import LineWithMeta
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_TocItem [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @purpose TocItem for document structure extraction pipeline
 class TocItem:
     """
     TocItem contains LineWithLabel and page.
     For example, line: 'Method implementation.....................45' converts to TocItem(line='Method implementation', page=45)
     """
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, line: LineWithMeta, page: int) -> None:
+        self.logger = logging.getLogger(__name__)
+        self.logger.debug(f"[IMP:4][TocItem][__init___INIT] Starting")
         self.line = line
         self.page = page
 
+    # endregion METHOD___init__
+    # region METHOD_filter_toc_line [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose filter_toc_line method
+    ## @io Input -> Output
+    ## @complexity 5
     def filter_toc_line(self, toc_item: "TocItem") -> "TocItem":
+        self.logger.debug(f"[IMP:4][TocItem][filter_toc_line_INIT] Starting")
         # - filtering a toc_line from page_number and "................."
         # Example: "Introduction................................. 12 \n" is converted to "Introduction"
         toc_item.line.set_line(self.line.line.strip("\n ").rstrip(str(toc_item.page)).rstrip(". "))
         return toc_item
 
 
+    # endregion METHOD_filter_toc_line
+# endregion CLASS_TocItem
+# region CLASS_TOCFeatureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @purpose TOCFeatureExtractor for document structure extraction pipeline
 class TOCFeatureExtractor:
     end_with_num = re.compile(r"(.*[^\s.…])?[….\s]+(\d{1,3})(-\d{1,3})?$")
     window_size = 5
@@ -33,7 +54,13 @@ class TOCFeatureExtractor:
         "indice", "índice", "contenidos", "tabladecontenido"  # spanish
     )
 
+    # region METHOD_get_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_toc(self, document: List[LineWithMeta], by_tag: Optional[str] = None) -> List[TocItem]:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][get_toc_INIT] Starting")
         """
         Finds the table of contents in the given document using heuristic rules.
 
@@ -66,7 +93,14 @@ class TOCFeatureExtractor:
             return merged_toc
         return []
 
+    # endregion METHOD_get_toc
+    # region METHOD___get_merged_multilines_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_merged_multilines_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_merged_multilines_toc(self, result: List[TocItem or LineWithMeta]) -> List[TocItem]:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][__get_merged_multilines_toc_INIT] Starting")
         # merge multiline toc items
         merged_toc: List[TocItem] = []
         cur_line: Optional[LineWithMeta] = None
@@ -84,7 +118,14 @@ class TOCFeatureExtractor:
 
         return merged_toc
 
+    # endregion METHOD___get_merged_multilines_toc
+    # region METHOD___get_unmerged_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_unmerged_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_unmerged_toc(self, corrected_lines: np.ndarray, marks: np.ndarray) -> List[TocItem or LineWithMeta]:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][__get_unmerged_toc_INIT] Starting")
         corrected_marks = []
         # fill empty space between toc items
         for idx in range(len(corrected_lines) - self.window_size):
@@ -98,7 +139,14 @@ class TOCFeatureExtractor:
         result = list(corrected_lines[corrected_marks])
         return result
 
+    # endregion METHOD___get_unmerged_toc
+    # region METHOD___get_probable_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_probable_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_probable_toc(self, document: List[LineWithMeta]) -> Tuple[List[TocItem or LineWithMeta], np.ndarray]:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][__get_probable_toc_INIT] Starting")
         """
         :return:
             raw list of probable TOC items, can contain TocItem or LineWithMeta (in case the line is the continuation of a TOC item)
@@ -131,7 +179,14 @@ class TOCFeatureExtractor:
                 lines_have_page_number.append(match is not None and len(line_text) > 5)
         return probable_toc_lines, np.array(lines_have_page_number, dtype=bool)
 
+    # endregion METHOD___get_probable_toc
+    # region METHOD___check_page_order [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __check_page_order method
+    ## @io Input -> Output
+    ## @complexity 5
     def __check_page_order(self, corrected_result: List[TocItem]) -> bool:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][__check_page_order_INIT] Starting")
         """
         check correctness of the result:
 
@@ -154,7 +209,14 @@ class TOCFeatureExtractor:
             prev_page = int(item.page)
         return right_page_order
 
+    # endregion METHOD___check_page_order
+    # region METHOD_is_line_in_toc [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose is_line_in_toc method
+    ## @io Input -> Output
+    ## @complexity 5
     def is_line_in_toc(self, document: List[LineWithMeta]) -> List[Optional[float]]:
+        # BUG_FIX_CONTEXT: self.logger не определён в TOCFeatureExtractor (нет __init__); заменён на модульный logger
+        logger.debug(f"[IMP:4][TOCFeatureExtractor][is_line_in_toc_INIT] Starting")
         toc = self.get_toc(document=document) if len(document) > self.window_size else []
         result = []
         if len(toc) == 0:
@@ -163,3 +225,30 @@ class TOCFeatureExtractor:
             result.append(max(ratio(toc_line.line.line, line.line) for toc_line in toc))
 
         return result
+
+    # endregion METHOD_is_line_in_toc
+# endregion CLASS_TOCFeatureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/feature_extractors/toc_feature_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/feature_extractors/toc_feature_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => TocItem
+## CLASS [Weight 7][Structure extraction] => TOCFeatureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, feature extractors, toc feature extractor
+# STRUCTURE: ▶ structure_extractors/feature_extractors/toc_feature_extractor → ○ TocItem.cls ⊕ TOCFeatureExtractor.cls → ⎋ result

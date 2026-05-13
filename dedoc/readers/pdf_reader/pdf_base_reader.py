@@ -32,11 +32,13 @@ ParametersForParseDoc = namedtuple("ParametersForParseDoc", [
 ])
 
 
+# region CLASS_PdfBaseReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PdfBaseReader(BaseReader):
     """
     Base class for pdf documents parsing.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None, recognized_extensions: Optional[Set[str]] = None, recognized_mimes: Optional[Set[str]] = None) -> None:
         super().__init__(config=config, recognized_extensions=recognized_extensions, recognized_mimes=recognized_mimes)
 
@@ -57,6 +59,8 @@ class PdfBaseReader(BaseReader):
         self.gost_frame_recognizer = GOSTFrameRecognizer(config=self.config)
         self.header_footer_detector = HeaderFooterDetector()
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines, tables and attachments.
@@ -96,6 +100,8 @@ class PdfBaseReader(BaseReader):
         result = UnstructuredDocument(lines=lines, tables=scan_tables, attachments=attachments, warnings=warnings, metadata=metadata)
         return self._postprocess(result)
 
+    # region METHOD__parse_document [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def _parse_document(self, path: str, parameters: ParametersForParseDoc) \
             -> Tuple[List[LineWithMeta], List[ScanTable], List[PdfImageAttachment], List[str], Optional[dict]]:
         import math
@@ -152,6 +158,8 @@ class PdfBaseReader(BaseReader):
             metadata["rotated_page_angles"] = page_angles
         return all_lines_with_paragraphs, mp_tables, attachments, warnings, metadata
 
+    # region METHOD__process_document_with_gost_frame [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__parse_document
     def _process_document_with_gost_frame(self, images: Iterator[ndarray], first_page: int, parameters: ParametersForParseDoc, path: str) -> \
             Tuple[Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], List[float]], Dict[int, Tuple[ndarray, BBox, Tuple[int, ...]]]]:
         from joblib import Parallel, delayed
@@ -170,6 +178,8 @@ class PdfBaseReader(BaseReader):
         )
         return result, gost_analyzed_images
 
+    # region METHOD__shift_all_contents [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__process_document_with_gost_frame
     def _shift_all_contents(self, lines: List[LineWithMeta], onepage_tables: List[ScanTable], attachments: List[PdfImageAttachment],
                             gost_analyzed_images: Dict[int, Tuple[ndarray, BBox, Tuple[int, ...]]]) -> None:
         """
@@ -205,7 +215,9 @@ class PdfBaseReader(BaseReader):
                        image_width=image_width,
                        image_height=image_height)
 
+    # endregion METHOD__shift_all_contents
     @abstractmethod
+    # region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def _process_one_page(self, image: ndarray, parameters: ParametersForParseDoc, page_number: int, path: str) \
             -> Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], List[float]]:
         """
@@ -217,6 +229,8 @@ class PdfBaseReader(BaseReader):
         """
         pass
 
+    # region METHOD__get_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__process_one_page
     def _get_images(self, path: str, page_from: int, page_to: int) -> Iterator[ndarray]:
         import os
         import cv2
@@ -236,6 +250,8 @@ class PdfBaseReader(BaseReader):
         else:
             raise BadFileFormatError(f"Unsupported input format: {splitext_(path)[1]}")
 
+    # region METHOD__split_pdf2image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__get_images
     def _split_pdf2image(self, path: str, page_from: int, page_to: int) -> Iterator[ndarray]:
         if page_from >= page_to:
             return
@@ -267,6 +283,8 @@ class PdfBaseReader(BaseReader):
         except (PDFPageCountError, PDFSyntaxError) as error:
             raise BadFileFormatError(f"Bad pdf file:\n file_name = {os.path.basename(path)} \n exception = {error.args}")
 
+    # region METHOD__convert_to_gray [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__split_pdf2image
     def _convert_to_gray(self, image: ndarray) -> ndarray:
         import cv2
         import numpy as np
@@ -275,10 +293,40 @@ class PdfBaseReader(BaseReader):
         gray_image = self._binarization(gray_image)
         return gray_image
 
+    # region METHOD__binarization [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__convert_to_gray
     def _binarization(self, gray_image: ndarray) -> ndarray:
         import numpy as np
 
         if gray_image.mean() < 220:  # filter black and white image
             binary_mask = gray_image >= np.quantile(gray_image, 0.05)
             gray_image[binary_mask] = 255
+# endregion CLASS_PdfBaseReader
         return gray_image
+
+    # endregion METHOD__binarization
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_base_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [20][PdfBaseReader reader/processor] => PdfBaseReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdf_base_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfBaseReader
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PdfBaseReader] ○ can_read? → ○ read → [__init__ → read → _parse_document] → ⊕ UnstructuredDocument(lines, tables, attachments)

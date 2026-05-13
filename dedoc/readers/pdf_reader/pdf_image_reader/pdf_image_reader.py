@@ -10,6 +10,7 @@ from dedoc.readers.pdf_reader.data_classes.tables.scantable import ScanTable
 from dedoc.readers.pdf_reader.pdf_base_reader import ParametersForParseDoc, PdfBaseReader
 
 
+# region CLASS_PdfImageReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PdfImageReader(PdfBaseReader):
     """
     This class allows to extract content from the .pdf documents without a textual layer (not copyable documents),
@@ -32,6 +33,7 @@ class PdfImageReader(PdfBaseReader):
     It isn't recommended to use this reader for extracting content from PDF documents with a correct textual layer, use other PDF readers instead.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedocutils.preprocessing import AdaptiveBinarizer, SkewCorrector
         from dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier import ColumnsOrientationClassifier
@@ -55,9 +57,13 @@ class PdfImageReader(PdfBaseReader):
         self.ocr = OCRLineExtractor(config=self.config)
         self.page_number = None
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         return super().read(file_path, parameters)
 
+    # region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def _process_one_page(self,
                           image: ndarray,
                           parameters: ParametersForParseDoc,
@@ -98,6 +104,8 @@ class PdfImageReader(PdfBaseReader):
         lines = self.metadata_extractor.extract_metadata_and_set_annotations(page_with_lines=page)
         return lines, tables, page.attachments, [angle]
 
+    # region METHOD__detect_column_count_and_orientation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__process_one_page
     def _detect_column_count_and_orientation(self, image: ndarray, parameters: ParametersForParseDoc) -> Tuple[ndarray, bool, float]:
         """
         Function :
@@ -129,4 +137,32 @@ class PdfImageReader(PdfBaseReader):
             self.logger.info(f"Save image to {img_path}")
             cv2.imwrite(img_path, rotated_image)
 
+# endregion CLASS_PdfImageReader
         return rotated_image, is_one_column_document, result_angle
+
+    # endregion METHOD__detect_column_count_and_orientation
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_image_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [8][PdfImageReader reader/processor] => PdfImageReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdf_image_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfImageReader
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PdfImageReader] ○ can_read? → ○ read → [__init__ → read → _process_one_page] → ⊕ UnstructuredDocument(lines, tables, attachments)

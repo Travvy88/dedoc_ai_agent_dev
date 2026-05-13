@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors::abstract_office_attachments_extractor::AbstractOfficeAttachmentsExtractor</compoundname>
+    <basecompoundref refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor" prot="public" virt="non-virtual">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba" prot="public" virt="non-virtual">dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor.DocxAttachmentsExtractor</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db" prot="public" virt="non-virtual">dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor.ExcelAttachmentsExtractor</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21" prot="public" virt="non-virtual">dedoc.attachments_extractors.concrete_attachments_extractors.pptx_attachments_extractor.PptxAttachmentsExtractor</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1a0fb8a64ede29c2a326a7845c7b51c2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None, Optional[Set[str]] recognized_extensions=None, Optional[Set[str]] recognized_mimes=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1a3ab9f7d6ee861c0667a6c18f3d8faafe">__init__</reimplements>
+        <reimplementedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba_1a2c253f29d70cda7aebdde1e60198c5d0">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db_1a7bc4306dbfb3c86cc1e4fb4872920d4c">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21_1a9069c3fba17b78bb198e877e8aa61599">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>recognized_extensions</declname>
+          <array>[Set[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>recognized_mimes</declname>
+          <array>[Set[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize with config and recognized extensions/mimes, delegating to the parent AbstractAttachmentsExtractor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Optional[dict], Optional[Set[str]], Optional[Set[str]] -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" line="52" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" bodystart="52" bodyend="54"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1a0fb8a64ede29c2a326a7845c7b51c2ed" compoundref="abstract__office__attachments__extractor_8py" startline="52" endline="54">dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__init__</references>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1a0fb8a64ede29c2a326a7845c7b51c2ed" compoundref="abstract__office__attachments__extractor_8py" startline="52" endline="54">dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1aedebb052ab8d024f4bd26b3f966c1ebf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[str, bytes]</type>
+        <definition> Tuple[str, bytes] dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__parse_ole_contents</definition>
+        <argsstring>(self, bytes stream)</argsstring>
+        <name>__parse_ole_contents</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__parse_ole_contents</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>bytes</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Parse the Ole10Native binary stream into the original filename and file contents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  charset_normalizer.from_bytes \par \b I/O\/ \:  bytes -&gt; Tuple[str, bytes] \par \b Complexity\/ \:  8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" line="62" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" bodystart="62" bodyend="104"/>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1ac8520d930fd7d4254d1d6fec245d5d3f" compoundref="abstract__office__attachments__extractor_8py" startline="112" endline="161">dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor._get_attachments</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1ac8520d930fd7d4254d1d6fec245d5d3f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" kindref="compound">AttachedFile</ref>]</type>
+        <definition> List[AttachedFile] dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor._get_attachments</definition>
+        <argsstring>(self, str tmpdir, str filename, dict parameters, str attachments_dir)</argsstring>
+        <name>_get_attachments</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor._get_attachments</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>tmpdir</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>attachments_dir</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Extract all attachments from an Office-format ZIP archive: collect media/embeddings from the specified folder, parse .bin OLE files for embedded PDF or Ole10Native content. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  olefile.OleFileIO, AbstractAttachmentsExtractor._content2attach_file \par \b I/O\/ \:  str, str, dict, str -&gt; List[AttachedFile] \par \b Complexity\/ \:  8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" line="112" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" bodystart="112" bodyend="161"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1aedebb052ab8d024f4bd26b3f966c1ebf" compoundref="abstract__office__attachments__extractor_8py" startline="62" endline="104">dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor.__parse_ole_contents</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1afa419ab8e7d68cb3afb7cb5faae297aa" compoundref="abstract__attachment__extractor_8py" startline="105" endline="127">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor._content2attach_file</references>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba_1ab9859751b543a79ad59a6a5e702f85a9" compoundref="docx__attachments__extractor_8py" startline="66" endline="88">dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor.DocxAttachmentsExtractor.extract</referencedby>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db_1a73e88d71561e8e18dac385143d6e504b" compoundref="excel__attachments__extractor_8py" startline="58" endline="66">dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor.ExcelAttachmentsExtractor.extract</referencedby>
+        <referencedby refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21_1a4c68e0d2cb21cf9845929c43d6f3d20b" compoundref="pptx__attachments__extractor_8py" startline="59" endline="65">dedoc.attachments_extractors.concrete_attachments_extractors.pptx_attachments_extractor.PptxAttachmentsExtractor.extract</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Abstract base class for Office-format (docx, xlsx, pptx) attachment extraction: OLE binary parsing and ZIP-based media collection. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor.DocxAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1docx__attachments_9fb7af50775869e70cc458970efe1fba"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor.ExcelAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1excel__attachmentsffe1f8b7ac61437ca19c7d30bbec90db"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.pptx_attachments_extractor.PptxAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor.AbstractOfficeAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor</label>
+        <link refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" line="47" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.py" bodystart="47" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1a0fb8a64ede29c2a326a7845c7b51c2ed" prot="public" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::abstract_office_attachments_extractor::AbstractOfficeAttachmentsExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1aedebb052ab8d024f4bd26b3f966c1ebf" prot="private" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::abstract_office_attachments_extractor::AbstractOfficeAttachmentsExtractor</scope><name>__parse_ole_contents</name></member>
+      <member refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1abstract__office__d470644a490d5412bd55a9d1802e7efa_1ac8520d930fd7d4254d1d6fec245d5d3f" prot="protected" virt="non-virtual"><scope>dedoc::attachments_extractors::concrete_attachments_extractors::abstract_office_attachments_extractor::AbstractOfficeAttachmentsExtractor</scope><name>_get_attachments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

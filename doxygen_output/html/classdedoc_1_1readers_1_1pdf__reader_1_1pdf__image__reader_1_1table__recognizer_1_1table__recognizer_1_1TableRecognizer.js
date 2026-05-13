@@ -1,0 +1,17 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a0fba916a0f9fd29a84ca0db2f8215890", null ],
+    [ "__clean_image", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a7138a67423f6769ed4ffa47e30f4b117", null ],
+    [ "__clean_image_from_table", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#ac37bdb85d5a9f1d2e85eaf730ac3a0b1", null ],
+    [ "__filter_bad_tables", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#ae1d1087351d130faaed8112bfa91a279", null ],
+    [ "__is_not_table", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#aedc8b47afeb6b0adf07ca0edb06c7781", null ],
+    [ "__rec_tables_from_img", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a272065f55e5a646c232331d59a4ede3c", null ],
+    [ "__save_tables", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#abacebf12df47540bf0ca26ae9a9a8245", null ],
+    [ "convert_to_multipages_tables", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#ae75d053b520b15513ed639a556d05203", null ],
+    [ "recognize_tables_from_image", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a752931b157aef71606a7ee3e69917f2c", null ],
+    [ "config", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a33bfe6bdd56b16287250f60a4e07a567", null ],
+    [ "logger", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#ac1615770d0072fb36ee835a2236ae915", null ],
+    [ "multipage_tables_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#a32809b16f184480de3ca908974a6fc9b", null ],
+    [ "onepage_tables_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#afb052d5618307b6ce9d07caf999fd02e", null ],
+    [ "table_type", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer.html#af60e3a922c2e2145ba2b6ef835e38a60", null ]
+];

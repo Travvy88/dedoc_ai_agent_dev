@@ -1,0 +1,4 @@
+var readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__extractors_2____init_____8py =
+[
+    [ "_module_contract", "readers_2pdf__reader_2pdf__image__reader_2table__recognizer_2table__extractors_2____init_____8py.html#af2560458fa0c8a1f6b2771de2b36525b", null ]
+];

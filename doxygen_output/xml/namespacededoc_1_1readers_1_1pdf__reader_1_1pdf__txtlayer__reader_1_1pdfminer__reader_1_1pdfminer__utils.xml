@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader::pdfminer_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1ad098af2dc2b4aefdd0a33ac661785a62" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader::pdfminer_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a966f0cf1ac94afd05c9f6f7344f7a0d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.draw_layout_element</definition>
+        <argsstring>(np.ndarray image_src, List lobjs, IO file, float k_w, float k_h, PDFPage page, Tuple[int, int, int] color, Optional[str] text=None)</argsstring>
+        <name>draw_layout_element</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.draw_layout_element</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image_src</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lobjs</declname>
+        </param>
+        <param>
+          <type>IO</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_h</declname>
+        </param>
+        <param>
+          <type>PDFPage</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>color</declname>
+          <array>[int, int, int]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>text</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="16" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="23" bodyend="35"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" compoundref="pdfminer__utils_8py" startline="48" endline="56">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.convert_coordinates_pdf_to_image</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a890c6e051578d334eff14c123addd29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.draw_annotation</definition>
+        <argsstring>(np.ndarray image, List[BBoxAnnotation] annotations)</argsstring>
+        <name>draw_annotation</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.draw_annotation</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[BBoxAnnotation]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="36" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BBox</type>
+        <definition> BBox dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.convert_coordinates_pdf_to_image</definition>
+        <argsstring>(LTContainer lobj, float k_w, float k_h, int height_page)</argsstring>
+        <name>convert_coordinates_pdf_to_image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.convert_coordinates_pdf_to_image</qualifiedname>
+        <param>
+          <type>LTContainer</type>
+          <declname>lobj</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_w</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="48" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="48" bodyend="56"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1ade5cd09e39106c1fa79434a4d096d68f" compoundref="pdfminer__utils_8py" startline="57" endline="62">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.create_bbox</referencedby>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a966f0cf1ac94afd05c9f6f7344f7a0d9" compoundref="pdfminer__utils_8py" startline="23" endline="35">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.draw_layout_element</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1ade5cd09e39106c1fa79434a4d096d68f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BBox</type>
+        <definition> BBox dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.create_bbox</definition>
+        <argsstring>(int height, float k_h, float k_w, LTContainer lobj)</argsstring>
+        <name>create_bbox</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.create_bbox</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>k_w</declname>
+        </param>
+        <param>
+          <type>LTContainer</type>
+          <declname>lobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="57" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="57" bodyend="62"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" compoundref="pdfminer__utils_8py" startline="48" endline="56">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.convert_coordinates_pdf_to_image</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a5c6446e35cd9eaffa6d85c121663f65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.cid_to_ascii_text</definition>
+        <argsstring>(Match m)</argsstring>
+        <name>cid_to_ascii_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils.cid_to_ascii_text</qualifiedname>
+        <param>
+          <type>Match</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="63" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="63" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a27629fa5819a0ad7fa900071ea2ce3f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Utility functions for document processing. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][draw_layout_element utility/helper] =&gt; draw_layout_element FUNC [5][draw_annotation utility/helper] =&gt; draw_annotation FUNC [5][convert_coordinates_pdf_to_image utility/helper] =&gt; convert_coordinates_pdf_to_image FUNC [5][create_bbox utility/helper] =&gt; create_bbox FUNC [5][cid_to_ascii_text utility/helper] =&gt; cid_to_ascii_text \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="95" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" bodystart="95" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -2,6 +2,10 @@ from typing import List, Optional, Tuple, Union
 
 from bs4 import Tag
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 from dedoc.data_structures.annotation import Annotation
 from dedoc.data_structures.concrete_annotations.alignment_annotation import AlignmentAnnotation
 from dedoc.data_structures.concrete_annotations.bold_annotation import BoldAnnotation
@@ -16,12 +20,16 @@ from dedoc.data_structures.concrete_annotations.underlined_annotation import Und
 from dedoc.readers.html_reader.html_tags import HtmlTags
 
 
+# region CLASS_HtmlTagAnnotationParser [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class HtmlTagAnnotationParser:
 
+    # region METHOD_parse [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def parse(self, tag: Tag) -> List[Annotation]:
         _, annotations = self.__parse_annotations(tag, 0)
         return annotations
 
+    # region METHOD___parse_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_parse
     def __parse_annotations(self, tag: Tag, start: int = 0) -> Tuple[int, List[Annotation]]:
         if isinstance(tag, str):
             return len(tag), []
@@ -44,6 +52,8 @@ class HtmlTagAnnotationParser:
 
         return curr_len, annotations
 
+    # region METHOD___create_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_annotations
     def __create_annotations(self, tag: Union[str, Tag], start: int, end: int) -> List[Annotation]:
         if isinstance(tag, str):
             return []
@@ -63,6 +73,8 @@ class HtmlTagAnnotationParser:
             return [StrikeAnnotation(start=start, end=end, value="True")]
         return []
 
+    # region METHOD___parse_style_string [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___create_annotations
     def __parse_style_string(self, styles_string: str, start: int, end: int) -> List[Annotation]:
         annotations = []
         styles_list = styles_string.split(";")
@@ -85,6 +97,8 @@ class HtmlTagAnnotationParser:
 
         return annotations
 
+    # region METHOD___get_annotation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_style_string
     def __get_annotation(self, key: str, value: str, start: int, end: int) -> Optional[Annotation]:
         if key == "font-style":
             annotation = ItalicAnnotation(start, end, value="True") if value == "italic" else None
@@ -115,6 +129,8 @@ class HtmlTagAnnotationParser:
             annotation = StyleAnnotation(start, end, value="hidden") if value in {"none", "hidden"} else None
             return annotation
 
+    # region METHOD___parse_font_size_style [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_annotation
     def __parse_font_size_style(self, value: str) -> Optional[str]:
         if value.endswith("pt"):
             return value[:-2]
@@ -125,4 +141,32 @@ class HtmlTagAnnotationParser:
         try:
             return str(float(value))
         except ValueError:
+# endregion CLASS_HtmlTagAnnotationParser
             return None
+
+    # endregion METHOD___parse_font_size_style
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_html_tag_annotation_parser; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse HTML documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: HTML format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [12][HtmlTagAnnotationParser reader/processor] => HtmlTagAnnotationParser
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(HTML) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: html_tag_annotation_parser, dedoc, reader, HTML, HtmlReader, BaseReader, HTML, tags, annotation, BeautifulSoup, line postprocessing, tag_hierarchy_level, HtmlTagAnnotationParser
+# STRUCTURE: ▶ Init ┌HTML file┐ → [HtmlTagAnnotationParser] ○ can_read? → ○ read → [parse → __parse_annotations → __create_annotations] → ⊕ UnstructuredDocument(lines, tables, attachments)

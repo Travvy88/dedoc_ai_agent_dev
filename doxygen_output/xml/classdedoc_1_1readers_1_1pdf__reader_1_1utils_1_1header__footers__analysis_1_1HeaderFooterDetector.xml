@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1acd6f5400eee007fe482617eb0907de1f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector::weights</definition>
+        <argsstring></argsstring>
+        <name>weights</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.weights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="41" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a08e76dd05cac6478587486199a781883" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector::max_cnt_lines</definition>
+        <argsstring></argsstring>
+        <name>max_cnt_lines</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.max_cnt_lines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="42" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aefbeed6870c8d9825518149cb28538fc" compoundref="header__footers__analysis_8py" startline="169" endline="188">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._get_popular_pattern</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aae0d3d9bad7738700046b03cab5737e9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector::pattern_roman</definition>
+        <argsstring></argsstring>
+        <name>pattern_roman</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.pattern_roman</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="43" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" compoundref="header__footers__analysis_8py" startline="113" endline="119">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a737dce96abc1155a605b14463cd23676" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector::pattern_digits</definition>
+        <argsstring></argsstring>
+        <name>pattern_digits</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.pattern_digits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="44" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" compoundref="header__footers__analysis_8py" startline="113" endline="119">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8e8269d8d2af94eb7c06bcfe9899418a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="39" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="39" bodyend="45"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>]], List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>]], List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>]]]</type>
+        <definition> Tuple[List[List[LineWithLocation]], List[List[LineWithLocation]], List[List[LineWithLocation]]] dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</definition>
+        <argsstring>(self, List[List[LineWithLocation]] lines, float is_header_footer_threshold=0.5)</argsstring>
+        <name>detect</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>lines</declname>
+          <array>[List[LineWithLocation]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>is_header_footer_threshold</declname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="48" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="49" bodyend="110"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aefbeed6870c8d9825518149cb28538fc" compoundref="header__footers__analysis_8py" startline="169" endline="188">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._get_popular_pattern</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1ad7e82492162cf787ec9be4801918709b" compoundref="header__footers__analysis_8py" startline="154" endline="166">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._remove_header_footer</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" compoundref="header__footers__analysis_8py" startline="113" endline="119">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a077ce38b212aeaa2af55ede93acafe58" compoundref="header__footers__analysis_8py" startline="122" endline="126">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._similarity</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a1f81124dadd3539af4b992427786527f" compoundref="header__footers__analysis_8py" startline="129" endline="148">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._strip_empty_lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a08e76dd05cac6478587486199a781883" compoundref="header__footers__analysis_8py" startline="42">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.max_cnt_lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1acd6f5400eee007fe482617eb0907de1f" compoundref="header__footers__analysis_8py" startline="41">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.weights</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</definition>
+        <argsstring>(self, str text)</argsstring>
+        <name>_replace_roman_and_digits_strict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="113" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="113" bodyend="119"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a737dce96abc1155a605b14463cd23676" compoundref="header__footers__analysis_8py" startline="44">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.pattern_digits</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aae0d3d9bad7738700046b03cab5737e9" compoundref="header__footers__analysis_8py" startline="43">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.pattern_roman</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1ad7e82492162cf787ec9be4801918709b" compoundref="header__footers__analysis_8py" startline="154" endline="166">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._remove_header_footer</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a077ce38b212aeaa2af55ede93acafe58" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition> float dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._similarity</definition>
+        <argsstring>(self, str s1, str s2)</argsstring>
+        <name>_similarity</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._similarity</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="122" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="122" bodyend="126"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a1f81124dadd3539af4b992427786527f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>]]</type>
+        <definition> List[List[LineWithLocation]] dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._strip_empty_lines</definition>
+        <argsstring>(self, List[List[LineWithLocation]] lines)</argsstring>
+        <name>_strip_empty_lines</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._strip_empty_lines</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>lines</declname>
+          <array>[List[LineWithLocation]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="129" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="129" bodyend="148"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1ad7e82492162cf787ec9be4801918709b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>]</type>
+        <definition> Optional[LineWithLocation] dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._remove_header_footer</definition>
+        <argsstring>(self, np.ndarray is_footer_header, List[List[str]] popular_patterns, List[List[LineWithLocation]] lines, int page_id, int line_id)</argsstring>
+        <name>_remove_header_footer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._remove_header_footer</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>is_footer_header</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>popular_patterns</declname>
+          <array>[List[str]</array>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>lines</declname>
+          <array>[List[LineWithLocation]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="151" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="154" bodyend="166"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" compoundref="header__footers__analysis_8py" startline="113" endline="119">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._replace_roman_and_digits_strict</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aefbeed6870c8d9825518149cb28538fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[str]]</type>
+        <definition> List[List[str]] dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._get_popular_pattern</definition>
+        <argsstring>(self, np.ndarray is_footer_header, float threshold, List[List[str]] patterns)</argsstring>
+        <name>_get_popular_pattern</name>
+        <qualifiedname>dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector._get_popular_pattern</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>is_footer_header</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>patterns</declname>
+          <array>[List[str]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="169" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="169" bodyend="188"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a08e76dd05cac6478587486199a781883" compoundref="header__footers__analysis_8py" startline="42">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.max_cnt_lines</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" compoundref="header__footers__analysis_8py" startline="49" endline="110">dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector.detect</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class detects header and footer textual lines. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The algorithm was implemented according to the article:</para>
+<para><computeroutput>Lin X. Header and footer extraction by page association //Document Recognition and Retrieval X. – SPIE, 2003. – Т. 5010. – С. 164-171.</computeroutput></para>
+<para>Algorithm&apos;s notes: <verbatim>1. For documents of 6 pages or more, lines on even and odd pages of the document are compared to detect alternating footers-headers.
+   For documents of less than 6 pages, lines between adjacent pages (between even or odd pages) are compared.
+   Therefore, alternating footers-headers will not be detected on documents of less than 6 pages.
+
+2. The algorithm analyzes the first 4 and last 4 lines on each page of the document and,
+   by comparing lines across pages, identifies common footer-header patterns using Levenshtein similarity.
+
+3. For algorithm work, the document must have at least two pages of text.
+   It is not an ML algorithm so it cannot work with just one page.
+
+4. The more pages, the better. Remember that the parameter `pages` limits the number of pages in a document.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" line="16" column="1" bodyfile="dedoc/readers/pdf_reader/utils/header_footers_analysis.py" bodystart="16" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8e8269d8d2af94eb7c06bcfe9899418a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aefbeed6870c8d9825518149cb28538fc" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>_get_popular_pattern</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1ad7e82492162cf787ec9be4801918709b" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>_remove_header_footer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a8afcb437a5e15bdd8a3262b5ca8ec96c" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>_replace_roman_and_digits_strict</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a077ce38b212aeaa2af55ede93acafe58" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>_similarity</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a1f81124dadd3539af4b992427786527f" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>_strip_empty_lines</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a3cd853068170d9e57220b3244a7fd163" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>detect</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a08e76dd05cac6478587486199a781883" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>max_cnt_lines</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1a737dce96abc1155a605b14463cd23676" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>pattern_digits</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1aae0d3d9bad7738700046b03cab5737e9" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>pattern_roman</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1header__footers__analysis_1_1HeaderFooterDetector_1acd6f5400eee007fe482617eb0907de1f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::utils::header_footers_analysis::HeaderFooterDetector</scope><name>weights</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

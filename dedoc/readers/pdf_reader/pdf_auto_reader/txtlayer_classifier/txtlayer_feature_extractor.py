@@ -1,12 +1,18 @@
 from collections import defaultdict
 from typing import List
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import numpy as np
 import pandas as pd
 
 
+# region CLASS_TxtlayerFeatureExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class TxtlayerFeatureExtractor:
 
+    # region METHOD_transform [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def transform(self, texts: List[str]) -> pd.DataFrame:
         from dedoc.structure_extractors.feature_extractors.char_features import letters, digits, special_symbols, brackets, rus, eng, prohibited_symbols, \
             lower_letters, upper_letters, symbols, count_symbols
@@ -59,4 +65,32 @@ class TxtlayerFeatureExtractor:
             features["mean_char_ord"].append(np.mean(all_characters_ord))
             features["median_char_ord"].append(np.median(all_characters_ord))
         features = pd.DataFrame(features)
+# endregion CLASS_TxtlayerFeatureExtractor
         return features[sorted(features.columns)].astype(float)
+
+    # endregion METHOD_transform
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_txtlayer_feature_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Machine learning classification for document layout analysis.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [2][TxtlayerFeatureExtractor reader/processor] => TxtlayerFeatureExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: txtlayer_feature_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, TxtlayerFeatureExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [TxtlayerFeatureExtractor] ○ can_read? → ○ read → [transform] → ⊕ UnstructuredDocument(lines, tables, attachments)

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api" kind="namespace" language="Python">
+    <compoundname>dedoc::api</compoundname>
+    <innernamespace refid="namespacededoc_1_1api_1_1api__args">dedoc::api::api_args</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1api__utils">dedoc::api::api_utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1cancellation">dedoc::api::cancellation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1dedoc__api">dedoc::api::dedoc_api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1process__handler">dedoc::api::process_handler</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1addc87f368fc2a908d68ead7e32819937" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Declare <computeroutput><ref refid="namespacededoc_1_1api" kindref="compound">dedoc.api</ref></computeroutput> as a Python package, serving as the API layer namespace for FastAPI endpoints, request handling, and schema models. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  API layer package root — contains endpoint definitions, process handlers, and schema sub-package. \par \b Input\/ \:  None (empty init). \par \b Output\/ \:  Package namespace <computeroutput><ref refid="namespacededoc_1_1api" kindref="compound">dedoc.api</ref></computeroutput>. \par \b Links\/ \:</para>
+<para>\par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Package is importable as <computeroutput><ref refid="namespacededoc_1_1api" kindref="compound">dedoc.api</ref></computeroutput>. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why an empty <bold>init</bold>? A: Minimal package marker — public API is re-exported from <computeroutput><ref refid="namespacededoc_1_1api_1_1schema" kindref="compound">dedoc.api.schema</ref></computeroutput>, endpoints are imported explicitly by the application launcher. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>PKG [API layer namespace] =&gt; <ref refid="namespacededoc_1_1api" kindref="compound">dedoc.api</ref> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<ref refid="namespacededoc_1_1api" kindref="compound">dedoc.api</ref>]: ApplicationLauncher =&gt; ImportAPIModules =&gt; MountFastAPIApp </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/__init__.py" line="19" column="1" bodyfile="dedoc/api/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

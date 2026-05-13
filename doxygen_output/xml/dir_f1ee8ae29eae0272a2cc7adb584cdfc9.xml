@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_f1ee8ae29eae0272a2cc7adb584cdfc9" kind="dir">
+    <compoundname>dedoc/api</compoundname>
+    <innerdir refid="dir_85b9a051600a68424ab0c3907c204bfc">dedoc/api/schema</innerdir>
+    <innerfile refid="api_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="api__args_8py">api_args.py</innerfile>
+    <innerfile refid="api__utils_8py">api_utils.py</innerfile>
+    <innerfile refid="cancellation_8py">cancellation.py</innerfile>
+    <innerfile refid="dedoc__api_8py">dedoc_api.py</innerfile>
+    <innerfile refid="process__handler_8py">process_handler.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/"/>
+  </compounddef>
+</doxygen>

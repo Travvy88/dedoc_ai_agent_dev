@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc" kind="namespace" language="Python">
+    <compoundname>dedoc</compoundname>
+    <innernamespace refid="namespacededoc_1_1__semantic__template__reference">dedoc::_semantic_template_reference</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__extractors">dedoc::attachments_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1attachments__handler">dedoc::attachments_handler</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common">dedoc::common</innernamespace>
+    <innernamespace refid="namespacededoc_1_1config">dedoc::config</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters">dedoc::converters</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1dedoc__manager">dedoc::dedoc_manager</innernamespace>
+    <innernamespace refid="namespacededoc_1_1download__models">dedoc::download_models</innernamespace>
+    <innernamespace refid="namespacededoc_1_1extensions">dedoc::extensions</innernamespace>
+    <innernamespace refid="namespacededoc_1_1main">dedoc::main</innernamespace>
+    <innernamespace refid="namespacededoc_1_1manager__config">dedoc::manager_config</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors">dedoc::metadata_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors">dedoc::structure_constructors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1utils">dedoc::utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1version">dedoc::version</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1af147971f5bbea6031be24cf1f2234b29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the public API entry point for the Dedoc document structure extraction library. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Re-exports the core DedocManager class and package version. \par \b Scope\/ \:  Package initialization, public symbol re-export. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols: DedocManager, <bold>version</bold>. \par \b Links\/ \:  [USES_API(8): <ref refid="classdedoc_1_1dedoc__manager_1_1DedocManager" kindref="compound">dedoc_manager.DedocManager</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>DedocManager and <bold>version</bold> are always importable from dedoc package. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why re-export DedocManager at package level? A: Provides a clean, single-import interface for users: <computeroutput>from dedoc import DedocManager</computeroutput>. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Document processing orchestrator] =&gt; DedocManager VAR 5[Package version string] =&gt; <bold>version</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DedocManager]: User -&gt; import DedocManager -&gt; parse documents </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/__init__.py" line="20" column="1" bodyfile="dedoc/__init__.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

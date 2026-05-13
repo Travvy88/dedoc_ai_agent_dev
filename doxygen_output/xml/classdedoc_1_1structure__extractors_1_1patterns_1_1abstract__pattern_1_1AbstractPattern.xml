@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern" prot="public" virt="non-virtual">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern" prot="public" virt="non-virtual">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern" prot="public" virt="non-virtual">dedoc.structure_extractors.patterns.tag_pattern.TagPattern</derivedcompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a34b2c6136d330f27afe5e8239056d2b6" prot="protected" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._name</qualifiedname>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="17" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a16f1d49183833f3dbd2b86244e10475d" compoundref="abstract__pattern_8py" startline="49" endline="56">dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.name</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1aabe3ef0d1f5a00067a42cbe115fb8ca0" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern::_line_type</definition>
+        <argsstring></argsstring>
+        <name>_line_type</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._line_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="38" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a8a7dde79890fc2c3093cfdbb81100b8c" compoundref="tag__pattern_8py" startline="139" endline="145">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._get_line_type</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1ad342dc4ff70f79531c175a51946e8dec" compoundref="dotted__list__pattern_8py" startline="72" endline="80">dedoc.structure_extractors.patterns.dotted_list_pattern.DottedListPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac51ba89fcef12cfaf7d5961a32f1c603" compoundref="regexp__pattern_8py" startline="103" endline="113">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1aaff5658631c932f618cc0505a14e5225" compoundref="start__word__pattern_8py" startline="95" endline="105">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern.get_hierarchy_level</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ab175333cbfe4784dcbd33266f119c647" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern::_level_1</definition>
+        <argsstring></argsstring>
+        <name>_level_1</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._level_1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="39" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1adf20f6c5bd5e9230008b43e40bd1ac05" compoundref="tag__pattern_8py" startline="151" endline="157">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._get_level_1</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1ad342dc4ff70f79531c175a51946e8dec" compoundref="dotted__list__pattern_8py" startline="72" endline="80">dedoc.structure_extractors.patterns.dotted_list_pattern.DottedListPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac51ba89fcef12cfaf7d5961a32f1c603" compoundref="regexp__pattern_8py" startline="103" endline="113">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1aaff5658631c932f618cc0505a14e5225" compoundref="start__word__pattern_8py" startline="95" endline="105">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern.get_hierarchy_level</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a4320af1b24ca03c826e137f1a02e781b" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern::_level_2</definition>
+        <argsstring></argsstring>
+        <name>_level_2</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._level_2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="40" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a4ff9678b33fbfff7ff3008668a6f41bc" compoundref="tag__pattern_8py" startline="163" endline="169">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._get_level_2</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1ac2dad23bfacdee1d18eb83e5b9839ae3" compoundref="tag__pattern_8py" startline="175" endline="187">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._get_regexp_level_2</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac51ba89fcef12cfaf7d5961a32f1c603" compoundref="regexp__pattern_8py" startline="103" endline="113">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1aaff5658631c932f618cc0505a14e5225" compoundref="start__word__pattern_8py" startline="95" endline="105">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern.get_hierarchy_level</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ae2cf0fc79f1a5f371bf2e47cc839416f" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern::_can_be_multiline</definition>
+        <argsstring></argsstring>
+        <name>_can_be_multiline</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._can_be_multiline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="41" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a025df26c9c55c40c0ddc8d2e485c9976" compoundref="tag__pattern_8py" startline="193" endline="196">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._get_can_be_multiline</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1ad342dc4ff70f79531c175a51946e8dec" compoundref="dotted__list__pattern_8py" startline="72" endline="80">dedoc.structure_extractors.patterns.dotted_list_pattern.DottedListPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac51ba89fcef12cfaf7d5961a32f1c603" compoundref="regexp__pattern_8py" startline="103" endline="113">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1aaff5658631c932f618cc0505a14e5225" compoundref="start__word__pattern_8py" startline="95" endline="105">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern.get_hierarchy_level</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ac92e6bc6e72673aa9330d3eb617e71d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.__init__</definition>
+        <argsstring>(self, Optional[str] line_type, Optional[int] level_1, Optional[int] level_2, Optional[Union[bool, str]] can_be_multiline)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__header__pattern_1_1TagHeaderPattern_1a23ba1e01f41ca339f574d25befbfcb9e">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__list__pattern_1_1TagListPattern_1ab20c3e449fefd49fca0673e957373f8b">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1ab835f2e94ac37ceb82f394c017fbae7f">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__list__pattern_1_1BracketListPattern_1af6eaa72a5400c1bfe105721eb5e4f314">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__roman__list__pattern_1_1BracketRomanListPattern_1adbf157319cae380348526d243f5f3fe4">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bullet__list__pattern_1_1BulletListPattern_1a4acaa1425a45cbb605db85fdb9d9eec5">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a4e97a4b330c5c9e9ce6328c73777e904">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1roman__list__pattern_1_1RomanListPattern_1a35ff289f73990199c561369212292cc1">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1a338ae02e91f4ebceae9a502cc330ac80">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1a618ddb5b6a3300d233fd7809bb13a62d">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1ad0b971921156e0e46a67f50a41e474f0">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>line_type</declname>
+          <array>[str]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>level_1</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>level_2</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>can_be_multiline</declname>
+          <array>[Union[bool, str]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  <bold>init</bold> method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="23" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="23" bodyend="42"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a16f1d49183833f3dbd2b86244e10475d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.name</definition>
+        <argsstring>(&quot;AbstractPattern&quot; cls)</argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.name</qualifiedname>
+        <param>
+          <type>&quot;AbstractPattern&quot;</type>
+          <declname>cls</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  name method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="49" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="49" bodyend="56"/>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a34b2c6136d330f27afe5e8239056d2b6" compoundref="abstract__pattern_8py" startline="17">dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__list__pattern_1_1BracketListPattern_1a603b97ebc474b777d3d79898c9a4c8b3" compoundref="bracket__list__pattern_8py" startline="46">dedoc.structure_extractors.patterns.bracket_list_pattern.BracketListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__roman__list__pattern_1_1BracketRomanListPattern_1a6f0f3021fc8928035441484189c30385" compoundref="bracket__roman__list__pattern_8py" startline="52">dedoc.structure_extractors.patterns.bracket_roman_list_pattern.BracketRomanListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bullet__list__pattern_1_1BulletListPattern_1a1e5fdd1bfa5dc99be4eb2c5a1851ffc1" compoundref="bullet__list__pattern_8py" startline="48">dedoc.structure_extractors.patterns.bullet_list_pattern.BulletListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1a9a36dc6e3d0f56b2f2da16bd6b33a074" compoundref="dotted__list__pattern_8py" startline="57">dedoc.structure_extractors.patterns.dotted_list_pattern.DottedListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern_1a975117dbdb52b1eccc5e1c4d4e5c7808" compoundref="letter__list__pattern_8py" startline="58">dedoc.structure_extractors.patterns.letter_list_pattern.LetterListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1af1302c16bf5c7806dc0526141753a2d3" compoundref="regexp__pattern_8py" startline="56">dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1roman__list__pattern_1_1RomanListPattern_1ab4da7c0e0a39c71ffa48b28b115c39bf" compoundref="roman__list__pattern_8py" startline="52">dedoc.structure_extractors.patterns.roman_list_pattern.RomanListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1a0ad17c6b0f70c2a8c46674a3d1592c98" compoundref="start__word__pattern_8py" startline="49">dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__header__pattern_1_1TagHeaderPattern_1af483676e8a0dd8f8b1a67af017000c14" compoundref="tag__header__pattern_8py" startline="49">dedoc.structure_extractors.patterns.tag_header_pattern.TagHeaderPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__list__pattern_1_1TagListPattern_1ad263f232fac3c3b55fe910c607f82bf1" compoundref="tag__list__pattern_8py" startline="49">dedoc.structure_extractors.patterns.tag_list_pattern.TagListPattern._name</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a46df57d581f25cfedac8cce9d1a48b6c" compoundref="tag__pattern_8py" startline="49">dedoc.structure_extractors.patterns.tag_pattern.TagPattern._name</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1afeaf3e672c4a04aa3e328c80bfe6d21e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.match</definition>
+        <argsstring>(self, LineWithMeta line)</argsstring>
+        <name>match</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.match</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac0b9a701da684503d8bfbe296165e45f">match</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1a6b1a3a56914bb34f4f527378506919b7">match</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__header__pattern_1_1TagHeaderPattern_1af65c8cfad6f66b794169d2ebfcee2793">match</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__list__pattern_1_1TagListPattern_1a3b3c9944e59a9f576a8e5b675d7926d4">match</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a2d3d6e0b85de8c038604d68cc64db842">match</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  match method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="63" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="63" bodyend="70"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a0bb092a60108666be05953852ca5e9f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref></type>
+        <definition> HierarchyLevel dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.get_hierarchy_level</definition>
+        <argsstring>(self, LineWithMeta line)</argsstring>
+        <name>get_hierarchy_level</name>
+        <qualifiedname>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.get_hierarchy_level</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern_1ad342dc4ff70f79531c175a51946e8dec">get_hierarchy_level</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern_1ac51ba89fcef12cfaf7d5961a32f1c603">get_hierarchy_level</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern_1aaff5658631c932f618cc0505a14e5225">get_hierarchy_level</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__header__pattern_1_1TagHeaderPattern_1ae5297e13a36719b5e6a9866a07154c75">get_hierarchy_level</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__list__pattern_1_1TagListPattern_1a30192738e75537e90ba31783ca98d7d3">get_hierarchy_level</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1ae326026ed6b2f0a3902bbca8b7ed1e14">get_hierarchy_level</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  get_hierarchy_level method \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  5 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="77" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="77" bodyend="87"/>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  AbstractPattern for document structure extraction pipeline </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for all patterns to configure structure extraction by :class:<computeroutput>~dedoc.structure_extractors.DefaultStructureExtractor</computeroutput>. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.structure_extractors.patterns.bracket_list_pattern.BracketListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__list__pattern_1_1BracketListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.structure_extractors.patterns.bracket_roman_list_pattern.BracketRomanListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bracket__roman__list__pattern_1_1BracketRomanListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.structure_extractors.patterns.bullet_list_pattern.BulletListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1bullet__list__pattern_1_1BulletListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dedoc.structure_extractors.patterns.dotted_list_pattern.DottedListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1dotted__list__pattern_1_1DottedListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dedoc.structure_extractors.patterns.letter_list_pattern.LetterListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1letter__list__pattern_1_1LetterListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.structure_extractors.patterns.regexp_pattern.RegexpPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1regexp__pattern_1_1RegexpPattern"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dedoc.structure_extractors.patterns.roman_list_pattern.RomanListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1roman__list__pattern_1_1RomanListPattern"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dedoc.structure_extractors.patterns.start_word_pattern.StartWordPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1start__word__pattern_1_1StartWordPattern"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dedoc.structure_extractors.patterns.tag_header_pattern.TagHeaderPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__header__pattern_1_1TagHeaderPattern"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dedoc.structure_extractors.patterns.tag_list_pattern.TagListPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__list__pattern_1_1TagListPattern"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dedoc.structure_extractors.patterns.tag_pattern.TagPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern</label>
+        <link refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="13" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="13" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ac92e6bc6e72673aa9330d3eb617e71d4" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ae2cf0fc79f1a5f371bf2e47cc839416f" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>_can_be_multiline</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ab175333cbfe4784dcbd33266f119c647" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>_level_1</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a4320af1b24ca03c826e137f1a02e781b" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>_level_2</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1aabe3ef0d1f5a00067a42cbe115fb8ca0" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>_line_type</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a34b2c6136d330f27afe5e8239056d2b6" prot="protected" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>_name</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a0bb092a60108666be05953852ca5e9f2" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>get_hierarchy_level</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1afeaf3e672c4a04aa3e328c80bfe6d21e" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>match</name></member>
+      <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a16f1d49183833f3dbd2b86244e10475d" prot="public" virt="non-virtual"><scope>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

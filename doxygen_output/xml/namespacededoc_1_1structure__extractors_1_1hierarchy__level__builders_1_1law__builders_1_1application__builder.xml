@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1application__builder" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6657e853bf5b4da9fbddc2379e9ab5d5">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::abstract_application_hierarchy_level_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicc91da80132250ec793c7495a80397214">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_foiv_hierarchy_level_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_law_hierarchy_level_builder</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

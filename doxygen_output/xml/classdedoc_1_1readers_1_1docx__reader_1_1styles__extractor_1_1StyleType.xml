@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::styles_extractor::StyleType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1a636c27c4f46deebf924acc9f7c43edc4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.readers.docx_reader.styles_extractor.StyleType::CHARACTER</definition>
+        <argsstring></argsstring>
+        <name>CHARACTER</name>
+        <qualifiedname>dedoc.readers.docx_reader.styles_extractor.StyleType.CHARACTER</qualifiedname>
+        <initializer>=  &quot;character&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/styles_extractor.py" line="15" column="1" bodyfile="dedoc/readers/docx_reader/styles_extractor.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1af1dc7ebd963643091e8c404aaab8d729" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.readers.docx_reader.styles_extractor.StyleType::PARAGRAPH</definition>
+        <argsstring></argsstring>
+        <name>PARAGRAPH</name>
+        <qualifiedname>dedoc.readers.docx_reader.styles_extractor.StyleType.PARAGRAPH</qualifiedname>
+        <initializer>=  &quot;paragraph&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/styles_extractor.py" line="16" column="1" bodyfile="dedoc/readers/docx_reader/styles_extractor.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1a888f25c0c421b4fd84dab6203125297d" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.readers.docx_reader.styles_extractor.StyleType::NUMBERING</definition>
+        <argsstring></argsstring>
+        <name>NUMBERING</name>
+        <qualifiedname>dedoc.readers.docx_reader.styles_extractor.StyleType.NUMBERING</qualifiedname>
+        <initializer>=  &quot;numbering&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/styles_extractor.py" line="18" column="1" bodyfile="dedoc/readers/docx_reader/styles_extractor.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.docx_reader.styles_extractor.StyleType</label>
+        <link refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.docx_reader.styles_extractor.StyleType</label>
+        <link refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/docx_reader/styles_extractor.py" line="14" column="1" bodyfile="dedoc/readers/docx_reader/styles_extractor.py" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1a636c27c4f46deebf924acc9f7c43edc4" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::styles_extractor::StyleType</scope><name>CHARACTER</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1a888f25c0c421b4fd84dab6203125297d" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::styles_extractor::StyleType</scope><name>NUMBERING</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StyleType_1af1dc7ebd963643091e8c404aaab8d729" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::styles_extractor::StyleType</scope><name>PARAGRAPH</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

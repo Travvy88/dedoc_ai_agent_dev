@@ -1,0 +1,5 @@
+var classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21 =
+[
+    [ "__init__", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21.html#a9069c3fba17b78bb198e877e8aa61599", null ],
+    [ "extract", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pptx__attachments_30427f0d8aad45545d00c83310acca21.html#a4c68e0d2cb21cf9845929c43d6f3d20b", null ]
+];

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::parsed_document::ParsedDocument</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a27bd65c9145f61a218b13cd81d17444f" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" kindref="compound">DocumentContent</ref></type>
+        <definition>DocumentContent dedoc.api.schema.parsed_document.ParsedDocument::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <qualifiedname>dedoc.api.schema.parsed_document.ParsedDocument.content</qualifiedname>
+        <initializer>=  Field(description=&quot;Document text and tables&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/parsed_document.py" line="56" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata" kindref="compound">DocumentMetadata</ref></type>
+        <definition>DocumentMetadata dedoc.api.schema.parsed_document.ParsedDocument::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>dedoc.api.schema.parsed_document.ParsedDocument.metadata</qualifiedname>
+        <initializer>=  Field(description=&quot;Document metadata such as size, creation date and so on&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/parsed_document.py" line="57" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a94aca0fbb54cc709bd5595de14889663" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.schema.parsed_document.ParsedDocument::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>dedoc.api.schema.parsed_document.ParsedDocument.version</qualifiedname>
+        <initializer>=  Field(description=&quot;Version of the program that parsed this document&quot;, example=&quot;0.9.1&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/parsed_document.py" line="58" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1ac786dfbd75371b745f1649ca5206b266" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.api.schema.parsed_document.ParsedDocument::warnings</definition>
+        <argsstring></argsstring>
+        <name>warnings</name>
+        <qualifiedname>dedoc.api.schema.parsed_document.ParsedDocument.warnings</qualifiedname>
+        <initializer>=  Field(description=&quot;List of warnings and possible errors, arising in the process of document parsing&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/parsed_document.py" line="59" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1afbee9622393a5d0002ce2d8f736a05f1" compoundref="data__structures_2document__content_8py" startline="31" endline="41">dedoc.data_structures.document_content.DocumentContent.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14b1bc6856d6049c2f55ea28cc225b0a" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.api.schema.parsed_document.ParsedDocument::attachments</definition>
+        <argsstring></argsstring>
+        <name>attachments</name>
+        <qualifiedname>dedoc.api.schema.parsed_document.ParsedDocument.attachments</qualifiedname>
+        <initializer>=  Field(description=&quot;Result of analysis of attached files - list of `<ref refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref>`&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/parsed_document.py" line="60" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9ee6a43295eb67c371e8e512cd0dd751" compoundref="data__structures_2parsed__document_8py" startline="56" endline="61">dedoc.data_structures.parsed_document.ParsedDocument.add_attachments</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Top-level API response model: aggregates document content, metadata, nested attachments, warnings, and version into a single JSON-serializable entity. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (content, metadata, version, warnings, attachments) -&gt; JSON serializable model</para>
+<para>Holds information about the document content, metadata and attachments.</para>
+<para>:ivar content: document text (hierarchy of nodes) and tables :ivar attachments: result of analysis of attached files (empty if with_attachments=False) :ivar metadata: document metadata such as size, creation date and so on. :ivar warnings: list of warnings and possible errors, arising in the process of document parsing :ivar version: version of the program that parsed this document</para>
+<para>:vartype content: DocumentContent :vartype attachments: List[ParsedDocument] :vartype metadata: DocumentMetadata :vartype warnings: List[str] :vartype version: str </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.parsed_document.ParsedDocument</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.parsed_document.ParsedDocument</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>content</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>attachments</edgelabel>
+          <edgelabel>warnings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.api.schema.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>structure</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tables</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dedoc.api.schema.document_metadata.DocumentMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1document__metadata_1_1DocumentMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.api.schema.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>line_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.api.schema.tree_node.TreeNode</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>annotations</edgelabel>
+          <edgelabel>subparagraphs</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="5">
+        <label>List</label>
+      </node>
+      <node id="7">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/parsed_document.py" line="40" column="1" bodyfile="dedoc/api/schema/parsed_document.py" bodystart="40" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14b1bc6856d6049c2f55ea28cc225b0a" prot="public" virt="non-virtual"><scope>dedoc::api::schema::parsed_document::ParsedDocument</scope><name>attachments</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a27bd65c9145f61a218b13cd81d17444f" prot="public" virt="non-virtual"><scope>dedoc::api::schema::parsed_document::ParsedDocument</scope><name>content</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" prot="public" virt="non-virtual"><scope>dedoc::api::schema::parsed_document::ParsedDocument</scope><name>metadata</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a94aca0fbb54cc709bd5595de14889663" prot="public" virt="non-virtual"><scope>dedoc::api::schema::parsed_document::ParsedDocument</scope><name>version</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1ac786dfbd75371b745f1649ca5206b266" prot="public" virt="non-virtual"><scope>dedoc::api::schema::parsed_document::ParsedDocument</scope><name>warnings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

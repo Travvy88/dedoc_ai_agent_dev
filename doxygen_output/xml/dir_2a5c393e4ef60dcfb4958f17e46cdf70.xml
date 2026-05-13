@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2a5c393e4ef60dcfb4958f17e46cdf70" kind="dir">
+    <compoundname>dedoc/structure_extractors/hierarchy_level_builders/diploma_builder</compoundname>
+    <innerfile refid="structure__extractors_2hierarchy__level__builders_2diploma__builder_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="diploma__builder_2body__builder_8py">body_builder.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/diploma_builder/"/>
+  </compounddef>
+</doxygen>

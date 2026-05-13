@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::list_item</compoundname>
+    <innerclass refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1_1ListItem" prot="public">dedoc::structure_constructors::concrete_structure_constructors::list_item::ListItem</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1a4db32db060466251a7fb6ebf5a64adcf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_constructors::concrete_structure_constructors::list_item.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="39" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1a2d3ef8b8da9a91dc902474cc3b1d837d" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_constructors::concrete_structure_constructors::list_item.LIST_ITEM_POINT_END_TYPE</definition>
+        <argsstring></argsstring>
+        <name>LIST_ITEM_POINT_END_TYPE</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.LIST_ITEM_POINT_END_TYPE</qualifiedname>
+        <initializer>=  &quot;.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="42" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1a59c61032d8443b1a6f9980fdef78816b" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::structure_constructors::concrete_structure_constructors::list_item.LIST_ITEM_BRACKET_END_TYPE</definition>
+        <argsstring></argsstring>
+        <name>LIST_ITEM_BRACKET_END_TYPE</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item.LIST_ITEM_BRACKET_END_TYPE</qualifiedname>
+        <initializer>=  &quot;)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="43" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1list__item_1a94afad93a0317499308897951f62fc98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors.list_item._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.list_item._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the ListItem data class that models multi-level list numbering (e.g., &quot;1.2.3)&quot; or &quot;1.2.3.&quot;) and provides ordering logic for tree construction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  List item identity, parent computation, lexicographic comparison. \par \b Input\/ \:  List[int] (hierarchy levels), str (end delimiter). \par \b Output\/ \:  ListItem objects with comparison and parent navigation capabilities. \par \b Links\/ \:  [USES_API(4): builtins] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>ListItem ALWAYS stores end_type as either LIST_ITEM_POINT_END_TYPE or LIST_ITEM_BRACKET_END_TYPE.</para>
+</listitem><listitem><para>get_parent returns a ListItem with the last element decremented; empty if last becomes &lt;=0.</para>
+</listitem><listitem><para><bold>lt</bold> returns False if end_types differ. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a custom class instead of a plain tuple? A: Multi-level list comparison requires lexicographic logic that plain tuples don&apos;t handle correctly when lists have different lengths. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added] \par \b Module Map\/ \:</para>
+<para>CONST 3[Point end delimiter constant] =&gt; LIST_ITEM_POINT_END_TYPE CONST 3[Bracket end delimiter constant] =&gt; LIST_ITEM_BRACKET_END_TYPE CLASS 8[List item with multi-level numbering and comparison] =&gt; ListItem METHOD 5[Initialize item from level list and end type] =&gt; <bold>init</bold> METHOD 6[Compute parent item in hierarchy] =&gt; get_parent METHOD 7[Lexicographic comparison] =&gt; <bold>lt</bold> METHOD 5[Equality check] =&gt; <bold>eq</bold> METHOD 5[Inequality check] =&gt; <bold>ne</bold> METHOD 4[Check if this is the first item (level [1])] =&gt; is_first_item METHOD 4[String representation &quot;1.2.3.&quot;] =&gt; <bold>str</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ListItem]: TreeConstructor → CompareListItems → DetermineHierarchyPosition </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="30" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/list_item.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

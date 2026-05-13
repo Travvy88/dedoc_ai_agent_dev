@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::utils::annotation_merger::ExtendedAnnotation</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.ExtendedAnnotation::annotations</definition>
+        <argsstring></argsstring>
+        <name>annotations</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="57" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1ad455d9ba04204f4fe895a98299963616" compoundref="data__structures_2line__with__meta_8py" startline="156" endline="170">dedoc.data_structures.line_with_meta.LineWithMeta.__extract_annotations_by_slice</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" compoundref="annotation__merger_8py" startline="91" endline="92">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1aafb49313631dd1bf933f4225c71a7f5b" compoundref="annotation__merger_8py" startline="119" endline="126">dedoc.utils.annotation_merger.ExtendedAnnotation.merge</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a94b74406294549e9749439775a99e399" compoundref="annotation__merger_8py" startline="79" endline="80">dedoc.utils.annotation_merger.ExtendedAnnotation.name</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a23e51b13196dc47e65940f9c4960f6ad" compoundref="data__structures_2line__with__meta_8py" startline="292" endline="302">dedoc.data_structures.line_with_meta.LineWithMeta.shift</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e" compoundref="data__structures_2line__with__meta_8py" startline="281" endline="284">dedoc.data_structures.line_with_meta.LineWithMeta.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ad236d83118754f7c422ab67145e8e4a3" compoundref="annotation__merger_8py" startline="85" endline="86">dedoc.utils.annotation_merger.ExtendedAnnotation.value</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.ExtendedAnnotation::spaces</definition>
+        <argsstring></argsstring>
+        <name>spaces</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.spaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="58" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a65c6ee59fce48a94e0dd425e0344399e" compoundref="annotation__merger_8py" startline="213" endline="234">dedoc.utils.annotation_merger.AnnotationMerger.__filter_contradicting_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" compoundref="annotation__merger_8py" startline="91" endline="92">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1af4273625cebe6cafab5fb890a5bf1f0f" compoundref="annotation__merger_8py" startline="141" endline="156">dedoc.utils.annotation_merger.AnnotationMerger.merge_annotations</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a6d4e666185dc05de0c87836ac3d9eaa4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.ExtendedAnnotation::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="59" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a1e42d9707945dd1ec948c7e08b6c3783" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.ExtendedAnnotation::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="60" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" compoundref="annotation__merger_8py" startline="67" endline="74">dedoc.utils.annotation_merger.ExtendedAnnotation.add</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ae99c6ab8fef7f80b298c3c16f4e2beb2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.utils.annotation_merger.ExtendedAnnotation::extended</definition>
+        <argsstring></argsstring>
+        <name>extended</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.extended</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="100" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a766a5b0a6b2ec18f3df23f75979d4aff" compoundref="annotation__merger_8py" startline="109" endline="112">dedoc.utils.annotation_merger.ExtendedAnnotation.get_end</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a843f88d31377645601e9fe61156b7a08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.utils.annotation_merger.ExtendedAnnotation.__init__</definition>
+        <argsstring>(self, List[Annotation] annotations=None, List[Space] spaces=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <array>[Annotation]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>spaces</declname>
+          <array>[Space]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize an ExtendedAnnotation with optional pre-existing annotations and spaces, computing the start/end boundaries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="56" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="56" bodyend="60"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;ExtendedAnnotation&quot;</type>
+        <definition> &quot;ExtendedAnnotation&quot; dedoc.utils.annotation_merger.ExtendedAnnotation.add</definition>
+        <argsstring>(self, Union[Annotation, Space] annotation)</argsstring>
+        <name>add</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.add</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>annotation</declname>
+          <array>[Annotation, Space]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To add either an Annotation or Space to the group, extending the start/end boundaries accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Union[Annotation, Space] -&gt; ExtendedAnnotation \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="67" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="67" bodyend="74"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1a3ebe5819c050783499cf6ea669b012e0" compoundref="api_2schema_2annotation_8py" startline="51">dedoc.api.schema.annotation.Annotation.end</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a38a8240c88175f1b9568892e6383f7ac" compoundref="txtlayer__result_8py" startline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.end</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a37a5f8dbacc694ff76e045daef516701" compoundref="annotation__merger_8py" startline="45">dedoc.utils.annotation_merger.Space.end</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a1e42d9707945dd1ec948c7e08b6c3783" compoundref="annotation__merger_8py" startline="60">dedoc.utils.annotation_merger.ExtendedAnnotation.end</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" compoundref="annotation__merger_8py" startline="58">dedoc.utils.annotation_merger.ExtendedAnnotation.spaces</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" compoundref="annotation__merger_8py" startline="134">dedoc.utils.annotation_merger.AnnotationMerger.spaces</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1annotation_1_1Annotation_1aa03caf3110f4f78f92f7e9f8305cf9d9" compoundref="api_2schema_2annotation_8py" startline="50">dedoc.api.schema.annotation.Annotation.start</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1LevelInfo_1a32837bec14c8377c3e190bc2663ba141" compoundref="docx__reader_2numbering__extractor_8py" startline="278">dedoc.readers.docx_reader.numbering_extractor.LevelInfo.start</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__result_1_1TxtLayerResult_1a39b65906f60fb85be9a40cbf6a5df7f9" compoundref="txtlayer__result_8py" startline="22">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_result.TxtLayerResult.start</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space_1a6dae1ee812924021a40e6920070e10b5" compoundref="annotation__merger_8py" startline="44">dedoc.utils.annotation_merger.Space.start</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a6d4e666185dc05de0c87836ac3d9eaa4" compoundref="annotation__merger_8py" startline="59">dedoc.utils.annotation_merger.ExtendedAnnotation.start</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a94b74406294549e9749439775a99e399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.annotation_merger.ExtendedAnnotation.name</definition>
+        <argsstring>(self)</argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.name</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="79" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="79" bodyend="80"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ad236d83118754f7c422ab67145e8e4a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.utils.annotation_merger.ExtendedAnnotation.value</definition>
+        <argsstring>(self)</argsstring>
+        <name>value</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.value</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="85" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="85" bodyend="86"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[Union[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>, <ref refid="classdedoc_1_1utils_1_1annotation__merger_1_1Space" kindref="compound">Space</ref>]]</type>
+        <definition> List[Union[Annotation, Space]] dedoc.utils.annotation_merger.ExtendedAnnotation.extended</definition>
+        <argsstring>(self)</argsstring>
+        <name>extended</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.extended</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="91" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="91" bodyend="92"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" compoundref="annotation__merger_8py" startline="58">dedoc.utils.annotation_merger.ExtendedAnnotation.spaces</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1AnnotationMerger_1a2290b5927818b2391efdf76afe892a8f" compoundref="annotation__merger_8py" startline="134">dedoc.utils.annotation_merger.AnnotationMerger.spaces</references>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a766a5b0a6b2ec18f3df23f75979d4aff" compoundref="annotation__merger_8py" startline="109" endline="112">dedoc.utils.annotation_merger.ExtendedAnnotation.get_end</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a4e343d109dc33f22aec8f252f3dbd3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[int]</type>
+        <definition> Optional[int] dedoc.utils.annotation_merger.ExtendedAnnotation.get_start</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_start</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.get_start</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To compute the minimum start position across all contained annotations and spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; Optional[int] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="99" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a766a5b0a6b2ec18f3df23f75979d4aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[int]</type>
+        <definition> Optional[int] dedoc.utils.annotation_merger.ExtendedAnnotation.get_end</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_end</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.get_end</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To compute the maximum end position across all contained annotations and spaces. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; Optional[int] \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="109" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="109" bodyend="112"/>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" compoundref="annotation__merger_8py" startline="91" endline="92">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ae99c6ab8fef7f80b298c3c16f4e2beb2" compoundref="annotation__merger_8py" startline="100">dedoc.utils.annotation_merger.ExtendedAnnotation.extended</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1aafb49313631dd1bf933f4225c71a7f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Optional[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> Optional[Annotation] dedoc.utils.annotation_merger.ExtendedAnnotation.merge</definition>
+        <argsstring>(self)</argsstring>
+        <name>merge</name>
+        <qualifiedname>dedoc.utils.annotation_merger.ExtendedAnnotation.merge</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To collapse the grouped annotations into a single merged Annotation spanning the full range, or None if no annotations present. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; Optional[Annotation] \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/annotation_merger.py" line="119" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="119" bodyend="126"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__with__meta_1_1LineWithMeta_1ab2ef534abafd67ece6250d238720b3da" compoundref="api_2schema_2line__with__meta_8py" startline="49">dedoc.api.schema.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1aa5ca282fc14369ce7ae790ff33d57e8f" compoundref="api_2schema_2tree__node_8py" startline="61">dedoc.api.schema.tree_node.TreeNode.annotations</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a230550d5b1ac33504c2238e38441515e" compoundref="data__structures_2line__with__meta_8py" startline="202" endline="206">dedoc.data_structures.line_with_meta.LineWithMeta.annotations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1abd5ae15e835e7262100504a83b6d2cbd" compoundref="text__with__bbox_8py" startline="32">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.annotations</references>
+        <references refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" compoundref="annotation__merger_8py" startline="57">dedoc.utils.annotation_merger.ExtendedAnnotation.annotations</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To hold a group of annotations and spaces that form a contiguous merged region, tracking span boundaries and providing a final merge() method. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/annotation_merger.py" line="51" column="1" bodyfile="dedoc/utils/annotation_merger.py" bodystart="51" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a843f88d31377645601e9fe61156b7a08" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1af6e7a05e7f3f0df4cab29352a6986310" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>add</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a0cbf92a76def6ab16b6190737be6eb83" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>annotations</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a1e42d9707945dd1ec948c7e08b6c3783" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>end</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ae99c6ab8fef7f80b298c3c16f4e2beb2" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>extended</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1afaaadb6067ce3fa666f98517618f31e0" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>extended</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a766a5b0a6b2ec18f3df23f75979d4aff" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>get_end</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a4e343d109dc33f22aec8f252f3dbd3a4" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>get_start</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1aafb49313631dd1bf933f4225c71a7f5b" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>merge</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a94b74406294549e9749439775a99e399" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>name</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a150e4d19e139a618bdae2499825baffb" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>spaces</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a6d4e666185dc05de0c87836ac3d9eaa4" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>start</name></member>
+      <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1ad236d83118754f7c422ab67145e8e4a3" prot="public" virt="non-virtual"><scope>dedoc::utils::annotation_merger::ExtendedAnnotation</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

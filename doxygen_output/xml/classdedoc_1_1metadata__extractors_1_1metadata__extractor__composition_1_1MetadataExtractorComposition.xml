@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::metadata_extractors::metadata_extractor_composition::MetadataExtractorComposition</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1a6c2f69c433112e54af31f80d864b9536" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition::extractors</definition>
+        <argsstring></argsstring>
+        <name>extractors</name>
+        <qualifiedname>dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.extractors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/metadata_extractor_composition.py" line="43" column="1" bodyfile="dedoc/metadata_extractors/metadata_extractor_composition.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4_1a9f4fa591608feb894449304460b5e760" compoundref="classifying__law__structure__extractor_8py" startline="199" endline="218">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.ClassifyingLawStructureExtractor.__get_extractor_by_type</referencedby>
+        <referencedby refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1af1b3ba81cbde4b01e7942ef80cb187e4" compoundref="metadata__extractor__composition_8py" startline="58" endline="87">dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.extract</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1structure__extractor__composition_1_1StructureExtractorComposition_1a678452004808a2173c21b7daea2dafa6" compoundref="structure__extractor__composition_8py" startline="39" endline="51">dedoc.structure_extractors.structure_extractor_composition.StructureExtractorComposition.extract</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1a6bd91b3d1e460bdc48f88629907e6b2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.__init__</definition>
+        <argsstring>(self, List[AbstractMetadataExtractor] extractors)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>extractors</declname>
+          <array>[AbstractMetadataExtractor]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To inject the ordered list of metadata extractors that form the extraction chain. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  None \par \b I/O\/ \:  List[AbstractMetadataExtractor] -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/metadata_extractor_composition.py" line="42" column="1" bodyfile="dedoc/metadata_extractors/metadata_extractor_composition.py" bodystart="42" bodyend="44"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1af1b3ba81cbde4b01e7942ef80cb187e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.extract</definition>
+        <argsstring>(self, str file_path, Optional[str] converted_filename=None, Optional[str] original_filename=None, Optional[dict] parameters=None, Optional[str] extension=None, Optional[str] mime=None)</argsstring>
+        <name>extract</name>
+        <qualifiedname>dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.extract</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>converted_filename</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>original_filename</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To attempt extraction with each registered extractor in order, returning the result of the first one that reports capability via can_extract(). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  os.path, AbstractMetadataExtractor.can_extract, AbstractMetadataExtractor.extract \par \b I/O\/ \:  str × Optional[str] × Optional[str] × Optional[dict] × Optional[str] × Optional[str] -&gt; dict \par \b Complexity\/ \:  6</para>
+<para>Extract metadata using one of the extractors if suitable extractor was found.</para>
+<para>:param file_path: path to the file to extract metadata. \ If dedoc manager is used, the file gets a new name during processing - this name should be passed here (for example 23141.doc) :param converted_filename: name of the file after renaming and conversion (if dedoc manager is used, for example 23141.docx), \ by default it&apos;s a name from the file_path. Converted file should be located in the same directory as the file before converting. :param original_filename: name of the file before renaming (if dedoc manager is used), by default it&apos;s a name from the file_path :param parameters: additional parameters for document parsing, see :ref:<computeroutput>parameters_description</computeroutput> for more details :param extension: file extension, for example .doc or .pdf :param mime: MIME type of file :return: dict with metadata information about the document </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/metadata_extractor_composition.py" line="52" column="1" bodyfile="dedoc/metadata_extractors/metadata_extractor_composition.py" bodystart="58" bodyend="87"/>
+        <references refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1a6c2f69c433112e54af31f80d864b9536" compoundref="metadata__extractor__composition_8py" startline="43">dedoc.metadata_extractors.metadata_extractor_composition.MetadataExtractorComposition.extractors</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4_1a3230c152788defa6c5a1c8b9a1abb0db" compoundref="classifying__law__structure__extractor_8py" startline="85">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.ClassifyingLawStructureExtractor.extractors</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1structure__extractor__composition_1_1StructureExtractorComposition_1a3cca562cf3e3c8f006a32999638ddc09" compoundref="structure__extractor__composition_8py" startline="31">dedoc.structure_extractors.structure_extractor_composition.StructureExtractorComposition.extractors</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To serve as the primary entry point for metadata extraction — iterates an ordered list of extractors and returns the result of the first capable one. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/metadata_extractor_composition.py" line="36" column="1" bodyfile="dedoc/metadata_extractors/metadata_extractor_composition.py" bodystart="36" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1a6bd91b3d1e460bdc48f88629907e6b2c" prot="public" virt="non-virtual"><scope>dedoc::metadata_extractors::metadata_extractor_composition::MetadataExtractorComposition</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1af1b3ba81cbde4b01e7942ef80cb187e4" prot="public" virt="non-virtual"><scope>dedoc::metadata_extractors::metadata_extractor_composition::MetadataExtractorComposition</scope><name>extract</name></member>
+      <member refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition_1a6c2f69c433112e54af31f80d864b9536" prot="public" virt="non-virtual"><scope>dedoc::metadata_extractors::metadata_extractor_composition::MetadataExtractorComposition</scope><name>extractors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

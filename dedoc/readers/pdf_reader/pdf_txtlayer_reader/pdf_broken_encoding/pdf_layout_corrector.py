@@ -8,6 +8,10 @@ from pathlib import Path, PurePath
 from sys import platform
 from typing import Dict, Iterable, List, Optional, Tuple, Union
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import fitz
 from fontTools.ttLib import TTFont
 from pdfminer.converter import PDFPageAggregator
@@ -23,7 +27,9 @@ from dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model impo
 from dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.utils import correct_string_incorrect_chars, correctly_resize, is_empty, junk_string
 
 
+# region CLASS_PDFLayoutCorrector [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PDFLayoutCorrector:
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self) -> None:
         self.model = GlyphRecognitionModel()
         self.text = None
@@ -33,6 +39,8 @@ class PDFLayoutCorrector:
         self.__unicodemaps = {}
         self.__name2code = {}
 
+    # region METHOD_get_correct_layout [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def get_correct_layout(self, pdf_path: Path) -> Tuple[List[PDFPage], List[LTPage]]:
         self.text = ""
         self.match_dict = {}
@@ -45,10 +53,14 @@ class PDFLayoutCorrector:
 
         return layouts
 
+    # region METHOD___read_pdf [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_get_correct_layout
     def __read_pdf(self, pdf_path: Path, fonts_path: Path, glyphs_path: Path) -> None:
         self.__extract_fonts(pdf_path, fonts_path)
         self.__extract_glyphs(fonts_path, glyphs_path)
 
+    # region METHOD___extract_fonts [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___read_pdf
     def __extract_fonts(self, pdf_path: Path, fonts_path: Path) -> None:
         doc = fitz.open(pdf_path)
         xref_visited = []
@@ -70,6 +82,8 @@ class PDFLayoutCorrector:
                     ofile.close()
         doc.close()
 
+    # region METHOD___extract_glyphs [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract_fonts
     def __extract_glyphs(self, fonts_path: Path, glyphs_path: Path) -> None:
         font_files = list(fonts_path.iterdir())
         white_spaces = {}
@@ -132,6 +146,8 @@ class PDFLayoutCorrector:
             white_spaces[font_name] = empty_glyphs
         self.white_spaces = white_spaces
 
+    # region METHOD___match_glyphs_and_encoding_for_all [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract_glyphs
     def __match_glyphs_and_encoding_for_all(self, fonts_path: Path, glyphs_path: Path) -> None:
         fonts = fonts_path.iterdir()
         dicts = self.white_spaces
@@ -146,6 +162,8 @@ class PDFLayoutCorrector:
                 dicts[fontname] = matching_res
         self.match_dict = dicts
 
+    # region METHOD___match_glyphs_and_encoding [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___match_glyphs_and_encoding_for_all
     def __match_glyphs_and_encoding(self, images_path: Path) -> Dict[Union[str, int], str]:
         images = images_path.glob("*")
         dictionary = {}
@@ -171,6 +189,8 @@ class PDFLayoutCorrector:
 
         return dictionary
 
+    # region METHOD___extract_text_str [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___match_glyphs_and_encoding
     def __extract_text_str(self, o: Union[LTChar, LTTextLineHorizontal, Iterable], cached_fonts: dict, page_text: list) -> None:
         if isinstance(o, LTChar):
             self.__process_char(o, cached_fonts)
@@ -179,16 +199,22 @@ class PDFLayoutCorrector:
         elif isinstance(o, Iterable):
             self.__process_iterable(o, cached_fonts, page_text)
 
+    # region METHOD___process_iterable [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract_text_str
     def __process_iterable(self, iterable_obj: Iterable, cached_fonts: dict, page_text: list) -> None:
         for item in iterable_obj:
             self.__extract_text_str(item, cached_fonts, page_text)
 
+    # region METHOD___process_text_line [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___process_iterable
     def __process_text_line(self, text_line: LTTextLineHorizontal, page_text: list) -> None:
         # LTTextLineHorizontal
         text = text_line.get_text()
         text = text.replace("\n", " ").replace("\r", "").replace("\t", " ")
         page_text.append(text)
 
+    # region METHOD___process_char [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___process_text_line
     def __process_char(self, char_obj: LTChar, cached_fonts: dict) -> None:
         # LTChar
         char = char_obj.get_text()
@@ -225,6 +251,8 @@ class PDFLayoutCorrector:
         except Exception:
             char_obj._text = char
 
+    # region METHOD___correct_pages_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___process_char
     def __correct_pages_text(self, o: Union[LTChar, LTTextLineHorizontal, Iterable], cached_fonts: dict, fulltext: list) -> None:
         if isinstance(o, LTChar):
             self.__correct_char_text(o, cached_fonts)
@@ -233,6 +261,8 @@ class PDFLayoutCorrector:
         elif isinstance(o, LTTextLineHorizontal):
             self.__correct_line_text(o, fulltext)
 
+    # region METHOD___correct_char_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___correct_pages_text
     def __correct_char_text(self, char_obj: LTChar, cached_fonts: dict) -> None:
         char = char_obj.get_text()
         fontname = char_obj.fontname
@@ -248,6 +278,8 @@ class PDFLayoutCorrector:
 
         self.__apply_correct_glyph(char_obj, fontname, index, cached_fonts)
 
+    # region METHOD___get_char_index [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___correct_char_text
     def __get_char_index(self, char: str) -> Optional[int]:
         if "cid" in char:
             return int(char[1:-1].split(":")[-1])
@@ -259,12 +291,16 @@ class PDFLayoutCorrector:
         except Exception:
             return None
 
+    # region METHOD___apply_match_dict [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_char_index
     def __apply_match_dict(self, char_obj: LTChar, fontname: str, char: str) -> None:
         try:
             char_obj._text = self.match_dict[fontname][char]
         except Exception:
             char_obj._text = char
 
+    # region METHOD___apply_correct_glyph [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___apply_match_dict
     def __apply_correct_glyph(self, char_obj: LTChar, fontname: str, index: int, cached_fonts: dict) -> None:
         try:
             glyph_name = cached_fonts[fontname][index]
@@ -273,15 +309,21 @@ class PDFLayoutCorrector:
         except Exception:
             char_obj._text = " "
 
+    # region METHOD___correct_iterable_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___apply_correct_glyph
     def __correct_iterable_text(self, iterable: Iterable, cached_fonts: dict, fulltext: list) -> None:
         for item in iterable:
             self.__correct_pages_text(item, cached_fonts, fulltext)
 
+    # region METHOD___correct_line_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___correct_iterable_text
     def __correct_line_text(self, line: LTTextLineHorizontal, fulltext: list) -> None:
         text = line.get_text()
         line._text = correct_string_incorrect_chars(text)
         fulltext.append(line.get_text())
 
+    # region METHOD___restore_layout [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___correct_line_text
     def __restore_layout(self, pdf_path: Path, start: int = 0, end: int = 0) -> Tuple[List[PDFPage], List[LTPage]]:
         self.__cached_fonts = None
         self.__fontname2basefont = {}
@@ -333,4 +375,32 @@ class PDFLayoutCorrector:
                 fixed_layouts.append(layout)
                 pages.append(page)
 
+# endregion CLASS_PDFLayoutCorrector
         return pages, fixed_layouts
+
+    # endregion METHOD___restore_layout
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_layout_corrector; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [38][PDFLayoutCorrector reader/processor] => PDFLayoutCorrector
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdf_layout_corrector, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PDFLayoutCorrector
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PDFLayoutCorrector] ○ can_read? → ○ read → [__init__ → get_correct_layout → __read_pdf] → ⊕ UnstructuredDocument(lines, tables, attachments)

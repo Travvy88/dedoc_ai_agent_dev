@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="api_2schema_2document__content_8py" kind="file" language="Python">
+    <compoundname>document_content.py</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" prot="public">dedoc::api::schema::document_content::DocumentContent</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api">dedoc::api</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema">dedoc::api::schema</innernamespace>
+    <innernamespace refid="namespacededoc_1_1api_1_1schema_1_1document__content">dedoc::api::schema::document_content</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1api_1_1schema_1_1document__content" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(9):<sp/>DocumentProcessing,<sp/>DocumentContent;<sp/>CONCEPT(8):<sp/>ContentStructure,<sp/>TreeRepresentation;<sp/>TECH(7):<sp/>Pydantic,<sp/>BaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Define<sp/>the<sp/>DocumentContent<sp/>schema<sp/>—<sp/>the<sp/>core<sp/>container<sp/>for<sp/>parsed<sp/>document<sp/>content:<sp/>a<sp/>tree<sp/>structure<sp/>of<sp/>text<sp/>nodes<sp/>and<sp/>a<sp/>list<sp/>of<sp/>tables.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>content<sp/>data<sp/>model<sp/>—<sp/>structure<sp/>and<sp/>tables.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(standalone<sp/>model,<sp/>references<sp/>TreeNode<sp/>and<sp/>Table).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Pydantic<sp/>BaseModel<sp/>`DocumentContent`<sp/>with<sp/>structure<sp/>(TreeNode)<sp/>and<sp/>tables<sp/>(List[Table]).</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>pydantic.BaseModel;<sp/>READS_DATA_FROM(8):<sp/>TreeNode,<sp/>Table]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>structure<sp/>is<sp/>always<sp/>a<sp/>valid<sp/>TreeNode<sp/>(root<sp/>of<sp/>document<sp/>tree).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>tables<sp/>list<sp/>may<sp/>be<sp/>empty<sp/>but<sp/>never<sp/>None.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>separate<sp/>structure<sp/>from<sp/>tables?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>Tables<sp/>have<sp/>fundamentally<sp/>different<sp/>layout<sp/>(grid<sp/>vs.<sp/>tree).<sp/>Separating<sp/>them<sp/>allows<sp/>specialized<sp/>rendering<sp/>and<sp/>querying.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Initial<sp/>creation<sp/>with<sp/>semantic<sp/>markup]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>10[Document<sp/>content<sp/>container<sp/>—<sp/>tree<sp/>+<sp/>tables]<sp/>=&gt;<sp/>DocumentContent</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[DocumentContent]:<sp/>APIResponseBuilder<sp/>=&gt;<sp/>SerializeContent<sp/>=&gt;<sp/>ReturnParsedDocumentJSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1api_1_1schema_1_1document__content_1a4a681f156b8321d7943eaf20b9b56d95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1api_1_1schema_1_1document__content_1a4a681f156b8321d7943eaf20b9b56d95" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>document,<sp/>content,<sp/>structure,<sp/>tree,<sp/>tables,<sp/>Pydantic,<sp/>schema,<sp/>TreeNode,<sp/>Table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Pydantic<sp/>BaseModel<sp/>→<sp/>DocumentContent<sp/>┌structure:TreeNode<sp/>(root),<sp/>tables:List[Table]┐<sp/>→<sp/>⎋<sp/>JSON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pydantic<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BaseModel,<sp/>Field</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1table" kindref="compound">dedoc.api.schema.table</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Table</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1api_1_1schema_1_1tree__node" kindref="compound">dedoc.api.schema.tree_node</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TreeNode</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespacededoc_1_1api_1_1schema_1_1document__content_1a3ad0a6bdb74e9d790fd8e08f74b657dc" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_DocumentContent<sp/>[DOMAIN(9):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>DocumentContent;<sp/>TECH(7):<sp/>PydanticBaseModel]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Container<sp/>for<sp/>the<sp/>full<sp/>parsed<sp/>document<sp/>content:<sp/>a<sp/>hierarchical<sp/>tree<sp/>of<sp/>text<sp/>nodes<sp/>and<sp/>a<sp/>flat<sp/>list<sp/>of<sp/>tables<sp/>with<sp/>their<sp/>cells.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>@io<sp/>(structure,<sp/>tables)<sp/>-&gt;<sp/>JSON<sp/>serializable<sp/>model</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent" kindref="compound">DocumentContent</ref>(BaseModel):</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Content<sp/>of<sp/>the<sp/>document<sp/>-<sp/>structured<sp/>text<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>tables.</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>tables:<sp/>list<sp/>of<sp/>document<sp/>tables</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>:ivar<sp/>structure:<sp/>tree<sp/>structure<sp/>of<sp/>the<sp/>document<sp/>nodes<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>text<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>additional<sp/>metadata</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>tables:<sp/>List[Table]</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>:vartype<sp/>structure:<sp/>TreeNode</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="49" refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1ac3532103f3e948163be2ce1010556c0f" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>structure:<sp/>TreeNode<sp/>=<sp/>Field(description=&quot;Tree<sp/>structure<sp/>where<sp/>content<sp/>of<sp/>the<sp/>document<sp/>is<sp/>organized&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50" refid="classdedoc_1_1api_1_1schema_1_1document__content_1_1DocumentContent_1a18e4636ecc1c0768b38c0f56b7733053" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>tables:<sp/>List[Table]<sp/>=<sp/>Field(description=</highlight><highlight class="stringliteral">&quot;List<sp/>of<sp/>document<sp/>tables&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_DocumentContent</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/api/schema/document_content.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures =
+[
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#afe01146e4c30869f79d1dbcd39ed5043", null ],
+    [ "__any_item_found", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a804bbac50fd2504de96bddfd45fcab7c", null ],
+    [ "__find_application", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a55e56cc8651e5682178db3b7ff0fb3be", null ],
+    [ "__find_body", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#afe1f27b8ec8a7d0b19446929848d6484", null ],
+    [ "__process_document", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a2fc19b58a331d2699c7625d383bc40cc", null ],
+    [ "_inside_quotes", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a44a910b061b1137023e47622301e6955", null ],
+    [ "_look_at_prev_line", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a34c8de44f339d529a713252c9df5a414", null ],
+    [ "_one_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#ab8927d0779c50758140242c974f817aa", null ],
+    [ "parameters", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a181bacc4edff2617e5a746b7866061f3", null ],
+    [ "transform", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#af9d9d2784fc79036915ab0ec1652cf72", null ],
+    [ "list_feature_extractor", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a36925360a6f99e06e1d88a52393bbbf0", null ],
+    [ "named_regexp", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a6c133784bba9af22fa99d45e462e20d2", null ],
+    [ "named_regexp", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a64e251fbde5cc114c1ccb46ae7fb18b3", null ],
+    [ "quote_end", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a56da12c7433b2eb3103e1f5916f1bc46", null ],
+    [ "quote_start", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a031824493312bc11e5aa3e406cec12f9", null ],
+    [ "regexp_application_begin", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#ac6dc01c4dda216c86405cca1e5b82fbd", null ],
+    [ "regexps_items", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#ac1ffb840babe5eea2105f3f114bcf391", null ],
+    [ "regexps_items", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a65853529cb13bf12fcb8b0c926d62cbf", null ],
+    [ "regexps_start", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#aabbe1d90a9b054cbdd0d33acf090bc45", null ],
+    [ "regexps_subitem", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#a12bb35e6aabe8aae97378d1ca1ccb2b1", null ],
+    [ "regexps_subitem", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#aa3d9737997ffbee54a75b52ce6ae4483", null ],
+    [ "text_features_only", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures.html#ae282ea0ed5211ecf8cfd9712c5bdfac0", null ]
+];

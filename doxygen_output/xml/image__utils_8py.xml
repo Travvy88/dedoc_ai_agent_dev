@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="image__utils_8py" kind="file" language="Python">
+    <compoundname>image_utils.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1utils">dedoc::utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1utils_1_1image__utils">dedoc::utils::image_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1utils_1_1image__utils" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>ImageProcessing;<sp/>TECH(7):<sp/>PIL,<sp/>opencv,<sp/>numpy]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>provide<sp/>image<sp/>manipulation<sp/>utilities<sp/>for<sp/>the<sp/>document<sp/>processing<sp/>pipeline:<sp/>cropping,<sp/>rotation,<sp/>pixel<sp/>frequency<sp/>analysis,<sp/>bounding<sp/>box<sp/>extraction,<sp/>and<sp/>text<sp/>area<sp/>detection.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Image<sp/>cropping,<sp/>rotation,<sp/>edge<sp/>detection,<sp/>bounding<sp/>box<sp/>operations,<sp/>image<sp/>concatenation,<sp/>text<sp/>area<sp/>isolation.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>numpy<sp/>arrays,<sp/>PIL<sp/>Images,<sp/>BBox<sp/>objects.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>numpy<sp/>arrays,<sp/>PIL<sp/>Images,<sp/>BBox<sp/>objects.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>PIL,<sp/>numpy,<sp/>opencv,<sp/>scipy]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>rotate_image<sp/>always<sp/>returns<sp/>a<sp/>non-cropped<sp/>image<sp/>with<sp/>expanded<sp/>dimensions.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>crop_image_text<sp/>always<sp/>returns<sp/>a<sp/>valid<sp/>BBox<sp/>even<sp/>on<sp/>empty<sp/>edges.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>-<sp/>get_concat_v<sp/>returns<sp/>a<sp/>single<sp/>image<sp/>if<sp/>input<sp/>list<sp/>has<sp/>length<sp/>1.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>expand<sp/>image<sp/>bounds<sp/>during<sp/>rotation?</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>A:<sp/>Avoids<sp/>information<sp/>loss<sp/>from<sp/>corner<sp/>clipping,<sp/>which<sp/>is<sp/>critical<sp/>for<sp/>OCR<sp/>quality.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>FUNC<sp/>6[Highest<sp/>pixel<sp/>frequency<sp/>color]<sp/>=&gt;<sp/>get_highest_pixel_frequency</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>FUNC<sp/>7[BBox<sp/>crop<sp/>+<sp/>resize]<sp/>=&gt;<sp/>get_bbox_from_image</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">##<sp/>FUNC<sp/>8[Image<sp/>rotation<sp/>with<sp/>bound<sp/>expansion]<sp/>=&gt;<sp/>rotate_image</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">##<sp/>FUNC<sp/>7[Text<sp/>area<sp/>crop<sp/>via<sp/>Canny<sp/>edges]<sp/>=&gt;<sp/>crop_image_text</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">##<sp/>FUNC<sp/>5[Rectangle<sp/>overlay<sp/>on<sp/>image]<sp/>=&gt;<sp/>draw_rectangle</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">##<sp/>FUNC<sp/>5[Vertical<sp/>image<sp/>concatenation]<sp/>=&gt;<sp/>get_concat_v</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">##<sp/>-<sp/>[crop_image_text]:<sp/>StructureExtractor<sp/>→<sp/>IsolateTextArea<sp/>→<sp/>Text<sp/>BBox<sp/>extracted</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">##<sp/>-<sp/>[rotate_image]:<sp/>Preprocessor<sp/>→<sp/>DeskewImage<sp/>→<sp/>Rotated<sp/>image<sp/>ready<sp/>for<sp/>OCR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="namespacededoc_1_1utils_1_1image__utils_1a263c53c57aeebf830239f63b0d6535c0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1a263c53c57aeebf830239f63b0d6535c0" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>image,<sp/>crop,<sp/>rotate,<sp/>bounding<sp/>box,<sp/>PIL,<sp/>numpy,<sp/>opencv,<sp/>Canny,<sp/>edge<sp/>detection,<sp/>text<sp/>area,<sp/>concatenation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌imports:<sp/>PIL,<sp/>numpy,<sp/>cv2,<sp/>scipy┐<sp/>→<sp/>⚡<sp/>PixelFreq:<sp/>┌image┐<sp/>→<sp/>unique<sp/>counts<sp/>→<sp/>argmax<sp/>→<sp/>⎋<sp/>color;<sp/>⚡<sp/>BBoxCrop:<sp/>┌image,bbox┐<sp/>→<sp/>image.crop<sp/>→<sp/>resize<sp/>→<sp/>⎋<sp/>Image;<sp/>⚡<sp/>Rotate:<sp/>┌image,angle┐<sp/>→<sp/>getRotationMatrix2D<sp/>→<sp/>warpAffine<sp/>→<sp/>⎋<sp/>rotated;<sp/>⚡<sp/>CropText:<sp/>┌image┐<sp/>→<sp/>Canny<sp/>→<sp/>maximum_filter<sp/>→<sp/>edge_projection<sp/>→<sp/>⎋<sp/>BBox</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>copy<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>deepcopy</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List,<sp/>Tuple</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>PIL<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Image,<sp/>ImageDraw</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dedocutils.data_structures<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BBox</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="namespacededoc_1_1utils_1_1image__utils_1a90b8117147bb08d8041ccb31133ab275" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_get_highest_pixel_frequency<sp/>[DOMAIN(6):<sp/>ImageProcessing;<sp/>CONCEPT(5):<sp/>ColorAnalysis;<sp/>TECH(5):<sp/>numpy]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>find<sp/>the<sp/>most<sp/>frequent<sp/>pixel<sp/>intensity<sp/>in<sp/>a<sp/>grayscale<sp/>image,<sp/>avoiding<sp/>black<sp/>(0)<sp/>and<sp/>defaulting<sp/>to<sp/>white<sp/>(255)<sp/>for<sp/>background<sp/>detection.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>@uses<sp/>numpy</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@io<sp/>np.ndarray<sp/>-&gt;<sp/>int</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="namespacededoc_1_1utils_1_1image__utils_1a782021d75219597a7ba6a1326b5141f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_highest_pixel_frequency(image:<sp/>np.ndarray)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>unique,<sp/>counts<sp/>=<sp/>np.unique(image.reshape(-1,<sp/>1),<sp/>axis=0,<sp/>return_counts=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>color<sp/>=<sp/>unique[np.argmax(counts)][0]</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>color<sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/>np.uint8(255)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][get_highest_pixel_frequency][RESULT]<sp/>Highest<sp/>freq<sp/>color<sp/>(non-black):<sp/>{color}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>color</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_get_highest_pixel_frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_get_bbox_from_image<sp/>[DOMAIN(7):<sp/>ImageProcessing;<sp/>CONCEPT(6):<sp/>Cropping;<sp/>TECH(6):<sp/>PIL]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>extract<sp/>a<sp/>sub-region<sp/>from<sp/>an<sp/>image<sp/>by<sp/>bounding<sp/>box,<sp/>with<sp/>optional<sp/>resizing<sp/>for<sp/>uniform<sp/>downstream<sp/>processing.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>@uses<sp/>PIL.Image</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>@io<sp/>(Image.Image,<sp/>BBox,<sp/>Tuple[int,int])<sp/>-&gt;<sp/>Image.Image</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>@complexity<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="namespacededoc_1_1utils_1_1image__utils_1ae0ed3ec72e56bcbfac14c9241c26359f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1ae0ed3ec72e56bcbfac14c9241c26359f" kindref="member">get_bbox_from_image</ref>(image:<sp/>Image.Image,<sp/>bbox:<sp/>BBox,<sp/>resize:<sp/>Tuple[int,<sp/>int]<sp/>=<sp/>(300,<sp/>15))<sp/>-&gt;<sp/>Image.Image:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle<sp/>=<sp/>(bbox.x_top_left,<sp/>bbox.y_top_left,<sp/>bbox.x_bottom_right,<sp/>bbox.y_bottom_right)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(image,<sp/>np.ndarray):</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image<sp/>=<sp/>Image.fromarray(image)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>cropped<sp/>=<sp/>image.crop(rectangle)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>resize<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cropped<sp/>=<sp/>cropped.resize((300,<sp/>15)).convert(</highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cropped</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_get_bbox_from_image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_rotate_image<sp/>[DOMAIN(8):<sp/>ImageProcessing;<sp/>CONCEPT(7):<sp/>Deskewing;<sp/>TECH(7):<sp/>opencv]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>rotate<sp/>an<sp/>image<sp/>by<sp/>a<sp/>given<sp/>angle<sp/>with<sp/>automatic<sp/>bound<sp/>expansion,<sp/>preventing<sp/>corner<sp/>cropping<sp/>and<sp/>preserving<sp/>all<sp/>content<sp/>for<sp/>OCR.</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">##<sp/>@uses<sp/>opencv</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">##<sp/>@io<sp/>(np.ndarray,<sp/>float,<sp/>Tuple[int,int,int])<sp/>-&gt;<sp/>np.ndarray</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">##<sp/>@complexity<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespacededoc_1_1utils_1_1image__utils_1aedb32941f70098c68ad51f35893d97f5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1aedb32941f70098c68ad51f35893d97f5" kindref="member">rotate_image</ref>(image:<sp/>np.ndarray,<sp/>angle:<sp/>float,<sp/>color_bound:<sp/>Tuple[int,<sp/>int,<sp/>int]<sp/>=<sp/>(255,<sp/>255,<sp/>255))<sp/>-&gt;<sp/>np.ndarray:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cv2</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>height,<sp/>width<sp/>=<sp/>image.shape[:2]</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>image_center<sp/>=<sp/>(width<sp/>/<sp/>2,<sp/>height<sp/>/<sp/>2)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>rotation_mat<sp/>=<sp/>cv2.getRotationMatrix2D(image_center,<sp/>angle,<sp/>1.)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>abs_cos<sp/>=<sp/>abs(rotation_mat[0,<sp/>0])</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>abs_sin<sp/>=<sp/>abs(rotation_mat[0,<sp/>1])</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>bound_w<sp/>=<sp/>int(height<sp/>*<sp/>abs_sin<sp/>+<sp/>width<sp/>*<sp/>abs_cos)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>bound_h<sp/>=<sp/>int(height<sp/>*<sp/>abs_cos<sp/>+<sp/>width<sp/>*<sp/>abs_sin)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>rotation_mat[0,<sp/>2]<sp/>+=<sp/>bound_w<sp/>/<sp/>2<sp/>-<sp/>image_center[0]</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>rotation_mat[1,<sp/>2]<sp/>+=<sp/>bound_h<sp/>/<sp/>2<sp/>-<sp/>image_center[1]</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>rotated_mat<sp/>=<sp/>cv2.warpAffine(image,<sp/>rotation_mat,<sp/>(bound_w,<sp/>bound_h),<sp/>borderMode=cv2.BORDER_CONSTANT,<sp/>borderValue=color_bound)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:5][rotate_image][ROTATE]<sp/>Angle={angle},<sp/>input_shape={(height,width)},<sp/>output_shape={(bound_h,bound_w)}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rotated_mat</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_rotate_image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_crop_image_text<sp/>[DOMAIN(8):<sp/>ImageProcessing;<sp/>CONCEPT(7):<sp/>TextAreaDetection;<sp/>TECH(7):<sp/>opencv,<sp/>scipy]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>detect<sp/>the<sp/>bounding<sp/>box<sp/>of<sp/>text<sp/>content<sp/>in<sp/>an<sp/>image<sp/>using<sp/>Canny<sp/>edge<sp/>detection<sp/>and<sp/>maximum<sp/>filtering,<sp/>cropping<sp/>out<sp/>empty<sp/>margins.</highlight></codeline>
+<codeline lineno="105"><highlight class="comment">##<sp/>@uses<sp/>opencv,<sp/>scipy.ndimage.maximum_filter</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">##<sp/>@io<sp/>np.ndarray<sp/>-&gt;<sp/>BBox</highlight></codeline>
+<codeline lineno="107"><highlight class="comment">##<sp/>@complexity<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="namespacededoc_1_1utils_1_1image__utils_1a757283401771548cd05dbbdf1a95883a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1a757283401771548cd05dbbdf1a95883a" kindref="member">crop_image_text</ref>(image:<sp/>np.ndarray)<sp/>-&gt;<sp/>BBox:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cv2</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>scipy.ndimage<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>maximum_filter</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>im_height,<sp/>im_width<sp/>=<sp/>image.shape[0],<sp/>image.shape[1]</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>edges<sp/>=<sp/>cv2.Canny(image,<sp/>100,<sp/>200)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>edges<sp/>=<sp/>maximum_filter(edges,<sp/>(10,<sp/>10))</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>y_sum<sp/>=<sp/>np.arange(edges.shape[0])[edges.max(axis=1)<sp/>&gt;<sp/>0]</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>x_sum<sp/>=<sp/>np.arange(edges.shape[1])[edges.max(axis=0)<sp/>&gt;<sp/>0]</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>y_sum.shape[0]<sp/>&gt;<sp/>0<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>x_sum.shape[0]<sp/>&gt;<sp/>0:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_top<sp/>=<sp/>max(0,<sp/>y_sum.min()<sp/>-<sp/>10)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y_bottom<sp/>=<sp/>min(im_height,<sp/>y_sum.max()<sp/>+<sp/>10)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_top<sp/>=<sp/>max(0,<sp/>x_sum.min()<sp/>-<sp/>10)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_bottom<sp/>=<sp/>min(im_width,<sp/>x_sum.max()<sp/>+<sp/>10)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bbox<sp/>=<sp/>BBox(x_top,<sp/>y_top,<sp/>x_bottom<sp/>-<sp/>x_top,<sp/>y_bottom<sp/>-<sp/>y_top)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:5][crop_image_text][DETECT]<sp/>Text<sp/>BBox:<sp/>({x_top},{y_top})<sp/>{x_bottom-x_top}x{y_bottom-y_top}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bbox</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:5][crop_image_text][FALLBACK]<sp/>No<sp/>edges<sp/>found,<sp/>returning<sp/>full<sp/>image<sp/>BBox&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BBox(x_top_left=0,<sp/>y_top_left=0,<sp/>width=im_width,<sp/>height=im_height)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_crop_image_text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_draw_rectangle<sp/>[DOMAIN(5):<sp/>ImageProcessing;<sp/>CONCEPT(4):<sp/>Annotation;<sp/>TECH(5):<sp/>PIL]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>draw<sp/>a<sp/>colored<sp/>rectangle<sp/>outline<sp/>on<sp/>an<sp/>image,<sp/>used<sp/>for<sp/>visualizing<sp/>detected<sp/>bounding<sp/>boxes<sp/>in<sp/>debug/demo<sp/>outputs.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment">##<sp/>@uses<sp/>PIL.ImageDraw,<sp/>deepcopy</highlight></codeline>
+<codeline lineno="134"><highlight class="comment">##<sp/>@io<sp/>(Image.Image,<sp/>int,<sp/>int,<sp/>int,<sp/>int,<sp/>Tuple[int,int,int])<sp/>-&gt;<sp/>np.ndarray</highlight></codeline>
+<codeline lineno="135"><highlight class="comment">##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="namespacededoc_1_1utils_1_1image__utils_1a890edcbdc5cbe14ff947af688450f2d3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1a890edcbdc5cbe14ff947af688450f2d3" kindref="member">draw_rectangle</ref>(image:<sp/>Image.Image,<sp/>x_top_left:<sp/>int,<sp/>y_top_left:<sp/>int,<sp/>width:<sp/>int,<sp/>height:<sp/>int,<sp/>color:<sp/>Tuple[int,<sp/>int,<sp/>int]<sp/>=<sp/>(0,<sp/>0,<sp/>0))<sp/>-&gt;<sp/>np.ndarray:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>color<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;black&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color<sp/>=<sp/>(0,<sp/>0,<sp/>0)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>source_img<sp/>=<sp/>deepcopy(image).convert(</highlight><highlight class="stringliteral">&quot;RGBA&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>draw<sp/>=<sp/>ImageDraw.Draw(source_img)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>x_bottom_right<sp/>=<sp/>x_top_left<sp/>+<sp/>width<sp/>+<sp/>5</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>y_bottom_right<sp/>=<sp/>y_top_left<sp/>+<sp/>height<sp/>+<sp/>5</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>start_point<sp/>=<sp/>(x_top_left<sp/>-<sp/>5,<sp/>y_top_left<sp/>-<sp/>5)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>end_point<sp/>=<sp/>(x_bottom_right,<sp/>y_bottom_right)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>draw.rectangle((start_point,<sp/>end_point),<sp/>outline=color,<sp/>width=5)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>np.array(source_img)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_draw_rectangle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_get_concat_v<sp/>[DOMAIN(5):<sp/>ImageProcessing;<sp/>CONCEPT(4):<sp/>Composition;<sp/>TECH(5):<sp/>PIL]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>vertically<sp/>concatenate<sp/>a<sp/>list<sp/>of<sp/>PIL<sp/>images<sp/>into<sp/>a<sp/>single<sp/>combined<sp/>image,<sp/>preserving<sp/>the<sp/>maximum<sp/>width.</highlight></codeline>
+<codeline lineno="154"><highlight class="comment">##<sp/>@uses<sp/>PIL.Image</highlight></codeline>
+<codeline lineno="155"><highlight class="comment">##<sp/>@io<sp/>List[Image.Image]<sp/>-&gt;<sp/>Image.Image</highlight></codeline>
+<codeline lineno="156"><highlight class="comment">##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="namespacededoc_1_1utils_1_1image__utils_1a3ce892499344d92a31a939ce99d9d861" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1utils_1_1image__utils_1a3ce892499344d92a31a939ce99d9d861" kindref="member">get_concat_v</ref>(images:<sp/>List[Image.Image])<sp/>-&gt;<sp/>Image.Image:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(images)<sp/>==<sp/>1:</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>images[0]</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>width<sp/>=<sp/>max((image.width<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>image<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>images))</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>height<sp/>=<sp/>sum((image.height<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>image<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>images))</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>dst<sp/>=<sp/>Image.new(</highlight><highlight class="stringliteral">&quot;RGB&quot;</highlight><highlight class="normal">,<sp/>(width,<sp/>height))</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>height<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>image<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>images:</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dst.paste(image,<sp/>(0,<sp/>height))</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>height<sp/>+=<sp/>image.height</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dst</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_get_concat_v</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/utils/image_utils.py"/>
+  </compounddef>
+</doxygen>

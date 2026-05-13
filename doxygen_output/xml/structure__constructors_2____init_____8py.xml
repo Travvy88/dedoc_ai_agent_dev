@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structure__constructors_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__constructors">dedoc::structure_constructors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__constructors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing,<sp/>StructureConstruction;<sp/>CONCEPT(7):<sp/>PackageInit,<sp/>Exports;<sp/>TECH(3):<sp/>PythonImport]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>a<sp/>unified<sp/>public<sp/>API<sp/>surface<sp/>for<sp/>the<sp/>structure_constructors<sp/>package,<sp/>re-exporting<sp/>all<sp/>concrete<sp/>and<sp/>abstract<sp/>structure<sp/>constructors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization,<sp/>public<sp/>symbol<sp/>export.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level<sp/>init).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>__all__<sp/>list<sp/>with<sp/>exported<sp/>class<sp/>names.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(7):<sp/>AbstractStructureConstructor,<sp/>LinearConstructor,<sp/>TreeConstructor,<sp/>StructureConstructorComposition]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>__all__<sp/>ALWAYS<sp/>contains<sp/>all<sp/>4<sp/>exported<sp/>class<sp/>names.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>init<sp/>with<sp/>explicit<sp/>__all__?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Explicit<sp/>exports<sp/>prevent<sp/>namespace<sp/>pollution<sp/>and<sp/>give<sp/>agents<sp/>a<sp/>clear<sp/>contract<sp/>of<sp/>what<sp/>this<sp/>package<sp/>provides.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Semantic<sp/>template<sp/>markup<sp/>added]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>CONST<sp/>5[Package<sp/>public<sp/>symbol<sp/>list]<sp/>=&gt;<sp/>__all__</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>-<sp/>[__all__]:<sp/>Agent<sp/>(Import<sp/>discovery)<sp/>→<sp/>ReadPackageAPI<sp/>→<sp/>KnowExportedSymbols</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacededoc_1_1structure__constructors_1affaaf3fd9cc717e3f7a4243c02658c54" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__constructors_1affaaf3fd9cc717e3f7a4243c02658c54" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>PackageInit,<sp/>Exports,<sp/>StructureConstructors,<sp/>AbstractStructureConstructor,<sp/>LinearConstructor,<sp/>TreeConstructor,<sp/>StructureConstructorComposition</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>┌submodules┐<sp/>→<sp/>⊕<sp/>__all__<sp/>=<sp/>[AbstractStructureConstructor,<sp/>LinearConstructor,<sp/>TreeConstructor,<sp/>StructureConstructorComposition]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.abstract_structure_constructor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractStructureConstructor</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_structure_constructors.linear_constructor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LinearConstructor</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.concrete_structure_constructors.tree_constructor<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TreeConstructor</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.structure_constructor_composition<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>StructureConstructorComposition</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="namespacededoc_1_1structure__constructors_1ae7e59be6edba37c7e3fb5095d2981a3d" refkind="member"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&apos;AbstractStructureConstructor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;LinearConstructor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;TreeConstructor&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;StructureConstructorComposition&apos;</highlight><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_constructors/__init__.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter" kind="namespace" language="Python">
+    <compoundname>dedoc::converters::concrete_converters::txt_converter</compoundname>
+    <innerclass refid="classdedoc_1_1converters_1_1concrete__converters_1_1txt__converter_1_1TxtConverter" prot="public">dedoc::converters::concrete_converters::txt_converter::TxtConverter</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter_1ae366471e49770280304132a1bf94af3f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::converters::concrete_converters::txt_converter.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.converters.concrete_converters.txt_converter.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/txt_converter.py" line="6" column="1" bodyfile="dedoc/converters/concrete_converters/txt_converter.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter_1a41261e9e43c500615ebdbc0d1620b6ac" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.converters.concrete_converters.txt_converter._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.converters.concrete_converters.txt_converter._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To normalize txt-like documents (.xml) into .txt format by simple file copy (preserving original), enabling downstream text readers to consume them with a uniform extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Txt-like document format normalization via file copy. \par \b Input\/ \:  Files with txt-like extensions (e.g. .xml). \par \b Output\/ \:  Converted .txt file path. \par \b Links\/ \:  [USES_API(6): shutil.copy; READS_DATA_FROM(7): <ref refid="namespacededoc_1_1extensions_1aac3b199243c8795f127aefef6c73fa04" kindref="member">dedoc.extensions.converted_extensions</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>convert() always copies the file (original preserved).</para>
+</listitem><listitem><para>Output file path is always {dir}/{name_wo_ext}.txt. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why copy instead of rename? A: Preserving the original file avoids breaking upstream references and supports idempotent operation. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 7[Converts txt-like formats to TXT via file copy] =&gt; TxtConverter \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[TxtConverter.convert]: User (Upload) → NormalizeToTxt → TxtFileReady </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/txt_converter.py" line="71" column="1" bodyfile="dedoc/converters/concrete_converters/txt_converter.py" bodystart="71" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/concrete_converters/txt_converter.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

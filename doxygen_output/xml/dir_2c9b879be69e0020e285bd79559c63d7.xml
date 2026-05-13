@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_2c9b879be69e0020e285bd79559c63d7" kind="dir">
+    <compoundname>dedoc/readers/docx_reader/data_structures</compoundname>
+    <innerfile refid="readers_2docx__reader_2data__structures_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="base__props_8py">base_props.py</innerfile>
+    <innerfile refid="docx__document_8py">docx_document.py</innerfile>
+    <innerfile refid="docx__reader_2data__structures_2paragraph_8py">paragraph.py</innerfile>
+    <innerfile refid="run_8py">run.py</innerfile>
+    <innerfile refid="readers_2docx__reader_2data__structures_2table_8py">table.py</innerfile>
+    <innerfile refid="readers_2docx__reader_2data__structures_2utils_8py">utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/data_structures/"/>
+  </compounddef>
+</doxygen>

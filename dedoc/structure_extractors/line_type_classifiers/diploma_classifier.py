@@ -5,15 +5,32 @@ from dedoc.structure_extractors.feature_extractors.diploma_feature_extractor imp
 from dedoc.structure_extractors.feature_extractors.toc_feature_extractor import TocItem
 from dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier import AbstractPickledLineTypeClassifier
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_DiplomaLineTypeClassifier [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @purpose DiplomaLineTypeClassifier for document structure extraction pipeline
 class DiplomaLineTypeClassifier(AbstractPickledLineTypeClassifier):
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, path: str, *, config: dict) -> None:
         super().__init__(config=config)
+
+        self.logger.debug(f"[IMP:4][DiplomaLineTypeClassifier][__init___INIT] Starting")
         self.classifier, feature_extractor_parameters = self.load("diploma", path)
         self.feature_extractor = DiplomaFeatureExtractor()
 
+    # endregion METHOD___init__
+    # region METHOD_predict [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose predict method
+    ## @io Input -> Output
+    ## @complexity 5
     def predict(self, lines: List[LineWithMeta], toc_items: Optional[List[TocItem]] = None) -> List[str]:
+        self.logger.debug(f"[IMP:4][DiplomaLineTypeClassifier][predict_INIT] Starting")
         if len(lines) == 0:
             return []
 
@@ -54,3 +71,29 @@ class DiplomaLineTypeClassifier(AbstractPickledLineTypeClassifier):
         labels = [self.classifier.classes_[i] for i in labels_probability.argmax(1)]
         assert len(labels) == len(lines)
         return labels
+
+    # endregion METHOD_predict
+# endregion CLASS_DiplomaLineTypeClassifier
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/line_type_classifiers/diploma_classifier: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/line_type_classifiers/diploma_classifier
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => DiplomaLineTypeClassifier
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, line type classifiers, diploma classifier
+# STRUCTURE: ▶ structure_extractors/line_type_classifiers/diploma_classifier → ○ DiplomaLineTypeClassifier.cls → ⎋ result

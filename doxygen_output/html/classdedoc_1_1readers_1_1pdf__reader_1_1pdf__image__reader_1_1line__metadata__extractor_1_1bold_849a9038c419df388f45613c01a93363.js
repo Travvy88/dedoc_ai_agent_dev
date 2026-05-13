@@ -1,0 +1,11 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a321023bdeed7a38a098aecbe70447344", null ],
+    [ "__get_clusters", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a82c8200b4e45e2ef31fafdc9e5a3a59a", null ],
+    [ "__get_f1_homogeneous", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#aaaf718aeb38536e7a5652aac8fda5095", null ],
+    [ "__get_f_criterion_homogeneous", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#ad355d9d9d10eaa2b6d08e209c7682b00", null ],
+    [ "__get_indicator", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a174c293907382f8cd3f90922f24885f5", null ],
+    [ "__get_prop_vectors", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a3bd1862e5e2e9caa5c1328270681463d", null ],
+    [ "clusterize", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a99c0a37e68e6600ccf213673bb9c796b", null ],
+    [ "significance_level", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_849a9038c419df388f45613c01a93363.html#a06953372b1e76f9597d06bdeb59e4f4d", null ]
+];

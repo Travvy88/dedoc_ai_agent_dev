@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__feature__extractor =
+[
+    [ "TxtlayerFeatureExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__f4cb79eb087f27bde542723c0099050a3.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__f4cb79eb087f27bde542723c0099050a3" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__feature__extractor.html#ae336130ab96192d63c663358c7bd92d3", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__feature__extractor.html#a9afea0d7bada12c6ffe01ddfbe02ed58", null ]
+];

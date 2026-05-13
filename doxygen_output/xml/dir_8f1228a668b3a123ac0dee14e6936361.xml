@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_8f1228a668b3a123ac0dee14e6936361" kind="dir">
+    <compoundname>dedoc/readers/txt_reader</compoundname>
+    <innerfile refid="readers_2txt__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="raw__text__reader_8py">raw_text_reader.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/txt_reader/"/>
+  </compounddef>
+</doxygen>

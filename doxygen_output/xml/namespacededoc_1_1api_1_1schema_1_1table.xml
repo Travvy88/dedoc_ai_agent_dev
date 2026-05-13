@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1table" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::table</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table" prot="public">dedoc::api::schema::table::Table</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1table_1ac4303607627d31fae36f12a5f8da659b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::table.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.table.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table.py" line="34" column="1" bodyfile="dedoc/api/schema/table.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1table_1a83806e847bb600bda50248d3c26eb0fa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.table._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.table._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the Table schema — a Pydantic model for a document table with row-based cell grid and table-level metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document table data model. \par \b Input\/ \:  None (standalone model, references CellWithMeta, TableMetadata). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>Table</computeroutput> with cells (List[List[CellWithMeta]]) and metadata (TableMetadata). \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel; READS_DATA_FROM(8): CellWithMeta, TableMetadata] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>cells grid is rectangular (all rows have equal column count).</para>
+</listitem><listitem><para>metadata.uid uniquely identifies the table within the document. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why row-based cell storage? A: Matches natural document table layout and simplifies HTML rendering (iterate rows, then cells). \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Document table with cell grid and metadata] =&gt; Table \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Table]: TableExtractor =&gt; PopulateCellGrid =&gt; RenderOrQueryTable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table.py" line="20" column="1" bodyfile="dedoc/api/schema/table.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/table.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_c56b529c611d20a78c278e32f80b20ea" kind="dir">
+    <compoundname>dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit</compoundname>
+    <innerfile refid="structure__extractors_2hierarchy__level__builders_2law__builders_2structure__unit_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__structure__unit_8py">abstract_structure_unit.py</innerfile>
+    <innerfile refid="foiv__structure__unit_8py">foiv_structure_unit.py</innerfile>
+    <innerfile refid="law__structure__unit_8py">law_structure_unit.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/"/>
+  </compounddef>
+</doxygen>

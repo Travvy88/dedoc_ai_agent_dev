@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aef4e287aff4f7919d2386a96a7d20439" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor::alignment_mapping</definition>
+        <argsstring></argsstring>
+        <name>alignment_mapping</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.alignment_mapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="40" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1af87ffeef72eedd638bcd061936dd4034" compoundref="pptx__reader_2properties__extractor_8py" startline="93" endline="97">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_alignment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a8de9a220152990721549b35a86d464d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor::lvl2default_properties</definition>
+        <argsstring></argsstring>
+        <name>lvl2default_properties</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.lvl2default_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="41" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a61d3ebfe4d5c6fba54c94c2b17ec07e5" compoundref="pptx__reader_2properties__extractor_8py" startline="45" endline="61">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.get_properties</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a38dac8f02a70346c5fb54eaa0b5c6311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__init__</definition>
+        <argsstring>(self, str file_path)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="39" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="39" bodyend="42"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a61d3ebfe4d5c6fba54c94c2b17ec07e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties" kindref="compound">Properties</ref></type>
+        <definition> Properties dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.get_properties</definition>
+        <argsstring>(self, Tag xml, int level, Optional[Properties] properties=None)</argsstring>
+        <name>get_properties</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.get_properties</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>properties</declname>
+          <array>[Properties]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>xml examples: &lt;a:pPr indent=&quot;0&quot; lvl=&quot;0&quot; marL=&quot;0&quot; rtl=&quot;0&quot; algn=&quot;l&quot;&gt; &lt;a:rPr i=&quot;1&quot; lang=&quot;ru&quot; sz=&quot;1800&quot;&gt; &lt;a:rPr baseline=&quot;30000&quot; lang=&quot;ru&quot; sz=&quot;1800&quot;&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="45" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="45" bodyend="61"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1ac26285e4a1e841a52850377dc2b12f93" compoundref="pptx__reader_2properties__extractor_8py" startline="64" endline="90">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_properties</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a8de9a220152990721549b35a86d464d4" compoundref="pptx__reader_2properties__extractor_8py" startline="41">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.lvl2default_properties</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1ac26285e4a1e841a52850377dc2b12f93" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_properties</definition>
+        <argsstring>(self, Tag xml, Properties properties)</argsstring>
+        <name>__update_properties</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_properties</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties" kindref="compound">Properties</ref></type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="64" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="64" bodyend="90"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1af87ffeef72eedd638bcd061936dd4034" compoundref="pptx__reader_2properties__extractor_8py" startline="93" endline="97">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_alignment</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aa3c999bf9f3def287fdbe2de6feef92b" compoundref="pptx__reader_2properties__extractor_8py" startline="119" endline="145">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_level_properties</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a61d3ebfe4d5c6fba54c94c2b17ec07e5" compoundref="pptx__reader_2properties__extractor_8py" startline="45" endline="61">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.get_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1af87ffeef72eedd638bcd061936dd4034" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_alignment</definition>
+        <argsstring>(self, Tag xml, Properties properties)</argsstring>
+        <name>__update_alignment</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_alignment</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties" kindref="compound">Properties</ref></type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="93" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="93" bodyend="97"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aef4e287aff4f7919d2386a96a7d20439" compoundref="pptx__reader_2properties__extractor_8py" startline="40">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.alignment_mapping</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aa3c999bf9f3def287fdbe2de6feef92b" compoundref="pptx__reader_2properties__extractor_8py" startline="119" endline="145">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_level_properties</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1ac26285e4a1e841a52850377dc2b12f93" compoundref="pptx__reader_2properties__extractor_8py" startline="64" endline="90">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_properties</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a64820875ba7e268c2a201911df7fcef8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[int, <ref refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties" kindref="compound">Properties</ref>]</type>
+        <definition> Dict[int, Properties] dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__get_default_properties_mapping</definition>
+        <argsstring>(self, str file_path)</argsstring>
+        <name>__get_default_properties_mapping</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__get_default_properties_mapping</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="100" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="100" bodyend="116"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aa3c999bf9f3def287fdbe2de6feef92b" compoundref="pptx__reader_2properties__extractor_8py" startline="119" endline="145">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_level_properties</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aa3c999bf9f3def287fdbe2de6feef92b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_level_properties</definition>
+        <argsstring>(self, Tag xml, Dict[int, Properties] lvl2properties)</argsstring>
+        <name>__update_level_properties</name>
+        <qualifiedname>dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_level_properties</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>lvl2properties</declname>
+          <array>[int, Properties]</array>
+        </param>
+        <briefdescription>
+<para>Example: &lt;a:lvl1pPr lvl=&quot;0&quot; marR=&quot;0&quot; rtl=&quot;0&quot; algn=&quot;l&quot;&gt; &lt;a:lnSpc&gt;&lt;a:spcPct val=&quot;100000&quot;/&gt;&lt;/a:lnSpc&gt; &lt;a:spcBef&gt;&lt;a:spcPts val=&quot;0&quot;/&gt;&lt;/a:spcBef&gt; &lt;a:spcAft&gt;&lt;a:spcPts val=&quot;0&quot;/&gt;&lt;/a:spcAft&gt; &lt;a:buClr&gt;&lt;a:srgbClr val=&quot;000000&quot;/&gt;&lt;/a:buClr&gt; &lt;a:buFont typeface=&quot;Arial&quot;/&gt; &lt;a:defRPr b=&quot;0&quot; i=&quot;0&quot; sz=&quot;1400&quot; u=&quot;none&quot; cap=&quot;none&quot; strike=&quot;noStrike&quot;&gt; &lt;a:solidFill&gt;&lt;a:srgbClr val=&quot;000000&quot;/&gt;&lt;/a:solidFill&gt; &lt;a:latin typeface=&quot;Arial&quot;/&gt; &lt;a:ea typeface=&quot;Arial&quot;/&gt; &lt;a:cs typeface=&quot;Arial&quot;/&gt; &lt;a:sym typeface=&quot;Arial&quot;/&gt; &lt;/a:defRPr&gt; &lt;/a:lvl1pPr&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="119" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="119" bodyend="145"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1af87ffeef72eedd638bcd061936dd4034" compoundref="pptx__reader_2properties__extractor_8py" startline="93" endline="97">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_alignment</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1ac26285e4a1e841a52850377dc2b12f93" compoundref="pptx__reader_2properties__extractor_8py" startline="64" endline="90">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__update_properties</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a64820875ba7e268c2a201911df7fcef8" compoundref="pptx__reader_2properties__extractor_8py" startline="100" endline="116">dedoc.readers.pptx_reader.properties_extractor.PropertiesExtractor.__get_default_properties_mapping</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class allows to extract some text formatting properties (see class Properties) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Properties hierarchy:</para>
+<para><itemizedlist>
+<listitem><para>Run and paragraph properties (slide.xml)</para>
+</listitem><listitem><para>Slide layout properties (slideLayout.xml) TODO</para>
+</listitem><listitem><para>Master slide properties (slideMaster.xml) TODO</para>
+</listitem><listitem><para>Presentation default properties (presentation.xml -&gt; defaultTextStyle) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/properties_extractor.py" line="27" column="1" bodyfile="dedoc/readers/pptx_reader/properties_extractor.py" bodystart="27" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a64820875ba7e268c2a201911df7fcef8" prot="private" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>__get_default_properties_mapping</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a38dac8f02a70346c5fb54eaa0b5c6311" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1af87ffeef72eedd638bcd061936dd4034" prot="private" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>__update_alignment</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aa3c999bf9f3def287fdbe2de6feef92b" prot="private" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>__update_level_properties</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1ac26285e4a1e841a52850377dc2b12f93" prot="private" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>__update_properties</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1aef4e287aff4f7919d2386a96a7d20439" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>alignment_mapping</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a61d3ebfe4d5c6fba54c94c2b17ec07e5" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>get_properties</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1PropertiesExtractor_1a8de9a220152990721549b35a86d464d4" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::properties_extractor::PropertiesExtractor</scope><name>lvl2default_properties</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

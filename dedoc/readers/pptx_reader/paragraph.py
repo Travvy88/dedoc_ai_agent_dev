@@ -15,11 +15,17 @@ from dedoc.readers.pptx_reader.numbering_extractor import NumberingExtractor
 from dedoc.readers.pptx_reader.properties_extractor import PropertiesExtractor
 from dedoc.utils.annotation_merger import AnnotationMerger
 
+import logging
 
+logger = logging.getLogger(__name__)
+
+
+# region CLASS_PptxParagraph [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PptxParagraph:
     """
     This class corresponds to one textual paragraph of some entity, e.g. shape or table cell (tag <a:p>).
     """
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, xml: Tag, numbering_extractor: NumberingExtractor, properties_extractor: PropertiesExtractor) -> None:
         self.xml = xml
         self.numbered_list_type = self.xml.buAutoNum.get("type", "arabicPeriod") if self.xml.buAutoNum else None
@@ -30,6 +36,8 @@ class PptxParagraph:
         annotations = [BoldAnnotation, ItalicAnnotation, UnderlinedAnnotation, StrikeAnnotation, SuperscriptAnnotation, SubscriptAnnotation]
         self.dict2annotation = {annotation.name: annotation for annotation in annotations}
 
+    # region METHOD_get_line_with_meta [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def get_line_with_meta(self, page_id: int, line_id: int, is_title: bool, shift: int = 0) -> LineWithMeta:
         text = ""
         paragraph_properties = self.properties_extractor.get_properties(self.xml.pPr, level=self.level)
@@ -61,4 +69,32 @@ class PptxParagraph:
         text = f"{text}\n"
         annotations = self.annotation_merger.merge_annotations(annotations, text)
         annotations.append(AlignmentAnnotation(start=0, end=len(text), value=paragraph_properties.alignment))
+# endregion CLASS_PptxParagraph
         return LineWithMeta(text, metadata=LineMetadata(page_id=page_id, line_id=line_id, tag_hierarchy_level=hierarchy_level), annotations=annotations)
+
+    # endregion METHOD_get_line_with_meta
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_paragraph; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PPTX documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PPTX format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [4][PptxParagraph reader/processor] => PptxParagraph
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PPTX) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: paragraph, dedoc, reader, PPTX, PptxReader, BaseReader, PPTX, PowerPoint, slides, shapes, paragraphs, tables, numbering, properties, PptxParagraph
+# STRUCTURE: ▶ Init ┌PPTX file┐ → [PptxParagraph] ○ can_read? → ○ read → [__init__ → get_line_with_meta] → ⊕ UnstructuredDocument(lines, tables, attachments)

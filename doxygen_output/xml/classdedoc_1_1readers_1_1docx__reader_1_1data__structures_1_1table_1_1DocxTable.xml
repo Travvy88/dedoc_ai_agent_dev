@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::docx_reader::data_structures::table::DocxTable</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a4edf11731222afa5a36a4b2295816d0f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.table.DocxTable::xml</definition>
+        <argsstring></argsstring>
+        <name>xml</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.xml</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="27" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a7f49fb4f4fa7c5c5a9eb27064755cc9a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="105" endline="120">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__get_numbering_formatting</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1ab9d1921ec4fc9802f342f49c4658edd6" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="123" endline="148">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__make_run_list</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a85a70dbc6d8ff89fb13450c370867d86" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="57" endline="102">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.__parse</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1affe204fb9058bb3871d3b085864d3a0f" compoundref="pptx__reader_2paragraph_8py" startline="41" endline="74">dedoc.readers.pptx_reader.paragraph.PptxParagraph.get_line_with_meta</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a3698ad41f7d2d32bf91ddc4a69112cf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.table.DocxTable::paragraph_maker</definition>
+        <argsstring></argsstring>
+        <name>paragraph_maker</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.paragraph_maker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="28" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a1cb685522ab1786e52264e135e915ec7" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="93" endline="104">dedoc.readers.docx_reader.data_structures.table.DocxTable.__get_cell_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a313585e2526e722cefa1027ccb17442c" compoundref="docx__document_8py" startline="60" endline="98">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a78a7b8fcfe02ba5e553300692e480c8c" compoundref="docx__document_8py" startline="131" endline="142">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__handle_table_xml</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a73909a2970f95e970815484f877725dd" compoundref="docx__document_8py" startline="182" endline="193">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.__prepare_paragraph_list</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a682077c8c3ee08588004dac39edfdb01" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.docx_reader.data_structures.table.DocxTable::__uid</definition>
+        <argsstring></argsstring>
+        <name>__uid</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.__uid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="29" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a0cd6b21511e79e696dacacc1020d0d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.docx_reader.data_structures.table.DocxTable.__init__</definition>
+        <argsstring>(self, Tag xml, ParagraphMaker paragraph_maker)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>xml</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker" kindref="compound">ParagraphMaker</ref></type>
+          <declname>paragraph_maker</declname>
+        </param>
+        <briefdescription>
+<para>Contains information about table properties. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param xml: BeautifulSoup tree with table properties </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="22" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="22" bodyend="30"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</definition>
+        <argsstring>(self)</argsstring>
+        <name>uid</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="34" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="34" bodyend="36"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a682077c8c3ee08588004dac39edfdb01" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="29">dedoc.readers.docx_reader.data_structures.table.DocxTable.__uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1ac82224d9899c6d0d5ecbf24def7ac0c7" compoundref="readers_2pptx__reader_2table_8py" startline="32">dedoc.readers.pptx_reader.table.PptxTable.__uid</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" compoundref="attached__file_8py" startline="27" endline="39">dedoc.data_structures.attached_file.AttachedFile.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1table_1_1Table" kindref="compound">Table</ref></type>
+        <definition> Table dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_table</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>Converts xml file with table to Table class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="39" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="39" bodyend="90"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a1cb685522ab1786e52264e135e915ec7" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="93" endline="104">dedoc.readers.docx_reader.data_structures.table.DocxTable.__get_cell_lines</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1af6051fa5b06028afd24bf93eedf6b8c8" compoundref="api_2schema_2table__metadata_8py" startline="51">dedoc.api.schema.table_metadata.TableMetadata.uid</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a4153dc3d63d44f47023732651e4c537a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="35">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1af3745f216df9501f06924d81dd45163a" compoundref="text__with__bbox_8py" startline="33">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a06ed9c22352d75972efeea064af756b3" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="36">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.xml</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a4edf11731222afa5a36a4b2295816d0f" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="27">dedoc.readers.docx_reader.data_structures.table.DocxTable.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph_1a4833b7d3fc0970ed4b9f1ab906e11b2b" compoundref="pptx__reader_2paragraph_8py" startline="30">dedoc.readers.pptx_reader.paragraph.PptxParagraph.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1ac7a97861d77c8c4d6a461becd67c0e2c" compoundref="shape_8py" startline="24">dedoc.readers.pptx_reader.shape.PptxShape.xml</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a1c345be085799071e36c2ecaf7f5aea3" compoundref="readers_2pptx__reader_2table_8py" startline="28">dedoc.readers.pptx_reader.table.PptxTable.xml</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a1cb685522ab1786e52264e135e915ec7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.docx_reader.data_structures.table.DocxTable.__get_cell_lines</definition>
+        <argsstring>(self, Tag cell)</argsstring>
+        <name>__get_cell_lines</name>
+        <qualifiedname>dedoc.readers.docx_reader.data_structures.table.DocxTable.__get_cell_lines</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/docx_reader/data_structures/table.py" line="93" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="93" bodyend="104"/>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a15e405894827d18d420f1cfd1d17ed7f" compoundref="docx__document_8py" startline="34">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.paragraph_maker</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a3698ad41f7d2d32bf91ddc4a69112cf2" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="28">dedoc.readers.docx_reader.data_structures.table.DocxTable.paragraph_maker</references>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/docx_reader/data_structures/table.py" line="20" column="1" bodyfile="dedoc/readers/docx_reader/data_structures/table.py" bodystart="20" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a1cb685522ab1786e52264e135e915ec7" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>__get_cell_lines</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a0cd6b21511e79e696dacacc1020d0d78" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a682077c8c3ee08588004dac39edfdb01" prot="private" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>__uid</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a3698ad41f7d2d32bf91ddc4a69112cf2" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>paragraph_maker</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>to_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>uid</name></member>
+      <member refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a4edf11731222afa5a36a4b2295816d0f" prot="public" virt="non-virtual"><scope>dedoc::readers::docx_reader::data_structures::table::DocxTable</scope><name>xml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

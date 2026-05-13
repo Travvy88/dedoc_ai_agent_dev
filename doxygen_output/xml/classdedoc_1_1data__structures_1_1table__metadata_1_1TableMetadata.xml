@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::table_metadata::TableMetadata</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" prot="public" virt="non-virtual">dedoc.data_structures.serializable.Serializable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.table_metadata.TableMetadata.__init__</definition>
+        <argsstring>(self, Optional[int] page_id, Optional[str] uid=None, float rotated_angle=0.0, str title=&quot;&quot;)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.table_metadata.TableMetadata.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>page_id</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>uid</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rotated_angle</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>title</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize table metadata with page ID, auto-generated UID, rotation angle, and title. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  uuid \par \b I/O\/ \:  (Optional[int], Optional[str], float, str) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param page_id: number of the page where table starts :param uid: unique identifier of the table :param rotated_angle: rotation angle by which the table was rotated during recognition :param title: table&apos;s title </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/table_metadata.py" line="32" column="1" bodyfile="dedoc/data_structures/table_metadata.py" bodystart="32" bodyend="46"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" compoundref="api_2schema_2line__metadata_8py" startline="55">dedoc.api.schema.line_metadata.LineMetadata.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a291da4a2c96592ed3309c82ea906b766" compoundref="api_2schema_2table__metadata_8py" startline="50">dedoc.api.schema.table_metadata.TableMetadata.page_id</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" compoundref="hierarchy__level_8py" startline="43">dedoc.data_structures.hierarchy_level.HierarchyLevel.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a9aabb3bcb59af01a2c40694cd2d71733" compoundref="shape_8py" startline="25">dedoc.readers.pptx_reader.shape.PptxShape.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a647e66337cd7242f37f0518a25ded097" compoundref="readers_2pptx__reader_2table_8py" startline="29">dedoc.readers.pptx_reader.table.PptxTable.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1ab9fd4f5f544f8ab41eaf4d2a62b9e30f" compoundref="api_2schema_2table__metadata_8py" startline="52">dedoc.api.schema.table_metadata.TableMetadata.rotated_angle</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1ad890d1fad8224f9d6349e2ca6dc2a038" compoundref="cell_8py" startline="51">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.rotated_angle</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a7357e09817c11a19ec4e8144b2e128c1" compoundref="location_8py" startline="22">dedoc.readers.pdf_reader.data_classes.tables.location.Location.rotated_angle</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a0bcfed968e7f64d9675f8aec8fa42cee" compoundref="api_2schema_2table__metadata_8py" startline="53">dedoc.api.schema.table_metadata.TableMetadata.title</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a0c6a5e5ec2ab4c5655a9b4aebd56fe9f" compoundref="pptx__reader_2properties__extractor_8py" startline="23">dedoc.readers.pptx_reader.properties_extractor.Properties.title</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1af6051fa5b06028afd24bf93eedf6b8c8" compoundref="api_2schema_2table__metadata_8py" startline="51">dedoc.api.schema.table_metadata.TableMetadata.uid</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a4153dc3d63d44f47023732651e4c537a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="35">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1af3745f216df9501f06924d81dd45163a" compoundref="text__with__bbox_8py" startline="33">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ApiTableMetadata</type>
+        <definition> ApiTableMetadata dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d">to_api_schema</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert table metadata to API schema. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  ApiTableMetadata \par \b I/O\/ \:  None -&gt; ApiTableMetadata \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/table_metadata.py" line="54" column="1" bodyfile="dedoc/data_structures/table_metadata.py" bodystart="54" bodyend="56"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata_1a201a9ef7d61d10ac7d8a36b53bb4d37a" compoundref="api_2schema_2line__metadata_8py" startline="55">dedoc.api.schema.line_metadata.LineMetadata.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a291da4a2c96592ed3309c82ea906b766" compoundref="api_2schema_2table__metadata_8py" startline="50">dedoc.api.schema.table_metadata.TableMetadata.page_id</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" compoundref="hierarchy__level_8py" startline="43">dedoc.data_structures.hierarchy_level.HierarchyLevel.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a9aabb3bcb59af01a2c40694cd2d71733" compoundref="shape_8py" startline="25">dedoc.readers.pptx_reader.shape.PptxShape.page_id</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a647e66337cd7242f37f0518a25ded097" compoundref="readers_2pptx__reader_2table_8py" startline="29">dedoc.readers.pptx_reader.table.PptxTable.page_id</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1ab9fd4f5f544f8ab41eaf4d2a62b9e30f" compoundref="api_2schema_2table__metadata_8py" startline="52">dedoc.api.schema.table_metadata.TableMetadata.rotated_angle</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1ad890d1fad8224f9d6349e2ca6dc2a038" compoundref="cell_8py" startline="51">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.rotated_angle</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a7357e09817c11a19ec4e8144b2e128c1" compoundref="location_8py" startline="22">dedoc.readers.pdf_reader.data_classes.tables.location.Location.rotated_angle</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1a0bcfed968e7f64d9675f8aec8fa42cee" compoundref="api_2schema_2table__metadata_8py" startline="53">dedoc.api.schema.table_metadata.TableMetadata.title</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1properties__extractor_1_1Properties_1a0c6a5e5ec2ab4c5655a9b4aebd56fe9f" compoundref="pptx__reader_2properties__extractor_8py" startline="23">dedoc.readers.pptx_reader.properties_extractor.Properties.title</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata_1af6051fa5b06028afd24bf93eedf6b8c8" compoundref="api_2schema_2table__metadata_8py" startline="51">dedoc.api.schema.table_metadata.TableMetadata.uid</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a1f61451d12fb1c838a974dc95578ee37" compoundref="data__structures_2line__with__meta_8py" startline="214" endline="218">dedoc.data_structures.line_with_meta.LineWithMeta.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph_1a4153dc3d63d44f47023732651e4c537a" compoundref="docx__reader_2data__structures_2paragraph_8py" startline="35">dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.uid</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a42f1f6512327053ca030d36fe7f038a8" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="34" endline="36">dedoc.readers.docx_reader.data_structures.table.DocxTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1af3745f216df9501f06924d81dd45163a" compoundref="text__with__bbox_8py" startline="33">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.uid</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a165ecbdb764332238e01dc7d7f508dd5" compoundref="readers_2pptx__reader_2table_8py" startline="37" endline="39">dedoc.readers.pptx_reader.table.PptxTable.uid</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Hold table-level metadata: page ID, unique identifier, rotation angle, and title. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class holds the information about table unique identifier, rotation angle (if table has been rotated - for images) and so on.</para>
+<para>:ivar page_id: number of the page where table starts :ivar uid: unique identifier of the table (used for linking table to text) :ivar rotated_angle: value of the rotation angle by which the table was rotated during recognition :ivar title: table&apos;s title</para>
+<para>:vartype page_id: Optional[int] :vartype uid: str :vartype rotated_angle: float :vartype title: str </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.table_metadata.TableMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.table_metadata.TableMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/table_metadata.py" line="12" column="1" bodyfile="dedoc/data_structures/table_metadata.py" bodystart="12" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" prot="public" virt="non-virtual"><scope>dedoc::data_structures::table_metadata::TableMetadata</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" prot="public" virt="non-virtual"><scope>dedoc::data_structures::table_metadata::TableMetadata</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

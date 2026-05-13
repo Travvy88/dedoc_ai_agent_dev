@@ -1,0 +1,5 @@
+var abstract__txtlayer__classifier_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516" ],
+    [ "_module_contract", "abstract__txtlayer__classifier_8py.html#ade0be070213cd77fd5e48d29bb3581a7", null ]
+];

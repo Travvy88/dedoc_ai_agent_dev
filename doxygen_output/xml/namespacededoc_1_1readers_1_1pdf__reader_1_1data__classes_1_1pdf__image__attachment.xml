@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" prot="public">dedoc::readers::pdf_reader::data_classes::pdf_image_attachment::PdfImageAttachment</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1aa7f5734761d6e55fc615bb37f135efc2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::data_classes::pdf_image_attachment.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="6" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1a7ab5bf9b5c29f78ef5e4d8d147f39723" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.pdf_image_attachment._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Data model definitions. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [2][PdfImageAttachment reader/processor] =&gt; PdfImageAttachment \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="40" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" bodystart="40" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/data_classes/pdf_image_attachment.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

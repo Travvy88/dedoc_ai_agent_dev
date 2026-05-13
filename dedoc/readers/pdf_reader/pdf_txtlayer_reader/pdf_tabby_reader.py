@@ -15,6 +15,7 @@ from dedoc.readers.pdf_reader.data_classes.tables.scantable import ScanTable
 from dedoc.readers.pdf_reader.pdf_base_reader import ParametersForParseDoc, PdfBaseReader
 
 
+# region CLASS_PdfTabbyReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PdfTabbyReader(PdfBaseReader):
     """
     This class allows to extract content (textual and table) from the .pdf documents with a textual layer (copyable documents).
@@ -25,6 +26,7 @@ class PdfTabbyReader(PdfBaseReader):
     For more information, look to `pdf_with_text_layer` option description in :ref:`pdf_handling_parameters`.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         import os
         from dedoc.extensions import recognized_extensions, recognized_mimes
@@ -43,6 +45,8 @@ class PdfTabbyReader(PdfBaseReader):
         self.table_extractor = OnePageTableExtractor(config=config, logger=self.logger)
         self.debug_save_path = os.path.join(self.config.get("path_debug", os.path.join(os.path.abspath(os.sep), "tmp", "dedoc")), "tabby")
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if the document extension is suitable for this reader (PDF format is supported only).
@@ -55,6 +59,8 @@ class PdfTabbyReader(PdfBaseReader):
         from dedoc.utils.parameter_utils import get_param_pdf_with_txt_layer
         return super().can_read(file_path=file_path, mime=mime, extension=extension) and get_param_pdf_with_txt_layer(parameters) == "tabby"
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines, tables and attachments.
@@ -81,6 +87,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return self._postprocess(result)
 
+    # region METHOD___extract [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __extract(self, path: str, parameters: dict, warnings: List[str], tmp_dir: str)\
             -> Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], Optional[dict]]:
         import math
@@ -151,6 +159,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return all_lines, mp_tables, all_attached_images, document_metadata
 
+    # region METHOD___save_gost_frame_boxes_to_json [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract
     def __save_gost_frame_boxes_to_json(self, first_page: Optional[int], last_page: Optional[int], page_count: int, path: str, tmp_dir: str) -> str:
         from joblib import Parallel, delayed
         import json
@@ -172,6 +182,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return result_json_path
 
+    # region METHOD___get_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___save_gost_frame_boxes_to_json
     def __get_tables(self, page: dict) -> List[ScanTable]:
         from dedoc.readers.pdf_reader.data_classes.tables.cell import Cell
         from dedoc.data_structures.concrete_annotations.bbox_annotation import BBoxAnnotation
@@ -228,6 +240,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return scan_tables
 
+    # region METHOD___get_attached_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_tables
     def __get_attached_images(self, page: dict, parameters: dict, path: str) -> List[PdfImageAttachment]:
         import os
         import shutil
@@ -261,6 +275,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return image_attachment_list
 
+    # region METHOD___get_lines_with_location [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_attached_images
     def __get_lines_with_location(self, page: dict, file_hash: str) -> List[LineWithLocation]:
         from dedoc.data_structures.concrete_annotations.bbox_annotation import BBoxAnnotation
         from dedoc.data_structures.concrete_annotations.bold_annotation import BoldAnnotation
@@ -326,6 +342,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return lines
 
+    # region METHOD___get_tag [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_lines_with_location
     def __get_tag(self, line: LineWithMeta, line_type: str) -> HierarchyLevel:
         from dedoc.structure_extractors.feature_extractors.list_features.list_utils import get_dotted_item_depth
 
@@ -339,10 +357,14 @@ class PdfTabbyReader(PdfBaseReader):
 
         return HierarchyLevel.create_unknown()
 
+    # region METHOD___jar_path [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_tag
     def __jar_path(self) -> str:
         import os
         return os.environ.get("TABBY_JAR", self.default_config["JAR_PATH"])
 
+    # region METHOD___run [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___jar_path
     def __run(self,
               path: str,
               tmp_dir: str,
@@ -369,6 +391,8 @@ class PdfTabbyReader(PdfBaseReader):
         except subprocess.CalledProcessError as e:
             raise TabbyPdfError(e.stderr.decode(encoding))
 
+    # region METHOD___process_pdf [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___run
     def __process_pdf(self,
                       path: str,
                       tmp_dir: str,
@@ -386,6 +410,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return document
 
+    # region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___process_pdf
     def _process_one_page(self,
                           image: ndarray,
                           parameters: ParametersForParseDoc,
@@ -394,6 +420,8 @@ class PdfTabbyReader(PdfBaseReader):
 
         return [], [], [], []
 
+    # region METHOD___save_objects_bboxes [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__process_one_page
     def __save_objects_bboxes(self, all_objects: List[Union[LineWithLocation, ScanTable, PdfImageAttachment]], path: str) -> None:
         if not all_objects:
             return
@@ -438,4 +466,32 @@ class PdfTabbyReader(PdfBaseReader):
             cv2.rectangle(current_image, p1, p2, color)
 
         if current_image is not None:
+# endregion CLASS_PdfTabbyReader
             cv2.imwrite(os.path.join(self.debug_save_path, f"{current_page_id}.png"), current_image)
+
+    # endregion METHOD___save_objects_bboxes
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_tabby_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: PDF format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [28][PdfTabbyReader reader/processor] => PdfTabbyReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdf_tabby_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfTabbyReader
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PdfTabbyReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)

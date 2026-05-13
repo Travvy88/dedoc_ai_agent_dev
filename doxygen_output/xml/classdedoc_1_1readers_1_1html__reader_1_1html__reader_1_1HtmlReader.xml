@@ -1,0 +1,796 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::html_reader::html_reader::HtmlReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" prot="public" virt="non-virtual">dedoc.readers.base_reader.BaseReader</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1html2pdf__reader_1_1html2pdf__reader_1_1Html2PdfReader" prot="public" virt="non-virtual">dedoc.readers.html2pdf_reader.html2pdf_reader.Html2PdfReader</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ad95e4e811eccdf7725c646f88f3887e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.html_reader.html_reader.HtmlReader::postprocessor</definition>
+        <argsstring></argsstring>
+        <name>postprocessor</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.postprocessor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="24" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" compoundref="html__reader_8py" startline="29" endline="51">dedoc.readers.html_reader.html_reader.HtmlReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ab368b28f4e4abad5d54bf434c9cc0d0c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.html_reader.html_reader.HtmlReader::tag_annotation_parser</definition>
+        <argsstring></argsstring>
+        <name>tag_annotation_parser</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.tag_annotation_parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="25" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" compoundref="html__reader_8py" startline="88" endline="105">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9b179a1ee50171a0317c743734c65fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.html_reader.html_reader.HtmlReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a552713056ee6b03298dd298321be30ef">__init__</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1html2pdf__reader_1_1html2pdf__reader_1_1Html2PdfReader_1a24d4ab813036087d2db5385ec0b0494a">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="18" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="18" bodyend="26"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9b179a1ee50171a0317c743734c65fdf" compoundref="html__reader_8py" startline="18" endline="26">dedoc.readers.html_reader.html_reader.HtmlReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9b179a1ee50171a0317c743734c65fdf" compoundref="html__reader_8py" startline="18" endline="26">dedoc.readers.html_reader.html_reader.HtmlReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.html_reader.html_reader.HtmlReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a5fbcf9a222907f9bff5de42552c0f461">read</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1html2pdf__reader_1_1html2pdf__reader_1_1Html2PdfReader_1a4eb39451dc7b075064510be33f163121">read</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>The method return document content with all document&apos;s lines and tables, attachments remain empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This reader is able to add some additional information to the <computeroutput>tag_hierarchy_level</computeroutput> of :class:<computeroutput>~dedoc.data_structures.LineMetadata</computeroutput>. Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="29" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="29" bodyend="51"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" compoundref="html__reader_8py" startline="109" endline="123">dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" compoundref="html__reader_8py" startline="319" endline="339">dedoc.readers.html_reader.html_reader.HtmlReader._read_table</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a4c2b12587acd31192e55fc727d506766" compoundref="html__reader_8py" startline="342" endline="352">dedoc.readers.html_reader.html_reader.HtmlReader._visible_table</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ad95e4e811eccdf7725c646f88f3887e7" compoundref="html__reader_8py" startline="24">dedoc.readers.html_reader.html_reader.HtmlReader.postprocessor</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</definition>
+        <argsstring>(self, Union[Tag] tag, str filepath_hash, bool handle_invisible_table, Optional[bool] table=False, Optional[str] uid=&quot;&quot;)</argsstring>
+        <name>__handle_block</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Union</type>
+          <declname>tag</declname>
+          <array>[Tag]</array>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>table</declname>
+          <array>[bool]</array>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>uid</declname>
+          <array>[str]</array>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="54" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="55" bodyend="85"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a67b554dbc5ecbc7e6ca9ea75b146797b" compoundref="html__reader_8py" startline="251" endline="264">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_invisible_table</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" compoundref="html__reader_8py" startline="88" endline="105">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9420f8686c3eef4604e9faf6cdd6901b" compoundref="html__reader_8py" startline="234" endline="248">dedoc.readers.html_reader.html_reader.HtmlReader.__is_content_tag</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" compoundref="html__reader_8py" startline="109" endline="123">dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a8615722c754a525096b2d438372bc22f" compoundref="html__reader_8py" startline="180" endline="200">dedoc.readers.html_reader.html_reader.HtmlReader.__read_list</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae135663c2fa5509fd398121afe9591ce" compoundref="html__reader_8py" startline="126" endline="135">dedoc.readers.html_reader.html_reader.HtmlReader._handle_text_line</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a4c2b12587acd31192e55fc727d506766" compoundref="html__reader_8py" startline="342" endline="352">dedoc.readers.html_reader.html_reader.HtmlReader._visible_table</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aeb34b05cbf8f3af72670cdc1ed4051ce" compoundref="html__reader_8py" startline="203" endline="221">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_list_item</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" compoundref="html__reader_8py" startline="109" endline="123">dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</definition>
+        <argsstring>(self, Tag tag, str filepath_hash, str uid, Optional[bool] table=False)</argsstring>
+        <name>__handle_single_tag</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>table</declname>
+          <array>[bool]</array>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="88" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="88" bodyend="105"/>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1ad05d56f41bc6e5481ad2c6f6744fc5be" compoundref="json__reader_8py" startline="149" endline="155">dedoc.readers.json_reader.json_reader.JsonReader.__get_text</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a452943a0a732b486215f2ba6222b9c7c" compoundref="html__reader_8py" startline="225" endline="231">dedoc.readers.html_reader.html_reader.HtmlReader.__get_text</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae7567fe81e1cbd6f13239603f1c9764e" compoundref="html__reader_8py" startline="139" endline="151">dedoc.readers.html_reader.html_reader.HtmlReader.__make_line</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ab368b28f4e4abad5d54bf434c9cc0d0c" compoundref="html__reader_8py" startline="25">dedoc.readers.html_reader.html_reader.HtmlReader.tag_annotation_parser</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</definition>
+        <argsstring>(self, Tag block, str filepath_hash=&quot;&quot;, bool handle_invisible_table=False, Optional[bool] table=False, Optional[str] uid=&quot;&quot;)</argsstring>
+        <name>__read_blocks</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>table</declname>
+          <array>[bool]</array>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>uid</declname>
+          <array>[str]</array>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="108" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="109" bodyend="123"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9420f8686c3eef4604e9faf6cdd6901b" compoundref="html__reader_8py" startline="234" endline="248">dedoc.readers.html_reader.html_reader.HtmlReader.__is_content_tag</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" compoundref="html__reader_8py" startline="319" endline="339">dedoc.readers.html_reader.html_reader.HtmlReader._read_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" compoundref="html__reader_8py" startline="29" endline="51">dedoc.readers.html_reader.html_reader.HtmlReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae7567fe81e1cbd6f13239603f1c9764e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.readers.html_reader.html_reader.HtmlReader.__make_line</definition>
+        <argsstring>(self, str line, str line_type, int header_level=0, str uid=None, str filepath_hash=None, List annotations=None)</argsstring>
+        <name>__make_line</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__make_line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line_type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>header_level</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>annotations</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="138" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="139" bodyend="151"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a67b554dbc5ecbc7e6ca9ea75b146797b" compoundref="html__reader_8py" startline="251" endline="264">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_invisible_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" compoundref="html__reader_8py" startline="88" endline="105">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae135663c2fa5509fd398121afe9591ce" compoundref="html__reader_8py" startline="126" endline="135">dedoc.readers.html_reader.html_reader.HtmlReader._handle_text_line</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1af2f59e19b1f68569da7d601a08a293a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+        <definition> LineWithMeta dedoc.readers.html_reader.html_reader.HtmlReader.__get_li_header</definition>
+        <argsstring>(self, str list_type, int index)</argsstring>
+        <name>__get_li_header</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__get_li_header</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>list_type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="154" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="154" bodyend="177"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aeb34b05cbf8f3af72670cdc1ed4051ce" compoundref="html__reader_8py" startline="203" endline="221">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_list_item</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a8615722c754a525096b2d438372bc22f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__read_list</definition>
+        <argsstring>(self, Tag lst, str uid, str filepath_hash, bool handle_invisible_table)</argsstring>
+        <name>__read_list</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__read_list</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>lst</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="180" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="180" bodyend="200"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aeb34b05cbf8f3af72670cdc1ed4051ce" compoundref="html__reader_8py" startline="203" endline="221">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_list_item</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aeb34b05cbf8f3af72670cdc1ed4051ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__handle_list_item</definition>
+        <argsstring>(self, Tag item, int item_index, str list_type, str filepath_hash, str uid, bool handle_invisible_table)</argsstring>
+        <name>__handle_list_item</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__handle_list_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>item_index</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>list_type</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="203" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="203" bodyend="221"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1af2f59e19b1f68569da7d601a08a293a2" compoundref="html__reader_8py" startline="154" endline="177">dedoc.readers.html_reader.html_reader.HtmlReader.__get_li_header</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a8615722c754a525096b2d438372bc22f" compoundref="html__reader_8py" startline="180" endline="200">dedoc.readers.html_reader.html_reader.HtmlReader.__read_list</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a452943a0a732b486215f2ba6222b9c7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>[str, int, int]</type>
+        <definition> [str, int, int] dedoc.readers.html_reader.html_reader.HtmlReader.__get_text</definition>
+        <argsstring>(self, Tag tag, Optional[bool] table=False)</argsstring>
+        <name>__get_text</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>table</declname>
+          <array>[bool]</array>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="225" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="225" bodyend="231"/>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1aeae13a3dbb3cf9a9c29d4dd53dab8adf" compoundref="json__reader_8py" startline="128" endline="141">dedoc.readers.json_reader.json_reader.JsonReader.__handle_one_element</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" compoundref="html__reader_8py" startline="88" endline="105">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_single_tag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9420f8686c3eef4604e9faf6cdd6901b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.html_reader.html_reader.HtmlReader.__is_content_tag</definition>
+        <argsstring>(self, Tag tag, bool handle_invisible_table=False)</argsstring>
+        <name>__is_content_tag</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__is_content_tag</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+<para>check if given tag is a content tag </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>html tag </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handle_invisible_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is invisibly table should be handled as table </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: True if tag is a content tag False otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="234" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="234" bodyend="248"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a4c2b12587acd31192e55fc727d506766" compoundref="html__reader_8py" startline="342" endline="352">dedoc.readers.html_reader.html_reader.HtmlReader._visible_table</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" compoundref="html__reader_8py" startline="109" endline="123">dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a67b554dbc5ecbc7e6ca9ea75b146797b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader.__handle_invisible_table</definition>
+        <argsstring>(self, Tag block, str filepath_hash, str uid)</argsstring>
+        <name>__handle_invisible_table</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__handle_invisible_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="251" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="251" bodyend="264"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae7567fe81e1cbd6f13239603f1c9764e" compoundref="html__reader_8py" startline="139" endline="151">dedoc.readers.html_reader.html_reader.HtmlReader.__make_line</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" compoundref="html__reader_8py" startline="319" endline="339">dedoc.readers.html_reader.html_reader.HtmlReader._read_table</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2fa1ffe11a1f6161a4f57b59ce086741" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[Tag, NavigableString]</type>
+        <definition> Tuple[Tag, NavigableString] dedoc.readers.html_reader.html_reader.HtmlReader.__clone_cell</definition>
+        <argsstring>(self, Tuple[Tag, NavigableString] el)</argsstring>
+        <name>__clone_cell</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__clone_cell</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>el</declname>
+          <array>[Tag, NavigableString]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="267" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="267" bodyend="283"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2fa1ffe11a1f6161a4f57b59ce086741" compoundref="html__reader_8py" startline="267" endline="283">dedoc.readers.html_reader.html_reader.HtmlReader.__clone_cell</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2fa1ffe11a1f6161a4f57b59ce086741" compoundref="html__reader_8py" startline="267" endline="283">dedoc.readers.html_reader.html_reader.HtmlReader.__clone_cell</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a32ae90f68348c6166797c7c1c015734e" compoundref="html__reader_8py" startline="286" endline="298">dedoc.readers.html_reader.html_reader.HtmlReader.__split_table_cells</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a32ae90f68348c6166797c7c1c015734e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.html_reader.html_reader.HtmlReader.__split_table_cells</definition>
+        <argsstring>(self, Tag table, List[List[Tag]] table_list)</argsstring>
+        <name>__split_table_cells</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__split_table_cells</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>table_list</declname>
+          <array>[List[Tag]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="286" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="286" bodyend="298"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2fa1ffe11a1f6161a4f57b59ce086741" compoundref="html__reader_8py" startline="267" endline="283">dedoc.readers.html_reader.html_reader.HtmlReader.__clone_cell</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a42176266593e9e6cd57532c9af252cc2" compoundref="html__reader_8py" startline="301" endline="316">dedoc.readers.html_reader.html_reader.HtmlReader.__fix_table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a42176266593e9e6cd57532c9af252cc2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[Tag]]</type>
+        <definition> List[List[Tag]] dedoc.readers.html_reader.html_reader.HtmlReader.__fix_table</definition>
+        <argsstring>(self, Tag table)</argsstring>
+        <name>__fix_table</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader.__fix_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="301" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="301" bodyend="316"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a32ae90f68348c6166797c7c1c015734e" compoundref="html__reader_8py" startline="286" endline="298">dedoc.readers.html_reader.html_reader.HtmlReader.__split_table_cells</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" compoundref="html__reader_8py" startline="319" endline="339">dedoc.readers.html_reader.html_reader.HtmlReader._read_table</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae135663c2fa5509fd398121afe9591ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>]</type>
+        <definition> List[LineWithMeta] dedoc.readers.html_reader.html_reader.HtmlReader._handle_text_line</definition>
+        <argsstring>(self, str block, str filepath_hash, str uid, bool ignore_space=True)</argsstring>
+        <name>_handle_text_line</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader._handle_text_line</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_space</declname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="126" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="126" bodyend="135"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae7567fe81e1cbd6f13239603f1c9764e" compoundref="html__reader_8py" startline="139" endline="151">dedoc.readers.html_reader.html_reader.HtmlReader.__make_line</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1table_1_1Table" kindref="compound">Table</ref></type>
+        <definition> Table dedoc.readers.html_reader.html_reader.HtmlReader._read_table</definition>
+        <argsstring>(self, Tag table, str filepath_hash)</argsstring>
+        <name>_read_table</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader._read_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>filepath_hash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="319" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="319" bodyend="339"/>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a42176266593e9e6cd57532c9af252cc2" compoundref="html__reader_8py" startline="301" endline="316">dedoc.readers.html_reader.html_reader.HtmlReader.__fix_table</references>
+        <references refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" compoundref="html__reader_8py" startline="109" endline="123">dedoc.readers.html_reader.html_reader.HtmlReader.__read_blocks</references>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a67b554dbc5ecbc7e6ca9ea75b146797b" compoundref="html__reader_8py" startline="251" endline="264">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_invisible_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html2pdf__reader_1_1html2pdf__reader_1_1Html2PdfReader_1a9614d7df38ef0acebcfb85bd9aa8db48" compoundref="html2pdf__reader_8py" startline="63" endline="75">dedoc.readers.html2pdf_reader.html2pdf_reader.Html2PdfReader._handle_tables</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" compoundref="html__reader_8py" startline="29" endline="51">dedoc.readers.html_reader.html_reader.HtmlReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a4c2b12587acd31192e55fc727d506766" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.html_reader.html_reader.HtmlReader._visible_table</definition>
+        <argsstring>(self, Tag table, bool handle_invisible_table)</argsstring>
+        <name>_visible_table</name>
+        <qualifiedname>dedoc.readers.html_reader.html_reader.HtmlReader._visible_table</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Tag</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>handle_invisible_table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/html_reader/html_reader.py" line="342" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="342" bodyend="352"/>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" compoundref="html__reader_8py" startline="55" endline="85">dedoc.readers.html_reader.html_reader.HtmlReader.__handle_block</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9420f8686c3eef4604e9faf6cdd6901b" compoundref="html__reader_8py" startline="234" endline="248">dedoc.readers.html_reader.html_reader.HtmlReader.__is_content_tag</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" compoundref="html__reader_8py" startline="29" endline="51">dedoc.readers.html_reader.html_reader.HtmlReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This reader allows to handle documents with the following extensions: .htm, .html, .shtml. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.html_reader.html_reader.HtmlReader</label>
+        <link refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.readers.html2pdf_reader.html2pdf_reader.Html2PdfReader</label>
+        <link refid="classdedoc_1_1readers_1_1html2pdf__reader_1_1html2pdf__reader_1_1Html2PdfReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.html_reader.html_reader.HtmlReader</label>
+        <link refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/html_reader/html_reader.py" line="12" column="1" bodyfile="dedoc/readers/html_reader/html_reader.py" bodystart="12" bodyend="356"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2fa1ffe11a1f6161a4f57b59ce086741" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__clone_cell</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a42176266593e9e6cd57532c9af252cc2" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__fix_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1af2f59e19b1f68569da7d601a08a293a2" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__get_li_header</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a452943a0a732b486215f2ba6222b9c7c" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__get_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aaa0705bb8b9b45a3adf6ab3d89800901" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__handle_block</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a67b554dbc5ecbc7e6ca9ea75b146797b" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__handle_invisible_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1aeb34b05cbf8f3af72670cdc1ed4051ce" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__handle_list_item</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a2a6779c610b6b62fbcda5559eec860a3" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__handle_single_tag</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9b179a1ee50171a0317c743734c65fdf" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a9420f8686c3eef4604e9faf6cdd6901b" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__is_content_tag</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae7567fe81e1cbd6f13239603f1c9764e" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__make_line</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a918d34e1d6f5c46954cd3403698b2653" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__read_blocks</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a8615722c754a525096b2d438372bc22f" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__read_list</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a32ae90f68348c6166797c7c1c015734e" prot="private" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>__split_table_cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ae135663c2fa5509fd398121afe9591ce" prot="protected" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>_handle_text_line</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a658687df04b9337844d084e0cda66eb0" prot="protected" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>_read_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a4c2b12587acd31192e55fc727d506766" prot="protected" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>_visible_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ad95e4e811eccdf7725c646f88f3887e7" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>postprocessor</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1a6544ce0a81c85338d83ccdd6ca847dee" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>read</name></member>
+      <member refid="classdedoc_1_1readers_1_1html__reader_1_1html__reader_1_1HtmlReader_1ab368b28f4e4abad5d54bf434c9cc0d0c" prot="public" virt="non-virtual"><scope>dedoc::readers::html_reader::html_reader::HtmlReader</scope><name>tag_annotation_parser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

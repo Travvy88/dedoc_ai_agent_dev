@@ -37,19 +37,25 @@ logging.getLogger("pdfminer").setLevel(logging.ERROR)
 WordObj = namedtuple("Word", ["start", "end", "value"])
 
 
+# region CLASS_PdfminerExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class PdfminerExtractor:
     """
     Class extracts text with style from pdf with help pdfminer.six
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict) -> None:
         self.config = config
         self.logger = self.config.get("logger", logging.getLogger())
 
+    # endregion METHOD___init__
     @staticmethod
+    # region METHOD_get_pages [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def get_pages(fp: BinaryIO) -> Iterator[PDFPage]:
         return PDFPage.get_pages(fp)
 
+    # region METHOD_extract_text_layer [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_get_pages
     def extract_text_layer(self, path: str, page_number: int, parameters: ParametersForParseDoc) -> Optional[PageWithBBox]:
         """
         Extract text information with metadata from pdf with help pdfminer.six
@@ -65,6 +71,8 @@ class PdfminerExtractor:
                     continue
                 return self._handle_page(page=page, page_number=page_number, path=path, parameters=parameters)
 
+    # region METHOD__handle_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_extract_text_layer
     def _handle_page(self, page: PDFPage, page_number: int, path: str, parameters: ParametersForParseDoc, layout: Optional[LTPage] = None) -> PageWithBBox:
         device, interpreter = self.__get_interpreter()
         try:
@@ -117,6 +125,8 @@ class PdfminerExtractor:
 
         return PageWithBBox(bboxes=bboxes, image=image_page, page_num=page_number, attachments=attachments, pdf_page_height=height, pdf_page_width=width)
 
+    # region METHOD___extract_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__handle_page
     def __extract_image(self,
                         parameters: ParametersForParseDoc,
                         height: int,
@@ -146,7 +156,9 @@ class PdfminerExtractor:
 
         return attachment
 
+    # endregion METHOD___extract_image
     @staticmethod
+    # region METHOD___get_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __get_image(path: str, page_num: int) -> np.ndarray:
         image_page = np.array(get_page_image(path=path, page_id=page_num))
         image_page = np.array(image_page)
@@ -154,6 +166,8 @@ class PdfminerExtractor:
             image_page = cv2.cvtColor(image_page, cv2.COLOR_GRAY2BGR)
         return image_page
 
+    # region METHOD___get_interpreter [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_image
     def __get_interpreter(self) -> Tuple[PDFPageAggregator, PDFPageInterpreter]:
         rsrcmgr = PDFResourceManager()
         laparams = LAParams(line_margin=1.5, line_overlap=0.5, boxes_flow=0.5, word_margin=0.1, char_margin=3, detect_vertical=False)
@@ -161,6 +175,8 @@ class PdfminerExtractor:
         interpreter = PDFPageInterpreter(rsrcmgr, device)
         return device, interpreter
 
+    # region METHOD_get_info_layout_object [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_interpreter
     def get_info_layout_object(self, lobj: LTContainer, page_num: int, line_num: int, k_w: float, k_h: float, height: int, width: int) -> TextWithBBox:
         # 1 - converting coordinate from pdf format into image
         bbox = create_bbox(height, k_h, k_w, lobj)
@@ -180,6 +196,8 @@ class PdfminerExtractor:
 
         return text_with_bbox
 
+    # region METHOD___get_line_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_get_info_layout_object
     def __get_line_annotations(self, lobj: LTTextLineHorizontal, height: int, width: int) -> Tuple[List[Annotation], List[WordWithBBox]]:
         # 1 - prepare data for group by name
         chars_with_style = []
@@ -218,6 +236,8 @@ class PdfminerExtractor:
 
         return annotations, words
 
+    # region METHOD___extract_words_bbox_annotation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_line_annotations
     def __extract_words_bbox_annotation(self, lobj: LTTextContainer, height: int, width: int) -> Tuple[List[Annotation], List[WordWithBBox]]:
         words: List[WordObj] = []
         word: WordObj = WordObj(start=0, end=0, value=LTTextContainer())
@@ -242,9 +262,13 @@ class PdfminerExtractor:
 
         return annotations, words_with_bbox
 
+    # region METHOD__get_new_weight [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___extract_words_bbox_annotation
     def _get_new_weight(self) -> str:
         return binascii.hexlify(os.urandom(8)).decode("ascii")
 
+    # region METHOD___parse_style_string [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__get_new_weight
     def __parse_style_string(self, chars_with_meta: str, begin: int, end: int) -> List[Annotation]:
         # style parsing
         annotations = []
@@ -264,6 +288,8 @@ class PdfminerExtractor:
 
         return annotations
 
+    # region METHOD___debug_extract_layout [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___parse_style_string
     def __debug_extract_layout(self, image_src: np.ndarray, layout: LTContainer, page_num: int, k_w: float, k_h: float, page: PDFPage,
                                width: int, height: int) -> None:
         """
@@ -317,4 +343,32 @@ class PdfminerExtractor:
         self.__draw_layout_element(image_src, lobjs_curves, file_text, k_w, k_h, page, (0, 255, 255), text="LTCurve")'''
         """
         cv2.imwrite(os.path.join(tmp_dir, f"img_page_{page_num}.png"), image_src)
+# endregion CLASS_PdfminerExtractor
         file_text.close()
+
+    # endregion METHOD___debug_extract_layout
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdfminer_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Feature and metadata extraction from documents.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [26][PdfminerExtractor reader/processor] => PdfminerExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: pdfminer_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfminerExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [PdfminerExtractor] ○ can_read? → ○ read → [__init__ → get_pages → extract_text_layer] → ⊕ UnstructuredDocument(lines, tables, attachments)

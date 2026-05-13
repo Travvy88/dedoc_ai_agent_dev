@@ -11,7 +11,12 @@ from dedoc.structure_extractors.feature_extractors.toc_feature_extractor import 
 from dedoc.structure_extractors.feature_extractors.utils_feature_extractor import normalization_by_min_max
 from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexps_year, roman_regexp
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_LawTextFeatures [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @purpose LawTextFeatures for document structure extraction pipeline
 class LawTextFeatures(AbstractFeatureExtractor):
 
     list_feature_extractor = ListFeaturesExtractor()
@@ -34,16 +39,33 @@ class LawTextFeatures(AbstractFeatureExtractor):
     quote_start = re.compile(r"^([\"'«])")
     quote_end = re.compile(r".*[\"'»][.;]?$")
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, text_features_only: bool = False) -> None:
         super().__init__()
 
+        self.logger.debug(f"[IMP:4][LawTextFeatures][__init___INIT] Starting")
         self.regexps_start = self.regexps_items + self.regexps_subitem + [roman_regexp]
         self.text_features_only = text_features_only
 
+    # endregion METHOD___init__
+    # region METHOD_parameters [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose parameters method
+    ## @io Input -> Output
+    ## @complexity 5
     def parameters(self) -> dict:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][parameters_INIT] Starting")
         return {"text_features_only": self.text_features_only}
 
+    # endregion METHOD_parameters
+    # region METHOD_transform [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose transform method
+    ## @io Input -> Output
+    ## @complexity 5
     def transform(self, documents: List[List[LineWithMeta]], toc_lines: Optional[List[List[TocItem]]] = None) -> pd.DataFrame:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][transform_INIT] Starting")
         assert len(documents) > 0
 
         result_matrix = pd.concat([self.__process_document(document) for document in documents], ignore_index=True)
@@ -52,7 +74,13 @@ class LawTextFeatures(AbstractFeatureExtractor):
         features = sorted(result_matrix.columns)
         return result_matrix[features].astype(float)
 
+    # endregion METHOD_transform
+    # region METHOD___process_document [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __process_document method
+    ## @io Input -> Output
+    ## @complexity 5
     def __process_document(self, lines: List[LineWithMeta], with_prev_next: bool = True) -> pd.DataFrame:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][__process_document_INIT] Starting")
 
         page_ids = [line.metadata.page_id for line in lines]
         if page_ids:
@@ -84,7 +112,13 @@ class LawTextFeatures(AbstractFeatureExtractor):
             result_matrix[feature] = self._normalize_features(result_matrix[feature])"""
         return result_matrix
 
+    # endregion METHOD___process_document
+    # region METHOD__look_at_prev_line [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _look_at_prev_line method
+    ## @io Input -> Output
+    ## @complexity 5
     def _look_at_prev_line(self, document: List[LineWithMeta], n: int = 1) -> Dict[str, List]:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][_look_at_prev_line_INIT] Starting")
         """
         looks at previous line and compare with current line
         @param document: list of lines
@@ -114,7 +148,13 @@ class LawTextFeatures(AbstractFeatureExtractor):
                 res["prev_is_space"].append(0)
         return res
 
+    # endregion METHOD__look_at_prev_line
+    # region METHOD__one_line_features [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _one_line_features method
+    ## @io Input -> Output
+    ## @complexity 5
     def _one_line_features(self, line: LineWithMeta, total_lines: int, start_page: int, finish_page: int) -> Iterator[Tuple[str, int]]:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][_one_line_features_INIT] Starting")
         yield "indentation", self._get_indentation(line)
         if not self.text_features_only:
             yield "page_id", normalization_by_min_max(line.metadata.page_id, min_v=start_page, max_v=finish_page)
@@ -176,20 +216,38 @@ class LawTextFeatures(AbstractFeatureExtractor):
         yield "number_percent", sum((1 for letter in strip_text if letter.isnumeric())) / line_length
         yield "is_capitalized", 1.0 if len(strip_text) > 0 and strip_text[0].isupper() else 0.0
 
+    # endregion METHOD__one_line_features
+    # region METHOD___find_body [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __find_body method
+    ## @io Input -> Output
+    ## @complexity 5
     def __find_body(self, document: List[LineWithMeta]) -> Optional[Tuple[int, int, int]]:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][__find_body_INIT] Starting")
         for line_id, line in enumerate(document):
             text = "".join(filter(str.isalpha, line.line))
             if list(self._start_regexp(text, self.regexps_start + self.named_regexp))[-1] > 0:
                 return line.metadata.page_id, line.metadata.line_id, line_id
         return None
 
+    # endregion METHOD___find_body
+    # region METHOD___find_application [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __find_application method
+    ## @io Input -> Output
+    ## @complexity 5
     def __find_application(self, document: List[LineWithMeta]) -> Optional[Tuple[int, int, int]]:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][__find_application_INIT] Starting")
         for line_id, line in enumerate(document):
             if self.regexp_application_begin.match(line.line.lower().strip()):
                 return line.metadata.page_id, line.metadata.line_id, line_id
         return None
 
+    # endregion METHOD___find_application
+    # region METHOD__inside_quotes [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _inside_quotes method
+    ## @io Input -> Output
+    ## @complexity 5
     def _inside_quotes(self, lines: List[LineWithMeta]) -> List[int]:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][_inside_quotes_INIT] Starting")
         quote_started = False
         quote_end = self.quote_end
         result = []
@@ -218,9 +276,41 @@ class LawTextFeatures(AbstractFeatureExtractor):
             result.extend([0] * len(new_quote))
         return result
 
+    # endregion METHOD__inside_quotes
+    # region METHOD___any_item_found [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __any_item_found method
+    ## @io Input -> Output
+    ## @complexity 5
     def __any_item_found(self, text: str) -> bool:
+        self.logger.debug(f"[IMP:4][LawTextFeatures][__any_item_found_INIT] Starting")
         regexps = self.regexps_start + self.named_regexp
         for regexp in regexps:
             if regexp.match(text):
                 return True
         return False
+
+    # endregion METHOD___any_item_found
+# endregion CLASS_LawTextFeatures
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(FeatureEngineering): ...; TECH(Pandas): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/feature_extractors/law_text_features: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/feature_extractors/law_text_features
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => LawTextFeatures
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, feature extractors, law text features
+# STRUCTURE: ▶ structure_extractors/feature_extractors/law_text_features → ○ LawTextFeatures.cls → ⎋ result

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391" prot="public">dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor::PDFAttachmentsExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor_1aaf448af37607f7f73e08ef42bb49d7aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::attachments_extractors::concrete_attachments_extractors::pdf_attachments_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="47" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor_1a1231f07c2baad44cda742402b193130b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Extract attachments from PDF files: root-level embedded files (via /EmbeddedFiles catalog), page-level file annotations (/FileAttachment), and text annotations (/Text /Comment notes) as JSON attachments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  PDF attachment extraction: catalog traversal for embedded files, page-level annotation iteration, note conversion to JSON. \par \b Input\/ \:  File path to .pdf document; optional parameters dict. \par \b Output\/ \:  List of AttachedFile objects (embedded files, file-attached annotations, note JSONs). \par \b Links\/ \:  [USES_API(9): pypdf.PdfReader, pypdf.PageObject] \par \b Links\/ \:  [USES_API(8): AbstractAttachmentsExtractor._content2attach_file] \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1utils_1_1parameter__utils_1a017f9af2c6e949025eb9fbaf808b6ba2" kindref="member">dedoc.utils.parameter_utils.get_param_attachments_dir</ref>, get_param_need_content_analysis] \par \b Links\/ \:  [USES_API(6): <ref refid="namespacededoc_1_1utils_1_1utils_1aaccf6a72325f1b14e36c5977249aa6bb" kindref="member">dedoc.utils.utils.convert_datetime</ref>, <ref refid="namespacededoc_1_1utils_1_1utils_1a01d2971c0b3b6d76056a7ff4d25acd9e" kindref="member">dedoc.utils.utils.get_unique_name</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>extract ALWAYS returns a List[AttachedFile] (may be empty).</para>
+</listitem><listitem><para>PdfReadError during __get_root_attachments or __get_page_level_attachments is caught; extraction continues from remaining sources.</para>
+</listitem><listitem><para>Notes (/Text + /Comment) are serialized as .json files with content, modified_time, created_time, size, author. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why handle root and page-level attachments separately? A: PDF spec defines attachments at both levels; root-level for document-wide embedded files, page-level for per-page annotations. Both must be collected for completeness. Q: Why convert PDF notes to JSON attachments? A: PDF text annotations (/Text subtype /Comment) are human-readable notes. Converting to JSON makes them processable by downstream readers that can&apos;t parse raw PDF annotation objects. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup + LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Extracts attachments from .pdf files] =&gt; PDFAttachmentsExtractor METHOD 5[Constructor: registers recognized pdf extensions/mimes] =&gt; <bold>init</bold> METHOD 9[Main extraction: root attachments + page-level + notes] =&gt; extract METHOD 7[Extracts annotations (/FileAttachment, /Text /Comment) from a page] =&gt; __get_notes METHOD 6[Iterates all pages to collect per-page annotations] =&gt; __get_page_level_attachments METHOD 8[Extracts root-level /EmbeddedFiles from catalog] =&gt; __get_root_attachments METHOD 6[Converts note metadata to (filename.json, bytes) tuple] =&gt; __create_note \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[extract]: DedocManager =&gt; ExtractPdfAttachments =&gt; List[AttachedFile] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="32" column="1" bodyfile="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" bodystart="32" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

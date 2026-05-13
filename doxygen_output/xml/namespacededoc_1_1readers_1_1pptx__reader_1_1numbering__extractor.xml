@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pptx__reader_1_1numbering__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pptx_reader::numbering_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor" prot="public">dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1a235bb8acf102cec039e481be66b08049" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.numbering_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Compute auto-numbering text for PowerPoint list items according to ST_TextAutonumberScheme — supports arabic, alphabetic, and roman numeral sequences with various formatting styles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  List item numbering computation for PPTX reader. \par \b Input\/ \:  Numbering scheme string (e.g. &quot;arabicPeriod&quot;) and integer shift. \par \b Output\/ \:  Formatted numbering string (e.g. &quot;2. &quot;). \par \b Links\/ \:  [USES_API(8): dedoc.readers.pptx_reader.PptxReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>get_text ALWAYS returns a non-empty string for valid numbering schemes. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a dedicated extractor instead of inline code in the PPTX reader? A: ST_TextAutonumberScheme has multiple variants — isolation simplifies testing and allows independent evolution. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [8][PPTX list item numbering computer] =&gt; NumberingExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_text]: PptxReader (Parse) → ComputeNumbering(scheme, shift) → FormattedListItem </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="90" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="90" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

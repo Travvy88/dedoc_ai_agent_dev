@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::hierarchy_level_builders::law_builders</compoundname>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1application__builder">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder">dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1cellar__builder">dedoc::structure_extractors::hierarchy_level_builders::law_builders::cellar_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compos8c8faf816ce67a5ede7315f7505f75c4">dedoc::structure_extractors::hierarchy_level_builders::law_builders::composition_hierarchy_level_builder</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1stub__hierarchy__level__builder">dedoc::structure_extractors::hierarchy_level_builders::law_builders::stub_hierarchy_level_builder</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

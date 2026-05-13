@@ -11,12 +11,23 @@ from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import regexp
 from dedoc.structure_extractors.patterns import BracketListPattern, BulletListPattern, DottedListPattern, LetterListPattern, TagListPattern, TagPattern
 from dedoc.structure_extractors.patterns.pattern_composition import PatternComposition
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_DiplomaBodyBuilder [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @purpose DiplomaBodyBuilder for document structure extraction pipeline
 class DiplomaBodyBuilder(AbstractHierarchyLevelBuilder):
     named_item_keywords = ("введение", "заключение", "библиографический список", "список литературы", "глава", "приложение", "приложения")
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self) -> None:
         super().__init__()
+
+        self.logger.debug(f"[IMP:4][DiplomaBodyBuilder][__init___INIT] Starting")
         self.digits_with_dots_regexp = regexps_digits_with_dots
         self.pattern_composition = PatternComposition(
             [
@@ -29,7 +40,13 @@ class DiplomaBodyBuilder(AbstractHierarchyLevelBuilder):
             ]
         )
 
+    # endregion METHOD___init__
+    # region METHOD_get_lines_with_hierarchy [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose get_lines_with_hierarchy method
+    ## @io Input -> Output
+    ## @complexity 5
     def get_lines_with_hierarchy(self, lines_with_labels: List[Tuple[LineWithMeta, str]], init_hl_depth: int) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][DiplomaBodyBuilder][get_lines_with_hierarchy_INIT] Starting")
         if len(lines_with_labels) > 0:
             line = lines_with_labels[0][0]
             page_id = line.metadata.page_id
@@ -61,8 +78,14 @@ class DiplomaBodyBuilder(AbstractHierarchyLevelBuilder):
             result.append(line)
         return result
 
+    # endregion METHOD_get_lines_with_hierarchy
+    # region METHOD___handle_named_item [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __handle_named_item method
+    ## @io Input -> Output
+    ## @complexity 5
     def __handle_named_item(self, init_hl_depth: int, line: LineWithMeta, prediction: str, previous_named_item_line: Optional[LineWithMeta] = None)\
             -> LineWithMeta:
+        self.logger.debug(f"[IMP:4][DiplomaBodyBuilder][__handle_named_item_INIT] Starting")
         text = line.line.strip().lower()
         item_depth = get_dotted_item_depth(text)
 
@@ -78,7 +101,13 @@ class DiplomaBodyBuilder(AbstractHierarchyLevelBuilder):
         line.metadata.hierarchy_level = hierarchy_level
         return line
 
+    # endregion METHOD___handle_named_item
+    # region METHOD___postprocess_raw_text [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __postprocess_raw_text method
+    ## @io Input -> Output
+    ## @complexity 5
     def __postprocess_raw_text(self, line: LineWithMeta, init_hl_depth: int) -> LineWithMeta:
+        self.logger.debug(f"[IMP:4][DiplomaBodyBuilder][__postprocess_raw_text_INIT] Starting")
         text = line.line.strip().lower()
         if not text.startswith(self.named_item_keywords):
             return line
@@ -88,3 +117,29 @@ class DiplomaBodyBuilder(AbstractHierarchyLevelBuilder):
             return line
 
         return self.__handle_named_item(init_hl_depth, line, "named_item")
+
+    # endregion METHOD___postprocess_raw_text
+# endregion CLASS_DiplomaBodyBuilder
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(HierarchyBuilding): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/hierarchy_level_builders/diploma_builder/body_builder: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/hierarchy_level_builders/diploma_builder/body_builder
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => DiplomaBodyBuilder
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, hierarchy level builders, diploma builder, body builder
+# STRUCTURE: ▶ structure_extractors/hierarchy_level_builders/diploma_builder/body_builder → ○ DiplomaBodyBuilder.cls → ⎋ result

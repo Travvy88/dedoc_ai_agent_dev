@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::feature_extractors::list_features::list_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1ad43e02fc598d8ed24c62ecfe9d5dde2f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::feature_extractors::list_features::list_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.list_features.list_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" line="10" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1aa6a64bb85b9c067b30cdd74cfd8618bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.structure_extractors.feature_extractors.list_features.list_utils.get_dotted_item_depth</definition>
+        <argsstring>(str text)</argsstring>
+        <name>get_dotted_item_depth</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.list_features.list_utils.get_dotted_item_depth</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  get_dotted_item_depth utility function \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  3 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" line="17" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1ad59d8a93f9810bde06fa632905ae440d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix" kindref="compound">LinePrefix</ref></type>
+        <definition> LinePrefix dedoc.structure_extractors.feature_extractors.list_features.list_utils.get_prefix</definition>
+        <argsstring>(List[LinePrefix] prefix_list, LineWithMeta line)</argsstring>
+        <name>get_prefix</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.list_features.list_utils.get_prefix</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>prefix_list</declname>
+          <array>[LinePrefix]</array>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  get_prefix utility function \par \b I/O\/ \:  Input -&gt; Output \par \b Complexity\/ \:  3 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" line="32" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" bodystart="32" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1a2dc0227f502510f4ea948da426a305f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.list_features.list_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.list_features.list_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/feature_extractors/list_features/list_utils: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/feature_extractors/list_features/list_utils \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC [Weight 5][Utility] =&gt; get_dotted_item_depth FUNC [Weight 5][Utility] =&gt; get_prefix \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" line="63" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" bodystart="63" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

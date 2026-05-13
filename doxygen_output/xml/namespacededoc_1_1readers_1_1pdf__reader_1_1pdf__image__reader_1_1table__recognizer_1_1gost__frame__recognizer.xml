@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__recognizer" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::gost_frame_recognizer</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::gost_frame_recognizer::GOSTFrameRecognizer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__recognizer_1af6214a05da03a03b7a5f3e60e2d0ba58" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::gost_frame_recognizer.MIN_FRAME_CONTENT_AREA</definition>
+        <argsstring></argsstring>
+        <name>MIN_FRAME_CONTENT_AREA</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.MIN_FRAME_CONTENT_AREA</qualifiedname>
+        <initializer>=  0.65</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/gost_frame_recognizer.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/gost_frame_recognizer.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__recognizer_1a620b9616904d70d82326256037f6877c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Table recognition and extraction from document images. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>CLASS [6][GOSTFrameRecognizer reader/processor] =&gt; GOSTFrameRecognizer \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/gost_frame_recognizer.py" line="73" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/gost_frame_recognizer.py" bodystart="73" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/gost_frame_recognizer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

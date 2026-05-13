@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_1827a616c6949467fa3f14438189bcad" kind="dir">
+    <compoundname>dedoc</compoundname>
+    <innerdir refid="dir_f1ee8ae29eae0272a2cc7adb584cdfc9">dedoc/api</innerdir>
+    <innerdir refid="dir_d2d5d780a18ed95b6aba0d1807cb5341">dedoc/attachments_extractors</innerdir>
+    <innerdir refid="dir_03c7b20f026041599264e4cd8cf1a209">dedoc/attachments_handler</innerdir>
+    <innerdir refid="dir_8550227ad210689c8630da530a8655cd">dedoc/common</innerdir>
+    <innerdir refid="dir_5b63231d23a472778cc159d9b959daeb">dedoc/converters</innerdir>
+    <innerdir refid="dir_fdd9895278eb1ea71939610e4d65011d">dedoc/data_structures</innerdir>
+    <innerdir refid="dir_2a412cb2ee21c6b244ad5d18bba79a8e">dedoc/metadata_extractors</innerdir>
+    <innerdir refid="dir_dca79edd3b9084fc2b636778d7fc0140">dedoc/readers</innerdir>
+    <innerdir refid="dir_5b2a01718619e7a87c3abc1347e0a825">dedoc/structure_constructors</innerdir>
+    <innerdir refid="dir_99e62996e8c054fe33ba96297107787d">dedoc/structure_extractors</innerdir>
+    <innerdir refid="dir_e70ac7c2f6297a36217f9490276ff484">dedoc/utils</innerdir>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="__semantic__template__reference_8py">_semantic_template_reference.py</innerfile>
+    <innerfile refid="config_8py">config.py</innerfile>
+    <innerfile refid="dedoc__manager_8py">dedoc_manager.py</innerfile>
+    <innerfile refid="download__models_8py">download_models.py</innerfile>
+    <innerfile refid="extensions_8py">extensions.py</innerfile>
+    <innerfile refid="main_8py">main.py</innerfile>
+    <innerfile refid="manager__config_8py">manager_config.py</innerfile>
+    <innerfile refid="version_8py">version.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/"/>
+  </compounddef>
+</doxygen>

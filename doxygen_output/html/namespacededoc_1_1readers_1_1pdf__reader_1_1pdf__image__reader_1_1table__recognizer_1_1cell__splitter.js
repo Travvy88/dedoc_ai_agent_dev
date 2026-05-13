@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter =
+[
+    [ "CellSplitter", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter.html#a95e724ce622d68232103be358029dacf", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter.html#a07fc44621f6c484e04457cca51c6984c", null ]
+];

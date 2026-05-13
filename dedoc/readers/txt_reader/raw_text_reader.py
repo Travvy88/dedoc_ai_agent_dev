@@ -6,11 +6,13 @@ from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
 
+# region CLASS_RawTextReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class RawTextReader(BaseReader):
     """
     This class allows to parse files with the following extensions: .txt, .txt.gz
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         import re
         from dedoc.extensions import recognized_extensions, recognized_mimes
@@ -18,6 +20,8 @@ class RawTextReader(BaseReader):
         super().__init__(config=config, recognized_extensions=recognized_extensions.txt_like_format, recognized_mimes=recognized_mimes.txt_like_format)
         self.space_regexp = re.compile(r"^\s+")
 
+    # region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def can_read(self, file_path: Optional[str] = None, mime: Optional[str] = None, extension: Optional[str] = None, parameters: Optional[dict] = None) -> bool:
         """
         Check if the document extension is suitable for this reader.
@@ -31,6 +35,8 @@ class RawTextReader(BaseReader):
             return extension.lower() in self._recognized_extensions
         return mime in self._recognized_mimes
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_can_read
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         This method returns only document lines.
@@ -43,6 +49,8 @@ class RawTextReader(BaseReader):
         result = UnstructuredDocument(lines=lines, tables=[], attachments=[], warnings=[encoding_warning])
         return self._postprocess(result)
 
+    # region METHOD___get_encoding [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __get_encoding(self, path: str, parameters: dict) -> str:
         from dedoc.utils.utils import get_encoding
 
@@ -51,6 +59,8 @@ class RawTextReader(BaseReader):
         else:
             return get_encoding(path, "utf-8")
 
+    # region METHOD__get_lines_with_meta [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_encoding
     def _get_lines_with_meta(self, path: str, encoding: str) -> List[LineWithMeta]:
         import time
         from dedoc.data_structures.concrete_annotations.spacing_annotation import SpacingAnnotation
@@ -82,6 +92,8 @@ class RawTextReader(BaseReader):
 
         return lines
 
+    # region METHOD___get_lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__get_lines_with_meta
     def __get_lines(self, path: str, encoding: str) -> Iterable[Tuple[int, str]]:
         import codecs
         import gzip
@@ -99,6 +111,8 @@ class RawTextReader(BaseReader):
                     line = normalize("NFC", line).replace("й", "й")
                     yield line_id, line
 
+    # region METHOD___get_starting_spacing [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_lines
     def __get_starting_spacing(self, line: Optional[LineWithMeta]) -> int:
         if line is None or line.line.isspace():
             return 0
@@ -107,11 +121,15 @@ class RawTextReader(BaseReader):
             return 0
         return space_this.end() - space_this.start()
 
+    # region METHOD___is_paragraph [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_starting_spacing
     def __is_paragraph(self, line: LineWithMeta, previous_line: Optional[LineWithMeta]) -> bool:
         space_this = self.__get_starting_spacing(line)
         space_prev = self.__get_starting_spacing(previous_line)
         return not line.line.isspace() and space_this - space_prev >= 2
 
+    # region METHOD__postprocess [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___is_paragraph
     def _postprocess(self, document: UnstructuredDocument) -> UnstructuredDocument:
         previous_line = None
         for line in document.lines:
@@ -120,6 +138,8 @@ class RawTextReader(BaseReader):
             previous_line = line
         return document
 
+    # region METHOD___get_indent_annotation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__postprocess
     def __get_indent_annotation(self, line: str) -> IndentationAnnotation:
         space_group = self.space_regexp.match(line)
         if space_group is None:
@@ -127,4 +147,32 @@ class RawTextReader(BaseReader):
         space_cnt = 0
         for char in space_group.group():
             space_cnt += 3 if char == "\t" else 1
+# endregion CLASS_RawTextReader
         return IndentationAnnotation(start=0, end=len(line), value=str(211 * space_cnt))
+
+    # endregion METHOD___get_indent_annotation
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_raw_text_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse plain text documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: plain text format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [20][RawTextReader reader/processor] => RawTextReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(plain text) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: raw_text_reader, dedoc, reader, plain text, RawTextReader, BaseReader, text, plain, TXT, encoding, UnstructuredDocument, RawTextReader
+# STRUCTURE: ▶ Init ┌plain text file┐ → [RawTextReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)

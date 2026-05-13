@@ -1,0 +1,7 @@
+var classifying__law__structure__extractor_8py =
+[
+    [ "dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.LawDocType", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType.html", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType" ],
+    [ "dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.ClassifyingLawStructureExtractor", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4.html", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__struedd3a1d9f9be3a5160e794981fb7f6a4" ],
+    [ "_module_contract", "classifying__law__structure__extractor_8py.html#a20cc3151cd295230e0cc63771334641b", null ],
+    [ "logger", "classifying__law__structure__extractor_8py.html#a4538b0fff21311c167b63b86a63ddb83", null ]
+];

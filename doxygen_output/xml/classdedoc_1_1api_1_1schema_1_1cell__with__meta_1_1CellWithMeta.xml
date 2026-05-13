@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::cell_with_meta::CellWithMeta</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a09be81f39212f7abbcaadfce82d859ce" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.api.schema.cell_with_meta.CellWithMeta::lines</definition>
+        <argsstring></argsstring>
+        <name>lines</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta.CellWithMeta.lines</qualifiedname>
+        <initializer>=  Field(description=&quot;Textual lines of the cell with annotations&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="52" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a4ded1300aefea9022afeb8248000f9c6" compoundref="data__structures_2cell__with__meta_8py" startline="33" endline="45">dedoc.data_structures.cell_with_meta.CellWithMeta.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1af7799b7484c81b18790902dbbda2a8eb" compoundref="data__structures_2cell__with__meta_8py" startline="72" endline="79">dedoc.data_structures.cell_with_meta.CellWithMeta.get_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a29462395feb92cdfb031040648a68df9" compoundref="data__structures_2cell__with__meta_8py" startline="60" endline="64">dedoc.data_structures.cell_with_meta.CellWithMeta.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1abef4944ea2967e85ca324d97d53fe701" compoundref="unstructured__document_8py" startline="62" endline="66">dedoc.data_structures.unstructured_document.UnstructuredDocument.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1aed97f936fceea145be94f61710a8b059" compoundref="table__tree_8py" startline="136" endline="138">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a3c203df7c872fc950bf4bf7a8328e204" compoundref="cell_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.shift</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" compoundref="ocr__paragraph_8py" startline="29" endline="31">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1afd6d7a93d5c7f6094067a3c23f6e5bad" compoundref="data__structures_2cell__with__meta_8py" startline="95" endline="100">dedoc.data_structures.cell_with_meta.CellWithMeta.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a9639e5890d547f66a57977db92a42fe7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.cell_with_meta.CellWithMeta::rowspan</definition>
+        <argsstring></argsstring>
+        <name>rowspan</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta.CellWithMeta.rowspan</qualifiedname>
+        <initializer>=  Field(description=&quot;Number of rows to span like in HTML format&quot;, example=1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="53" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a4ded1300aefea9022afeb8248000f9c6" compoundref="data__structures_2cell__with__meta_8py" startline="33" endline="45">dedoc.data_structures.cell_with_meta.CellWithMeta.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1afd6d7a93d5c7f6094067a3c23f6e5bad" compoundref="data__structures_2cell__with__meta_8py" startline="95" endline="100">dedoc.data_structures.cell_with_meta.CellWithMeta.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a4766417a893f66d273bc35c311501aeb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.api.schema.cell_with_meta.CellWithMeta::colspan</definition>
+        <argsstring></argsstring>
+        <name>colspan</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta.CellWithMeta.colspan</qualifiedname>
+        <initializer>=  Field(description=&quot;Number of columns to span like in HTML format&quot;, example=2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="54" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a4ded1300aefea9022afeb8248000f9c6" compoundref="data__structures_2cell__with__meta_8py" startline="33" endline="45">dedoc.data_structures.cell_with_meta.CellWithMeta.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1afd6d7a93d5c7f6094067a3c23f6e5bad" compoundref="data__structures_2cell__with__meta_8py" startline="95" endline="100">dedoc.data_structures.cell_with_meta.CellWithMeta.to_api_schema</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a3763595a07fae74dbd5b2ab5ee4d46bb" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool dedoc.api.schema.cell_with_meta.CellWithMeta::invisible</definition>
+        <argsstring></argsstring>
+        <name>invisible</name>
+        <qualifiedname>dedoc.api.schema.cell_with_meta.CellWithMeta.invisible</qualifiedname>
+        <initializer>=  Field(description=&quot;Indicator for displaying or hiding cell text&quot;, example=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/cell_with_meta.py" line="55" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a4ded1300aefea9022afeb8248000f9c6" compoundref="data__structures_2cell__with__meta_8py" startline="33" endline="45">dedoc.data_structures.cell_with_meta.CellWithMeta.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1afd6d7a93d5c7f6094067a3c23f6e5bad" compoundref="data__structures_2cell__with__meta_8py" startline="95" endline="100">dedoc.data_structures.cell_with_meta.CellWithMeta.to_api_schema</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Represent a single table cell with its text lines and HTML-like spanning properties for correct table rendering. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (lines, rowspan, colspan, invisible) -&gt; JSON serializable model</para>
+<para>Holds the information about the cell: list of lines and cell properties (rowspan, colspan, invisible).</para>
+<para>:ivar lines: list of textual lines of the cell :ivar colspan: number of columns to span (for cells merged horizontally) :ivar rowspan: number of rows to span (for cells merged vertically) :ivar invisible: indicator for displaying or hiding cell text - cells that are merged with others are hidden (for HTML display)</para>
+<para>:vartype lines: List[LineWithMeta] :vartype colspan: int :vartype rowspan: int :vartype invisible: bool </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.cell_with_meta.CellWithMeta</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.cell_with_meta.CellWithMeta</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lines</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>List</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/cell_with_meta.py" line="38" column="1" bodyfile="dedoc/api/schema/cell_with_meta.py" bodystart="38" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a4766417a893f66d273bc35c311501aeb" prot="public" virt="non-virtual"><scope>dedoc::api::schema::cell_with_meta::CellWithMeta</scope><name>colspan</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a3763595a07fae74dbd5b2ab5ee4d46bb" prot="public" virt="non-virtual"><scope>dedoc::api::schema::cell_with_meta::CellWithMeta</scope><name>invisible</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a09be81f39212f7abbcaadfce82d859ce" prot="public" virt="non-virtual"><scope>dedoc::api::schema::cell_with_meta::CellWithMeta</scope><name>lines</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a9639e5890d547f66a57977db92a42fe7" prot="public" virt="non-virtual"><scope>dedoc::api::schema::cell_with_meta::CellWithMeta</scope><name>rowspan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

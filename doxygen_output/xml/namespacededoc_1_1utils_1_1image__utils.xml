@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1utils_1_1image__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::utils::image_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1utils_1_1image__utils_1a90b8117147bb08d8041ccb31133ab275" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::utils::image_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.utils.image_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="41" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1a263c53c57aeebf830239f63b0d6535c0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.utils.image_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.utils.image_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide image manipulation utilities for the document processing pipeline: cropping, rotation, pixel frequency analysis, bounding box extraction, and text area detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Image cropping, rotation, edge detection, bounding box operations, image concatenation, text area isolation. \par \b Input\/ \:  numpy arrays, PIL Images, BBox objects. \par \b Output\/ \:  numpy arrays, PIL Images, BBox objects. \par \b Links\/ \:  [USES_API(8): PIL, numpy, opencv, scipy] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>rotate_image always returns a non-cropped image with expanded dimensions.</para>
+</listitem><listitem><para>crop_image_text always returns a valid BBox even on empty edges.</para>
+</listitem><listitem><para>get_concat_v returns a single image if input list has length 1. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why expand image bounds during rotation? A: Avoids information loss from corner clipping, which is critical for OCR quality. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 6[Highest pixel frequency color] =&gt; get_highest_pixel_frequency FUNC 7[BBox crop + resize] =&gt; get_bbox_from_image FUNC 8[Image rotation with bound expansion] =&gt; rotate_image FUNC 7[Text area crop via Canny edges] =&gt; crop_image_text FUNC 5[Rectangle overlay on image] =&gt; draw_rectangle FUNC 5[Vertical image concatenation] =&gt; get_concat_v \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[crop_image_text]: StructureExtractor → IsolateTextArea → Text BBox extracted</para>
+</listitem><listitem><para>[rotate_image]: Preprocessor → DeskewImage → Rotated image ready for OCR </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="27" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1a782021d75219597a7ba6a1326b5141f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.utils.image_utils.get_highest_pixel_frequency</definition>
+        <argsstring>(np.ndarray image)</argsstring>
+        <name>get_highest_pixel_frequency</name>
+        <qualifiedname>dedoc.utils.image_utils.get_highest_pixel_frequency</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To find the most frequent pixel intensity in a grayscale image, avoiding black (0) and defaulting to white (255) for background detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  numpy \par \b I/O\/ \:  np.ndarray -&gt; int \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="49" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="49" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1ae0ed3ec72e56bcbfac14c9241c26359f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Image.Image</type>
+        <definition> Image.Image dedoc.utils.image_utils.get_bbox_from_image</definition>
+        <argsstring>(Image.Image image, BBox bbox, Tuple[int, int] resize=(300, 15))</argsstring>
+        <name>get_bbox_from_image</name>
+        <qualifiedname>dedoc.utils.image_utils.get_bbox_from_image</qualifiedname>
+        <param>
+          <type>Image.Image</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>BBox</type>
+          <declname>bbox</declname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>resize</declname>
+          <array>[int, int]</array>
+          <defval>(300, 15)</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To extract a sub-region from an image by bounding box, with optional resizing for uniform downstream processing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PIL.Image \par \b I/O\/ \:  (Image.Image, BBox, Tuple[int,int]) -&gt; Image.Image \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="65" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="65" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1aedb32941f70098c68ad51f35893d97f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.utils.image_utils.rotate_image</definition>
+        <argsstring>(np.ndarray image, float angle, Tuple[int, int, int] color_bound=(255, 255, 255))</argsstring>
+        <name>rotate_image</name>
+        <qualifiedname>dedoc.utils.image_utils.rotate_image</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>color_bound</declname>
+          <array>[int, int, int]</array>
+          <defval>(255, 255, 255)</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To rotate an image by a given angle with automatic bound expansion, preventing corner cropping and preserving all content for OCR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  opencv \par \b I/O\/ \:  (np.ndarray, float, Tuple[int,int,int]) -&gt; np.ndarray \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="81" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="81" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1a757283401771548cd05dbbdf1a95883a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BBox</type>
+        <definition> BBox dedoc.utils.image_utils.crop_image_text</definition>
+        <argsstring>(np.ndarray image)</argsstring>
+        <name>crop_image_text</name>
+        <qualifiedname>dedoc.utils.image_utils.crop_image_text</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To detect the bounding box of text content in an image using Canny edge detection and maximum filtering, cropping out empty margins. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  opencv, scipy.ndimage.maximum_filter \par \b I/O\/ \:  np.ndarray -&gt; BBox \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="108" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="108" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1a890edcbdc5cbe14ff947af688450f2d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.utils.image_utils.draw_rectangle</definition>
+        <argsstring>(Image.Image image, int x_top_left, int y_top_left, int width, int height, Tuple[int, int, int] color=(0, 0, 0))</argsstring>
+        <name>draw_rectangle</name>
+        <qualifiedname>dedoc.utils.image_utils.draw_rectangle</qualifiedname>
+        <param>
+          <type>Image.Image</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x_top_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y_top_left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>Tuple</type>
+          <declname>color</declname>
+          <array>[int, int, int]</array>
+          <defval>(0, 0, 0)</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To draw a colored rectangle outline on an image, used for visualizing detected bounding boxes in debug/demo outputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PIL.ImageDraw, deepcopy \par \b I/O\/ \:  (Image.Image, int, int, int, int, Tuple[int,int,int]) -&gt; np.ndarray \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="136" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="136" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1utils_1_1image__utils_1a3ce892499344d92a31a939ce99d9d861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Image.Image</type>
+        <definition> Image.Image dedoc.utils.image_utils.get_concat_v</definition>
+        <argsstring>(List[Image.Image] images)</argsstring>
+        <name>get_concat_v</name>
+        <qualifiedname>dedoc.utils.image_utils.get_concat_v</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>images</declname>
+          <array>[Image.Image]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To vertically concatenate a list of PIL images into a single combined image, preserving the maximum width. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PIL.Image \par \b I/O\/ \:  List[Image.Image] -&gt; Image.Image \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/utils/image_utils.py" line="157" column="1" bodyfile="dedoc/utils/image_utils.py" bodystart="157" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/utils/image_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

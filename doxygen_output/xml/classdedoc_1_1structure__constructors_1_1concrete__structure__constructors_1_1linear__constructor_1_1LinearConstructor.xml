@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::linear_constructor::LinearConstructor</compoundname>
+    <basecompoundref refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor" prot="public" virt="non-virtual">dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor_1afd8416a8c111ce6af4676e527300c59d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" kindref="compound">ParsedDocument</ref></type>
+        <definition> ParsedDocument dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor.construct</definition>
+        <argsstring>(self, UnstructuredDocument document, Optional[dict] parameters=None)</argsstring>
+        <name>construct</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor.construct</qualifiedname>
+        <reimplements refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor_1a39c56b6a39b90c937fc852e5971b88cc">construct</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Build a flat tree representation: create root node, append all lines as children, merge annotations, and return the parsed document. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  TreeNode, DocumentContent, DocumentMetadata \par \b I/O\/ \:  UnstructuredDocument, Optional[dict] -&gt; ParsedDocument \par \b Complexity\/ \:  4</para>
+<para>Build the linear structure representation for the given document intermediate representation. To get the information about the parameters look at the documentation of :class:<computeroutput>~dedoc.structure_constructors.AbstractStructureConstructor</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" line="51" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" bodystart="51" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Produce a flat linear document structure where every line is a direct child of the root node — the fallback/simplest representation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used to form a simple basic document structure representation as a list of document lines. The result contains the empty root node with the consecutive list of all document lines as its children. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor</label>
+        <link refid="classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" line="40" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.py" bodystart="40" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor_1afd8416a8c111ce6af4676e527300c59d" prot="public" virt="non-virtual"><scope>dedoc::structure_constructors::concrete_structure_constructors::linear_constructor::LinearConstructor</scope><name>construct</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

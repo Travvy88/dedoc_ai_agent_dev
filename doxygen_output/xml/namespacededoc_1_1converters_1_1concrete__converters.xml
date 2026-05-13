@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1converters_1_1concrete__converters" kind="namespace" language="Python">
+    <compoundname>dedoc::converters::concrete_converters</compoundname>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1abstract__converter">dedoc::converters::concrete_converters::abstract_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1binary__converter">dedoc::converters::concrete_converters::binary_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1docx__converter">dedoc::converters::concrete_converters::docx_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1excel__converter">dedoc::converters::concrete_converters::excel_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1pdf__converter">dedoc::converters::concrete_converters::pdf_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1png__converter">dedoc::converters::concrete_converters::png_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1pptx__converter">dedoc::converters::concrete_converters::pptx_converter</innernamespace>
+    <innernamespace refid="namespacededoc_1_1converters_1_1concrete__converters_1_1txt__converter">dedoc::converters::concrete_converters::txt_converter</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1converters_1_1concrete__converters_1a58e0a8c6ed29b64e5abec9d8f9db2ddf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::converters::concrete_converters.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.converters.concrete_converters.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/__init__.py" line="3" column="1" bodyfile="dedoc/converters/concrete_converters/__init__.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1converters_1_1concrete__converters_1a2258430420cb79f69285feb9dd3da78a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.converters.concrete_converters._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.converters.concrete_converters._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To mark the concrete_converters directory as a Python package and serve as a namespace container for format-specific converter implementations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package namespace declaration. \par \b Input\/ \:  None. \par \b Output\/ \:  Valid Python package. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1converters_1_1concrete__converters" kindref="compound">dedoc.converters.concrete_converters</ref>.*] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>This package always contains at least AbstractConverter. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why an empty <bold>init</bold>.py? A: The concrete converters are imported individually by the parent package; no re-export needed here. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 1[package init] =&gt; <bold>init</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>init</bold>]: PythonRuntime → ImportPackage → PackageAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/__init__.py" line="23" column="1" bodyfile="dedoc/converters/concrete_converters/__init__.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/concrete_converters/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

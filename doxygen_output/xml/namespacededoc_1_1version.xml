@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1version" kind="namespace" language="Python">
+    <compoundname>dedoc::version</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1version_1a65ef3b2d2ce0d9186f81e8f565a376a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::version.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.version.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/version.py" line="3" column="1" bodyfile="dedoc/version.py" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1version_1a5dc678a536891bbad415bb6983ccb495" prot="private" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::version.__version__</definition>
+        <argsstring></argsstring>
+        <name>__version__</name>
+        <qualifiedname>dedoc.version.__version__</qualifiedname>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/version.py" line="5" column="1" bodyfile="dedoc/version.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1version_1abecb50bf43f8b0546d81d524a140f0f7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.version._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.version._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Centralized version identifier for the Dedoc package, consumed by setup.py and runtime version checks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package versioning, semantic version declaration. \par \b Input\/ \:  None (hardcoded version string). \par \b Output\/ \:  A single <computeroutput>__version__</computeroutput> string accessible via <computeroutput><ref refid="namespacededoc_1_1version_1a5dc678a536891bbad415bb6983ccb495" kindref="member">dedoc.version.__version__</ref></computeroutput>. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><computeroutput>__version__</computeroutput> is always a non-None string (empty string indicates development/unreleased build). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate <ref refid="version_8py" kindref="compound">version.py</ref> file? A: Single source of truth for version avoids duplication across setup.py, docs, and runtime introspection. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup] \par \b Module Map\/ \:</para>
+<para>DATA 10[Package version string] =&gt; <bold>version</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>version</bold>]: BuildSystem =&gt; ReadPackageVersion =&gt; ReleaseTagging </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/version.py" line="24" column="1" bodyfile="dedoc/version.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/version.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

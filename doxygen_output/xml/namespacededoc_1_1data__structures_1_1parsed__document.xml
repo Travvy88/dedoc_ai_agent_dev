@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1parsed__document" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::parsed_document</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" prot="public">dedoc::data_structures::parsed_document::ParsedDocument</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1parsed__document_1ab419fa3ad3d3f4e59057603f950e7f4f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::parsed_document.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.parsed_document.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/parsed_document.py" line="9" column="1" bodyfile="dedoc/data_structures/parsed_document.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1parsed__document_1ac0f4a7dfe283744d5672d732506674dc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.parsed_document._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.parsed_document._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the ParsedDocument data structure — the top-level aggregation of content, metadata, attachments, and warnings for a completely parsed document. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Complete document container: text tree + tables (DocumentContent), metadata, recursive attachments, warnings. \par \b Input\/ \:  DocumentMetadata, DocumentContent, optional warnings and attachments. \par \b Output\/ \:  ParsedDocument instance convertible to API schema. \par \b Links\/ \:  [INHERITS(5): Serializable, USES_API(8): ApiParsedDocument, READS_DATA_FROM(9): DocumentContent, DocumentMetadata] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>attachments is never None (defaults to empty list)</para>
+</listitem><listitem><para>warnings is never None (defaults to empty list) \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why do attachments contain ParsedDocument recursively? A: Attached files (e.g. embedded PDFs) may themselves be parsed into documents, requiring recursive parsing. This enables full document hierarchy. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Complete parsed document] =&gt; ParsedDocument METHOD 6[Constructor] =&gt; <bold>init</bold> METHOD 5[Add attachments] =&gt; add_attachments METHOD 4[Set metadata] =&gt; set_metadata METHOD 8[API schema conversion] =&gt; to_api_schema \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ParsedDocument]: DedocManager → ParseDocument → ParsedDocumentReturned</para>
+</listitem><listitem><para>[ParsedDocument]: AttachmentHandler → RecursiveParse → NestedParsedDocuments </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/parsed_document.py" line="113" column="1" bodyfile="dedoc/data_structures/parsed_document.py" bodystart="113" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/parsed_document.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

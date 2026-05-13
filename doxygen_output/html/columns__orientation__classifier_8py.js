@@ -1,0 +1,5 @@
+var columns__orientation__classifier_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65" ],
+    [ "_module_contract", "columns__orientation__classifier_8py.html#aaa0ac847825832285be6eccd32956a08", null ]
+];

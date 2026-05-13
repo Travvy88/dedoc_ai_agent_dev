@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="tabbypdf_8py" kind="file" language="Python">
+    <compoundname>tabbypdf.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader">dedoc::readers::pdf_reader::pdf_txtlayer_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf">dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf">dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>json</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>asyncio.log<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logger</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1common_1_1exceptions_1_1java__not__found__error" kindref="compound">dedoc.common.exceptions.java_not_found_error</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>JavaNotFoundError</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a590d99653bf1af8d77854bcd6de0dc7f" refkind="member"><highlight class="normal">TABBY_JAVA_VERSION<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;2.0.0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aee33e648e4b8ea011fc3ef9aaa496b1e" refkind="member"><highlight class="normal">JAR_NAME<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ispras_tbl_extr.jar&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a2215343525eb5644a3161d438d8890ed" refkind="member"><highlight class="normal">JAR_DIR<sp/>=<sp/>os.path.abspath(os.path.dirname(__file__))</highlight></codeline>
+<codeline lineno="11" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a1e98c4c3767d0f952febf349d1004420" refkind="member"><highlight class="normal">JAVA_NOT_FOUND_ERROR<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;`java`<sp/>command<sp/>is<sp/>not<sp/>found<sp/>from<sp/>this<sp/>Python<sp/>process.<sp/>Please<sp/>ensure<sp/>Java<sp/>is<sp/>installed<sp/>and<sp/>PATH<sp/>is<sp/>set<sp/>for<sp/>`java`&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a7f13c2eae20b82f13bb71b446e49f521" refkind="member"><highlight class="normal">DEFAULT_CONFIG<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;JAR_PATH&quot;</highlight><highlight class="normal">:<sp/>os.path.join(JAR_DIR,<sp/>JAR_NAME)}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aa3bffd6f3df5d5296a2116f462345672" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aa3bffd6f3df5d5296a2116f462345672" kindref="member">_jar_path</ref>()<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>os.environ.get(</highlight><highlight class="stringliteral">&quot;TABBY_JAR&quot;</highlight><highlight class="normal">,<sp/>DEFAULT_CONFIG[</highlight><highlight class="stringliteral">&quot;JAR_PATH&quot;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" kindref="member">_run</ref>(path:<sp/>str<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>encoding:<sp/>str<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;utf-8&quot;</highlight><highlight class="normal">)<sp/>-&gt;<sp/>bytes:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>args<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;java&quot;</highlight><highlight class="normal">]<sp/>+<sp/>[</highlight><highlight class="stringliteral">&quot;-jar&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aa3bffd6f3df5d5296a2116f462345672" kindref="member">_jar_path</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;-i&quot;</highlight><highlight class="normal">,<sp/>path]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>subprocess.run(args,<sp/>stdout=subprocess.PIPE,<sp/>stderr=subprocess.PIPE,<sp/>stdin=subprocess.DEVNULL,<sp/>check=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>result.stderr:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.warning(f</highlight><highlight class="stringliteral">&quot;Got<sp/>stderr:<sp/>{result.stderr.decode(encoding)}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result.stdout</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>FileNotFoundError:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/><ref refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError" kindref="compound">JavaNotFoundError</ref>(JAVA_NOT_FOUND_ERROR)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>subprocess.CalledProcessError<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>e:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(f</highlight><highlight class="stringliteral">&quot;Error<sp/>from<sp/>tabby-java:\n{e.stderr.decode(encoding)}\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a26362d9990b66baa187c808a51964fb0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a26362d9990b66baa187c808a51964fb0" kindref="member">extract</ref>(path:<sp/>str)<sp/>-&gt;<sp/>dict:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>output<sp/>=<sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" kindref="member">_run</ref>(path)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>response<sp/>=<sp/>output.decode(</highlight><highlight class="stringliteral">&quot;UTF-8&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>document<sp/>=<sp/>json.loads(response)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>document</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_tabbypdf;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>PDF<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>@scope<sp/>Document<sp/>parsing<sp/>pipeline:<sp/>PDF<sp/>format<sp/>reading.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>FUNC<sp/>[5][_jar_path<sp/>utility/helper]<sp/>=&gt;<sp/>_jar_path</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>FUNC<sp/>[5][_run<sp/>utility/helper]<sp/>=&gt;<sp/>_run</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>FUNC<sp/>[5][extract<sp/>utility/helper]<sp/>=&gt;<sp/>extract</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(PDF)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a47fcd59c9e9b6f9ca0416c58f888a094" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a47fcd59c9e9b6f9ca0416c58f888a094" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>tabbypdf,<sp/>dedoc,<sp/>reader,<sp/>PDF,<sp/>PdfReader,<sp/>BaseReader,<sp/>PDF,<sp/>pdfminer,<sp/>tabby,<sp/>OCR,<sp/>tables,<sp/>image,<sp/>txtlayer,<sp/>columns,<sp/>orientation,<sp/>paragraphs,<sp/>metadata,<sp/>extraction,<sp/>line,<sp/>bbox,<sp/>_jar_path,<sp/>_run,<sp/>extract</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Input<sp/>→<sp/>○<sp/>_jar_path<sp/>→<sp/>_run<sp/>→<sp/>extract<sp/>→<sp/>⊕<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py"/>
+  </compounddef>
+</doxygen>

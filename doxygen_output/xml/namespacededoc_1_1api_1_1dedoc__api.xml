@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1dedoc__api" kind="namespace" language="Python">
+    <compoundname>dedoc::api::dedoc_api</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a6a11aed544fb8b8979108f751010cb64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>dedoc.api.dedoc_api.config</qualifiedname>
+        <initializer>=  get_config()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="62" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a4fea53fd3467fdae6eab7bf147d2a0e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.dedoc_api.logger</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1api_1_1dedoc__api_1a6a11aed544fb8b8979108f751010cb64" kindref="member">config</ref>[&quot;logger&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="63" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1aba0b1b5548e071a219e8fec31274a6fa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <qualifiedname>dedoc.api.dedoc_api.PORT</qualifiedname>
+        <initializer>=  <ref refid="namespacededoc_1_1api_1_1dedoc__api_1a6a11aed544fb8b8979108f751010cb64" kindref="member">config</ref>[&quot;api_port&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="64" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a7a6911f5cb560f5ec3693643a14b0a9f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.ENABLE_CANCELLATION</definition>
+        <argsstring></argsstring>
+        <name>ENABLE_CANCELLATION</name>
+        <qualifiedname>dedoc.api.dedoc_api.ENABLE_CANCELLATION</qualifiedname>
+        <initializer>=  get_bool_value(os.getenv(&quot;ENABLE_CANCELLATION&quot;), True)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="65" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a80448fda13d4919ce9cd15f0af283905" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.static_path</definition>
+        <argsstring></argsstring>
+        <name>static_path</name>
+        <qualifiedname>dedoc.api.dedoc_api.static_path</qualifiedname>
+        <initializer>=  os.path.join(os.path.dirname(os.path.abspath(__file__)), &quot;web&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="66" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1ab90c6bf429af66f8dd115c6cd75fb706" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.static_files_dirs</definition>
+        <argsstring></argsstring>
+        <name>static_files_dirs</name>
+        <qualifiedname>dedoc.api.dedoc_api.static_files_dirs</qualifiedname>
+        <initializer>=  config.get(&quot;static_files_dirs&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="67" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a4b556a0949edde9e19d0904aba04bdbd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <qualifiedname>dedoc.api.dedoc_api.app</qualifiedname>
+        <initializer>=  FastAPI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="69" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1ac9c74c837761d8cdd73943fc15817736" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.api.dedoc_api.name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="70" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1ad202b7cedbd9104dbe87ebcfbdd66788" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.module_api_args</definition>
+        <argsstring></argsstring>
+        <name>module_api_args</name>
+        <qualifiedname>dedoc.api.dedoc_api.module_api_args</qualifiedname>
+        <initializer>=  importlib.import_module(<ref refid="namespacededoc_1_1api_1_1dedoc__api_1a6a11aed544fb8b8979108f751010cb64" kindref="member">config</ref>[&quot;import_path_init_api_args&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="71" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1dedoc__api_1a23edefaa7c73b0e10330e37c26f7ae10" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::dedoc_api.process_handler</definition>
+        <argsstring></argsstring>
+        <name>process_handler</name>
+        <qualifiedname>dedoc.api.dedoc_api.process_handler</qualifiedname>
+        <initializer>=  <ref refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler" kindref="compound">CancellationProcessHandler</ref>(<ref refid="namespacededoc_1_1api_1_1dedoc__api_1a4fea53fd3467fdae6eab7bf147d2a0e7" kindref="member">logger</ref>=<ref refid="namespacededoc_1_1api_1_1dedoc__api_1a4fea53fd3467fdae6eab7bf147d2a0e7" kindref="member">logger</ref>) if <ref refid="namespacededoc_1_1api_1_1dedoc__api_1a7a6911f5cb560f5ec3693643a14b0a9f" kindref="member">ENABLE_CANCELLATION</ref> else <ref refid="classdedoc_1_1api_1_1process__handler_1_1ProcessHandler" kindref="compound">ProcessHandler</ref>(<ref refid="namespacededoc_1_1api_1_1dedoc__api_1a4fea53fd3467fdae6eab7bf147d2a0e7" kindref="member">logger</ref>=<ref refid="namespacededoc_1_1api_1_1dedoc__api_1a4fea53fd3467fdae6eab7bf147d2a0e7" kindref="member">logger</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="72" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aebecf92bf0dd493549a53d140c415896" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.dedoc_api._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.dedoc_api._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the FastAPI application with all REST endpoints for the dedoc document parsing service: file upload, static file serving, version info, multi-format output rendering, and error handling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  FastAPI application setup — route definitions, static files mounting, process handler initialization, exception handlers, and server launch. \par \b Input\/ \:  HTTP requests (multipart upload, query parameters). \par \b Output\/ \:  FastAPI Response objects (JSON, HTML, PlainText, FileResponse). \par \b Links\/ \:  [USES_API(9): fastapi.FastAPI, fastapi.responses, starlette.responses; READS_DATA_FROM(8): <ref refid="namespacededoc_1_1api_1_1api__args" kindref="compound">dedoc.api.api_args</ref>, <ref refid="namespacededoc_1_1api_1_1api__utils" kindref="compound">dedoc.api.api_utils</ref>, <ref refid="namespacededoc_1_1api_1_1process__handler" kindref="compound">dedoc.api.process_handler</ref>, <ref refid="namespacededoc_1_1api_1_1schema" kindref="compound">dedoc.api.schema</ref>, <ref refid="namespacededoc_1_1config" kindref="compound">dedoc.config</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>All endpoints return valid Response objects.</para>
+</listitem><listitem><para>Exception handlers catch DedocError and generic Exception.</para>
+</listitem><listitem><para>/upload endpoint accepts multipart form data with file and query parameters. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why separate ProcessHandler instances based on ENABLE_CANCELLATION? A: CancellationProcessHandler uses multiprocessing for true process isolation during disconnect. For environments where cancellation is not needed, ProcessHandler is simpler and avoids multiprocessing overhead. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>FUNC 5[Root endpoint redirects to index.html] =&gt; get_info FUNC 5[Serves static files from configured directories] =&gt; get_static_file FUNC 4[Returns dedoc version string] =&gt; get_version FUNC 4[Resolves static file path from request params] =&gt; _get_static_file_path FUNC 10[Main upload endpoint — parses document and returns formatted result] =&gt; upload FUNC 7[Example document upload endpoint for testing] =&gt; upload_example FUNC 6[DedocError exception handler — returns structured JSON error] =&gt; exception_handler FUNC 5[Generic exception handler — returns 500 with traceback] =&gt; any_exception_handler FUNC 3[Returns the FastAPI app instance] =&gt; get_api FUNC 4[Launches uvicorn server on configured port] =&gt; run_api \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[upload]: Client =&gt; POST multipart file + parameters =&gt; Receive parsed document JSON/HTML</para>
+</listitem><listitem><para>[run_api]: Operator =&gt; Execute launch script =&gt; Start dedoc API server </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="31" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="31" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aa5795a7c5b861fd0cd477c559f1688a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.get_info</definition>
+        <argsstring>()</argsstring>
+        <name>get_info</name>
+        <qualifiedname>dedoc.api.dedoc_api.get_info</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Serve the root URL &quot;/&quot; with the static index.html page. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Required to avoid 404 from rest-plus bug when root is not defined. \par \b I/O\/ \:  None -&gt; FileResponse \par \b Complexity\/ \:  2</para>
+<para>Root URL &quot;/&quot; is need start with simple Flask before rest-plus. API otherwise you will get 404 Error. It is bug of rest-plus lib. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="81" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aea736ed62e8db821c9dc2a5914144451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.get_static_file</definition>
+        <argsstring>(Request request)</argsstring>
+        <name>get_static_file</name>
+        <qualifiedname>dedoc.api.dedoc_api.get_static_file</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Serve static files from configured directories based on query parameters (fname and directory). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _get_static_file_path \par \b I/O\/ \:  Request -&gt; FileResponse \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="95" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="95" bodyend="100"/>
+        <references refid="namespacededoc_1_1api_1_1dedoc__api_1aa6d49c14597c6ff6652a4e59f7e94fb0" compoundref="dedoc__api_8py" startline="113" endline="120">dedoc.api.dedoc_api._get_static_file_path</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1a10ca370460614f3968b07601d553c3a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.get_version</definition>
+        <argsstring>()</argsstring>
+        <name>get_version</name>
+        <qualifiedname>dedoc.api.dedoc_api.get_version</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return the current dedoc version as a plain text response. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; PlainTextResponse \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="105" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aa6d49c14597c6ff6652a4e59f7e94fb0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.dedoc_api._get_static_file_path</definition>
+        <argsstring>(Request request)</argsstring>
+        <name>_get_static_file_path</name>
+        <qualifiedname>dedoc.api.dedoc_api._get_static_file_path</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Resolve the absolute path to a static file from request query parameters (fname, directory), ensuring the path is within configured directories. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  Request -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="113" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="113" bodyend="120"/>
+        <referencedby refid="namespacededoc_1_1api_1_1dedoc__api_1aea736ed62e8db821c9dc2a5914144451" compoundref="dedoc__api_8py" startline="95" endline="100">dedoc.api.dedoc_api.get_static_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1abd85847ade59cdc43a555e207083e6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.upload</definition>
+        <argsstring>(Request request, UploadFile file=File(...), QueryParameters query_params=Depends())</argsstring>
+        <name>upload</name>
+        <qualifiedname>dedoc.api.dedoc_api.upload</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>UploadFile</type>
+          <declname>file</declname>
+          <defval>File(...)</defval>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters" kindref="compound">QueryParameters</ref></type>
+          <declname>query_params</declname>
+          <defval>Depends()</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Main dedoc API endpoint: receives a file upload via multipart form, parses it using the process handler, and returns the result in the requested format (json, html, plain_text, tree, etc.). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  process_handler.handle, json2html, json2txt, json2tree, json2collapsed_tree \par \b I/O\/ \:  (Request, UploadFile, QueryParameters) -&gt; Response \par \b Complexity\/ \:  9 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="126" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="126" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aa4b3937ad1928999b57404ef145baa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.upload_example</definition>
+        <argsstring>(Request request, str file_name, Optional[str] return_format=None)</argsstring>
+        <name>upload_example</name>
+        <qualifiedname>dedoc.api.dedoc_api.upload_example</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>return_format</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Serve an example document parsing result from the static examples directory for testing and demonstration purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  process_handler.handle, json2html \par \b I/O\/ \:  (Request, str, Optional[str]) -&gt; Response \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="181" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="181" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aa3823493596f9914883abd41b96690e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Response</type>
+        <definition> Response dedoc.api.dedoc_api.exception_handler</definition>
+        <argsstring>(Request request, DedocError exc)</argsstring>
+        <name>exception_handler</name>
+        <qualifiedname>dedoc.api.dedoc_api.exception_handler</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kindref="compound">DedocError</ref></type>
+          <declname>exc</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Catch DedocError exceptions and return a structured JSON error response with message, filename, version, and metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Request, DedocError) -&gt; JSONResponse \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="206" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="206" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1aa794a88f3b5fd08f6fff7f8bb4e949ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JSONResponse</type>
+        <definition> JSONResponse dedoc.api.dedoc_api.any_exception_handler</definition>
+        <argsstring>(Request request, Exception exc)</argsstring>
+        <name>any_exception_handler</name>
+        <qualifiedname>dedoc.api.dedoc_api.any_exception_handler</qualifiedname>
+        <param>
+          <type>Request</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>Exception</type>
+          <declname>exc</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Catch all unhandled exceptions and return a 500 JSON response with the exception message and full traceback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Request, Exception) -&gt; JSONResponse \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="223" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="223" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1a20f119b1c7b4876b3931063753b72752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FastAPI</type>
+        <definition> FastAPI dedoc.api.dedoc_api.get_api</definition>
+        <argsstring>()</argsstring>
+        <name>get_api</name>
+        <qualifiedname>dedoc.api.dedoc_api.get_api</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return the configured FastAPI application instance for external launchers or testing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; FastAPI \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="232" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1dedoc__api_1a4e0b7343a138d30cfcba0399cb844b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.api.dedoc_api.run_api</definition>
+        <argsstring>(FastAPI app)</argsstring>
+        <name>run_api</name>
+        <qualifiedname>dedoc.api.dedoc_api.run_api</qualifiedname>
+        <param>
+          <type>FastAPI</type>
+          <declname>app</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Launch the dedoc API server using uvicorn on the configured host (0.0.0.0) and port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  uvicorn.run \par \b I/O\/ \:  (FastAPI) -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/dedoc_api.py" line="241" column="1" bodyfile="dedoc/api/dedoc_api.py" bodystart="241" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/dedoc_api.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

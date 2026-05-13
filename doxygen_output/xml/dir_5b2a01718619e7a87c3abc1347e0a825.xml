@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_5b2a01718619e7a87c3abc1347e0a825" kind="dir">
+    <compoundname>dedoc/structure_constructors</compoundname>
+    <innerdir refid="dir_9b0da0a4b1c1ab3e0b53dd9eab07caba">dedoc/structure_constructors/concrete_structure_constructors</innerdir>
+    <innerfile refid="structure__constructors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__structure__constructor_8py">abstract_structure_constructor.py</innerfile>
+    <innerfile refid="structure__constructor__composition_8py">structure_constructor_composition.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::simple_txtlayer_classifier::SimpleTxtlayerClassifier</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a_1a6ba48a213b6a148c27e104cb6ee6d44a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.simple_txtlayer_classifier.SimpleTxtlayerClassifier.predict</definition>
+        <argsstring>(self, List[List[LineWithMeta]] lines)</argsstring>
+        <name>predict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.simple_txtlayer_classifier.SimpleTxtlayerClassifier.predict</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1afe7177a4ad74f9942361d065a837d1bc">predict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>lines</declname>
+          <array>[List[LineWithMeta]</array>
+        </param>
+        <briefdescription>
+<para>Classifies the correctness of the text layer in a PDF document. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param lines: list of lists with document textual lines. :returns: array of bool values - True if the textual layer is correct, False otherwise. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/simple_txtlayer_classifier.py" line="21" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/simple_txtlayer_classifier.py" bodystart="21" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple textual layer correctness classification. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The textual layer is considered as a correct if it isn&apos;t empty. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.simple_txtlayer_classifier.SimpleTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.simple_txtlayer_classifier.SimpleTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/simple_txtlayer_classifier.py" line="14" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_auto_reader/txtlayer_classifier/simple_txtlayer_classifier.py" bodystart="14" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a_1a6ba48a213b6a148c27e104cb6ee6d44a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_auto_reader::txtlayer_classifier::simple_txtlayer_classifier::SimpleTxtlayerClassifier</scope><name>predict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

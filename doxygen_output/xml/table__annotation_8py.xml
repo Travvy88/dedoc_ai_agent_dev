@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="table__annotation_8py" kind="file" language="Python">
+    <compoundname>table_annotation.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation" prot="public">dedoc::data_structures::concrete_annotations::table_annotation::TableAnnotation</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations">dedoc::data_structures::concrete_annotations</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation">dedoc::data_structures::concrete_annotations::table_annotation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1annotation" kindref="compound">dedoc.data_structures.annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1adce7dea687754c4253786f0548417229" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_TableAnnotation<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Table;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Indicate<sp/>the<sp/>place<sp/>of<sp/>the<sp/>table<sp/>in<sp/>the<sp/>original<sp/>document.<sp/>The<sp/>line<sp/>containing<sp/>this<sp/>annotation<sp/>is<sp/>placed<sp/>directly<sp/>before<sp/>the<sp/>referred<sp/>table.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation" kindref="compound">TableAnnotation</ref>(<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/>annotation<sp/>indicate<sp/>the<sp/>place<sp/>of<sp/>the<sp/>table<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>original<sp/>document.</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>The<sp/>line<sp/>containing<sp/>this<sp/>annotation<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>placed<sp/>directly<sp/>before<sp/>the<sp/>referred<sp/>table.</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="15" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation_1a037ce14670606549d445834e0a72e643" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;table&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Initialize<sp/>table<sp/>annotation<sp/>with<sp/>table<sp/>UID<sp/>reference.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>Annotation.__init__</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(str,<sp/>int,<sp/>int)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation_1a560ff675be6c39c6c739b98dd4f864bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation_1a560ff675be6c39c6c739b98dd4f864bc" kindref="member">__init__</ref>(self,<sp/>value:<sp/>str,<sp/>start:<sp/>int,<sp/>end:<sp/>int)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>value:<sp/>unique<sp/>identifier<sp/>of<sp/>the<sp/>table<sp/>which<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>referenced<sp/>inside<sp/>this<sp/>annotation</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>start:<sp/>start<sp/>of<sp/>the<sp/>annotated<sp/>text<sp/>(usually<sp/>zero)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>end:<sp/>end<sp/>of<sp/>the<sp/>annotated<sp/>text<sp/>(usually<sp/>end<sp/>of<sp/>the<sp/>line)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f&quot;[IMP:4][TableAnnotation][INIT]<sp/>value={value},<sp/>start={start},<sp/>end={end}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation_1a560ff675be6c39c6c739b98dd4f864bc" kindref="member">__init__</ref>(start=start,<sp/>end=end,<sp/>name=TableAnnotation.name,<sp/>value=value,<sp/>is_mergeable=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][TableAnnotation][INIT]<sp/>TableAnnotation<sp/>created<sp/>successfully&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_TableAnnotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Table;<sp/>TECH(3):<sp/>DataStructure,<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>table<sp/>reference<sp/>annotation<sp/>—<sp/>marks<sp/>where<sp/>a<sp/>table<sp/>is<sp/>placed<sp/>in<sp/>the<sp/>document<sp/>via<sp/>its<sp/>UID.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">##<sp/>@scope<sp/>Text<sp/>annotation<sp/>for<sp/>table<sp/>placement<sp/>references.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>@input<sp/>Table<sp/>UID<sp/>string.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">##<sp/>@output<sp/>TableAnnotation<sp/>instance<sp/>with<sp/>is_mergeable=False.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>@links<sp/>[INHERITS(9):<sp/>Annotation]</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">##<sp/>-<sp/>is_mergeable<sp/>is<sp/>always<sp/>False</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is_mergeable=False?</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>table<sp/>reference<sp/>is<sp/>unique<sp/>and<sp/>should<sp/>not<sp/>be<sp/>merged<sp/>with<sp/>others.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>CLASS<sp/>10[Table<sp/>reference<sp/>annotation]<sp/>=&gt;<sp/>TableAnnotation</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>-<sp/>[TableAnnotation]:<sp/>Reader<sp/>→<sp/>MarkTablePlacement<sp/>→<sp/>TableAnnotationStored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1abea1d118048fe9db23dd795720511d5e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1abea1d118048fe9db23dd795720511d5e" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>table,<sp/>annotation,<sp/>text,<sp/>document,<sp/>reference,<sp/>uid,<sp/>placement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>[value,<sp/>start,<sp/>end]<sp/>→<sp/>⊕<sp/>super().__init__(name=&quot;table&quot;,<sp/>is_mergeable=False)<sp/>→<sp/>⎋<sp/>TableAnnotation</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/concrete_annotations/table_annotation.py"/>
+  </compounddef>
+</doxygen>

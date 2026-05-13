@@ -1,0 +1,6 @@
+var namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor =
+[
+    [ "PDFAttachmentsExtractor", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391.html", "classdedoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__d7988c45a6be2e946b991a05aca2e391" ],
+    [ "_module_contract", "namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor.html#a1231f07c2baad44cda742402b193130b", null ],
+    [ "logger", "namespacededoc_1_1attachments__extractors_1_1concrete__attachments__extractors_1_1pdf__attachments__extractor.html#aaf448af37607f7f73e08ef42bb49d7aa", null ]
+];

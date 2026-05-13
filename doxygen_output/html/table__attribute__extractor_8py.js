@@ -1,0 +1,5 @@
+var table__attribute__extractor_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1" ],
+    [ "_module_contract", "table__attribute__extractor_8py.html#abd0d82627dd521ee73ea27919d36a1cf", null ]
+];

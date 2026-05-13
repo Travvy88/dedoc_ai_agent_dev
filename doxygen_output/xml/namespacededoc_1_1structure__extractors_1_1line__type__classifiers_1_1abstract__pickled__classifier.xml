@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067" prot="public">dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier::AbstractPickledLineTypeClassifier</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_1a5b12bdb69d56165b7930ca1209691d31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Document structure extraction for structure_extractors/line_type_classifiers/abstract_pickled_classifier: line classification, hierarchy level assignment, pattern matching. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Structure extraction pipeline — structure_extractors/line_type_classifiers/abstract_pickled_classifier \par \b Input\/ \:  Document lines with reader metadata. \par \b Output\/ \:  Lines annotated with hierarchy levels and line type labels. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>; READS_DATA_FROM(8): readers] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Output lines preserve input order. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS [Weight 7][Structure extraction] =&gt; AbstractPickledLineTypeClassifier \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" line="118" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" bodystart="118" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

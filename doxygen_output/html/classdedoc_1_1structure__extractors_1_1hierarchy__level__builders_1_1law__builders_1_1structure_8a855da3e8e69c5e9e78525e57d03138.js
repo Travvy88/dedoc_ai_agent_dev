@@ -1,0 +1,8 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138 =
+[
+    [ "structure_unit", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138.html#a903a1d7001e305c649d91fdaedafbb73", null ],
+    [ "document_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138.html#a886a735cee83b000996964b2fe9ded76", null ],
+    [ "regexps_item", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138.html#a9250521d0b86c51130b9160eca44177c", null ],
+    [ "regexps_subitem_with_char", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138.html#aab43d3eca7d0df85b46d7efdf35659b9", null ],
+    [ "regexps_subitem_with_number", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_8a855da3e8e69c5e9e78525e57d03138.html#a5cd72141981715b9eb2c8defee7d7d15", null ]
+];

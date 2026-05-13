@@ -1,6 +1,10 @@
 import re
 from typing import List, Optional
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 import numpy as np
 from numpy import median
 
@@ -16,13 +20,17 @@ from dedoc.readers.pdf_reader.data_classes.text_with_bbox import TextWithBBox
 from dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.font_type_classifier import FontTypeClassifier
 
 
+# region CLASS_LineMetadataExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class LineMetadataExtractor:
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, default_spacing: int = 50, *, config: dict) -> None:
         self.config = config
         self.font_type_classifier = FontTypeClassifier()
         self.default_spacing = default_spacing
 
+    # region METHOD_predict_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def predict_annotations(self, page_with_lines: PageWithBBox) -> PageWithBBox:
         image_height, image_width, *_ = page_with_lines.image.shape
         page_with_fonts = self.font_type_classifier.predict_annotations(page_with_lines)
@@ -33,6 +41,8 @@ class LineMetadataExtractor:
 
         return page_with_fonts
 
+    # region METHOD_extract_metadata_and_set_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_predict_annotations
     def extract_metadata_and_set_annotations(self, page_with_lines: PageWithBBox, call_classifier: bool = True) -> List[LineWithLocation]:
         """
         Take page with extracted lines and bboxes and determine line type as bold, italic, text alignment and so on
@@ -55,7 +65,9 @@ class LineMetadataExtractor:
         self.__add_spacing_annotations(lines)
         return lines
 
+    # endregion METHOD_extract_metadata_and_set_annotations
     @staticmethod
+    # region METHOD_get_line_with_meta [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def get_line_with_meta(bbox: TextWithBBox) -> LineWithLocation:
         metadata = LineMetadata(page_id=bbox.page_num, line_id=bbox.line_num)
 
@@ -66,7 +78,9 @@ class LineMetadataExtractor:
                                 location=Location(bbox=bbox.bbox, page_number=bbox.page_num))
         return line
 
+    # endregion METHOD_get_line_with_meta
     @staticmethod
+    # region METHOD_convert_pixels_into_indentation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def convert_pixels_into_indentation(indentation_width: int, image_width: int) -> int:
         # ref from http://officeopenxml.com/WPindentation.php
         # Values are in twentieths of a point: 1440 twips = 1 inch; 567 twips = 1 centimeter.
@@ -78,6 +92,8 @@ class LineMetadataExtractor:
 
         return indentation
 
+    # region METHOD__get_text_left_bound [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_convert_pixels_into_indentation
     def _get_text_left_bound(self, line_left_points: List[int]) -> int:
         """
             returns coordinates of left bound of the texts
@@ -90,6 +106,8 @@ class LineMetadataExtractor:
 
         return min(two_frequent_bound)
 
+    # region METHOD___get_left_bound_of_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__get_text_left_bound
     def __get_left_bound_of_text(self, page: PageWithBBox) -> Optional[int]:
         left_points = []
         for text_with_bbox in page.bboxes:
@@ -99,6 +117,8 @@ class LineMetadataExtractor:
 
         return self._get_text_left_bound(line_left_points=left_points)
 
+    # region METHOD___set_indentations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_left_bound_of_text
     def __set_indentations(self, page: PageWithBBox) -> PageWithBBox:
         image_height, image_width, *_ = page.image.shape
         spaces_for_tab = "    "
@@ -127,6 +147,8 @@ class LineMetadataExtractor:
 
         return page
 
+    # region METHOD___get_font_size [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___set_indentations
     def __get_font_size(self, bbox: TextWithBBox, image_height: int) -> int:
         """
         determines the font size by the bbox size, return font size in typography point
@@ -141,6 +163,8 @@ class LineMetadataExtractor:
         font_size_pt = font_size_mm / 0.353
         return round(font_size_pt)
 
+    # region METHOD___add_spacing_annotations [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_font_size
     def __add_spacing_annotations(self, lines: List[LineWithLocation]) -> None:
         """
         add spacing annotations to lines. Assume that lines are in the proper order. This method work in place
@@ -163,6 +187,8 @@ class LineMetadataExtractor:
             line.annotations.append(annotation)
             prev_line = line
 
+    # region METHOD___get_color_annotation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___add_spacing_annotations
     def __get_color_annotation(self, bbox_with_text: TextWithBBox, image: np.ndarray) -> ColorAnnotation:
         bbox = bbox_with_text.bbox
 
@@ -173,4 +199,32 @@ class LineMetadataExtractor:
             red, green, blue = [image_slice[not_white, i].mean() for i in range(3)]
         else:
             red, green, blue = 0, 0, 0
+# endregion CLASS_LineMetadataExtractor
         return ColorAnnotation(start=0, end=len(bbox_with_text.text), red=red, green=green, blue=blue)
+
+    # endregion METHOD___get_color_annotation
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_metadata_extractor; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Feature and metadata extraction from documents.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [22][LineMetadataExtractor reader/processor] => LineMetadataExtractor
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: metadata_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, LineMetadataExtractor
+# STRUCTURE: ▶ Init ┌PDF file┐ → [LineMetadataExtractor] ○ can_read? → ○ read → [__init__ → predict_annotations → extract_metadata_and_set_annotations] → ⊕ UnstructuredDocument(lines, tables, attachments)

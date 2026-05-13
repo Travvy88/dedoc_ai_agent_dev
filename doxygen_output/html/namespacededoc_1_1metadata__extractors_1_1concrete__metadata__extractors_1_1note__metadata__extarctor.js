@@ -1,0 +1,5 @@
+var namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor =
+[
+    [ "NoteMetadataExtractor", "classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor_1_1NoteMetadataExtractor.html", "classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor_1_1NoteMetadataExtractor" ],
+    [ "_module_contract", "namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor.html#a3dee02de86cf8d68cdabb41d7e6e5b90", null ]
+];

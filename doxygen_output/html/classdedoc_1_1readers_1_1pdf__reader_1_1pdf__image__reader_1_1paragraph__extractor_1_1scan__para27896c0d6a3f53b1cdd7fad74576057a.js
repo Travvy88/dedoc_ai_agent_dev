@@ -1,0 +1,13 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a23743481133cb4cf49f9e4c5833fc3e8", null ],
+    [ "_unpickle", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a1655384328ff7929dd264e270af9c718", null ],
+    [ "classifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a010052ece4299ed5db339822a8822e32", null ],
+    [ "extract", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#ae0571f279124d232036973bee9015cf9", null ],
+    [ "feature_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a6157baa801e52dfcb255953e33bddb0b", null ],
+    [ "_classifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a2fd7d1b56cba4a4fc10deeafd63c9ccf", null ],
+    [ "_feature_extractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a9fcf1e10e731d39c726ceb79f8976cad", null ],
+    [ "config", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a7f8bbf546dc8c8d3680ef1326053a435", null ],
+    [ "logger", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a86473c620acce2f2ecba1d2c563ae16d", null ],
+    [ "path", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html#a788d60658d326112a44dded200e0094f", null ]
+];

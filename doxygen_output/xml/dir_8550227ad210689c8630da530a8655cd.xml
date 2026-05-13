@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_8550227ad210689c8630da530a8655cd" kind="dir">
+    <compoundname>dedoc/common</compoundname>
+    <innerdir refid="dir_163924cbda5134882b674126e64fdf6d">dedoc/common/exceptions</innerdir>
+    <innerfile refid="common_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/common/"/>
+  </compounddef>
+</doxygen>

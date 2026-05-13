@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1metadata__extractors" kind="namespace" language="Python">
+    <compoundname>dedoc::metadata_extractors</compoundname>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors_1_1abstract__metadata__extractor">dedoc::metadata_extractors::abstract_metadata_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors">dedoc::metadata_extractors::concrete_metadata_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1metadata__extractors_1_1metadata__extractor__composition">dedoc::metadata_extractors::metadata_extractor_composition</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1metadata__extractors_1a7ffd6c6e20140f418563e6ccc651ae1b" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::metadata_extractors.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.metadata_extractors.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor" kindref="compound">AbstractMetadataExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1base__metadata__extractor_1_1BaseMetadataExtractor" kindref="compound">BaseMetadataExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1docx__metadata__extractor_1_1DocxMetadataExtractor" kindref="compound">DocxMetadataExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1image__metadata__extractor_1_1ImageMetadataExtractor" kindref="compound">ImageMetadataExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1note__metadata__extarctor_1_1NoteMetadataExtractor" kindref="compound">NoteMetadataExtractor</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1pdf__metadata__extractor_1_1PdfMetadataExtractor" kindref="compound">PdfMetadataExtractor</ref>&apos;, &apos;<ref refid="classdedoc_1_1metadata__extractors_1_1metadata__extractor__composition_1_1MetadataExtractorComposition" kindref="compound">MetadataExtractorComposition</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/__init__.py" line="33" column="1" bodyfile="dedoc/metadata_extractors/__init__.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1metadata__extractors_1aac8c1f9dd49e55c104359987a0fe2717" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.metadata_extractors._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.metadata_extractors._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To expose the public API of the metadata_extractors package — all extractor classes and the composition facade. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization, re-export of concrete extractors. \par \b Input\/ \:  None (package-level imports). \par \b Output\/ \:  Public symbols: AbstractMetadataExtractor, BaseMetadataExtractor, DocxMetadataExtractor, ImageMetadataExtractor, NoteMetadataExtractor, PdfMetadataExtractor, MetadataExtractorComposition. \par \b Links\/ \:  [USES_API(7): AbstractMetadataExtractor, MetadataExtractorComposition] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> always lists exactly 7 extractor symbols. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use <bold>all</bold> with explicit re-exports? A: Provides a stable public API surface — consumers import from <ref refid="namespacededoc_1_1metadata__extractors" kindref="compound">dedoc.metadata_extractors</ref> without knowing internal module paths. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup added.] \par \b Module Map\/ \:</para>
+<para>VAR 5[Public API surface] =&gt; <bold>all</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Package]: ExternalConsumer → ImportExtractors → GetAvailableExtractors </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/__init__.py" line="19" column="1" bodyfile="dedoc/metadata_extractors/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

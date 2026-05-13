@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1schema_1_1line__metadata" kind="namespace" language="Python">
+    <compoundname>dedoc::api::schema::line_metadata</compoundname>
+    <innerclass refid="classdedoc_1_1api_1_1schema_1_1line__metadata_1_1LineMetadata" prot="public">dedoc::api::schema::line_metadata::LineMetadata</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1schema_1_1line__metadata_1a72951d17227c438ddec6d161cd349d8b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::schema::line_metadata.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.schema.line_metadata.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="32" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1schema_1_1line__metadata_1ab2709b60ef16ae1ab68540ceeb86775b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.schema.line_metadata._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.schema.line_metadata._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the LineMetadata schema — a Pydantic model for paragraph/line-level metadata (paragraph type, page number, line number) with extra attributes support. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document line/paragraph metadata model. \par \b Input\/ \:  None (standalone model with Extra.allow). \par \b Output\/ \:  Pydantic BaseModel <computeroutput>LineMetadata</computeroutput> with paragraph_type, page_id, line_id + extra fields. \par \b Links\/ \:  [USES_API(7): pydantic.BaseModel, pydantic.Extra] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>page_id &gt;= 0.</para>
+</listitem><listitem><para>paragraph_type is always a non-empty string (e.g., &quot;raw_text&quot;, &quot;header&quot;, &quot;list_item&quot;).</para>
+</listitem><listitem><para>Extra fields preserved for format-specific metadata. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why Extra.allow for line metadata? A: Different parsers attach different metadata (heading levels, indentation, list numbering). Extra.allow prevents loss. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>CLASS 9[Line/paragraph metadata with extra attributes] =&gt; LineMetadata \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[LineMetadata]: StructureExtractor =&gt; AnnotateParagraph =&gt; PassToTreeNode </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/line_metadata.py" line="21" column="1" bodyfile="dedoc/api/schema/line_metadata.py" bodystart="21" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/schema/line_metadata.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

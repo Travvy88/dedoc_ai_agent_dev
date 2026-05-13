@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metadata__extractor =
+[
+    [ "LineMetadataExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metadata__extractor.html#a38dde0dba00a266936d61d71d6d97172", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metadata__extractor.html#a92114a7c4bd7fb5363583dc08300e071", null ]
+];

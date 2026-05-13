@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::hierarchy_level::HierarchyLevel</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae2a6e6c1e6415c049cc18bde169578ef" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.root</qualifiedname>
+        <initializer>=  &quot;root&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="34" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1abfe2a02c630146df64d199728709b11c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::toc</definition>
+        <argsstring></argsstring>
+        <name>toc</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.toc</qualifiedname>
+        <initializer>=  &quot;toc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="35" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a72474393f31e80484e18d38b96a00f2a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.header</qualifiedname>
+        <initializer>=  &quot;header&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="36" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae7783477e2f087d45981e1649ac0deff" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::toc_item</definition>
+        <argsstring></argsstring>
+        <name>toc_item</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.toc_item</qualifiedname>
+        <initializer>=  &quot;toc_item&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="37" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1aa4d775aa22e57492e3bf86e4f362f4e2" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.list</qualifiedname>
+        <initializer>=  &quot;list&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="38" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a8846a07e444d917b571ba1d21604d18c" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::list_item</definition>
+        <argsstring></argsstring>
+        <name>list_item</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.list_item</qualifiedname>
+        <initializer>=  &quot;list_item&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="39" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ab11651f9994106285019d391f4dd58fa" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::bullet_list_item</definition>
+        <argsstring></argsstring>
+        <name>bullet_list_item</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.bullet_list_item</qualifiedname>
+        <initializer>=  &quot;bullet_list_item&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="40" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ade2e39827a2599d23d8ddb1b7292e8c3" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::raw_text</definition>
+        <argsstring></argsstring>
+        <name>raw_text</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.raw_text</qualifiedname>
+        <initializer>=  &quot;raw_text&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="41" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a4aea038404662dfa3a00bfb41be8b40a" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::footer</definition>
+        <argsstring></argsstring>
+        <name>footer</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.footer</qualifiedname>
+        <initializer>=  &quot;footer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="42" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::page_id</definition>
+        <argsstring></argsstring>
+        <name>page_id</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.page_id</qualifiedname>
+        <initializer>=  &quot;page_id&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="43" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a202f559cf3beb89bb071c23a76bbd449" compoundref="data__structures_2line__metadata_8py" startline="41" endline="55">dedoc.data_structures.line_metadata.LineMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape_1a101749e2d3402bdbad1007fc3af8a362" compoundref="shape_8py" startline="33" endline="61">dedoc.readers.pptx_reader.shape.PptxShape.get_lines</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d" compoundref="data__structures_2line__metadata_8py" startline="63" endline="70">dedoc.data_structures.line_metadata.LineMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1aeb4125530575e6632215a2e72bc0f714" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.hierarchy_level.HierarchyLevel::unknown</definition>
+        <argsstring></argsstring>
+        <name>unknown</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.unknown</qualifiedname>
+        <initializer>=  &quot;unknown&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="44" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a246ebb309539f043d0c52295a22aee24" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.hierarchy_level.HierarchyLevel::level_1</definition>
+        <argsstring></argsstring>
+        <name>level_1</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.level_1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="113" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac37fa9b6418057429fd2b4ef9663773e" compoundref="hierarchy__level_8py" startline="80" endline="94">dedoc.data_structures.hierarchy_level.HierarchyLevel.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a5b752ddf58f66b55f076c8577cdef95d" compoundref="hierarchy__level_8py" startline="50" endline="64">dedoc.data_structures.hierarchy_level.HierarchyLevel.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a36004a29624692471a3eac0608d234b2" compoundref="hierarchy__level_8py" startline="71" endline="72">dedoc.data_structures.hierarchy_level.HierarchyLevel.__is_defined</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a7b626ba8782ebc8ed314e473e6355055" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.hierarchy_level.HierarchyLevel::level_2</definition>
+        <argsstring></argsstring>
+        <name>level_2</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.level_2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="113" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac37fa9b6418057429fd2b4ef9663773e" compoundref="hierarchy__level_8py" startline="80" endline="94">dedoc.data_structures.hierarchy_level.HierarchyLevel.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a5b752ddf58f66b55f076c8577cdef95d" compoundref="hierarchy__level_8py" startline="50" endline="64">dedoc.data_structures.hierarchy_level.HierarchyLevel.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a36004a29624692471a3eac0608d234b2" compoundref="hierarchy__level_8py" startline="71" endline="72">dedoc.data_structures.hierarchy_level.HierarchyLevel.__is_defined</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a6ac128f5d8c6fe4bf5a3a770002b30b2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.hierarchy_level.HierarchyLevel::line_type</definition>
+        <argsstring></argsstring>
+        <name>line_type</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.line_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="152" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="152" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a5b752ddf58f66b55f076c8577cdef95d" compoundref="hierarchy__level_8py" startline="50" endline="64">dedoc.data_structures.hierarchy_level.HierarchyLevel.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac682ccfb70f21b06bd6f9e305d81f840" compoundref="hierarchy__level_8py" startline="170" endline="174">dedoc.data_structures.hierarchy_level.HierarchyLevel.is_list_item</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a905ce7e9c14476db89cc7d52dc24d95f" compoundref="hierarchy__level_8py" startline="159" endline="163">dedoc.data_structures.hierarchy_level.HierarchyLevel.is_unknown</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a5b752ddf58f66b55f076c8577cdef95d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.hierarchy_level.HierarchyLevel.__init__</definition>
+        <argsstring>(self, Optional[int] level_1, Optional[int] level_2, bool can_be_multiline, str line_type)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>level_1</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>level_2</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>can_be_multiline</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>line_type</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize hierarchy level with validated level_1, level_2, multiline flag, and line type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Optional[int], Optional[int], bool, str) -&gt; None \par \b Complexity\/ \:  3</para>
+<para>:param level_1: value of a line&apos;s primary importance :param level_2: level of the line inside specific class :param can_be_multiline: is used to unify lines inside tree node, if line can be multiline, it can be joined with another line :param line_type: type of the line </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="50" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="50" bodyend="64"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a246ebb309539f043d0c52295a22aee24" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_1</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a7b626ba8782ebc8ed314e473e6355055" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_2</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a6ac128f5d8c6fe4bf5a3a770002b30b2" compoundref="hierarchy__level_8py" startline="152">dedoc.data_structures.hierarchy_level.HierarchyLevel.line_type</references>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac37fa9b6418057429fd2b4ef9663773e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.__eq__</definition>
+        <argsstring>(self, &quot;HierarchyLevel&quot; other)</argsstring>
+        <name>__eq__</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__eq__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;HierarchyLevel&quot;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compare two hierarchy levels — None values are treated as +inf for equality. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __to_number \par \b I/O\/ \:  (HierarchyLevel) -&gt; bool \par \b Complexity\/ \:  3</para>
+<para>Defines the equality of two hierarchy levels:<itemizedlist>
+<listitem><para>two lines with equal level_1, level_2 are equal.</para>
+</listitem><listitem><para>if some of the levels is None, its value is considered as +inf (infinities have equal value)</para>
+</listitem></itemizedlist>
+</para>
+<para>:param other: other hierarchy level :return: whether current hierarchy level == other hierarchy level </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="80" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="80" bodyend="94"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac1ec3cc0708d049433e402aff41a5b4b" compoundref="hierarchy__level_8py" startline="138" endline="141">dedoc.data_structures.hierarchy_level.HierarchyLevel.__to_number</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a246ebb309539f043d0c52295a22aee24" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_1</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a7b626ba8782ebc8ed314e473e6355055" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_2</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae578dae6d40304bcf706dc9620e38e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.__lt__</definition>
+        <argsstring>(self, &quot;HierarchyLevel&quot; other)</argsstring>
+        <name>__lt__</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__lt__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;HierarchyLevel&quot;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compare two hierarchy levels for ordering — lower level_1/level_2 means more important. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __is_defined, __to_number \par \b I/O\/ \:  (HierarchyLevel) -&gt; bool \par \b Complexity\/ \:  5</para>
+<para>Defines the comparison of hierarchy levels:<itemizedlist>
+<listitem><para>current level &lt; other level if (level_1, level_2) &lt; other (level_1, level_2);</para>
+</listitem><listitem><para>if some of the levels is None, its value is considered as +inf (infinities have equal value)</para>
+</listitem></itemizedlist>
+</para>
+<para>:param other: other hierarchy level :return: whether current hierarchy level &lt; other hierarchy level </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="102" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="102" bodyend="122"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a36004a29624692471a3eac0608d234b2" compoundref="hierarchy__level_8py" startline="71" endline="72">dedoc.data_structures.hierarchy_level.HierarchyLevel.__is_defined</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a157feb8870600eae52e4a583360d1004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.hierarchy_level.HierarchyLevel.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__str__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return string representation of the hierarchy level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="129" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="129" bodyend="130"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1a0c57353795449385f0700ea5647aaa75" compoundref="data__structures_2annotation_8py" startline="77" endline="78">dedoc.data_structures.annotation.Annotation.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a7779b220dda6fc7493fcd0e381d0ff5d" compoundref="cell_8py" startline="79" endline="82">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a565bcd1f42c3995b69b93f3ceaeef88a" compoundref="text__with__bbox_8py" startline="48" endline="50">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a6f05208ffa507d861cc2be9eedeaf6c9" compoundref="word__with__bbox_8py" startline="23" endline="25">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a4c345e691196f07d00ba00134687557f" compoundref="prefix_8py" startline="124" endline="127">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__repr__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a280107047ca02794c484157f5bc3879a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.is_raw_text</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_raw_text</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.is_raw_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check if the line is raw text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; bool \par \b Complexity\/ \:  1</para>
+<para>Check if the line is raw text. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="148" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a905ce7e9c14476db89cc7d52dc24d95f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.is_unknown</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_unknown</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.is_unknown</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check if the line type is unknown (only for levels from readers). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; bool \par \b Complexity\/ \:  1</para>
+<para>Check if the type of the line is unknown (only for levels from readers). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="159" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="159" bodyend="163"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a6ac128f5d8c6fe4bf5a3a770002b30b2" compoundref="hierarchy__level_8py" startline="152">dedoc.data_structures.hierarchy_level.HierarchyLevel.line_type</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac682ccfb70f21b06bd6f9e305d81f840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.is_list_item</definition>
+        <argsstring>(self)</argsstring>
+        <name>is_list_item</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.is_list_item</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check if the line is a list item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; bool \par \b Complexity\/ \:  1</para>
+<para>Check if the line is a list item. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="170" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="170" bodyend="174"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a6ac128f5d8c6fe4bf5a3a770002b30b2" compoundref="hierarchy__level_8py" startline="152">dedoc.data_structures.hierarchy_level.HierarchyLevel.line_type</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a36004a29624692471a3eac0608d234b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.data_structures.hierarchy_level.HierarchyLevel.__is_defined</definition>
+        <argsstring>(self, &quot;HierarchyLevel&quot; other)</argsstring>
+        <name>__is_defined</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__is_defined</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;HierarchyLevel&quot;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Check if both self and other have defined (non-None) level_1 and level_2. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (HierarchyLevel) -&gt; bool \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="71" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="71" bodyend="72"/>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a246ebb309539f043d0c52295a22aee24" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_1</references>
+        <references refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a7b626ba8782ebc8ed314e473e6355055" compoundref="hierarchy__level_8py" startline="113">dedoc.data_structures.hierarchy_level.HierarchyLevel.level_2</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae578dae6d40304bcf706dc9620e38e19" compoundref="hierarchy__level_8py" startline="102" endline="122">dedoc.data_structures.hierarchy_level.HierarchyLevel.__lt__</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac1ec3cc0708d049433e402aff41a5b4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.data_structures.hierarchy_level.HierarchyLevel.__to_number</definition>
+        <argsstring>(self, Optional[int] x)</argsstring>
+        <name>__to_number</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.__to_number</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>x</declname>
+          <array>[int]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert Optional[int] to number, mapping None to +inf for comparison purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  numpy \par \b I/O\/ \:  Optional[int] -&gt; int \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="138" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="138" bodyend="141"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac37fa9b6418057429fd2b4ef9663773e" compoundref="hierarchy__level_8py" startline="80" endline="94">dedoc.data_structures.hierarchy_level.HierarchyLevel.__eq__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1af532a20451d26a6767af719056d78ff7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;HierarchyLevel&quot;</type>
+        <definition> &quot;HierarchyLevel&quot; dedoc.data_structures.hierarchy_level.HierarchyLevel.create_raw_text</definition>
+        <argsstring>()</argsstring>
+        <name>create_raw_text</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.create_raw_text</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create hierarchy level for a raw textual line (both levels None). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; HierarchyLevel \par \b Complexity\/ \:  1</para>
+<para>Create hierarchy level for a raw textual line. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="182" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="182" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a3d92e146d0d014cc47322d6bc91cac2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;HierarchyLevel&quot;</type>
+        <definition> &quot;HierarchyLevel&quot; dedoc.data_structures.hierarchy_level.HierarchyLevel.create_unknown</definition>
+        <argsstring>()</argsstring>
+        <name>create_unknown</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.create_unknown</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create hierarchy level for a line with unknown type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; HierarchyLevel \par \b Complexity\/ \:  1</para>
+<para>Create hierarchy level for a line with unknown type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="194" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="194" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a78828f5a90c47e105036a18d2c3f68c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;HierarchyLevel&quot;</type>
+        <definition> &quot;HierarchyLevel&quot; dedoc.data_structures.hierarchy_level.HierarchyLevel.create_root</definition>
+        <argsstring>()</argsstring>
+        <name>create_root</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.HierarchyLevel.create_root</qualifiedname>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Create hierarchy level for the document root (level_1=0, level_2=0). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; HierarchyLevel \par \b Complexity\/ \:  1</para>
+<para>Create hierarchy level for the document root. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="206" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="206" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Define the hierarchical level of a document line — encodes primary (level_1) and secondary (level_2) importance with line type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class defines the level of the document line. The lower is its value, the more important the line is.</para>
+<para>The level of the line consists of two parts:<itemizedlist>
+<listitem><para>level_1 defines primary importance (e.g. root - level_1=0, header - level_1=1, etc.);</para>
+</listitem><listitem><para>level_2 defines the level inside lines of equal type (e.g. for list items - &quot;1.&quot; - level_2=1, &quot;1.1.&quot; - level_2=2, etc.).</para>
+</listitem></itemizedlist>
+</para>
+<para>For the least important lines (line_type=raw_text) both levels are None.</para>
+<para>Look to the :ref:<computeroutput>hierarchy level description &lt;add_structure_type_hierarchy_level&gt;</computeroutput> to get more details.</para>
+<para>:ivar level_1: value of a line&apos;s primary importance :ivar level_2: level of the line inside specific class :ivar can_be_multiline: is used to unify lines inside tree node, if line can be multiline, it can be joined with another line :ivar line_type: type of the line, e.g. raw text, list item, header, etc.</para>
+<para>:vartype level_1: Optional[int] :vartype level_2: Optional[int] :vartype can_be_multiline: bool :vartype line_type: str </para>
+    </detaileddescription>
+    <location file="dedoc/data_structures/hierarchy_level.py" line="11" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="11" bodyend="214"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac37fa9b6418057429fd2b4ef9663773e" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__eq__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a5b752ddf58f66b55f076c8577cdef95d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a36004a29624692471a3eac0608d234b2" prot="private" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__is_defined</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae578dae6d40304bcf706dc9620e38e19" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__lt__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a157feb8870600eae52e4a583360d1004" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__str__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac1ec3cc0708d049433e402aff41a5b4b" prot="private" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>__to_number</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ab11651f9994106285019d391f4dd58fa" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>bullet_list_item</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1af532a20451d26a6767af719056d78ff7" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>create_raw_text</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a78828f5a90c47e105036a18d2c3f68c1" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>create_root</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a3d92e146d0d014cc47322d6bc91cac2c" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>create_unknown</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a4aea038404662dfa3a00bfb41be8b40a" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>footer</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a72474393f31e80484e18d38b96a00f2a" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>header</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ac682ccfb70f21b06bd6f9e305d81f840" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>is_list_item</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a280107047ca02794c484157f5bc3879a" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>is_raw_text</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a905ce7e9c14476db89cc7d52dc24d95f" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>is_unknown</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a246ebb309539f043d0c52295a22aee24" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>level_1</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a7b626ba8782ebc8ed314e473e6355055" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>level_2</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a6ac128f5d8c6fe4bf5a3a770002b30b2" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>line_type</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1aa4d775aa22e57492e3bf86e4f362f4e2" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>list</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a8846a07e444d917b571ba1d21604d18c" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>list_item</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1afb26e8a66270868670ec7ba3a65189f3" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>page_id</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ade2e39827a2599d23d8ddb1b7292e8c3" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>raw_text</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae2a6e6c1e6415c049cc18bde169578ef" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>root</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1abfe2a02c630146df64d199728709b11c" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>toc</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1ae7783477e2f087d45981e1649ac0deff" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>toc_item</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1aeb4125530575e6632215a2e72bc0f714" prot="public" virt="non-virtual"><scope>dedoc::data_structures::hierarchy_level::HierarchyLevel</scope><name>unknown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

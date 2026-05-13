@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::concrete_annotations::italic_annotation</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation_1_1ItalicAnnotation" prot="public">dedoc::data_structures::concrete_annotations::italic_annotation::ItalicAnnotation</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation_1a37a83b6d482576bcd5813df18f74f051" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::concrete_annotations::italic_annotation.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.italic_annotation.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/italic_annotation.py" line="5" column="1" bodyfile="dedoc/data_structures/concrete_annotations/italic_annotation.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation_1a7b47f1b073985c359ef656583a1510e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.italic_annotation._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.italic_annotation._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide italic text annotation — marks which portion of text is rendered in italic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Text annotation for italic formatting. \par \b Input\/ \:  Italic boolean value (&quot;True&quot;/&quot;False&quot;). \par \b Output\/ \:  ItalicAnnotation instance. \par \b Links\/ \:  [INHERITS(9): Annotation] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>value is always &quot;True&quot; or &quot;False&quot; \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use string boolean rather than native bool? A: Annotation.value is str-typed for uniform serialization across all annotation types. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Italic text annotation] =&gt; ItalicAnnotation \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[ItalicAnnotation]: Reader → ExtractItalicFormatting → ItalicAnnotationStored </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/italic_annotation.py" line="56" column="1" bodyfile="dedoc/data_structures/concrete_annotations/italic_annotation.py" bodystart="56" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/concrete_annotations/italic_annotation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

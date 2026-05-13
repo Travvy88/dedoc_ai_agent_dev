@@ -11,6 +11,7 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 ContourCell = namedtuple("ContourCell", ["id_con", "image"])
 
 
+# region CLASS_TableTree [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class TableTree(object):
     """
     Table which has cells as sorted childs of tree.
@@ -21,6 +22,7 @@ class TableTree(object):
     minimal_cell_cnt_line = 5
     minimal_cell_avg_length_line = 10
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict) -> None:
         import logging
 
@@ -35,6 +37,8 @@ class TableTree(object):
         self.config = config
         self.logger = config.get("logger", logging.getLogger())
 
+    # region METHOD_set_text_into_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def set_text_into_tree(self, tree: "TableTree", src_image: ndarray, language: str = "rus", *, config: dict) -> None:
         import logging
         from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor import OCRCellExtractor
@@ -62,6 +66,8 @@ class TableTree(object):
         for lines, tree in zip(lines_with_meta, trees):
             tree.lines = lines
 
+    # region METHOD_set_crop_text_box [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_set_text_into_tree
     def set_crop_text_box(self, page_image: ndarray) -> None:
         from dedoc.utils.image_utils import crop_image_text
 
@@ -71,7 +77,9 @@ class TableTree(object):
         self.crop_text_box.x_top_left += self.cell_box.x_top_left
         self.crop_text_box.y_top_left += self.cell_box.y_top_left
 
+    # endregion METHOD_set_crop_text_box
     @staticmethod
+    # region METHOD_parse_contours_to_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def parse_contours_to_tree(contours: List, hierarchy: List, *, config: dict) -> "TableTree":
         import cv2
 
@@ -86,6 +94,8 @@ class TableTree(object):
         table_tree = table_tree.__build_childs(table_tree, hierarchy, contours)
         return table_tree
 
+    # region METHOD_print_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_parse_contours_to_tree
     def print_tree(self, depth: int) -> None:
         if not self.cell_box or not self.id_contours:
             return
@@ -96,6 +106,8 @@ class TableTree(object):
         for ch in self.children:
             ch.print_tree(depth + 1)
 
+    # region METHOD___build_childs [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_print_tree
     def __build_childs(self, cur: "TableTree", hierarchy: List, contours: List) -> "TableTree":
         import cv2
 
@@ -119,8 +131,40 @@ class TableTree(object):
         cur.children = sorted(cur.children, key=lambda ch: (ch.cell_box.x_top_left, ch.cell_box.y_top_left), reverse=False)
         return cur
 
+    # region METHOD_get_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___build_childs
     def get_text(self) -> str:
         return "\n".join([line.line for line in self.lines])
 
+    # region METHOD___add_child [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_get_text
     def __add_child(self, child_tree: "TableTree") -> None:
+# endregion CLASS_TableTree
         self.children.append(child_tree)
+
+    # endregion METHOD___add_child
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_table_tree; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Data model definitions.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [16][TableTree reader/processor] => TableTree
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: table_tree, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, TableTree
+# STRUCTURE: ▶ Init ┌PDF file┐ → [TableTree] ○ can_read? → ○ read → [__init__ → set_text_into_tree → set_crop_text_box] → ⊕ UnstructuredDocument(lines, tables, attachments)

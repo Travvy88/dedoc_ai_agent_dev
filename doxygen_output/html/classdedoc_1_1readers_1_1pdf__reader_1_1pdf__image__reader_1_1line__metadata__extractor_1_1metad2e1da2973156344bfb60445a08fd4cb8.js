@@ -1,0 +1,17 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#ac4691c50ddcd9912958e107157607c83", null ],
+    [ "__add_spacing_annotations", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a3f8ddaeea6cea8479434070d9a84f50c", null ],
+    [ "__get_color_annotation", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#ad2602ece176c7678e3efc0e4046dee29", null ],
+    [ "__get_font_size", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a9c06a7c05fe6b8f7678978e00a42b1a1", null ],
+    [ "__get_left_bound_of_text", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a7a39d012262c5e389a6cea441a684659", null ],
+    [ "__set_indentations", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#af92d42d1125c3f5847087557a1aae9ca", null ],
+    [ "_get_text_left_bound", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#ab902f8f7c52b5849ee102a5a99025217", null ],
+    [ "convert_pixels_into_indentation", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a88196ded60f24013c3bfaa1b6506ad1b", null ],
+    [ "extract_metadata_and_set_annotations", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a5be6f4a7b8859e0676fc94875eef9dd6", null ],
+    [ "get_line_with_meta", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a8d7b93ad7bdfa3beba353333c5defd81", null ],
+    [ "predict_annotations", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#ac5e8a474d70b0dcbae45df98339dc746", null ],
+    [ "config", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#ab1951c1cb981f7780420de9a8936a111", null ],
+    [ "default_spacing", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#aae8062013f4fd5f96f04b027e4102a52", null ],
+    [ "font_type_classifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8.html#a46e3bc5a764481da0e354fe849b068bc", null ]
+];

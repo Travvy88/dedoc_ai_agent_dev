@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::common::exceptions::dedoc_error::DedocError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1bad__file__error_1_1BadFileFormatError" prot="public" virt="non-virtual">dedoc.common.exceptions.bad_file_error.BadFileFormatError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1bad__parameters__error_1_1BadParametersError" prot="public" virt="non-virtual">dedoc.common.exceptions.bad_parameters_error.BadParametersError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError" prot="public" virt="non-virtual">dedoc.common.exceptions.conversion_error.ConversionError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError" prot="public" virt="non-virtual">dedoc.common.exceptions.java_not_found_error.JavaNotFoundError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError" prot="public" virt="non-virtual">dedoc.common.exceptions.missing_file_error.MissingFileError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1recognize__error_1_1RecognizeError" prot="public" virt="non-virtual">dedoc.common.exceptions.recognize_error.RecognizeError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError" prot="public" virt="non-virtual">dedoc.common.exceptions.structure_extractor_error.StructureExtractorError</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1common_1_1exceptions_1_1tabby__pdf__error_1_1TabbyPdfError" prot="public" virt="non-virtual">dedoc.common.exceptions.tabby_pdf_error.TabbyPdfError</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1af774968bbbda4ff2925d42d7e7ae830d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.msg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="52" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a8f222c5b50c5eea5b669fc12284af06f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::msg_api</definition>
+        <argsstring></argsstring>
+        <name>msg_api</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.msg_api</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="53" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a82a9eba18d481352048963642be68fcd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.filename</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="54" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a3fff6e6f3bb9605d60f50b84a360ec15" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="55" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="56" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a946194684b9fcaf11ecb98b689dee5f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.common.exceptions.dedoc_error.DedocError::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.code</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="57" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a017a20e4f531348995fffc3e7cb3b094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.common.exceptions.dedoc_error.DedocError.__init__</definition>
+        <argsstring>(self, str msg, Optional[str] msg_api=None, Optional[str] filename=None, Optional[str] version=None, Optional[dict] metadata=None, Optional[int] code=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.__init__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1bad__file__error_1_1BadFileFormatError_1afaf6f325866d6cd57899f1b331082731">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1bad__parameters__error_1_1BadParametersError_1aba08e9a474833103f14499243054a63f">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a5212bc6549001bdbcd1a5728b9ac8fcb">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError_1ae5a216bbdddab638f636b797922f9147">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a044cc5855e9780a619bbb88766f65426">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1recognize__error_1_1RecognizeError_1a3b4cd76d68d81be4ffe72f20cf86ef20">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1add9d5e000df722c55024b52ebf3fe18b">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1tabby__pdf__error_1_1TabbyPdfError_1a122830c2a1f062abc7367b9c4d3bb254">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>msg_api</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>filename</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>version</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>metadata</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>code</declname>
+          <array>[int]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize a DedocError with full error context — message, API message, filename, version, metadata, and HTTP status code. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  <ref refid="namespacededoc_1_1version" kindref="compound">dedoc.version</ref> \par \b I/O\/ \:  (msg: str, msg_api: Optional[str], filename: Optional[str], version: Optional[str], metadata: Optional[dict], code: Optional[int]) -&gt; None \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="43" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="49" bodyend="58"/>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a017a20e4f531348995fffc3e7cb3b094" compoundref="dedoc__error_8py" startline="49" endline="58">dedoc.common.exceptions.dedoc_error.DedocError.__init__</references>
+        <referencedby refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a017a20e4f531348995fffc3e7cb3b094" compoundref="dedoc__error_8py" startline="49" endline="58">dedoc.common.exceptions.dedoc_error.DedocError.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1aa91e048236906e7e7e5007faf5b92f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.common.exceptions.dedoc_error.DedocError.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.__str__</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1bad__file__error_1_1BadFileFormatError_1aea938f8f69e0a4cc7a99d12d2cd26025">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1bad__parameters__error_1_1BadParametersError_1a83ad4178a1af14b5aa2b8663c4379b22">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a154e8169f0b7927e5ef45946dc0e71d1">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError_1a2f17fbe0dc950f3b6b1be494b313cc5a">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError_1a5d63f429c60f9fbcc447f2e0806760a9">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1recognize__error_1_1RecognizeError_1a9e3c749eeff7308b3525c10e92e4ecd3">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1a5581493d82d18f0d3ee84bbcf330e2b5">__str__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1common_1_1exceptions_1_1tabby__pdf__error_1_1TabbyPdfError_1a4fd8ba9aeca4ecaa7557d1c94a386916">__str__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To provide a human-readable string representation of the error for logging and debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="65" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="65" bodyend="66"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1a0c57353795449385f0700ea5647aaa75" compoundref="data__structures_2annotation_8py" startline="77" endline="78">dedoc.data_structures.annotation.Annotation.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a7779b220dda6fc7493fcd0e381d0ff5d" compoundref="cell_8py" startline="79" endline="82">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a565bcd1f42c3995b69b93f3ceaeef88a" compoundref="text__with__bbox_8py" startline="48" endline="50">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a6f05208ffa507d861cc2be9eedeaf6c9" compoundref="word__with__bbox_8py" startline="23" endline="25">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a4c345e691196f07d00ba00134687557f" compoundref="prefix_8py" startline="124" endline="127">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__repr__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1ad135c11b757181d6bb72b668f3fc06cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>&quot;DedocError&quot;</type>
+        <definition> &quot;DedocError&quot; dedoc.common.exceptions.dedoc_error.DedocError.from_dict</definition>
+        <argsstring>(dict error_dict)</argsstring>
+        <name>from_dict</name>
+        <qualifiedname>dedoc.common.exceptions.dedoc_error.DedocError.from_dict</qualifiedname>
+        <param>
+          <type>dict</type>
+          <declname>error_dict</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To reconstruct a DedocError instance from a dictionary, enabling error deserialization from JSON responses or stored error records. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  <ref refid="namespacededoc_1_1version" kindref="compound">dedoc.version</ref> \par \b I/O\/ \:  dict -&gt; DedocError \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/dedoc_error.py" line="75" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="75" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To provide a unified, serializable error base class that all dedoc-specific exceptions inherit from, enabling consistent API error responses with rich metadata. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>dedoc.common.exceptions.dedoc_error.DedocError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.common.exceptions.bad_file_error.BadFileFormatError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1bad__file__error_1_1BadFileFormatError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.common.exceptions.bad_parameters_error.BadParametersError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1bad__parameters__error_1_1BadParametersError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.common.exceptions.conversion_error.ConversionError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.common.exceptions.java_not_found_error.JavaNotFoundError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dedoc.common.exceptions.missing_file_error.MissingFileError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1missing__file__error_1_1MissingFileError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dedoc.common.exceptions.recognize_error.RecognizeError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1recognize__error_1_1RecognizeError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dedoc.common.exceptions.structure_extractor_error.StructureExtractorError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dedoc.common.exceptions.tabby_pdf_error.TabbyPdfError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1tabby__pdf__error_1_1TabbyPdfError"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>dedoc.common.exceptions.dedoc_error.DedocError</label>
+        <link refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/common/exceptions/dedoc_error.py" line="37" column="1" bodyfile="dedoc/common/exceptions/dedoc_error.py" bodystart="37" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a017a20e4f531348995fffc3e7cb3b094" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1aa91e048236906e7e7e5007faf5b92f28" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>__str__</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a946194684b9fcaf11ecb98b689dee5f8" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>code</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a82a9eba18d481352048963642be68fcd" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>filename</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1ad135c11b757181d6bb72b668f3fc06cc" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>from_dict</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>metadata</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1af774968bbbda4ff2925d42d7e7ae830d" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>msg</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a8f222c5b50c5eea5b669fc12284af06f" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>msg_api</name></member>
+      <member refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a3fff6e6f3bb9605d60f50b84a360ec15" prot="public" virt="non-virtual"><scope>dedoc::common::exceptions::dedoc_error::DedocError</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

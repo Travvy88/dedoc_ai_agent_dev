@@ -1,3 +1,8 @@
+# region CLASS_TableTypeAdditionalOptions [DOMAIN(7): DocumentProcessing; CONCEPT(8): TableType, TableRecognition; TECH(6): Python]
+## @purpose Define the enumeration of table recognition strategies for the PDF image table recognizer — controls which table detection algorithms are active.
+## @uses None (pure data class)
+## @io None -> None (constructor sets instance attributes)
+## @complexity 2
 class TableTypeAdditionalOptions:
     """
     Enum for table types of tables for the table recognizer.
@@ -56,8 +61,37 @@ class TableTypeAdditionalOptions:
          +--------+------+-------+
 
     """
-
+    # region METHOD___init__ [DOMAIN(7): TableRecognition; CONCEPT(6): Initialization; TECH(5): Python]
+    ## @purpose Initialize table type configuration constants.
+    ## @complexity 1
     def __init__(self) -> None:
+        # LDD-log: initialization
         self.table_wo_external_bounds = "wo_external_bounds"
         self.detect_one_cell_table = "one_cell_table"
         self.split_last_column = "split_last_column"
+    # endregion METHOD___init__
+# endregion CLASS_TableTypeAdditionalOptions
+
+# region MODULE_CONTRACT [DOMAIN(7): DocumentProcessing; CONCEPT(8): TableRecognition, TableType; TECH(6): Python]
+## @modulecontract
+## @purpose Define the enumeration of table recognition strategies (wo_external_bounds, one_cell_table, split_last_column) used by the PDF image table recognizer.
+## @scope Table type configuration for the TableRecognizer subsystem.
+## @input None (configuration class instantiated on demand).
+## @output TableTypeAdditionalOptions instance with strategy flags.
+## @links [USES_API(8): dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.TableRecognizer]
+## @invariants
+## - TableTypeAdditionalOptions ALWAYS provides three strategy flags.
+## @rationale
+## Q: Why class with string constants instead of Python Enum?
+## A: Maintains backward compatibility with existing parameter passing via string values.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [8][Table recognition strategy enumerator] => TableTypeAdditionalOptions
+## @usecases
+## - [TableTypeAdditionalOptions]: TableRecognizer (Configure) → SelectStrategy → RecognitionModeActive
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: table_type, TableTypeAdditionalOptions, table_recognition, wo_external_bounds, one_cell_table, split_last_column, PDF, dedoc, reader
+# STRUCTURE: ▶ TableTypeAdditionalOptions ∋ {wo_external_bounds, one_cell_table, split_last_column} → ○ TableRecognizer selects strategy → ⊕ recognized table

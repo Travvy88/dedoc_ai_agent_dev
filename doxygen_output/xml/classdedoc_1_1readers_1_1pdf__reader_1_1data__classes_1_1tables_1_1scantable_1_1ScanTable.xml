@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1table_1_1Table" prot="public" virt="non-virtual">dedoc.data_structures.table.Table</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a9906196c5a5104079513eea975da1054" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.order</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="26" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix_1af5902c63fcbead8464b8bfe33ad9a673" compoundref="letter__prefix_8py" startline="47" endline="50">dedoc.structure_extractors.feature_extractors.list_features.prefix.letter_prefix.LetterPrefix.predecessor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a0455b2af09aba7ba9c53db4a682baf4d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable::locations</definition>
+        <argsstring></argsstring>
+        <name>locations</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.locations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="27" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a8b664709c0acbf72ed6938fc7a392471" compoundref="scantable_8py" startline="58" endline="60">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.location</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" compoundref="scantable_8py" startline="69" endline="80">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable::cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.cells</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="42" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" compoundref="scantable_8py" startline="69" endline="80">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab49eb08b6f318700f9a7b30cce0caf70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__init__</definition>
+        <argsstring>(self, int page_number, List[List[CellWithMeta]] cells, BBox bbox, int order=-1, int page_width=None, int page_height=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cells</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>metadata</declname>
+          <array>[List[CellWithMeta]</array>
+        </param>
+        <param>
+          <type>BBox</type>
+          <declname>bbox</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>order</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_width</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_height</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize table with cells (list of cell rows) and table metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (List[List[CellWithMeta]], TableMetadata) -&gt; None \par \b Complexity\/ \:  2</para>
+<para>:param cells: a list of lists of cells :param metadata: table metadata </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="23" bodyend="28"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab49eb08b6f318700f9a7b30cce0caf70" compoundref="scantable_8py" startline="23" endline="28">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab49eb08b6f318700f9a7b30cce0caf70" compoundref="scantable_8py" startline="23" endline="28">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</definition>
+        <argsstring>(self, &quot;ScanTable&quot; table)</argsstring>
+        <name>extended</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>&quot;ScanTable&quot;</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="31" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="31" bodyend="38"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" compoundref="api_2schema_2table_8py" startline="51">dedoc.api.schema.table.Table.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" compoundref="scantable_8py" startline="42">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a0455b2af09aba7ba9c53db4a682baf4d" compoundref="scantable_8py" startline="27">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.locations</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1afe801ca9b00080b590f51898e51be1db" compoundref="line__with__location_8py" startline="19">dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment_1a9560c52bacb375766e38aff350c7425d" compoundref="pdf__image__attachment_8py" startline="15">dedoc.readers.pdf_reader.data_classes.pdf_image_attachment.PdfImageAttachment.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a9906196c5a5104079513eea975da1054" compoundref="scantable_8py" startline="26">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__block_1_1OcrBlock_1ad78b4cc84b3faaafc01a11f7f22ac64d" compoundref="ocr__block_8py" startline="21">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_block.OcrBlock.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1af11da93b77e9865d6e310d8e50617b31" compoundref="ocr__line_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a2dadc0c454db20dede4475be2eb082a7" compoundref="ocr__paragraph_8py" startline="22">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.order</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a8d04349d1a1e0ba1ff24d40a57e7430b" compoundref="ocr__word_8py" startline="25">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord.order</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1classifying__law__structure__extractor_1_1LawDocType_1a4bc7f8393cc55cbba3d32df7f92f8447" compoundref="classifying__law__structure__extractor_8py" startline="17">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor.LawDocType.order</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix_1_1LetterPrefix_1a7a617bb33068c05032272153d0b1ba94" compoundref="letter__prefix_8py" startline="32" endline="41">dedoc.structure_extractors.feature_extractors.list_features.prefix.letter_prefix.LetterPrefix.order</references>
+        <referencedby refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1a766a5b0a6b2ec18f3df23f75979d4aff" compoundref="annotation__merger_8py" startline="109" endline="112">dedoc.utils.annotation_merger.ExtendedAnnotation.get_end</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1af7e4aed9dec0ca925db3f2c0d8142e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.check_on_cell_instance</definition>
+        <argsstring>(self)</argsstring>
+        <name>check_on_cell_instance</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.check_on_cell_instance</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="41" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a8b664709c0acbf72ed6938fc7a392471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location" kindref="compound">Location</ref></type>
+        <definition> Location dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.location</definition>
+        <argsstring>(self)</argsstring>
+        <name>location</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.location</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="58" bodyend="60"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a0455b2af09aba7ba9c53db4a682baf4d" compoundref="scantable_8py" startline="27">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.locations</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1ad1aac9fe4ed6f829148f82140b8eab48" compoundref="columns__orientation__classifier_8py" startline="72" endline="85">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier._load_weights</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation_1a198d085d585511eb4a418150bc617c07" compoundref="line__with__location_8py" startline="24" endline="27">dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation.shift</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</definition>
+        <argsstring>(self)</argsstring>
+        <name>uid</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="64" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="64" bodyend="66"/>
+        <references refid="classdedoc_1_1api_1_1schema_1_1parsed__document_1_1ParsedDocument_1a14c74ae4bda98d1cd7f9404134ed0b9a" compoundref="api_2schema_2parsed__document_8py" startline="57">dedoc.api.schema.parsed_document.ParsedDocument.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" compoundref="api_2schema_2table_8py" startline="52">dedoc.api.schema.table.Table.metadata</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode_1ab2b7c921a80f55ffd76ca91aa0e20637" compoundref="api_2schema_2tree__node_8py" startline="62">dedoc.api.schema.tree_node.TreeNode.metadata</references>
+        <references refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError_1a5ceece0f4f1f7cba586aebd228d2b452" compoundref="dedoc__error_8py" startline="56">dedoc.common.exceptions.dedoc_error.DedocError.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a036fceab617fb34b8e8005d584deff94" compoundref="data__structures_2line__with__meta_8py" startline="190" endline="194">dedoc.data_structures.line_with_meta.LineWithMeta.metadata</references>
+        <references refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a04bc08f5fa58cb708c019b0fadd511ab" compoundref="data__structures_2parsed__document_8py" startline="70">dedoc.data_structures.parsed_document.ParsedDocument.metadata</references>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a2b12aa3c92d499a071b3bb2455782073" compoundref="data__structures_2line__with__meta_8py" startline="257" endline="273">dedoc.data_structures.line_with_meta.LineWithMeta.__add__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1a19ef0dd9f0215618837c2b59ec945ff8" compoundref="data__structures_2table__metadata_8py" startline="32" endline="46">dedoc.data_structures.table_metadata.TableMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a97152ed0139bbc41108f2df1d929604e" compoundref="data__structures_2document__metadata_8py" startline="51" endline="75">dedoc.data_structures.document_metadata.DocumentMetadata.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile_1a513cfd3c12fe1bb95807b59583b9b8bf" compoundref="attached__file_8py" startline="27" endline="39">dedoc.data_structures.attached_file.AttachedFile.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a" compoundref="data__structures_2table__metadata_8py" startline="54" endline="56">dedoc.data_structures.table_metadata.TableMetadata.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable_1a6ccb09ed7978a58de3ed598f8775266c" compoundref="readers_2docx__reader_2data__structures_2table_8py" startline="39" endline="90">dedoc.readers.docx_reader.data_structures.table.DocxTable.to_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable_1a3c982e6d8532b8cb372ca50474e2db2d" compoundref="readers_2pptx__reader_2table_8py" startline="42" endline="78">dedoc.readers.pptx_reader.table.PptxTable.to_table</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_dict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="69" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="69" bodyend="80"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2953d6b8cdc395304abc108829ab5451" compoundref="scantable_8py" startline="52" endline="54">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__get_cells_text</references>
+        <references refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" compoundref="api_2schema_2table_8py" startline="51">dedoc.api.schema.table.Table.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" compoundref="scantable_8py" startline="42">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.cells</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a0455b2af09aba7ba9c53db4a682baf4d" compoundref="scantable_8py" startline="27">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.locations</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2953d6b8cdc395304abc108829ab5451" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[str]]</type>
+        <definition> List[List[str]] dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__get_cells_text</definition>
+        <argsstring>(self, List[List[CellWithMeta]] cells)</argsstring>
+        <name>__get_cells_text</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.__get_cells_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>cells</declname>
+          <array>[List[CellWithMeta]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="52" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="52" bodyend="54"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" compoundref="scantable_8py" startline="69" endline="80">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility class for storing recognized tables from document images. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The class :class:<computeroutput>~dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer</computeroutput> works with this class. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.table.Table</label>
+        <link refid="classdedoc_1_1data__structures_1_1table_1_1Table"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.table.Table</label>
+        <link refid="classdedoc_1_1data__structures_1_1table_1_1Table"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" line="17" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/scantable.py" bodystart="17" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2953d6b8cdc395304abc108829ab5451" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>__get_cells_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab49eb08b6f318700f9a7b30cce0caf70" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1aa4bc9c31e740f466587f81c95d72b7bd" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1af7e4aed9dec0ca925db3f2c0d8142e34" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>check_on_cell_instance</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>extended</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a8b664709c0acbf72ed6938fc7a392471" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>location</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a0455b2af09aba7ba9c53db4a682baf4d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>locations</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a9906196c5a5104079513eea975da1054" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>order</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>to_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::scantable::ScanTable</scope><name>uid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

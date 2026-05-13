@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor" kind="namespace" language="Python">
+    <compoundname>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor</compoundname>
+    <innerclass refid="classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1_1TreeConstructor" prot="public">dedoc::structure_constructors::concrete_structure_constructors::tree_constructor::TreeConstructor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1a8ba9d97b89b3846e4ea50ef9e2b15a73" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_constructors::concrete_structure_constructors::tree_constructor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="41" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1tree__constructor_1a649415b766156f67f501529e40c48f6e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Build a hierarchical (tree) document structure from lines with hierarchy levels — the primary structure representation that mirrors the document&apos;s logical sections. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Tree construction from lines with hierarchy levels, list-item merging, multi-line header handling, metadata propagation. \par \b Input\/ \:  UnstructuredDocument (lines with hierarchy levels, tables, metadata). \par \b Output\/ \:  ParsedDocument with a tree structure rooted at the document title line(s). \par \b Links\/ \:  [USES_API(9): AbstractStructureConstructor, TreeNode, DocumentContent, DocumentMetadata, LineWithMeta, HierarchyLevel] \par \b Links to Spec\/ \:  REQ-STR-004: A hierarchical tree structure must represent the document&apos;s logical sections. \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Lines with hierarchy level (0, 0) are merged into the root node.</para>
+</listitem><listitem><para>Lines with line_type &quot;list_item&quot; get an auxiliary &quot;list&quot; parent line inserted above them.</para>
+</listitem><listitem><para>Tree node insertion follows lexicographic comparison of hierarchy levels.</para>
+</listitem><listitem><para>Multi-line headers with equal hierarchy levels are merged via add_text. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why insert auxiliary list lines instead of grouping list items directly? A: Auxiliary list nodes ensure the tree structure remains regular — all children of a &quot;list&quot; node are naturally list items, simplifying traversal and rendering. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Hierarchical tree structure constructor] =&gt; TreeConstructor METHOD 10[Assemble tree from document lines] =&gt; construct METHOD 6[Separate document name lines (0,0) from content lines] =&gt; __get_document_name METHOD 7[Insert auxiliary list nodes for list items] =&gt; __add_lists METHOD 5[Create auxiliary list line with adjusted hierarchy] =&gt; __create_list_line \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[construct]: StructureExtractor → BuildHierarchicalTree → ProduceTreeParsedDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="27" column="1" bodyfile="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" bodystart="27" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

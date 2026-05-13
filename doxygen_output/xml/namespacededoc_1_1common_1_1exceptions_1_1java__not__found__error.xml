@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1common_1_1exceptions_1_1java__not__found__error" kind="namespace" language="Python">
+    <compoundname>dedoc::common::exceptions::java_not_found_error</compoundname>
+    <innerclass refid="classdedoc_1_1common_1_1exceptions_1_1java__not__found__error_1_1JavaNotFoundError" prot="public">dedoc::common::exceptions::java_not_found_error::JavaNotFoundError</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1common_1_1exceptions_1_1java__not__found__error_1aeadd8765ca1ac69e79229d86a35f797c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::common::exceptions::java_not_found_error.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.common.exceptions.java_not_found_error.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/java_not_found_error.py" line="31" column="1" bodyfile="dedoc/common/exceptions/java_not_found_error.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1common_1_1exceptions_1_1java__not__found__error_1a0432752200a9a8b7d4d2f21c60b881a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.common.exceptions.java_not_found_error._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.common.exceptions.java_not_found_error._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To define JavaNotFoundError — raised when the Java runtime required for document processing (e.g., Tika, TabbyPDF) is not available in the environment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Java environment dependency error signalling. \par \b Input\/ \:  Error context (msg, filename, version). \par \b Output\/ \:  JavaNotFoundError with HTTP 500 Internal Server Error code. \par \b Links\/ \:  [USES_API(9): <ref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kindref="compound">dedoc.common.exceptions.dedoc_error.DedocError</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>ALWAYS carries HTTP code 500 (missing Java is a server-side configuration error).</para>
+</listitem><listitem><para>Inherits full DedocError API (msg_api, filename, version, metadata). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why code=500? A: Missing Java runtime is a server-side infrastructure issue, not a client error — hence Internal Server Error. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Exception for missing Java runtime, always HTTP 500] =&gt; JavaNotFoundError \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[JavaNotFoundError]: Converter → CheckJavaRuntime → JavaNotFound → RaiseJavaNotFoundError → APIResponds500 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/java_not_found_error.py" line="20" column="1" bodyfile="dedoc/common/exceptions/java_not_found_error.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/common/exceptions/java_not_found_error.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

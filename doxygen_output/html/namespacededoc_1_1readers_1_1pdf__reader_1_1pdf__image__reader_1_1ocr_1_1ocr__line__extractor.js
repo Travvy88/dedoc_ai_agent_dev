@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor =
+[
+    [ "OCRLineExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor.html#a7595fe02b0d0f86c1a05363d17b665c6", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor.html#ada60c01a82fb55ca49699d12b46b2423", null ]
+];

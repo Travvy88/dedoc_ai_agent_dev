@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1concrete__annotations" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::concrete_annotations</compoundname>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation">dedoc::data_structures::concrete_annotations::alignment_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation">dedoc::data_structures::concrete_annotations::attach_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bbox__annotation">dedoc::data_structures::concrete_annotations::bbox_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation">dedoc::data_structures::concrete_annotations::bold_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation">dedoc::data_structures::concrete_annotations::color_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation">dedoc::data_structures::concrete_annotations::confidence_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1indentation__annotation">dedoc::data_structures::concrete_annotations::indentation_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation">dedoc::data_structures::concrete_annotations::italic_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1linked__text__annotation">dedoc::data_structures::concrete_annotations::linked_text_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation">dedoc::data_structures::concrete_annotations::reference_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation">dedoc::data_structures::concrete_annotations::size_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1spacing__annotation">dedoc::data_structures::concrete_annotations::spacing_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1strike__annotation">dedoc::data_structures::concrete_annotations::strike_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1style__annotation">dedoc::data_structures::concrete_annotations::style_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1subscript__annotation">dedoc::data_structures::concrete_annotations::subscript_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation">dedoc::data_structures::concrete_annotations::superscript_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation">dedoc::data_structures::concrete_annotations::table_annotation</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1underlined__annotation">dedoc::data_structures::concrete_annotations::underlined_annotation</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1a49278b2b5e8f1b502b474ed3b55238ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::concrete_annotations.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/__init__.py" line="22" column="1" bodyfile="dedoc/data_structures/concrete_annotations/__init__.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1a24b0726717f322631770daf229be6bb9" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list dedoc::data_structures::concrete_annotations.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation_1_1AlignmentAnnotation" kindref="compound">AlignmentAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation" kindref="compound">AttachAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bbox__annotation_1_1BBoxAnnotation" kindref="compound">BBoxAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation" kindref="compound">BoldAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation" kindref="compound">ColorAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation_1_1ConfidenceAnnotation" kindref="compound">ConfidenceAnnotation</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1indentation__annotation_1_1IndentationAnnotation" kindref="compound">IndentationAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation_1_1ItalicAnnotation" kindref="compound">ItalicAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1linked__text__annotation_1_1LinkedTextAnnotation" kindref="compound">LinkedTextAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation" kindref="compound">SizeAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1spacing__annotation_1_1SpacingAnnotation" kindref="compound">SpacingAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1strike__annotation_1_1StrikeAnnotation" kindref="compound">StrikeAnnotation</ref>&apos;,
+           &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1style__annotation_1_1StyleAnnotation" kindref="compound">StyleAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1subscript__annotation_1_1SubscriptAnnotation" kindref="compound">SubscriptAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation" kindref="compound">SuperscriptAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation" kindref="compound">TableAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1underlined__annotation_1_1UnderlinedAnnotation" kindref="compound">UnderlinedAnnotation</ref>&apos;, &apos;<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation" kindref="compound">ReferenceAnnotation</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/__init__.py" line="24" column="1" bodyfile="dedoc/data_structures/concrete_annotations/__init__.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1concrete__annotations_1a3c3ca65ac96108cfcec11cc59cd6da6a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Aggregate all concrete annotation types into a single namespace for use by readers and converters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Re-export of all concrete annotation classes (bold, italic, size, color, etc.). \par \b Input\/ \:  None (package-level imports). \par \b Output\/ \:  Unified <bold>all</bold> list containing all annotation symbols. \par \b Links\/ \:  [EXPORTS(10): AlignmentAnnotation, AttachAnnotation, BBoxAnnotation, BoldAnnotation, ColorAnnotation, ConfidenceAnnotation, IndentationAnnotation, ItalicAnnotation, LinkedTextAnnotation, SizeAnnotation, SpacingAnnotation, StrikeAnnotation, StyleAnnotation, SubscriptAnnotation, SuperscriptAnnotation, TableAnnotation, UnderlinedAnnotation, ReferenceAnnotation] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para><bold>all</bold> includes all 18 concrete annotation types \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why separate concrete_annotations from the base Annotation? A: Clean separation of base class from its implementations, enabling independent evolution. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>MODULE 10[Concrete annotation exports] =&gt; <bold>init</bold> \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[<bold>init</bold>]: Reader/Converter → ImportAnnotations → AllAnnotationTypesAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/__init__.py" line="48" column="1" bodyfile="dedoc/data_structures/concrete_annotations/__init__.py" bodystart="48" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/concrete_annotations/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

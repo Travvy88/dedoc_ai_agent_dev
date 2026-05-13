@@ -1,0 +1,10 @@
+var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da =
+[
+    [ "structure_unit", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#a51dafd87573d66c96f469d5b2fc7a0bb", null ],
+    [ "document_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#ab0e23b804e8fcf707aa7087056d1f187", null ],
+    [ "ends_of_number", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#ad47d23346a35ad6f9d05a0124190d74e", null ],
+    [ "regexps_item_with_bracket", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#a28fb62eec111e8e553ae0941a613310e", null ],
+    [ "regexps_part", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#a9bce8ee9648adcac841b8f3b4b1cab25", null ],
+    [ "regexps_subitem", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#ad52949ebd03a17c2e36a0dbe5c085ba3", null ],
+    [ "roman_regexp", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_f0ea419efb4637128d49b4e96c57a2da.html#a347e6c3fc838112cb1ad528a7b7f32e2", null ]
+];

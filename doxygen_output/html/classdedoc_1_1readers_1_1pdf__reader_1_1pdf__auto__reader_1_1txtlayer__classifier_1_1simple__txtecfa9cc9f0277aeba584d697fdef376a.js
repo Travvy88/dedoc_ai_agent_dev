@@ -1,0 +1,4 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a =
+[
+    [ "predict", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a.html#a6ba48a213b6a148c27e104cb6ee6d44a", null ]
+];

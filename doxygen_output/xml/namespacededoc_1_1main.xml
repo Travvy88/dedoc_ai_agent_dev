@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1main" kind="namespace" language="Python">
+    <compoundname>dedoc::main</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1main_1a15ac125cc292f787c8aea6dad191deff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::main.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.main.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/main.py" line="5" column="1" bodyfile="dedoc/main.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1main_1aca2300384eb93444ae44738d738148f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.main._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.main._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Application entry point that initializes the Dedoc API server with configuration and logging, serving as the bootstrap for the entire document processing system. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  API server initialization, configuration bootstrapping. \par \b Input\/ \:  None (environment variables and config files). \par \b Output\/ \:  Running FastAPI server on configured port. \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1api_1_1dedoc__api_1a20f119b1c7b4876b3931063753b72752" kindref="member">dedoc.api.dedoc_api.get_api</ref>, run_api; READS_DATA_FROM(8): Configuration.get_config] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Configuration is always loaded before the API starts. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is the entry point so minimal? A: All heavy initialization (readers, converters, extractors) is deferred to manager_config and DedocManager, keeping the bootstrap fast and testable. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>FUNC 10[Application entry point] =&gt; main \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[main]: Operator =&gt; StartDedocServer =&gt; DocumentProcessingAvailable </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/main.py" line="33" column="1" bodyfile="dedoc/main.py" bodystart="33" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

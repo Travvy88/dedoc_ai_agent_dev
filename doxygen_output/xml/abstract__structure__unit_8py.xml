@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="abstract__structure__unit_8py" kind="file" language="Python">
+    <compoundname>abstract_structure_unit.py</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12" prot="public">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit::AbstractStructureUnit</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders">dedoc::structure_extractors::hierarchy_level_builders</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders">dedoc::structure_extractors::hierarchy_level_builders::law_builders</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>abc</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional,<sp/>Tuple</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1hierarchy__level" kindref="compound">dedoc.data_structures.hierarchy_level</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>HierarchyLevel</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc_1ac4b27412185740584821a0cd834f6b56" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_AbstractStructureUnit<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(HierarchyBuilding):<sp/>...;<sp/>TECH(Python):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>AbstractStructureUnit<sp/>for<sp/>document<sp/>structure<sp/>extraction<sp/>pipeline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12" kindref="compound">AbstractStructureUnit</ref>(abc.ABC):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_structure_unit<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>structure_unit<sp/>method</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@abc.abstractmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure_de83d44b4d8d33b193d86cfbb7a53f12_1aada7dfb53baff36b19dcd80b6cbcf93e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">structure_unit(self,<sp/>text:<sp/>str,<sp/>init_hl_depth:<sp/>int,<sp/>previous_hl:<sp/>Optional[HierarchyLevel])<sp/>-&gt;<sp/>Tuple[HierarchyLevel,<sp/>Optional[HierarchyLevel]]:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][AbstractStructureUnit][structure_unit_INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_structure_unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_AbstractStructureUnit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(HierarchyBuilding):<sp/>...;<sp/>TECH(Python):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">##<sp/>CLASS<sp/>[Weight<sp/>7][Structure<sp/>extraction]<sp/>=&gt;<sp/>AbstractStructureUnit</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc_1a01942c0b4fdc1a64f83a4802ed34db4b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc_1a01942c0b4fdc1a64f83a4802ed34db4b" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>hierarchy<sp/>level<sp/>builders,<sp/>law<sp/>builders,<sp/>structure<sp/>unit,<sp/>abstract<sp/>structure<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit<sp/>→<sp/>○<sp/>AbstractStructureUnit.cls<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/abstract_structure_unit.py"/>
+  </compounddef>
+</doxygen>

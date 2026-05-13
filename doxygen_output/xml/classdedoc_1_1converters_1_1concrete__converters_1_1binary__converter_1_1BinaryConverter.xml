@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::converters::concrete_converters::binary_converter::BinaryConverter</compoundname>
+    <basecompoundref refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter" prot="public" virt="non-virtual">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1ab2a510e2da1c5d2590ec38d9e680cf3c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.converters.concrete_converters.binary_converter.BinaryConverter::png_converter</definition>
+        <argsstring></argsstring>
+        <name>png_converter</name>
+        <qualifiedname>dedoc.converters.concrete_converters.binary_converter.BinaryConverter.png_converter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/binary_converter.py" line="25" column="1" bodyfile="dedoc/converters/concrete_converters/binary_converter.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a271cf0b09e016d4507848f5ab15451be" compoundref="binary__converter_8py" startline="56" endline="63">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.convert</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a9b4d8fef1decfc7cc012776cb28b4e46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.converters.concrete_converters.binary_converter.BinaryConverter.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.converters.concrete_converters.binary_converter.BinaryConverter.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1afbbdf9aba2bb004ccbe2179acb1c7aab">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize the converter and its internal PNGConverter delegate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PNGConverter \par \b I/O\/ \:  config: Optional[dict] -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/binary_converter.py" line="22" column="1" bodyfile="dedoc/converters/concrete_converters/binary_converter.py" bodystart="22" bodyend="26"/>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a9b4d8fef1decfc7cc012776cb28b4e46" compoundref="binary__converter_8py" startline="22" endline="26">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.__init__</references>
+        <referencedby refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a9b4d8fef1decfc7cc012776cb28b4e46" compoundref="binary__converter_8py" startline="22" endline="26">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1ac8771e4a1abd8d7458bca3330483d9e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition> bool dedoc.converters.concrete_converters.binary_converter.BinaryConverter.can_convert</definition>
+        <argsstring>(self, Optional[str] file_path=None, Optional[str] extension=None, Optional[str] mime=None, Optional[dict] parameters=None)</argsstring>
+        <name>can_convert</name>
+        <qualifiedname>dedoc.converters.concrete_converters.binary_converter.BinaryConverter.can_convert</qualifiedname>
+        <reimplements refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a99e91db759ff3786ae1386270f083519">can_convert</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>file_path</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>extension</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>mime</declname>
+          <array>[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To detect image-like binary files by checking for mime=application/octet-stream combined with a known image extension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  get_mime_extension, supported_image_types \par \b I/O\/ \:  file_path: Optional[str], extension: Optional[str], mime: Optional[str], parameters: Optional[dict] -&gt; bool \par \b Complexity\/ \:  3</para>
+<para>Checks if the document is image-like (e.g. it has .bmp, .jpg, .tiff, etc. extension) and has <computeroutput>mime=application/octet-stream</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/binary_converter.py" line="34" column="1" bodyfile="dedoc/converters/concrete_converters/binary_converter.py" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a271cf0b09e016d4507848f5ab15451be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.converters.concrete_converters.binary_converter.BinaryConverter.convert</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>convert</name>
+        <qualifiedname>dedoc.converters.concrete_converters.binary_converter.BinaryConverter.convert</qualifiedname>
+        <reimplements refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a41be8163cfc882c5297b9e131e98394a">convert</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert an image-like binary file to PNG by delegating to the internal PNGConverter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  PNGConverter.convert \par \b I/O\/ \:  file_path: str, parameters: Optional[dict] -&gt; str \par \b Complexity\/ \:  2</para>
+<para>Convert the image-like and application/octet-stream documents into files with .png extension. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/converters/concrete_converters/binary_converter.py" line="56" column="1" bodyfile="dedoc/converters/concrete_converters/binary_converter.py" bodystart="56" bodyend="63"/>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a271cf0b09e016d4507848f5ab15451be" compoundref="binary__converter_8py" startline="56" endline="63">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.convert</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1ab2a510e2da1c5d2590ec38d9e680cf3c" compoundref="binary__converter_8py" startline="25">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.png_converter</references>
+        <referencedby refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a271cf0b09e016d4507848f5ab15451be" compoundref="binary__converter_8py" startline="56" endline="63">dedoc.converters.concrete_converters.binary_converter.BinaryConverter.convert</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To convert binary blob files (mime=application/octet-stream) that carry image-like extensions (.bmp, .jpg, .tiff, etc.) into PNG by delegating to PNGConverter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Converts image-like documents with <computeroutput>mime=application/octet-stream</computeroutput> into PNG. Look to the :class:<computeroutput>~dedoc.converters.AbstractConverter</computeroutput> documentation to get the information about the methods&apos; parameters. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.converters.concrete_converters.binary_converter.BinaryConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.converters.concrete_converters.binary_converter.BinaryConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.converters.concrete_converters.abstract_converter.AbstractConverter</label>
+        <link refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/converters/concrete_converters/binary_converter.py" line="11" column="1" bodyfile="dedoc/converters/concrete_converters/binary_converter.py" bodystart="11" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a9b4d8fef1decfc7cc012776cb28b4e46" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::binary_converter::BinaryConverter</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1ac8771e4a1abd8d7458bca3330483d9e2" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::binary_converter::BinaryConverter</scope><name>can_convert</name></member>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1a271cf0b09e016d4507848f5ab15451be" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::binary_converter::BinaryConverter</scope><name>convert</name></member>
+      <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1binary__converter_1_1BinaryConverter_1ab2a510e2da1c5d2590ec38d9e680cf3c" prot="public" virt="non-virtual"><scope>dedoc::converters::concrete_converters::binary_converter::BinaryConverter</scope><name>png_converter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

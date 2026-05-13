@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Dataset</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1a2360912449ee4c661046b608d097b804" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="70" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75_1a30bc5cdd55641764869218d1aac944e2" compoundref="transforms_8py" startline="56" endline="63">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.TransformWithLabels.__call__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform_1a8d26c75b0b70cd711e37937ffdc5ea55" compoundref="transforms_8py" startline="31" endline="38">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.ImageTransform.__call__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1e14fe026c18a6c753ae3e138ab091d3c_1aaab46d13e24b202855fd0a1d850ba15c" compoundref="dataset__executor_8py" startline="42" endline="62">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DatasetImageOrient.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a968937c16782e110faf4677e8008b19b" compoundref="columns__orientation__classifier_8py" startline="107" endline="115">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.get_features</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf96c5430c511f3407d544c21ad6c0ce" compoundref="dataset__executor_8py" startline="75" endline="81">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.load_dataset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1ac125f090a1b89758b520339baa1ac53f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient::classes</definition>
+        <argsstring></argsstring>
+        <name>classes</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.classes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="71" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1ab3d727b43021a67d15ef59d36e6c8684" compoundref="columns__orientation__classifier_8py" startline="118" endline="138">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.predict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf488e18cb8948ce21ab653f65be91ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient::amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="78" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acd1dcb47fd4648f56e254e4b7e63ebc7" compoundref="dataset__executor_8py" startline="84" endline="87">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.__len__</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acc1f6326923d6f0fda94736096098e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="69" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="69" bodyend="72"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf96c5430c511f3407d544c21ad6c0ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DataLoader</type>
+        <definition> DataLoader dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.load_dataset</definition>
+        <argsstring>(self, str csv_path, str image_path, int batch_size=4)</argsstring>
+        <name>load_dataset</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.load_dataset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>csv_path</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>image_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>batch_size</declname>
+          <defval>4</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="75" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="75" bodyend="81"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1_1transforms_1_1ImageTransform_1a50665be8f729bbd6d617a5a24253eb83" compoundref="transforms_8py" startline="22">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.ImageTransform.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1diploma__feature__extractor_1_1DiplomaFeatureExtractor_1aa3f12f1222b152626e272bd844addc1b" compoundref="diploma__feature__extractor_8py" startline="63" endline="72">dedoc.structure_extractors.feature_extractors.diploma_feature_extractor.DiplomaFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1txtlayer__f4cb79eb087f27bde542723c0099050a3_1a80222fd56a0148eedc20e97e7f50edee" compoundref="txtlayer__feature__extractor_8py" startline="16" endline="70">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.txtlayer_feature_extractor.TxtlayerFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a71adb28d7f6a537eef846f232e85d1fa" compoundref="columns__orientation__classifier_8py" startline="98">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.transform</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1e14fe026c18a6c753ae3e138ab091d3c_1a6f9c000657a5f649931c40301aed327f" compoundref="dataset__executor_8py" startline="33">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DatasetImageOrient.transform</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1a2360912449ee4c661046b608d097b804" compoundref="dataset__executor_8py" startline="70">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.transform</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_171f819597b1b5fdc9155f0fa7f028b75_1a305868c778c76e67a91c9dee7b6392d5" compoundref="transforms_8py" startline="47">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.transforms.TransformWithLabels.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ab4b859be1ed6c974b8a02a41303da75b" compoundref="abstract__extractor_8py" startline="48" endline="58">dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1fintoc__feature__extractor_1_1FintocFeatureExtractor_1a6ea4a78f8e6f50f092a4a17cffc6752f" compoundref="fintoc__feature__extractor_8py" startline="62" endline="70">dedoc.structure_extractors.feature_extractors.fintoc_feature_extractor.FintocFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1_1LawTextFeatures_1af9d9d2784fc79036915ab0ec1652cf72" compoundref="law__text__features_8py" startline="67" endline="76">dedoc.structure_extractors.feature_extractors.law_text_features.LawTextFeatures.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paired__feature__extractor_1_1PairedFeatureExtractor_1aeb6bd9174b57b77ee1e276f5defd9259" compoundref="paired__feature__extractor_8py" startline="52" endline="58">dedoc.structure_extractors.feature_extractors.paired_feature_extractor.PairedFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0c66618f6da25205cd7f054263a317fe" compoundref="paragraph__feature__extractor_8py" startline="92" endline="97">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1tz__feature__extractor_1_1TzTextFeatures_1ab81f8f23294042fce2fcee6c7f5582f7" compoundref="tz__feature__extractor_8py" startline="62" endline="73">dedoc.structure_extractors.feature_extractors.tz_feature_extractor.TzTextFeatures.transform</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__28adeda323591cb93267e97798ed951e_1aed06bb654f176bc9cb7f44f57af69d05" compoundref="list__features__extractor_8py" startline="80" endline="84">dedoc.structure_extractors.feature_extractors.list_features.list_features_extractor.ListFeaturesExtractor.transform</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acd1dcb47fd4648f56e254e4b7e63ebc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition> int dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.__len__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="84" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="84" bodyend="87"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf488e18cb8948ce21ab653f65be91ad" compoundref="dataset__executor_8py" startline="78">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient.amount</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class create torch DataLoader. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Dataset</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.dataset_executor.DataLoaderImageOrient</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Dataset</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" line="64" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/columns_orientation_classifier/dataset_executor.py" bodystart="64" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acc1f6326923d6f0fda94736096098e67" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acd1dcb47fd4648f56e254e4b7e63ebc7" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>__len__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf488e18cb8948ce21ab653f65be91ad" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>amount</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1ac125f090a1b89758b520339baa1ac53f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>classes</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1acf96c5430c511f3407d544c21ad6c0ce" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>load_dataset</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_1b0e2d0e5d5291d546165fb6d4df0c924_1a2360912449ee4c661046b608d097b804" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::columns_orientation_classifier::dataset_executor::DataLoaderImageOrient</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

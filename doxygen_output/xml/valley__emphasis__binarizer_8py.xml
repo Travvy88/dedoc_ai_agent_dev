@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="valley__emphasis__binarizer_8py" kind="file" language="Python">
+    <compoundname>valley_emphasis_binarizer.py</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::valley_emphasis_binarizer::ValleyEmphasisBinarizer</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader">dedoc::readers::pdf_reader::pdf_image_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor">dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold__classifier">dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b91d9cd8fd9a823fb1a49bf4b0574cfb3">dedoc::readers::pdf_reader::pdf_image_reader::line_metadata_extractor::bold_classifier::valley_emphasis_binarizer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b91d9cd8fd9a823fb1a49bf4b0574cfb3" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cv2</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b91d9cd8fd9a823fb1a49bf4b0574cfb3_1aa539da3aee9a078b36e1bc4e04b63ac4" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_ValleyEmphasisBinarizer<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f" kindref="compound">ValleyEmphasisBinarizer</ref>:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(6):<sp/>Method;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a50cac75349277b3331c1ca8c2679b5e2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a50cac75349277b3331c1ca8c2679b5e2" kindref="member">__init__</ref>(self,<sp/>n:<sp/>int<sp/>=<sp/>5)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1aa88507873b2b109616cc71b009542744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1aa88507873b2b109616cc71b009542744" kindref="member">n</ref><sp/>=<sp/>n</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_binarize<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(6):<sp/>Method;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a07676fbbc635d4d61a531acb67c08082" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a07676fbbc635d4d61a531acb67c08082" kindref="member">binarize</ref>(self,<sp/>image:<sp/>np.ndarray)<sp/>-&gt;<sp/>np.ndarray:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>image.shape[-1]<sp/>==<sp/>3:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image<sp/>=<sp/>cv2.cvtColor(image,<sp/>cv2.COLOR_BGR2GRAY)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>threshold<sp/>=<sp/>self.<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a36546c71d73a3164830cddd7b7077605" kindref="member">__get_threshold</ref>(image)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image[image<sp/>&lt;=<sp/>threshold]<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image[image<sp/>&gt;<sp/>threshold]<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>image</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___get_threshold<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(6):<sp/>Method;<sp/>TECH(6):<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_binarize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a36546c71d73a3164830cddd7b7077605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a36546c71d73a3164830cddd7b7077605" kindref="member">__get_threshold</ref>(self,<sp/>gray_img:<sp/>np.ndarray)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c,<sp/>x<sp/>=<sp/>np.histogram(gray_img,<sp/>bins=255)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h,<sp/>w<sp/>=<sp/>gray_img.shape</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>total<sp/>=<sp/>h<sp/>*<sp/>w</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_val<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>t<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(255):</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_val<sp/>=<sp/>sum_val<sp/>+<sp/>(t<sp/>*<sp/>c[t]<sp/>/<sp/>total)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var_max<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>threshold<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>omega_1<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu_k<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>t<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(254):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>omega_1<sp/>=<sp/>omega_1<sp/>+<sp/>c[t]<sp/>/<sp/>total</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>omega_2<sp/>=<sp/>1<sp/>-<sp/>omega_1</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu_k<sp/>=<sp/>mu_k<sp/>+<sp/>t<sp/>*<sp/>(c[t]<sp/>/<sp/>total)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu_1<sp/>=<sp/>mu_k<sp/>/<sp/>omega_1<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>omega_1<sp/>!=<sp/>0.<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>0.</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu_2<sp/>=<sp/>(sum_val<sp/>-<sp/>mu_k)<sp/>/<sp/>omega_2<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>omega_2<sp/>!=<sp/>0.<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>0.</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_of_neighbors<sp/>=<sp/>np.sum(c[max(1,<sp/>t<sp/>-<sp/>self.<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1aa88507873b2b109616cc71b009542744" kindref="member">n</ref>):min(255,<sp/>t<sp/>+<sp/>self.<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1aa88507873b2b109616cc71b009542744" kindref="member">n</ref>)])</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>denom<sp/>=<sp/>total</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_var<sp/>=<sp/>(1<sp/>-<sp/>sum_of_neighbors<sp/>/<sp/>denom)<sp/>*<sp/>(omega_1<sp/>*<sp/>mu_1<sp/>**<sp/>2<sp/>+<sp/>omega_2<sp/>*<sp/>mu_2<sp/>**<sp/>2)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>current_var<sp/>&gt;<sp/>var_max:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var_max<sp/>=<sp/>current_var</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>threshold<sp/>=<sp/>t</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_ValleyEmphasisBinarizer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>threshold</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___get_threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_valley_emphasis_binarizer;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>PDF<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">##<sp/>@scope<sp/>Machine<sp/>learning<sp/>classification<sp/>for<sp/>document<sp/>layout<sp/>analysis.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">##<sp/>CLASS<sp/>[6][ValleyEmphasisBinarizer<sp/>reader/processor]<sp/>=&gt;<sp/>ValleyEmphasisBinarizer</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(PDF)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b91d9cd8fd9a823fb1a49bf4b0574cfb3_1a780ca1af167b4d75868c421b267acfbc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1b91d9cd8fd9a823fb1a49bf4b0574cfb3_1a780ca1af167b4d75868c421b267acfbc" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>valley_emphasis_binarizer,<sp/>dedoc,<sp/>reader,<sp/>PDF,<sp/>PdfReader,<sp/>BaseReader,<sp/>PDF,<sp/>pdfminer,<sp/>tabby,<sp/>OCR,<sp/>tables,<sp/>image,<sp/>txtlayer,<sp/>columns,<sp/>orientation,<sp/>paragraphs,<sp/>metadata,<sp/>extraction,<sp/>line,<sp/>bbox,<sp/>ValleyEmphasisBinarizer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>┌PDF<sp/>file┐<sp/>→<sp/>[ValleyEmphasisBinarizer]<sp/>○<sp/>can_read?<sp/>→<sp/>○<sp/>read<sp/>→<sp/>[__init__<sp/>→<sp/>binarize<sp/>→<sp/>__get_threshold]<sp/>→<sp/>⊕<sp/>UnstructuredDocument(lines,<sp/>tables,<sp/>attachments)</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/line_metadata_extractor/bold_classifier/valley_emphasis_binarizer.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+var classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158 =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158.html#a9ca0cd09c0512da191b6ad47897b3531", null ],
+    [ "predict", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158.html#a947dc1c1d2b09bc3ca512a0f8485af97", null ],
+    [ "__symbol_threshold", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158.html#a5b8af5ab34acec26782c27ca099d223a", null ]
+];

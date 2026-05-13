@@ -1,0 +1,26 @@
+var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor =
+[
+    [ "__create_features_name", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aaae2f4db78f9fcff4f8c72a486a96a92", null ],
+    [ "_before_special_line", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a42040a0c8d15a32ef058036473fc4c2b", null ],
+    [ "_can_be_prev_element", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a7f83a87aca3a2add2625bda9ebb085e8", null ],
+    [ "_get_before_toc", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a149a0d7cb35bed9c9034db26ebf017bd", null ],
+    [ "_get_bold", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a4316657668c9749f4d2144f824f9e722", null ],
+    [ "_get_bold_percent", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a2f429fb12f982d5bf7a4ef8f5955b9bc", null ],
+    [ "_get_color", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a7f1decb9e98b16955e22f5d937a045b8", null ],
+    [ "_get_features_quantile", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a8f27367534883fc2c20892d7cef90b98", null ],
+    [ "_get_indentation", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a915b445d04d86d385a8e71ef30bc5203", null ],
+    [ "_get_italic", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a4ed22cef8222801d27f6d7c2356d94a0", null ],
+    [ "_get_percent_upper_letters", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aa353d6c71dbe470917fc5fc0c9730dc2", null ],
+    [ "_get_size", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a766303cb7094fed849a83f6b20dddda8", null ],
+    [ "_get_spacing", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a9491d285c1f299e35067af6cb374ce26", null ],
+    [ "_get_underlined", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a0591b04388eda878749ac96eda3d9890", null ],
+    [ "_is_first_bold", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a1dd0eefa58a4ac58606cb05b49192290", null ],
+    [ "_list_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#abe6ff506ab53b6e82b0da035a5e3e118", null ],
+    [ "_next_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aa1adc6c894cdb2a5dadb3b001f6c7162", null ],
+    [ "_normalize_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ab2086f429581aaee2357f9c7c74959e1", null ],
+    [ "_prev_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ae2bb74f0df55f747324881a8e770e88d", null ],
+    [ "_start_regexp", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a0a0e8b1a5a56d427fd609def3c639126", null ],
+    [ "parameters", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aadcf633163d20944734922090bae130c", null ],
+    [ "prev_next_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ae6bbd6467aa4f4ae2f032d32d6a77f52", null ],
+    [ "transform", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ab4b859be1ed6c974b8a02a41303da75b", null ]
+];

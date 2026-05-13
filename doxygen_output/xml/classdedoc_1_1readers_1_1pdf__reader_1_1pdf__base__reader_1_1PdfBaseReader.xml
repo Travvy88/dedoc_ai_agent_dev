@@ -1,0 +1,723 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" prot="public" virt="non-virtual">dedoc.readers.base_reader.BaseReader</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afc9f1b5af7931179e681b5b6f9f1501f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::table_recognizer</definition>
+        <argsstring></argsstring>
+        <name>table_recognizer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.table_recognizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="54" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ab17d34ac9da20ef486bed34657f4dd83" compoundref="pdf__tabby__reader_8py" startline="93" endline="161">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__extract</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b" compoundref="pdf__image__reader_8py" startline="71" endline="106">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader._process_one_page</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a2d373189312cd4842d41342c2dfe0fbb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::metadata_extractor</definition>
+        <argsstring></argsstring>
+        <name>metadata_extractor</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.metadata_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="55" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b" compoundref="pdf__image__reader_8py" startline="71" endline="106">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader._process_one_page</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ad51cc1220d36d4a1990b496447660117" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::attachment_extractor</definition>
+        <argsstring></argsstring>
+        <name>attachment_extractor</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.attachment_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="56" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a9f20b27924ebbb71527023198cf7dea4" compoundref="docx__reader_8py" startline="25" endline="40">dedoc.readers.docx_reader.docx_reader.DocxReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" compoundref="excel__reader_8py" startline="33" endline="52">dedoc.readers.excel_reader.excel_reader.ExcelReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063" compoundref="pdf__tabby__reader_8py" startline="64" endline="89">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a12ae10ee0801f708b7445c559eb5b186" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::linker</definition>
+        <argsstring></argsstring>
+        <name>linker</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.linker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="57" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ab17d34ac9da20ef486bed34657f4dd83" compoundref="pdf__tabby__reader_8py" startline="93" endline="161">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__extract</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a4d071549fa9cfb2590fd18ebd3fbbe05" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::paragraph_extractor</definition>
+        <argsstring></argsstring>
+        <name>paragraph_extractor</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.paragraph_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063" compoundref="pdf__tabby__reader_8py" startline="64" endline="89">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afe1ba04eb0b3c0d10ca1ee6f606766c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::gost_frame_recognizer</definition>
+        <argsstring></argsstring>
+        <name>gost_frame_recognizer</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.gost_frame_recognizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="59" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af610bcb90773e6b0d74c2e99c8f6a5ec" compoundref="pdf__tabby__reader_8py" startline="164" endline="184">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__save_gost_frame_boxes_to_json</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a3b041d1d922c252617f232c71c52a4eb" compoundref="pdf__base__reader_8py" startline="164" endline="180">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_document_with_gost_frame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1abf7986a6629c3ca9c562966621e75c2a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::header_footer_detector</definition>
+        <argsstring></argsstring>
+        <name>header_footer_detector</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.header_footer_detector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="60" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ab17d34ac9da20ef486bed34657f4dd83" compoundref="pdf__tabby__reader_8py" startline="93" endline="161">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__extract</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91459b0c4c8ec06f0c9ecd42addff2d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::gost_frame_boxes</definition>
+        <argsstring></argsstring>
+        <name>gost_frame_boxes</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.gost_frame_boxes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="173" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="173" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a7f7ad373211efbc9451dc8228ea1d845" prot="protected" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader::_process_one_page</definition>
+        <argsstring></argsstring>
+        <name>_process_one_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_one_page</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b">_process_one_page</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af08dec23a61c92addae3d3fa44ceff71">_process_one_page</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820">_process_one_page</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="123" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None, Optional[Set[str]] recognized_extensions=None, Optional[Set[str]] recognized_mimes=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a552713056ee6b03298dd298321be30ef">__init__</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a867edc1961c3e209776c7408cf387ed7">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1a102b1e29221cca905d3d3d80fc9942a0">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1a3fe07c23ae44e96bc384b36f77d269ca">__init__</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a59cfdd4d9b84ba5d0b256e9fad91c5f0">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>recognized_extensions</declname>
+          <array>[Set[str]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>recognized_mimes</declname>
+          <array>[Set[str]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="42" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="42" bodyend="61"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed" compoundref="pdf__base__reader_8py" startline="42" endline="61">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.__init__</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad08b6ad3707f0ac4c4f305535247a54f" compoundref="abstract__attachment__extractor_8py" startline="56">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.config</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1adae109e50489318d2659d1f50b160bd0" compoundref="attachments__handler_8py" startline="60">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.config</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a84235150e8b6d89fa851534168fd3ee6" compoundref="abstract__converter_8py" startline="30">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.config</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a2fe97af0f823e6832c6fab044fc8ec6a" compoundref="dedoc__manager_8py" startline="54">dedoc.dedoc_manager.DedocManager.config</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a99b98af4b1764d21a4f981bef737c929" compoundref="abstract__metadata__extractor_8py" startline="42">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1aa4d60cb918041f4403133b6732adc046" compoundref="base__reader_8py" startline="27">dedoc.readers.base_reader.BaseReader.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a63de47bbf20281a8f42c94ee044a0559" compoundref="table__tree_8py" startline="37">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a70e3696a577f215202e16f9d9c09707e" compoundref="abstract__txtlayer__classifier_8py" startline="15">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1a2f0545e290a005f966ddcb0fc6e946d8" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a730689d8c6483c07e5e7ca046681277b" compoundref="txtlayer__detector_8py" startline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8_1ab1951c1cb981f7780420de9a8936a111" compoundref="metadata__extractor_8py" startline="28">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.metadata_extractor.LineMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1aeb7039aa141e1a3efb44866bb19ad4eb" compoundref="ocr__cell__extractor_8py" startline="25">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a793e93c97f8d172f8020d83972f50825" compoundref="ocr__line__extractor_8py" startline="20">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a7f8bbf546dc8c8d3680ef1326053a435" compoundref="scan__paragraph__classifier__extractor_8py" startline="29">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a53d296b337ed302146ef972b08010dda" compoundref="gost__frame__recognizer_8py" startline="19">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a95ff6a413bcf4d13b79346efa7e43141" compoundref="base__table__extractor_8py" startline="11">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a33bfe6bdd56b16287250f60a4e07a567" compoundref="table__recognizer_8py" startline="39">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a24a78c7d554b752923413c049cd70fbf" compoundref="pdfminer__extractor_8py" startline="48">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1a99312b40bec6ee14e330aaa4a8a4ef74" compoundref="line__object__linker_8py" startline="26">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a24d3a91333ad1ec62b55afb2ba112a14" compoundref="abstract__structure__extractor_8py" startline="33">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0a1c3ccb8ace5d6c8b15f636b11c4a2e" compoundref="paragraph__feature__extractor_8py" startline="32">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" compoundref="abstract__line__type__classifier_8py" startline="22">dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier.AbstractLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a70fbab63d7211444622481ff8bbfe01f" compoundref="abstract__pickled__classifier_8py" startline="60">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.config</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed" compoundref="pdf__base__reader_8py" startline="42" endline="61">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a5fbcf9a222907f9bff5de42552c0f461">read</reimplements>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a06a290cebb97acc05eb776ae06a5bed3">read</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063">read</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1a35303570075aac7694451f3e676fa24f">read</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>The method return document content with all document&apos;s lines, tables and attachments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This reader is able to add some additional information to the <computeroutput>tag_hierarchy_level</computeroutput> of :class:<computeroutput>~dedoc.data_structures.LineMetadata</computeroutput> (<computeroutput>can_be_multiline</computeroutput> attribute is important for paragraph extraction). Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters.</para>
+<para>You can also see :ref:<computeroutput>pdf_handling_parameters</computeroutput> to get more information about <computeroutput>parameters</computeroutput> dictionary possible arguments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="64" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="64" bodyend="102"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" compoundref="pdf__base__reader_8py" startline="106" endline="160">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a2d039f7b957f818e8240c1ff44b16296" compoundref="abstract__structure__extractor_8py" startline="59" endline="114">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor._postprocess</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1article__structure__ex2bae55efdcd9eebb33ecfa874024649b_1a453fc0b83d61a571c6a6fc9a8ed5fbaa" compoundref="article__structure__extractor_8py" startline="51" endline="54">dedoc.structure_extractors.concrete_structure_extractors.article_structure_extractor.ArticleStructureExtractor._postprocess</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1ab8efc3b9ad794aee101965429fe8c2c9" compoundref="base__reader_8py" startline="69" endline="75">dedoc.readers.base_reader.BaseReader._postprocess</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader_1aae9afc6c7d1c68213d5802b8245b78b3" compoundref="pdf__broken__encoding__reader_8py" startline="45" endline="52">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader._postprocess</references>
+        <references refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader_1a4ac26cc44e7dd38bd7e4ce4f61d97153" compoundref="raw__text__reader_8py" startline="133" endline="140">dedoc.readers.txt_reader.raw_text_reader.RawTextReader._postprocess</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a2ffbdd4176560d545888d52eba62ef0d" compoundref="docx__reader_8py" startline="21">dedoc.readers.docx_reader.docx_reader.DocxReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aa113274d2f0ffaa6ba3bf9079a146533" compoundref="excel__reader_8py" startline="29">dedoc.readers.excel_reader.excel_reader.ExcelReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6e21ebc990ad16dcc7b620a88153e259" compoundref="json__reader_8py" startline="26">dedoc.readers.json_reader.json_reader.JsonReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ad51cc1220d36d4a1990b496447660117" compoundref="pdf__base__reader_8py" startline="56">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.attachment_extractor</references>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a481ea4b5d2f49838090860b3022c4779" compoundref="pdf__base__reader_8py" startline="17">dedoc.readers.pdf_reader.pdf_base_reader.ParametersForParseDoc</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" kindref="compound">ScanTable</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" kindref="compound">PdfImageAttachment</ref>], List[str], Optional[dict]]</type>
+        <definition> Tuple[List[LineWithMeta], List[ScanTable], List[PdfImageAttachment], List[str], Optional[dict]] dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</definition>
+        <argsstring>(self, str path, ParametersForParseDoc parameters)</argsstring>
+        <name>_parse_document</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a481ea4b5d2f49838090860b3022c4779" kindref="member">ParametersForParseDoc</ref></type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="105" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="106" bodyend="160"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ab317ff686fada57684ded04d6662b404" compoundref="pdf__base__reader_8py" startline="234" endline="252">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._get_images</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a3b041d1d922c252617f232c71c52a4eb" compoundref="pdf__base__reader_8py" startline="164" endline="180">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_document_with_gost_frame</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad08b6ad3707f0ac4c4f305535247a54f" compoundref="abstract__attachment__extractor_8py" startline="56">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.config</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1adae109e50489318d2659d1f50b160bd0" compoundref="attachments__handler_8py" startline="60">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.config</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a84235150e8b6d89fa851534168fd3ee6" compoundref="abstract__converter_8py" startline="30">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.config</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a2fe97af0f823e6832c6fab044fc8ec6a" compoundref="dedoc__manager_8py" startline="54">dedoc.dedoc_manager.DedocManager.config</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a99b98af4b1764d21a4f981bef737c929" compoundref="abstract__metadata__extractor_8py" startline="42">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1aa4d60cb918041f4403133b6732adc046" compoundref="base__reader_8py" startline="27">dedoc.readers.base_reader.BaseReader.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a63de47bbf20281a8f42c94ee044a0559" compoundref="table__tree_8py" startline="37">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a70e3696a577f215202e16f9d9c09707e" compoundref="abstract__txtlayer__classifier_8py" startline="15">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1a2f0545e290a005f966ddcb0fc6e946d8" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a730689d8c6483c07e5e7ca046681277b" compoundref="txtlayer__detector_8py" startline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8_1ab1951c1cb981f7780420de9a8936a111" compoundref="metadata__extractor_8py" startline="28">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.metadata_extractor.LineMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1aeb7039aa141e1a3efb44866bb19ad4eb" compoundref="ocr__cell__extractor_8py" startline="25">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a793e93c97f8d172f8020d83972f50825" compoundref="ocr__line__extractor_8py" startline="20">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a7f8bbf546dc8c8d3680ef1326053a435" compoundref="scan__paragraph__classifier__extractor_8py" startline="29">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a53d296b337ed302146ef972b08010dda" compoundref="gost__frame__recognizer_8py" startline="19">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a95ff6a413bcf4d13b79346efa7e43141" compoundref="base__table__extractor_8py" startline="11">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a33bfe6bdd56b16287250f60a4e07a567" compoundref="table__recognizer_8py" startline="39">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a24a78c7d554b752923413c049cd70fbf" compoundref="pdfminer__extractor_8py" startline="48">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1a99312b40bec6ee14e330aaa4a8a4ef74" compoundref="line__object__linker_8py" startline="26">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a24d3a91333ad1ec62b55afb2ba112a14" compoundref="abstract__structure__extractor_8py" startline="33">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0a1c3ccb8ace5d6c8b15f636b11c4a2e" compoundref="paragraph__feature__extractor_8py" startline="32">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" compoundref="abstract__line__type__classifier_8py" startline="22">dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier.AbstractLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a70fbab63d7211444622481ff8bbfe01f" compoundref="abstract__pickled__classifier_8py" startline="60">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.config</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a3b041d1d922c252617f232c71c52a4eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>\ Tuple[Tuple[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" kindref="compound">ScanTable</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" kindref="compound">PdfImageAttachment</ref>], List[float]], Dict[int, Tuple[ndarray, BBox, Tuple[int,...]]]]</type>
+        <definition> \
+            Tuple[Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], List[float]], Dict[int, Tuple[ndarray, BBox, Tuple[int, ...]]]] dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_document_with_gost_frame</definition>
+        <argsstring>(self, Iterator[ndarray] images, int first_page, ParametersForParseDoc parameters, str path)</argsstring>
+        <name>_process_document_with_gost_frame</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_document_with_gost_frame</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>images</declname>
+          <array>[ndarray]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first_page</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a481ea4b5d2f49838090860b3022c4779" kindref="member">ParametersForParseDoc</ref></type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="163" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="164" bodyend="180"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad08b6ad3707f0ac4c4f305535247a54f" compoundref="abstract__attachment__extractor_8py" startline="56">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.config</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1adae109e50489318d2659d1f50b160bd0" compoundref="attachments__handler_8py" startline="60">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.config</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a84235150e8b6d89fa851534168fd3ee6" compoundref="abstract__converter_8py" startline="30">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.config</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a2fe97af0f823e6832c6fab044fc8ec6a" compoundref="dedoc__manager_8py" startline="54">dedoc.dedoc_manager.DedocManager.config</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a99b98af4b1764d21a4f981bef737c929" compoundref="abstract__metadata__extractor_8py" startline="42">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1aa4d60cb918041f4403133b6732adc046" compoundref="base__reader_8py" startline="27">dedoc.readers.base_reader.BaseReader.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a63de47bbf20281a8f42c94ee044a0559" compoundref="table__tree_8py" startline="37">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a70e3696a577f215202e16f9d9c09707e" compoundref="abstract__txtlayer__classifier_8py" startline="15">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1a2f0545e290a005f966ddcb0fc6e946d8" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a730689d8c6483c07e5e7ca046681277b" compoundref="txtlayer__detector_8py" startline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8_1ab1951c1cb981f7780420de9a8936a111" compoundref="metadata__extractor_8py" startline="28">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.metadata_extractor.LineMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1aeb7039aa141e1a3efb44866bb19ad4eb" compoundref="ocr__cell__extractor_8py" startline="25">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a793e93c97f8d172f8020d83972f50825" compoundref="ocr__line__extractor_8py" startline="20">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a7f8bbf546dc8c8d3680ef1326053a435" compoundref="scan__paragraph__classifier__extractor_8py" startline="29">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a53d296b337ed302146ef972b08010dda" compoundref="gost__frame__recognizer_8py" startline="19">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a95ff6a413bcf4d13b79346efa7e43141" compoundref="base__table__extractor_8py" startline="11">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a33bfe6bdd56b16287250f60a4e07a567" compoundref="table__recognizer_8py" startline="39">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a24a78c7d554b752923413c049cd70fbf" compoundref="pdfminer__extractor_8py" startline="48">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1a99312b40bec6ee14e330aaa4a8a4ef74" compoundref="line__object__linker_8py" startline="26">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a24d3a91333ad1ec62b55afb2ba112a14" compoundref="abstract__structure__extractor_8py" startline="33">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0a1c3ccb8ace5d6c8b15f636b11c4a2e" compoundref="paragraph__feature__extractor_8py" startline="32">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" compoundref="abstract__line__type__classifier_8py" startline="22">dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier.AbstractLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a70fbab63d7211444622481ff8bbfe01f" compoundref="abstract__pickled__classifier_8py" startline="60">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afe1ba04eb0b3c0d10ca1ee6f606766c8" compoundref="pdf__base__reader_8py" startline="59">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.gost_frame_recognizer</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" compoundref="pdf__base__reader_8py" startline="106" endline="160">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1af705f3c2a2c0d099bdc8e1425be55572" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._shift_all_contents</definition>
+        <argsstring>(self, List[LineWithMeta] lines, List[ScanTable] onepage_tables, List[PdfImageAttachment] attachments, Dict[int, Tuple[ndarray, BBox, Tuple[int,...]]] gost_analyzed_images)</argsstring>
+        <name>_shift_all_contents</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._shift_all_contents</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>lines</declname>
+          <array>[LineWithMeta]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>onepage_tables</declname>
+          <array>[ScanTable]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>attachments</declname>
+          <array>[PdfImageAttachment]</array>
+        </param>
+        <param>
+          <type>Dict]]</type>
+          <declname>gost_analyzed_images</declname>
+          <array>[int, Tuple[ndarray, BBox, Tuple[int,...]</array>
+        </param>
+        <briefdescription>
+<para>Shift all recognized content relative to the original source image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="183" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="184" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a03b92611dd11315f838d183c2fc15eab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation" kindref="compound">LineWithLocation</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable" kindref="compound">ScanTable</ref>], List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1pdf__image__attachment_1_1PdfImageAttachment" kindref="compound">PdfImageAttachment</ref>], List[float]]</type>
+        <definition> Tuple[List[LineWithLocation], List[ScanTable], List[PdfImageAttachment], List[float]] dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_one_page</definition>
+        <argsstring>(self, ndarray image, ParametersForParseDoc parameters, int page_number, str path)</argsstring>
+        <name>_process_one_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_one_page</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b">_process_one_page</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af08dec23a61c92addae3d3fa44ceff71">_process_one_page</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820">_process_one_page</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1a481ea4b5d2f49838090860b3022c4779" kindref="member">ParametersForParseDoc</ref></type>
+          <declname>parameters</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_number</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>function parses image and returns: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>recognized textual lines with annotations</para>
+</listitem><listitem><para>recognized tables on an image</para>
+</listitem><listitem><para>attachments (figures on images)</para>
+</listitem><listitem><para>[rotated_angle] - the angle by which the image was rotated for recognition </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="221" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="222" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ab317ff686fada57684ded04d6662b404" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[ndarray]</type>
+        <definition> Iterator[ndarray] dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._get_images</definition>
+        <argsstring>(self, str path, int page_from, int page_to)</argsstring>
+        <name>_get_images</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._get_images</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="234" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="234" bodyend="252"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1a6fbae85ac940fb1435591888a7af04f9" compoundref="abstract__attachment__extractor_8py" startline="59">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor._recognized_mimes</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a4127c76e0e91811b46c65e2f77e4f438" compoundref="abstract__metadata__extractor_8py" startline="45">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor._recognized_mimes</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a02aa66ed64467d48bc12ba2bdd97cf3d" compoundref="base__reader_8py" startline="30">dedoc.readers.base_reader.BaseReader._recognized_mimes</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a8bc49992fb33f379e7761618641877d9" compoundref="pdf__base__reader_8py" startline="255" endline="285">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._split_pdf2image</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af610bcb90773e6b0d74c2e99c8f6a5ec" compoundref="pdf__tabby__reader_8py" startline="164" endline="184">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__save_gost_frame_boxes_to_json</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" compoundref="pdf__base__reader_8py" startline="106" endline="160">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a8bc49992fb33f379e7761618641877d9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[ndarray]</type>
+        <definition> Iterator[ndarray] dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._split_pdf2image</definition>
+        <argsstring>(self, str path, int page_from, int page_to)</argsstring>
+        <name>_split_pdf2image</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._split_pdf2image</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="255" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="255" bodyend="285"/>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad08b6ad3707f0ac4c4f305535247a54f" compoundref="abstract__attachment__extractor_8py" startline="56">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.config</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1adae109e50489318d2659d1f50b160bd0" compoundref="attachments__handler_8py" startline="60">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.config</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a84235150e8b6d89fa851534168fd3ee6" compoundref="abstract__converter_8py" startline="30">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.config</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a2fe97af0f823e6832c6fab044fc8ec6a" compoundref="dedoc__manager_8py" startline="54">dedoc.dedoc_manager.DedocManager.config</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a99b98af4b1764d21a4f981bef737c929" compoundref="abstract__metadata__extractor_8py" startline="42">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1aa4d60cb918041f4403133b6732adc046" compoundref="base__reader_8py" startline="27">dedoc.readers.base_reader.BaseReader.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a63de47bbf20281a8f42c94ee044a0559" compoundref="table__tree_8py" startline="37">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a70e3696a577f215202e16f9d9c09707e" compoundref="abstract__txtlayer__classifier_8py" startline="15">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1a2f0545e290a005f966ddcb0fc6e946d8" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a730689d8c6483c07e5e7ca046681277b" compoundref="txtlayer__detector_8py" startline="23">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1metad2e1da2973156344bfb60445a08fd4cb8_1ab1951c1cb981f7780420de9a8936a111" compoundref="metadata__extractor_8py" startline="28">dedoc.readers.pdf_reader.pdf_image_reader.line_metadata_extractor.metadata_extractor.LineMetadataExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1aeb7039aa141e1a3efb44866bb19ad4eb" compoundref="ocr__cell__extractor_8py" startline="25">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a793e93c97f8d172f8020d83972f50825" compoundref="ocr__line__extractor_8py" startline="20">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a7f8bbf546dc8c8d3680ef1326053a435" compoundref="scan__paragraph__classifier__extractor_8py" startline="29">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a53d296b337ed302146ef972b08010dda" compoundref="gost__frame__recognizer_8py" startline="19">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a95ff6a413bcf4d13b79346efa7e43141" compoundref="base__table__extractor_8py" startline="11">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a33bfe6bdd56b16287250f60a4e07a567" compoundref="table__recognizer_8py" startline="39">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a24a78c7d554b752923413c049cd70fbf" compoundref="pdfminer__extractor_8py" startline="48">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.config</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1a99312b40bec6ee14e330aaa4a8a4ef74" compoundref="line__object__linker_8py" startline="26">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a24d3a91333ad1ec62b55afb2ba112a14" compoundref="abstract__structure__extractor_8py" startline="33">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1paragraph__feature__extractor_1_1ParagraphFeatureExtractor_1a0a1c3ccb8ace5d6c8b15f636b11c4a2e" compoundref="paragraph__feature__extractor_8py" startline="32">dedoc.structure_extractors.feature_extractors.paragraph_feature_extractor.ParagraphFeatureExtractor.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" compoundref="abstract__line__type__classifier_8py" startline="22">dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier.AbstractLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a70fbab63d7211444622481ff8bbfe01f" compoundref="abstract__pickled__classifier_8py" startline="60">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.config</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1AbstractProcessHandler_1a4f0d550e1d468385d37fd00aa0dbc71c" compoundref="process__handler_8py" startline="66">dedoc.api.process_handler.AbstractProcessHandler.logger</references>
+        <references refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a9e3b2abb630d05749d65bdda3a573468" compoundref="process__handler_8py" startline="188">dedoc.api.process_handler.CancellationProcessHandler.logger</references>
+        <references refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor_1ad455585d457c42de5fca18b265a4765e" compoundref="abstract__attachment__extractor_8py" startline="57">dedoc.attachments_extractors.abstract_attachment_extractor.AbstractAttachmentsExtractor.logger</references>
+        <references refid="classdedoc_1_1attachments__handler_1_1attachments__handler_1_1AttachmentsHandler_1a39f1ac145319c396bace4330b78f2195" compoundref="attachments__handler_8py" startline="61">dedoc.attachments_handler.attachments_handler.AttachmentsHandler.logger</references>
+        <references refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a2a111fba8be5185952edd0eedb75de8b" compoundref="abstract__converter_8py" startline="31">dedoc.converters.concrete_converters.abstract_converter.AbstractConverter.logger</references>
+        <references refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1acc8b88a003f3a92f88ffeb96cdfe0d84" compoundref="dedoc__manager_8py" startline="55">dedoc.dedoc_manager.DedocManager.logger</references>
+        <references refid="classdedoc_1_1metadata__extractors_1_1abstract__metadata__extractor_1_1AbstractMetadataExtractor_1a0e7fd2b5e9df7ceca2c4457dfa2a71bf" compoundref="abstract__metadata__extractor_8py" startline="43">dedoc.metadata_extractors.abstract_metadata_extractor.AbstractMetadataExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a1d4691721382bb17c67fab7283b3be58" compoundref="base__reader_8py" startline="28">dedoc.readers.base_reader.BaseReader.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1docx__document_1_1DocxDocument_1a902f70c0a92b41ed64f2ae7591394d30" compoundref="docx__document_8py" startline="27">dedoc.readers.docx_reader.data_structures.docx_document.DocxDocument.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1Counter_1a579ffc44d017bf8151d34e89d3074282" compoundref="readers_2docx__reader_2data__structures_2utils_8py" startline="19">dedoc.readers.docx_reader.data_structures.utils.Counter.logger</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1styles__extractor_1_1StylesExtractor_1abf870f6f2409d33abf7dc638a0d793dd" compoundref="styles__extractor_8py" startline="33">dedoc.readers.docx_reader.styles_extractor.StylesExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1a79595835d11acabf1c6bd25ffb62097d" compoundref="table__tree_8py" startline="38">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1abstract__t01115bcff3ac917418a9236a0d244516_1a0aae3f328537d771c9d2444911d6cfd8" compoundref="abstract__txtlayer__classifier_8py" startline="16">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.abstract_txtlayer_classifier.AbstractTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b_1abe2cc2205d6dba47c2b19fae87a5729d" compoundref="ml__txtlayer__classifier_8py" startline="44">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__detector_1_1TxtLayerDetector_1a788d64031f57c6c270048fbca6bc468e" compoundref="txtlayer__detector_8py" startline="24">dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_detector.TxtLayerDetector.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1columns__orientation__classifier_13fcc17e5949651de958c49767fd1ab65_1a6eb34c775844526ea9916d5e3c5a69c9" compoundref="columns__orientation__classifier_8py" startline="26">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier.ColumnsOrientationClassifier.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" compoundref="ocr__cell__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a86473c620acce2f2ecba1d2c563ae16d" compoundref="scan__paragraph__classifier__extractor_8py" startline="27">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1a0b576466a5a92e03141013c82b1ac878" compoundref="gost__frame__recognizer_8py" startline="18">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac1c0764fbdd8f9c051d433d5e9faaf50c_1a682a8e07ec202dff245487434753d31d" compoundref="base__table__extractor_8py" startline="12">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.base_table_extractor.BaseTableExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac2ca1891308284af131033f1734cd99a1_1a0273f61f525f2cc2ed1eec1c6174d134" compoundref="table__attribute__extractor_8py" startline="17">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor.TableHeaderExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1ac1615770d0072fb36ee835a2236ae915" compoundref="table__recognizer_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8a07d438a5803ffa4f626254588b6454" compoundref="pdfminer__extractor_8py" startline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.logger</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1ac3d08b68df1640b871ae6c72c3d50e77" compoundref="line__object__linker_8py" startline="27">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a73fb10280003494819f3d0bd91735b7c" compoundref="abstract__structure__extractor_8py" startline="34">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor.logger</references>
+        <references refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067_1a615c6049d4bbdbec0cd52ab1c42e3992" compoundref="abstract__pickled__classifier_8py" startline="30">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier.logger</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ab317ff686fada57684ded04d6662b404" compoundref="pdf__base__reader_8py" startline="234" endline="252">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._get_images</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afda3b5c6630eaab73fd5d57392c41b8b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ndarray</type>
+        <definition> ndarray dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._convert_to_gray</definition>
+        <argsstring>(self, ndarray image)</argsstring>
+        <name>_convert_to_gray</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._convert_to_gray</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ndarray</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="288" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="288" bodyend="295"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a4a971a7bf7cd404b14d59c7033b34e96" compoundref="pdf__base__reader_8py" startline="298" endline="306">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._binarization</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader_1ab254bc4a716a3003d8f530c0c236f820" compoundref="pdf__txtlayer__reader_8py" startline="61" endline="91">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader._process_one_page</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a4a971a7bf7cd404b14d59c7033b34e96" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ndarray</type>
+        <definition> ndarray dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._binarization</definition>
+        <argsstring>(self, ndarray gray_image)</argsstring>
+        <name>_binarization</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._binarization</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ndarray</type>
+          <declname>gray_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="298" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="298" bodyend="306"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afda3b5c6630eaab73fd5d57392c41b8b" compoundref="pdf__base__reader_8py" startline="288" endline="295">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._convert_to_gray</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for pdf documents parsing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader.PdfBrokenEncodingReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding__reader_1_1PdfBrokenEncodingReader"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader.PdfTxtlayerReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_base_reader.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_base_reader.py" bodystart="36" bodyend="310"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a4a971a7bf7cd404b14d59c7033b34e96" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_binarization</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afda3b5c6630eaab73fd5d57392c41b8b" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_convert_to_gray</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ab317ff686fada57684ded04d6662b404" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_get_images</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_parse_document</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a3b041d1d922c252617f232c71c52a4eb" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_process_document_with_gost_frame</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a7f7ad373211efbc9451dc8228ea1d845" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_process_one_page</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a03b92611dd11315f838d183c2fc15eab" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_process_one_page</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1af705f3c2a2c0d099bdc8e1425be55572" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_shift_all_contents</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a8bc49992fb33f379e7761618641877d9" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>_split_pdf2image</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ad51cc1220d36d4a1990b496447660117" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>attachment_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91459b0c4c8ec06f0c9ecd42addff2d4" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>gost_frame_boxes</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afe1ba04eb0b3c0d10ca1ee6f606766c8" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>gost_frame_recognizer</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1abf7986a6629c3ca9c562966621e75c2a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>header_footer_detector</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a12ae10ee0801f708b7445c559eb5b186" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>linker</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a2d373189312cd4842d41342c2dfe0fbb" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>metadata_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a4d071549fa9cfb2590fd18ebd3fbbe05" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>paragraph_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>read</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1afc9f1b5af7931179e681b5b6f9f1501f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_base_reader::PdfBaseReader</scope><name>table_recognizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

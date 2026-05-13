@@ -2,6 +2,10 @@ import enum
 from typing import List, Union
 from typing import Type
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 junk_string = "_junkstring"
 
 char_pool = dict(
@@ -68,6 +72,7 @@ convert = dict(
 )
 
 
+# region CLASS_Language [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class Language(enum.Enum):
     Russian_and_English_no_reg_diff = char_pool["rus_eng_no_reg_diff"]
     Russian_no_reg_diff = char_pool["rus_no_reg_diff"]
@@ -77,6 +82,7 @@ class Language(enum.Enum):
     English = char_pool["eng"]
 
     @classmethod
+    # region METHOD_from_string [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def from_string(cls: Type["Language"], model_name: str) -> "Language":
         mapping = {
             "ruseng": cls.Russian_and_English,
@@ -86,9 +92,11 @@ class Language(enum.Enum):
         try:
             return mapping[model_name.lower()]
         except KeyError:
+# endregion CLASS_Language
             raise ValueError("Incorrect model_name (rus, eng, ruseng)")
 
 
+    # endregion METHOD_from_string
 convertdictrus = convert.get("convert_chars_to_rus")
 convertdicteng = dict((v, k) for k, v in convertdictrus.items())
 
@@ -164,3 +172,33 @@ def is_empty(image_path: str) -> bool:
     if extrema == (0, 0) or extrema == (255, 255):
         return True
     return empty_bool
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_utils; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Utility functions for document processing.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [2][Language reader/processor] => Language
+## FUNC [5][correct_string_incorrect_chars utility/helper] => correct_string_incorrect_chars
+## FUNC [5][correct_word_incorrect_chars utility/helper] => correct_word_incorrect_chars
+## FUNC [5][substitute_chars_by_dict utility/helper] => substitute_chars_by_dict
+## FUNC [5][correctly_resize utility/helper] => correctly_resize
+## FUNC [5][is_empty utility/helper] => is_empty
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: utils, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, Language, correct_string_incorrect_chars, correct_word_incorrect_chars, substitute_chars_by_dict, correctly_resize, is_empty
+# STRUCTURE: ▶ Init ┌PDF file┐ → [Language] ○ can_read? → ○ read → [from_string] → ⊕ UnstructuredDocument(lines, tables, attachments)

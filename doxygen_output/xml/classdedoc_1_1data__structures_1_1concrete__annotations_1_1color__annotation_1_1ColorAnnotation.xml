@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</compoundname>
+    <basecompoundref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" prot="public" virt="non-virtual">dedoc.data_structures.annotation.Annotation</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1aa2150b7fab833e6c6d02d8f81a3ad9d4" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.name</qualifiedname>
+        <initializer>=  &quot;color_annotation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="16" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a93c6780c72ac53006518a94f72a3a569" compoundref="prefix_8py" startline="52" endline="55">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31" compoundref="data__structures_2annotation_8py" startline="35" endline="52">dedoc.data_structures.annotation.Annotation.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f" compoundref="data__structures_2annotation_8py" startline="86" endline="88">dedoc.data_structures.annotation.Annotation.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a594f720c017e70789e7a18929c4acba6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation::red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.red</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="37" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a4bb93942e571a5b6062d71336edcee79" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation::blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.blue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="38" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a6cf1d8bf29f1c5adbc9cb20278f72513" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation::green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.green</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="39" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a015f6080b4682a40b4dc4e4741101a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.__init__</definition>
+        <argsstring>(self, int start, int end, float red, float green, float blue)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aef78b3fc0f332a255391bef38a67fc31">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize color annotation with validated RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  Annotation.__init__, json \par \b I/O\/ \:  (int, int, float, float, float) -&gt; None \par \b Complexity\/ \:  4</para>
+<para>:param start: start of the colored text :param end: end of the colored text (not included) :param red: mean value of the red color component in the pixels that are not white in the given bounding box :param green: mean value of the green color component in the pixels that are not white in the given bounding box :param blue: mean value of the blue color component in the pixels that are not white in the given bounding box </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="23" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="23" bodyend="46"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a74698b1766b6f4c7f17adc0b21938287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation.__str__</qualifiedname>
+        <reimplements refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1ab1ae321388f866b5ea828db6ceddb8eb">__str__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Return string representation of the color annotation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; str \par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="53" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="53" bodyend="54"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1a0c57353795449385f0700ea5647aaa75" compoundref="data__structures_2annotation_8py" startline="77" endline="78">dedoc.data_structures.annotation.Annotation.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a7779b220dda6fc7493fcd0e381d0ff5d" compoundref="cell_8py" startline="79" endline="82">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a565bcd1f42c3995b69b93f3ceaeef88a" compoundref="text__with__bbox_8py" startline="48" endline="50">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1a6f05208ffa507d861cc2be9eedeaf6c9" compoundref="word__with__bbox_8py" startline="23" endline="25">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix_1_1LinePrefix_1a4c345e691196f07d00ba00134687557f" compoundref="prefix_8py" startline="124" endline="127">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix.LinePrefix.__repr__</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Mark color of some text inside the line in RGB format. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Color of some text inside the line in the RGB format. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/concrete_annotations/color_annotation.py" line="12" column="1" bodyfile="dedoc/data_structures/concrete_annotations/color_annotation.py" bodystart="12" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a015f6080b4682a40b4dc4e4741101a0d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a74698b1766b6f4c7f17adc0b21938287" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>__str__</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a4bb93942e571a5b6062d71336edcee79" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>blue</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a6cf1d8bf29f1c5adbc9cb20278f72513" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>green</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1aa2150b7fab833e6c6d02d8f81a3ad9d4" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>name</name></member>
+      <member refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation_1a594f720c017e70789e7a18929c4acba6" prot="public" virt="non-virtual"><scope>dedoc::data_structures::concrete_annotations::color_annotation::ColorAnnotation</scope><name>red</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

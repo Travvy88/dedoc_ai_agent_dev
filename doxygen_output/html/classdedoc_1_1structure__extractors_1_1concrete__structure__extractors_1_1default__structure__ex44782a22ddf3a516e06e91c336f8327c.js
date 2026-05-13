@@ -1,0 +1,6 @@
+var classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c =
+[
+    [ "__get_pattern_composition", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c.html#af10648d7086e44b57823f468383c3f92", null ],
+    [ "extract", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c.html#a3d5df4f2d39f1bc15edaca190615e35d", null ],
+    [ "document_type", "classdedoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1default__structure__ex44782a22ddf3a516e06e91c336f8327c.html#abf06fba00db912504484dbb4842540a7", null ]
+];

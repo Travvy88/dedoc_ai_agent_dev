@@ -1,0 +1,26 @@
+var classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader =
+[
+    [ "__init__", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a9312e3f2cb6385e40336d89c634d3454", null ],
+    [ "__create_line", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a121bf5e958e771608dc839c007f76344", null ],
+    [ "__create_line_with_refs", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a6f55f82fe43419def4f68e1ab6bd4e73", null ],
+    [ "__get_image", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#aa6e4ef09756a6e587104fac35ae25bdf", null ],
+    [ "__get_tag_by_hierarchy_path", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#aefd09e3ca329f24178ea88d8b2e7e46e", null ],
+    [ "__parse_affiliation", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a1e3c93564a75ee8cf2702be150de7d87", null ],
+    [ "__parse_author", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#ac217784d21a3e0fea9c97d1587987622", null ],
+    [ "__parse_bibliography", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a43d0132d8fb9054214c368bea5937c4f", null ],
+    [ "__parse_images", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a45197fded435d1b9206b20e6a61e861b", null ],
+    [ "__parse_keywords", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a0d6f1c60a73bdd430a456c909bf6a814", null ],
+    [ "__parse_section", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a8804f753d8aaaaaed3d403d75030d142", null ],
+    [ "__parse_tables", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#ae2fd503273c8bb28468a02132df91e91", null ],
+    [ "__parse_text", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a4431f4b100d06c5b6e3fde422a96e29b", null ],
+    [ "__parse_title", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a19ed38f1507d0f899d9fcda63194db97", null ],
+    [ "__remove_newlines", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a4b86eb9b062dceccc593678bfaa452fb", null ],
+    [ "__tag2text", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a681949b02795c047702b68b71d178cdb", null ],
+    [ "__update_grobid_alive", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#adbd4c07c1553e806743e0099d48a572c", null ],
+    [ "can_read", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#ac17ba87e8938aa69f270c6001e30b2a2", null ],
+    [ "read", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a6af3f19ef3d3f217f959472f08bada63", null ],
+    [ "grobid_is_alive", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a1e68b6f793b763759da363ae54ee599c", null ],
+    [ "grobid_url", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a3ca46b47f1e242ae9d9482c16c00f529", null ],
+    [ "request_headers", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#a3b40400ebd96836538f3e4a24089f8a9", null ],
+    [ "url", "classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader.html#aed9d99aaa5467f8c8d16267cee4c3e56", null ]
+];

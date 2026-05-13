@@ -1,0 +1,6 @@
+var namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier =
+[
+    [ "AbstractLineTypeClassifier", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier.html#a67c660ed01aa450103f3f19027ca4343", null ],
+    [ "logger", "namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier.html#aa64bfe216312ce22f143104c649ac74d", null ]
+];

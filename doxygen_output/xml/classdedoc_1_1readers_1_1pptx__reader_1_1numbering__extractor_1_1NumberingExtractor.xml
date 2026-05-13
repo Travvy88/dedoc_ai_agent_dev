@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a66b3abc25a1a6b6504d67ef0175f1a9a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor::numbering_types</definition>
+        <argsstring></argsstring>
+        <name>numbering_types</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.numbering_types</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="17" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" compoundref="pptx__reader_2numbering__extractor_8py" startline="43" endline="68">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af2be3d3b6716a0eac89dbf2c9698196d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor::numbering_formatting</definition>
+        <argsstring></argsstring>
+        <name>numbering_formatting</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.numbering_formatting</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="25" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" compoundref="pptx__reader_2numbering__extractor_8py" startline="43" endline="68">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aea006430dda0acd7a266fdc66b0447bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor::combined_types</definition>
+        <argsstring></argsstring>
+        <name>combined_types</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.combined_types</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="32" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" compoundref="pptx__reader_2numbering__extractor_8py" startline="43" endline="68">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a6ea393472ed030c495383e9fc6a839b1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor::roman_mapping</definition>
+        <argsstring></argsstring>
+        <name>roman_mapping</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.roman_mapping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="35" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1ab57d4b9bcfd3136d1ac1777fbd345075" compoundref="docx__reader_2numbering__extractor_8py" startline="203" endline="237">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.get_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" compoundref="pptx__reader_2numbering__extractor_8py" startline="43" endline="68">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aa68f53f19482ec822569bc39b87db3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize numbering type definitions (arabic, alphabetic, roman) and formatting templates (ParenBoth, ParenR, Period, Plain). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="13" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="13" bodyend="35"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</definition>
+        <argsstring>(self, str numbering, int shift)</argsstring>
+        <name>get_text</name>
+        <qualifiedname>dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.get_text</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>numbering</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Compute the next item in a list sequence given the numbering scheme and current shift. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  self.combined_types, self.numbering_types, self.roman_mapping, self.numbering_formatting \par \b I/O\/ \:  (numbering: str, shift: int) -&gt; str \par \b Complexity\/ \:  5</para>
+<para>Computes the next item of the list sequence. :param numbering: type of the numbering, e.g. &quot;arabicPeriod&quot; :param shift: shift from the beginning of list numbering :return: string representation of the next numbering item </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="43" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="43" bodyend="68"/>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aea006430dda0acd7a266fdc66b0447bf" compoundref="pptx__reader_2numbering__extractor_8py" startline="32">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.combined_types</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af2be3d3b6716a0eac89dbf2c9698196d" compoundref="pptx__reader_2numbering__extractor_8py" startline="25">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.numbering_formatting</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a66b3abc25a1a6b6504d67ef0175f1a9a" compoundref="pptx__reader_2numbering__extractor_8py" startline="17">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.numbering_types</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1numbering__extractor_1_1NumberingFormatter_1a603f9a1e056fbf112f209dd2b20d262d" compoundref="docx__reader_2numbering__extractor_8py" startline="200">dedoc.readers.docx_reader.numbering_extractor.NumberingFormatter.roman_mapping</references>
+        <references refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a6ea393472ed030c495383e9fc6a839b1" compoundref="pptx__reader_2numbering__extractor_8py" startline="35">dedoc.readers.pptx_reader.numbering_extractor.NumberingExtractor.roman_mapping</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Compute numbering text for ordered list items (arabic, alphabetic, roman numerals) according to PowerPoint ST_TextAutonumberScheme. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b Uses\/ \:  None (pure computation class) \par \b Complexity\/ \:  4</para>
+<para>This class is used to compute numbering text for list items. For example: &quot;1.&quot;, (i), &quot;○&quot; </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/numbering_extractor.py" line="5" column="1" bodyfile="dedoc/readers/pptx_reader/numbering_extractor.py" bodystart="5" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aa68f53f19482ec822569bc39b87db3de" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1aea006430dda0acd7a266fdc66b0447bf" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>combined_types</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a84c9c403f6ad2cf311dea602e2e60403" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>get_text</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1af2be3d3b6716a0eac89dbf2c9698196d" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>numbering_formatting</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a66b3abc25a1a6b6504d67ef0175f1a9a" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>numbering_types</name></member>
+      <member refid="classdedoc_1_1readers_1_1pptx__reader_1_1numbering__extractor_1_1NumberingExtractor_1a6ea393472ed030c495383e9fc6a839b1" prot="public" virt="non-virtual"><scope>dedoc::readers::pptx_reader::numbering_extractor::NumberingExtractor</scope><name>roman_mapping</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1docx__metadata__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::metadata_extractors::concrete_metadata_extractors::docx_metadata_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1docx__metadata__extractor_1_1DocxMetadataExtractor" prot="public">dedoc::metadata_extractors::concrete_metadata_extractors::docx_metadata_extractor::DocxMetadataExtractor</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1docx__metadata__extractor_1a241a9ff2da388fbb2349bedb98d60c70" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To extract rich metadata from DOCX documents — reads core properties (author, dates, keywords, etc.) via python-docx and merges them with base OS metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  DOCX file metadata: core properties, subject, keywords, author, dates. \par \b Input\/ \:  file_path via extract(), config with recognized formats. \par \b Output\/ \:  dict merging BaseMetadataExtractor fields + DOCX-specific core properties (document_subject, keywords, category, comments, author, last_modified_by, created_date, modified_date, last_printed_date). \par \b Links\/ \:  [USES_API(8): BaseMetadataExtractor, python-docx Document.core_properties] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>extract() ALWAYS returns a dict with base metadata merged.</para>
+</listitem><listitem><para>On PackageNotFoundError, returns {&quot;broken_docx&quot;: True} instead of raising. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use BaseMetadataExtractor as a delegate instead of inheritance? A: Composition allows combining base file metadata with format-specific properties without coupling the DOCX extractor to os.stat internals. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 8[DOCX metadata extractor with core properties] =&gt; DocxMetadataExtractor \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[DocxMetadataExtractor]: MetadataExtractorComposition → ExtractDOCX → MergeBaseAndDocx → MetadataDict </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/metadata_extractors/concrete_metadata_extractors/docx_metadata_extractor.py" line="20" column="1" bodyfile="dedoc/metadata_extractors/concrete_metadata_extractors/docx_metadata_extractor.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/metadata_extractors/concrete_metadata_extractors/docx_metadata_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

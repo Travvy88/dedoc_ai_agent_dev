@@ -6,12 +6,18 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.readers.base_reader import BaseReader
 
+import logging
 
+logger = logging.getLogger(__name__)
+
+
+# region CLASS_JsonReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class JsonReader(BaseReader):
     """
     This reader allows handle .json files.
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: Optional[dict] = None) -> None:
         from dedoc.attachments_extractors.concrete_attachments_extractors.json_attachment_extractor import JsonAttachmentsExtractor
         from dedoc.extensions import recognized_extensions, recognized_mimes
@@ -19,6 +25,8 @@ class JsonReader(BaseReader):
         super().__init__(config=config, recognized_extensions=recognized_extensions.json_like_format, recognized_mimes=recognized_mimes.json_like_format)
         self.attachment_extractor = JsonAttachmentsExtractor(config=self.config)
 
+    # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
         """
         The method return document content with all document's lines and attachments, tables remain empty.
@@ -63,12 +71,16 @@ class JsonReader(BaseReader):
                 result.append(line)
         return UnstructuredDocument(tables=[], lines=result, attachments=attachments)
 
+    # region METHOD___exclude_html_fields [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_read
     def __exclude_html_fields(self, json_data: dict, field_keys: List[List[str]]) -> dict:
         for keys in field_keys:
             self.__exclude_key(json_data, keys)
 
         return json_data
 
+    # region METHOD___exclude_key [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___exclude_html_fields
     def __exclude_key(self, json_data: dict, keys: List[str]) -> None:
         data = json_data
         parents = []
@@ -83,6 +95,8 @@ class JsonReader(BaseReader):
             if not data[key]:
                 del data[key]
 
+    # region METHOD___handle_list [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___exclude_key
     def __handle_list(self, depth: int, element: list, result: list, stack: list) -> None:
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
 
@@ -95,6 +109,8 @@ class JsonReader(BaseReader):
                 stack.append((sub_element, depth + 1))
                 break
 
+    # region METHOD___handle_dict [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_list
     def __handle_dict(self, depth: int, element: dict, result: list, stack: list) -> None:
         for key in sorted(element.keys()):
             # key = min(element.keys()) if len(element) < 100 else list(element.keys())[0]
@@ -107,6 +123,8 @@ class JsonReader(BaseReader):
                 stack.append((value, depth + 1))
             break
 
+    # region METHOD___handle_one_element [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_dict
     def __handle_one_element(self, depth: int, value: Any, line_type: str, line_type_meta: str) -> LineWithMeta:  # noqa
         from dedoc.data_structures.hierarchy_level import HierarchyLevel
         from dedoc.data_structures.line_metadata import LineMetadata
@@ -121,11 +139,43 @@ class JsonReader(BaseReader):
         line = LineWithMeta(line=self.__get_text(value), metadata=metadata)
         return line
 
+    # region METHOD___is_flat [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___handle_one_element
     def __is_flat(self, value: Any) -> bool:  # noqa
         return not isinstance(value, (dict, list))
 
+    # region METHOD___get_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___is_flat
     def __get_text(self, value: Any) -> str:  # noqa
         if isinstance(value, (dict, list)) or value is None:
             return ""
 
+# endregion CLASS_JsonReader
         return str(value)
+
+    # endregion METHOD___get_text
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_json_reader; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse JSON documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Document parsing pipeline: JSON format reading.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [18][JsonReader reader/processor] => JsonReader
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(JSON) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: json_reader, dedoc, reader, JSON, JsonReader, BaseReader, JSON, UnstructuredDocument, deserialization, JsonReader
+# STRUCTURE: ▶ Init ┌JSON file┐ → [JsonReader] ○ can_read? → ○ read → [__init__ → read → __exclude_html_fields] → ⊕ UnstructuredDocument(lines, tables, attachments)

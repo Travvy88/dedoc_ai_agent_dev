@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::excel_reader::excel_reader::ExcelReader</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader" prot="public" virt="non-virtual">dedoc.readers.base_reader.BaseReader</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1ab2306371491705dde15b509c81fcf0e4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.excel_reader.excel_reader.ExcelReader::Element_has_iter</definition>
+        <argsstring></argsstring>
+        <name>Element_has_iter</name>
+        <qualifiedname>dedoc.readers.excel_reader.excel_reader.ExcelReader.Element_has_iter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/excel_reader/excel_reader.py" line="22" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aa113274d2f0ffaa6ba3bf9079a146533" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.excel_reader.excel_reader.ExcelReader::attachment_extractor</definition>
+        <argsstring></argsstring>
+        <name>attachment_extractor</name>
+        <qualifiedname>dedoc.readers.excel_reader.excel_reader.ExcelReader.attachment_extractor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/excel_reader/excel_reader.py" line="29" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a9f20b27924ebbb71527023198cf7dea4" compoundref="docx__reader_8py" startline="25" endline="40">dedoc.readers.docx_reader.docx_reader.DocxReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" compoundref="excel__reader_8py" startline="33" endline="52">dedoc.readers.excel_reader.excel_reader.ExcelReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1af03911ce603781e0d605c156b37fde74" compoundref="json__reader_8py" startline="30" endline="73">dedoc.readers.json_reader.json_reader.JsonReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a91474b4fd756808c9691d026ef5646d5" compoundref="pdf__base__reader_8py" startline="64" endline="102">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ac0ccd9d10886bcef55ec216d0ca13063" compoundref="pdf__tabby__reader_8py" startline="64" endline="89">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aab08a8b32a52019d239ac14ef91f60c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.excel_reader.excel_reader.ExcelReader.__init__</definition>
+        <argsstring>(self, *Optional[dict] config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.excel_reader.excel_reader.ExcelReader.__init__</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a552713056ee6b03298dd298321be30ef">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*Optional</type>
+          <declname>config</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>:param config: configuration of the reader, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>logger for logging :param recognized_extensions: set of supported files extensions with a dot, for example {.doc, .pdf} :param recognized_mimes: set of supported MIME types of files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/excel_reader/excel_reader.py" line="25" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="25" bodyend="30"/>
+        <references refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aab08a8b32a52019d239ac14ef91f60c7" compoundref="excel__reader_8py" startline="25" endline="30">dedoc.readers.excel_reader.excel_reader.ExcelReader.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aab08a8b32a52019d239ac14ef91f60c7" compoundref="excel__reader_8py" startline="25" endline="30">dedoc.readers.excel_reader.excel_reader.ExcelReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument" kindref="compound">UnstructuredDocument</ref></type>
+        <definition> UnstructuredDocument dedoc.readers.excel_reader.excel_reader.ExcelReader.read</definition>
+        <argsstring>(self, str file_path, Optional[dict] parameters=None)</argsstring>
+        <name>read</name>
+        <qualifiedname>dedoc.readers.excel_reader.excel_reader.ExcelReader.read</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader_1a5fbcf9a222907f9bff5de42552c0f461">read</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>file_path</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>parameters</declname>
+          <array>[dict]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>This method extracts tables and attachments from the document, <computeroutput>lines</computeroutput> attribute remains empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Look to the documentation of :meth:<computeroutput>~dedoc.readers.BaseReader.read</computeroutput> to get information about the method&apos;s parameters. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/excel_reader/excel_reader.py" line="33" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="33" bodyend="52"/>
+        <references refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a13c66f61ac451a48ffe4e78677c93316" compoundref="excel__reader_8py" startline="55" endline="73">dedoc.readers.excel_reader.excel_reader.ExcelReader.__parse_sheet</references>
+        <references refid="classdedoc_1_1readers_1_1docx__reader_1_1docx__reader_1_1DocxReader_1a2ffbdd4176560d545888d52eba62ef0d" compoundref="docx__reader_8py" startline="21">dedoc.readers.docx_reader.docx_reader.DocxReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aa113274d2f0ffaa6ba3bf9079a146533" compoundref="excel__reader_8py" startline="29">dedoc.readers.excel_reader.excel_reader.ExcelReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1json__reader_1_1json__reader_1_1JsonReader_1a6e21ebc990ad16dcc7b620a88153e259" compoundref="json__reader_8py" startline="26">dedoc.readers.json_reader.json_reader.JsonReader.attachment_extractor</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1ad51cc1220d36d4a1990b496447660117" compoundref="pdf__base__reader_8py" startline="56">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.attachment_extractor</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a13c66f61ac451a48ffe4e78677c93316" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1data__structures_1_1table_1_1Table" kindref="compound">Table</ref></type>
+        <definition> Table dedoc.readers.excel_reader.excel_reader.ExcelReader.__parse_sheet</definition>
+        <argsstring>(self, int sheet_id, Sheet sheet)</argsstring>
+        <name>__parse_sheet</name>
+        <qualifiedname>dedoc.readers.excel_reader.excel_reader.ExcelReader.__parse_sheet</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sheet_id</declname>
+        </param>
+        <param>
+          <type>Sheet</type>
+          <declname>sheet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/excel_reader/excel_reader.py" line="55" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="55" bodyend="73"/>
+        <referencedby refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" compoundref="excel__reader_8py" startline="33" endline="52">dedoc.readers.excel_reader.excel_reader.ExcelReader.read</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is used for parsing documents with .xlsx extension. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Please use :class:<computeroutput>~dedoc.converters.ExcelConverter</computeroutput> for getting xlsx file from similar formats. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.excel_reader.excel_reader.ExcelReader</label>
+        <link refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.excel_reader.excel_reader.ExcelReader</label>
+        <link refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.base_reader.BaseReader</label>
+        <link refid="classdedoc_1_1readers_1_1base__reader_1_1BaseReader"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/excel_reader/excel_reader.py" line="15" column="1" bodyfile="dedoc/readers/excel_reader/excel_reader.py" bodystart="15" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aab08a8b32a52019d239ac14ef91f60c7" prot="public" virt="non-virtual"><scope>dedoc::readers::excel_reader::excel_reader::ExcelReader</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a13c66f61ac451a48ffe4e78677c93316" prot="private" virt="non-virtual"><scope>dedoc::readers::excel_reader::excel_reader::ExcelReader</scope><name>__parse_sheet</name></member>
+      <member refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1aa113274d2f0ffaa6ba3bf9079a146533" prot="public" virt="non-virtual"><scope>dedoc::readers::excel_reader::excel_reader::ExcelReader</scope><name>attachment_extractor</name></member>
+      <member refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1ab2306371491705dde15b509c81fcf0e4" prot="public" virt="non-virtual"><scope>dedoc::readers::excel_reader::excel_reader::ExcelReader</scope><name>Element_has_iter</name></member>
+      <member refid="classdedoc_1_1readers_1_1excel__reader_1_1excel__reader_1_1ExcelReader_1a2ec4812bd312bafc77a258a569a95081" prot="public" virt="non-virtual"><scope>dedoc::readers::excel_reader::excel_reader::ExcelReader</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

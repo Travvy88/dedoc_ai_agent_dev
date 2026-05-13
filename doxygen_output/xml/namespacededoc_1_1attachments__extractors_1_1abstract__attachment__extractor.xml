@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1attachments__extractors_1_1abstract__attachment__extractor" kind="namespace" language="Python">
+    <compoundname>dedoc::attachments_extractors::abstract_attachment_extractor</compoundname>
+    <innerclass refid="classdedoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1_1AbstractAttachmentsExtractor" prot="public">dedoc::attachments_extractors::abstract_attachment_extractor::AbstractAttachmentsExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1a9bbadb79cccd00c182a010b9a40ec6ac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::attachments_extractors::abstract_attachment_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.attachments_extractors.abstract_attachment_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/abstract_attachment_extractor.py" line="45" column="1" bodyfile="dedoc/attachments_extractors/abstract_attachment_extractor.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1attachments__extractors_1_1abstract__attachment__extractor_1a21dc54799eaafadd153f46bca554dff6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.attachments_extractors.abstract_attachment_extractor._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.attachments_extractors.abstract_attachment_extractor._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the abstract contract for all attachment extractors: file recognition (can_extract), extraction (extract), parameter inspection (with_attachments), and content-to-AttachedFile serialization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Abstract base for attachment extraction: extension/MIME matching, attachment serialization to AttachedFile list, parameter inspection. \par \b Input\/ \:  file_path, extension, mime, parameters dict, binary content tuples. \par \b Output\/ \:  Boolean (can_extract), List[AttachedFile] (extract, _content2attach_file). \par \b Links\/ \:  [USES_API(8): <ref refid="classdedoc_1_1data__structures_1_1attached__file_1_1AttachedFile" kindref="compound">dedoc.data_structures.attached_file.AttachedFile</ref>] \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1utils_1_1utils_1a0229d30283f3fe207a4d19bfb9667dfe" kindref="member">dedoc.utils.utils.get_mime_extension</ref>, <ref refid="namespacededoc_1_1utils_1_1utils_1a25eaa4646fa6946852bf5cd219f62711" kindref="member">dedoc.utils.utils.save_data_to_unique_file</ref>] \par \b Links\/ \:  [USES_API(7): <ref refid="namespacededoc_1_1utils_1_1parameter__utils_1a017f9af2c6e949025eb9fbaf808b6ba2" kindref="member">dedoc.utils.parameter_utils.get_param_attachments_dir</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>can_extract ALWAYS returns bool and NEVER raises.</para>
+</listitem><listitem><para>extract is abstract; subclasses MUST implement it.</para>
+</listitem><listitem><para>_content2attach_file ALWAYS returns List[AttachedFile]. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why use ABC with abstractmethod instead of a protocol? A: extract is the core polymorphic behavior; enforcing it at instantiation time via ABC prevents runtime errors from incomplete implementations. Q: Why lazy imports inside methods? A: Avoids circular imports from <ref refid="namespacededoc_1_1utils" kindref="compound">dedoc.utils</ref> and reduces cold-start import overhead. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Semantic markup + LDD logging added] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Abstract base contract for all attachment extractors] =&gt; AbstractAttachmentsExtractor METHOD 7[Constructor: stores config, recognized extensions/mimes] =&gt; <bold>init</bold> METHOD 8[Checks if this extractor can handle the given file] =&gt; can_extract METHOD 10[Abstract: extracts attachments from file] =&gt; extract METHOD 5[Static: checks with_attachments parameter] =&gt; with_attachments METHOD 8[Converts (name, bytes) tuples to AttachedFile list] =&gt; _content2attach_file \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[can_extract]: DedocManager =&gt; SelectExtractor =&gt; bool</para>
+</listitem><listitem><para>[extract]: DedocManager =&gt; ExtractAttachments =&gt; List[AttachedFile]</para>
+</listitem><listitem><para>[_content2attach_file]: ConcreteExtractor =&gt; SerializeBinaryContent =&gt; List[AttachedFile] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/attachments_extractors/abstract_attachment_extractor.py" line="32" column="1" bodyfile="dedoc/attachments_extractors/abstract_attachment_extractor.py" bodystart="32" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/abstract_attachment_extractor.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

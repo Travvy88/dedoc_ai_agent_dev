@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1ad8708672e319254400588a9df92b96d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.eps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="36" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" compoundref="cell__splitter_8py" startline="120" endline="145">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a2f7d6261a08d96a93473a4733ebf430b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__init__</definition>
+        <argsstring>(self, float eps=0.5)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>eps</declname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="35" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="35" bodyend="37"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell" kindref="compound">Cell</ref>]]</type>
+        <definition> List[List[Cell]] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</definition>
+        <argsstring>(self, List[List[Cell]] cells)</argsstring>
+        <name>split</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>cells</declname>
+          <array>[List[Cell]</array>
+        </param>
+        <briefdescription>
+<para>split merged cells </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="40" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="40" bodyend="73"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5aeb205bdab8c1f208cf40b37011d02f" compoundref="cell__splitter_8py" startline="149" endline="160">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_borders</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a91dbd35accf94ea6bb8ba80b4f8eca37" compoundref="cell__splitter_8py" startline="99" endline="104">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__sort_unique</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a983cdb6ae7e39831fdcd20b29fb8dc14" compoundref="cell__splitter_8py" startline="77" endline="95">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__split_one_cell</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" compoundref="cell__splitter_8py" startline="120" endline="145">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a983cdb6ae7e39831fdcd20b29fb8dc14" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__split_one_cell</definition>
+        <argsstring>(Cell cell, np.ndarray horizontal_borders, np.ndarray vertical_borders, List[List[Cell]] result_matrix)</argsstring>
+        <name>__split_one_cell</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__split_one_cell</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell" kindref="compound">Cell</ref></type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>horizontal_borders</declname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>vertical_borders</declname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>result_matrix</declname>
+          <array>[List[Cell]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="77" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="77" bodyend="95"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" compoundref="cell__splitter_8py" startline="40" endline="73">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a91dbd35accf94ea6bb8ba80b4f8eca37" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>np.ndarray</type>
+        <definition> np.ndarray dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__sort_unique</definition>
+        <argsstring>(List[int] borders)</argsstring>
+        <name>__sort_unique</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__sort_unique</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>borders</declname>
+          <array>[int]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="99" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="99" bodyend="104"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" compoundref="cell__splitter_8py" startline="40" endline="73">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a1d78ebc450e80a4cb931f756f9080c2e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Dict[int, int]</type>
+        <definition> Dict[int, int] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_border_dict</definition>
+        <argsstring>(List[int] borders, float threshold)</argsstring>
+        <name>__get_border_dict</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_border_dict</qualifiedname>
+        <param>
+          <type>List</type>
+          <declname>borders</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="108" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="108" bodyend="117"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" compoundref="cell__splitter_8py" startline="120" endline="145">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5aeb205bdab8c1f208cf40b37011d02f" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Tuple[List[int], List[int]]</type>
+        <definition> Tuple[List[int], List[int]] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_borders</definition>
+        <argsstring>(List[List[Cell]] cells)</argsstring>
+        <name>__get_borders</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_borders</qualifiedname>
+        <param>
+          <type>List]</type>
+          <declname>cells</declname>
+          <array>[List[Cell]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="149" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="149" bodyend="160"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" compoundref="cell__splitter_8py" startline="120" endline="145">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" compoundref="cell__splitter_8py" startline="40" endline="73">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[List[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell" kindref="compound">Cell</ref>]]</type>
+        <definition> List[List[Cell]] dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</definition>
+        <argsstring>(self, List[List[Cell]] cells)</argsstring>
+        <name>_merge_close_borders</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter._merge_close_borders</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>List]</type>
+          <declname>cells</declname>
+          <array>[List[Cell]</array>
+        </param>
+        <briefdescription>
+<para>merge close borders into one border </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cells</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>table in list of rows form </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: cells with merged borders </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="120" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="120" bodyend="145"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a1d78ebc450e80a4cb931f756f9080c2e" compoundref="cell__splitter_8py" startline="108" endline="117">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_border_dict</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5aeb205bdab8c1f208cf40b37011d02f" compoundref="cell__splitter_8py" startline="149" endline="160">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.__get_borders</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1ad8708672e319254400588a9df92b96d6" compoundref="cell__splitter_8py" startline="36">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.eps</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" compoundref="cell__splitter_8py" startline="40" endline="73">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.cell_splitter.CellSplitter.split</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>split merged cells, change table into rectangular </para>
+    </briefdescription>
+    <detaileddescription>
+<para>(0, 0) ---------------------------------------<mdash/>&gt; x | ____________________________________________ ____________________________________________ | | | B | | A | A | B | | | A |___________________| |_________|____________|___________________| | | | C | | A | A | C | | |______________________|___________________| -&gt; |_________|____________|___________________| | | D | E | F | | D | E | F | | |_________|____________|___________________| |_________|____________|___________________| | | G | | G | G | G | | |__________________________________________| |_________|____________|___________________| | V y </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" line="15" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/cell_splitter.py" bodystart="15" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a1d78ebc450e80a4cb931f756f9080c2e" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>__get_border_dict</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5aeb205bdab8c1f208cf40b37011d02f" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>__get_borders</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a2f7d6261a08d96a93473a4733ebf430b" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a91dbd35accf94ea6bb8ba80b4f8eca37" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>__sort_unique</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a983cdb6ae7e39831fdcd20b29fb8dc14" prot="private" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>__split_one_cell</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a5abe6cb60a4c4a07f1c81aaf3df1d020" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>_merge_close_borders</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1ad8708672e319254400588a9df92b96d6" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>eps</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1cell__splitter_1_1CellSplitter_1a47b9ba1688cb8d76280539b9b20018b8" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::cell_splitter::CellSplitter</scope><name>split</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

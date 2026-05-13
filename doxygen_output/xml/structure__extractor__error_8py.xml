@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="structure__extractor__error_8py" kind="file" language="Python">
+    <compoundname>structure_extractor_error.py</compoundname>
+    <innerclass refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError" prot="public">dedoc::common::exceptions::structure_extractor_error::StructureExtractorError</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common">dedoc::common</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common_1_1exceptions">dedoc::common::exceptions</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common_1_1exceptions_1_1structure__extractor__error">dedoc::common::exceptions::structure_extractor_error</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1common_1_1exceptions_1_1structure__extractor__error" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>ErrorHandling,<sp/>Exceptions;<sp/>TECH(6):<sp/>PythonInheritance]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>define<sp/>StructureExtractorError<sp/>—<sp/>raised<sp/>when<sp/>a<sp/>structure<sp/>extractor<sp/>fails<sp/>to<sp/>build<sp/>a<sp/>structured<sp/>document<sp/>from<sp/>unstructured<sp/>input.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>failure<sp/>error<sp/>signalling.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>Error<sp/>context<sp/>(msg,<sp/>filename,<sp/>version).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>StructureExtractorError<sp/>with<sp/>default<sp/>HTTP<sp/>400<sp/>Bad<sp/>Request<sp/>code.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.common.exceptions.dedoc_error.DedocError]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Uses<sp/>default<sp/>code=400<sp/>(structure<sp/>extraction<sp/>failure<sp/>often<sp/>stems<sp/>from<sp/>unparseable<sp/>document<sp/>content).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>Inherits<sp/>full<sp/>DedocError<sp/>API<sp/>(msg_api,<sp/>filename,<sp/>version,<sp/>metadata).</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>default<sp/>code=400<sp/>rather<sp/>than<sp/>500?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>A<sp/>document<sp/>that<sp/>cannot<sp/>be<sp/>parsed<sp/>structurally<sp/>often<sp/>has<sp/>invalid<sp/>or<sp/>unsupported<sp/>content<sp/>—<sp/>a<sp/>client<sp/>data<sp/>issue,<sp/>not<sp/>a<sp/>server<sp/>bug.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging<sp/>added.]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>8[Exception<sp/>for<sp/>structure<sp/>extraction<sp/>failures]<sp/>=&gt;<sp/>StructureExtractorError</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[StructureExtractorError]:<sp/>StructureExtractor<sp/>→<sp/>BuildStructureFailed<sp/>→<sp/>RaiseStructureExtractorError<sp/>→<sp/>APIResponds400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1common_1_1exceptions_1_1structure__extractor__error_1a94fe9f3f5ab710aa723febe32e081d02" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1common_1_1exceptions_1_1structure__extractor__error_1a94fe9f3f5ab710aa723febe32e081d02" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>exceptions,<sp/>StructureExtractorError,<sp/>400,<sp/>structure,<sp/>extraction,<sp/>parser,<sp/>unstructured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>DedocError<sp/>──▶<sp/>StructureExtractorError<sp/>▸<sp/>__init__(⟦msg⟧,<sp/>code=400<sp/>default)<sp/>⊕<sp/>__str__(→[msg])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1common_1_1exceptions_1_1dedoc__error" kindref="compound">dedoc.common.exceptions.dedoc_error</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DedocError</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacededoc_1_1common_1_1exceptions_1_1structure__extractor__error_1ad8ed847db97e25e51e8c60ef9b0d8965" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_StructureExtractorError<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>ErrorHandling,<sp/>Exceptions;<sp/>TECH(6):<sp/>PythonInheritance]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>signal<sp/>that<sp/>structure<sp/>extraction<sp/>from<sp/>an<sp/>unstructured<sp/>document<sp/>has<sp/>failed,<sp/>resulting<sp/>in<sp/>an<sp/>HTTP<sp/>400<sp/>response.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError" kindref="compound">StructureExtractorError</ref>(<ref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kindref="compound">DedocError</ref>):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>ErrorHandling;<sp/>TECH(6):<sp/>PythonConstructor]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>initialize<sp/>the<sp/>error,<sp/>using<sp/>DedocError&apos;s<sp/>default<sp/>code=400.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>DedocError.__init__</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(msg:<sp/>str,<sp/>msg_api:<sp/>Optional[str],<sp/>filename:<sp/>Optional[str],<sp/>version:<sp/>Optional[str])<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1add9d5e000df722c55024b52ebf3fe18b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1add9d5e000df722c55024b52ebf3fe18b" kindref="member">__init__</ref>(self,<sp/>msg:<sp/>str,<sp/>msg_api:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>filename:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>version:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][StructureExtractorError][INIT]<sp/>Structure<sp/>extraction<sp/>error:<sp/>msg=&apos;{msg}&apos;,<sp/>filename=&apos;{filename}&apos;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(StructureExtractorError,<sp/>self).<ref refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1add9d5e000df722c55024b52ebf3fe18b" kindref="member">__init__</ref>(msg_api=msg_api,<sp/>msg=msg,<sp/>filename=filename,<sp/>version=version)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:7][StructureExtractorError][INIT]<sp/>StructureExtractorError<sp/>raised<sp/>(HTTP<sp/>400):<sp/>{msg}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___str__<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>ErrorHandling;<sp/>TECH(5):<sp/>PythonStr]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>provide<sp/>a<sp/>human-readable<sp/>string<sp/>representation<sp/>of<sp/>the<sp/>error.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>None<sp/>-&gt;<sp/>str</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1a5581493d82d18f0d3ee84bbcf330e2b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1structure__extractor__error_1_1StructureExtractorError_1a5581493d82d18f0d3ee84bbcf330e2b5" kindref="member">__str__</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;StructureExtractorError({self.msg})&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___str__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_StructureExtractorError</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/common/exceptions/structure_extractor_error.py"/>
+  </compounddef>
+</doxygen>

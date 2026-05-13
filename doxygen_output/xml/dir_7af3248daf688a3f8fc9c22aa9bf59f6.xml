@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_7af3248daf688a3f8fc9c22aa9bf59f6" kind="dir">
+    <compoundname>dedoc/converters/concrete_converters</compoundname>
+    <innerfile refid="converters_2concrete__converters_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__converter_8py">abstract_converter.py</innerfile>
+    <innerfile refid="binary__converter_8py">binary_converter.py</innerfile>
+    <innerfile refid="docx__converter_8py">docx_converter.py</innerfile>
+    <innerfile refid="excel__converter_8py">excel_converter.py</innerfile>
+    <innerfile refid="pdf__converter_8py">pdf_converter.py</innerfile>
+    <innerfile refid="png__converter_8py">png_converter.py</innerfile>
+    <innerfile refid="pptx__converter_8py">pptx_converter.py</innerfile>
+    <innerfile refid="txt__converter_8py">txt_converter.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/converters/concrete_converters/"/>
+  </compounddef>
+</doxygen>

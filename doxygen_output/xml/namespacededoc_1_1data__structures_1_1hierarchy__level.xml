@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1data__structures_1_1hierarchy__level" kind="namespace" language="Python">
+    <compoundname>dedoc::data_structures::hierarchy_level</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" prot="public">dedoc::data_structures::hierarchy_level::HierarchyLevel</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1data__structures_1_1hierarchy__level_1a7025f1af35e146b9b444cddfebfea489" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::data_structures::hierarchy_level.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="5" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1data__structures_1_1hierarchy__level_1a162033784be87c7be9adc6ac7a19101f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.data_structures.hierarchy_level._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.data_structures.hierarchy_level._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Define the HierarchyLevel data structure — two-dimensional importance levels (level_1, level_2) with total ordering for document tree construction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Hierarchy levels: comparison operators, factory methods for known line types. \par \b Input\/ \:  Level_1, level_2 (Optional[int]), multiline flag, line type string. \par \b Output\/ \:  HierarchyLevel instances with total ordering support. \par \b Links\/ \:  [USED_BY(9): LineMetadata, TreeNode] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>level_1 is either None or &gt;= 0</para>
+</listitem><listitem><para>level_2 is either None or &gt;= 0</para>
+</listitem><listitem><para>None levels are treated as +inf in comparisons \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why two-level hierarchy (level_1 and level_2)? A: Documents have both primary importance (root &gt; header &gt; list &gt; raw_text) and secondary ordering within the same type (list item numbering). Two-dimensional model captures both aspects. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Document line hierarchy level] =&gt; HierarchyLevel METHOD 6[Constructor] =&gt; <bold>init</bold> METHOD 8[Comparison less] =&gt; <bold>lt</bold> METHOD 7[Equality] =&gt; <bold>eq</bold> METHOD 5[Type check: raw] =&gt; is_raw_text METHOD 5[Type check: unknown] =&gt; is_unknown METHOD 5[Type check: list] =&gt; is_list_item METHOD 5[Factory: raw_text] =&gt; create_raw_text METHOD 5[Factory: unknown] =&gt; create_unknown METHOD 5[Factory: root] =&gt; create_root \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[HierarchyLevel]: StructureExtractor → AssignHierarchyLevel → HierarchyLevelInstantiated</para>
+</listitem><listitem><para>[HierarchyLevel]: TreeNode → CompareLevels → TreeBuilt </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/hierarchy_level.py" line="244" column="1" bodyfile="dedoc/data_structures/hierarchy_level.py" bodystart="244" bodyend="249"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/data_structures/hierarchy_level.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

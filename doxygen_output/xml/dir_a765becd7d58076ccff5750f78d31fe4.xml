@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_a765becd7d58076ccff5750f78d31fe4" kind="dir">
+    <compoundname>dedoc/readers/pptx_reader</compoundname>
+    <innerfile refid="readers_2pptx__reader_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="pptx__reader_2numbering__extractor_8py">numbering_extractor.py</innerfile>
+    <innerfile refid="pptx__reader_2paragraph_8py">paragraph.py</innerfile>
+    <innerfile refid="pptx__reader_8py">pptx_reader.py</innerfile>
+    <innerfile refid="pptx__reader_2properties__extractor_8py">properties_extractor.py</innerfile>
+    <innerfile refid="shape_8py">shape.py</innerfile>
+    <innerfile refid="readers_2pptx__reader_2table_8py">table.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pptx_reader/"/>
+  </compounddef>
+</doxygen>

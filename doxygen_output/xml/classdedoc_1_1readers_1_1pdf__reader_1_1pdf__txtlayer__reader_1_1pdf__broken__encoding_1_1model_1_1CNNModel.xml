@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">nn.Module</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a25db6547a9c7ee7041859c7ca8dd7e58" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::conv1</definition>
+        <argsstring></argsstring>
+        <name>conv1</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.conv1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="36" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a8c5e2a35f050a7694f4b37e2c45e739d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::pool1</definition>
+        <argsstring></argsstring>
+        <name>pool1</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.pool1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="26" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="36" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a7a741c53930b15e21f9cc86428533fdf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::conv2</definition>
+        <argsstring></argsstring>
+        <name>conv2</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.conv2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="27" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="36" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a9a23ff3fb0eb6e20b490d19ea0598ffb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::pool2</definition>
+        <argsstring></argsstring>
+        <name>pool2</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.pool2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="28" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="36" endline="49">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1ae15529a257cc7e1fd6f49cf0ac7627b0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::dropout1</definition>
+        <argsstring></argsstring>
+        <name>dropout1</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.dropout1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="29" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a27c85d7e2616601ad8d528d34a7c3b4e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::fc1</definition>
+        <argsstring></argsstring>
+        <name>fc1</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.fc1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="30" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a0acd98eec57b212e5d265be8f5dcb8ad" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::dropout2</definition>
+        <argsstring></argsstring>
+        <name>dropout2</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.dropout2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="31" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a5661dd7c67be198f07e6ce1622635a27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::fc2</definition>
+        <argsstring></argsstring>
+        <name>fc2</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.fc2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="32" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a8ed198c5bcd55f5d87aa251ab45595b6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel::view</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="39" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a238346e08898e0984feaa80316c30cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.__init__</definition>
+        <argsstring>(self, int num_classes)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_classes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="23" bodyend="33"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a238346e08898e0984feaa80316c30cbb" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="23" endline="33">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.__init__</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a238346e08898e0984feaa80316c30cbb" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="23" endline="33">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>torch.Tensor</type>
+        <definition> torch.Tensor dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</definition>
+        <argsstring>(self, torch.Tensor x)</argsstring>
+        <name>forward</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.forward</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>torch.Tensor</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="36" bodyend="49"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a25db6547a9c7ee7041859c7ca8dd7e58" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="25">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.conv1</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a7a741c53930b15e21f9cc86428533fdf" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="27">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.conv2</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a8c5e2a35f050a7694f4b37e2c45e739d" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="26">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.pool1</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a9a23ff3fb0eb6e20b490d19ea0598ffb" compoundref="pdf__txtlayer__reader_2pdf__broken__encoding_2model_8py" startline="28">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel.pool2</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding.model.CNNModel</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>nn.Module</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" line="20" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding/model.py" bodystart="20" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a238346e08898e0984feaa80316c30cbb" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a25db6547a9c7ee7041859c7ca8dd7e58" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>conv1</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a7a741c53930b15e21f9cc86428533fdf" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>conv2</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1ae15529a257cc7e1fd6f49cf0ac7627b0" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>dropout1</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a0acd98eec57b212e5d265be8f5dcb8ad" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>dropout2</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a27c85d7e2616601ad8d528d34a7c3b4e" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>fc1</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a5661dd7c67be198f07e6ce1622635a27" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>fc2</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1aa5132aef74d60a4f83cf2c70dae62e1e" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>forward</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a8c5e2a35f050a7694f4b37e2c45e739d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>pool1</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a9a23ff3fb0eb6e20b490d19ea0598ffb" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>pool2</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__broken__encoding_1_1model_1_1CNNModel_1a8ed198c5bcd55f5d87aa251ab45595b6" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdf_broken_encoding::model::CNNModel</scope><name>view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

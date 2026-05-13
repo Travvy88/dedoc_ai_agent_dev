@@ -1,0 +1,6 @@
+var namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader =
+[
+    [ "PdfTxtlayerReader", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader_1_1PdfTxtlayerReader" ],
+    [ "_module_contract", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader.html#a123b2fdf7b0d00513990cde6008949a7", null ],
+    [ "logger", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__txtlayer__reader.html#aee5f824c66cdc4264661059740a8d465", null ]
+];

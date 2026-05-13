@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_b418dfc70fd3f6f04b3da31062e288fe" kind="dir">
+    <compoundname>dedoc/structure_extractors/feature_extractors/list_features</compoundname>
+    <innerdir refid="dir_71ef372e605bb505e280c1e2e0698cae">dedoc/structure_extractors/feature_extractors/list_features/prefix</innerdir>
+    <innerfile refid="structure__extractors_2feature__extractors_2list__features_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="list__features__extractor_8py">list_features_extractor.py</innerfile>
+    <innerfile refid="list__utils_8py">list_utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/"/>
+  </compounddef>
+</doxygen>

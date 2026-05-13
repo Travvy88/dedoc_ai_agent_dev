@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1a7a69dcb3545d6309de15f941e98b1ee7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="6" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1aed4ba2a626c96d7a0a0d4db219ca8fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage" kindref="compound">OcrPage</ref></type>
+        <definition> OcrPage dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_document_page_one_column</definition>
+        <argsstring>(np.ndarray image, str language, float ocr_conf_threshold)</argsstring>
+        <name>get_text_with_bbox_from_document_page_one_column</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_document_page_one_column</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ocr_conf_threshold</declname>
+        </param>
+        <briefdescription>
+<para>Extract text from image with Tesseract OCR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="11" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1a39c90ac0ee28a0660dbd7c2ffeac27f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage" kindref="compound">OcrPage</ref></type>
+        <definition> OcrPage dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_document_page</definition>
+        <argsstring>(np.ndarray image, str language, float ocr_conf_threshold=-1.0)</argsstring>
+        <name>get_text_with_bbox_from_document_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_document_page</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ocr_conf_threshold</declname>
+          <defval>-1.0</defval>
+        </param>
+        <briefdescription>
+<para>Extract text from image with Tesseract OCR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="25" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1aa3b83e4160cb0dfc14a51fbd6229f262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage" kindref="compound">OcrPage</ref></type>
+        <definition> OcrPage dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_cells</definition>
+        <argsstring>(np.ndarray image, str language, float ocr_conf_threshold=-1.0)</argsstring>
+        <name>get_text_with_bbox_from_cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils.get_text_with_bbox_from_cells</qualifiedname>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ocr_conf_threshold</declname>
+          <defval>-1.0</defval>
+        </param>
+        <briefdescription>
+<para>Extract text from image with Tesseract OCR. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="39" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="39" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1acbab24da33b973735361f71034106d14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  OCR processing pipeline for document images. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][get_text_with_bbox_from_document_page_one_column utility/helper] =&gt; get_text_with_bbox_from_document_page_one_column FUNC [5][get_text_with_bbox_from_document_page utility/helper] =&gt; get_text_with_bbox_from_document_page FUNC [5][get_text_with_bbox_from_cells utility/helper] =&gt; get_text_with_bbox_from_cells \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="73" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="73" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

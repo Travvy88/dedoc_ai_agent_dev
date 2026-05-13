@@ -1,0 +1,4 @@
+var classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor =
+[
+    [ "construct", "classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor.html#a39c56b6a39b90c937fc852e5971b88cc", null ]
+];

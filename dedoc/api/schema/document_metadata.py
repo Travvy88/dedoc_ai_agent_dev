@@ -1,6 +1,38 @@
+# region MODULE_CONTRACT [DOMAIN(9): DocumentProcessing, FileMetadata; CONCEPT(7): DocumentProperties, FilesystemMetadata; TECH(7): Pydantic, BaseModel, Extra]
+## @modulecontract
+## @purpose Define the DocumentMetadata schema — a Pydantic model holding file-level metadata (name, size, timestamps, MIME type, UID) with support for extra attributes.
+## @scope Document file metadata model.
+## @input None (standalone model with extra attributes support).
+## @output Pydantic BaseModel `DocumentMetadata` with uid, file_name, size, timestamps, file_type, plus arbitrary extra fields.
+## @links [USES_API(7): pydantic.BaseModel, pydantic.Extra]
+## @invariants
+## - uid is always a non-empty unique string.
+## - file_name is always present (original document name).
+## - Extra fields are preserved and serialized.
+## @rationale
+## Q: Why Extra.allow?
+## A: Different document formats carry different metadata (author, pages, etc.). Extra.allow prevents data loss while keeping the schema flexible.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup]
+## @modulemap
+## CLASS 9[Document metadata with extra attributes support] => DocumentMetadata
+## @usecases
+## - [DocumentMetadata]: MetadataExtractor => PopulateMetadata => ReturnToAPI
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: metadata, document, file, name, size, timestamps, MIME, uid, extra, Pydantic, schema
+# STRUCTURE: ▶ Pydantic BaseModel (Extra.allow) → DocumentMetadata ┌uid, file_name, size, timestamps, file_type, +extra┐ → ⎋ JSON
+
+import logging
+
 from pydantic import BaseModel, Extra, Field
 
+logger = logging.getLogger(__name__)
 
+# region CLASS_DocumentMetadata [DOMAIN(9): DocumentProcessing; CONCEPT(7): FileMetadata; TECH(7): PydanticBaseModel]
+## @purpose Hold document file metadata (name, size, timestamps, MIME type) with open extension for format-specific attributes via Extra.allow.
+## @io (uid, file_name, size, timestamps, file_type, **extra) -> JSON serializable model
 class DocumentMetadata(BaseModel):
     """
     Document metadata like its name, size, author, etc.
@@ -36,3 +68,4 @@ class DocumentMetadata(BaseModel):
     created_time: int = Field(description="Creation time of the document in the UnixTime format", example=1590579805)
     access_time: int = Field(description="File access time in the UnixTime format", example=1590579805)
     file_type: str = Field(description="Mime type of the file", example="application/vnd.oasis.opendocument.text")
+# endregion CLASS_DocumentMetadata

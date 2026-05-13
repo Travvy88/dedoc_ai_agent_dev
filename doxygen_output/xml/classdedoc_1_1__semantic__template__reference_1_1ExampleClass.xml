@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1__semantic__template__reference_1_1ExampleClass" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::_semantic_template_reference::ExampleClass</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1__semantic__template__reference_1_1ExampleClass_1a48379d18fe618dc8a202ad8632386661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc._semantic_template_reference.ExampleClass.example_method</definition>
+        <argsstring>(self, int param1)</argsstring>
+        <name>example_method</name>
+        <qualifiedname>dedoc._semantic_template_reference.ExampleClass.example_method</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>param1</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  [Goal of the method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>] \par \b Uses\/ \:  [APIs or modules used] \par \b I/O\/ \:  [Input types] -&gt; [Output types] \par \b Complexity\/ \:  [1-10] </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/_semantic_template_reference.py" line="43" column="1" bodyfile="dedoc/_semantic_template_reference.py" bodystart="43" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  [Goal of the class — what it enables the user/agent to do. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>] </para>
+    </detaileddescription>
+    <location file="dedoc/_semantic_template_reference.py" line="37" column="1" bodyfile="dedoc/_semantic_template_reference.py" bodystart="37" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1__semantic__template__reference_1_1ExampleClass_1a48379d18fe618dc8a202ad8632386661" prot="public" virt="non-virtual"><scope>dedoc::_semantic_template_reference::ExampleClass</scope><name>example_method</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

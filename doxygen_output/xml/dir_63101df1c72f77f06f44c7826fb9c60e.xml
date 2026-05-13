@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_63101df1c72f77f06f44c7826fb9c60e" kind="dir">
+    <compoundname>dedoc/readers/pdf_reader/utils</compoundname>
+    <innerfile refid="readers_2pdf__reader_2utils_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="header__footers__analysis_8py">header_footers_analysis.py</innerfile>
+    <innerfile refid="line__object__linker_8py">line_object_linker.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/utils/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="reference__annotation_8py" kind="file" language="Python">
+    <compoundname>reference_annotation.py</compoundname>
+    <innerclass refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation" prot="public">dedoc::data_structures::concrete_annotations::reference_annotation::ReferenceAnnotation</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures">dedoc::data_structures</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations">dedoc::data_structures::concrete_annotations</innernamespace>
+    <innernamespace refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation">dedoc::data_structures::concrete_annotations::reference_annotation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1annotation" kindref="compound">dedoc.data_structures.annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Annotation</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1a148af53f17c4c337c6d35b850bf4814a" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_ReferenceAnnotation<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Reference;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>Point<sp/>to<sp/>a<sp/>place<sp/>in<sp/>the<sp/>document<sp/>text<sp/>that<sp/>is<sp/>a<sp/>link<sp/>to<sp/>another<sp/>line<sp/>(e.g.<sp/>bibliography<sp/>reference).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation" kindref="compound">ReferenceAnnotation</ref>(<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>):</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/>annotation<sp/>points<sp/>to<sp/>a<sp/>place<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>document<sp/>text<sp/>that<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>a<sp/>link<sp/>to<sp/>another<sp/>line<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>document<sp/>(</highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>example,<sp/>another<sp/>textual<sp/>line).</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Example<sp/>of<sp/>usage<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>document_type=</highlight><highlight class="stringliteral">&quot;article&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>the<sp/>example<sp/>of<sp/>link<sp/>on<sp/>the<sp/>bibliography_item<sp/>:</highlight><highlight class="keyword">class</highlight><highlight class="normal">:`~<ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">dedoc.data_structures.LineWithMeta</ref>`.</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LineWithMeta:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>..<sp/>code-block::<sp/>python</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>(<sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>the<sp/>line<sp/>with<sp/>the<sp/>reference<sp/>annotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line=</highlight><highlight class="stringliteral">&quot;As<sp/>for<sp/>the<sp/>PRF,<sp/>we<sp/>use<sp/>the<sp/>tree-based<sp/>construction<sp/>from<sp/>Goldreich,<sp/>Goldwasser<sp/>and<sp/>Micali<sp/>[18]&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metadata=<ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref>(page_id=0,<sp/>line_id=32),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>annotations=[<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation" kindref="compound">ReferenceAnnotation</ref>(start=90,<sp/>end=92,<sp/>value=</highlight><highlight class="stringliteral">&quot;97cfac39-f0e3-11ee-b81c-b88584b4e4a1&quot;</highlight><highlight class="normal">),<sp/>...]</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>other<sp/>LineWithMeta:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>..<sp/>code-block::<sp/>python</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" kindref="compound">LineWithMeta</ref>(<sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>line<sp/>referenced<sp/>by<sp/>the<sp/>previous<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line=</highlight><highlight class="stringliteral">&quot;some<sp/>your<sp/>text<sp/>(can<sp/>be<sp/>empty)&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>metadata=<ref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" kindref="compound">LineMetadata</ref>(</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>page_id=10,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_id=189,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag_hierarchy_level=<ref refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel" kindref="compound">HierarchyLevel</ref>(level1=2,<sp/>level2=0,<sp/>paragraph_type=</highlight><highlight class="stringliteral">&quot;bibliography_item&quot;</highlight><highlight class="normal">)),</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uid=</highlight><highlight class="stringliteral">&quot;97cfac39-f0e3-11ee-b81c-b88584b4e4a1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>annotations=[]</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="41" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation_1ab54d390438b554059239ac3885946680" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>name<sp/>=<sp/>&quot;reference&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation;<sp/>TECH(3):<sp/>DataStructure]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>Initialize<sp/>reference<sp/>annotation<sp/>with<sp/>target<sp/>line<sp/>UID.</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>Annotation.__init__</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(str,<sp/>int,<sp/>int)<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation_1ad429769ce840105ebac4a1f128824871" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation_1ad429769ce840105ebac4a1f128824871" kindref="member">__init__</ref>(self,<sp/>value:<sp/>str,<sp/>start:<sp/>int,<sp/>end:<sp/>int)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>value:<sp/>unique<sp/>identifier<sp/>of<sp/>the<sp/>line<sp/>to<sp/>which<sp/>this<sp/>annotation<sp/>refers</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>start:<sp/>start<sp/>of<sp/>the<sp/>annotated<sp/>text<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>a<sp/>link</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>end:<sp/>end<sp/>of<sp/>the<sp/>annotated<sp/>text<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>a<sp/>link</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f&quot;[IMP:4][ReferenceAnnotation][INIT]<sp/>value={value},<sp/>start={start},<sp/>end={end}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation_1ad429769ce840105ebac4a1f128824871" kindref="member">__init__</ref>(start=start,<sp/>end=end,<sp/>name=ReferenceAnnotation.name,<sp/>value=value,<sp/>is_mergeable=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][ReferenceAnnotation][INIT]<sp/>ReferenceAnnotation<sp/>created<sp/>successfully&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_ReferenceAnnotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(4):<sp/>DocumentProcessing;<sp/>CONCEPT(5):<sp/>TextAnnotation,<sp/>Reference,<sp/>Bibliography;<sp/>TECH(3):<sp/>DataStructure,<sp/>Python]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>cross-reference<sp/>annotation<sp/>—<sp/>links<sp/>a<sp/>text<sp/>span<sp/>to<sp/>another<sp/>document<sp/>line<sp/>by<sp/>its<sp/>UID.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment">##<sp/>@scope<sp/>Text<sp/>annotation<sp/>for<sp/>cross-references<sp/>and<sp/>bibliography<sp/>links.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">##<sp/>@input<sp/>Target<sp/>line<sp/>UID<sp/>string.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">##<sp/>@output<sp/>ReferenceAnnotation<sp/>instance<sp/>with<sp/>is_mergeable=False.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">##<sp/>@links<sp/>[INHERITS(9):<sp/>Annotation]</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="68"><highlight class="comment">##<sp/>-<sp/>is_mergeable<sp/>is<sp/>always<sp/>False</highlight></codeline>
+<codeline lineno="69"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="70"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>use<sp/>UID-based<sp/>references<sp/>rather<sp/>than<sp/>positional?</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">##<sp/>A:<sp/>UIDs<sp/>survive<sp/>line<sp/>reordering<sp/>and<sp/>merging,<sp/>unlike<sp/>positional<sp/>indices.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">##<sp/>CLASS<sp/>10[Reference<sp/>text<sp/>annotation]<sp/>=&gt;<sp/>ReferenceAnnotation</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">##<sp/>-<sp/>[ReferenceAnnotation]:<sp/>StructureExtractor<sp/>→<sp/>LinkBibliographyRef<sp/>→<sp/>ReferenceAnnotationStored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1a29c4d7b6b97ef84e9e1ab88bac5bb64c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1a29c4d7b6b97ef84e9e1ab88bac5bb64c" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>reference,<sp/>annotation,<sp/>text,<sp/>document,<sp/>bibliography,<sp/>link,<sp/>cross-reference,<sp/>uid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Init<sp/>[value,<sp/>start,<sp/>end]<sp/>→<sp/>⊕<sp/>super().__init__(name=&quot;reference&quot;,<sp/>is_mergeable=False)<sp/>→<sp/>⎋<sp/>ReferenceAnnotation</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/data_structures/concrete_annotations/reference_annotation.py"/>
+  </compounddef>
+</doxygen>

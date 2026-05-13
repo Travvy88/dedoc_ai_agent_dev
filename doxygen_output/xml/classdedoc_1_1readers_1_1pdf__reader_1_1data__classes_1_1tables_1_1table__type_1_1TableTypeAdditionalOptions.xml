@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::data_classes::tables::table_type::TableTypeAdditionalOptions</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1afc2fccf81946021cfeb9a9e8fe123870" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions::table_wo_external_bounds</definition>
+        <argsstring></argsstring>
+        <name>table_wo_external_bounds</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions.table_wo_external_bounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" line="69" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1a1543966711af66876a26770328772976" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions::detect_one_cell_table</definition>
+        <argsstring></argsstring>
+        <name>detect_one_cell_table</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions.detect_one_cell_table</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" line="70" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1aecae9f3c659d9fc3ab9909248a7b6cb5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions::split_last_column</definition>
+        <argsstring></argsstring>
+        <name>split_last_column</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions.split_last_column</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" line="71" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1ae60a6e0764075cfa38b2b772362b948e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Initialize table type configuration constants. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Complexity\/ \:  1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" line="67" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" bodystart="67" bodyend="71"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Define the enumeration of table recognition strategies for the PDF image table recognizer — controls which table detection algorithms are active. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b Uses\/ \:  None (pure data class) \par \b I/O\/ \:  None -&gt; None (constructor sets instance attributes) \par \b Complexity\/ \:  2</para>
+<para>Enum for table types of tables for the table recognizer. The value of the parameter specifies the type of tables recognized when processed by class :class:<computeroutput>~dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer</computeroutput>.</para>
+<para><itemizedlist>
+<listitem><para>Parameter <computeroutput>table_type=wo_external_bounds</computeroutput> - recognize tables without external bounds.</para>
+</listitem></itemizedlist>
+</para>
+<para>Example of a table of type <computeroutput>wo_external_bounds</computeroutput>::</para>
+<para>text | text | text -----<mdash/>+---<mdash/>+---<mdash/> text | text | text -----<mdash/>+---<mdash/>+---<mdash/> text | text | text -----<mdash/>+---<mdash/>+---<mdash/> text | text | text</para>
+<para><itemizedlist>
+<listitem><para>Parameter <computeroutput>table_type=one_cell_table</computeroutput> - if a document contains a bounding box with text, it will be considered a table.</para>
+</listitem></itemizedlist>
+</para>
+<para>Example of a page with a table of type <computeroutput>one_cell_table</computeroutput>:: <verbatim> _________________________
+ Header of document
+ text text text +------+
+ text           | text |  &lt;--- it is a table
+                +------+
+ ________________________
+</verbatim><itemizedlist>
+<listitem><para>Parameter <computeroutput>table_type=split_last_column</computeroutput> - specified parameter for the merged last column of the table.</para>
+</listitem></itemizedlist>
+</para>
+<para>Example of a table of type <computeroutput>split_last_column</computeroutput>:: <verbatim> +--------+------+-------+
+ | text   | text | text1 |
+ +--------+------+       |
+ | text0  | text | text2 |
+ |        | -----|       |
+ |        | text | text3 |
+ +--------+------+       |
+ | text   | text | text4 |
+ +--------+------+-------+
+             |
+         Recognition
+            |
+            V
+ +--------+------+-------+
+ | text   | text | text1 |
+ +--------+------+-------|
+ | text0  | text | text2 |
+ |--------+ -----+------ |
+ | text0  | text | text3 |
+ +--------+------+------ |
+ | text   | text | text4 |
+ +--------+------+-------+
+</verbatim> </para>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" line="6" column="1" bodyfile="dedoc/readers/pdf_reader/data_classes/tables/table_type.py" bodystart="6" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1ae60a6e0764075cfa38b2b772362b948e" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::table_type::TableTypeAdditionalOptions</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1a1543966711af66876a26770328772976" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::table_type::TableTypeAdditionalOptions</scope><name>detect_one_cell_table</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1aecae9f3c659d9fc3ab9909248a7b6cb5" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::table_type::TableTypeAdditionalOptions</scope><name>split_last_column</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__type_1_1TableTypeAdditionalOptions_1afc2fccf81946021cfeb9a9e8fe123870" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::data_classes::tables::table_type::TableTypeAdditionalOptions</scope><name>table_wo_external_bounds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

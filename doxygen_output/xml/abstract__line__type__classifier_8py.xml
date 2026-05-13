@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="abstract__line__type__classifier_8py" kind="file" language="Python">
+    <compoundname>abstract_line_type_classifier.py</compoundname>
+    <innerclass refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d" prot="public">dedoc::structure_extractors::line_type_classifiers::abstract_line_type_classifier::AbstractLineTypeClassifier</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers">dedoc::structure_extractors::line_type_classifiers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier">dedoc::structure_extractors::line_type_classifiers::abstract_line_type_classifier</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>abc</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List,<sp/>Optional</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1line__with__meta" kindref="compound">dedoc.data_structures.line_with_meta</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="7" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier_1aa64bfe216312ce22f143104c649ac74d" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_AbstractLineTypeClassifier<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(Classification):<sp/>...;<sp/>TECH(XGBoost):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>AbstractLineTypeClassifier<sp/>for<sp/>document<sp/>structure<sp/>extraction<sp/>pipeline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d" kindref="compound">AbstractLineTypeClassifier</ref>(abc.ABC):</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Abstract<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">for<sp/>lines<sp/>classification<sp/>with<sp/><ref refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac50b24f4495eb3d7e4a13a3229b8147b" kindref="member">predict</ref><sp/>method.</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>__init__<sp/>method</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1a80de3e0ff39a0f94d78325157630b804" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1a80de3e0ff39a0f94d78325157630b804" kindref="member">__init__</ref>(self,<sp/>*,<sp/>config:<sp/>Optional[dict]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][AbstractLineTypeClassifier][__init___INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="22" refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" kindref="member">config</ref><sp/>=<sp/>{}<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>config<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>config</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD_predict<sp/>[DOMAIN(X):<sp/>...;<sp/>CONCEPT(Y):<sp/>...;<sp/>TECH(Z):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>predict<sp/>method</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@abc.abstractmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac50b24f4495eb3d7e4a13a3229b8147b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac50b24f4495eb3d7e4a13a3229b8147b" kindref="member">predict</ref>(self,<sp/>lines:<sp/>List[LineWithMeta])<sp/>-&gt;<sp/>List[str]:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][AbstractLineTypeClassifier][predict_INIT]<sp/>Starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Predict<sp/>the<sp/>line<sp/>type<sp/>according<sp/>to<sp/>some<sp/>domain.</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>For<sp/>this<sp/>purpose,<sp/>some<sp/>pretrained<sp/>classifier<sp/>may<sp/>be<sp/>used.</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:param<sp/>lines:<sp/>list<sp/>of<sp/>document<sp/>lines</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">:<sp/>list<sp/>predicted<sp/>labels<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>each<sp/>line</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD_predict</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_AbstractLineTypeClassifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(Classification):<sp/>...;<sp/>TECH(XGBoost):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/line_type_classifiers/abstract_line_type_classifier:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/line_type_classifiers/abstract_line_type_classifier</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>CLASS<sp/>[Weight<sp/>7][Structure<sp/>extraction]<sp/>=&gt;<sp/>AbstractLineTypeClassifier</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier_1a67c660ed01aa450103f3f19027ca4343" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier_1a67c660ed01aa450103f3f19027ca4343" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>line<sp/>type<sp/>classifiers,<sp/>abstract<sp/>line<sp/>type<sp/>classifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/line_type_classifiers/abstract_line_type_classifier<sp/>→<sp/>○<sp/>AbstractLineTypeClassifier.cls<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.py"/>
+  </compounddef>
+</doxygen>

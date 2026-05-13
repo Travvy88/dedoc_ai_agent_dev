@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_b12d725ad4d4e3e75d18583ba7ed6b33" kind="dir">
+    <compoundname>dedoc/attachments_extractors/concrete_attachments_extractors</compoundname>
+    <innerfile refid="attachments__extractors_2concrete__attachments__extractors_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="abstract__office__attachments__extractor_8py">abstract_office_attachments_extractor.py</innerfile>
+    <innerfile refid="docx__attachments__extractor_8py">docx_attachments_extractor.py</innerfile>
+    <innerfile refid="excel__attachments__extractor_8py">excel_attachments_extractor.py</innerfile>
+    <innerfile refid="json__attachment__extractor_8py">json_attachment_extractor.py</innerfile>
+    <innerfile refid="pdf__attachments__extractor_8py">pdf_attachments_extractor.py</innerfile>
+    <innerfile refid="pptx__attachments__extractor_8py">pptx_attachments_extractor.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/attachments_extractors/concrete_attachments_extractors/"/>
+  </compounddef>
+</doxygen>

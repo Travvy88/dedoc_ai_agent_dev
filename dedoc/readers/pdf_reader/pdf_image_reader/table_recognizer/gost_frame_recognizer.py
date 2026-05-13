@@ -11,11 +11,15 @@ from dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_utils.img_
 MIN_FRAME_CONTENT_AREA = 0.65
 
 
+# region CLASS_GOSTFrameRecognizer [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class GOSTFrameRecognizer:
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict = None) -> None:
         self.logger = config.get("logger", logging.getLogger())
         self.config = config
 
+    # region METHOD_rec_and_clean_frame [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___init__
     def rec_and_clean_frame(self, image: np.ndarray) -> Tuple[np.ndarray, BBox, Tuple[int, ...]]:
         if len(image.shape) < 3:  # check if an image is already converted to grayscale
             thresh, img_bin = cv2.threshold(image, 225, 255, cv2.THRESH_BINARY)
@@ -31,6 +35,8 @@ class GOSTFrameRecognizer:
             return BBox.crop_image_by_box(image, main_box), main_box, (int(image.shape[0]), int(image.shape[1]))
         return image, BBox(0, 0, image.shape[1], image.shape[0]), (int(image.shape[0]), int(image.shape[1]))
 
+    # region METHOD__analyze_cells_on_frame [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD_rec_and_clean_frame
     def _analyze_cells_on_frame(self, tree_table: "TableTree", img_area: "int") -> Tuple[bool, Optional[BBox]]:
         try:
             sub_bboxes = tree_table.children[0].children
@@ -40,4 +46,32 @@ class GOSTFrameRecognizer:
             return False, None
         except Exception as ex:
             self.logger.warning(ex)
+# endregion CLASS_GOSTFrameRecognizer
             return False, None
+
+    # endregion METHOD__analyze_cells_on_frame
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_gost_frame_recognizer; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Table recognition and extraction from document images.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [6][GOSTFrameRecognizer reader/processor] => GOSTFrameRecognizer
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: gost_frame_recognizer, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, GOSTFrameRecognizer
+# STRUCTURE: ▶ Init ┌PDF file┐ → [GOSTFrameRecognizer] ○ can_read? → ○ read → [__init__ → rec_and_clean_frame → _analyze_cells_on_frame] → ⊕ UnstructuredDocument(lines, tables, attachments)

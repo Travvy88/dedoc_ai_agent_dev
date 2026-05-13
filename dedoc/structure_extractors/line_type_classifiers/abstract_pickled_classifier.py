@@ -12,17 +12,31 @@ from dedoc.download_models import download_from_hub
 from dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier import AbstractLineTypeClassifier
 from dedoc.utils.parameter_utils import get_param_gpu_available
 
+logger = logging.getLogger(__name__)
 
+# region CLASS_AbstractPickledLineTypeClassifier [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @purpose AbstractPickledLineTypeClassifier for document structure extraction pipeline
 class AbstractPickledLineTypeClassifier(AbstractLineTypeClassifier, ABC):
     """
     Abstract class for lines classification with functionality of loading and saving a classifier.
     """
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, *, config: Optional[dict] = None) -> None:
         super().__init__(config=config)
         self.logger = self.config.get("logger", logging.getLogger())
+        self.logger.debug(f"[IMP:4][AbstractPickledLineTypeClassifier][__init___INIT] Starting")
 
+    # endregion METHOD___init__
+    # region METHOD_load [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose load method
+    ## @io Input -> Output
+    ## @complexity 5
     def load(self, classifier_type: str, path: str) -> Tuple[XGBClassifier, dict]:
+        self.logger.debug(f"[IMP:4][AbstractPickledLineTypeClassifier][load_INIT] Starting")
         """
         Load the pickled classifier with parameters for a feature extractor.
 
@@ -51,8 +65,15 @@ class AbstractPickledLineTypeClassifier(AbstractLineTypeClassifier, ABC):
 
         return classifier, feature_extractor_parameters
 
+    # endregion METHOD_load
+    # region METHOD_save [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose save method
+    ## @io Input -> Output
+    ## @complexity 5
     @staticmethod
     def save(path_out: str, classifier: XGBClassifier, parameters: dict) -> str:
+        logger.debug(f"[IMP:4][AbstractPickledLineTypeClassifier][save_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger недоступен в @staticmethod; заменён на модульный logger
         """
         Save the classifier (with initialization parameters for a feature extractor) into the `.zip` file with path=`path_out`
 
@@ -75,3 +96,29 @@ class AbstractPickledLineTypeClassifier(AbstractLineTypeClassifier, ABC):
                 archive.write(clf_path, os.path.basename(clf_path))
                 archive.write(params_path, os.path.basename(params_path))
         return path_out
+
+    # endregion METHOD_save
+# endregion CLASS_AbstractPickledLineTypeClassifier
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/line_type_classifiers/abstract_pickled_classifier: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/line_type_classifiers/abstract_pickled_classifier
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => AbstractPickledLineTypeClassifier
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, line type classifiers, abstract pickled classifier
+# STRUCTURE: ▶ structure_extractors/line_type_classifiers/abstract_pickled_classifier → ○ AbstractPickledLineTypeClassifier.cls → ⎋ result

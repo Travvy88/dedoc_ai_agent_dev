@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['xml_0',['xml',['../classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1paragraph_1_1Paragraph.html#a06ed9c22352d75972efeea064af756b3',1,'dedoc.readers.docx_reader.data_structures.paragraph.Paragraph.xml'],['../classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1table_1_1DocxTable.html#a4edf11731222afa5a36a4b2295816d0f',1,'dedoc.readers.docx_reader.data_structures.table.DocxTable.xml'],['../classdedoc_1_1readers_1_1pptx__reader_1_1paragraph_1_1PptxParagraph.html#a4833b7d3fc0970ed4b9f1ab906e11b2b',1,'dedoc.readers.pptx_reader.paragraph.PptxParagraph.xml'],['../classdedoc_1_1readers_1_1pptx__reader_1_1shape_1_1PptxShape.html#ac7a97861d77c8c4d6a461becd67c0e2c',1,'dedoc.readers.pptx_reader.shape.PptxShape.xml'],['../classdedoc_1_1readers_1_1pptx__reader_1_1table_1_1PptxTable.html#a1c345be085799071e36c2ecaf7f5aea3',1,'dedoc.readers.pptx_reader.table.PptxTable.xml']]]
+];

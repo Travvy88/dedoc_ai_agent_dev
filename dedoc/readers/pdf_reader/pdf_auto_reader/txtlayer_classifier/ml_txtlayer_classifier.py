@@ -12,19 +12,23 @@ from dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.txtlayer_featu
 from dedoc.utils.parameter_utils import get_param_gpu_available
 
 
+# region CLASS_MlTxtlayerClassifier [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class MlTxtlayerClassifier(AbstractTxtlayerClassifier):
     """
     The MlTxtlayerClassifier class is used for classifying the correctness of the textual layer in a PDF document
     using XGBClassifier (only for languages based on cyrillic- or latin-based alphabets).
     """
 
+    # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict) -> None:
         super().__init__(config=config)
         self.feature_extractor = TxtlayerFeatureExtractor()
         self.path = os.path.join(get_config()["resources_path"], "txtlayer_classifier.json")
         self.__model = None
 
+    # endregion METHOD___init__
     @property
+    # region METHOD___get_model [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __get_model(self) -> XGBClassifier:
         if self.__model is not None:
             return self.__model
@@ -44,6 +48,8 @@ class MlTxtlayerClassifier(AbstractTxtlayerClassifier):
 
         return self.__model
 
+    # region METHOD_predict [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD___get_model
     def predict(self, lines: List[List[LineWithMeta]]) -> np.ndarray:
         result = np.zeros(len(lines))
 
@@ -65,4 +71,32 @@ class MlTxtlayerClassifier(AbstractTxtlayerClassifier):
         features = self.feature_extractor.transform(text_for_inference)
         predictions = self.__get_model.predict(features)
         result[idx_list] = predictions
+# endregion CLASS_MlTxtlayerClassifier
         return result.astype(bool)
+
+    # endregion METHOD_predict
+
+
+# region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_ml_txtlayer_classifier; TECH(6): Python, dedoc]
+## @modulecontract
+## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.
+## @scope Machine learning classification for document layout analysis.
+## @input [File path (str), parameters (Optional[dict]) — document on disk.]
+## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]
+## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]
+## @invariants
+## - read() ALWAYS returns an UnstructuredDocument.
+## @rationale
+## Q: Why is this reader separated from others?
+## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## @modulemap
+## CLASS [6][MlTxtlayerClassifier reader/processor] => MlTxtlayerClassifier
+## @usecases
+## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: ml_txtlayer_classifier, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, MlTxtlayerClassifier
+# STRUCTURE: ▶ Init ┌PDF file┐ → [MlTxtlayerClassifier] ○ can_read? → ○ read → [__init__ → __get_model → predict] → ⊕ UnstructuredDocument(lines, tables, attachments)

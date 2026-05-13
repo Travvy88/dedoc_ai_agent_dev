@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="pdfminer__utils_8py" kind="file" language="Python">
+    <compoundname>pdfminer_utils.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers">dedoc::readers</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader">dedoc::readers::pdf_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader">dedoc::readers::pdf_reader::pdf_txtlayer_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader">dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils">dedoc::readers::pdf_reader::pdf_txtlayer_reader::pdfminer_reader::pdfminer_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IO,<sp/>List,<sp/>Match,<sp/>Optional,<sp/>Tuple</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>cv2</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>dedocutils.data_structures<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BBox</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pdfminer.layout<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LTContainer</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pdfminer.pdfpage<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PDFPage</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1ad098af2dc2b4aefdd0a33ac661785a62" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations_1_1bbox__annotation" kindref="compound">dedoc.data_structures.concrete_annotations.bbox_annotation</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>BBoxAnnotation</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a966f0cf1ac94afd05c9f6f7344f7a0d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a966f0cf1ac94afd05c9f6f7344f7a0d9" kindref="member">draw_layout_element</ref>(image_src:<sp/>np.ndarray,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lobjs:<sp/>List,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file:<sp/>IO,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_w:<sp/>float,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>k_h:<sp/>float,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>page:<sp/>PDFPage,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color:<sp/>Tuple[int,<sp/>int,<sp/>int],</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>lobj<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>lobjs:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>converting<sp/>coordinate<sp/>from<sp/>pdf<sp/>format<sp/>into<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>box_lobj<sp/>=<sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" kindref="member">convert_coordinates_pdf_to_image</ref>(lobj,<sp/>k_w,<sp/>k_h,<sp/>int(page.mediabox[3]))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv2.rectangle(image_src,<sp/>(box_lobj.x_top_left,<sp/>box_lobj.y_top_left),<sp/>(box_lobj.x_bottom_right,<sp/>box_lobj.y_bottom_right),<sp/>color)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>text<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv2.putText(image_src,<sp/>text,<sp/>(box_lobj.x_top_left,<sp/>box_lobj.y_top_left),<sp/>cv2.FONT_HERSHEY_SIMPLEX,<sp/>1,<sp/>color)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file.write(lobj.get_text())</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a890c6e051578d334eff14c123addd29f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">draw_annotation(image:<sp/>np.ndarray,<sp/>annotations:<sp/>List[BBoxAnnotation])<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>ann<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>annotations:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bbox,<sp/>page_width,<sp/>page_height<sp/>=<sp/>BBoxAnnotation.get_bbox_from_value(ann.value)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>page_height<sp/>!=<sp/>image.shape[0]<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>page_width<sp/>!=<sp/>image.shape[1]:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image<sp/>=<sp/>cv2.resize(image,<sp/>dsize=(page_width,<sp/>page_height),<sp/>interpolation=cv2.INTER_CUBIC)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p1<sp/>=<sp/>(bbox.x_top_left,<sp/>bbox.y_top_left)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p2<sp/>=<sp/>(bbox.x_bottom_right,<sp/>bbox.y_bottom_right)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv2.rectangle(image,<sp/>p1,<sp/>p2,<sp/>(0,<sp/>255,<sp/>0))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" kindref="member">convert_coordinates_pdf_to_image</ref>(lobj:<sp/>LTContainer,<sp/>k_w:<sp/>float,<sp/>k_h:<sp/>float,<sp/>height_page:<sp/>int)<sp/>-&gt;<sp/>BBox:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>x0<sp/>=<sp/>int(lobj.x0<sp/>*<sp/>k_w)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>x1<sp/>=<sp/>int(lobj.x1<sp/>*<sp/>k_w)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>y0<sp/>=<sp/>int((height_page<sp/>-<sp/>lobj.y1)<sp/>*<sp/>k_h)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>y1<sp/>=<sp/>int((height_page<sp/>-<sp/>lobj.y0)<sp/>*<sp/>k_h)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BBox(x0,<sp/>y0,<sp/>x1<sp/>-<sp/>x0,<sp/>y1<sp/>-<sp/>y0)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1ade5cd09e39106c1fa79434a4d096d68f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">create_bbox(height:<sp/>int,<sp/>k_h:<sp/>float,<sp/>k_w:<sp/>float,<sp/>lobj:<sp/>LTContainer)<sp/>-&gt;<sp/>BBox:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>curr_box_line<sp/>=<sp/><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1aa0ce11c058b945cfd0025f8020748347" kindref="member">convert_coordinates_pdf_to_image</ref>(lobj,<sp/>k_w,<sp/>k_h,<sp/>height)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>bbox<sp/>=<sp/>BBox.from_two_points((curr_box_line.x_top_left,<sp/>curr_box_line.y_top_left),<sp/>(curr_box_line.x_bottom_right,<sp/>curr_box_line.y_bottom_right))</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bbox</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a5c6446e35cd9eaffa6d85c121663f65b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a5c6446e35cd9eaffa6d85c121663f65b" kindref="member">cid_to_ascii_text</ref>(m:<sp/>Match)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>m.group(0)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>v.strip(</highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal">).strip(</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ascii_num<sp/>=<sp/>v.split(</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">)[-1]</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ascii_num<sp/>=<sp/>int(ascii_num)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>text_value<sp/>=<sp/>chr(ascii_num)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>text_value</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(7):<sp/>Reader_pdfminer_utils;<sp/>TECH(6):<sp/>Python,<sp/>dedoc]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">##<sp/>@purpose<sp/>Read<sp/>and<sp/>parse<sp/>PDF<sp/>documents,<sp/>extracting<sp/>lines<sp/>with<sp/>metadata,<sp/>tables,<sp/>and<sp/>attachments<sp/>into<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">##<sp/>@scope<sp/>Utility<sp/>functions<sp/>for<sp/>document<sp/>processing.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">##<sp/>@input<sp/>[File<sp/>path<sp/>(str),<sp/>parameters<sp/>(Optional[dict])<sp/>—<sp/>document<sp/>on<sp/>disk.]</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">##<sp/>@output<sp/>[UnstructuredDocument<sp/>with<sp/>lines,<sp/>tables,<sp/>attachments,<sp/>and<sp/>warnings.]</highlight></codeline>
+<codeline lineno="79"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.data_structures.*;<sp/>USES_API(8):<sp/>dedoc.readers.BaseReader]</highlight></codeline>
+<codeline lineno="80"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="81"><highlight class="comment">##<sp/>-<sp/>read()<sp/>ALWAYS<sp/>returns<sp/>an<sp/>UnstructuredDocument.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="83"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>is<sp/>this<sp/>reader<sp/>separated<sp/>from<sp/>others?</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">##<sp/>A:<sp/>Each<sp/>reader<sp/>handles<sp/>one<sp/>format<sp/>family<sp/>—<sp/>isolation<sp/>prevents<sp/>format<sp/>coupling<sp/>and<sp/>simplifies<sp/>extension.</highlight></codeline>
+<codeline lineno="85"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="86"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>SEMANTIC<sp/>TEMPLATE<sp/>markup<sp/>and<sp/>LDD<sp/>logging.]</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="88"><highlight class="comment">##<sp/>FUNC<sp/>[5][draw_layout_element<sp/>utility/helper]<sp/>=&gt;<sp/>draw_layout_element</highlight></codeline>
+<codeline lineno="89"><highlight class="comment">##<sp/>FUNC<sp/>[5][draw_annotation<sp/>utility/helper]<sp/>=&gt;<sp/>draw_annotation</highlight></codeline>
+<codeline lineno="90"><highlight class="comment">##<sp/>FUNC<sp/>[5][convert_coordinates_pdf_to_image<sp/>utility/helper]<sp/>=&gt;<sp/>convert_coordinates_pdf_to_image</highlight></codeline>
+<codeline lineno="91"><highlight class="comment">##<sp/>FUNC<sp/>[5][create_bbox<sp/>utility/helper]<sp/>=&gt;<sp/>create_bbox</highlight></codeline>
+<codeline lineno="92"><highlight class="comment">##<sp/>FUNC<sp/>[5][cid_to_ascii_text<sp/>utility/helper]<sp/>=&gt;<sp/>cid_to_ascii_text</highlight></codeline>
+<codeline lineno="93"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="94"><highlight class="comment">##<sp/>-<sp/>[read]:<sp/>System<sp/>(Pipeline)<sp/>→<sp/>ParseDocument(PDF)<sp/>→<sp/>UnstructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a27629fa5819a0ad7fa900071ea2ce3f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__utils_1a27629fa5819a0ad7fa900071ea2ce3f6" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>pdfminer_utils,<sp/>dedoc,<sp/>reader,<sp/>PDF,<sp/>PdfReader,<sp/>BaseReader,<sp/>PDF,<sp/>pdfminer,<sp/>tabby,<sp/>OCR,<sp/>tables,<sp/>image,<sp/>txtlayer,<sp/>columns,<sp/>orientation,<sp/>paragraphs,<sp/>metadata,<sp/>extraction,<sp/>line,<sp/>bbox,<sp/>draw_layout_element,<sp/>draw_annotation,<sp/>convert_coordinates_pdf_to_image,<sp/>create_bbox,<sp/>cid_to_ascii_text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>Input<sp/>→<sp/>○<sp/>draw_layout_element<sp/>→<sp/>draw_annotation<sp/>→<sp/>convert_coordinates_pdf_to_image<sp/>→<sp/>⊕<sp/>result</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdfminer_reader/pdfminer_utils.py"/>
+  </compounddef>
+</doxygen>

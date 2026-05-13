@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1api_1_1api__utils" kind="namespace" language="Python">
+    <compoundname>dedoc::api::api_utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1api_1_1api__utils_1aa45d2ad6f030fec789eb53cbc1109637" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::api::api_utils.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.api.api_utils.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="52" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a51a837ed3f53514d4bb2551593938ce2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.api.api_utils._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.api.api_utils._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Convert parsed document structures (TreeNode, Table, ParsedDocument) from JSON/tree representation into display formats: HTML (tree, collapsed tree), plain text, and annotated HTML with tables/attachments. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Output format rendering — JSON → HTML/plain_text/tree conversion. \par \b Input\/ \:  TreeNode, List[Table], List[ParsedDocument], annotation data. \par \b Output\/ \:  HTML strings (tree, collapsed tree, annotated HTML), plain text. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1api_1_1schema" kindref="compound">dedoc.api.schema</ref> (TreeNode, Table, LineMetadata, ParsedDocument); READS_DATA_FROM(7): <ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations" kindref="compound">dedoc.data_structures.concrete_annotations</ref>, <ref refid="namespacededoc_1_1extensions" kindref="compound">dedoc.extensions</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>json2html always returns valid HTML fragment.</para>
+</listitem><listitem><para>All rendering functions are pure (no side effects on input data). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why manual HTML generation instead of a template engine? A: The tree-to-HTML logic is algorithmic (depth-based indentation, annotation tag injection) — direct string construction is more efficient and self-contained than template rendering. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup] \par \b Module Map\/ \:</para>
+<para>FUNC 7[Prettifies text with line wrapping at 60 chars] =&gt; __prettify_text FUNC 8[Recursively renders TreeNode as collapsible HTML details] =&gt; _node2tree FUNC 8[Wraps _node2tree result in full HTML document] =&gt; json2collapsed_tree FUNC 9[Renders TreeNode as flat HTML tree with vertical lines] =&gt; json2tree FUNC 4[Adds vertical line symbols for tree depth] =&gt; __add_vertical_line FUNC 10[Main conversion: TreeNode + Tables + Attachments → annotated HTML] =&gt; json2html FUNC 6[Maps annotation name+value to HTML tag] =&gt; __value2tag FUNC 9[Injects annotation HTML tags into text at character positions] =&gt; __annotations2html FUNC 7[Renders Table as HTML table element] =&gt; table2html FUNC 5[Recursively extracts plain text from TreeNode] =&gt; json2txt \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[json2html]: ApiEndpoint =&gt; ConvertParsedResult =&gt; ReturnHTMLResponse</para>
+</listitem><listitem><para>[json2txt]: ApiEndpoint =&gt; ConvertParsedResult =&gt; ReturnPlainTextResponse </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="30" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a5584234dc8df5c92ea05619f0b9b8407" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Iterator[str]</type>
+        <definition> Iterator[str] dedoc.api.api_utils.__prettify_text</definition>
+        <argsstring>(str text)</argsstring>
+        <name>__prettify_text</name>
+        <qualifiedname>dedoc.api.api_utils.__prettify_text</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Wrap text into lines of approximately 60 characters for display, yielding chunks without breaking words. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  str -&gt; Iterator[str] \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="58" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="58" bodyend="71"/>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1ad1af73852e3fc259c899e6e27f706724" compoundref="api__utils_8py" startline="76" endline="106">dedoc.api.api_utils._node2tree</referencedby>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1a3cd6171afd96042b450efb828fe445d1" compoundref="api__utils_8py" startline="135" endline="165">dedoc.api.api_utils.json2tree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1ad1af73852e3fc259c899e6e27f706724" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils._node2tree</definition>
+        <argsstring>(TreeNode paragraph, int depth, Set[int] depths=None)</argsstring>
+        <name>_node2tree</name>
+        <qualifiedname>dedoc.api.api_utils._node2tree</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>Set</type>
+          <declname>depths</declname>
+          <array>[int]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Recursively render a TreeNode as nested HTML <computeroutput>&lt;details&gt;</computeroutput> elements for an interactive collapsible tree view. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __prettify_text \par \b I/O\/ \:  (TreeNode, int, Set[int]) -&gt; str \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="76" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="76" bodyend="106"/>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1a5584234dc8df5c92ea05619f0b9b8407" compoundref="api__utils_8py" startline="58" endline="71">dedoc.api.api_utils.__prettify_text</references>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1ad1af73852e3fc259c899e6e27f706724" compoundref="api__utils_8py" startline="76" endline="106">dedoc.api.api_utils._node2tree</references>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1ad1af73852e3fc259c899e6e27f706724" compoundref="api__utils_8py" startline="76" endline="106">dedoc.api.api_utils._node2tree</referencedby>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1a28606d146b409e844e5e16c2db99c4a7" compoundref="api__utils_8py" startline="111" endline="130">dedoc.api.api_utils.json2collapsed_tree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a28606d146b409e844e5e16c2db99c4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.json2collapsed_tree</definition>
+        <argsstring>(TreeNode paragraph)</argsstring>
+        <name>json2collapsed_tree</name>
+        <qualifiedname>dedoc.api.api_utils.json2collapsed_tree</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Wrap the collapsible tree HTML from _node2tree in a full HTML document with charset and styling. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _node2tree \par \b I/O\/ \:  TreeNode -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="111" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="111" bodyend="130"/>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1ad1af73852e3fc259c899e6e27f706724" compoundref="api__utils_8py" startline="76" endline="106">dedoc.api.api_utils._node2tree</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a3cd6171afd96042b450efb828fe445d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.json2tree</definition>
+        <argsstring>(TreeNode paragraph)</argsstring>
+        <name>json2tree</name>
+        <qualifiedname>dedoc.api.api_utils.json2tree</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Render a TreeNode as a flat indented HTML tree using stack-based traversal, node sorting by ID, and vertical line markers for hierarchy depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __prettify_text, __add_vertical_line \par \b I/O\/ \:  TreeNode -&gt; str \par \b Complexity\/ \:  8 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="135" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="135" bodyend="165"/>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1aaf19298a89be07df19d52a87a0e0b258" compoundref="api__utils_8py" startline="169" endline="175">dedoc.api.api_utils.__add_vertical_line</references>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1a5584234dc8df5c92ea05619f0b9b8407" compoundref="api__utils_8py" startline="58" endline="71">dedoc.api.api_utils.__prettify_text</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1aaf19298a89be07df19d52a87a0e0b258" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.__add_vertical_line</definition>
+        <argsstring>(Set[int] depths, List[str] space)</argsstring>
+        <name>__add_vertical_line</name>
+        <qualifiedname>dedoc.api.api_utils.__add_vertical_line</qualifiedname>
+        <param>
+          <type>Set</type>
+          <declname>depths</declname>
+          <array>[int]</array>
+        </param>
+        <param>
+          <type>List</type>
+          <declname>space</declname>
+          <array>[str]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Insert vertical line pipe characters at depth positions in the indentation space list for tree visualization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (Set[int], List[str]) -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="169" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="169" bodyend="175"/>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1a3cd6171afd96042b450efb828fe445d1" compoundref="api__utils_8py" startline="135" endline="165">dedoc.api.api_utils.json2tree</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a4f9c90401d0690dd11af29de4239db54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.json2html</definition>
+        <argsstring>(str text, TreeNode paragraph, Optional[List[Table]] tables, Optional[List[ParsedDocument]] attachments, int tabs=0, Dict[str, int] table2id=None, Dict[str, int] attach2id=None, Optional[List[int]] prev_page_id=None)</argsstring>
+        <name>json2html</name>
+        <qualifiedname>dedoc.api.api_utils.json2html</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>tables</declname>
+          <array>[List[Table]</array>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>attachments</declname>
+          <array>[List[ParsedDocument]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabs</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>table2id</declname>
+          <array>[str, int]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>attach2id</declname>
+          <array>[str, int]</array>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>Optional]</type>
+          <declname>prev_page_id</declname>
+          <array>[List[int]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Main conversion function: recursively renders TreeNode with tables and attachments into a full annotated HTML document with page breaks, inline annotations, and external links. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __annotations2html, table2html, json2html (recursive) \par \b I/O\/ \:  (str, TreeNode, Optional[List[Table]], Optional[List[ParsedDocument]], int, Dict, Dict, Optional[List[int]]) -&gt; str \par \b Complexity\/ \:  10 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="180" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="187" bodyend="244"/>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1aa5053cc038b12581fcc8891ff441b543" compoundref="api__utils_8py" startline="282" endline="321">dedoc.api.api_utils.__annotations2html</references>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1a03642387216a256627135b28c05fe4ca" compoundref="api__utils_8py" startline="326" endline="352">dedoc.api.api_utils.table2html</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a9cb0234f6023807945eea23ae987bc42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.__value2tag</definition>
+        <argsstring>(str name, str value)</argsstring>
+        <name>__value2tag</name>
+        <qualifiedname>dedoc.api.api_utils.__value2tag</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Map annotation name and value to the corresponding HTML tag (e.g., BoldAnnotation → &quot;b&quot;, heading → &quot;h1&quot;-&quot;h6&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (str, str) -&gt; str \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="248" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="248" bodyend="277"/>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1aa5053cc038b12581fcc8891ff441b543" compoundref="api__utils_8py" startline="282" endline="321">dedoc.api.api_utils.__annotations2html</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1aa5053cc038b12581fcc8891ff441b543" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.__annotations2html</definition>
+        <argsstring>(TreeNode paragraph, Dict[str, int] table2id, Dict[str, int] attach2id, int tabs=0)</argsstring>
+        <name>__annotations2html</name>
+        <qualifiedname>dedoc.api.api_utils.__annotations2html</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>table2id</declname>
+          <array>[str, int]</array>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>attach2id</declname>
+          <array>[str, int]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabs</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Inject HTML tags into paragraph text at annotation character positions (start/end), handling bool annotations, links, and table/attachment references. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __value2tag \par \b I/O\/ \:  (TreeNode, Dict[str,int], Dict[str,int], int) -&gt; str \par \b Complexity\/ \:  9 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="282" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="282" bodyend="321"/>
+        <references refid="namespacededoc_1_1api_1_1api__utils_1a9cb0234f6023807945eea23ae987bc42" compoundref="api__utils_8py" startline="248" endline="277">dedoc.api.api_utils.__value2tag</references>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1a4f9c90401d0690dd11af29de4239db54" compoundref="api__utils_8py" startline="187" endline="244">dedoc.api.api_utils.json2html</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a03642387216a256627135b28c05fe4ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.table2html</definition>
+        <argsstring>(Table table, Dict[str, int] table2id)</argsstring>
+        <name>table2html</name>
+        <qualifiedname>dedoc.api.api_utils.table2html</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table" kindref="compound">Table</ref></type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>Dict</type>
+          <declname>table2id</declname>
+          <array>[str, int]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Render a Table schema object as an HTML <computeroutput>&lt;table&gt;</computeroutput> element with border styling, merged cells (colspan/rowspan), and inline annotations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  __annotations2html \par \b I/O\/ \:  (Table, Dict[str,int]) -&gt; str \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="326" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="326" bodyend="352"/>
+        <referencedby refid="namespacededoc_1_1api_1_1api__utils_1a4f9c90401d0690dd11af29de4239db54" compoundref="api__utils_8py" startline="187" endline="244">dedoc.api.api_utils.json2html</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1api_1_1api__utils_1a8243220e9474e3c1ad4eda40b8aa39bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.api.api_utils.json2txt</definition>
+        <argsstring>(TreeNode paragraph)</argsstring>
+        <name>json2txt</name>
+        <qualifiedname>dedoc.api.api_utils.json2txt</qualifiedname>
+        <param>
+          <type><ref refid="classdedoc_1_1api_1_1schema_1_1tree__node_1_1TreeNode" kindref="compound">TreeNode</ref></type>
+          <declname>paragraph</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Recursively extract plain text content from a TreeNode, joining paragraph text with subparagraph text via newlines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  TreeNode -&gt; str \par \b Complexity\/ \:  3 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_utils.py" line="356" column="1" bodyfile="dedoc/api/api_utils.py" bodystart="356" bodyend="361"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/api/api_utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

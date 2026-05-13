@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1common_1_1exceptions_1_1bad__parameters__error" kind="namespace" language="Python">
+    <compoundname>dedoc::common::exceptions::bad_parameters_error</compoundname>
+    <innerclass refid="classdedoc_1_1common_1_1exceptions_1_1bad__parameters__error_1_1BadParametersError" prot="public">dedoc::common::exceptions::bad_parameters_error::BadParametersError</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1common_1_1exceptions_1_1bad__parameters__error_1a3c88e482c81b5885406d3a7ae70ac331" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::common::exceptions::bad_parameters_error.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.common.exceptions.bad_parameters_error.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/bad_parameters_error.py" line="31" column="1" bodyfile="dedoc/common/exceptions/bad_parameters_error.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1common_1_1exceptions_1_1bad__parameters__error_1ae3d5a924bddcc8ca7e07b6c69677fc33" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.common.exceptions.bad_parameters_error._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.common.exceptions.bad_parameters_error._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To define BadParametersError — raised when API request parameters are invalid or cannot be processed (e.g., wrong type, missing required field). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Parameter validation error signalling. \par \b Input\/ \:  Error context (msg, filename, version). \par \b Output\/ \:  BadParametersError with default HTTP 400 Bad Request code. \par \b Links\/ \:  [USES_API(9): <ref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kindref="compound">dedoc.common.exceptions.dedoc_error.DedocError</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Inherits full DedocError API (msg_api, filename, version, metadata).</para>
+</listitem><listitem><para>Uses default code=400 from DedocError base class. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why no explicit code override? A: DedocError defaults to code=400, which is semantically correct for bad parameters. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.] \par \b Module Map\/ \:</para>
+<para>CLASS 8[Exception for invalid API parameters] =&gt; BadParametersError \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[BadParametersError]: APIHandler → ValidateParameters → ParametersInvalid → RaiseBadParametersError → APIResponds400 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/common/exceptions/bad_parameters_error.py" line="20" column="1" bodyfile="dedoc/common/exceptions/bad_parameters_error.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/common/exceptions/bad_parameters_error.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

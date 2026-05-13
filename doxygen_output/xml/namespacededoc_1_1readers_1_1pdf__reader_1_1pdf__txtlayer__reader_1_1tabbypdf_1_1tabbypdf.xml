@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a590d99653bf1af8d77854bcd6de0dc7f" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf.TABBY_JAVA_VERSION</definition>
+        <argsstring></argsstring>
+        <name>TABBY_JAVA_VERSION</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.TABBY_JAVA_VERSION</qualifiedname>
+        <initializer>=  &quot;2.0.0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="8" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aee33e648e4b8ea011fc3ef9aaa496b1e" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf.JAR_NAME</definition>
+        <argsstring></argsstring>
+        <name>JAR_NAME</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.JAR_NAME</qualifiedname>
+        <initializer>=  &quot;ispras_tbl_extr.jar&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="9" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a2215343525eb5644a3161d438d8890ed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf.JAR_DIR</definition>
+        <argsstring></argsstring>
+        <name>JAR_DIR</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.JAR_DIR</qualifiedname>
+        <initializer>=  os.path.abspath(os.path.dirname(__file__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="10" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a1e98c4c3767d0f952febf349d1004420" prot="public" static="no" mutable="no">
+        <type>str</type>
+        <definition>str dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf.JAVA_NOT_FOUND_ERROR</definition>
+        <argsstring></argsstring>
+        <name>JAVA_NOT_FOUND_ERROR</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.JAVA_NOT_FOUND_ERROR</qualifiedname>
+        <initializer>=  &quot;`java` command is not found from this Python process. Please ensure Java is installed and PATH is set for `java`&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a7f13c2eae20b82f13bb71b446e49f521" prot="public" static="no" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc::readers::pdf_reader::pdf_txtlayer_reader::tabbypdf::tabbypdf.DEFAULT_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_CONFIG</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.DEFAULT_CONFIG</qualifiedname>
+        <initializer>=  {&quot;JAR_PATH&quot;: os.path.join(<ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a2215343525eb5644a3161d438d8890ed" kindref="member">JAR_DIR</ref>, <ref refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aee33e648e4b8ea011fc3ef9aaa496b1e" kindref="member">JAR_NAME</ref>)}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aa3bffd6f3df5d5296a2116f462345672" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._jar_path</definition>
+        <argsstring>()</argsstring>
+        <name>_jar_path</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._jar_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="16" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="16" bodyend="19"/>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" compoundref="tabbypdf_8py" startline="20" endline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bytes</type>
+        <definition> bytes dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._run</definition>
+        <argsstring>(str path=None, str encoding=&quot;utf-8&quot;)</argsstring>
+        <name>_run</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._run</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>encoding</declname>
+          <defval>&quot;utf-8&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="20" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="20" bodyend="34"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1aa3bffd6f3df5d5296a2116f462345672" compoundref="tabbypdf_8py" startline="16" endline="19">dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._jar_path</references>
+        <referencedby refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a26362d9990b66baa187c808a51964fb0" compoundref="tabbypdf_8py" startline="35" endline="42">dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.extract</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a26362d9990b66baa187c808a51964fb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>dict</type>
+        <definition> dict dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.extract</definition>
+        <argsstring>(str path)</argsstring>
+        <name>extract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf.extract</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="35" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="35" bodyend="42"/>
+        <references refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a01eaa83b949f1f85c824b930f1078bbb" compoundref="tabbypdf_8py" startline="20" endline="34">dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._run</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1tabbypdf_1_1tabbypdf_1a47fcd59c9e9b6f9ca0416c58f888a094" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_txtlayer_reader.tabbypdf.tabbypdf._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Document parsing pipeline: PDF format reading. \par \b Input\/ \:  [File path (str), parameters (Optional[dict]) — document on disk.] \par \b Output\/ \:  [UnstructuredDocument with lines, tables, attachments, and warnings.] \par \b Links\/ \:  [USES_API(9): <ref refid="namespacededoc_1_1data__structures" kindref="compound">dedoc.data_structures</ref>.*; USES_API(8): dedoc.readers.BaseReader] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>read() ALWAYS returns an UnstructuredDocument. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why is this reader separated from others? A: Each reader handles one format family — isolation prevents format coupling and simplifies extension. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.] \par \b Module Map\/ \:</para>
+<para>FUNC [5][_jar_path utility/helper] =&gt; _jar_path FUNC [5][_run utility/helper] =&gt; _run FUNC [5][extract utility/helper] =&gt; extract \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="62" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" bodystart="62" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_txtlayer_reader/tabbypdf/tabbypdf.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

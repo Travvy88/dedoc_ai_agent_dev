@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="list__utils_8py" kind="file" language="Python">
+    <compoundname>list_utils.py</compoundname>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors">dedoc::structure_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors">dedoc::structure_extractors::feature_extractors</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features">dedoc::structure_extractors::feature_extractors::list_features</innernamespace>
+    <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils">dedoc::structure_extractors::feature_extractors::list_features::list_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>List</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1data__structures_1_1line__with__meta" kindref="compound">dedoc.data_structures.line_with_meta</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LineWithMeta</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor" kindref="compound">dedoc.structure_extractors.feature_extractors.abstract_extractor</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AbstractFeatureExtractor</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1dotted__prefix" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features.prefix.dotted_prefix</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DottedPrefix</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features.prefix.empty_prefix</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>EmptyPrefix</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features.prefix.prefix</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LinePrefix</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="10" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1ad43e02fc598d8ed24c62ecfe9d5dde2f" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_get_dotted_item_depth<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(FeatureEngineering):<sp/>...;<sp/>TECH(Pandas):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>get_dotted_item_depth<sp/>utility<sp/>function</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1aa6a64bb85b9c067b30cdd74cfd8618bb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_dotted_item_depth(text:<sp/>str)<sp/>-&gt;<sp/>int:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.debug(</highlight><highlight class="stringliteral">&quot;[IMP:4][get_dotted_item_depth][INIT]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>match<sp/>=<sp/>DottedPrefix.regexp.match(text)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>match:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prefix<sp/>=<sp/><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1dotted__prefix_1_1DottedPrefix" kindref="compound">DottedPrefix</ref>(match.group().strip(),<sp/>indent=0)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len(prefix.numbers)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_get_dotted_item_depth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>FUNC_get_prefix<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(FeatureEngineering):<sp/>...;<sp/>TECH(Pandas):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>get_prefix<sp/>utility<sp/>function</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">##<sp/>@io<sp/>Input<sp/>-&gt;<sp/>Output</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">##<sp/>@complexity<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1ad59d8a93f9810bde06fa632905ae440d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_prefix(prefix_list:<sp/>List[LinePrefix],<sp/>line:<sp/>LineWithMeta)<sp/>-&gt;<sp/>LinePrefix:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>logger.debug(</highlight><highlight class="stringliteral">&quot;[IMP:4][get_prefix][INIT]&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>text<sp/>=<sp/>line.line.strip().lower()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>indent<sp/>=<sp/>AbstractFeatureExtractor._get_indentation(line)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>prefix<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>prefix_list:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>prefix.regexp.match(text)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>match:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prefix(match.group().strip(),<sp/>indent=indent)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1empty__prefix_1_1EmptyPrefix" kindref="compound">EmptyPrefix</ref>(indent=indent)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>FUNC_get_prefix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(DocumentProcessing):<sp/>...;<sp/>CONCEPT(FeatureEngineering):<sp/>...;<sp/>TECH(Pandas):<sp/>...]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">##<sp/>@purpose<sp/>Document<sp/>structure<sp/>extraction<sp/>for<sp/>structure_extractors/feature_extractors/list_features/list_utils:<sp/>line<sp/>classification,<sp/>hierarchy<sp/>level<sp/>assignment,<sp/>pattern<sp/>matching.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">##<sp/>@scope<sp/>Structure<sp/>extraction<sp/>pipeline<sp/>—<sp/>structure_extractors/feature_extractors/list_features/list_utils</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">##<sp/>@input<sp/>Document<sp/>lines<sp/>with<sp/>reader<sp/>metadata.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment">##<sp/>@output<sp/>Lines<sp/>annotated<sp/>with<sp/>hierarchy<sp/>levels<sp/>and<sp/>line<sp/>type<sp/>labels.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures;<sp/>READS_DATA_FROM(8):<sp/>readers]</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">##<sp/>-<sp/>Output<sp/>lines<sp/>preserve<sp/>input<sp/>order.</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>semantic<sp/>region<sp/>markup<sp/>and<sp/>LDD<sp/>logging?</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">##<sp/>A:<sp/>Enables<sp/>agent<sp/>navigation<sp/>via<sp/>grep/Doxygen<sp/>XML<sp/>and<sp/>runtime<sp/>trace<sp/>analysis.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging]</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">##<sp/>FUNC<sp/>[Weight<sp/>5][Utility]<sp/>=&gt;<sp/>get_dotted_item_depth</highlight></codeline>
+<codeline lineno="60"><highlight class="comment">##<sp/>FUNC<sp/>[Weight<sp/>5][Utility]<sp/>=&gt;<sp/>get_prefix</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="62"><highlight class="comment">##<sp/>-<sp/>Extract<sp/>structure:<sp/>Reader<sp/>→<sp/>StructureExtractor<sp/>→<sp/>HierarchyBuilder<sp/>→<sp/>AnnotatedDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1a2dc0227f502510f4ea948da426a305f9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1a2dc0227f502510f4ea948da426a305f9" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>structure<sp/>extractors,<sp/>feature<sp/>extractors,<sp/>list<sp/>features,<sp/>list<sp/>utils</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>structure_extractors/feature_extractors/list_features/list_utils<sp/>→<sp/>○<sp/>get_dotted_item_depth.func<sp/>⊕<sp/>get_prefix.func<sp/>→<sp/>⎋<sp/>result</highlight></codeline>
+    </programlisting>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/list_utils.py"/>
+  </compounddef>
+</doxygen>

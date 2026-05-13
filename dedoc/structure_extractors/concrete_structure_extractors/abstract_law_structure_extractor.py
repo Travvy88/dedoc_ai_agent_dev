@@ -6,7 +6,12 @@ from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.data_structures.unstructured_document import UnstructuredDocument
 from dedoc.structure_extractors.abstract_structure_extractor import AbstractStructureExtractor
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_AbstractLawStructureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @purpose AbstractLawStructureExtractor for document structure extraction pipeline
 class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
     """
     This class is used for extraction structure from laws.
@@ -14,11 +19,17 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
     You can find the description of this type of structure in the section :ref:`law_structure`.
     """
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, *, config: Optional[dict] = None) -> None:
         """
         :param config: some configuration for document parsing
         """
         super().__init__(config=config)
+
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][__init___INIT] Starting")
         import os
         from dedoc.config import get_config
 
@@ -33,7 +44,13 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
         self.init_hl_depth = 1
         self.except_words = {"приказ", "положение", "требования", "постановление", "перечень", "регламент", "закон"}
 
+    # endregion METHOD___init__
+    # region METHOD_extract [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose extract method
+    ## @io Input -> Output
+    ## @complexity 5
     def extract(self, document: UnstructuredDocument, parameters: Optional[dict] = None) -> UnstructuredDocument:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][extract_INIT] Starting")
         """
         Extract law structure from the given document and add additional information to the lines' metadata.
         To get the information about the method's parameters look at the documentation of the class \
@@ -81,7 +98,13 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
 
         return document
 
+    # endregion METHOD_extract
+    # region METHOD___preprocess_lines [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __preprocess_lines method
+    ## @io Input -> Output
+    ## @complexity 5
     def __preprocess_lines(self, lines: List[LineWithMeta]) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][__preprocess_lines_INIT] Starting")
         fixed_lines = []
 
         for line in lines:
@@ -100,17 +123,35 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
 
         return fixed_lines
 
+    # endregion METHOD___preprocess_lines
+    # region METHOD__postprocess_lines [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _postprocess_lines method
+    ## @io Input -> Output
+    ## @complexity 5
     @abstractmethod
     def _postprocess_lines(self, lines: List[LineWithMeta]) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][_postprocess_lines_INIT] Starting")
         pass
 
+    # endregion METHOD__postprocess_lines
+    # region METHOD___call_builder [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __call_builder method
+    ## @io Input -> Output
+    ## @complexity 5
     def __call_builder(self, start_tag: str, lines_with_labels: List[Tuple[LineWithMeta, str]]) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][__call_builder_INIT] Starting")
         for builder in self.hierarchy_level_builders:
             if builder.can_build(start_tag, self.hl_type):
                 return builder.get_lines_with_hierarchy(lines_with_labels=lines_with_labels, init_hl_depth=self.init_hl_depth)
         raise ValueError(f"No one can handle {start_tag} {self.hl_type}")
 
+    # endregion METHOD___call_builder
+    # region METHOD__fix_labels [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _fix_labels method
+    ## @io Input -> Output
+    ## @complexity 5
     def _fix_labels(self, labels: List[str]) -> List[str]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][_fix_labels_INIT] Starting")
         """
         document model for law if following:
         1 Title (before the first structure_unit)
@@ -147,7 +188,13 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
         result = self.__get_result(application_start, labels, last_body_unit, title_end)
         return result
 
+    # endregion METHOD__fix_labels
+    # region METHOD___get_result [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __get_result method
+    ## @io Input -> Output
+    ## @complexity 5
     def __get_result(self, application_start: int, labels: List[str], last_body_unit: int, title_end: int) -> List[str]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][__get_result_INIT] Starting")
         result = []
         for index, label in enumerate(labels):
             if label == "footer":
@@ -174,7 +221,13 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
         assert len(result) == len(labels)
         return result
 
+    # endregion METHOD___get_result
+    # region METHOD__postprocess_roman [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose _postprocess_roman method
+    ## @io Input -> Output
+    ## @complexity 5
     def _postprocess_roman(self, hierarchy_level: HierarchyLevel, line: LineWithMeta) -> LineWithMeta:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][_postprocess_roman_INIT] Starting")
         from dedoc.structure_extractors.hierarchy_level_builders.utils_reg import roman_regexp
 
         if hierarchy_level.line_type == "subsection" and roman_regexp.match(line.line):
@@ -187,7 +240,13 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
             line.set_line(prefix + suffix)
         return line
 
+    # endregion METHOD__postprocess_roman
+    # region METHOD___finish_chunk [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __finish_chunk method
+    ## @io Input -> Output
+    ## @complexity 5
     def __finish_chunk(self, is_application_begun: bool, lines_with_labels: List[Tuple[LineWithMeta, str]]) -> List[LineWithMeta]:
+        self.logger.debug(f"[IMP:4][AbstractLawStructureExtractor][__finish_chunk_INIT] Starting")
         if len(lines_with_labels) == 0:
             return []
 
@@ -195,3 +254,29 @@ class AbstractLawStructureExtractor(AbstractStructureExtractor, ABC):
             return self.__call_builder("application", lines_with_labels)
         else:
             return self.__call_builder("body", lines_with_labels)
+
+    # endregion METHOD___finish_chunk
+# endregion CLASS_AbstractLawStructureExtractor
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/concrete_structure_extractors/abstract_law_structure_extractor: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/concrete_structure_extractors/abstract_law_structure_extractor
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => AbstractLawStructureExtractor
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, concrete structure extractors, abstract law structure extractor
+# STRUCTURE: ▶ structure_extractors/concrete_structure_extractors/abstract_law_structure_extractor → ○ AbstractLawStructureExtractor.cls → ⎋ result

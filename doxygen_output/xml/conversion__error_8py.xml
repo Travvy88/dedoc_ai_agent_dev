@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="conversion__error_8py" kind="file" language="Python">
+    <compoundname>conversion_error.py</compoundname>
+    <innerclass refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError" prot="public">dedoc::common::exceptions::conversion_error::ConversionError</innerclass>
+    <innernamespace refid="namespacededoc">dedoc</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common">dedoc::common</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common_1_1exceptions">dedoc::common::exceptions</innernamespace>
+    <innernamespace refid="namespacededoc_1_1common_1_1exceptions_1_1conversion__error">dedoc::common::exceptions::conversion_error</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacededoc_1_1common_1_1exceptions_1_1conversion__error" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>ErrorHandling,<sp/>Exceptions;<sp/>TECH(6):<sp/>PythonInheritance]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>define<sp/>ConversionError<sp/>—<sp/>raised<sp/>when<sp/>document<sp/>conversion<sp/>fails<sp/>(e.g.,<sp/>converter<sp/>crash,<sp/>timeout,<sp/>malformed<sp/>output).</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Conversion<sp/>failure<sp/>error<sp/>signalling.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>Error<sp/>context<sp/>(msg,<sp/>filename,<sp/>version).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>ConversionError<sp/>with<sp/>HTTP<sp/>415<sp/>Unsupported<sp/>Media<sp/>Type<sp/>code.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(9):<sp/>dedoc.common.exceptions.dedoc_error.DedocError]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>ALWAYS<sp/>carries<sp/>HTTP<sp/>code<sp/>415<sp/>(conversion<sp/>failure<sp/>means<sp/>the<sp/>file<sp/>type<sp/>cannot<sp/>be<sp/>served).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>-<sp/>Inherits<sp/>full<sp/>DedocError<sp/>API<sp/>(msg_api,<sp/>filename,<sp/>version,<sp/>metadata).</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>code=415<sp/>for<sp/>conversion<sp/>error?</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>A:<sp/>If<sp/>conversion<sp/>fails,<sp/>the<sp/>server<sp/>cannot<sp/>produce<sp/>a<sp/>representation<sp/>of<sp/>the<sp/>requested<sp/>format<sp/>—<sp/>semantically<sp/>&quot;Unsupported<sp/>Media<sp/>Type.&quot;</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>—<sp/>Semantic<sp/>template<sp/>markup<sp/>and<sp/>LDD<sp/>logging<sp/>added.]</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>CLASS<sp/>8[Exception<sp/>for<sp/>conversion<sp/>failures,<sp/>always<sp/>HTTP<sp/>415]<sp/>=&gt;<sp/>ConversionError</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">##<sp/>-<sp/>[ConversionError]:<sp/>Converter<sp/>→<sp/>ConversionFailed<sp/>→<sp/>RaiseConversionError<sp/>→<sp/>APIResponds415</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespacededoc_1_1common_1_1exceptions_1_1conversion__error_1a23d1128359ad8991fa2b66547b26fb69" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1common_1_1exceptions_1_1conversion__error_1a23d1128359ad8991fa2b66547b26fb69" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>exceptions,<sp/>ConversionError,<sp/>415,<sp/>conversion,<sp/>converter,<sp/>failure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>DedocError<sp/>──▶<sp/>ConversionError<sp/>▸<sp/>__init__(⟦msg⟧,<sp/>code=415)<sp/>⊕<sp/>__str__(→[msg])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacededoc_1_1common_1_1exceptions_1_1dedoc__error" kindref="compound">dedoc.common.exceptions.dedoc_error</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DedocError</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacededoc_1_1common_1_1exceptions_1_1conversion__error_1ad084e7825e1dda90bf1ab57d900d364b" refkind="member"><highlight class="normal">logger<sp/>=<sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">#<sp/>region<sp/>CLASS_ConversionError<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(9):<sp/>ErrorHandling,<sp/>Exceptions;<sp/>TECH(6):<sp/>PythonInheritance]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>signal<sp/>that<sp/>document<sp/>conversion<sp/>has<sp/>failed<sp/>or<sp/>been<sp/>terminated,<sp/>resulting<sp/>in<sp/>an<sp/>HTTP<sp/>415<sp/>response.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError" kindref="compound">ConversionError</ref>(<ref refid="classdedoc_1_1common_1_1exceptions_1_1dedoc__error_1_1DedocError" kindref="compound">DedocError</ref>):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___init__<sp/>[DOMAIN(8):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>ErrorHandling;<sp/>TECH(6):<sp/>PythonConstructor]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>initialize<sp/>the<sp/>error<sp/>with<sp/>a<sp/>fixed<sp/>HTTP<sp/>415<sp/>code,<sp/>preserving<sp/>full<sp/>DedocError<sp/>context.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@uses<sp/>DedocError.__init__</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>(msg:<sp/>str,<sp/>msg_api:<sp/>Optional[str],<sp/>filename:<sp/>Optional[str],<sp/>version:<sp/>Optional[str])<sp/>-&gt;<sp/>None</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a5212bc6549001bdbcd1a5728b9ac8fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a5212bc6549001bdbcd1a5728b9ac8fcb" kindref="member">__init__</ref>(self,<sp/>msg:<sp/>str,<sp/>msg_api:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>filename:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">,<sp/>version:<sp/>Optional[str]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.debug(f</highlight><highlight class="stringliteral">&quot;[IMP:4][ConversionError][INIT]<sp/>Conversion<sp/>error:<sp/>msg=&apos;{msg}&apos;,<sp/>filename=&apos;{filename}&apos;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super(ConversionError,<sp/>self).<ref refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a5212bc6549001bdbcd1a5728b9ac8fcb" kindref="member">__init__</ref>(msg_api=msg_api,<sp/>msg=msg,<sp/>filename=filename,<sp/>version=version,<sp/>code=415)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(f</highlight><highlight class="stringliteral">&quot;[IMP:7][ConversionError][INIT]<sp/>ConversionError<sp/>raised<sp/>(HTTP<sp/>415):<sp/>{msg}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___init__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>region<sp/>METHOD___str__<sp/>[DOMAIN(7):<sp/>DocumentProcessing;<sp/>CONCEPT(8):<sp/>ErrorHandling;<sp/>TECH(5):<sp/>PythonStr]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">##<sp/>@purpose<sp/>To<sp/>provide<sp/>a<sp/>human-readable<sp/>string<sp/>representation<sp/>of<sp/>the<sp/>error.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@io<sp/>None<sp/>-&gt;<sp/>str</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>##<sp/>@complexity<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a154e8169f0b7927e5ef45946dc0e71d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classdedoc_1_1common_1_1exceptions_1_1conversion__error_1_1ConversionError_1a154e8169f0b7927e5ef45946dc0e71d1" kindref="member">__str__</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f</highlight><highlight class="stringliteral">&quot;ConversionError({self.msg})&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>endregion<sp/>METHOD___str__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>CLASS_ConversionError</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="dedoc/common/exceptions/conversion_error.py"/>
+  </compounddef>
+</doxygen>

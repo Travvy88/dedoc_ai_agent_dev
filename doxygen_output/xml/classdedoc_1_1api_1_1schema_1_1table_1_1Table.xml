@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1api_1_1schema_1_1table_1_1Table" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::api::schema::table::Table</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BaseModel</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.api.schema.table.Table::cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <qualifiedname>dedoc.api.schema.table.Table.cells</qualifiedname>
+        <initializer>=  Field(description=&quot;List of lists of table cells (cell has text, colspan and rowspan attributes)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table.py" line="51" column="1" bodyfile="dedoc/api/schema/table.py" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ab50439eb22c8c706095eadaeb93104ae" compoundref="scantable_8py" startline="31" endline="38">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.extended</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1ac19f9d48da0571124adee6485735370f" compoundref="scantable_8py" startline="69" endline="80">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" prot="public" static="yes" mutable="no">
+        <type><ref refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata" kindref="compound">TableMetadata</ref></type>
+        <definition>TableMetadata dedoc.api.schema.table.Table::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <qualifiedname>dedoc.api.schema.table.Table.metadata</qualifiedname>
+        <initializer>=  Field(description=&quot;Table meta information&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/schema/table.py" line="52" column="1" bodyfile="dedoc/api/schema/table.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a9e21257c73f1a13291457db8a59f047b" compoundref="data__structures_2parsed__document_8py" startline="37" endline="49">dedoc.data_structures.parsed_document.ParsedDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1a852ef228b0fa43d8b7ce06f6e11d9a1b" compoundref="data__structures_2table_8py" startline="32" endline="40">dedoc.data_structures.table.Table.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1unstructured__document_1_1UnstructuredDocument_1a5913db2ddf63408cc0dd16f5c61e9d32" compoundref="unstructured__document_8py" startline="40" endline="54">dedoc.data_structures.unstructured_document.UnstructuredDocument.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1afe5b8495c18c27a466f7a649a73dedec" compoundref="data__structures_2tree__node_8py" startline="46" endline="62">dedoc.data_structures.tree_node.TreeNode.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1af3299dc1bb1879841e221683514c3c50" compoundref="data__structures_2tree__node_8py" startline="140" endline="153">dedoc.data_structures.tree_node.TreeNode.add_text</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" compoundref="data__structures_2parsed__document_8py" startline="78" endline="85">dedoc.data_structures.parsed_document.ParsedDocument.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded" compoundref="data__structures_2table_8py" startline="48" endline="51">dedoc.data_structures.table.Table.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182" compoundref="data__structures_2tree__node_8py" startline="70" endline="75">dedoc.data_structures.tree_node.TreeNode.to_api_schema</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable_1a2e5cd2e296645c3a1a006c0fed850130" compoundref="scantable_8py" startline="64" endline="66">dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable.uid</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Represent a document table as a rectangular grid of cells (row-based) with associated table-level metadata (UID, title, page). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (cells, metadata) -&gt; JSON serializable model</para>
+<para>Holds information about tables in the document. We assume that a table has rectangle form (has the same number of columns in each row). Table representation is row-based i.e. external list contains list of rows.</para>
+<para>:ivar metadata: a list of lists of table cells (cell has text lines, colspan and rowspan attributes) :ivar cells: table metadata as location, title and so on</para>
+<para>:vartype metadata: TableMetadata :vartype cells: List[List[CellWithMeta]] </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>dedoc.api.schema.table.Table</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.api.schema.table.Table</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cells</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>metadata</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.api.schema.table_metadata.TableMetadata</label>
+        <link refid="classdedoc_1_1api_1_1schema_1_1table__metadata_1_1TableMetadata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>page_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BaseModel</label>
+      </node>
+      <node id="3">
+        <label>List</label>
+      </node>
+      <node id="5">
+        <label>Optional</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/api/schema/table.py" line="39" column="1" bodyfile="dedoc/api/schema/table.py" bodystart="39" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1a8d30688f8d8c63977da1e935150b8164" prot="public" virt="non-virtual"><scope>dedoc::api::schema::table::Table</scope><name>cells</name></member>
+      <member refid="classdedoc_1_1api_1_1schema_1_1table_1_1Table_1ab9904418bbbe4cedb6182b1586f03918" prot="public" virt="non-virtual"><scope>dedoc::api::schema::table::Table</scope><name>metadata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

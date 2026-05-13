@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_dca79edd3b9084fc2b636778d7fc0140" kind="dir">
+    <compoundname>dedoc/readers</compoundname>
+    <innerdir refid="dir_7d0707c2f40b6b124be18c3dea87bf21">dedoc/readers/archive_reader</innerdir>
+    <innerdir refid="dir_0894f77fee14e3555c13789811e9d0cd">dedoc/readers/article_reader</innerdir>
+    <innerdir refid="dir_c9acfa3973c39c9a464afbd393b8d409">dedoc/readers/csv_reader</innerdir>
+    <innerdir refid="dir_fdb024f9e99d6c811bc69c584221c812">dedoc/readers/docx_reader</innerdir>
+    <innerdir refid="dir_36e4bba15d322dcff08b95e7b2f3b413">dedoc/readers/email_reader</innerdir>
+    <innerdir refid="dir_34476187c94ad1ba81b9341b282f82d8">dedoc/readers/excel_reader</innerdir>
+    <innerdir refid="dir_5897709d1bbd7c8d797e33c2494d42c2">dedoc/readers/html2pdf_reader</innerdir>
+    <innerdir refid="dir_970463e2627f41afa832443d33d7adbd">dedoc/readers/html_reader</innerdir>
+    <innerdir refid="dir_3525f52a0d299272fc4de5489240a151">dedoc/readers/json_reader</innerdir>
+    <innerdir refid="dir_93c66a032392436e49c77415d4110981">dedoc/readers/mhtml_reader</innerdir>
+    <innerdir refid="dir_3ed7c830ab87c6f8ae8e4b2e0ea9a0bb">dedoc/readers/note_reader</innerdir>
+    <innerdir refid="dir_aa3fac2405921d10cec5466835c515bd">dedoc/readers/pdf_reader</innerdir>
+    <innerdir refid="dir_a765becd7d58076ccff5750f78d31fe4">dedoc/readers/pptx_reader</innerdir>
+    <innerdir refid="dir_8f1228a668b3a123ac0dee14e6936361">dedoc/readers/txt_reader</innerdir>
+    <innerfile refid="readers_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="base__reader_8py">base_reader.py</innerfile>
+    <innerfile refid="reader__composition_8py">reader_composition.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/"/>
+  </compounddef>
+</doxygen>

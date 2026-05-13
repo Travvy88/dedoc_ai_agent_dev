@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1data__structures_1_1serializable_1_1Serializable" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::data_structures::serializable::Serializable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" prot="public" virt="non-virtual">dedoc.data_structures.annotation.Annotation</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta" prot="public" virt="non-virtual">dedoc.data_structures.cell_with_meta.CellWithMeta</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent" prot="public" virt="non-virtual">dedoc.data_structures.document_content.DocumentContent</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata" prot="public" virt="non-virtual">dedoc.data_structures.document_metadata.DocumentMetadata</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata" prot="public" virt="non-virtual">dedoc.data_structures.line_metadata.LineMetadata</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta" prot="public" virt="non-virtual">dedoc.data_structures.line_with_meta.LineWithMeta</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument" prot="public" virt="non-virtual">dedoc.data_structures.parsed_document.ParsedDocument</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1table_1_1Table" prot="public" virt="non-virtual">dedoc.data_structures.table.Table</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata" prot="public" virt="non-virtual">dedoc.data_structures.table_metadata.TableMetadata</derivedcompoundref>
+    <derivedcompoundref refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode" prot="public" virt="non-virtual">dedoc.data_structures.tree_node.TreeNode</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BaseModel</type>
+        <definition> BaseModel dedoc.data_structures.serializable.Serializable.to_api_schema</definition>
+        <argsstring>(self)</argsstring>
+        <name>to_api_schema</name>
+        <qualifiedname>dedoc.data_structures.serializable.Serializable.to_api_schema</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation_1aa13587de0bc636f25d84f57e6eb8df2f">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1afd6d7a93d5c7f6094067a3c23f6e5bad">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent_1a8613df3dc05b9a95529c2afdb0fa9353">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata_1a4c5bf9312fee2edba480c80e028a2adf">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata_1a16573da7cb086b7fb63516d41066df0d">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a5e1186b99977c8dea044601039607c4e">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1table_1_1Table_1ab95b1e127beb48f180d7d7965c9d5ded">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata_1aa38dd285ab5bb390fbf1ad5a55b9e96a">to_api_schema</reimplementedby>
+        <reimplementedby refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode_1a19750e33cb6e7fde14f0f7ae39b58182">to_api_schema</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  Convert class data to the corresponding API schema Pydantic model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  None -&gt; BaseModel \par \b Complexity\/ \:  1</para>
+<para>Convert class data into the corresponding API schema class.</para>
+<para>:return: API schema class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/data_structures/serializable.py" line="21" column="1" bodyfile="dedoc/data_structures/serializable.py" bodystart="21" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  Abstract base class for all data structures that must be convertible to API schema Pydantic models. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Base class for the API schema objects which we later need convert to dict. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.data_structures.annotation.Annotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>dedoc.data_structures.cell_with_meta.CellWithMeta</label>
+        <link refid="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>dedoc.data_structures.concrete_annotations.alignment_annotation.AlignmentAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1alignment__annotation_1_1AlignmentAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>dedoc.data_structures.concrete_annotations.attach_annotation.AttachAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1attach__annotation_1_1AttachAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dedoc.data_structures.concrete_annotations.bbox_annotation.BBoxAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bbox__annotation_1_1BBoxAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>dedoc.data_structures.concrete_annotations.bold_annotation.BoldAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1bold__annotation_1_1BoldAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>dedoc.data_structures.concrete_annotations.color_annotation.ColorAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1color__annotation_1_1ColorAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>dedoc.data_structures.concrete_annotations.confidence_annotation.ConfidenceAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1confidence__annotation_1_1ConfidenceAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>dedoc.data_structures.concrete_annotations.indentation_annotation.IndentationAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1indentation__annotation_1_1IndentationAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>dedoc.data_structures.concrete_annotations.italic_annotation.ItalicAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1italic__annotation_1_1ItalicAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>dedoc.data_structures.concrete_annotations.linked_text_annotation.LinkedTextAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1linked__text__annotation_1_1LinkedTextAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>dedoc.data_structures.concrete_annotations.reference_annotation.ReferenceAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1reference__annotation_1_1ReferenceAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>dedoc.data_structures.concrete_annotations.size_annotation.SizeAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1size__annotation_1_1SizeAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>dedoc.data_structures.concrete_annotations.spacing_annotation.SpacingAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1spacing__annotation_1_1SpacingAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>dedoc.data_structures.concrete_annotations.strike_annotation.StrikeAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1strike__annotation_1_1StrikeAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>dedoc.data_structures.concrete_annotations.style_annotation.StyleAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1style__annotation_1_1StyleAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>dedoc.data_structures.concrete_annotations.subscript_annotation.SubscriptAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1subscript__annotation_1_1SubscriptAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>dedoc.data_structures.concrete_annotations.superscript_annotation.SuperscriptAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1superscript__annotation_1_1SuperscriptAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>dedoc.data_structures.concrete_annotations.table_annotation.TableAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1table__annotation_1_1TableAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>dedoc.data_structures.concrete_annotations.underlined_annotation.UnderlinedAnnotation</label>
+        <link refid="classdedoc_1_1data__structures_1_1concrete__annotations_1_1underlined__annotation_1_1UnderlinedAnnotation"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>dedoc.data_structures.document_content.DocumentContent</label>
+        <link refid="classdedoc_1_1data__structures_1_1document__content_1_1DocumentContent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>dedoc.data_structures.document_metadata.DocumentMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1document__metadata_1_1DocumentMetadata"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>dedoc.data_structures.line_metadata.LineMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__metadata_1_1LineMetadata"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>dedoc.data_structures.line_with_meta.LineWithMeta</label>
+        <link refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>dedoc.data_structures.parsed_document.ParsedDocument</label>
+        <link refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>dedoc.data_structures.table.Table</label>
+        <link refid="classdedoc_1_1data__structures_1_1table_1_1Table"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>dedoc.data_structures.table_metadata.TableMetadata</label>
+        <link refid="classdedoc_1_1data__structures_1_1table__metadata_1_1TableMetadata"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>dedoc.data_structures.tree_node.TreeNode</label>
+        <link refid="classdedoc_1_1data__structures_1_1tree__node_1_1TreeNode"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>dedoc.readers.pdf_reader.data_classes.line_with_location.LineWithLocation</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1line__with__location_1_1LineWithLocation"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>dedoc.readers.pdf_reader.data_classes.tables.cell.Cell</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>dedoc.readers.pdf_reader.data_classes.tables.scantable.ScanTable</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1scantable_1_1ScanTable"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.data_structures.serializable.Serializable</label>
+        <link refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/data_structures/serializable.py" line="11" column="1" bodyfile="dedoc/data_structures/serializable.py" bodystart="11" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1data__structures_1_1serializable_1_1Serializable_1aa65631a9e65db8de808df909d94d529d" prot="public" virt="non-virtual"><scope>dedoc::data_structures::serializable::Serializable</scope><name>to_api_schema</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

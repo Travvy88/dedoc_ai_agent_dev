@@ -1,0 +1,5 @@
+var scan__paragraph__classifier__extractor_8py =
+[
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a" ],
+    [ "_module_contract", "scan__paragraph__classifier__extractor_8py.html#aa690111f45aced4f926875f930ca2b4a", null ]
+];

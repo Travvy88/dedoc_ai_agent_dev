@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_7ce05fe4ed281b0d97f7149cc0d81832" kind="dir">
+    <compoundname>dedoc/structure_extractors/hierarchy_level_builders/law_builders</compoundname>
+    <innerdir refid="dir_537fe46393f99562839f8ca5192439e8">dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder</innerdir>
+    <innerdir refid="dir_67906d7d4bdeecedf4fc0f6df5da4b8c">dedoc/structure_extractors/hierarchy_level_builders/law_builders/body_builder</innerdir>
+    <innerdir refid="dir_c56b529c611d20a78c278e32f80b20ea">dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit</innerdir>
+    <innerfile refid="structure__extractors_2hierarchy__level__builders_2law__builders_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="cellar__builder_8py">cellar_builder.py</innerfile>
+    <innerfile refid="composition__hierarchy__level__builder_8py">composition_hierarchy_level_builder.py</innerfile>
+    <innerfile refid="stub__hierarchy__level__builder_8py">stub_hierarchy_level_builder.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/"/>
+  </compounddef>
+</doxygen>

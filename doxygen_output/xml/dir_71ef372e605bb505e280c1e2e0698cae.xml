@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_71ef372e605bb505e280c1e2e0698cae" kind="dir">
+    <compoundname>dedoc/structure_extractors/feature_extractors/list_features/prefix</compoundname>
+    <innerfile refid="structure__extractors_2feature__extractors_2list__features_2prefix_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="any__letter__prefix_8py">any_letter_prefix.py</innerfile>
+    <innerfile refid="bracket__prefix_8py">bracket_prefix.py</innerfile>
+    <innerfile refid="bracket__roman__prefix_8py">bracket_roman_prefix.py</innerfile>
+    <innerfile refid="bullet__prefix_8py">bullet_prefix.py</innerfile>
+    <innerfile refid="dotted__prefix_8py">dotted_prefix.py</innerfile>
+    <innerfile refid="empty__prefix_8py">empty_prefix.py</innerfile>
+    <innerfile refid="letter__prefix_8py">letter_prefix.py</innerfile>
+    <innerfile refid="prefix_8py">prefix.py</innerfile>
+    <innerfile refid="roman__prefix_8py">roman_prefix.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/structure_extractors/feature_extractors/list_features/prefix/"/>
+  </compounddef>
+</doxygen>

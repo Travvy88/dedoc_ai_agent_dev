@@ -3,7 +3,12 @@ from typing import Optional, Union
 from dedoc.structure_extractors.feature_extractors.list_features.prefix.bracket_roman_prefix import BracketRomanPrefix
 from dedoc.structure_extractors.patterns.regexp_pattern import RegexpPattern
 
+import logging
+logger = logging.getLogger(__name__)
 
+
+# region CLASS_BracketRomanListPattern [DOMAIN(DocumentProcessing): ...; CONCEPT(PatternMatching): ...; TECH(Regexp): ...]
+## @purpose BracketRomanListPattern for document structure extraction pipeline
 class BracketRomanListPattern(RegexpPattern):
     """
     Pattern for matching roman lists with brackets, e.g.
@@ -46,5 +51,36 @@ class BracketRomanListPattern(RegexpPattern):
     """
     _name = "bracket_roman_list"
 
+    # region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]
+    ## @purpose __init__ method
+    ## @io Input -> Output
+    ## @complexity 5
     def __init__(self, line_type: str, level_1: int, level_2: int, can_be_multiline: Optional[Union[bool, str]] = None) -> None:
         super().__init__(regexp=BracketRomanPrefix.regexp, line_type=line_type, level_1=level_1, level_2=level_2, can_be_multiline=can_be_multiline)
+
+        self.logger.debug(f"[IMP:4][BracketRomanListPattern][__init___INIT] Starting")
+    # endregion METHOD___init__
+# endregion CLASS_BracketRomanListPattern
+# region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(PatternMatching): ...; TECH(Regexp): ...]
+## @modulecontract
+## @purpose Document structure extraction for structure_extractors/patterns/bracket_roman_list_pattern: line classification, hierarchy level assignment, pattern matching.
+## @scope Structure extraction pipeline — structure_extractors/patterns/bracket_roman_list_pattern
+## @input Document lines with reader metadata.
+## @output Lines annotated with hierarchy levels and line type labels.
+## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]
+## @invariants
+## - Output lines preserve input order.
+## @rationale
+## Q: Why semantic region markup and LDD logging?
+## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.
+## @changes
+## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]
+## @modulemap
+## CLASS [Weight 7][Structure extraction] => BracketRomanListPattern
+## @usecases
+## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument
+def _module_contract():
+    pass
+# endregion MODULE_CONTRACT
+# GREP_SUMMARY: structure extractors, patterns, bracket roman list pattern
+# STRUCTURE: ▶ structure_extractors/patterns/bracket_roman_list_pattern → ○ BracketRomanListPattern.cls → ⎋ result
