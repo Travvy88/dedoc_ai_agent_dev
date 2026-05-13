@@ -152,7 +152,7 @@ class AnnotationMerger:
             merged.extend(group)
 
         filtered = self.__filter_contradicting_annotations(merged, text)
-        logger.info(f"[IMP:8][AnnotationMerger][RESULT] Merged: {len(annotations)} -> {len(filtered)} annotations")
+        logger.debug(f"[IMP:6][AnnotationMerger][RESULT] Merged: {len(annotations)} -> {len(filtered)} annotations")
         return filtered
     # endregion METHOD_merge_annotations
 
