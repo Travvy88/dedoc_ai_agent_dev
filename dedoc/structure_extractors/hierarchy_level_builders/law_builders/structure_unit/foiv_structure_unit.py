@@ -21,7 +21,8 @@ class FoivStructureUnitBuilder(AbstractStructureUnit):
     ## @io Input -> Output
     ## @complexity 5
     def structure_unit(self, text: str, init_hl_depth: int, previous_hl: Optional[HierarchyLevel]) -> Tuple[HierarchyLevel, Optional[HierarchyLevel]]:
-        self.logger.debug(f"[IMP:4][FoivStructureUnitBuilder][structure_unit_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger was used but AbstractStructureUnit does not define self.logger. Replaced with module-level logger which is already imported.
+        logger.debug(f"[IMP:4][FoivStructureUnitBuilder][structure_unit_INIT] Starting")
         if text.lower().startswith("глава") or roman_regexp.match(text):
             hl = HierarchyLevel(init_hl_depth + 4, 0, True, "chapter")
             return hl, hl

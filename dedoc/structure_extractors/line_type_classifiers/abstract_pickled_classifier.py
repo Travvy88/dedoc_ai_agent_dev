@@ -12,6 +12,7 @@ from dedoc.download_models import download_from_hub
 from dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier import AbstractLineTypeClassifier
 from dedoc.utils.parameter_utils import get_param_gpu_available
 
+logger = logging.getLogger(__name__)
 
 # region CLASS_AbstractPickledLineTypeClassifier [DOMAIN(DocumentProcessing): ...; CONCEPT(Classification): ...; TECH(XGBoost): ...]
 ## @purpose AbstractPickledLineTypeClassifier for document structure extraction pipeline
@@ -71,7 +72,8 @@ class AbstractPickledLineTypeClassifier(AbstractLineTypeClassifier, ABC):
     ## @complexity 5
     @staticmethod
     def save(path_out: str, classifier: XGBClassifier, parameters: dict) -> str:
-        self.logger.debug(f"[IMP:4][AbstractPickledLineTypeClassifier][save_INIT] Starting")
+        logger.debug(f"[IMP:4][AbstractPickledLineTypeClassifier][save_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger недоступен в @staticmethod; заменён на модульный logger
         """
         Save the classifier (with initialization parameters for a feature extractor) into the `.zip` file with path=`path_out`
 

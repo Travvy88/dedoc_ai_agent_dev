@@ -68,7 +68,8 @@ class AbstractHierarchyLevelBuilder(abc.ABC):
     ## @complexity 5
     @staticmethod
     def _postprocess_roman(hierarchy_level: HierarchyLevel, line: LineWithMeta) -> LineWithMeta:
-        self.logger.debug(f"[IMP:4][AbstractHierarchyLevelBuilder][_postprocess_roman_INIT] Starting")
+        logger.debug(f"[IMP:4][AbstractHierarchyLevelBuilder][_postprocess_roman_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger недоступен в @staticmethod; заменён на модульный logger
         if hierarchy_level.line_type == "subsection" and roman_regexp.match(line.line):
             match = roman_regexp.match(line.line)
             prefix = line.line[match.start(): match.end()]

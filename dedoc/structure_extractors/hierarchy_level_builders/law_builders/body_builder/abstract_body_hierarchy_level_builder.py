@@ -42,7 +42,8 @@ class AbstractBodyHierarchyLevelBuilder(AbstractHierarchyLevelBuilder, abc.ABC):
     ## @complexity 5
     @staticmethod
     def get_body_line(page_id: int = 0, line_id: int = 0, init_hl_depth: int = 1) -> LineWithMeta:
-        self.logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][get_body_line_INIT] Starting")
+        logger.debug(f"[IMP:4][AbstractBodyHierarchyLevelBuilder][get_body_line_INIT] Starting")
+        # BUG_FIX_CONTEXT: self.logger недоступен в @staticmethod; заменён на модульный logger
         # if line_with_label is None:
         line_uid = str(uuid1()) + "_body"
         page_id = page_id
