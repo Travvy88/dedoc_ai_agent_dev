@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ndarray</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.unstructured_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.line_with_location</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithLocation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.pdf_image_attachment</span><span class="w"> </span><span class="kn">import</span> <span class="n">PdfImageAttachment</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.tables.scantable</span><span class="w"> </span><span class="kn">import</span> <span class="n">ScanTable</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_base_reader</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParametersForParseDoc</span><span class="p">,</span> <span class="n">PdfBaseReader</span>
+
+
+<span class="c1"># region CLASS_PdfImageReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]</span>
+<div class="viewcode-block" id="PdfImageReader"><a class="viewcode-back" href="../../../../../modules/readers.html#dedoc.readers.PdfImageReader">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">PdfImageReader</span><span class="p">(</span><span class="n">PdfBaseReader</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class allows to extract content from the .pdf documents without a textual layer (not copyable documents),</span>
+<span class="sd">    as well as from images (scanned documents).</span>
+
+<span class="sd">    The following features are implemented to enhance the recognition results:</span>
+
+<span class="sd">    * optical character recognition using Tesseract OCR;</span>
+
+<span class="sd">    * table detection and recognition;</span>
+
+<span class="sd">    * document binarization (configure via `need_binarization` parameter);</span>
+
+<span class="sd">    * document orientation correction (automatically rotate on 90, 180, 270 degrees if it&#39;s needed);</span>
+
+<span class="sd">    * one and two column documents classification;</span>
+
+<span class="sd">    * detection of bold text.</span>
+
+<span class="sd">    It isn&#39;t recommended to use this reader for extracting content from PDF documents with a correct textual layer, use other PDF readers instead.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedocutils.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">AdaptiveBinarizer</span><span class="p">,</span> <span class="n">SkewCorrector</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.columns_orientation_classifier.columns_orientation_classifier</span><span class="w"> </span><span class="kn">import</span> <span class="n">ColumnsOrientationClassifier</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">OCRLineExtractor</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_config</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">recognized_extensions</span><span class="p">,</span> <span class="n">recognized_mimes</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">supported_image_types</span>
+
+        <span class="n">supported_image_extensions</span> <span class="o">=</span> <span class="p">{</span><span class="n">ext</span> <span class="k">for</span> <span class="n">ext</span> <span class="ow">in</span> <span class="n">supported_image_types</span> <span class="k">if</span> <span class="n">ext</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)}</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span>
+            <span class="n">recognized_extensions</span><span class="o">=</span><span class="n">recognized_extensions</span><span class="o">.</span><span class="n">pdf_like_format</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">recognized_extensions</span><span class="o">.</span><span class="n">image_like_format</span><span class="p">)</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">supported_image_extensions</span><span class="p">),</span>
+            <span class="n">recognized_mimes</span><span class="o">=</span><span class="n">recognized_mimes</span><span class="o">.</span><span class="n">pdf_like_format</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">recognized_mimes</span><span class="o">.</span><span class="n">image_like_format</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">skew_corrector</span> <span class="o">=</span> <span class="n">SkewCorrector</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">column_orientation_classifier</span> <span class="o">=</span> <span class="n">ColumnsOrientationClassifier</span><span class="p">(</span><span class="n">on_gpu</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;on_gpu&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+                                                                          <span class="n">checkpoint_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_config</span><span class="p">()[</span><span class="s2">&quot;resources_path&quot;</span><span class="p">],</span>
+                                                                                                       <span class="s2">&quot;scan_orientation_efficient_net_b0.pth&quot;</span><span class="p">),</span>
+                                                                          <span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">binarizer</span> <span class="o">=</span> <span class="n">AdaptiveBinarizer</span><span class="p">()</span>
+        <span class="n">ocr_engine_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ocr_engine&quot;</span><span class="p">,</span> <span class="s2">&quot;tesseract&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ocr_engine_name</span> <span class="o">==</span> <span class="s2">&quot;tesseract&quot;</span><span class="p">:</span>
+            <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine</span><span class="w"> </span><span class="kn">import</span> <span class="n">TesseractOCREngine</span>
+            <span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">TesseractOCREngine</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unknown OCR engine: </span><span class="si">{</span><span class="n">ocr_engine_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_current_engine_name</span> <span class="o">=</span> <span class="n">ocr_engine_name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">ocr_engine</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ocr</span> <span class="o">=</span> <span class="n">OCRLineExtractor</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="n">ocr_engine</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_recognizer</span><span class="o">.</span><span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">ocr_engine</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">page_number</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___init__</span>
+<div class="viewcode-block" id="PdfImageReader.read"><a class="viewcode-back" href="../../../../../modules/readers.html#dedoc.readers.PdfImageReader.read">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UnstructuredDocument</span><span class="p">:</span>
+        <span class="c1"># BUG_FIX_CONTEXT: ocr_engine was only available via global config at startup. AC5 requires per-request engine selection via</span>
+        <span class="c1"># API parameter. This override checks parameters[&quot;ocr_engine&quot;] before processing and swaps the engine if it differs</span>
+        <span class="c1"># from the currently active one, updating self.ocr_engine, self.ocr, and self.table_recognizer.ocr_engine.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_ocr_engine_from_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span></div>
+
+    <span class="c1"># region METHOD__set_ocr_engine_from_parameters [DOMAIN(8): OCR; CONCEPT(7): EngineSelection; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_read</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_set_ocr_engine_from_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check parameters dict for ocr_engine override and swap engine if it differs from the current one.</span>
+<span class="sd">        Updates self.ocr_engine, self.ocr, and self.table_recognizer.ocr_engine in sync.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ocr_engine_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">parameters</span> <span class="ow">or</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ocr_engine&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ocr_engine&quot;</span><span class="p">,</span> <span class="s2">&quot;tesseract&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ocr_engine_name</span> <span class="o">==</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_current_engine_name&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="n">ocr_engine_name</span> <span class="o">==</span> <span class="s2">&quot;tesseract&quot;</span><span class="p">:</span>
+            <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine</span><span class="w"> </span><span class="kn">import</span> <span class="n">TesseractOCREngine</span>
+            <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">OCRLineExtractor</span>
+            <span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">TesseractOCREngine</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_current_engine_name</span> <span class="o">=</span> <span class="s2">&quot;tesseract&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">ocr_engine</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">ocr</span> <span class="o">=</span> <span class="n">OCRLineExtractor</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="n">ocr_engine</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">table_recognizer</span><span class="o">.</span><span class="n">ocr_engine</span> <span class="o">=</span> <span class="n">ocr_engine</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:7][PdfImageReader][SET_ENGINE] Switched OCR engine to &#39;</span><span class="si">{</span><span class="n">ocr_engine_name</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unknown OCR engine: </span><span class="si">{</span><span class="n">ocr_engine_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># endregion METHOD__set_ocr_engine_from_parameters</span>
+
+    <span class="c1"># region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_read</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_process_one_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                          <span class="n">image</span><span class="p">:</span> <span class="n">ndarray</span><span class="p">,</span>
+                          <span class="n">parameters</span><span class="p">:</span> <span class="n">ParametersForParseDoc</span><span class="p">,</span>
+                          <span class="n">page_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+                          <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">LineWithLocation</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">ScanTable</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">PdfImageAttachment</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_path_param</span>
+
+        <span class="c1">#  --- Step 1: correct orientation and detect column count ---</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">page_number</span> <span class="o">=</span> <span class="n">page_number</span>
+        <span class="n">rotated_image</span><span class="p">,</span> <span class="n">is_one_column_document</span><span class="p">,</span> <span class="n">angle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_detect_column_count_and_orientation</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;debug_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Angle page rotation = </span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1">#  --- Step 2: do binarization ---</span>
+        <span class="k">if</span> <span class="n">parameters</span><span class="o">.</span><span class="n">need_binarization</span><span class="p">:</span>
+            <span class="n">rotated_image</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">binarizer</span><span class="o">.</span><span class="n">preprocess</span><span class="p">(</span><span class="n">rotated_image</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;debug_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+                <span class="n">debug_dir</span> <span class="o">=</span> <span class="n">get_path_param</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">,</span> <span class="s2">&quot;path_debug&quot;</span><span class="p">)</span>
+                <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">debug_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%H-%M-%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">_result_binarization.jpg&quot;</span><span class="p">),</span> <span class="n">rotated_image</span><span class="p">)</span>
+
+        <span class="c1">#  --- Step 3: table detection and recognition ---</span>
+        <span class="k">if</span> <span class="n">parameters</span><span class="o">.</span><span class="n">need_pdf_table_analysis</span><span class="p">:</span>
+            <span class="n">clean_image</span><span class="p">,</span> <span class="n">tables</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_recognizer</span><span class="o">.</span><span class="n">recognize_tables_from_image</span><span class="p">(</span>
+                <span class="n">image</span><span class="o">=</span><span class="n">rotated_image</span><span class="p">,</span>
+                <span class="n">page_number</span><span class="o">=</span><span class="n">page_number</span><span class="p">,</span>
+                <span class="n">language</span><span class="o">=</span><span class="n">parameters</span><span class="o">.</span><span class="n">language</span><span class="p">,</span>
+                <span class="n">table_type</span><span class="o">=</span><span class="n">parameters</span><span class="o">.</span><span class="n">table_type</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">clean_image</span><span class="p">,</span> <span class="n">tables</span> <span class="o">=</span> <span class="n">rotated_image</span><span class="p">,</span> <span class="p">[]</span>
+
+        <span class="c1"># --- Step 4: plain text recognition and text style detection ---</span>
+        <span class="n">page</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ocr</span><span class="o">.</span><span class="n">split_image2lines</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">clean_image</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="n">parameters</span><span class="o">.</span><span class="n">language</span><span class="p">,</span> <span class="n">is_one_column_document</span><span class="o">=</span><span class="n">is_one_column_document</span><span class="p">,</span> <span class="n">page_num</span><span class="o">=</span><span class="n">page_number</span><span class="p">)</span>
+
+        <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metadata_extractor</span><span class="o">.</span><span class="n">extract_metadata_and_set_annotations</span><span class="p">(</span><span class="n">page_with_lines</span><span class="o">=</span><span class="n">page</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">page</span><span class="o">.</span><span class="n">attachments</span><span class="p">,</span> <span class="p">[</span><span class="n">angle</span><span class="p">]</span>
+
+    <span class="c1"># region METHOD__detect_column_count_and_orientation [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD__process_one_page</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_detect_column_count_and_orientation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="p">:</span> <span class="n">ndarray</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">ParametersForParseDoc</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">ndarray</span><span class="p">,</span> <span class="nb">bool</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Function :</span>
+<span class="sd">            - detects the number of page columns</span>
+<span class="sd">            - detects page orientation angle</span>
+<span class="sd">            - rotates the page on detected angle</span>
+<span class="sd">        Return: rotated_image and indicator if the page is one-column</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_path_param</span>
+
+        <span class="n">columns</span><span class="p">,</span> <span class="n">angle</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">parameters</span><span class="o">.</span><span class="n">is_one_column_document</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">parameters</span><span class="o">.</span><span class="n">document_orientation</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">columns</span><span class="p">,</span> <span class="n">angle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">column_orientation_classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Predicted orientation angle = </span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">, columns = </span><span class="si">{</span><span class="n">columns</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">is_one_column_document</span> <span class="o">=</span> <span class="n">columns</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">parameters</span><span class="o">.</span><span class="n">is_one_column_document</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">parameters</span><span class="o">.</span><span class="n">is_one_column_document</span>
+        <span class="n">angle</span> <span class="o">=</span> <span class="n">angle</span> <span class="k">if</span> <span class="n">parameters</span><span class="o">.</span><span class="n">document_orientation</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Final orientation angle = </span><span class="si">{</span><span class="n">angle</span><span class="si">}</span><span class="s2">, is_one_column_document = </span><span class="si">{</span><span class="n">is_one_column_document</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">rotated_image</span><span class="p">,</span> <span class="n">result_angle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">skew_corrector</span><span class="o">.</span><span class="n">preprocess</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;orientation_angle&quot;</span><span class="p">:</span> <span class="n">angle</span><span class="p">})</span>
+        <span class="n">result_angle</span> <span class="o">=</span> <span class="n">result_angle</span><span class="p">[</span><span class="s2">&quot;rotated_angle&quot;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;debug_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+            <span class="n">debug_dir</span> <span class="o">=</span> <span class="n">get_path_param</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">,</span> <span class="s2">&quot;path_debug&quot;</span><span class="p">)</span>
+            <span class="n">img_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">debug_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;page-</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">page_number</span><span class="si">}</span><span class="s2">_result_orientation.jpg&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Save image to </span><span class="si">{</span><span class="n">img_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">img_path</span><span class="p">,</span> <span class="n">rotated_image</span><span class="p">)</span>
+
+<span class="c1"># endregion CLASS_PdfImageReader</span>
+        <span class="k">return</span> <span class="n">rotated_image</span><span class="p">,</span> <span class="n">is_one_column_document</span><span class="p">,</span> <span class="n">result_angle</span></div>
+
+    <span class="c1"># endregion METHOD__detect_column_count_and_orientation</span>
+
+
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_image_reader; TECH(6): Python, dedoc]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.</span>
+<span class="c1">## @scope Document parsing pipeline: PDF format reading.</span>
+<span class="c1">## @input [File path (str), parameters (Optional[dict]) — document on disk.]</span>
+<span class="c1">## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]</span>
+<span class="c1">## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - read() ALWAYS returns an UnstructuredDocument.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why is this reader separated from others?</span>
+<span class="c1">## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.1.0 – Added _set_ocr_engine_from_parameters for per-request OCR engine selection (AC5).]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS [8][PdfImageReader reader/processor] =&gt; PdfImageReader</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: pdf_image_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfImageReader</span>
+<span class="c1"># STRUCTURE: ▶ Init ┌PDF file┐ → [PdfImageReader] ○ can_read? → ○ read → [__init__ → read → _process_one_page] → ⊕ UnstructuredDocument(lines, tables, attachments)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

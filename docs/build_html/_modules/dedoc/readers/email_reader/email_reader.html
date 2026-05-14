@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.readers.email_reader.email_reader &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.readers.email_reader.email_reader</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.readers.email_reader.email_reader</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">email.message</span><span class="w"> </span><span class="kn">import</span> <span class="n">Message</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineMetadata</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_with_meta</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithMeta</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.unstructured_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.base_reader</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseReader</span>
+
+
+<span class="c1"># region CLASS_EmailReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]</span>
+<div class="viewcode-block" id="EmailReader"><a class="viewcode-back" href="../../../../modules/readers.html#dedoc.readers.EmailReader">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">EmailReader</span><span class="p">(</span><span class="n">BaseReader</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class is used for parsing documents with .eml extension (e-mail messages saved into files).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">recognized_extensions</span><span class="p">,</span> <span class="n">recognized_mimes</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.html_reader.html_reader</span><span class="w"> </span><span class="kn">import</span> <span class="n">HtmlReader</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">recognized_extensions</span><span class="o">=</span><span class="n">recognized_extensions</span><span class="o">.</span><span class="n">eml_like_format</span><span class="p">,</span> <span class="n">recognized_mimes</span><span class="o">=</span><span class="n">recognized_mimes</span><span class="o">.</span><span class="n">eml_like_format</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">html_reader</span> <span class="o">=</span> <span class="n">HtmlReader</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">)</span>
+
+    <span class="c1"># region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___init__</span>
+<div class="viewcode-block" id="EmailReader.can_read"><a class="viewcode-back" href="../../../../modules/readers.html#dedoc.readers.EmailReader.can_read">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">can_read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">mime</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">extension</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the document extension or mime is suitable for this reader.</span>
+<span class="sd">        Look to the documentation of :meth:`~dedoc.readers.BaseReader.can_read` to get information about the method&#39;s parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_mime_extension</span>
+        <span class="n">mime</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">get_mime_extension</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">mime</span><span class="o">=</span><span class="n">mime</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="n">extension</span><span class="p">)</span>
+        <span class="c1"># this code differs from BaseReader because .eml and .mhtml files have the same mime type</span>
+        <span class="k">if</span> <span class="n">extension</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">extension</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recognized_extensions</span>
+        <span class="k">return</span> <span class="n">mime</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_recognized_mimes</span></div>
+
+    <span class="c1"># region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_can_read</span>
+<div class="viewcode-block" id="EmailReader.read"><a class="viewcode-back" href="../../../../modules/readers.html#dedoc.readers.EmailReader.read">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UnstructuredDocument</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The method return document content with all document&#39;s lines, tables and attachments.</span>
+<span class="sd">        This reader is able to add some additional information to the `tag_hierarchy_level` of :class:`~dedoc.data_structures.LineMetadata`.</span>
+<span class="sd">        It also saves some data from the message&#39;s header (fields &quot;subject&quot;, &quot;from&quot;, &quot;to&quot;, &quot;cc&quot;, &quot;bcc&quot;, &quot;date&quot;, &quot;reply-to&quot;)</span>
+<span class="sd">        to the attached json file with prefix `message_header_`.</span>
+
+<span class="sd">        Look to the documentation of :meth:`~dedoc.readers.BaseReader.read` to get information about the method&#39;s parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">email</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.attached_file</span><span class="w"> </span><span class="kn">import</span> <span class="n">AttachedFile</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_attachments_dir</span><span class="p">,</span> <span class="n">get_param_need_content_analysis</span><span class="p">,</span> <span class="n">get_param_with_attachments</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_unique_name</span>
+
+        <span class="n">parameters</span> <span class="o">=</span> <span class="p">{}</span> <span class="k">if</span> <span class="n">parameters</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">parameters</span>
+        <span class="n">attachments_dir</span> <span class="o">=</span> <span class="n">get_param_attachments_dir</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="n">file_path</span><span class="p">)</span>
+        <span class="n">with_attachments</span> <span class="o">=</span> <span class="n">get_param_with_attachments</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+        <span class="n">need_content_analysis</span> <span class="o">=</span> <span class="n">get_param_need_content_analysis</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="n">email</span><span class="o">.</span><span class="n">message_from_binary_file</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">tables</span><span class="p">,</span> <span class="n">attachments</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+
+        <span class="n">all_header_fields</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_main_fields</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="n">header_filename</span> <span class="o">=</span> <span class="s2">&quot;message_header_&quot;</span> <span class="o">+</span> <span class="n">get_unique_name</span><span class="p">(</span><span class="s2">&quot;message_header.json&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">with_attachments</span><span class="p">:</span>
+            <span class="c1"># saving message header into separated file as an attachment</span>
+            <span class="n">header_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">attachments_dir</span><span class="p">,</span> <span class="n">header_filename</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">header_file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">all_header_fields</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+            <span class="n">attachments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">AttachedFile</span><span class="p">(</span><span class="n">original_name</span><span class="o">=</span><span class="n">header_filename</span><span class="p">,</span>
+                                            <span class="n">tmp_file_path</span><span class="o">=</span><span class="n">header_file_path</span><span class="p">,</span>
+                                            <span class="n">uid</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;attach_</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid1</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                                            <span class="n">need_content_analysis</span><span class="o">=</span><span class="n">need_content_analysis</span><span class="p">))</span>
+
+        <span class="n">html_found</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">text_parts</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">content_type</span> <span class="o">=</span> <span class="n">msg</span><span class="o">.</span><span class="n">get_content_type</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">:</span>
+            <span class="n">text_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/html&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__add_content_from_html</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span>
+            <span class="n">html_found</span> <span class="o">=</span> <span class="kc">True</span>
+
+        <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">msg</span><span class="o">.</span><span class="n">walk</span><span class="p">():</span>
+            <span class="n">content_type</span> <span class="o">=</span> <span class="n">part</span><span class="o">.</span><span class="n">get_content_type</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">:</span>
+                <span class="n">text_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">part</span><span class="p">)</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/html&quot;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__add_content_from_html</span><span class="p">(</span><span class="n">part</span><span class="p">,</span> <span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span>
+                <span class="n">html_found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">part</span><span class="o">.</span><span class="n">is_multipart</span><span class="p">():</span>
+                <span class="k">continue</span>
+
+            <span class="k">if</span> <span class="n">with_attachments</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__add_attachment</span><span class="p">(</span><span class="n">part</span><span class="p">,</span> <span class="n">attachments_dir</span><span class="p">,</span> <span class="n">attachments</span><span class="p">,</span> <span class="n">need_content_analysis</span><span class="p">)</span>
+
+        <span class="c1"># text/plain has the same content as text/html</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">html_found</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">text_part</span> <span class="ow">in</span> <span class="n">text_parts</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">__add_text_content</span><span class="p">(</span><span class="n">text_part</span><span class="p">,</span> <span class="n">lines</span><span class="p">)</span>
+                <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error while text reading: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">UnstructuredDocument</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="o">=</span><span class="n">tables</span><span class="p">,</span> <span class="n">attachments</span><span class="o">=</span><span class="n">attachments</span><span class="p">)</span></div>
+
+    <span class="c1"># region METHOD___add_attachment [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_read</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__add_attachment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">attachments_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">attachments</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">need_content_analysis</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">mimetypes</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.attached_file</span><span class="w"> </span><span class="kn">import</span> <span class="n">AttachedFile</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">save_data_to_unique_file</span>
+
+        <span class="n">content_type</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_content_type</span><span class="p">()</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_payload</span><span class="p">(</span><span class="n">decode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">payload</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/plain&quot;</span> <span class="ow">or</span> <span class="n">content_type</span> <span class="o">==</span> <span class="s2">&quot;text/html&quot;</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_filename</span><span class="p">()</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="k">if</span> <span class="n">filename</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_decoded</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__fix_filename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span> <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="k">else</span> <span class="n">filename</span>
+
+        <span class="n">fixed_extension</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__fix_filename</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span> <span class="ow">or</span> <span class="n">fixed_extension</span> <span class="o">!=</span> <span class="n">extension</span><span class="p">:</span>
+            <span class="n">extension</span> <span class="o">=</span> <span class="n">mimetypes</span><span class="o">.</span><span class="n">guess_extension</span><span class="p">(</span><span class="n">content_type</span><span class="p">)</span>
+        <span class="n">extension</span> <span class="o">=</span> <span class="s2">&quot;.txt&quot;</span> <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s2">&quot;.bat&quot;</span> <span class="k">else</span> <span class="n">extension</span>
+
+        <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filename</span><span class="si">}{</span><span class="n">extension</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">tmp_file_name</span> <span class="o">=</span> <span class="n">save_data_to_unique_file</span><span class="p">(</span><span class="n">directory</span><span class="o">=</span><span class="n">attachments_dir</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">binary_data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="n">attachments</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">AttachedFile</span><span class="p">(</span><span class="n">original_name</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span>
+                                        <span class="n">tmp_file_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">attachments_dir</span><span class="p">,</span> <span class="n">tmp_file_name</span><span class="p">),</span>
+                                        <span class="n">uid</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;attach_</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid1</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                                        <span class="n">need_content_analysis</span><span class="o">=</span><span class="n">need_content_analysis</span><span class="p">))</span>
+
+    <span class="c1"># region METHOD___add_content_from_html [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___add_attachment</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__add_content_from_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">tables</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">tempfile</span><span class="w"> </span><span class="kn">import</span> <span class="n">NamedTemporaryFile</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_payload</span><span class="p">(</span><span class="n">decode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">payload</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">u&quot;</span> <span class="ow">in</span> <span class="n">payload</span><span class="o">.</span><span class="n">decode</span><span class="p">():</span>
+            <span class="n">payload</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_payload</span><span class="p">()</span>
+            <span class="n">file</span> <span class="o">=</span> <span class="n">NamedTemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;w&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">file</span> <span class="o">=</span> <span class="n">NamedTemporaryFile</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;wb&quot;</span><span class="p">)</span>
+
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+        <span class="n">document</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">html_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="n">file</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
+        <span class="n">part_messages</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">document</span><span class="o">.</span><span class="n">lines</span> <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">line</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">part_messages</span><span class="p">:</span>
+            <span class="n">line</span><span class="o">.</span><span class="n">_line</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">part_messages</span><span class="p">)</span>
+        <span class="n">tables</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">tables</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="c1"># region METHOD___add_text_content [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___add_content_from_html</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__add_text_content</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.hierarchy_level</span><span class="w"> </span><span class="kn">import</span> <span class="n">HierarchyLevel</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_payload</span><span class="p">(</span><span class="n">decode</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">payload</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">u&quot;</span> <span class="ow">in</span> <span class="n">payload</span><span class="p">:</span>
+            <span class="c1"># in this case the message wasn&#39;t encoded</span>
+            <span class="n">payload</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">get_payload</span><span class="p">()</span>
+        <span class="n">list_of_texts</span> <span class="o">=</span> <span class="n">payload</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">list_of_texts</span><span class="p">:</span>
+            <span class="n">text</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LineWithMeta</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="n">text</span><span class="p">,</span>
+                                      <span class="n">metadata</span><span class="o">=</span><span class="n">LineMetadata</span><span class="p">(</span><span class="n">tag_hierarchy_level</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">create_unknown</span><span class="p">(),</span> <span class="n">page_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                                      <span class="n">annotations</span><span class="o">=</span><span class="p">[]))</span>
+
+    <span class="c1"># region METHOD___fix_filename [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___add_text_content</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__fix_filename</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[&lt;&gt;:</span><span class="se">\&quot;</span><span class="s2">/</span><span class="se">\\</span><span class="s2">|?*]&quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\s+&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">filename</span>
+
+    <span class="c1"># region METHOD___get_decoded [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___fix_filename</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_decoded</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">email.header</span><span class="w"> </span><span class="kn">import</span> <span class="n">decode_header</span>
+
+        <span class="n">part</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">letter</span><span class="p">,</span> <span class="n">encode</span> <span class="ow">in</span> <span class="n">decode_header</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">encode</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">encode</span> <span class="o">=</span> <span class="s2">&quot;ascii&quot;</span>
+                <span class="n">letter</span> <span class="o">=</span> <span class="n">letter</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="n">encode</span><span class="p">)</span>
+            <span class="n">part</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+        <span class="n">part</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">part</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">part</span>
+
+    <span class="c1"># region METHOD___get_field [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_decoded</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_field</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">line_metadata</span><span class="p">:</span> <span class="n">LineMetadata</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LineWithMeta</span><span class="p">:</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_decoded</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="s2">&quot;&quot;</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">LineWithMeta</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="n">text</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">line_metadata</span><span class="p">)</span>
+
+    <span class="c1"># region METHOD___get_main_fields [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_field</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_main_fields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">]:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.hierarchy_level</span><span class="w"> </span><span class="kn">import</span> <span class="n">HierarchyLevel</span>
+
+        <span class="n">lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="n">line_metadata</span> <span class="o">=</span> <span class="n">LineMetadata</span><span class="p">(</span><span class="n">tag_hierarchy_level</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;root&quot;</span><span class="p">),</span> <span class="n">page_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__get_field</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s2">&quot;subject&quot;</span><span class="p">,</span> <span class="n">line_metadata</span><span class="p">))</span>
+
+        <span class="n">required_fields</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;subject&quot;</span><span class="p">,</span> <span class="s2">&quot;from&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">,</span> <span class="s2">&quot;cc&quot;</span><span class="p">,</span> <span class="s2">&quot;bcc&quot;</span><span class="p">,</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="s2">&quot;reply-to&quot;</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">field_name</span> <span class="ow">in</span> <span class="n">required_fields</span><span class="p">:</span>
+            <span class="n">line_metadata</span> <span class="o">=</span> <span class="n">LineMetadata</span><span class="p">(</span><span class="n">tag_hierarchy_level</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">field_name</span><span class="p">),</span> <span class="n">page_id</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_field</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">field_name</span><span class="p">,</span> <span class="n">line_metadata</span><span class="o">=</span><span class="n">line_metadata</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">line</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+<span class="c1"># endregion CLASS_EmailReader</span>
+        <span class="k">return</span> <span class="n">lines</span></div>
+
+    <span class="c1"># endregion METHOD___get_main_fields</span>
+
+
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_email_reader; TECH(6): Python, dedoc]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Read and parse email (.eml) documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.</span>
+<span class="c1">## @scope Document parsing pipeline: email (.eml) format reading.</span>
+<span class="c1">## @input [File path (str), parameters (Optional[dict]) — document on disk.]</span>
+<span class="c1">## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]</span>
+<span class="c1">## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - read() ALWAYS returns an UnstructuredDocument.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why is this reader separated from others?</span>
+<span class="c1">## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS [20][EmailReader reader/processor] =&gt; EmailReader</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [read]: System (Pipeline) → ParseDocument(email (.eml)) → UnstructuredDocument</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: email_reader, dedoc, reader, email (.eml), EmailReader, BaseReader, EML, email, MIME, attachments, header, HTML, subject, from, to, cc, EmailReader</span>
+<span class="c1"># STRUCTURE: ▶ Init ┌email (.eml) file┐ → [EmailReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

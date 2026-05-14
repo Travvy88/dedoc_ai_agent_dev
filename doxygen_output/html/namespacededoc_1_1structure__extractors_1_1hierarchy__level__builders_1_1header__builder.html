@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespacededoc_1_1structure__extractor
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dedoc.structure_extractors.hierarchy_level_builders.header_builder Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -100,7 +101,51 @@ $(document).ready(function(){initNavTree('namespacededoc_1_1structure__extractor
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder.html">header_hierarchy_level_builder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aeb9b8c09b01fe4d880be477917d058e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder.html#aeb9b8c09b01fe4d880be477917d058e9">_module_contract</a> ()</td></tr>
+<tr class="memdesc:aeb9b8c09b01fe4d880be477917d058e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for header-based hierarchy level builder — assigns hierarchy levels to lines identified as section headers.  <br /></td></tr>
+<tr class="separator:aeb9b8c09b01fe4d880be477917d058e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aeb9b8c09b01fe4d880be477917d058e9" name="aeb9b8c09b01fe4d880be477917d058e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9b8c09b01fe4d880be477917d058e9">&#9670;&#160;</a></span>_module_contract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dedoc.structure_extractors.hierarchy_level_builders.header_builder._module_contract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for header-based hierarchy level builder — assigns hierarchy levels to lines identified as section headers. </p>
+<p>\par \b Scope\/ \:  Package initialization for header_builder subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from header builder modules. \par \b Links\/ \:  [USES_API(8): <a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders.html">dedoc.structure_extractors.hierarchy_level_builders</a>] \par \b Invariants\/ \:</p>
+<ul>
+<li>Header levels are assigned based on typographic and positional features (font size, bold, indentation). \par \b Rationale\/ \:</li>
+</ul>
+<p>Q: Why a separate header builder? A: Header detection relies on visual/metadata features distinct from content-based hierarchy (law, diploma, TOC). \par \b Changes\/ \:</p>
+<p>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</p>
+<p>\par \b Use Cases\/ \:</p>
+<ul>
+<li>[Header hierarchy]: DocumentLines → HeaderBuilder → HeaderLevels → StructuredDocument </li>
+</ul>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

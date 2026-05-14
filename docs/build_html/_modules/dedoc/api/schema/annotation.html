@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.api.schema.annotation &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.api.schema.annotation</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.api.schema.annotation</h1><div class="highlight"><pre>
+<span></span><span class="c1"># region MODULE_CONTRACT [DOMAIN(9): DocumentProcessing, AnnotationModel; CONCEPT(8): TextAnnotation, InlineMetadata; TECH(7): Pydantic, BaseModel]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Define the Annotation schema — a Pydantic model describing a piece of inline text metadata (font style, links, etc.) with character-level range.</span>
+<span class="c1">## @scope Text annotation data model for document lines.</span>
+<span class="c1">## @input None (standalone model).</span>
+<span class="c1">## @output Pydantic BaseModel `Annotation` with start, end, name, value fields.</span>
+<span class="c1">## @links [USES_API(7): pydantic.BaseModel]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - Annotation.start &lt;= Annotation.end for all valid annotations.</span>
+<span class="c1">## - Annotation.name is always a non-empty string identifying the annotation type.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why use Pydantic BaseModel instead of dataclass?</span>
+<span class="c1">## A: Pydantic provides built-in JSON serialization, Field descriptions for OpenAPI schema generation, and FastAPI integration.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS 10[Inline text annotation with character range] =&gt; Annotation</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [Annotation]: APIConsumer =&gt; DeserializeAnnotationJSON =&gt; RenderStyledText</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: annotation, text, inline, metadata, bold, italic, font, character range, Pydantic, schema</span>
+<span class="c1"># STRUCTURE: ▶ Pydantic BaseModel → Annotation ┌start:int, end:int, name:str, value:str┐ → ⎋ JSON-serializable</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pydantic</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># region CLASS_Annotation [DOMAIN(9): DocumentProcessing; CONCEPT(8): TextAnnotation; TECH(7): PydanticBaseModel]</span>
+<span class="c1">## @purpose Represent a single inline annotation (e.g., bold, italic, link) spanning a character range within document text.</span>
+<span class="c1">## @io (int, int, str, str) -&gt; JSON serializable model</span>
+<div class="viewcode-block" id="Annotation"><a class="viewcode-back" href="../../../../dedoc_api_usage/api_schema.html#dedoc.api.schema.Annotation">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">Annotation</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The piece of information about the text line: it&#39;s appearance or links to another document object.</span>
+<span class="sd">    For example Annotation(1, 13, &quot;italic&quot;, &quot;True&quot;) says that text between 1st and 13th symbol was written in italic.</span>
+
+<span class="sd">    :ivar start: start of the annotated text</span>
+<span class="sd">    :ivar end: end of the annotated text (end isn&#39;t included)</span>
+<span class="sd">    :ivar name: annotation&#39;s name, specific for each type of annotation</span>
+<span class="sd">    :ivar value: information about annotated text, depends on the type of annotation, e.g. &quot;True&quot;/&quot;False&quot;, &quot;10.0&quot;, etc.</span>
+
+<span class="sd">    :vartype start: int</span>
+<span class="sd">    :vartype end: int</span>
+<span class="sd">    :vartype name: str</span>
+<span class="sd">    :vartype value: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">start</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Start of the annotated text&quot;</span><span class="p">,</span> <span class="n">example</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">end</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;End of the annotated text (end isn&#39;t included)&quot;</span><span class="p">,</span> <span class="n">example</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Annotation name&quot;</span><span class="p">,</span> <span class="n">example</span><span class="o">=</span><span class="s2">&quot;italic&quot;</span><span class="p">)</span>
+    <span class="n">value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Annotation value. For example, it may be font size value for size type&quot;</span><span class="p">,</span> <span class="n">example</span><span class="o">=</span><span class="s2">&quot;True&quot;</span><span class="p">)</span></div>
+<span class="c1"># endregion CLASS_Annotation</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

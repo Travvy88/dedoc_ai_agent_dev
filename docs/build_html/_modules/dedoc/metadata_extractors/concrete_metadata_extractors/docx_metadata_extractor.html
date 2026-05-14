@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing, MetadataExtraction; CONCEPT(7): DOCXFormat, CoreProperties; TECH(7): python-docx]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose To extract rich metadata from DOCX documents — reads core properties (author, dates, keywords, etc.) via python-docx and merges them with base OS metadata.</span>
+<span class="c1">## @scope DOCX file metadata: core properties, subject, keywords, author, dates.</span>
+<span class="c1">## @input file_path via extract(), config with recognized formats.</span>
+<span class="c1">## @output dict merging BaseMetadataExtractor fields + DOCX-specific core properties (document_subject, keywords, category, comments, author, last_modified_by, created_date, modified_date, last_printed_date).</span>
+<span class="c1">## @links [USES_API(8): BaseMetadataExtractor, python-docx Document.core_properties]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - extract() ALWAYS returns a dict with base metadata merged.</span>
+<span class="c1">## - On PackageNotFoundError, returns {&quot;broken_docx&quot;: True} instead of raising.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why use BaseMetadataExtractor as a delegate instead of inheritance?</span>
+<span class="c1">## A: Composition allows combining base file metadata with format-specific properties without coupling the DOCX extractor to os.stat internals.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS 8[DOCX metadata extractor with core properties] =&gt; DocxMetadataExtractor</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [DocxMetadataExtractor]: MetadataExtractorComposition → ExtractDOCX → MergeBaseAndDocx → MetadataDict</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: docx, word, metadata, core properties, author, keywords, python-docx, dates, OOXML</span>
+<span class="c1"># STRUCTURE: ▶ CLASS DocxMetadataExtractor(ABC): ■ __init__ ┌docx_ext + mimes + base_extractor┐ → ⚡ extract ┌base_fields ⊕ docx_fields┐ → _get_docx_fields ┌python-docx Document.core_properties → dict┐ → __convert_date ┌datetime → int ts┐</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.metadata_extractors.abstract_metadata_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">AbstractMetadataExtractor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.metadata_extractors.concrete_metadata_extractors.base_metadata_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">BaseMetadataExtractor</span>
+
+
+<span class="c1"># region CLASS_DocxMetadataExtractor [DOMAIN(8): DocumentProcessing, MetadataExtraction; CONCEPT(7): DOCXFormat, CoreProperties; TECH(7): python-docx]</span>
+<span class="c1">## @purpose To extract DOCX-specific metadata by reading OOXML core properties (author, dates, keywords, etc.) and merging with base file metadata.</span>
+<div class="viewcode-block" id="DocxMetadataExtractor"><a class="viewcode-back" href="../../../../modules/metadata_extractors.html#dedoc.metadata_extractors.DocxMetadataExtractor">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">DocxMetadataExtractor</span><span class="p">(</span><span class="n">AbstractMetadataExtractor</span><span class="p">):</span>
+    <span class="c1"># region METHOD_init [DOMAIN(7): Configuration; CONCEPT(6): Constructor; TECH(5): PythonDefaults]</span>
+    <span class="c1">## @purpose To register the format (DOCX extensions and MIMEs) and instantiate a BaseMetadataExtractor delegate for base-level metadata.</span>
+    <span class="c1">## @uses dedoc.extensions, BaseMetadataExtractor</span>
+    <span class="c1">## @io Optional[dict] -&gt; None</span>
+    <span class="c1">## @complexity 4</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">recognized_extensions</span><span class="p">,</span> <span class="n">recognized_mimes</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">recognized_extensions</span><span class="o">=</span><span class="n">recognized_extensions</span><span class="o">.</span><span class="n">docx_like_format</span><span class="p">,</span> <span class="n">recognized_mimes</span><span class="o">=</span><span class="n">recognized_mimes</span><span class="o">.</span><span class="n">docx_like_format</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_extractor</span> <span class="o">=</span> <span class="n">BaseMetadataExtractor</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][DocxMetadataExtractor][INIT] DOCX extractor initialized with base_extractor delegate&quot;</span><span class="p">)</span>
+    <span class="c1"># endregion METHOD_init</span>
+
+    <span class="c1"># region METHOD_extract [DOMAIN(8): MetadataExtraction; CONCEPT(7): DataMerge; TECH(6): PythonDicts]</span>
+    <span class="c1">## @purpose To collect base OS metadata and DOCX-specific core properties, merging them into a single result dictionary.</span>
+    <span class="c1">## @uses BaseMetadataExtractor.extract, _get_docx_fields</span>
+    <span class="c1">## @io str × Optional[str] × Optional[str] × Optional[dict] -&gt; dict</span>
+    <span class="c1">## @complexity 5</span>
+<div class="viewcode-block" id="DocxMetadataExtractor.extract"><a class="viewcode-back" href="../../../../modules/metadata_extractors.html#dedoc.metadata_extractors.DocxMetadataExtractor.extract">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                <span class="n">converted_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">original_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add the predefined list of metadata for the docx documents.</span>
+<span class="sd">        Look to the :meth:`~dedoc.metadata_extractors.AbstractMetadataExtractor.extract` documentation to get the information about parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+        <span class="n">parameters</span> <span class="o">=</span> <span class="p">{}</span> <span class="k">if</span> <span class="n">parameters</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">parameters</span>
+        <span class="n">file_dir</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_names</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span><span class="p">)</span>
+
+        <span class="n">base_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_extractor</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span>
+            <span class="n">file_path</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">converted_filename</span><span class="o">=</span><span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span><span class="o">=</span><span class="n">original_filename</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:5][DocxMetadataExtractor][BASE_DONE] Base fields collected: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">base_fields</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">docx_fields</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_docx_fields</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_dir</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:8][DocxMetadataExtractor][DOCX_DONE] DOCX fields collected: </span><span class="si">{</span><span class="nb">sorted</span><span class="p">(</span><span class="n">docx_fields</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">base_fields</span><span class="p">,</span> <span class="o">**</span><span class="n">docx_fields</span><span class="p">}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:9][DocxMetadataExtractor][RESULT] Total metadata fields: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+    <span class="c1"># endregion METHOD_extract</span>
+
+    <span class="c1"># region METHOD_convert_date [DOMAIN(5): DateTime; CONCEPT(5): TimestampConversion; TECH(4): PythonDatetime]</span>
+    <span class="c1">## @purpose To convert an optional datetime to a Unix timestamp integer — None-safe helper for core property date fields.</span>
+    <span class="c1">## @uses datetime.timestamp</span>
+    <span class="c1">## @io Optional[datetime] -&gt; Optional[int]</span>
+    <span class="c1">## @complexity 2</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__convert_date</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">datetime</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">date</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">timestamp</span><span class="p">())</span>
+    <span class="c1"># endregion METHOD_convert_date</span>
+
+    <span class="c1"># region METHOD_get_docx_fields [DOMAIN(8): DocumentProcessing; CONCEPT(7): CorePropertiesExtraction; TECH(7): python-docx]</span>
+    <span class="c1">## @purpose To open a DOCX document with python-docx and extract all standard core properties (subject, author, dates, etc.) into a dictionary.</span>
+    <span class="c1">## @uses docx.Document, docx.opc.exceptions.PackageNotFoundError</span>
+    <span class="c1">## @io str -&gt; dict</span>
+    <span class="c1">## @complexity 6</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_get_docx_fields</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">docx</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">docx.opc.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">PackageNotFoundError</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:5][DocxMetadataExtractor][OPEN_DOCX] Opening file=</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">doc</span> <span class="o">=</span> <span class="n">docx</span><span class="o">.</span><span class="n">Document</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+            <span class="n">properties</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">core_properties</span>
+            <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;document_subject&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">subject</span><span class="p">,</span>
+                <span class="s2">&quot;keywords&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">keywords</span><span class="p">,</span>
+                <span class="s2">&quot;category&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">category</span><span class="p">,</span>
+                <span class="s2">&quot;comments&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">comments</span><span class="p">,</span>
+                <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">author</span><span class="p">,</span>
+                <span class="s2">&quot;last_modified_by&quot;</span><span class="p">:</span> <span class="n">properties</span><span class="o">.</span><span class="n">last_modified_by</span><span class="p">,</span>
+                <span class="s2">&quot;created_date&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__convert_date</span><span class="p">(</span><span class="n">properties</span><span class="o">.</span><span class="n">created</span><span class="p">),</span>
+                <span class="s2">&quot;modified_date&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__convert_date</span><span class="p">(</span><span class="n">properties</span><span class="o">.</span><span class="n">modified</span><span class="p">),</span>
+                <span class="s2">&quot;last_printed_date&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__convert_date</span><span class="p">(</span><span class="n">properties</span><span class="o">.</span><span class="n">last_printed</span><span class="p">),</span>
+            <span class="p">}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:8][DocxMetadataExtractor][CORE_PROPS] Author=</span><span class="si">{</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">, created=</span><span class="si">{</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;created_date&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">parameters</span>
+        <span class="k">except</span> <span class="n">PackageNotFoundError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:9][DocxMetadataExtractor][BROKEN] PackageNotFoundError for file=</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;broken_docx&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span></div>
+    <span class="c1"># endregion METHOD_get_docx_fields</span>
+<span class="c1"># endregion CLASS_DocxMetadataExtractor</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

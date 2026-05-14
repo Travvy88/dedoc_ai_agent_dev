@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/patterns/start_word_pattern.py" line="126" column="1" bodyfile="dedoc/structure_extractors/patterns/start_word_pattern.py" bodystart="126" bodyend="131"/>
+        <location file="dedoc/structure_extractors/patterns/start_word_pattern.py" line="127" column="1" bodyfile="dedoc/structure_extractors/patterns/start_word_pattern.py" bodystart="127" bodyend="132"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

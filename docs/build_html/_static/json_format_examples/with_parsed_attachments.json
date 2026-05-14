@@ -1,0 +1,1168 @@
+{
+  "content": {
+    "structure": {
+      "node_id": "0",
+      "text": "",
+      "annotations": [],
+      "metadata": {
+        "paragraph_type": "root",
+        "page_id": 0,
+        "line_id": 0
+      },
+      "subparagraphs": [
+        {
+          "node_id": "0.0",
+          "text": "Document example",
+          "annotations": [
+            {
+              "start": 0,
+              "end": 16,
+              "name": "indentation",
+              "value": "0"
+            },
+            {
+              "start": 0,
+              "end": 16,
+              "name": "alignment",
+              "value": "center"
+            },
+            {
+              "start": 0,
+              "end": 16,
+              "name": "spacing",
+              "value": "240"
+            },
+            {
+              "start": 0,
+              "end": 16,
+              "name": "style",
+              "value": "Title"
+            },
+            {
+              "start": 0,
+              "end": 16,
+              "name": "size",
+              "value": "28.0"
+            },
+            {
+              "start": 0,
+              "end": 16,
+              "name": "bold",
+              "value": "True"
+            }
+          ],
+          "metadata": {
+            "paragraph_type": "header",
+            "page_id": 0,
+            "line_id": 0
+          },
+          "subparagraphs": [
+            {
+              "node_id": "0.0.0",
+              "text": "Heading",
+              "annotations": [
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "indentation",
+                  "value": "0"
+                },
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "alignment",
+                  "value": "left"
+                },
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "spacing",
+                  "value": "240"
+                },
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "style",
+                  "value": "Heading 1"
+                },
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "size",
+                  "value": "18.0"
+                },
+                {
+                  "start": 0,
+                  "end": 7,
+                  "name": "bold",
+                  "value": "True"
+                }
+              ],
+              "metadata": {
+                "paragraph_type": "header",
+                "page_id": 0,
+                "line_id": 1
+              },
+              "subparagraphs": [
+                {
+                  "node_id": "0.0.0.0",
+                  "text": "Some text.\nBold, italic, small text.\n\nList header:",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 50,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 50,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 11,
+                      "name": "spacing",
+                      "value": "120"
+                    },
+                    {
+                      "start": 11,
+                      "end": 38,
+                      "name": "spacing",
+                      "value": "140"
+                    },
+                    {
+                      "start": 38,
+                      "end": 50,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 37,
+                      "name": "style",
+                      "value": "Body Text"
+                    },
+                    {
+                      "start": 37,
+                      "end": 50,
+                      "name": "style",
+                      "value": "Normal"
+                    },
+                    {
+                      "start": 0,
+                      "end": 25,
+                      "name": "size",
+                      "value": "16.0"
+                    },
+                    {
+                      "start": 25,
+                      "end": 30,
+                      "name": "size",
+                      "value": "10.0"
+                    },
+                    {
+                      "start": 30,
+                      "end": 37,
+                      "name": "size",
+                      "value": "16.0"
+                    },
+                    {
+                      "start": 38,
+                      "end": 50,
+                      "name": "size",
+                      "value": "14.0"
+                    },
+                    {
+                      "start": 11,
+                      "end": 15,
+                      "name": "bold",
+                      "value": "True"
+                    },
+                    {
+                      "start": 17,
+                      "end": 23,
+                      "name": "italic",
+                      "value": "True"
+                    },
+                    {
+                      "start": 11,
+                      "end": 37,
+                      "name": "table",
+                      "value": "3a327789721e09b3fa6fd9560f3ee263"
+                    }
+                  ],
+                  "metadata": {
+                    "paragraph_type": "raw_text",
+                    "page_id": 0,
+                    "line_id": 2
+                  },
+                  "subparagraphs": []
+                },
+                {
+                  "node_id": "0.0.0.1",
+                  "text": "",
+                  "annotations": [],
+                  "metadata": {
+                    "paragraph_type": "list",
+                    "page_id": 0,
+                    "line_id": 6
+                  },
+                  "subparagraphs": [
+                    {
+                      "node_id": "0.0.0.1.0",
+                      "text": "•\tfirst item;",
+                      "annotations": [
+                        {
+                          "start": 0,
+                          "end": 13,
+                          "name": "indentation",
+                          "value": "360.0"
+                        },
+                        {
+                          "start": 0,
+                          "end": 13,
+                          "name": "alignment",
+                          "value": "left"
+                        },
+                        {
+                          "start": 0,
+                          "end": 13,
+                          "name": "spacing",
+                          "value": "0"
+                        },
+                        {
+                          "start": 0,
+                          "end": 13,
+                          "name": "style",
+                          "value": "Normal"
+                        },
+                        {
+                          "start": 0,
+                          "end": 13,
+                          "name": "size",
+                          "value": "14.0"
+                        }
+                      ],
+                      "metadata": {
+                        "paragraph_type": "list_item",
+                        "page_id": 0,
+                        "line_id": 6
+                      },
+                      "subparagraphs": []
+                    },
+                    {
+                      "node_id": "0.0.0.1.1",
+                      "text": "•\tsecond item.",
+                      "annotations": [
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "indentation",
+                          "value": "360.0"
+                        },
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "alignment",
+                          "value": "left"
+                        },
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "spacing",
+                          "value": "0"
+                        },
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "style",
+                          "value": "Normal"
+                        },
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "size",
+                          "value": "14.0"
+                        },
+                        {
+                          "start": 0,
+                          "end": 14,
+                          "name": "attachment",
+                          "value": "attach_a6dcd6be-89d4-48aa-85c0-77828e3cfa13"
+                        }
+                      ],
+                      "metadata": {
+                        "paragraph_type": "list_item",
+                        "page_id": 0,
+                        "line_id": 7
+                      },
+                      "subparagraphs": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "tables": [
+      {
+        "cells": [
+          [
+            {
+              "lines": [
+                {
+                  "text": "Table header",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "alignment",
+                      "value": "center"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 2,
+              "invisible": false
+            },
+            {
+              "lines": [
+                {
+                  "text": "Table header",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "alignment",
+                      "value": "center"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 12,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": true
+            }
+          ],
+          [
+            {
+              "lines": [
+                {
+                  "text": "Vertically merged cells",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 2,
+              "colspan": 1,
+              "invisible": false
+            },
+            {
+              "lines": [
+                {
+                  "text": "Text 1",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": false
+            }
+          ],
+          [
+            {
+              "lines": [
+                {
+                  "text": "Vertically merged cells",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 23,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": true
+            },
+            {
+              "lines": [
+                {
+                  "text": "Text 2",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": false
+            }
+          ],
+          [
+            {
+              "lines": [
+                {
+                  "text": "Text 3",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": false
+            },
+            {
+              "lines": [
+                {
+                  "text": "Text 4",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "indentation",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "alignment",
+                      "value": "left"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "spacing",
+                      "value": "0"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "style",
+                      "value": "Table Contents"
+                    },
+                    {
+                      "start": 0,
+                      "end": 6,
+                      "name": "size",
+                      "value": "14.0"
+                    }
+                  ]
+                }
+              ],
+              "rowspan": 1,
+              "colspan": 1,
+              "invisible": false
+            }
+          ]
+        ],
+        "metadata": {
+          "page_id": null,
+          "uid": "3a327789721e09b3fa6fd9560f3ee263",
+          "rotated_angle": 0.0,
+          "title": ""
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "uid": "doc_uid_auto_ffe992f0-0871-11ef-b95c-0242ac120002",
+    "file_name": "example_return_format.docx",
+    "temporary_file_name": "1714647118_591.docx",
+    "size": 21270,
+    "modified_time": 1714647118,
+    "created_time": 1714647118,
+    "access_time": 1714647118,
+    "file_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "document_subject": "",
+    "keywords": "",
+    "category": "",
+    "comments": "",
+    "author": "",
+    "last_modified_by": "",
+    "created_date": 1568725611,
+    "modified_date": 1686912636,
+    "last_printed_date": null
+  },
+  "version": "2.2",
+  "warnings": [],
+  "attachments": [
+    {
+      "content": {
+        "structure": {
+          "node_id": "0",
+          "text": "",
+          "annotations": [],
+          "metadata": {
+            "paragraph_type": "root",
+            "page_id": 0,
+            "line_id": 0
+          },
+          "subparagraphs": [
+            {
+              "node_id": "0.0",
+              "text": "THE GREAT ENGLISH DOCUMENT\n",
+              "annotations": [
+                {
+                  "start": 0,
+                  "end": 3,
+                  "name": "confidence",
+                  "value": "0.96"
+                },
+                {
+                  "start": 10,
+                  "end": 17,
+                  "name": "confidence",
+                  "value": "0.96"
+                },
+                {
+                  "start": 4,
+                  "end": 9,
+                  "name": "confidence",
+                  "value": "0.95"
+                },
+                {
+                  "start": 18,
+                  "end": 26,
+                  "name": "confidence",
+                  "value": "0.77"
+                },
+                {
+                  "start": 0,
+                  "end": 3,
+                  "name": "bounding box",
+                  "value": "{\"x_top_left\": 0.05417276720351391, \"y_top_left\": 0.27358490566037735, \"width\": 0.0527086383601757, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                },
+                {
+                  "start": 4,
+                  "end": 9,
+                  "name": "bounding box",
+                  "value": "{\"x_top_left\": 0.11566617862371889, \"y_top_left\": 0.27358490566037735, \"width\": 0.09077598828696926, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                },
+                {
+                  "start": 10,
+                  "end": 17,
+                  "name": "bounding box",
+                  "value": "{\"x_top_left\": 0.212298682284041, \"y_top_left\": 0.27358490566037735, \"width\": 0.11859443631039532, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                },
+                {
+                  "start": 18,
+                  "end": 26,
+                  "name": "bounding box",
+                  "value": "{\"x_top_left\": 0.3396778916544656, \"y_top_left\": 0.27358490566037735, \"width\": 0.1595900439238653, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                },
+                {
+                  "start": 0,
+                  "end": 9,
+                  "name": "bold",
+                  "value": "True"
+                },
+                {
+                  "start": 0,
+                  "end": 27,
+                  "name": "size",
+                  "value": "103"
+                },
+                {
+                  "start": 0,
+                  "end": 27,
+                  "name": "color_annotation",
+                  "value": "{\"red\": 74.7921597633136, \"blue\": 71.75443786982248, \"green\": 62.180473372781066}"
+                },
+                {
+                  "start": 0,
+                  "end": 27,
+                  "name": "spacing",
+                  "value": "50"
+                }
+              ],
+              "metadata": {
+                "paragraph_type": "raw_text",
+                "page_id": 0,
+                "line_id": 0
+              },
+              "subparagraphs": []
+            },
+            {
+              "node_id": "0.1",
+              "text": "",
+              "annotations": [],
+              "metadata": {
+                "paragraph_type": "list",
+                "page_id": 0,
+                "line_id": 1
+              },
+              "subparagraphs": [
+                {
+                  "node_id": "0.1.0",
+                  "text": "1) Fisrst item with some english text\n",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 2,
+                      "name": "confidence",
+                      "value": "0.93"
+                    },
+                    {
+                      "start": 3,
+                      "end": 9,
+                      "name": "confidence",
+                      "value": "0.81"
+                    },
+                    {
+                      "start": 10,
+                      "end": 14,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 15,
+                      "end": 19,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 20,
+                      "end": 24,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 25,
+                      "end": 32,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 33,
+                      "end": 37,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 0,
+                      "end": 2,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.05710102489019034, \"y_top_left\": 0.4811320754716981, \"width\": 0.020497803806734993, \"height\": 0.16037735849056603, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 3,
+                      "end": 9,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.08345534407027819, \"y_top_left\": 0.4811320754716981, \"width\": 0.0629575402635432, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 10,
+                      "end": 14,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.15373352855051245, \"y_top_left\": 0.4811320754716981, \"width\": 0.04978038067349927, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 15,
+                      "end": 19,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.2108345534407028, \"y_top_left\": 0.4811320754716981, \"width\": 0.048316251830161056, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 20,
+                      "end": 24,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.2679355783308931, \"y_top_left\": 0.5188679245283019, \"width\": 0.05856515373352855, \"height\": 0.08490566037735849, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 25,
+                      "end": 32,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.33382137628111275, \"y_top_left\": 0.4811320754716981, \"width\": 0.07906295754026355, \"height\": 0.16037735849056603, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 33,
+                      "end": 37,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.4216691068814056, \"y_top_left\": 0.5, \"width\": 0.0424597364568082, \"height\": 0.10377358490566038, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 25,
+                      "end": 37,
+                      "name": "bold",
+                      "value": "True"
+                    },
+                    {
+                      "start": 0,
+                      "end": 38,
+                      "name": "size",
+                      "value": "135"
+                    },
+                    {
+                      "start": 0,
+                      "end": 38,
+                      "name": "color_annotation",
+                      "value": "{\"red\": 86.960983884648, \"blue\": 85.50296861747243, \"green\": 77.72858354537743}"
+                    },
+                    {
+                      "start": 0,
+                      "end": 38,
+                      "name": "spacing",
+                      "value": "52"
+                    }
+                  ],
+                  "metadata": {
+                    "paragraph_type": "list_item",
+                    "page_id": 0,
+                    "line_id": 1
+                  },
+                  "subparagraphs": []
+                },
+                {
+                  "node_id": "0.1.1",
+                  "text": "2) Second item with some even more english text. Let me speak from my heart\n",
+                  "annotations": [
+                    {
+                      "start": 0,
+                      "end": 2,
+                      "name": "confidence",
+                      "value": "0.94"
+                    },
+                    {
+                      "start": 3,
+                      "end": 9,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 10,
+                      "end": 14,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 15,
+                      "end": 19,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 20,
+                      "end": 24,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 25,
+                      "end": 29,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 30,
+                      "end": 34,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 35,
+                      "end": 42,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 43,
+                      "end": 48,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 53,
+                      "end": 55,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 56,
+                      "end": 61,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 62,
+                      "end": 66,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 67,
+                      "end": 69,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 70,
+                      "end": 75,
+                      "name": "confidence",
+                      "value": "0.96"
+                    },
+                    {
+                      "start": 49,
+                      "end": 52,
+                      "name": "confidence",
+                      "value": "0.97"
+                    },
+                    {
+                      "start": 0,
+                      "end": 2,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.05417276720351391, \"y_top_left\": 0.6981132075471698, \"width\": 0.02342606149341142, \"height\": 0.16037735849056603, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 3,
+                      "end": 9,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.0849194729136164, \"y_top_left\": 0.6981132075471698, \"width\": 0.08052708638360176, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 10,
+                      "end": 14,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.17423133235724744, \"y_top_left\": 0.6981132075471698, \"width\": 0.04978038067349927, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 15,
+                      "end": 19,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.23133235724743778, \"y_top_left\": 0.6981132075471698, \"width\": 0.048316251830161056, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 20,
+                      "end": 24,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.2884333821376281, \"y_top_left\": 0.7358490566037735, \"width\": 0.05856515373352855, \"height\": 0.08490566037735849, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 25,
+                      "end": 29,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.35431918008784774, \"y_top_left\": 0.7358490566037735, \"width\": 0.05124450951683748, \"height\": 0.08490566037735849, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 30,
+                      "end": 34,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.4143484626647145, \"y_top_left\": 0.7358490566037735, \"width\": 0.05710102489019034, \"height\": 0.08490566037735849, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 35,
+                      "end": 42,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.4787701317715959, \"y_top_left\": 0.6981132075471698, \"width\": 0.08052708638360176, \"height\": 0.16037735849056603, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 43,
+                      "end": 48,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.5666178623718887, \"y_top_left\": 0.7169811320754716, \"width\": 0.048316251830161056, \"height\": 0.10377358490566038, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 49,
+                      "end": 52,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.623718887262079, \"y_top_left\": 0.6981132075471698, \"width\": 0.036603221083455345, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 53,
+                      "end": 55,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.6676427525622255, \"y_top_left\": 0.7358490566037735, \"width\": 0.03367496339677892, \"height\": 0.08490566037735849, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 56,
+                      "end": 61,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.7086383601756955, \"y_top_left\": 0.6981132075471698, \"width\": 0.06442166910688141, \"height\": 0.16037735849056603, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 62,
+                      "end": 66,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.780380673499268, \"y_top_left\": 0.6886792452830188, \"width\": 0.05417276720351391, \"height\": 0.1320754716981132, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 67,
+                      "end": 69,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.8418740849194729, \"y_top_left\": 0.7358490566037735, \"width\": 0.03513909224011713, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 70,
+                      "end": 75,
+                      "name": "bounding box",
+                      "value": "{\"x_top_left\": 0.8843338213762811, \"y_top_left\": 0.6981132075471698, \"width\": 0.055636896046852125, \"height\": 0.12264150943396226, \"page_width\": 683, \"page_height\": 106}"
+                    },
+                    {
+                      "start": 25,
+                      "end": 29,
+                      "name": "bold",
+                      "value": "True"
+                    },
+                    {
+                      "start": 35,
+                      "end": 48,
+                      "name": "bold",
+                      "value": "True"
+                    },
+                    {
+                      "start": 56,
+                      "end": 61,
+                      "name": "bold",
+                      "value": "True"
+                    },
+                    {
+                      "start": 0,
+                      "end": 76,
+                      "name": "size",
+                      "value": "143"
+                    },
+                    {
+                      "start": 0,
+                      "end": 76,
+                      "name": "color_annotation",
+                      "value": "{\"red\": 84.80642537616917, \"blue\": 84.73851159007727, \"green\": 76.55632370882472}"
+                    },
+                    {
+                      "start": 0,
+                      "end": 76,
+                      "name": "spacing",
+                      "value": "29"
+                    }
+                  ],
+                  "metadata": {
+                    "paragraph_type": "list_item",
+                    "page_id": 0,
+                    "line_id": 2
+                  },
+                  "subparagraphs": []
+                }
+              ]
+            }
+          ]
+        },
+        "tables": []
+      },
+      "metadata": {
+        "uid": "attach_a6dcd6be-89d4-48aa-85c0-77828e3cfa13",
+        "file_name": "image1.png",
+        "temporary_file_name": "1714647118_126.png",
+        "size": 14874,
+        "modified_time": 1714647118,
+        "created_time": 1714647118,
+        "access_time": 1714647118,
+        "file_type": "image/png",
+        "rotated_page_angles": [
+          0.0
+        ]
+      },
+      "version": "2.2",
+      "warnings": [],
+      "attachments": []
+    }
+  ]
+}

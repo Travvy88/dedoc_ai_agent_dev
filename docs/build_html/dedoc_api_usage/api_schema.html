@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API schema &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Description of the API output format" href="return_format.html" />
+    <link rel="prev" title="Using dedoc via API" href="api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">Using dedoc via API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API schema</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.ParsedDocument"><code class="docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.DocumentContent"><code class="docutils literal notranslate"><span class="pre">DocumentContent</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.DocumentMetadata"><code class="docutils literal notranslate"><span class="pre">DocumentMetadata</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.TreeNode"><code class="docutils literal notranslate"><span class="pre">TreeNode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.LineWithMeta"><code class="docutils literal notranslate"><span class="pre">LineWithMeta</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.LineMetadata"><code class="docutils literal notranslate"><span class="pre">LineMetadata</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.Table"><code class="docutils literal notranslate"><span class="pre">Table</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.TableMetadata"><code class="docutils literal notranslate"><span class="pre">TableMetadata</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.CellWithMeta"><code class="docutils literal notranslate"><span class="pre">CellWithMeta</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dedoc.api.schema.Annotation"><code class="docutils literal notranslate"><span class="pre">Annotation</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">API schema</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/dedoc_api_usage/api_schema.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="api-schema">
+<span id="dedoc-api-schema"></span><h1>API schema<a class="headerlink" href="#api-schema" title="Permalink to this heading"></a></h1>
+<p>The output json format has a strict schema: serialized <a class="reference internal" href="#dedoc.api.schema.ParsedDocument" title="dedoc.api.schema.ParsedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a> is returned.
+Json schema of the output is also available during dedoc application running on <code class="docutils literal notranslate"><span class="pre">http://localhost:1231/docs</span></code>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.ParsedDocument">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">ParsedDocument</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#dedoc.api.schema.DocumentContent" title="dedoc.api.schema.document_content.DocumentContent"><span class="pre">DocumentContent</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#dedoc.api.schema.DocumentMetadata" title="dedoc.api.schema.document_metadata.DocumentMetadata"><span class="pre">DocumentMetadata</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">warnings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attachments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.ParsedDocument" title="dedoc.api.schema.parsed_document.ParsedDocument"><span class="pre">ParsedDocument</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/parsed_document.html#ParsedDocument"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.ParsedDocument" title="Permalink to this definition"></a></dt>
+<dd><p>Holds information about the document content, metadata and attachments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>content</strong> (<a class="reference internal" href="#dedoc.api.schema.DocumentContent" title="dedoc.api.schema.DocumentContent"><em>DocumentContent</em></a>) – document text (hierarchy of nodes) and tables</p></li>
+<li><p><strong>attachments</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.ParsedDocument" title="dedoc.api.schema.ParsedDocument"><em>ParsedDocument</em></a><em>]</em>) – result of analysis of attached files (empty if with_attachments=False)</p></li>
+<li><p><strong>metadata</strong> (<a class="reference internal" href="#dedoc.api.schema.DocumentMetadata" title="dedoc.api.schema.DocumentMetadata"><em>DocumentMetadata</em></a>) – document metadata such as size, creation date and so on.</p></li>
+<li><p><strong>warnings</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – list of warnings and possible errors, arising in the process of document parsing</p></li>
+<li><p><strong>version</strong> (<em>str</em>) – version of the program that parsed this document</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.DocumentContent">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">DocumentContent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#dedoc.api.schema.TreeNode" title="dedoc.api.schema.tree_node.TreeNode"><span class="pre">TreeNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">tables</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.Table" title="dedoc.api.schema.table.Table"><span class="pre">Table</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/document_content.html#DocumentContent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.DocumentContent" title="Permalink to this definition"></a></dt>
+<dd><p>Content of the document - structured text and tables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tables</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.Table" title="dedoc.api.schema.Table"><em>Table</em></a><em>]</em>) – list of document tables</p></li>
+<li><p><strong>structure</strong> (<a class="reference internal" href="#dedoc.api.schema.TreeNode" title="dedoc.api.schema.TreeNode"><em>TreeNode</em></a>) – tree structure of the document nodes with text and additional metadata</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.DocumentMetadata">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">DocumentMetadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temporary_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modified_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">extra_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/document_metadata.html#DocumentMetadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.DocumentMetadata" title="Permalink to this definition"></a></dt>
+<dd><p>Document metadata like its name, size, author, etc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> (<em>str</em>) – original document name (before rename and conversion, so it can contain non-ascii symbols, spaces and so on)</p></li>
+<li><p><strong>temporary_file_name</strong> (<em>str</em>) – file name during parsing (unique name after rename and conversion)</p></li>
+<li><p><strong>size</strong> (<em>int</em>) – size of the original file in bytes</p></li>
+<li><p><strong>modified_time</strong> (<em>int</em>) – time of the last modification in unix time format (seconds since the epoch)</p></li>
+<li><p><strong>created_time</strong> (<em>int</em>) – time of the creation in unixtime</p></li>
+<li><p><strong>access_time</strong> (<em>int</em>) – time of the last access to the file in unixtime</p></li>
+<li><p><strong>file_type</strong> (<em>str</em>) – mime type of the file</p></li>
+<li><p><strong>uid</strong> (<em>str</em>) – document unique identifier (useful for attached files)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Additional variables may be added with other file metadata.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.TreeNode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">TreeNode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">annotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.Annotation" title="dedoc.api.schema.annotation.Annotation"><span class="pre">Annotation</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#dedoc.api.schema.LineMetadata" title="dedoc.api.schema.line_metadata.LineMetadata"><span class="pre">LineMetadata</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">subparagraphs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.TreeNode" title="dedoc.api.schema.tree_node.TreeNode"><span class="pre">TreeNode</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/tree_node.html#TreeNode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.TreeNode" title="Permalink to this definition"></a></dt>
+<dd><p>Helps to represent document as recursive tree structure.
+It has list of children <cite>TreeNode</cite> nodes (empty list for a leaf node).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_id</strong> (<em>str</em>) – unique node identifier</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – text of the node (may contain several lines)</p></li>
+<li><p><strong>annotations</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.Annotation" title="dedoc.api.schema.Annotation"><em>Annotation</em></a><em>]</em>) – some metadata related to the part of the text (as font size)</p></li>
+<li><p><strong>metadata</strong> (<a class="reference internal" href="#dedoc.api.schema.LineMetadata" title="dedoc.api.schema.LineMetadata"><em>LineMetadata</em></a>) – metadata refers to entire node (as node type)</p></li>
+<li><p><strong>subparagraphs</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.TreeNode" title="dedoc.api.schema.TreeNode"><em>TreeNode</em></a><em>]</em>) – list of child of this node</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.LineWithMeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">LineWithMeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">annotations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.Annotation" title="dedoc.api.schema.annotation.Annotation"><span class="pre">Annotation</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/line_with_meta.html#LineWithMeta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.LineWithMeta" title="Permalink to this definition"></a></dt>
+<dd><p>Textual line with text annotations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – text of the line</p></li>
+<li><p><strong>annotations</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.Annotation" title="dedoc.api.schema.Annotation"><em>Annotation</em></a><em>]</em>) – text annotations (font, size, bold, italic, etc.)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.LineMetadata">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">LineMetadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paragraph_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">extra_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/line_metadata.html#LineMetadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.LineMetadata" title="Permalink to this definition"></a></dt>
+<dd><p>Holds information about document node/line metadata, such as page number or line type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paragraph_type</strong> (<em>str</em>) – type of the document line/paragraph (header, list_item, list, etc.)</p></li>
+<li><p><strong>page_id</strong> (<em>int</em>) – page number where paragraph starts, the numeration starts from page 0</p></li>
+<li><p><strong>line_id</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – line number inside the entire document, the numeration starts from line 0</p></li>
+</ul>
+</dd>
+</dl>
+<p>Additional variables may be added with other line metadata.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.Table">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">Table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cells</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.CellWithMeta" title="dedoc.api.schema.cell_with_meta.CellWithMeta"><span class="pre">CellWithMeta</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#dedoc.api.schema.TableMetadata" title="dedoc.api.schema.table_metadata.TableMetadata"><span class="pre">TableMetadata</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/table.html#Table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.Table" title="Permalink to this definition"></a></dt>
+<dd><p>Holds information about tables in the document.
+We assume that a table has rectangle form (has the same number of columns in each row).
+Table representation is row-based i.e. external list contains list of rows.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metadata</strong> (<a class="reference internal" href="#dedoc.api.schema.TableMetadata" title="dedoc.api.schema.TableMetadata"><em>TableMetadata</em></a>) – a list of lists of table cells (cell has text lines, colspan and rowspan attributes)</p></li>
+<li><p><strong>cells</strong> (<em>List</em><em>[</em><em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.CellWithMeta" title="dedoc.api.schema.CellWithMeta"><em>CellWithMeta</em></a><em>]</em><em>]</em>) – table metadata as location, title and so on</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.TableMetadata">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">TableMetadata</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">uid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotated_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/table_metadata.html#TableMetadata"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.TableMetadata" title="Permalink to this definition"></a></dt>
+<dd><p>Holds the information about table unique identifier, rotation angle (if table has been rotated - for images) and so on.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>page_id</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – number of the page where table starts</p></li>
+<li><p><strong>uid</strong> (<em>str</em>) – unique identifier of the table (used for linking table to text)</p></li>
+<li><p><strong>rotated_angle</strong> (<em>float</em>) – value of the rotation angle by which the table was rotated during recognition</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – table’s title</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.CellWithMeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">CellWithMeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#dedoc.api.schema.LineWithMeta" title="dedoc.api.schema.line_with_meta.LineWithMeta"><span class="pre">LineWithMeta</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rowspan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colspan</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invisible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/cell_with_meta.html#CellWithMeta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.CellWithMeta" title="Permalink to this definition"></a></dt>
+<dd><p>Holds the information about the cell: list of lines and cell properties (rowspan, colspan, invisible).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lines</strong> (<em>List</em><em>[</em><a class="reference internal" href="#dedoc.api.schema.LineWithMeta" title="dedoc.api.schema.LineWithMeta"><em>LineWithMeta</em></a><em>]</em>) – list of textual lines of the cell</p></li>
+<li><p><strong>colspan</strong> (<em>int</em>) – number of columns to span (for cells merged horizontally)</p></li>
+<li><p><strong>rowspan</strong> (<em>int</em>) – number of rows to span (for cells merged vertically)</p></li>
+<li><p><strong>invisible</strong> (<em>bool</em>) – indicator for displaying or hiding cell text - cells that are merged with others are hidden (for HTML display)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="dedoc.api.schema.Annotation">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dedoc.api.schema.</span></span><span class="sig-name descname"><span class="pre">Annotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/dedoc/api/schema/annotation.html#Annotation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#dedoc.api.schema.Annotation" title="Permalink to this definition"></a></dt>
+<dd><p>The piece of information about the text line: it’s appearance or links to another document object.
+For example Annotation(1, 13, “italic”, “True”) says that text between 1st and 13th symbol was written in italic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em>) – start of the annotated text</p></li>
+<li><p><strong>end</strong> (<em>int</em>) – end of the annotated text (end isn’t included)</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – annotation’s name, specific for each type of annotation</p></li>
+<li><p><strong>value</strong> (<em>str</em>) – information about annotated text, depends on the type of annotation, e.g. “True”/”False”, “10.0”, etc.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="api.html" class="btn btn-neutral float-left" title="Using dedoc via API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="return_format.html" class="btn btn-neutral float-right" title="Description of the API output format" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script src="../../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os.path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Union</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedocutils.data_structures</span><span class="w"> </span><span class="kn">import</span> <span class="n">BBox</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="kn">import</span> <span class="n">ndarray</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.common.exceptions.java_not_found_error</span><span class="w"> </span><span class="kn">import</span> <span class="n">JavaNotFoundError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.common.exceptions.tabby_pdf_error</span><span class="w"> </span><span class="kn">import</span> <span class="n">TabbyPdfError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.hierarchy_level</span><span class="w"> </span><span class="kn">import</span> <span class="n">HierarchyLevel</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_with_meta</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithMeta</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.unstructured_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.line_with_location</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithLocation</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.pdf_image_attachment</span><span class="w"> </span><span class="kn">import</span> <span class="n">PdfImageAttachment</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.tables.scantable</span><span class="w"> </span><span class="kn">import</span> <span class="n">ScanTable</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_base_reader</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParametersForParseDoc</span><span class="p">,</span> <span class="n">PdfBaseReader</span>
+
+
+<span class="c1"># region CLASS_PdfTabbyReader [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]</span>
+<div class="viewcode-block" id="PdfTabbyReader"><a class="viewcode-back" href="../../../../../modules/readers.html#dedoc.readers.PdfTabbyReader">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">PdfTabbyReader</span><span class="p">(</span><span class="n">PdfBaseReader</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class allows to extract content (textual and table) from the .pdf documents with a textual layer (copyable documents).</span>
+<span class="sd">    It uses java code to get the result.</span>
+
+<span class="sd">    It is recommended to use this class as a handler for PDF documents with a correct textual layer</span>
+<span class="sd">    if you don&#39;t need to check textual layer correctness.</span>
+<span class="sd">    For more information, look to `pdf_with_text_layer` option description in :ref:`pdf_handling_parameters`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.extensions</span><span class="w"> </span><span class="kn">import</span> <span class="n">recognized_extensions</span><span class="p">,</span> <span class="n">recognized_mimes</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor</span><span class="w"> </span><span class="kn">import</span> \
+            <span class="n">OnePageTableExtractor</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.table_attribute_extractor</span><span class="w"> </span><span class="kn">import</span> \
+            <span class="n">TableHeaderExtractor</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">recognized_extensions</span><span class="o">=</span><span class="n">recognized_extensions</span><span class="o">.</span><span class="n">pdf_like_format</span><span class="p">,</span> <span class="n">recognized_mimes</span><span class="o">=</span><span class="n">recognized_mimes</span><span class="o">.</span><span class="n">pdf_like_format</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tabby_java_version</span> <span class="o">=</span> <span class="s2">&quot;2.0.0&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jar_name</span> <span class="o">=</span> <span class="s2">&quot;ispras_tbl_extr.jar&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">jar_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;tabbypdf&quot;</span><span class="p">,</span> <span class="s2">&quot;jars&quot;</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">java_not_found_error</span> <span class="o">=</span> <span class="s2">&quot;`java` command is not found from this Python process. Please ensure Java is installed and PATH is set for `java`&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">default_config</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;JAR_PATH&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">jar_dir</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">jar_name</span><span class="p">)}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_header_selector</span> <span class="o">=</span> <span class="n">TableHeaderExtractor</span><span class="p">(</span><span class="n">logger</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_extractor</span> <span class="o">=</span> <span class="n">OnePageTableExtractor</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">,</span> <span class="n">logger</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">debug_save_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;path_debug&quot;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">sep</span><span class="p">),</span> <span class="s2">&quot;tmp&quot;</span><span class="p">,</span> <span class="s2">&quot;dedoc&quot;</span><span class="p">)),</span> <span class="s2">&quot;tabby&quot;</span><span class="p">)</span>
+
+    <span class="c1"># region METHOD_can_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___init__</span>
+<div class="viewcode-block" id="PdfTabbyReader.can_read"><a class="viewcode-back" href="../../../../../modules/readers.html#dedoc.readers.PdfTabbyReader.can_read">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">can_read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">mime</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">extension</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the document extension is suitable for this reader (PDF format is supported only).</span>
+<span class="sd">        This method returns `True` only when the key `pdf_with_text_layer` with value `tabby` is set in the dictionary `parameters`.</span>
+
+<span class="sd">        You can look to :ref:`pdf_handling_parameters` to get more information about `parameters` dictionary possible arguments.</span>
+
+<span class="sd">        Look to the documentation of :meth:`~dedoc.readers.BaseReader.can_read` to get information about the method&#39;s parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_pdf_with_txt_layer</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">can_read</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">mime</span><span class="o">=</span><span class="n">mime</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="n">extension</span><span class="p">)</span> <span class="ow">and</span> <span class="n">get_param_pdf_with_txt_layer</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;tabby&quot;</span></div>
+
+    <span class="c1"># region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_can_read</span>
+<div class="viewcode-block" id="PdfTabbyReader.read"><a class="viewcode-back" href="../../../../../modules/readers.html#dedoc.readers.PdfTabbyReader.read">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UnstructuredDocument</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The method return document content with all document&#39;s lines, tables and attachments.</span>
+<span class="sd">        This reader is able to add some additional information to the `tag_hierarchy_level` of :class:`~dedoc.data_structures.LineMetadata`.</span>
+<span class="sd">        Look to the documentation of :meth:`~dedoc.readers.BaseReader.read` to get information about the method&#39;s parameters.</span>
+
+<span class="sd">        You can also see :ref:`pdf_handling_parameters` to get more information about `parameters` dictionary possible arguments.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">tempfile</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_with_attachments</span>
+
+        <span class="n">parameters</span> <span class="o">=</span> <span class="p">{}</span> <span class="k">if</span> <span class="n">parameters</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">parameters</span>
+        <span class="n">warnings</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">with</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">TemporaryDirectory</span><span class="p">()</span> <span class="k">as</span> <span class="n">tmp_dir</span><span class="p">:</span>
+            <span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="p">,</span> <span class="n">attachments</span><span class="p">,</span> <span class="n">document_metadata</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__extract</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">warnings</span><span class="o">=</span><span class="n">warnings</span><span class="p">,</span> <span class="n">tmp_dir</span><span class="o">=</span><span class="n">tmp_dir</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">get_param_with_attachments</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">attachment_extractor</span><span class="o">.</span><span class="n">can_extract</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+            <span class="n">attachments</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">attachment_extractor</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">file_path</span><span class="o">=</span><span class="n">file_path</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">)</span>
+
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line_group</span> <span class="ow">in</span> <span class="n">lines</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">line_group</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)]</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">paragraph_extractor</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">UnstructuredDocument</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">lines</span><span class="p">,</span> <span class="n">tables</span><span class="o">=</span><span class="n">tables</span><span class="p">,</span> <span class="n">attachments</span><span class="o">=</span><span class="n">attachments</span><span class="p">,</span> <span class="n">warnings</span><span class="o">=</span><span class="n">warnings</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">document_metadata</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_postprocess</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
+
+    <span class="c1"># region METHOD___extract [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD_read</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">warnings</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">tmp_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>\
+            <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">LineWithLocation</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">ScanTable</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">PdfImageAttachment</span><span class="p">],</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]]:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.pdf_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_pdf_page_count</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">calculate_file_hash</span><span class="p">,</span> <span class="n">flatten</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_page_slice</span><span class="p">,</span> <span class="n">get_param_with_attachments</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_need_gost_frame_analysis</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_need_header_footers_analysis</span>
+
+        <span class="n">all_lines</span><span class="p">,</span> <span class="n">all_tables</span><span class="p">,</span> <span class="n">all_scan_tables</span><span class="p">,</span> <span class="n">all_attached_images</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="n">with_attachments</span> <span class="o">=</span> <span class="n">get_param_with_attachments</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+        <span class="n">document_metadata</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">file_hash</span> <span class="o">=</span> <span class="n">calculate_file_hash</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">page_count</span> <span class="o">=</span> <span class="n">get_pdf_page_count</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">page_count</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">inf</span> <span class="k">if</span> <span class="n">page_count</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">page_count</span>
+        <span class="n">first_page</span><span class="p">,</span> <span class="n">last_page</span> <span class="o">=</span> <span class="n">get_param_page_slice</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+
+        <span class="n">empty_page_limit</span> <span class="o">=</span> <span class="p">(</span><span class="n">first_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">first_page</span> <span class="o">&gt;=</span> <span class="n">page_count</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">first_page</span> <span class="o">&gt;=</span> <span class="n">last_page</span><span class="p">)</span>
+        <span class="n">partial_page_limit</span> <span class="o">=</span> <span class="p">(</span><span class="n">first_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">first_page</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">last_page</span> <span class="o">&lt;</span> <span class="n">page_count</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">empty_page_limit</span> <span class="ow">or</span> <span class="n">partial_page_limit</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;The document is partially parsed&quot;</span><span class="p">)</span>
+            <span class="n">document_metadata</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">last_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">document_metadata</span><span class="p">[</span><span class="s2">&quot;last_page&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">last_page</span>
+
+            <span class="k">if</span> <span class="n">empty_page_limit</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">all_lines</span><span class="p">,</span> <span class="n">all_tables</span><span class="p">,</span> <span class="n">all_attached_images</span><span class="p">,</span> <span class="n">document_metadata</span>
+
+        <span class="n">remove_gost_frame</span> <span class="o">=</span> <span class="n">get_param_need_gost_frame_analysis</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+        <span class="n">gost_json_path</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__save_gost_frame_boxes_to_json</span><span class="p">(</span><span class="n">first_page</span><span class="o">=</span><span class="n">first_page</span><span class="p">,</span> <span class="n">last_page</span><span class="o">=</span><span class="n">last_page</span><span class="p">,</span> <span class="n">page_count</span><span class="o">=</span><span class="n">page_count</span><span class="p">,</span> <span class="n">tmp_dir</span><span class="o">=</span><span class="n">tmp_dir</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span> \
+            <span class="k">if</span> <span class="n">remove_gost_frame</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+
+        <span class="c1"># in java tabby reader page numeration starts with 1, end_page is included</span>
+        <span class="n">first_tabby_page</span> <span class="o">=</span> <span class="n">first_page</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">first_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="mi">1</span>
+        <span class="n">last_tabby_page</span> <span class="o">=</span> <span class="n">page_count</span> <span class="k">if</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">last_page</span> <span class="o">&gt;</span> <span class="n">page_count</span><span class="p">)</span> <span class="k">else</span> <span class="n">last_page</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reading PDF pages from </span><span class="si">{</span><span class="n">first_tabby_page</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">last_tabby_page</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">document</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__process_pdf</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span>
+                                      <span class="n">start_page</span><span class="o">=</span><span class="n">first_tabby_page</span><span class="p">,</span>
+                                      <span class="n">end_page</span><span class="o">=</span><span class="n">last_tabby_page</span><span class="p">,</span>
+                                      <span class="n">tmp_dir</span><span class="o">=</span><span class="n">tmp_dir</span><span class="p">,</span>
+                                      <span class="n">gost_json_path</span><span class="o">=</span><span class="n">gost_json_path</span><span class="p">,</span>
+                                      <span class="n">remove_frame</span><span class="o">=</span><span class="n">remove_gost_frame</span><span class="p">)</span>
+
+        <span class="n">pages</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pages&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="n">pages</span><span class="p">:</span>
+            <span class="n">page_lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_lines_with_location</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">file_hash</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">page_lines</span><span class="p">:</span>
+                <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">page_lines</span><span class="p">)</span>
+            <span class="n">scan_tables</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_tables</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
+            <span class="n">all_scan_tables</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">scan_tables</span><span class="p">)</span>
+
+            <span class="n">attached_images</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_attached_images</span><span class="p">(</span><span class="n">page</span><span class="o">=</span><span class="n">page</span><span class="p">,</span> <span class="n">parameters</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span> <span class="k">if</span> <span class="n">with_attachments</span> <span class="k">else</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">attached_images</span><span class="p">:</span>
+                <span class="n">all_attached_images</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">attached_images</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">get_param_need_header_footers_analysis</span><span class="p">(</span><span class="n">parameters</span><span class="p">):</span>
+            <span class="n">lines</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">footers</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">header_footer_detector</span><span class="o">.</span><span class="n">detect</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+
+        <span class="n">all_lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">flatten</span><span class="p">(</span><span class="n">lines</span><span class="p">))</span>
+
+        <span class="n">mp_tables</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_recognizer</span><span class="o">.</span><span class="n">convert_to_multipages_tables</span><span class="p">(</span><span class="n">all_scan_tables</span><span class="p">,</span> <span class="n">lines_with_meta</span><span class="o">=</span><span class="n">all_lines</span><span class="p">)</span>
+        <span class="n">all_lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linker</span><span class="o">.</span><span class="n">link_objects</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">all_lines</span><span class="p">,</span> <span class="n">tables</span><span class="o">=</span><span class="n">mp_tables</span><span class="p">,</span> <span class="n">images</span><span class="o">=</span><span class="n">all_attached_images</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;debug_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__save_objects_bboxes</span><span class="p">(</span><span class="n">all_lines</span> <span class="o">+</span> <span class="n">mp_tables</span> <span class="o">+</span> <span class="n">all_attached_images</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">all_lines</span><span class="p">,</span> <span class="n">mp_tables</span><span class="p">,</span> <span class="n">all_attached_images</span><span class="p">,</span> <span class="n">document_metadata</span>
+
+    <span class="c1"># region METHOD___save_gost_frame_boxes_to_json [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___extract</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__save_gost_frame_boxes_to_json</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_page</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">last_page</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">page_count</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">tmp_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">joblib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Parallel</span><span class="p">,</span> <span class="n">delayed</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+
+        <span class="n">first_page</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">first_page</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">first_page</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="n">first_page</span>
+        <span class="n">last_page</span> <span class="o">=</span> <span class="n">page_count</span> <span class="k">if</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">last_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">last_page</span> <span class="o">&gt;</span> <span class="n">page_count</span><span class="p">)</span> <span class="k">else</span> <span class="n">last_page</span>
+        <span class="n">images</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_images</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">first_page</span><span class="p">,</span> <span class="n">last_page</span><span class="p">)</span>
+
+        <span class="n">gost_analyzed_images</span> <span class="o">=</span> <span class="n">Parallel</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;n_jobs&quot;</span><span class="p">])(</span><span class="n">delayed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gost_frame_recognizer</span><span class="o">.</span><span class="n">rec_and_clean_frame</span><span class="p">)(</span><span class="n">image</span><span class="p">)</span> <span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">)</span>
+
+        <span class="n">result_dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">page_number</span><span class="p">:</span> <span class="p">{</span><span class="o">**</span><span class="n">page_data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span> <span class="o">**</span><span class="p">{</span><span class="s2">&quot;original_image_width&quot;</span><span class="p">:</span> <span class="n">page_data</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;original_image_height&quot;</span><span class="p">:</span> <span class="n">page_data</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]}}</span>
+            <span class="k">for</span> <span class="n">page_number</span><span class="p">,</span> <span class="n">page_data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">gost_analyzed_images</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">first_page</span><span class="p">)</span>
+        <span class="p">}</span>
+
+        <span class="n">result_json_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp_dir</span><span class="p">,</span> <span class="s2">&quot;gost_frame_bboxes.json&quot;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">result_json_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">result_dict</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">result_json_path</span>
+
+    <span class="c1"># region METHOD___get_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___save_gost_frame_boxes_to_json</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_tables</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">ScanTable</span><span class="p">]:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.tables.cell</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cell</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.bbox_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">BBoxAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineMetadata</span>
+
+        <span class="n">scan_tables</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">page_number</span> <span class="o">=</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">]</span>
+        <span class="n">page_width</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">])</span>
+        <span class="n">page_height</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">])</span>
+
+        <span class="k">for</span> <span class="n">table</span> <span class="ow">in</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;tables&quot;</span><span class="p">]:</span>
+            <span class="n">table_bbox</span> <span class="o">=</span> <span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">],</span> <span class="n">y_top_left</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">])</span>
+            <span class="n">order</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="s2">&quot;order&quot;</span><span class="p">]</span>
+            <span class="n">rows</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="s2">&quot;rows&quot;</span><span class="p">]</span>
+            <span class="n">cell_properties</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="s2">&quot;cell_properties&quot;</span><span class="p">]</span>
+            <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">cell_properties</span><span class="p">)</span>
+
+            <span class="n">cells</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">num_row</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+                <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">cell_properties</span><span class="p">[</span><span class="n">num_row</span><span class="p">])</span>
+
+                <span class="n">result_row</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">for</span> <span class="n">num_col</span><span class="p">,</span> <span class="n">cell</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+                    <span class="n">annotations</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="n">cell_blocks</span> <span class="o">=</span> <span class="n">cell</span><span class="p">[</span><span class="s2">&quot;cell_blocks&quot;</span><span class="p">]</span>
+
+                    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">cell_blocks</span><span class="p">:</span>
+                        <span class="n">cell_bbox</span> <span class="o">=</span> <span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">]),</span> <span class="n">y_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">]),</span> <span class="n">width</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">]),</span> <span class="n">height</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">]))</span>
+                        <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BBoxAnnotation</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="s2">&quot;start&quot;</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="s2">&quot;end&quot;</span><span class="p">],</span> <span class="n">cell_bbox</span><span class="p">,</span> <span class="n">page_width</span><span class="o">=</span><span class="n">page_width</span><span class="p">,</span> <span class="n">page_height</span><span class="o">=</span><span class="n">page_height</span><span class="p">))</span>
+
+                    <span class="n">current_cell_properties</span> <span class="o">=</span> <span class="n">cell_properties</span><span class="p">[</span><span class="n">num_row</span><span class="p">][</span><span class="n">num_col</span><span class="p">]</span>
+                    <span class="n">bbox</span> <span class="o">=</span> <span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">]),</span>
+                                <span class="n">y_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">]),</span>
+                                <span class="n">width</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">]),</span>
+                                <span class="n">height</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">]))</span>
+
+                    <span class="n">result_row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Cell</span><span class="p">(</span>
+                        <span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span>
+                        <span class="n">lines</span><span class="o">=</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="n">cell</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">],</span> <span class="n">metadata</span><span class="o">=</span><span class="n">LineMetadata</span><span class="p">(</span><span class="n">page_id</span><span class="o">=</span><span class="n">page_number</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">)],</span>
+                        <span class="n">colspan</span><span class="o">=</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;col_span&quot;</span><span class="p">],</span>
+                        <span class="n">rowspan</span><span class="o">=</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;row_span&quot;</span><span class="p">],</span>
+                        <span class="n">invisible</span><span class="o">=</span><span class="nb">bool</span><span class="p">(</span><span class="n">current_cell_properties</span><span class="p">[</span><span class="s2">&quot;invisible&quot;</span><span class="p">])</span>
+                    <span class="p">))</span>
+                <span class="n">cells</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_row</span><span class="p">)</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">cells</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">table_extractor</span><span class="o">.</span><span class="n">handle_cells</span><span class="p">(</span><span class="n">cells</span><span class="p">)</span>
+                <span class="n">scan_tables</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ScanTable</span><span class="p">(</span><span class="n">page_number</span><span class="o">=</span><span class="n">page_number</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">cells</span><span class="p">,</span> <span class="n">bbox</span><span class="o">=</span><span class="n">table_bbox</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span>
+                                             <span class="n">page_width</span><span class="o">=</span><span class="n">page_width</span><span class="p">,</span> <span class="n">page_height</span><span class="o">=</span><span class="n">page_height</span><span class="p">))</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Warning: unrecognized table on page </span><span class="si">{</span><span class="n">page_number</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">ex</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;debug_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">):</span>
+                    <span class="k">raise</span> <span class="n">ex</span>
+
+        <span class="k">return</span> <span class="n">scan_tables</span>
+
+    <span class="c1"># region METHOD___get_attached_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_tables</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_attached_images</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">PdfImageAttachment</span><span class="p">]:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">uuid</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.tables.location</span><span class="w"> </span><span class="kn">import</span> <span class="n">Location</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_unique_name</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.parameter_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_param_attachments_dir</span><span class="p">,</span> <span class="n">get_param_need_content_analysis</span>
+
+        <span class="n">attachments_dir</span> <span class="o">=</span> <span class="n">get_param_attachments_dir</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+        <span class="n">need_content_analysis</span> <span class="o">=</span> <span class="n">get_param_need_content_analysis</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+
+        <span class="n">image_attachment_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">image_dict</span> <span class="ow">in</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;images&quot;</span><span class="p">]:</span>
+            <span class="n">image_location</span> <span class="o">=</span> <span class="n">Location</span><span class="p">(</span>
+                <span class="n">page_number</span><span class="o">=</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">],</span>
+                <span class="n">bbox</span><span class="o">=</span><span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">],</span> <span class="n">y_top_left</span><span class="o">=</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">],</span> <span class="n">height</span><span class="o">=</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">])</span>
+            <span class="p">)</span>
+
+            <span class="n">tmp_file_name</span> <span class="o">=</span> <span class="n">get_unique_name</span><span class="p">(</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;original_name&quot;</span><span class="p">])</span>
+            <span class="n">tmp_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">attachments_dir</span><span class="p">,</span> <span class="n">tmp_file_name</span><span class="p">)</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;tmp_file_path&quot;</span><span class="p">],</span> <span class="n">tmp_file_path</span><span class="p">)</span>
+
+            <span class="n">image_attachment</span> <span class="o">=</span> <span class="n">PdfImageAttachment</span><span class="p">(</span>
+                <span class="n">original_name</span><span class="o">=</span><span class="n">image_dict</span><span class="p">[</span><span class="s2">&quot;original_name&quot;</span><span class="p">],</span>
+                <span class="n">tmp_file_path</span><span class="o">=</span><span class="n">tmp_file_path</span><span class="p">,</span>
+                <span class="n">need_content_analysis</span><span class="o">=</span><span class="n">need_content_analysis</span><span class="p">,</span>
+                <span class="n">uid</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;attach_</span><span class="si">{</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="n">location</span><span class="o">=</span><span class="n">image_location</span>
+            <span class="p">)</span>
+            <span class="n">image_attachment_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">image_attachment</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">image_attachment_list</span>
+
+    <span class="c1"># region METHOD___get_lines_with_location [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_attached_images</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_lines_with_location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">file_hash</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithLocation</span><span class="p">]:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.bbox_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">BBoxAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.bold_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">BoldAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.indentation_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">IndentationAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.italic_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">ItalicAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.linked_text_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">LinkedTextAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.size_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">SizeAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.spacing_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">SpacingAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.style_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">StyleAnnotation</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineMetadata</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.readers.pdf_reader.data_classes.tables.location</span><span class="w"> </span><span class="kn">import</span> <span class="n">Location</span>
+
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">page_number</span><span class="p">,</span> <span class="n">page_width</span><span class="p">,</span> <span class="n">page_height</span> <span class="o">=</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">],</span> <span class="nb">int</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">])</span>
+        <span class="n">labeling_mode</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;labeling_mode&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;blocks&quot;</span><span class="p">]:</span>
+            <span class="n">annotations</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">order</span> <span class="o">=</span> <span class="n">block</span><span class="p">[</span><span class="s2">&quot;order&quot;</span><span class="p">]</span>
+            <span class="n">block_text</span> <span class="o">=</span> <span class="n">block</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+            <span class="n">len_block</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">block_text</span><span class="p">)</span>
+            <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">IndentationAnnotation</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">len_block</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;indent&quot;</span><span class="p">])))</span>
+            <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">SpacingAnnotation</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">len_block</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;spacing&quot;</span><span class="p">])))</span>
+
+            <span class="k">for</span> <span class="n">annotation</span> <span class="ow">in</span> <span class="n">block</span><span class="p">[</span><span class="s2">&quot;annotations&quot;</span><span class="p">]:</span>
+                <span class="n">start</span> <span class="o">=</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;start&quot;</span><span class="p">]</span>
+                <span class="n">end</span> <span class="o">=</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;end&quot;</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">labeling_mode</span><span class="p">:</span>
+                    <span class="n">box</span> <span class="o">=</span> <span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">]),</span> <span class="n">y_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">]),</span>
+                               <span class="n">width</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">]),</span> <span class="n">height</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">]))</span>
+                    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BBoxAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">page_width</span><span class="o">=</span><span class="n">page_width</span><span class="p">,</span> <span class="n">page_height</span><span class="o">=</span><span class="n">page_height</span><span class="p">))</span>
+
+                <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">SizeAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;font_size&quot;</span><span class="p">])))</span>
+                <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">StyleAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;font_name&quot;</span><span class="p">]))</span>
+
+                <span class="k">if</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;is_bold&quot;</span><span class="p">]:</span>
+                    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BoldAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="s2">&quot;True&quot;</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;is_italic&quot;</span><span class="p">]:</span>
+                    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ItalicAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="s2">&quot;True&quot;</span><span class="p">))</span>
+
+                <span class="k">if</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;LINK&quot;</span><span class="p">:</span>
+                    <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LinkedTextAnnotation</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">annotation</span><span class="p">[</span><span class="s2">&quot;url&quot;</span><span class="p">]))</span>
+
+            <span class="n">bbox</span> <span class="o">=</span> <span class="n">BBox</span><span class="p">(</span><span class="n">x_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;x_top_left&quot;</span><span class="p">]),</span> <span class="n">y_top_left</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;y_top_left&quot;</span><span class="p">]),</span> <span class="n">width</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;width&quot;</span><span class="p">]),</span> <span class="n">height</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">block</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">]))</span>
+            <span class="k">if</span> <span class="n">labeling_mode</span><span class="p">:</span>
+                <span class="n">annotations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">BBoxAnnotation</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">len_block</span><span class="p">,</span> <span class="n">bbox</span><span class="p">,</span> <span class="n">page_width</span><span class="o">=</span><span class="n">page_width</span><span class="p">,</span> <span class="n">page_height</span><span class="o">=</span><span class="n">page_height</span><span class="p">))</span>
+
+            <span class="n">meta</span> <span class="o">=</span> <span class="n">block</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="n">uid</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;txt_</span><span class="si">{</span><span class="n">file_hash</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">order</span><span class="si">}</span><span class="s2">&quot;</span>
+
+            <span class="n">metadata</span> <span class="o">=</span> <span class="n">LineMetadata</span><span class="p">(</span><span class="n">page_id</span><span class="o">=</span><span class="n">page_number</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="n">order</span><span class="p">)</span>
+            <span class="n">line_with_location</span> <span class="o">=</span> <span class="n">LineWithLocation</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="n">block_text</span><span class="p">,</span>
+                                                  <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span>
+                                                  <span class="n">annotations</span><span class="o">=</span><span class="n">annotations</span><span class="p">,</span>
+                                                  <span class="n">uid</span><span class="o">=</span><span class="n">uid</span><span class="p">,</span>
+                                                  <span class="n">location</span><span class="o">=</span><span class="n">Location</span><span class="p">(</span><span class="n">bbox</span><span class="o">=</span><span class="n">bbox</span><span class="p">,</span> <span class="n">page_number</span><span class="o">=</span><span class="n">page_number</span><span class="p">),</span>
+                                                  <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">)</span>
+            <span class="n">line_with_location</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">tag_hierarchy_level</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_tag</span><span class="p">(</span><span class="n">line_with_location</span><span class="p">,</span> <span class="n">meta</span><span class="p">)</span>
+
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line_with_location</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">lines</span>
+
+    <span class="c1"># region METHOD___get_tag [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_lines_with_location</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_tag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">line</span><span class="p">:</span> <span class="n">LineWithMeta</span><span class="p">,</span> <span class="n">line_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HierarchyLevel</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.structure_extractors.feature_extractors.list_features.list_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_dotted_item_depth</span>
+
+        <span class="k">if</span> <span class="n">line_type</span> <span class="o">==</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">header</span><span class="p">:</span>
+            <span class="n">header_level</span> <span class="o">=</span> <span class="n">get_dotted_item_depth</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">line</span><span class="p">)</span>
+            <span class="n">header_level</span> <span class="o">=</span> <span class="n">header_level</span> <span class="k">if</span> <span class="n">header_level</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">header_level</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">line_type</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">line_type</span> <span class="o">==</span> <span class="s2">&quot;litem&quot;</span><span class="p">:</span>  <span class="c1"># TODO automatic list depth and merge list items from multiple lines</span>
+            <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">list_item</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">create_unknown</span><span class="p">()</span>
+
+    <span class="c1"># region METHOD___jar_path [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___get_tag</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__jar_path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;TABBY_JAR&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_config</span><span class="p">[</span><span class="s2">&quot;JAR_PATH&quot;</span><span class="p">])</span>
+
+    <span class="c1"># region METHOD___run [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___jar_path</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+              <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+              <span class="n">tmp_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+              <span class="n">encoding</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;utf-8&quot;</span><span class="p">,</span>
+              <span class="n">start_page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+              <span class="n">end_page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+              <span class="n">remove_frame</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">gost_json_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+              <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bytes</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+
+        <span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;java&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;-jar&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__jar_path</span><span class="p">(),</span> <span class="s2">&quot;-i&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="s2">&quot;-tmp&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">tmp_dir</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">remove_frame</span><span class="p">:</span>
+            <span class="n">args</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;-rf&quot;</span><span class="p">,</span> <span class="n">gost_json_path</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">start_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">end_page</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">args</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">&quot;-sp&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">start_page</span><span class="p">),</span> <span class="s2">&quot;-ep&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">end_page</span><span class="p">)]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">DEVNULL</span><span class="p">,</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Got stderr: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">stdout</span>
+        <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">JavaNotFoundError</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">java_not_found_error</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">CalledProcessError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">TabbyPdfError</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">stderr</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">encoding</span><span class="p">))</span>
+
+    <span class="c1"># region METHOD___process_pdf [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___run</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__process_pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                      <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                      <span class="n">tmp_dir</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                      <span class="n">start_page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                      <span class="n">end_page</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                      <span class="n">gost_json_path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                      <span class="n">remove_frame</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">__run</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">start_page</span><span class="o">=</span><span class="n">start_page</span><span class="p">,</span> <span class="n">end_page</span><span class="o">=</span><span class="n">end_page</span><span class="p">,</span> <span class="n">tmp_dir</span><span class="o">=</span><span class="n">tmp_dir</span><span class="p">,</span> <span class="n">remove_frame</span><span class="o">=</span><span class="n">remove_frame</span><span class="p">,</span> <span class="n">gost_json_path</span><span class="o">=</span><span class="n">gost_json_path</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp_dir</span><span class="p">,</span> <span class="s2">&quot;data.json&quot;</span><span class="p">),</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+            <span class="n">document</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">document</span>
+
+    <span class="c1"># region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD___process_pdf</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_process_one_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                          <span class="n">image</span><span class="p">:</span> <span class="n">ndarray</span><span class="p">,</span>
+                          <span class="n">parameters</span><span class="p">:</span> <span class="n">ParametersForParseDoc</span><span class="p">,</span>
+                          <span class="n">page_number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+                          <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">LineWithLocation</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">ScanTable</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">PdfImageAttachment</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]:</span>
+
+        <span class="k">return</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+
+    <span class="c1"># region METHOD___save_objects_bboxes [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]</span>
+    <span class="c1"># endregion METHOD__process_one_page</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__save_objects_bboxes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">all_objects</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">LineWithLocation</span><span class="p">,</span> <span class="n">ScanTable</span><span class="p">,</span> <span class="n">PdfImageAttachment</span><span class="p">]],</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">all_objects</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.concrete_annotations.bbox_annotation</span><span class="w"> </span><span class="kn">import</span> <span class="n">BBoxAnnotation</span>
+
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">debug_save_path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">dsize</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">all_objects</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">LineWithLocation</span><span class="p">)]</span>
+        <span class="k">if</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="n">annotations</span> <span class="o">=</span> <span class="p">[</span><span class="n">ann</span> <span class="k">for</span> <span class="n">ann</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">annotations</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ann</span><span class="p">,</span> <span class="n">BBoxAnnotation</span><span class="p">)]</span>
+            <span class="k">if</span> <span class="n">annotations</span><span class="p">:</span>
+                <span class="n">bbox</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">annotations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+                <span class="n">dsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">bbox</span><span class="p">[</span><span class="s2">&quot;page_width&quot;</span><span class="p">],</span> <span class="n">bbox</span><span class="p">[</span><span class="s2">&quot;page_height&quot;</span><span class="p">])</span>
+
+        <span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.utils.pdf_utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_page_image</span>
+
+        <span class="n">current_page_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">current_image</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">all_objects</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="p">(</span><span class="n">o</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">page_number</span><span class="p">,</span> <span class="n">o</span><span class="o">.</span><span class="n">order</span><span class="p">,</span> <span class="n">o</span><span class="o">.</span><span class="n">location</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">current_object</span> <span class="ow">in</span> <span class="n">all_objects</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">page_number</span> <span class="o">!=</span> <span class="n">current_page_id</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">current_image</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">debug_save_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_page_id</span><span class="si">}</span><span class="s2">.png&quot;</span><span class="p">),</span> <span class="n">current_image</span><span class="p">)</span>
+                <span class="n">current_page_id</span> <span class="o">=</span> <span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">page_number</span>
+                <span class="n">current_image</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">get_page_image</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">current_page_id</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">dsize</span><span class="p">:</span>
+                    <span class="n">current_image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">current_image</span><span class="p">,</span> <span class="n">dsize</span><span class="o">=</span><span class="n">dsize</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="n">cv2</span><span class="o">.</span><span class="n">INTER_CUBIC</span><span class="p">)</span>
+
+            <span class="n">p1</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">bbox</span><span class="o">.</span><span class="n">x_top_left</span><span class="p">,</span> <span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">bbox</span><span class="o">.</span><span class="n">y_top_left</span><span class="p">)</span>
+            <span class="n">p2</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">bbox</span><span class="o">.</span><span class="n">x_bottom_right</span><span class="p">,</span> <span class="n">current_object</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">bbox</span><span class="o">.</span><span class="n">y_bottom_right</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">current_object</span><span class="p">,</span> <span class="n">LineWithLocation</span><span class="p">):</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">current_object</span><span class="p">,</span> <span class="n">ScanTable</span><span class="p">):</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+            <span class="n">cv2</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">current_image</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">current_image</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="c1"># endregion CLASS_PdfTabbyReader</span>
+            <span class="n">cv2</span><span class="o">.</span><span class="n">imwrite</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">debug_save_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_page_id</span><span class="si">}</span><span class="s2">.png&quot;</span><span class="p">),</span> <span class="n">current_image</span><span class="p">)</span></div>
+
+    <span class="c1"># endregion METHOD___save_objects_bboxes</span>
+
+
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_pdf_tabby_reader; TECH(6): Python, dedoc]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Read and parse PDF documents, extracting lines with metadata, tables, and attachments into UnstructuredDocument.</span>
+<span class="c1">## @scope Document parsing pipeline: PDF format reading.</span>
+<span class="c1">## @input [File path (str), parameters (Optional[dict]) — document on disk.]</span>
+<span class="c1">## @output [UnstructuredDocument with lines, tables, attachments, and warnings.]</span>
+<span class="c1">## @links [USES_API(9): dedoc.data_structures.*; USES_API(8): dedoc.readers.BaseReader]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - read() ALWAYS returns an UnstructuredDocument.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why is this reader separated from others?</span>
+<span class="c1">## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS [28][PdfTabbyReader reader/processor] =&gt; PdfTabbyReader</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [read]: System (Pipeline) → ParseDocument(PDF) → UnstructuredDocument</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: pdf_tabby_reader, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, PdfTabbyReader</span>
+<span class="c1"># STRUCTURE: ▶ Init ┌PDF file┐ → [PdfTabbyReader] ○ can_read? → ○ read → [__init__ → can_read → read] → ⊕ UnstructuredDocument(lines, tables, attachments)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

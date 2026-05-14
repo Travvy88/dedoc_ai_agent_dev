@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law structure type &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Technical specification structure type" href="tz.html" />
+    <link rel="prev" title="Default document structure type" href="other.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="other.html">Default document structure type</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Law structure type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simple-law-structure-type">Simple law structure type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#foiv-law-structure-type">Foiv law structure type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Law structure type</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/structure_types/law.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="law-structure-type">
+<span id="law-structure"></span><h1>Law structure type<a class="headerlink" href="#law-structure-type" title="Permalink to this heading"></a></h1>
+<p>This structure type is used for analysing Russian laws of different types:</p>
+<ul class="simple">
+<li><p>decree (постановление);</p></li>
+<li><p>order (приказ);</p></li>
+<li><p>bylaw (распоряжение);</p></li>
+<li><p>definition (определение);</p></li>
+<li><p>directive (директива);</p></li>
+<li><p>code (кодекс);</p></li>
+<li><p>law (закон);</p></li>
+<li><p>constitution (конституция);</p></li>
+<li><p>edict (указ);</p></li>
+<li><p>state (положение);</p></li>
+<li><p>instruction (инструкция);</p></li>
+<li><p>federal law (федеральный закон).</p></li>
+</ul>
+<p>We consider documents that have some common template:</p>
+<ul class="simple">
+<li><p>The document starts with a title.</p></li>
+<li><p>After the document title the content of the document starts with a header.</p></li>
+<li><p>In the end of the document there may be applications (optional).</p></li>
+</ul>
+<p>In the dedoc library two law types are separated and for each type specific structure is extracted:</p>
+<ul class="simple">
+<li><p><strong>Simple law</strong>. The structure type for all Russian law types except order (приказ), state (положение) and instruction (инструкция) we will call simple law.</p></li>
+<li><p><strong>Foiv law</strong>. The structure type for law types order (приказ), state (положение) and instruction (инструкция) we will call foiv law.</p></li>
+</ul>
+<p>The dedoc library allows to determine law type (simple law, foiv law) automatically during document analysis.
+Below there is an output structure description of each law type in more details.</p>
+<p>The dedoc library allows to handle Russian laws of all aforesaid types in txt, html, docx (doc, rtf, odt), pdf and png (jpg, bmp, etc.) formats.</p>
+<p>In the following description we will speak about the node depth inside the document tree as a node importance.
+The closer the node is to the document tree root, the more important it is.</p>
+<section id="simple-law-structure-type">
+<span id="simple-law-structure"></span><h2>Simple law structure type<a class="headerlink" href="#simple-law-structure-type" title="Permalink to this heading"></a></h2>
+<p>You can see the <a class="reference download internal" download="" href="../_downloads/0f04457c871c638420a2d2a74b274fb5/law.html"><code class="xref download docutils literal notranslate"><span class="pre">example</span></code></a> of the document of this structure type.</p>
+<dl class="simple">
+<dt>There are the following line types in the law structure type:</dt><dd><ul class="simple">
+<li><p>root;</p></li>
+<li><p>body;</p></li>
+<li><p>part;</p></li>
+<li><p>section;</p></li>
+<li><p>subsection;</p></li>
+<li><p>chapter;</p></li>
+<li><p>paragraph;</p></li>
+<li><p>article;</p></li>
+<li><p>articlePart;</p></li>
+<li><p>item;</p></li>
+<li><p>subitem;</p></li>
+<li><p>cellar;</p></li>
+<li><p>application;</p></li>
+<li><p>raw_text.</p></li>
+</ul>
+</dd>
+</dl>
+<p>An exemplary format schema looks as follows:</p>
+<figure class="align-center" id="id1">
+<span id="law-schema"></span><a class="reference internal image-reference" href="../_images/law_schema.png"><img alt="../_images/law_schema.png" src="../_images/law_schema.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">An exemplary schema of the simple law structure type</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The grey rectangles mean auxiliary nodes with empty text.
+The higher the rectangle is, the more important the node with this type is.</p>
+<dl>
+<dt>The detailed description of each line type:</dt><dd><ul>
+<li><p><strong>root</strong>: node containing the text of the document title.</p>
+<blockquote>
+<div><p>There is only one root node in any document.
+It is obligatory for any document of law type.
+All other document lines are children of the root node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>body</strong>: node containing the law content without cellar and applications.</p>
+<blockquote>
+<div><p>There is only one body node in any document.
+It is obligatory for any document of law type.</p>
+</div></blockquote>
+</li>
+<li><p><strong>part</strong>: node containing the text of law’s part header (“часть”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain parts.</p>
+</div></blockquote>
+</li>
+<li><p><strong>section</strong>: node containing the text of law’s section header (“раздел”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain sections.</p>
+</div></blockquote>
+</li>
+<li><p><strong>subsection</strong>: node containing the text of law’s subsection header (lines numbered by roman numbers like “IV.”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain subsections.</p>
+</div></blockquote>
+</li>
+<li><p><strong>chapter</strong>: node containing the text of law’s chapter header (“глава”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain chapters.</p>
+</div></blockquote>
+</li>
+<li><p><strong>paragraph</strong>: node containing the text of law’s paragraph header (§).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain paragraphs.</p>
+</div></blockquote>
+</li>
+<li><p><strong>article</strong>: node containing the text of law’s article header (“статья”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain articles.</p>
+</div></blockquote>
+</li>
+<li><p><strong>articlePart</strong>: node containing the text of law’s articlePart (digit dotted lists).</p>
+<blockquote>
+<div><p>The text of this node consists only of numeration, e.g. “1.”.
+The rest of the line’s text is located in the nested raw_text node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>item</strong>: node containing the text of law’s item (digit bracket lists).</p>
+<blockquote>
+<div><p>The text of this node consists only of numeration, e.g. “1)”.
+The rest of the line’s text is located in the nested raw_text node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>subitem</strong>: node containing the text of law’s subitem (letter bracket lists).</p>
+<blockquote>
+<div><p>The text of this node consists only of numeration, e.g. “a)”.
+The rest of the line’s text is located in the nested raw_text node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>cellar</strong>: node containing the text of law’s cellar.</p>
+<blockquote>
+<div><p>Cellar is situated after body node and contains the information about the legislature passing the law and the name of the person who signed it.</p>
+</div></blockquote>
+</li>
+<li><p><strong>application</strong>: node containing the text of law’s application header (starts with “приложение” or “утверждены”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain applications.</p>
+</div></blockquote>
+</li>
+<li><p><strong>raw_text</strong>: node referring to a simple document line.</p>
+<blockquote>
+<div><p>It has the least importance in the document tree hierarchy,
+so it is situated in the leaves of the tree.
+It is nested to the node corresponding the previous line with more important type.</p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="foiv-law-structure-type">
+<span id="foiv-law-structure"></span><h2>Foiv law structure type<a class="headerlink" href="#foiv-law-structure-type" title="Permalink to this heading"></a></h2>
+<p>You can see the <a class="reference download internal" download="" href="../_downloads/40d17f0eb0405b7a2c40c7e4a387160a/foiv_law.html"><code class="xref download docutils literal notranslate"><span class="pre">example</span></code></a> of the document of this structure type.</p>
+<dl class="simple">
+<dt>There are the following line types in the foiv law structure type:</dt><dd><ul class="simple">
+<li><p>root;</p></li>
+<li><p>body;</p></li>
+<li><p>chapter;</p></li>
+<li><p>item;</p></li>
+<li><p>subitem;</p></li>
+<li><p>cellar;</p></li>
+<li><p>application;</p></li>
+<li><p>raw_text.</p></li>
+</ul>
+</dd>
+</dl>
+<p>An exemplary format schema looks as follows:</p>
+<figure class="align-center" id="id2">
+<span id="foiv-law-schema"></span><a class="reference internal image-reference" href="../_images/foiv_law_schema.png"><img alt="../_images/foiv_law_schema.png" src="../_images/foiv_law_schema.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-text">An exemplary schema of the foiv law structure type</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The grey rectangles mean auxiliary nodes with empty text.
+The higher the rectangle is, the more important the node with this type is.</p>
+<dl>
+<dt>The detailed description of each line type:</dt><dd><ul>
+<li><p><strong>root</strong>: node containing the text of the document title.</p>
+<blockquote>
+<div><p>There is only one root node in any document.
+It is obligatory for any document of law type.
+All other document lines are children of the root node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>body</strong>: node containing the law content without cellar and applications.</p>
+<blockquote>
+<div><p>There is only one body node in any document.
+It is obligatory for any document of law type.</p>
+</div></blockquote>
+</li>
+<li><p><strong>chapter</strong>: node containing the text of law’s chapter header (“глава” or lines numbered by roman numbers).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain chapters.</p>
+</div></blockquote>
+</li>
+<li><p><strong>item</strong>: node containing the text of law’s item (digit dotted lists).</p>
+<blockquote>
+<div><p>The text of this node consists only of numeration, e.g. “1.”.
+The rest of the line’s text is located in the nested raw_text node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>subitem</strong>: node containing the text of law’s subitem (digit or letter bracket lists).</p>
+<blockquote>
+<div><p>The text of this node consists only of numeration, e.g. “1)”.
+The rest of the line’s text is located in the nested raw_text node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>cellar</strong>: node containing the text of law’s cellar.</p>
+<blockquote>
+<div><p>Cellar is situated after body node and contains the information about the legislature passing the law and the name of the person who signed it.</p>
+</div></blockquote>
+</li>
+<li><p><strong>application</strong>: node containing the text of law’s application header (starts with “приложение” or “утверждены”).</p>
+<blockquote>
+<div><p>This node type is optional, not all laws contain applications.</p>
+</div></blockquote>
+</li>
+<li><p><strong>raw_text</strong>: node referring to a simple document line.</p>
+<blockquote>
+<div><p>It has the least importance in the document tree hierarchy,
+so it is situated in the leaves of the tree.
+It is nested to the node corresponding the previous line with more important type.</p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="other.html" class="btn btn-neutral float-left" title="Default document structure type" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tz.html" class="btn btn-neutral float-right" title="Technical specification structure type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

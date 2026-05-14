@@ -2,5 +2,6 @@ var classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__
 [
     [ "__init__", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html#a80de3e0ff39a0f94d78325157630b804", null ],
     [ "predict", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html#ac50b24f4495eb3d7e4a13a3229b8147b", null ],
-    [ "config", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html#ac626cf10092c745d4660e0f1ebda3ddb", null ]
+    [ "config", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html#ac626cf10092c745d4660e0f1ebda3ddb", null ],
+    [ "logger", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d.html#a3d12b3d374e2373177cf9c44e59c3367", null ]
 ];

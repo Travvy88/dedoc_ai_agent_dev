@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.structure_constructors.concrete_structure_constructors.tree_constructor &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.structure_constructors.concrete_structure_constructors.tree_constructor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># region MODULE_CONTRACT [DOMAIN(10): DocumentProcessing, StructureConstruction; CONCEPT(9): HierarchicalTree, StructureAssembly; TECH(8): TreeNode, LexicographicCompare, ListInsertion]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Build a hierarchical (tree) document structure from lines with hierarchy levels — the primary structure representation that mirrors the document&#39;s logical sections.</span>
+<span class="c1">## @scope Tree construction from lines with hierarchy levels, list-item merging, multi-line header handling, metadata propagation.</span>
+<span class="c1">## @input UnstructuredDocument (lines with hierarchy levels, tables, metadata).</span>
+<span class="c1">## @output ParsedDocument with a tree structure rooted at the document title line(s).</span>
+<span class="c1">## @links [USES_API(9): AbstractStructureConstructor, TreeNode, DocumentContent, DocumentMetadata, LineWithMeta, HierarchyLevel]</span>
+<span class="c1">## @links_to_spec REQ-STR-004: A hierarchical tree structure must represent the document&#39;s logical sections.</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - Lines with hierarchy level (0, 0) are merged into the root node.</span>
+<span class="c1">## - Lines with line_type &quot;list_item&quot; get an auxiliary &quot;list&quot; parent line inserted above them.</span>
+<span class="c1">## - Tree node insertion follows lexicographic comparison of hierarchy levels.</span>
+<span class="c1">## - Multi-line headers with equal hierarchy levels are merged via add_text.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why insert auxiliary list lines instead of grouping list items directly?</span>
+<span class="c1">## A: Auxiliary list nodes ensure the tree structure remains regular — all children of a &quot;list&quot; node are naturally list items, simplifying traversal and rendering.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Semantic template markup and LDD logging added]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS 10[Hierarchical tree structure constructor] =&gt; TreeConstructor</span>
+<span class="c1">## METHOD 10[Assemble tree from document lines] =&gt; construct</span>
+<span class="c1">## METHOD 6[Separate document name lines (0,0) from content lines] =&gt; __get_document_name</span>
+<span class="c1">## METHOD 7[Insert auxiliary list nodes for list items] =&gt; __add_lists</span>
+<span class="c1">## METHOD 5[Create auxiliary list line with adjusted hierarchy] =&gt; __create_list_line</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [construct]: StructureExtractor → BuildHierarchicalTree → ProduceTreeParsedDocument</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: TreeConstructor, hierarchical tree, hierarchy levels, lexicographic, list items, multi-line headers, TreeNode, document structure</span>
+<span class="c1"># STRUCTURE: ▶ ┌lines┐ → ◇ __get_document_name: split (0,0) vs rest → __add_lists: insert aux list nodes → ○ Loop ∋line: 〈can_be_multiline ∧ hl_equal ? add_text : move_up + add_child〉 → merge_annotations → ⟦ParsedDocument⟧</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_with_meta</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithMeta</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.parsed_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">ParsedDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.unstructured_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.structure_constructors.abstract_structure_constructor</span><span class="w"> </span><span class="kn">import</span> <span class="n">AbstractStructureConstructor</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># region CLASS_TreeConstructor [DOMAIN(10): DocumentProcessing; CONCEPT(9): HierarchicalTree, StructureAssembly; TECH(8): TreeNode, LexicographicCompare, ListInsertion]</span>
+<span class="c1">## @purpose Build the primary hierarchical document structure: construct a tree from lines with hierarchy levels, merging headers, and inserting auxiliary list nodes.</span>
+<div class="viewcode-block" id="TreeConstructor"><a class="viewcode-back" href="../../../../modules/structure_constructors.html#dedoc.structure_constructors.TreeConstructor">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">TreeConstructor</span><span class="p">(</span><span class="n">AbstractStructureConstructor</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class is used to form a basic hierarchical document structure representation as a tree.</span>
+
+<span class="sd">    The structure is built according to the lines&#39; hierarchy levels and their types:</span>
+<span class="sd">        - lines with hierarchy level (0, 0) are merged and become a root of the document;</span>
+<span class="sd">        - lines with a type `list_item` become children of a new empty auxiliary node `list`;</span>
+<span class="sd">        - each line is added as a separate tree node in the document hierarchy according to its hierarchy level:</span>
+<span class="sd">            - if the level of the current line is less then the previous line level, the current line becomes its child;</span>
+<span class="sd">            - else the line becomes a child of the first line which have less hierarchy level that the current line has.</span>
+
+<span class="sd">    Hierarchy levels of the lines are compared lexicographically.</span>
+
+<span class="sd">    **Example:**</span>
+<span class="sd">        - **root line (0, 0)**</span>
+<span class="sd">            - **first child line (1, 0)**</span>
+<span class="sd">                - **line (2, 0)**</span>
+<span class="sd">                    - **line (2, 1)**</span>
+<span class="sd">                - **line (2, 0)**</span>
+<span class="sd">            - **second child line (1, 0)**</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># region METHOD_construct [DOMAIN(10): DocumentProcessing; CONCEPT(9): HierarchicalTree, StructureAssembly; TECH(8): TreeNode, LazyImport, TreeInsertion]</span>
+    <span class="c1">## @purpose Build the full hierarchical tree: extract document name, insert list auxiliary nodes, add lines with hierarchy-aware positioning, merge root.</span>
+    <span class="c1">## @uses TreeNode, DocumentContent, DocumentMetadata, __get_document_name, __add_lists</span>
+    <span class="c1">## @io UnstructuredDocument, Optional[dict] -&gt; ParsedDocument</span>
+    <span class="c1">## @complexity 8</span>
+<div class="viewcode-block" id="TreeConstructor.construct"><a class="viewcode-back" href="../../../../modules/structure_constructors.html#dedoc.structure_constructors.TreeConstructor.construct">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">document</span><span class="p">:</span> <span class="n">UnstructuredDocument</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ParsedDocument</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Build the tree structure representation for the given document intermediate representation.</span>
+<span class="sd">        To get the information about the parameters look at the documentation of :class:`~dedoc.structure_constructors.AbstractStructureConstructor`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.document_content</span><span class="w"> </span><span class="kn">import</span> <span class="n">DocumentContent</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.document_metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">DocumentMetadata</span>
+
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.tree_node</span><span class="w"> </span><span class="kn">import</span> <span class="n">TreeNode</span>
+
+        <span class="c1"># LDD-log: flow start</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:7][TreeConstructor][INIT] Building tree structure for </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">lines</span><span class="p">)</span><span class="si">}</span><span class="s2"> lines&quot;</span><span class="p">)</span>
+
+        <span class="n">document_name</span><span class="p">,</span> <span class="n">not_document_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_document_name</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">lines</span><span class="p">)</span>
+        <span class="c1"># LDD-log: split result</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][TreeConstructor][SPLIT] document_name_lines=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">document_name</span><span class="p">)</span><span class="si">}</span><span class="s2">, content_lines=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">not_document_name</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">not_document_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_lists</span><span class="p">(</span><span class="n">not_document_name</span><span class="p">)</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="n">TreeNode</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">document_name</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">not_document_name</span><span class="p">:</span>
+            <span class="n">hl_equal</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span> <span class="o">==</span> <span class="n">tree</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span>
+            <span class="n">line_type_equal</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">line_type</span> <span class="o">==</span> <span class="n">tree</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">line_type</span>
+
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">can_be_multiline</span> <span class="ow">and</span> <span class="n">hl_equal</span> <span class="ow">and</span> <span class="n">line_type_equal</span><span class="p">:</span>
+                <span class="c1"># LDD-log: multi-line header merge</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][TreeConstructor][MULTILINE] Merging line id=</span><span class="si">{</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">line_id</span><span class="si">}</span><span class="s2"> into current node&quot;</span><span class="p">)</span>
+                <span class="n">tree</span><span class="o">.</span><span class="n">add_text</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">while</span> <span class="n">tree</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span> <span class="o">&gt;=</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="p">:</span>
+                    <span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">parent</span>
+                <span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="n">line</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:3][TreeConstructor][ADD_CHILD] Added line id=</span><span class="si">{</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">line_id</span><span class="si">}</span><span class="s2"> hl=</span><span class="si">{</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">get_root</span><span class="p">()</span>
+        <span class="n">tree</span><span class="o">.</span><span class="n">merge_annotations</span><span class="p">()</span>
+        <span class="n">document_content</span> <span class="o">=</span> <span class="n">DocumentContent</span><span class="p">(</span><span class="n">tables</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">tables</span><span class="p">,</span> <span class="n">structure</span><span class="o">=</span><span class="n">tree</span><span class="p">)</span>
+        <span class="n">metadata</span> <span class="o">=</span> <span class="n">DocumentMetadata</span><span class="p">(</span><span class="o">**</span><span class="n">document</span><span class="o">.</span><span class="n">metadata</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">ParsedDocument</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">document_content</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="n">warnings</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">warnings</span><span class="p">)</span>
+
+        <span class="c1"># LDD-log: business result</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:9][TreeConstructor][RESULT] Tree structure built: root_node=</span><span class="si">{</span><span class="n">tree</span><span class="o">.</span><span class="n">node_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+    <span class="c1"># endregion METHOD_construct</span>
+
+    <span class="c1"># region METHOD___get_document_name [DOMAIN(6): DocumentProcessing; CONCEPT(6): LineClassification; TECH(4): ListFiltering]</span>
+    <span class="c1">## @purpose Separate lines with hierarchy level (0, 0) (document title/name) from all other content lines.</span>
+    <span class="c1">## @uses LineWithMeta</span>
+    <span class="c1">## @io List[LineWithMeta] -&gt; Tuple[List[LineWithMeta], List[LineWithMeta]]</span>
+    <span class="c1">## @complexity 3</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_document_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">]]:</span>
+        <span class="n">document_name</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">other_lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">level_1</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">level_2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">document_name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">other_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="c1"># LDD-log: classification result</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][TreeConstructor][GET_DOC_NAME] doc_name=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">document_name</span><span class="p">)</span><span class="si">}</span><span class="s2">, other=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">other_lines</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">document_name</span><span class="p">,</span> <span class="n">other_lines</span>
+    <span class="c1"># endregion METHOD___get_document_name</span>
+
+    <span class="c1"># region METHOD___add_lists [DOMAIN(7): DocumentProcessing; CONCEPT(7): ListDetection, AuxiliaryNodeInsertion; TECH(6): StackTracking, HierarchyCompare]</span>
+    <span class="c1">## @purpose Insert auxiliary &quot;list&quot; nodes before consecutive list-item lines that share the same hierarchy level.</span>
+    <span class="c1">## @uses LineWithMeta, __create_list_line, HierarchyLevel.is_list_item</span>
+    <span class="c1">## @io List[LineWithMeta] -&gt; List[LineWithMeta]</span>
+    <span class="c1">## @complexity 6</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__add_lists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">not_document_name</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">]:</span>
+        <span class="n">previous_hierarchy_levels</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">not_document_name</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">is_list_item</span><span class="p">():</span>
+                <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">previous_hierarchy_levels</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">previous_hierarchy_levels</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="p">:</span>
+                    <span class="n">previous_hierarchy_levels</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">previous_hierarchy_levels</span> <span class="o">==</span> <span class="p">[]</span> <span class="ow">or</span> <span class="n">previous_hierarchy_levels</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="p">:</span>
+                    <span class="n">list_line</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create_list_line</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                    <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">list_line</span><span class="p">)</span>
+                    <span class="n">previous_hierarchy_levels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="p">)</span>
+                    <span class="c1"># LDD-log: list node inserted</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:5][TreeConstructor][ADD_LIST] Inserted auxiliary list node for hl=</span><span class="si">{</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="ow">not</span> <span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">is_raw_text</span><span class="p">():</span>
+                <span class="n">previous_hierarchy_levels</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">res</span>
+    <span class="c1"># endregion METHOD___add_lists</span>
+
+    <span class="c1"># region METHOD___create_list_line [DOMAIN(5): DocumentProcessing; CONCEPT(5): AuxiliaryNodeFactory; TECH(5): HierarchyLevel, LineWithMeta]</span>
+    <span class="c1">## @purpose Create an auxiliary &quot;list&quot; line with adjusted hierarchy level (level_2 -= 0.5) to serve as a container for list-item children.</span>
+    <span class="c1">## @uses HierarchyLevel, LineMetadata, LineWithMeta</span>
+    <span class="c1">## @io LineWithMeta -&gt; LineWithMeta</span>
+    <span class="c1">## @complexity 3</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__create_list_line</span><span class="p">(</span><span class="n">line</span><span class="p">:</span> <span class="n">LineWithMeta</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LineWithMeta</span><span class="p">:</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.hierarchy_level</span><span class="w"> </span><span class="kn">import</span> <span class="n">HierarchyLevel</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_metadata</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineMetadata</span>
+
+        <span class="n">hierarchy_level</span> <span class="o">=</span> <span class="n">HierarchyLevel</span><span class="p">(</span>
+            <span class="n">level_1</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">level_1</span><span class="p">,</span>
+            <span class="n">level_2</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">hierarchy_level</span><span class="o">.</span><span class="n">level_2</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">,</span>
+            <span class="n">line_type</span><span class="o">=</span><span class="s2">&quot;list&quot;</span><span class="p">,</span>
+            <span class="n">can_be_multiline</span><span class="o">=</span><span class="kc">False</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">LineWithMeta</span><span class="p">(</span><span class="n">line</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                            <span class="n">metadata</span><span class="o">=</span><span class="n">LineMetadata</span><span class="p">(</span><span class="n">hierarchy_level</span><span class="o">=</span><span class="n">hierarchy_level</span><span class="p">,</span> <span class="n">page_id</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">page_id</span><span class="p">,</span> <span class="n">line_id</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">line_id</span><span class="p">),</span>
+                            <span class="n">annotations</span><span class="o">=</span><span class="p">[])</span></div>
+    <span class="c1"># endregion METHOD___create_list_line</span>
+<span class="c1"># endregion CLASS_TreeConstructor</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

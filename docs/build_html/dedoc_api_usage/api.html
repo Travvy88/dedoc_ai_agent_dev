@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using dedoc via API &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API schema" href="api_schema.html" />
+    <link rel="prev" title="Configure structure extraction using patterns" href="../tutorials/using_patterns.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using dedoc via API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#application-usage">Application usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-parameters-description">Api parameters description</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Using dedoc via API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/dedoc_api_usage/api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="using-dedoc-via-api">
+<span id="dedoc-api"></span><h1>Using dedoc via API<a class="headerlink" href="#using-dedoc-via-api" title="Permalink to this heading"></a></h1>
+<p>Dedoc can be used as a web application that runs on the <code class="docutils literal notranslate"><span class="pre">localhost:1231</span></code>.
+It’s possible to change the port via <code class="docutils literal notranslate"><span class="pre">config.py</span></code> file (if you clone the repository and run dedoc as a docker container).</p>
+<p>There are two ways to install and run dedoc as a web application:</p>
+<ol class="arabic">
+<li><p><a class="reference internal" href="../getting_started/installation.html#install-docker"><span class="std std-ref">Install and run dedoc using docker</span></a>.</p></li>
+<li><p><a class="reference internal" href="../getting_started/installation.html#install-pypi"><span class="std std-ref">Install dedoc using pip</span></a>. After installing library using this method you can run the application via the following command:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>dedoc<span class="w"> </span>-m<span class="w"> </span>main
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<section id="application-usage">
+<h2>Application usage<a class="headerlink" href="#application-usage" title="Permalink to this heading"></a></h2>
+<p>Once you run the dedoc application, you can go to <code class="docutils literal notranslate"><span class="pre">localhost:1231</span></code> and
+look to the main page with the information about dedoc.
+From this page you can go to the upload page and manually choose settings for the file parsing.
+Then you can get the result after pressing the <code class="docutils literal notranslate"><span class="pre">upload</span></code> button.</p>
+<p>If you want to use the application in your program,
+you can send requests e.g. using <a class="reference external" href="https://pypi.org/project/requests">requests</a> python library.
+Post-requests should be sent to <code class="docutils literal notranslate"><span class="pre">http://localhost:1231/upload</span></code>.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pdf_with_text_layer&quot;</span><span class="p">:</span> <span class="s2">&quot;auto_tabby&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;document_type&quot;</span><span class="p">:</span> <span class="s2">&quot;diploma&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;rus&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;need_pdf_table_analysis&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;need_header_footer_analysis&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;is_one_column_document&quot;</span><span class="p">:</span> <span class="s2">&quot;true&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;return_format&quot;</span><span class="p">:</span> <span class="s1">&#39;html&#39;</span>
+<span class="p">}</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;file&quot;</span><span class="p">:</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">file</span><span class="p">)}</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;http://localhost:1231/upload&quot;</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The <code class="docutils literal notranslate"><span class="pre">data</span></code> dictionary in the example contains some parameters to parse the given file.
+They are described in the section <a class="reference internal" href="#api-parameters"><span class="std std-ref">Api parameters description</span></a>.</p>
+</section>
+<section id="api-parameters-description">
+<span id="api-parameters"></span><h2>Api parameters description<a class="headerlink" href="#api-parameters-description" title="Permalink to this heading"></a></h2>
+<span id="table-parameters"></span><table class="tight-table docutils align-default" id="id1">
+<caption><span class="caption-text">Api parameters for files parsing via dedoc</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Values</p></th>
+<th class="head"><p>Default value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="4"><p> <strong>Type of document structure parsing</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>document_type</p></td>
+<td><p>other, law, tz, diploma, article, fintoc</p></td>
+<td><p>other</p></td>
+<td><p>Type of the document structure according to specific domain.</p>
+<p>The following parameters are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>other</strong> – structure for document of any domain (<a class="reference internal" href="../structure_types/other.html#other-structure"><span class="std std-ref">Default document structure type</span></a>);</p></li>
+<li><p><strong>law</strong> – Russian laws (<a class="reference internal" href="../structure_types/law.html#law-structure"><span class="std std-ref">Law structure type</span></a>);</p></li>
+<li><p><strong>tz</strong> – Russian technical specifications (<a class="reference internal" href="../structure_types/tz.html#tz-structure"><span class="std std-ref">Technical specification structure type</span></a>);</p></li>
+<li><p><strong>diploma</strong> – Russian thesis (<a class="reference internal" href="../structure_types/diploma.html#diploma-structure"><span class="std std-ref">Diploma structure type</span></a>);</p></li>
+<li><p><strong>article</strong> – scientific article (<a class="reference internal" href="../structure_types/article.html#article-structure"><span class="std std-ref">Article structure type (GROBID)</span></a>);</p></li>
+<li><p><strong>fintoc</strong> – English, French and Spanish financial prospects (<a class="reference internal" href="../structure_types/fintoc.html#fintoc-structure"><span class="std std-ref">FinTOC structure type</span></a>).</p></li>
+</ul>
+</div></blockquote>
+<p>This type is used for choosing a specific structure extractor (and, in some cases, a specific reader).</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>patterns</p></td>
+<td><p>list of patterns dictionaries converted to string</p></td>
+<td><p>None</p></td>
+<td><p>This parameter is used only when <code class="docutils literal notranslate"><span class="pre">document_type=&quot;other&quot;</span></code>.
+Configuration of default document structure, please see <a class="reference internal" href="../tutorials/using_patterns.html#using-patterns"><span class="std std-ref">Configure structure extraction using patterns</span></a> for more details.</p></td>
+</tr>
+<tr class="row-odd"><td><p>structure_type</p></td>
+<td><p>tree, linear</p></td>
+<td><p>tree</p></td>
+<td><p>The type of output document representation:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>tree</strong> – the document is represented as a hierarchical structure where nodes are document lines/paragraphs and child nodes have greater hierarchy level then parents according to the level found by structure extractor;</p></li>
+<li><p><strong>linear</strong> – the document is represented as a tree where the root is empty node, and all document lines are children of the root.</p></li>
+</ul>
+</div></blockquote>
+<p>This type is used for choosing a specific structure constructor after document structure extraction.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>return_format</p></td>
+<td><p>json, pretty_json, html, plain_text, tree</p></td>
+<td><p>json</p></td>
+<td><p>The output format of the result data.
+The document structure from a structure constructor (see <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.ParsedDocument" title="dedoc.data_structures.ParsedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a>)
+is transformed to one of the following formats:</p>
+<ul class="simple">
+<li><p><strong>json</strong> – simple json structure got via recursive transformation of <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.ParsedDocument" title="dedoc.data_structures.ParsedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a> into a dictionary, see <a class="reference internal" href="return_format.html#json-format"><span class="std std-ref">JSON output format</span></a> for examples;</p></li>
+<li><p><strong>pretty_json</strong> – prettified by adding indentation to the aforesaid json structure;</p></li>
+<li><p><strong>html</strong> – <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.ParsedDocument" title="dedoc.data_structures.ParsedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a> is transformed into html file with styles and headers according to the extracted annotations and structure;</p></li>
+<li><p><strong>plain_text</strong> – simple textual lines of the document;</p></li>
+<li><p><strong>tree</strong> – simple document tree representation in html format (useful for structure visualization).</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td colspan="4"><p> <strong>Attachments handling</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>with_attachments</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>The option to enable attached files extraction.
+Some documents can have attached files (attachments), e.g. images or videos.
+Dedoc allows to find attachments of the given file, get their metadata and save them in the directory where the given file is located.
+If the option is <code class="docutils literal notranslate"><span class="pre">false</span></code>, all attached files will be ignored.</p></td>
+</tr>
+<tr class="row-odd"><td><p>need_content_analysis</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>The option to enable file’s attachments parsing along with the given file.
+The content of the parsed attachments will be represented as <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.ParsedDocument" title="dedoc.data_structures.ParsedDocument"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParsedDocument</span></code></a>
+and saved in the specified return format in the <code class="docutils literal notranslate"><span class="pre">attachments</span></code> field (see <a class="reference internal" href="return_format.html#json-format"><span class="std std-ref">JSON output format</span></a> for examples).
+Use <code class="docutils literal notranslate"><span class="pre">true</span></code> value to enable this behaviour.</p></td>
+</tr>
+<tr class="row-even"><td><p>recursion_deep_attachments</p></td>
+<td><p>integer value &gt;= 0</p></td>
+<td><p>10</p></td>
+<td><p>If the attached files of the given file contain some attachments, they can also be extracted.
+The level of this recursion can be set via this parameter.</p></td>
+</tr>
+<tr class="row-odd"><td><p>return_base64</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>Attached files can be encoded in base64 and their contents will be saved instead of saving attached file on disk.
+The encoded contents will be saved in the attachment’s metadata in the <code class="docutils literal notranslate"><span class="pre">base64_encode</span></code> field.
+Use <code class="docutils literal notranslate"><span class="pre">true</span></code> value to enable this behaviour.</p></td>
+</tr>
+<tr class="row-even"><td colspan="4"><p> <strong>PDF handling</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>need_pdf_table_analysis</p></td>
+<td><p>true, false</p></td>
+<td><p>true</p></td>
+<td><p>This option is used for PDF documents which are images with text (PDF without a textual layer).
+It is also used for PDF documents when <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code>, <code class="docutils literal notranslate"><span class="pre">auto</span></code> or <code class="docutils literal notranslate"><span class="pre">auto_tabby</span></code>.
+Since costly table recognition methods are used to get tables, you may need to use <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=false</span></code>
+to increase parsing speed and get text without tables.
+If the document has a textual layer, it is recommended to use <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=tabby</span></code>,
+in this case tables will be parsed much easier and faster.</p></td>
+</tr>
+<tr class="row-even"><td><p>pdf_with_text_layer</p></td>
+<td><p>true, false, tabby, auto, auto_tabby, bad_encoding</p></td>
+<td><p>auto_tabby</p></td>
+<td><p>This option is used for choosing a specific reader of PDF documents.
+The following options are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>true</strong> – use this option if you are sure that the PDF file has a textual layer (its text is copiable).
+In this case tables will be parsed using table recognition method for documents without a textual layer
+(if you set <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=false</span></code> parsing will be faster but tables will be ignored).
+It is recommended to use <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=tabby</span></code> instead of <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=true</span></code>,
+but you can try this option as well.</p></li>
+<li><p><strong>false</strong> – this value forces to use PDF reader for scanned documents (images, PDF without a textual layer)
+even if the document has a textual layer (is copyable).
+It is highly recommended to use this option value if you are sure that documents for parsing
+are images or PDF without a textual layer, because this method is more costly in time and resources.</p></li>
+<li><p><strong>tabby</strong> – use this option if you are sure that the PDF file has a textual layer (its text is copiable).
+This option value forces to use PDF reader for documents with a textual layer only,
+it also allows to extract tables easily and quickly.
+The method enabled by this option is much faster than the method enabled by <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=true</span></code>.</p></li>
+<li><p><strong>auto</strong> – automatic detection of textual layer presence in the PDF document.
+If the document has a textual layer (is copyable), PDF document parsing works like with <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=true</span></code>.
+If the document doesn’t have a textual layer (it is an image, scanned document), PDF document parsing works like with <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=false</span></code>.
+It is recommended to use <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=auto_tabby</span></code> instead of <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=auto</span></code>,
+but you can try this option as well.</p></li>
+<li><p><strong>auto_tabby</strong> – automatic detection of textual layer presence in the PDF document.
+If the document has a textual layer (is copyable), PDF document parsing works like with <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=tabby</span></code>.
+If the document doesn’t have a textual layer (it is an image, scanned document), PDF document parsing works like with <code class="docutils literal notranslate"><span class="pre">need_pdf_table_analysis=false</span></code>.
+It is highly recommended to use this option value for any PDF document parsing.</p></li>
+<li><p><strong>bad_encoding</strong> – automatic correction of PDF with textual layer but broken encoding (for Russian and English languages).
+Use this option if you are sure that PDF file has a textual layer with broken encoding,
+i.e. its text is copyable, but incorrect (gibberish).
+Otherwise use <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer=auto_tabby</span></code>, because it’s faster and it will provide better results on usual PDF files.</p></li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>textual_layer_classifier</p></td>
+<td><p>ml, simple, letter</p></td>
+<td><p>ml</p></td>
+<td><p>Type of the classifier for textual layer detection. Works only when <strong>auto</strong> or <strong>auto_tabby</strong> is selected at <strong>pdf_with_text_layer</strong>.</p>
+<ul class="simple">
+<li><p><strong>ml</strong> – use ML textual layer classifier trained on heuristic features, works only for Russian and English languages.</p></li>
+<li><p><strong>simple</strong> – if any text is detected in a PDF file, Dedoc assumes that textual layer is detected and it is correct. Much faster but less accurate.</p></li>
+<li><p><strong>letter</strong> – textual layer is considered as correct if percent of letters in the text &gt; 50%.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td><p>each_page_textual_layer_detection</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>Enable textual layer detection separately on each document page. Works only when <strong>auto</strong> or <strong>auto_tabby</strong> is selected at <strong>pdf_with_text_layer</strong>.</p>
+<ul class="simple">
+<li><p><strong>true</strong> – classify text of each page if it’s correct or not. Classification algorythm depends on the <strong>fast_textual_layer_detection</strong> parameter. This option is recommended for PDF documents with scanned (or corrupted) pages in the middle.</p></li>
+<li><p><strong>false</strong> – classify text of only first 8 pages if it’s correct or not. First page is handled separately. Much faster but less accurate.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>need_gost_frame_analysis</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>This option is used to enable GOST (Russian government standard) frame recognition for PDF documents or images.
+The GOST frame recognizer is used recognize and ignore GOST frame on images and PDF documents.</p></td>
+</tr>
+<tr class="row-even"><td><p>language</p></td>
+<td><p>rus, eng, rus+eng, fra, spa</p></td>
+<td><p>rus+eng</p></td>
+<td><p>Language of the parsed PDF document without a textual layer. The following values are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>rus</strong> – Russian;</p></li>
+<li><p><strong>eng</strong> – English;</p></li>
+<li><p><strong>rus+eng</strong> – both Russian and English;</p></li>
+<li><p><strong>fra</strong> – French (for fintoc structure type);</p></li>
+<li><p><strong>spa</strong> – Spanish (for fintoc structure type).</p></li>
+</ul>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ocr_engine</p></td>
+<td><p>tesseract</p></td>
+<td><p>tesseract</p></td>
+<td><p>The OCR engine used for text recognition in image-based PDF documents and scanned images.
+Currently the following engines are supported:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>tesseract</strong> — Tesseract OCR engine (default), uses pytesseract for text recognition.</p></li>
+</ul>
+</div></blockquote>
+<p>To add support for a new OCR engine see the tutorial <a class="reference internal" href="../tutorials/add_new_ocr_engine.html#add-ocr-engine"><span class="std std-ref">Adding support for a new OCR engine to Dedoc</span></a>.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>pages</p></td>
+<td><p>:, start:, :end, start:end</p></td>
+<td><p>:</p></td>
+<td><p>If you need to read a part of the PDF document, you can use page slice to define the reading range.
+If the range is set like <code class="docutils literal notranslate"><span class="pre">start_page:end_page</span></code>, document will be processed from <code class="docutils literal notranslate"><span class="pre">start_page</span></code> to <code class="docutils literal notranslate"><span class="pre">end_page</span></code>
+(<code class="docutils literal notranslate"><span class="pre">start_page</span></code> to <code class="docutils literal notranslate"><span class="pre">end_page</span></code> are included to the range).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>using <strong>:</strong> means reading all document pages;</p></li>
+<li><p>using empty <code class="docutils literal notranslate"><span class="pre">end</span></code> – <strong>start:</strong> (e.g. 5:) means reading the document from <code class="docutils literal notranslate"><span class="pre">start</span></code> up to the end of the document;</p></li>
+<li><p>using empty <code class="docutils literal notranslate"><span class="pre">start</span></code> – <strong>:end</strong> (e.g. :5) means reading the document from the beginning up to the <code class="docutils literal notranslate"><span class="pre">end</span></code> page;</p></li>
+<li><p>using <strong>start:end</strong> means reading document pages from <code class="docutils literal notranslate"><span class="pre">start</span></code> to <code class="docutils literal notranslate"><span class="pre">end</span></code> inclusively.</p></li>
+</ul>
+</div></blockquote>
+<p>If <code class="docutils literal notranslate"><span class="pre">start</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">end</span></code> or <code class="docutils literal notranslate"><span class="pre">start</span></code> &gt; the number of pages in the document, the empty document will be returned.
+If <code class="docutils literal notranslate"><span class="pre">end</span></code> &gt; the number of pages in the document, the document will be read up to its end.
+For example, if <code class="docutils literal notranslate"><span class="pre">1:3</span></code> is given, 1, 2 and 3 document pages will be processed.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>is_one_column_document</p></td>
+<td><p>true, false, auto</p></td>
+<td><p>auto</p></td>
+<td><p>This option is used to set the number of columns if the PDF document is without a textual layer in case it’s known beforehand.
+The following values are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>true</strong> – the document is single column;</p></li>
+<li><p><strong>false</strong> – the document is multi-column (two columns parsing is supported);</p></li>
+<li><p><strong>auto</strong> – automatic detection of the number of columns in the document.</p></li>
+</ul>
+</div></blockquote>
+<p>If you are not sure about the number of columns in the documents you need to parse, it is recommended to use <code class="docutils literal notranslate"><span class="pre">auto</span></code>.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>document_orientation</p></td>
+<td><p>auto, no_change</p></td>
+<td><p>auto</p></td>
+<td><p>This option is used to control document orientation analysis for PDF documents without a textual layer.
+The following values are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>auto</strong> – automatic detection of rotated document pages (rotation angle 0, 90, 180, 270 degrees) and rotation of document pages;</p></li>
+<li><p><strong>no_change</strong> – parse document pages as they are without rotated pages detection.</p></li>
+</ul>
+</div></blockquote>
+<p>If you are sure that the documents you need to parse consist of vertical (not rotated) pages, you can use <code class="docutils literal notranslate"><span class="pre">no_change</span></code>.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>need_header_footer_analysis</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>This option is used to <strong>remove</strong> headers and footers of PDF documents from the output result.
+If <code class="docutils literal notranslate"><span class="pre">need_header_footer_analysis=false</span></code>, header and footer lines will present in the output as well as all other document lines.
+The algorithm is implemented and described in the class <a class="reference internal" href="../modules/pdf_parsing.html#dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector" title="dedoc.readers.pdf_reader.utils.header_footers_analysis.HeaderFooterDetector"><code class="xref py py-class docutils literal notranslate"><span class="pre">HeaderFooterDetector</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>table_type</p></td>
+<td><p>“”, wo_external_bounds, one_cell_table, split_last_column and their combinaton</p></td>
+<td><p>“”</p></td>
+<td><p>Setting up the table recognition method. This option is used for PDF documents which are images with text (PDF without a textual layer).
+It is also used for PDF documents when <code class="docutils literal notranslate"><span class="pre">pdf_with_text_layer</span></code> is <code class="docutils literal notranslate"><span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code>, <code class="docutils literal notranslate"><span class="pre">auto</span></code> or <code class="docutils literal notranslate"><span class="pre">auto_tabby</span></code>.
+The value of the parameter specifies the type of tables for recognition,
+supported table types are described in <a class="reference internal" href="../modules/pdf_parsing.html#dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions" title="dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TableTypeAdditionalOptions</span></code></a>.
+You can use combination of values (for example, <code class="docutils literal notranslate"><span class="pre">wo_external_bounds+one_cell_table</span></code>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>need_binarization</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>This option is used to clean background (binarize) for pages of PDF documents without a textual layer.
+If the document’s background is heterogeneous, this option may help to improve the result of document text recognition.
+By default <code class="docutils literal notranslate"><span class="pre">need_binarization=false</span></code> because its usage may decrease the quality of the document page (and the recognised text on it).</p></td>
+</tr>
+<tr class="row-even"><td colspan="4"><p> <strong>Other formats handling</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>delimiter</p></td>
+<td><p>any string</p></td>
+<td><p>None</p></td>
+<td><p>A column separator for files in CSV and TSV format.
+By default “,” (comma) is used for CSV and “\t” (tabulation) for TSV.</p></td>
+</tr>
+<tr class="row-even"><td><p>encoding</p></td>
+<td><p>any string</p></td>
+<td><p>None</p></td>
+<td><p>The encoding of documents of textual formats like TXT, CSV, TSV.
+Look <a class="reference external" href="https://docs.python.org/3/library/codecs.html#encodings-and-unicode">here</a> to get the list of possible values for the <code class="docutils literal notranslate"><span class="pre">encoding</span></code> parameter.
+By default the encoding of the document is detected automatically.</p></td>
+</tr>
+<tr class="row-odd"><td><p>handle_invisible_table</p></td>
+<td><p>true, false</p></td>
+<td><p>false</p></td>
+<td><p>Handle tables without visible borders as tables for HTML documents.
+By default tables without visible borders are parsed as usual textual lines.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../tutorials/using_patterns.html" class="btn btn-neutral float-left" title="Configure structure extraction using patterns" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api_schema.html" class="btn btn-neutral float-right" title="API schema" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

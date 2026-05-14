@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changelog &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Check documentation" href="contributing/check_documentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#v2-7-unreleased">v2.7 (unreleased)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-6-1-2025-12-16">v2.6.1 (2025-12-16)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-6-2025-09-19">v2.6 (2025-09-19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-5-2025-09-05">v2.5 (2025-09-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-4-2025-07-28">v2.4 (2025-07-28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-3-2-2024-12-25">v2.3.2 (2024-12-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-3-1-2024-11-15">v2.3.1 (2024-11-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-3-2024-09-19">v2.3 (2024-09-19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-7-2024-08-16">v2.2.7 (2024-08-16)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-6-2024-07-22">v2.2.6 (2024-07-22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-5-2024-07-15">v2.2.5 (2024-07-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-4-2024-06-20">v2.2.4 (2024-06-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-3-2024-06-05">v2.2.3 (2024-06-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-2-2024-05-21">v2.2.2 (2024-05-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-1-2024-05-03">v2.2.1 (2024-05-03)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-2-2024-04-17">v2.2 (2024-04-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-1-1-2024-03-21">v2.1.1 (2024-03-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-1-2024-03-05">v2.1 (2024-03-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v2-0-2023-12-25">v2.0 (2023-12-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v1-1-1-2023-11-24">v1.1.1 (2023-11-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v1-1-0-2023-10-24">v1.1.0 (2023-10-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v1-0-2023-10-10">v1.0 (2023-10-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-11-2-2023-09-06">v0.11.2 (2023-09-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-11-1-2023-08-30">v0.11.1 (2023-08-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-11-0-2023-08-22">v0.11.0 (2023-08-22)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-10-0-2023-08-01">v0.10.0 (2023-08-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-9-2-2023-07-18">v0.9.2 (2023-07-18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-9-1-2023-07-05">v0.9.1 (2023-07-05)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v0-9-2023-06-26">v0.9 (2023-06-26)</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Changelog</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/changelog.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this heading"></a></h1>
+<section id="v2-7-unreleased">
+<h2>v2.7 (unreleased)<a class="headerlink" href="#v2-7-unreleased" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Added multi-engine OCR architecture (Strategy pattern) with abstract interface <code class="xref py py-class docutils literal notranslate"><span class="pre">OCREngineAbstract</span></code>.</p></li>
+<li><p>OCR engine selection via <code class="docutils literal notranslate"><span class="pre">ocr_engine</span></code> API parameter and library config (default <code class="docutils literal notranslate"><span class="pre">&quot;tesseract&quot;</span></code>).</p></li>
+<li><p>New flat <code class="xref py py-class docutils literal notranslate"><span class="pre">OCRResult</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">OCRLine</span></code>, and <code class="xref py py-class docutils literal notranslate"><span class="pre">OCRWord</span></code> dataclasses replace the legacy nested OcrPage hierarchy.</p></li>
+<li><p>Added tutorial for adding custom OCR engines (<a class="reference internal" href="tutorials/add_new_ocr_engine.html#add-ocr-engine"><span class="std std-ref">Adding support for a new OCR engine to Dedoc</span></a>).</p></li>
+</ul>
+</section>
+<section id="v2-6-1-2025-12-16">
+<h2>v2.6.1 (2025-12-16)<a class="headerlink" href="#v2-6-1-2025-12-16" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.6.1">v2.6.1</a></p>
+<ul class="simple">
+<li><p>Fixed some bugs in <cite>DocxReader</cite>.</p></li>
+<li><p>Replace outdated <cite>pylzma</cite> dependency by <cite>py7zr</cite>.</p></li>
+</ul>
+</section>
+<section id="v2-6-2025-09-19">
+<h2>v2.6 (2025-09-19)<a class="headerlink" href="#v2-6-2025-09-19" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.6">v2.6</a></p>
+<ul class="simple">
+<li><p>Improved table merge algorithm (added check on table layout) <cite>MultiPageTableExtractor</cite>.</p></li>
+<li><p>Improved header footer analysis <cite>HeaderFooterDetector</cite>.</p></li>
+<li><p>Added header footer analysis support in <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Added header footer analysis info (parameter <cite>need_header_footer_analysis</cite>) in documentation.</p></li>
+<li><p>Updated to python3.10.</p></li>
+<li><p>Updated to ubuntu22.04.</p></li>
+<li><p>Added <cite>Support and Contributing</cite> (project rules, how to build, how to develop) in documentation.</p></li>
+</ul>
+</section>
+<section id="v2-5-2025-09-05">
+<h2>v2.5 (2025-09-05)<a class="headerlink" href="#v2-5-2025-09-05" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.5">v2.5</a></p>
+<ul class="simple">
+<li><p>Added simple multilingual textual layer correctness classification based on letter percentage calculation (<cite>textual_layer_classifier=letter</cite>).</p></li>
+<li><p>Added a new parameter <cite>textual_layer_classifier = [simple, ml (default), letter]</cite>.</p></li>
+<li><p>Removed parameter <cite>fast_textual_layer_detection</cite>. Now it is a <cite>textual_layer_classifier=simple</cite>.</p></li>
+<li><p>Fixed bug with <cite>table_type=table_wo_external_bounds</cite> (fixed cv2.BoundingRect).</p></li>
+<li><p>Added parameter <cite>table_type</cite> and <cite>TableRecognition</cite> info into documentation.</p></li>
+</ul>
+</section>
+<section id="v2-4-2025-07-28">
+<h2>v2.4 (2025-07-28)<a class="headerlink" href="#v2-4-2025-07-28" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.4">v2.4</a></p>
+<ul class="simple">
+<li><p>Upgrade <cite>PyPDF2</cite> to <cite>pypdf&gt;4</cite> and fix bugs in attachments extraction from PDF files.</p></li>
+<li><p>Added <cite>each_page_textual_layer_detection</cite> parameter for textual layer detection on each page of PDF documents (for <cite>PdfAutoReader</cite>).</p></li>
+<li><p>Added <cite>ENABLE_CANCELLATION</cite> env variable for enabling/disabling parsing cancellation after client disconnection (enabled by default).</p></li>
+<li><p>Fixed location coordinates of attached images extracted by <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Added new reader <cite>PdfBrokenEncodingReader</cite> for PDF documents with textual layer but broken encoding (<cite>pdf_with_text_layer=bad_encoding</cite>).</p></li>
+</ul>
+</section>
+<section id="v2-3-2-2024-12-25">
+<h2>v2.3.2 (2024-12-25)<a class="headerlink" href="#v2-3-2-2024-12-25" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.3.2">v2.3.2</a></p>
+<ul class="simple">
+<li><p>Improve merging multi-page tables in <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Stop parsing after client disconnection (for API usage, see <a class="reference external" href="https://github.com/ispras/dedoc/issues/488">issue 488</a>).</p></li>
+</ul>
+</section>
+<section id="v2-3-1-2024-11-15">
+<h2>v2.3.1 (2024-11-15)<a class="headerlink" href="#v2-3-1-2024-11-15" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.3.1">v2.3.1</a></p>
+<ul class="simple">
+<li><p>Fix bug with bold lines in <cite>DocxReader</cite> (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/479">issue 479</a>).</p></li>
+<li><p>Upgraded requirements.txt (beautifulsoup4 to 4.12.3 version).</p></li>
+<li><p>Added support for external grobid (added support env variable <cite>GROBID_AUTH_KEY</cite> for “Authorization” in request header).</p></li>
+<li><p>Added GOST (Russian government standard) frame recognition in <cite>PdfTabbyReader</cite> (<cite>need_gost_frame_analysis</cite> parameter).</p></li>
+<li><p>Update documentation (added GOST frame recognition).</p></li>
+</ul>
+</section>
+<section id="v2-3-2024-09-19">
+<h2>v2.3 (2024-09-19)<a class="headerlink" href="#v2-3-2024-09-19" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.3">v2.3</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://t.me/dedoc_chat">Dedoc telegram chat</a> created.</p></li>
+<li><p>Added <cite>patterns</cite> parameter for configuring default structure type (<a class="reference internal" href="tutorials/using_patterns.html#using-patterns"><span class="std std-ref">Configure structure extraction using patterns</span></a>).</p></li>
+<li><p>Added notebooks with Dedoc usage <a class="reference internal" href="tutorials/notebooks.html#table-notebooks"><span class="std std-ref">Notebooks with Dedoc usage examples</span></a> (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/484">issue 484</a>).</p></li>
+<li><p>Fix bug <cite>OutOfMemoryError: Java heap space</cite> in <cite>PdfTabbyReader</cite> (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/489">issue 489</a>).</p></li>
+<li><p>Fix bug with numeration in <cite>DocxReader</cite> (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/494">issue 494</a>).</p></li>
+<li><p>Added GOST (Russian government standard) frame recognition in <cite>PdfImageReader</cite> and <cite>PdfTxtlayerReader</cite> (<cite>need_gost_frame_analysis</cite> parameter).</p></li>
+</ul>
+</section>
+<section id="v2-2-7-2024-08-16">
+<h2>v2.2.7 (2024-08-16)<a class="headerlink" href="#v2-2-7-2024-08-16" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.7">v2.2.7</a></p>
+<ul class="simple">
+<li><p>Fix bugs with <cite>start</cite>, <cite>end</cite> of <cite>BBoxAnnotation</cite> in <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Improve columns classification and orientation detection for PDF and images (<cite>is_one_column_document</cite> and <cite>document_orientation</cite> parameters).</p></li>
+<li><p>Upgrade <cite>docker</cite>: <cite>docker-compose</cite> is no longer supported, use <cite>docker compose</cite> instead.</p></li>
+<li><p>Fix bug of tables parsing in <cite>DocxReader</cite> (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/478">issue 478</a>).</p></li>
+<li><p>Added simple textual layer detection in <cite>PdfAutoReader</cite> (<cite>fast_textual_layer_detection</cite> parameter).</p></li>
+<li><p>Improve paragraph extraction from PDF documents and images.</p></li>
+<li><p>Retrain a classifier for diplomas (document_type=”diploma”) on a new dataset.</p></li>
+</ul>
+</section>
+<section id="v2-2-6-2024-07-22">
+<h2>v2.2.6 (2024-07-22)<a class="headerlink" href="#v2-2-6-2024-07-22" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.6">v2.2.6</a></p>
+<ul class="simple">
+<li><p>Upgrade dependencies: <cite>numpy&lt;2.0</cite> and <cite>dedoc-utils==0.3.7</cite>.</p></li>
+<li><p>Since this version, <cite>dedoc</cite> is supported by <a class="reference external" href="https://github.com/langchain-ai/langchain">langchain</a> (langchain-community&gt;=0.2.10).</p></li>
+</ul>
+</section>
+<section id="v2-2-5-2024-07-15">
+<h2>v2.2.5 (2024-07-15)<a class="headerlink" href="#v2-2-5-2024-07-15" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.5">v2.2.5</a></p>
+<ul class="simple">
+<li><p>Added internal functions and classes to support integration of Dedoc into <a class="reference external" href="https://github.com/langchain-ai/langchain">langchain</a></p></li>
+<li><p>Upgrade some dependencies, in particular, <cite>xgboost&gt;=1.6.0</cite>, <cite>pandas</cite>, <cite>pdfminer.six</cite></p></li>
+</ul>
+</section>
+<section id="v2-2-4-2024-06-20">
+<h2>v2.2.4 (2024-06-20)<a class="headerlink" href="#v2-2-4-2024-06-20" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.4">v2.2.4</a></p>
+<ul class="simple">
+<li><p>Show page division and page numbers in the HTML output representation (API usage, return_format=”html”).</p></li>
+<li><p>Make imports from dedoc library faster.</p></li>
+<li><p>Added tutorial how to add a new language to dedoc (not finished entirely).</p></li>
+<li><p>Added additional page_id metadata for multi-page nodes (structure_type=”tree” in API, <cite>TreeConstructor</cite> in the library).</p></li>
+<li><p>Updated OCR and orientation/columns classification benchmarks.</p></li>
+<li><p>Minor edits of <cite>README.md</cite>.</p></li>
+<li><p>Fixed empty cells handling in <cite>CSVReader</cite>.</p></li>
+<li><p>Fixed bounding boxes extraction for text in tables for <cite>PdfTabbyReader</cite>.</p></li>
+</ul>
+</section>
+<section id="v2-2-3-2024-06-05">
+<h2>v2.2.3 (2024-06-05)<a class="headerlink" href="#v2-2-3-2024-06-05" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.3">v2.2.3</a></p>
+<ul class="simple">
+<li><p>Show attached images and added ability to download attached files in the HTML output representation (API usage, return_format=”html”).</p></li>
+<li><p>Added hierarchy level information and annotations to <cite>PptxReader</cite>.</p></li>
+</ul>
+</section>
+<section id="v2-2-2-2024-05-21">
+<h2>v2.2.2 (2024-05-21)<a class="headerlink" href="#v2-2-2-2024-05-21" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.2">v2.2.2</a></p>
+<ul class="simple">
+<li><p>Added images extraction to <cite>ArticleReader</cite>.</p></li>
+<li><p>Added attachments and references to them in the HTML output representation (return_format=”html”).</p></li>
+<li><p>Fixed functionality of parameter <cite>need_content_analysis</cite>.</p></li>
+<li><p>Fixed <cite>CSVReader</cite> (exclude BOM character from the output).</p></li>
+<li><p>Added handling files with wrong extension or without extension to <cite>DedocManager</cite> (detect file type by its content).</p></li>
+<li><p>Update <cite>README.md</cite>.</p></li>
+</ul>
+</section>
+<section id="v2-2-1-2024-05-03">
+<h2>v2.2.1 (2024-05-03)<a class="headerlink" href="#v2-2-1-2024-05-03" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2.1">v2.2.1</a></p>
+<ul class="simple">
+<li><p>Added <cite>fintoc</cite> structure type for parsing financial prospects according to the <a class="reference external" href="https://wp.lancs.ac.uk/cfie/fintoc2022/">FinTOC 2022 Shared task</a> (<cite>FintocStructureExtractor</cite>).</p></li>
+<li><p>Fixed small bugs in <cite>ArticleReader</cite>: colspan for tables, keywords, sections numbering, etc.</p></li>
+<li><p>Added references to nodes and fixed small bugs in the HTML output representation (return_format=”html”).</p></li>
+<li><p>Removed <cite>other_fields</cite> from <cite>LineMetadata</cite> and <cite>DocumentMetadata</cite>.</p></li>
+<li><p>Update <cite>README.md</cite>.</p></li>
+</ul>
+</section>
+<section id="v2-2-2024-04-17">
+<h2>v2.2 (2024-04-17)<a class="headerlink" href="#v2-2-2024-04-17" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.2">v2.2</a></p>
+<ul class="simple">
+<li><p><cite>PdfTabbyReader</cite> improved: bugs fixes, speed increase of partial PDF extraction (with parameter <cite>pages</cite>).</p></li>
+<li><p>Added benchmarks for evaluation of PDF readers performance.</p></li>
+<li><p>Added <cite>ReferenceAnnotation</cite> class.</p></li>
+<li><p>Fixed bug in <cite>can_read</cite> method for all readers.</p></li>
+<li><p>Added <cite>article</cite> structure type for parsing scientific articles using <a class="reference external" href="https://grobid.readthedocs.io">GROBID</a> (<cite>ArticleReader</cite>, <cite>ArticleStructureExtractor</cite>).</p></li>
+</ul>
+</section>
+<section id="v2-1-1-2024-03-21">
+<h2>v2.1.1 (2024-03-21)<a class="headerlink" href="#v2-1-1-2024-03-21" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.1.1">v2.1.1</a></p>
+<ul class="simple">
+<li><p>Update <cite>README.md</cite>.</p></li>
+<li><p>Update table and time benchmarks.</p></li>
+<li><p>Re-label line-classifier datasets (law, tz, diploma, paragraphs datasets).</p></li>
+<li><p>Update tasker creators (for the labeling system).</p></li>
+<li><p>Fix HTML table parsing.</p></li>
+</ul>
+</section>
+<section id="v2-1-2024-03-05">
+<h2>v2.1 (2024-03-05)<a class="headerlink" href="#v2-1-2024-03-05" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.1">v2.1</a></p>
+<ul class="simple">
+<li><p>Custom loggers deleted (the common logger is used for all dedoc classes).</p></li>
+<li><p>Do not change the document image if it has a correct orientation (orientation correction function changed).</p></li>
+<li><p>Use only <cite>PdfTabbyReader</cite> during detection of a textual layer in PDF files.</p></li>
+<li><p>Code related to the labeling mode refactored and removed from the library package (it is located in the separate directory).</p></li>
+<li><p>Added <cite>BoldAnnotation</cite> for words in <cite>PdfImageReader</cite>.</p></li>
+<li><p>More benchmarks are added: images of tables parsing, postprocessing of Tesseract OCR.</p></li>
+<li><p>Some fixes are made in a web-form of Dedoc.</p></li>
+<li><p>Tutorial how to add a new structure type to Dedoc added.</p></li>
+<li><p>Parsing of EML and HTML files fixed.</p></li>
+</ul>
+</section>
+<section id="v2-0-2023-12-25">
+<h2>v2.0 (2023-12-25)<a class="headerlink" href="#v2-0-2023-12-25" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v2.0">v2.0</a></p>
+<ul class="simple">
+<li><p>Fix table extraction from PDF using empty config (see <a class="reference external" href="https://github.com/ispras/dedoc/issues/373">issue</a>).</p></li>
+<li><p>Add more benchmarks for Tesseract.</p></li>
+<li><p>Fix extension extraction for file names with several dots.</p></li>
+<li><p>Change names of some methods and their parameters for all main classes (attachments extractors, converters, readers, metadata extractors, structure extractors, structure constructors).
+Please look to the <cite>Package reference</cite> of <a class="reference external" href="https://dedoc.readthedocs.io">documentation</a> for more details.</p></li>
+<li><p>Add <cite>AttachAnnotation</cite> and <cite>TableAnnotation</cite> to <cite>PPTX</cite> (see <a class="reference external" href="https://github.com/ispras/dedoc/discussions/386">discussion</a>).</p></li>
+<li><p>Fix bugs in <cite>DOCX</cite> handling (see issues <a class="reference external" href="https://github.com/ispras/dedoc/issues/378">378</a>, <a class="reference external" href="https://github.com/ispras/dedoc/issues/379">379</a></p></li>
+</ul>
+</section>
+<section id="v1-1-1-2023-11-24">
+<h2>v1.1.1 (2023-11-24)<a class="headerlink" href="#v1-1-1-2023-11-24" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v1.1.1">v1.1.1</a></p>
+<ul class="simple">
+<li><p>Use older <cite>pydantic</cite> version for improving compatibility with other libraries.</p></li>
+<li><p>Add support for <cite>RTF</cite> format.</p></li>
+<li><p>Fix bug in handling files’ names with dots and spaces.</p></li>
+<li><p>Fix bug in non-integer values of text formatting in <cite>DocxReader</cite>.</p></li>
+<li><p>Add support of <cite>on_gpu</cite> parameter in <cite>config</cite>.</p></li>
+<li><p>Add attached images extraction for <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Fix partial file reading for <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Add tutorial how to create dedoc’s basic data structures.</p></li>
+<li><p>Fix <cite>attachments_dir</cite> parameter for readers and attachments extractors.</p></li>
+</ul>
+</section>
+<section id="v1-1-0-2023-10-24">
+<h2>v1.1.0 (2023-10-24)<a class="headerlink" href="#v1-1-0-2023-10-24" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v1.1.0">v1.1.0</a></p>
+<ul class="simple">
+<li><p>Add <cite>BBoxAnnotation</cite> to table cells for <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Fix swagger, add api schema classes, remove <cite>to_dict</cite> method from <cite>ParsedDocument</cite>.</p></li>
+<li><p>Improve parsing PDF by <cite>PdfTxtlayerReader</cite>, add benchmarks.</p></li>
+<li><p>Fix <cite>BBoxAnnotation</cite> extraction for tables in <cite>PdfImageReader</cite> using <cite>table_type=split_last_column</cite> parameter.</p></li>
+<li><p>Change base method of metadata extractors, rename it to <cite>extract_metadata</cite>.</p></li>
+<li><p>Unify <cite>BBoxAnnotation</cite> extraction for all PDF readers - return only words bboxes.</p></li>
+<li><p>Increase timeout value for all converters.</p></li>
+</ul>
+</section>
+<section id="v1-0-2023-10-10">
+<h2>v1.0 (2023-10-10)<a class="headerlink" href="#v1-0-2023-10-10" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v1.0">v1.0</a></p>
+<ul class="simple">
+<li><p>Remove <cite>is_one_column_document_list</cite> parameter.</p></li>
+<li><p>Add tutorial about support for a new document type to the documentation.</p></li>
+<li><p>Improve textual layer correctness classifier.</p></li>
+<li><p>Improve orientation and columns classifier.</p></li>
+<li><p>Change table’s output structure - added <cite>CellWithMeta</cite> instead of a textual string.</p></li>
+<li><p>Add <cite>BBoxAnnotation</cite> to table cells for <cite>PdfTxtlayerReader</cite> and <cite>PdfImageReader</cite>.</p></li>
+<li><p>Add <cite>ConfidenceAnnotation</cite> to table cells for <cite>PdfImageReader</cite>.</p></li>
+<li><p>Remove <cite>insert_table</cite> parameter.</p></li>
+<li><p>Added information about table and page rotation to the table and document metadata respectively.</p></li>
+<li><p>Use <a class="reference external" href="https://pypi.org/project/dedoc-utils">dedoc-utils</a> library for document images preprocessing.</p></li>
+<li><p>Change web interface, fix online-examples of document processing.</p></li>
+<li><p>Add comparison operator to <cite>LineWithMeta</cite>.</p></li>
+</ul>
+</section>
+<section id="v0-11-2-2023-09-06">
+<h2>v0.11.2 (2023-09-06)<a class="headerlink" href="#v0-11-2-2023-09-06" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.11.2">v0.11.2</a></p>
+<ul class="simple">
+<li><p>Remove plexus-utils-1.1.jar.</p></li>
+<li><p>Update installation documentation.</p></li>
+<li><p>Add documentation for Tesseract OCR installation.</p></li>
+<li><p>Add documentation for annotations.</p></li>
+<li><p>Add documentation for secure torch.</p></li>
+<li><p>Fix examples.</p></li>
+</ul>
+</section>
+<section id="v0-11-1-2023-08-30">
+<h2>v0.11.1 (2023-08-30)<a class="headerlink" href="#v0-11-1-2023-08-30" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.11.1">v0.11.1</a></p>
+<ul class="simple">
+<li><p>Add bbox annotations in <cite>PdfTabbyReader</cite>.</p></li>
+<li><p>Add bbox annotations for words in <cite>PdfTxtlayerReader</cite>.</p></li>
+<li><p>Add an option <cite>plain_text</cite> to the <cite>return_format</cite> parameter.</p></li>
+<li><p>Reduce size of the dedoc base image, move dockerfiles to the <a class="reference external" href="https://github.com/ispras/dedockerfiles">separate repository</a>.</p></li>
+<li><p>Refactor script for tesseract benchmarking.</p></li>
+<li><p>Make fixed dedoc dependencies as ranges.</p></li>
+<li><p>Add table cell properties in <cite>PdfTabbyReader</cite>.</p></li>
+</ul>
+</section>
+<section id="v0-11-0-2023-08-22">
+<h2>v0.11.0 (2023-08-22)<a class="headerlink" href="#v0-11-0-2023-08-22" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.11.0">v0.11.0</a></p>
+<ul class="simple">
+<li><p>Rename exceptions classes.</p></li>
+<li><p>Update style tests.</p></li>
+<li><p>Change <cite>ConfidenceAnnotation</cite> value range to <cite>[0, 1]</cite>.</p></li>
+<li><p>Add bbox annotations for words in <cite>PdfImageReader</cite>.</p></li>
+</ul>
+</section>
+<section id="v0-10-0-2023-08-01">
+<h2>v0.10.0 (2023-08-01)<a class="headerlink" href="#v0-10-0-2023-08-01" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.10.0">v0.10.0</a></p>
+<ul class="simple">
+<li><p>Add ConfidenceAnnotation annotation for PdfImageReader.</p></li>
+<li><p>Remove version parameter from metadata extractors, structure constructors and parsed document methods.</p></li>
+<li><p>Add version file and version resolving for the library.</p></li>
+<li><p>Add recursive handling of attachments.</p></li>
+<li><p>Add parameter for saving attachments in a custom directory.</p></li>
+<li><p>Remove dedoc threaded manager.</p></li>
+<li><p>Improve PdfAutoReader.</p></li>
+<li><p>Add temporary file name to DocumentMetadata.</p></li>
+</ul>
+</section>
+<section id="v0-9-2-2023-07-18">
+<h2>v0.9.2 (2023-07-18)<a class="headerlink" href="#v0-9-2-2023-07-18" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.9.2">v0.9.2</a></p>
+<ul class="simple">
+<li><p>Fix bug for diplomas with <cite>insert_table=true</cite>.</p></li>
+<li><p>Fix logging in PDF slicing.</p></li>
+<li><p>Make PdfAutoReader faster.</p></li>
+<li><p>Update bold classifier.</p></li>
+<li><p>Tests Refactoring.</p></li>
+<li><p>Fix bug in models downloading inside docker container.</p></li>
+</ul>
+</section>
+<section id="v0-9-1-2023-07-05">
+<h2>v0.9.1 (2023-07-05)<a class="headerlink" href="#v0-9-1-2023-07-05" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.9.1">v0.9.1</a></p>
+<ul class="simple">
+<li><p>Fixed bug with <cite>AttachAnnotation</cite> in docx: its value is equal attachment uid instead of file name.</p></li>
+</ul>
+</section>
+<section id="v0-9-2023-06-26">
+<h2>v0.9 (2023-06-26)<a class="headerlink" href="#v0-9-2023-06-26" title="Permalink to this heading"></a></h2>
+<p>Release note: <a class="reference external" href="https://github.com/ispras/dedoc/releases/tag/v0.9">v0.9</a></p>
+<ul class="simple">
+<li><p>Publication of the first version of dedoc library.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="contributing/check_documentation.html" class="btn btn-neutral float-left" title="Check documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

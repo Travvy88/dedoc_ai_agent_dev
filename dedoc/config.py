@@ -81,6 +81,8 @@ class Configuration(object):
                 # -------------------------------------------RECOGNIZE SETTINGS-----------------------------------------------------
                 # TESSERACT OCR confidence threshold ( values: [-1 - undefined;  0.0 : 100.0 % - confidence value)
                 ocr_conf_threshold=40.0,
+                # OCR engine name: "tesseract" (default), future: "easyocr", "paddleocr", etc.
+                ocr_engine="tesseract",
                 # max depth of document structure tree
                 recursion_deep_subparagraphs=30,
 

@@ -35,9 +35,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/config.py" line="101" column="1" bodyfile="dedoc/config.py" bodystart="101" bodyend="107"/>
-        <references refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="101" endline="107">dedoc.config.get_config</references>
-        <referencedby refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="101" endline="107">dedoc.config.get_config</referencedby>
+        <location file="dedoc/config.py" line="103" column="1" bodyfile="dedoc/config.py" bodystart="103" bodyend="109"/>
+        <references refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="103" endline="109">dedoc.config.get_config</references>
+        <referencedby refid="namespacededoc_1_1config_1ad718b99383071d6c2ee6126f2d2a2e02" compoundref="config_8py" startline="103" endline="109">dedoc.config.get_config</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespacededoc_1_1config_1a0623370a4bb42e30406b1c59866f1a98" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/config.py" line="128" column="1" bodyfile="dedoc/config.py" bodystart="128" bodyend="133"/>
+        <location file="dedoc/config.py" line="130" column="1" bodyfile="dedoc/config.py" bodystart="130" bodyend="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -3,6 +3,36 @@
   <compounddef id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder" kind="namespace" language="Python">
     <compoundname>dedoc::structure_extractors::hierarchy_level_builders::header_builder</compoundname>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder">dedoc::structure_extractors::hierarchy_level_builders::header_builder::header_hierarchy_level_builder</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1aeb9b8c09b01fe4d880be477917d058e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.header_builder._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.header_builder._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for header-based hierarchy level builder — assigns hierarchy levels to lines identified as section headers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for header_builder subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from header builder modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders" kindref="compound">dedoc.structure_extractors.hierarchy_level_builders</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Header levels are assigned based on typographic and positional features (font size, bold, indentation). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate header builder? A: Header detection relies on visual/metadata features distinct from content-based hierarchy (law, diploma, TOC). \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Header hierarchy]: DocumentLines → HeaderBuilder → HeaderLevels → StructuredDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/header_builder/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/header_builder/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

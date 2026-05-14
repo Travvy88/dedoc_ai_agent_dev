@@ -3,6 +3,23 @@
   <compounddef id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier" kind="namespace" language="Python">
     <compoundname>dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier</compoundname>
     <innerclass refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067" prot="public">dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier::AbstractPickledLineTypeClassifier</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_1a7d919f7e6d888402283fdea72d8fe04a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" line="15" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_1a5b12bdb69d56165b7930ca1209691d31" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -30,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" line="118" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" bodystart="118" bodyend="123"/>
+        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" line="120" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.py" bodystart="120" bodyend="125"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

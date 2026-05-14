@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespacededoc_1_1structure__extractor
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -104,7 +105,51 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e.html">law_structure_unit</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7300f6fc4a80ca36280b0be1e40e56af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit.html#a7300f6fc4a80ca36280b0be1e40e56af">_module_contract</a> ()</td></tr>
+<tr class="memdesc:a7300f6fc4a80ca36280b0be1e40e56af"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for law structure unit modules — data models and logic for atomic structural elements (articles, paragraphs, subparagraphs) in legal documents.  <br /></td></tr>
+<tr class="separator:a7300f6fc4a80ca36280b0be1e40e56af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7300f6fc4a80ca36280b0be1e40e56af" name="a7300f6fc4a80ca36280b0be1e40e56af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7300f6fc4a80ca36280b0be1e40e56af">&#9670;&#160;</a></span>_module_contract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit._module_contract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for law structure unit modules — data models and logic for atomic structural elements (articles, paragraphs, subparagraphs) in legal documents. </p>
+<p>\par \b Scope\/ \:  Package initialization for structure_unit subpackage within law_builders. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from structure unit modules. \par \b Links\/ \:  [USES_API(8): <a class="el" href="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders.html">dedoc.structure_extractors.hierarchy_level_builders.law_builders</a>] \par \b Invariants\/ \:</p>
+<ul>
+<li>Structure units represent the finest granularity of legal document hierarchy. \par \b Rationale\/ \:</li>
+</ul>
+<p>Q: Why a separate structure_unit package? A: Atomic legal structure units (article, paragraph, subparagraph, item) require dedicated data models reused across body and application builders. \par \b Changes\/ \:</p>
+<p>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</p>
+<p>\par \b Use Cases\/ \:</p>
+<ul>
+<li>[Structure unit]: LawLine → StructureUnit → LevelAssignment → HierarchyNode </li>
+</ul>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

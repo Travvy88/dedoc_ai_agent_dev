@@ -1,5 +1,6 @@
 var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor =
 [
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a9dc16992a38f3ca44d48471233427ac2", null ],
     [ "__create_features_name", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aaae2f4db78f9fcff4f8c72a486a96a92", null ],
     [ "_before_special_line", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a42040a0c8d15a32ef058036473fc4c2b", null ],
     [ "_can_be_prev_element", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a7f83a87aca3a2add2625bda9ebb085e8", null ],
@@ -22,5 +23,6 @@ var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extr
     [ "_start_regexp", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#a0a0e8b1a5a56d427fd609def3c639126", null ],
     [ "parameters", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#aadcf633163d20944734922090bae130c", null ],
     [ "prev_next_line_features", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ae6bbd6467aa4f4ae2f032d32d6a77f52", null ],
-    [ "transform", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ab4b859be1ed6c974b8a02a41303da75b", null ]
+    [ "transform", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ab4b859be1ed6c974b8a02a41303da75b", null ],
+    [ "logger", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor.html#ab21fa2b02b8547a402103648c1a8727b", null ]
 ];

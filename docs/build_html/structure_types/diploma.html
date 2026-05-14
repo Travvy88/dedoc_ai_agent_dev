@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diploma structure type &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Article structure type (GROBID)" href="article.html" />
+    <link rel="prev" title="Technical specification structure type" href="tz.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Diploma structure type</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/structure_types/diploma.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="diploma-structure-type">
+<span id="diploma-structure"></span><h1>Diploma structure type<a class="headerlink" href="#diploma-structure-type" title="Permalink to this heading"></a></h1>
+<p>This structure type is used for analysing student’s works (in Russian):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Course work (курсовая работа);</p></li>
+<li><p>Thesis for a bachelor degree (выпускная квалификационная работа, бакалаврская работа);</p></li>
+<li><p>Thesis for a master degree (магистерская диссертация).</p></li>
+</ul>
+</div></blockquote>
+<p>You can see the <a class="reference download internal" download="" href="../_downloads/3eb25af563ea1f60fc865cb18b58a154/diploma.docx"><code class="xref download docutils literal notranslate"><span class="pre">example</span></code></a> of the document of this structure type.</p>
+<p>As a rule, the documents of this type have docx (doc, rtf, odt etc.) or pdf format.
+Therefore, it is recommended to use this structure representation for documents of these formats.
+For parsing pdf documents the parameter pdf_with_text_layer=”auto_tabby” is recommended (see <a class="reference internal" href="../dedoc_api_usage/api.html#api-parameters"><span class="std std-ref">Api parameters description</span></a>).</p>
+<dl class="simple">
+<dt>There are the following line types in the diploma structure type:</dt><dd><ul class="simple">
+<li><p>root;</p></li>
+<li><p>body;</p></li>
+<li><p>named_item;</p></li>
+<li><p>toc;</p></li>
+<li><p>toc_item;</p></li>
+<li><p>list;</p></li>
+<li><p>list_item;</p></li>
+<li><p>raw_text;</p></li>
+<li><p>footnote;</p></li>
+<li><p>page_id.</p></li>
+</ul>
+</dd>
+</dl>
+<p>An exemplary format schema looks as follows:</p>
+<figure class="align-center" id="id1">
+<span id="diploma-schema"></span><a class="reference internal image-reference" href="../_images/diploma_schema.png"><img alt="../_images/diploma_schema.png" src="../_images/diploma_schema.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">An exemplary schema of the diploma structure type</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The grey rectangles mean auxiliary nodes with empty text.</p>
+<p>In the following description we will speak about the node depth inside the document tree as a node importance.
+The closer the node is to the document tree root, the more important it is.</p>
+<dl>
+<dt>The detailed description of each line type:</dt><dd><ul>
+<li><p><strong>root</strong>: node containing the text of the title page.</p>
+<blockquote>
+<div><p>There is only one root node in any document.
+It is obligatory for any document of diploma type.
+All other document lines are children of the root node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>body</strong>: node containing the rest of the document content.</p>
+<blockquote>
+<div><p>There is only one body node in any diploma document.
+It is obligatory for any document of diploma type.
+This is an auxiliary node with empty text, it is nested in the root node.
+All of the rest document lines (except root) are children of the body node.</p>
+</div></blockquote>
+</li>
+<li><p><strong>named_item</strong>: node with text of some header inside the document body.</p>
+<blockquote>
+<div><p>Document header is visually highlighted and may be present in the document TOC (Table of contents).
+The named_item nodes may be nested, i.e. have different importance.
+The named_item node is less important than root and body,
+named_item node with highest possible importance is equal to toc node, nested named_item nodes are less important.</p>
+</div></blockquote>
+</li>
+<li><p><strong>toc</strong>: header of the TOC (Table of contents).</p>
+<blockquote>
+<div><p>There is only one toc node in any diploma document.
+The node of this type contains text like “Содержание”.
+The toc node is less important than root and body,
+has the equal depth as named_item node with highest possible importance,
+and more important than the rest of the nodes.</p>
+</div></blockquote>
+</li>
+<li><p><strong>toc_item</strong>: one item of the Table of contents.</p>
+<blockquote>
+<div><p>It contains the header text and the page where it is located.
+All toc_item nodes are children of the toc node, i.e. are less important.</p>
+</div></blockquote>
+</li>
+<li><p><strong>list</strong>: auxiliary tree node for marking a list beginning.</p>
+<blockquote>
+<div><p>It is less important than the named_item, so it is nested to the node of this type.
+There is a difference between the importance of different list types,
+see <a class="reference internal" href="other.html#other-structure"><span class="std std-ref">Default document structure type</span></a> for more details.</p>
+</div></blockquote>
+</li>
+<li><p><strong>list_item</strong>: one item of some list.</p>
+<blockquote>
+<div><p>The role of this node is the same as in <a class="reference internal" href="other.html#other-structure"><span class="std std-ref">Default document structure type</span></a>.</p>
+</div></blockquote>
+</li>
+<li><p><strong>raw_text</strong>: node referring to a simple document line.</p>
+<blockquote>
+<div><p>The importance of a node with raw_text type is less than the importance
+of previous node with type body, named_item, toc, toc_item, list, list_item.
+In other cases, it is the same as the previous line has.</p>
+</div></blockquote>
+</li>
+<li><p><strong>footnote</strong>: node containing text of a document footnote/endnode.</p>
+<blockquote>
+<div><p>Footnotes are located in the end of a document page and
+there is a link between a footnote and some document line.
+They have the same importance as raw_text lines.
+<strong>In pdf documents footnotes are separate nodes with footnote type,
+but in the formats without strict page separation (docx, html, etc.)
+footnote’s text is stored in the annotation of the line referring to this footnote.</strong>
+The documentation of the class <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.LinkedTextAnnotation" title="dedoc.data_structures.LinkedTextAnnotation"><code class="xref py py-class docutils literal notranslate"><span class="pre">LinkedTextAnnotation</span></code></a> may be helpful.</p>
+</div></blockquote>
+</li>
+<li><p><strong>page_id</strong>: node containing the text with page number.</p>
+<blockquote>
+<div><p>Nodes of this type have the same importance as raw_text lines.
+<strong>In pdf documents page_id lines are separate nodes,
+but in the formats without strict page separation (docx, html, etc.) they are absent.</strong></p>
+</div></blockquote>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tz.html" class="btn btn-neutral float-left" title="Technical specification structure type" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="article.html" class="btn btn-neutral float-right" title="Article structure type (GROBID)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

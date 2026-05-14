@@ -35,7 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="dedoc/config.py" line="15" column="1" bodyfile="dedoc/config.py" bodystart="15" bodyend="-1"/>
-        <referencedby refid="classdedoc_1_1config_1_1Configuration_1af2987152c5357b915a11e231360e2d3c" compoundref="config_8py" startline="41" endline="92">dedoc.config.Configuration.get_config</referencedby>
+        <referencedby refid="classdedoc_1_1config_1_1Configuration_1af2987152c5357b915a11e231360e2d3c" compoundref="config_8py" startline="41" endline="94">dedoc.config.Configuration.get_config</referencedby>
         <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" compoundref="manager__config_8py" startline="181" endline="185">dedoc.manager_config.ConfigurationManager.get_config</referencedby>
         <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" compoundref="manager__config_8py" startline="167" endline="173">dedoc.manager_config.ConfigurationManager.init_config</referencedby>
       </memberdef>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/config.py" line="41" column="1" bodyfile="dedoc/config.py" bodystart="41" bodyend="92"/>
+        <location file="dedoc/config.py" line="41" column="1" bodyfile="dedoc/config.py" bodystart="41" bodyend="94"/>
         <references refid="classdedoc_1_1config_1_1Configuration_1a7db2b693c869582659e99980ae601210" compoundref="config_8py" startline="15">dedoc.config.Configuration.__config</references>
         <references refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1ae35d4650a27a757942f79b16c846159e" compoundref="manager__config_8py" startline="142">dedoc.manager_config.ConfigurationManager.__config</references>
       </memberdef>
@@ -115,7 +115,7 @@
         <label>object</label>
       </node>
     </collaborationgraph>
-    <location file="dedoc/config.py" line="9" column="1" bodyfile="dedoc/config.py" bodystart="9" bodyend="96"/>
+    <location file="dedoc/config.py" line="9" column="1" bodyfile="dedoc/config.py" bodystart="9" bodyend="98"/>
     <listofallmembers>
       <member refid="classdedoc_1_1config_1_1Configuration_1a7db2b693c869582659e99980ae601210" prot="private" virt="non-virtual"><scope>dedoc::config::Configuration</scope><name>__config</name></member>
       <member refid="classdedoc_1_1config_1_1Configuration_1ab7cddd64512e4136ea1f97ffeb450da4" prot="private" virt="non-virtual"><scope>dedoc::config::Configuration</scope><name>__instance</name></member>

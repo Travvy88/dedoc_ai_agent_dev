@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_line_extractor.py" line="84" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_line_extractor.py" bodystart="84" bodyend="89"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_line_extractor.py" line="82" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_line_extractor.py" bodystart="82" bodyend="87"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

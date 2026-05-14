@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview: module code &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Overview: module code</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>All modules for which code is available</h1>
+<ul><li><a href="dedoc/api/schema/annotation.html">dedoc.api.schema.annotation</a></li>
+<li><a href="dedoc/api/schema/cell_with_meta.html">dedoc.api.schema.cell_with_meta</a></li>
+<li><a href="dedoc/api/schema/document_content.html">dedoc.api.schema.document_content</a></li>
+<li><a href="dedoc/api/schema/document_metadata.html">dedoc.api.schema.document_metadata</a></li>
+<li><a href="dedoc/api/schema/line_metadata.html">dedoc.api.schema.line_metadata</a></li>
+<li><a href="dedoc/api/schema/line_with_meta.html">dedoc.api.schema.line_with_meta</a></li>
+<li><a href="dedoc/api/schema/parsed_document.html">dedoc.api.schema.parsed_document</a></li>
+<li><a href="dedoc/api/schema/table.html">dedoc.api.schema.table</a></li>
+<li><a href="dedoc/api/schema/table_metadata.html">dedoc.api.schema.table_metadata</a></li>
+<li><a href="dedoc/api/schema/tree_node.html">dedoc.api.schema.tree_node</a></li>
+<li><a href="dedoc/attachments_extractors/abstract_attachment_extractor.html">dedoc.attachments_extractors.abstract_attachment_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/abstract_office_attachments_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.abstract_office_attachments_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/docx_attachments_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.docx_attachments_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/excel_attachments_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.excel_attachments_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/json_attachment_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.json_attachment_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/pdf_attachments_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.pdf_attachments_extractor</a></li>
+<li><a href="dedoc/attachments_extractors/concrete_attachments_extractors/pptx_attachments_extractor.html">dedoc.attachments_extractors.concrete_attachments_extractors.pptx_attachments_extractor</a></li>
+<li><a href="dedoc/attachments_handler/attachments_handler.html">dedoc.attachments_handler.attachments_handler</a></li>
+<li><a href="dedoc/converters/concrete_converters/abstract_converter.html">dedoc.converters.concrete_converters.abstract_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/binary_converter.html">dedoc.converters.concrete_converters.binary_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/docx_converter.html">dedoc.converters.concrete_converters.docx_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/excel_converter.html">dedoc.converters.concrete_converters.excel_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/pdf_converter.html">dedoc.converters.concrete_converters.pdf_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/png_converter.html">dedoc.converters.concrete_converters.png_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/pptx_converter.html">dedoc.converters.concrete_converters.pptx_converter</a></li>
+<li><a href="dedoc/converters/concrete_converters/txt_converter.html">dedoc.converters.concrete_converters.txt_converter</a></li>
+<li><a href="dedoc/converters/converter_composition.html">dedoc.converters.converter_composition</a></li>
+<li><a href="dedoc/data_structures/annotation.html">dedoc.data_structures.annotation</a></li>
+<li><a href="dedoc/data_structures/attached_file.html">dedoc.data_structures.attached_file</a></li>
+<li><a href="dedoc/data_structures/cell_with_meta.html">dedoc.data_structures.cell_with_meta</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/alignment_annotation.html">dedoc.data_structures.concrete_annotations.alignment_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/attach_annotation.html">dedoc.data_structures.concrete_annotations.attach_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/bbox_annotation.html">dedoc.data_structures.concrete_annotations.bbox_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/bold_annotation.html">dedoc.data_structures.concrete_annotations.bold_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/color_annotation.html">dedoc.data_structures.concrete_annotations.color_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/confidence_annotation.html">dedoc.data_structures.concrete_annotations.confidence_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/indentation_annotation.html">dedoc.data_structures.concrete_annotations.indentation_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/italic_annotation.html">dedoc.data_structures.concrete_annotations.italic_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/linked_text_annotation.html">dedoc.data_structures.concrete_annotations.linked_text_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/reference_annotation.html">dedoc.data_structures.concrete_annotations.reference_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/size_annotation.html">dedoc.data_structures.concrete_annotations.size_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/spacing_annotation.html">dedoc.data_structures.concrete_annotations.spacing_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/strike_annotation.html">dedoc.data_structures.concrete_annotations.strike_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/style_annotation.html">dedoc.data_structures.concrete_annotations.style_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/subscript_annotation.html">dedoc.data_structures.concrete_annotations.subscript_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/superscript_annotation.html">dedoc.data_structures.concrete_annotations.superscript_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/table_annotation.html">dedoc.data_structures.concrete_annotations.table_annotation</a></li>
+<li><a href="dedoc/data_structures/concrete_annotations/underlined_annotation.html">dedoc.data_structures.concrete_annotations.underlined_annotation</a></li>
+<li><a href="dedoc/data_structures/document_content.html">dedoc.data_structures.document_content</a></li>
+<li><a href="dedoc/data_structures/document_metadata.html">dedoc.data_structures.document_metadata</a></li>
+<li><a href="dedoc/data_structures/hierarchy_level.html">dedoc.data_structures.hierarchy_level</a></li>
+<li><a href="dedoc/data_structures/line_metadata.html">dedoc.data_structures.line_metadata</a></li>
+<li><a href="dedoc/data_structures/line_with_meta.html">dedoc.data_structures.line_with_meta</a></li>
+<li><a href="dedoc/data_structures/parsed_document.html">dedoc.data_structures.parsed_document</a></li>
+<li><a href="dedoc/data_structures/serializable.html">dedoc.data_structures.serializable</a></li>
+<li><a href="dedoc/data_structures/table.html">dedoc.data_structures.table</a></li>
+<li><a href="dedoc/data_structures/table_metadata.html">dedoc.data_structures.table_metadata</a></li>
+<li><a href="dedoc/data_structures/tree_node.html">dedoc.data_structures.tree_node</a></li>
+<li><a href="dedoc/data_structures/unstructured_document.html">dedoc.data_structures.unstructured_document</a></li>
+<li><a href="dedoc/dedoc_manager.html">dedoc.dedoc_manager</a></li>
+<li><a href="dedoc/metadata_extractors/abstract_metadata_extractor.html">dedoc.metadata_extractors.abstract_metadata_extractor</a></li>
+<li><a href="dedoc/metadata_extractors/concrete_metadata_extractors/base_metadata_extractor.html">dedoc.metadata_extractors.concrete_metadata_extractors.base_metadata_extractor</a></li>
+<li><a href="dedoc/metadata_extractors/concrete_metadata_extractors/docx_metadata_extractor.html">dedoc.metadata_extractors.concrete_metadata_extractors.docx_metadata_extractor</a></li>
+<li><a href="dedoc/metadata_extractors/concrete_metadata_extractors/image_metadata_extractor.html">dedoc.metadata_extractors.concrete_metadata_extractors.image_metadata_extractor</a></li>
+<li><a href="dedoc/metadata_extractors/concrete_metadata_extractors/note_metadata_extarctor.html">dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor</a></li>
+<li><a href="dedoc/metadata_extractors/concrete_metadata_extractors/pdf_metadata_extractor.html">dedoc.metadata_extractors.concrete_metadata_extractors.pdf_metadata_extractor</a></li>
+<li><a href="dedoc/metadata_extractors/metadata_extractor_composition.html">dedoc.metadata_extractors.metadata_extractor_composition</a></li>
+<li><a href="dedoc/readers/archive_reader/archive_reader.html">dedoc.readers.archive_reader.archive_reader</a></li>
+<li><a href="dedoc/readers/article_reader/article_reader.html">dedoc.readers.article_reader.article_reader</a></li>
+<li><a href="dedoc/readers/base_reader.html">dedoc.readers.base_reader</a></li>
+<li><a href="dedoc/readers/csv_reader/csv_reader.html">dedoc.readers.csv_reader.csv_reader</a></li>
+<li><a href="dedoc/readers/docx_reader/docx_reader.html">dedoc.readers.docx_reader.docx_reader</a></li>
+<li><a href="dedoc/readers/email_reader/email_reader.html">dedoc.readers.email_reader.email_reader</a></li>
+<li><a href="dedoc/readers/excel_reader/excel_reader.html">dedoc.readers.excel_reader.excel_reader</a></li>
+<li><a href="dedoc/readers/html_reader/html_reader.html">dedoc.readers.html_reader.html_reader</a></li>
+<li><a href="dedoc/readers/json_reader/json_reader.html">dedoc.readers.json_reader.json_reader</a></li>
+<li><a href="dedoc/readers/mhtml_reader/mhtml_reader.html">dedoc.readers.mhtml_reader.mhtml_reader</a></li>
+<li><a href="dedoc/readers/note_reader/note_reader.html">dedoc.readers.note_reader.note_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/data_classes/tables/scantable.html">dedoc.readers.pdf_reader.data_classes.tables.scantable</a></li>
+<li><a href="dedoc/readers/pdf_reader/data_classes/tables/table_type.html">dedoc.readers.pdf_reader.data_classes.tables.table_type</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_auto_reader/pdf_auto_reader.html">dedoc.readers.pdf_reader.pdf_auto_reader.pdf_auto_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_base_reader.html">dedoc.readers.pdf_reader.pdf_base_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_image_reader/pdf_image_reader.html">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_image_reader/table_recognizer/table_recognizer.html">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_broken_encoding_reader.html">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_broken_encoding_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_tabby_reader.html">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/pdf_txtlayer_reader/pdf_txtlayer_reader.html">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_txtlayer_reader</a></li>
+<li><a href="dedoc/readers/pdf_reader/utils/header_footers_analysis.html">dedoc.readers.pdf_reader.utils.header_footers_analysis</a></li>
+<li><a href="dedoc/readers/pptx_reader/pptx_reader.html">dedoc.readers.pptx_reader.pptx_reader</a></li>
+<li><a href="dedoc/readers/reader_composition.html">dedoc.readers.reader_composition</a></li>
+<li><a href="dedoc/readers/txt_reader/raw_text_reader.html">dedoc.readers.txt_reader.raw_text_reader</a></li>
+<li><a href="dedoc/structure_constructors/abstract_structure_constructor.html">dedoc.structure_constructors.abstract_structure_constructor</a></li>
+<li><a href="dedoc/structure_constructors/concrete_structure_constructors/linear_constructor.html">dedoc.structure_constructors.concrete_structure_constructors.linear_constructor</a></li>
+<li><a href="dedoc/structure_constructors/concrete_structure_constructors/tree_constructor.html">dedoc.structure_constructors.concrete_structure_constructors.tree_constructor</a></li>
+<li><a href="dedoc/structure_constructors/structure_constructor_composition.html">dedoc.structure_constructors.structure_constructor_composition</a></li>
+<li><a href="dedoc/structure_extractors/abstract_structure_extractor.html">dedoc.structure_extractors.abstract_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/abstract_law_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.abstract_law_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/article_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.article_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/classifying_law_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/default_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.default_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/diploma_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.diploma_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/fintoc_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.fintoc_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/foiv_law_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.foiv_law_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/law_structure_excractor.html">dedoc.structure_extractors.concrete_structure_extractors.law_structure_excractor</a></li>
+<li><a href="dedoc/structure_extractors/concrete_structure_extractors/tz_structure_extractor.html">dedoc.structure_extractors.concrete_structure_extractors.tz_structure_extractor</a></li>
+<li><a href="dedoc/structure_extractors/feature_extractors/abstract_extractor.html">dedoc.structure_extractors.feature_extractors.abstract_extractor</a></li>
+<li><a href="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.html">dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier</a></li>
+<li><a href="dedoc/structure_extractors/line_type_classifiers/abstract_pickled_classifier.html">dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier</a></li>
+<li><a href="dedoc/structure_extractors/patterns/abstract_pattern.html">dedoc.structure_extractors.patterns.abstract_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/bracket_list_pattern.html">dedoc.structure_extractors.patterns.bracket_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/bracket_roman_list_pattern.html">dedoc.structure_extractors.patterns.bracket_roman_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/bullet_list_pattern.html">dedoc.structure_extractors.patterns.bullet_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/dotted_list_pattern.html">dedoc.structure_extractors.patterns.dotted_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/letter_list_pattern.html">dedoc.structure_extractors.patterns.letter_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/pattern_composition.html">dedoc.structure_extractors.patterns.pattern_composition</a></li>
+<li><a href="dedoc/structure_extractors/patterns/regexp_pattern.html">dedoc.structure_extractors.patterns.regexp_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/roman_list_pattern.html">dedoc.structure_extractors.patterns.roman_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/start_word_pattern.html">dedoc.structure_extractors.patterns.start_word_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/tag_header_pattern.html">dedoc.structure_extractors.patterns.tag_header_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/tag_list_pattern.html">dedoc.structure_extractors.patterns.tag_list_pattern</a></li>
+<li><a href="dedoc/structure_extractors/patterns/tag_pattern.html">dedoc.structure_extractors.patterns.tag_pattern</a></li>
+<li><a href="dedoc/structure_extractors/structure_extractor_composition.html">dedoc.structure_extractors.structure_extractor_composition</a></li>
+<li><a href="dedocutils/data_structures/bbox.html">dedocutils.data_structures.bbox</a></li>
+<li><a href="scripts/train/trainers/base_sklearn_line_classifier.html">scripts.train.trainers.base_sklearn_line_classifier</a></li>
+<li><a href="scripts/train/trainers/data_loader.html">scripts.train.trainers.data_loader</a></li>
+<li><a href="scripts/train/trainers/dataset.html">scripts.train.trainers.dataset</a></li>
+<li><a href="scripts/train/trainers/errors_saver.html">scripts.train.trainers.errors_saver</a></li>
+<li><a href="scripts/train/trainers/xgboost_line_classifier_trainer.html">scripts.train.trainers.xgboost_line_classifier_trainer</a></li>
+</ul>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -8,6 +8,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compos8c8faf816ce67a5ede7315f7505f75c4">dedoc::structure_extractors::hierarchy_level_builders::law_builders::composition_hierarchy_level_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1stub__hierarchy__level__builder">dedoc::structure_extractors::hierarchy_level_builders::law_builders::stub_hierarchy_level_builder</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1a522832de6264994b4b0fee345a083cbf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.law_builders._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for law-specific hierarchy builders — modules that construct hierarchical structure for legal documents (body, application, structure units). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for law_builders subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from law builder modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders" kindref="compound">dedoc.structure_extractors.hierarchy_level_builders</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Law builders handle legal document structural conventions (articles, chapters, parts, appendices). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a dedicated law_builders package? A: Legal documents have the most complex and varied hierarchical structures among supported document types. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Law hierarchy]: LawLines → LawBuilders → HierarchyLevels → StructuredLawDocument </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

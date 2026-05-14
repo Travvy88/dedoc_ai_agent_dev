@@ -9,6 +9,37 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder">dedoc::structure_extractors::hierarchy_level_builders::toc_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder">dedoc::structure_extractors::hierarchy_level_builders::tz_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg">dedoc::structure_extractors::hierarchy_level_builders::utils_reg</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1ae1d04c593da450eec8e54fffc4e2d36c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for hierarchy level builders — modules that assign hierarchical nesting levels to document lines based on document type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for hierarchy_level_builders subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from hierarchy builder modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors" kindref="compound">dedoc.structure_extractors</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>All builders produce a consistent level assignment per line.</para>
+</listitem><listitem><para>Builders are document-type-specific (law, diploma, TOC, TZ, headers). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a hierarchy builders subpackage? A: Hierarchy construction is the core structural inference step — isolating builders by document type keeps each strategy focused and testable. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Hierarchy building]: ClassifiedLines → HierarchyBuilder → LeveledLines → StructureConstructor </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/__init__.py" line="19" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/__init__.py" bodystart="19" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

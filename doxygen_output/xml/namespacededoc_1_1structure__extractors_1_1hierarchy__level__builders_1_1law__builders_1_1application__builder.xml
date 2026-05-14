@@ -5,6 +5,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6657e853bf5b4da9fbddc2379e9ab5d5">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::abstract_application_hierarchy_level_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applicc91da80132250ec793c7495a80397214">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_foiv_hierarchy_level_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1">dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::application_law_hierarchy_level_builder</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1application__builder_1a3882e2c98d5a4bdb36474f10e1a8cf76" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.application_builder._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for the law application section hierarchy builder — assigns levels to lines in the application/appendix portion of legal documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for application_builder subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from application builder modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders" kindref="compound">dedoc.structure_extractors.hierarchy_level_builders.law_builders</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Application hierarchy follows legal document appendix conventions. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate application builder? A: The application section of laws has a distinct structure (appendices, attachments) requiring dedicated hierarchy logic. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Application hierarchy]: LawLines → ApplicationBuilder → ApplicationLevels → StructuredLaw </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/application_builder/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

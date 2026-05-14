@@ -485,6 +485,9 @@ var annotated_dup =
               [ "ocr_cell_extractor", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor.html", [
                 [ "OCRCellExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor" ]
               ] ],
+              [ "ocr_engine", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine.html", [
+                [ "OCREngine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" ]
+              ] ],
               [ "ocr_line_extractor", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor.html", [
                 [ "OCRLineExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor" ]
               ] ],
@@ -507,6 +510,14 @@ var annotated_dup =
                 [ "ocr_word", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word.html", [
                   [ "OcrWord", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord" ]
                 ] ]
+              ] ],
+              [ "ocr_result", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result.html", [
+                [ "OCRLine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine" ],
+                [ "OCRResult", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" ],
+                [ "OCRWord", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord" ]
+              ] ],
+              [ "tesseract_engine", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine.html", [
+                [ "TesseractEngine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine.html", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine" ]
               ] ]
             ] ],
             [ "paragraph_extractor", "namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor.html", [

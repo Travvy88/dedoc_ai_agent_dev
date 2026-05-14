@@ -54,16 +54,52 @@ class PdfImageReader(PdfBaseReader):
                                                                                                        "scan_orientation_efficient_net_b0.pth"),
                                                                           config=self.config)
         self.binarizer = AdaptiveBinarizer()
-        self.ocr = OCRLineExtractor(config=self.config)
+        ocr_engine_name = self.config.get("ocr_engine", "tesseract")
+        if ocr_engine_name == "tesseract":
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
+            ocr_engine = TesseractOCREngine(config=self.config)
+        else:
+            raise ValueError(f"Unknown OCR engine: {ocr_engine_name}")
+        self._current_engine_name = ocr_engine_name
+        self.ocr_engine = ocr_engine
+        self.ocr = OCRLineExtractor(config=self.config, engine=ocr_engine)
+        self.table_recognizer.ocr_engine = ocr_engine
         self.page_number = None
 
     # region METHOD_read [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
     def read(self, file_path: str, parameters: Optional[dict] = None) -> UnstructuredDocument:
+        # BUG_FIX_CONTEXT: ocr_engine was only available via global config at startup. AC5 requires per-request engine selection via
+        # API parameter. This override checks parameters["ocr_engine"] before processing and swaps the engine if it differs
+        # from the currently active one, updating self.ocr_engine, self.ocr, and self.table_recognizer.ocr_engine.
+        self._set_ocr_engine_from_parameters(parameters)
         return super().read(file_path, parameters)
 
-    # region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # region METHOD__set_ocr_engine_from_parameters [DOMAIN(8): OCR; CONCEPT(7): EngineSelection; TECH(6): Python]
     # endregion METHOD_read
+    def _set_ocr_engine_from_parameters(self, parameters: Optional[dict] = None) -> None:
+        """
+        Check parameters dict for ocr_engine override and swap engine if it differs from the current one.
+        Updates self.ocr_engine, self.ocr, and self.table_recognizer.ocr_engine in sync.
+        """
+        ocr_engine_name = (parameters or {}).get("ocr_engine") or self.config.get("ocr_engine", "tesseract")
+        if ocr_engine_name == getattr(self, "_current_engine_name", None):
+            return
+        if ocr_engine_name == "tesseract":
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor import OCRLineExtractor
+            ocr_engine = TesseractOCREngine(config=self.config)
+            self._current_engine_name = "tesseract"
+            self.ocr_engine = ocr_engine
+            self.ocr = OCRLineExtractor(config=self.config, engine=ocr_engine)
+            self.table_recognizer.ocr_engine = ocr_engine
+            self.logger.debug(f"[IMP:7][PdfImageReader][SET_ENGINE] Switched OCR engine to '{ocr_engine_name}'")
+        else:
+            raise ValueError(f"Unknown OCR engine: {ocr_engine_name}")
+    # endregion METHOD__set_ocr_engine_from_parameters
+
+    # region METHOD__process_one_page [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
+    # endregion METHOD__set_ocr_engine_from_parameters
     def _process_one_page(self,
                           image: ndarray,
                           parameters: ParametersForParseDoc,
@@ -156,7 +192,7 @@ class PdfImageReader(PdfBaseReader):
 ## Q: Why is this reader separated from others?
 ## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
 ## @changes
-## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## LAST_CHANGE: [v1.1.0 – Added _set_ocr_engine_from_parameters for per-request OCR engine selection (AC5).]
 ## @modulemap
 ## CLASS [8][PdfImageReader reader/processor] => PdfImageReader
 ## @usecases

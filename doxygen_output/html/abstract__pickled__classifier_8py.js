@@ -1,5 +1,6 @@
 var abstract__pickled__classifier_8py =
 [
     [ "dedoc.structure_extractors.line_type_classifiers.abstract_pickled_classifier.AbstractPickledLineTypeClassifier", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067.html", "classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_5c3b2bf56774a27ca464c8467b297067" ],
-    [ "_module_contract", "abstract__pickled__classifier_8py.html#a5b12bdb69d56165b7930ca1209691d31", null ]
+    [ "_module_contract", "abstract__pickled__classifier_8py.html#a5b12bdb69d56165b7930ca1209691d31", null ],
+    [ "logger", "abstract__pickled__classifier_8py.html#a7d919f7e6d888402283fdea72d8fe04a", null ]
 ];

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ABC</basecompoundref>
+    <derivedcompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine</derivedcompoundref>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a4012a35ad1bb3fdb49b1dde53afbdc67" prot="protected" static="yes" mutable="no">
+        <type>dict</type>
+        <definition>dict dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine::_ocr_engine_registry</definition>
+        <argsstring></argsstring>
+        <name>_ocr_engine_registry</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine._ocr_engine_registry</qualifiedname>
+        <initializer>=  {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="64" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a492ea7c06fa9a895770b72197ed34c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kindref="compound">OCRResult</ref></type>
+        <definition> OCRResult dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine.recognize_page</definition>
+        <argsstring>(self, np.ndarray image, str language, int psm_mode)</argsstring>
+        <name>recognize_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine.recognize_page</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a39acb5acb2083a68f7fec2e1c89af56f">recognize_page</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psm_mode</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To recognize text from a full document page image, accepting a PSM mode hint for layout (3=multi-column, 4=single-column). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (image: np.ndarray, language: str, psm_mode: int) -&gt; OCRResult </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="50" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1ae7b7b599bbccd81bb1b4252fee6825d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kindref="compound">OCRResult</ref></type>
+        <definition> OCRResult dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine.recognize_cells</definition>
+        <argsstring>(self, np.ndarray image, str language)</argsstring>
+        <name>recognize_cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine.recognize_cells</qualifiedname>
+        <reimplementedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a5d2b12b4e444a2dfa300ee1b446dff84">recognize_cells</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To recognize text from a concatenated table cells image (analogous to <ndash/>psm 6 in Tesseract). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (image: np.ndarray, language: str) -&gt; OCRResult </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="58" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="58" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To define the contract that any OCR engine must fulfill: recognize a full page (with PSM/layout hint) and recognize table cells. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  abstract: image + language [+ psm_mode] -&gt; OCRResult </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="44" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="44" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a4012a35ad1bb3fdb49b1dde53afbdc67" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</scope><name>_ocr_engine_registry</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1ae7b7b599bbccd81bb1b4252fee6825d9" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</scope><name>recognize_cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a492ea7c06fa9a895770b72197ed34c5a" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</scope><name>recognize_page</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

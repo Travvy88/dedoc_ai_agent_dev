@@ -1,6 +1,6 @@
 var dir_3160db9c93224d4f27db381e87fc7111 =
 [
-    [ "__init__.py", "structure__extractors_2concrete__structure__extractors_2____init_____8py.html", null ],
+    [ "__init__.py", "structure__extractors_2concrete__structure__extractors_2____init_____8py.html", "structure__extractors_2concrete__structure__extractors_2____init_____8py" ],
     [ "abstract_law_structure_extractor.py", "abstract__law__structure__extractor_8py.html", "abstract__law__structure__extractor_8py" ],
     [ "article_structure_extractor.py", "article__structure__extractor_8py.html", "article__structure__extractor_8py" ],
     [ "classifying_law_structure_extractor.py", "classifying__law__structure__extractor_8py.html", "classifying__law__structure__extractor_8py" ],

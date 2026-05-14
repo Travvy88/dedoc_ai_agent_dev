@@ -8,6 +8,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier">dedoc::structure_extractors::line_type_classifiers::fintoc_classifier</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1law__classifier">dedoc::structure_extractors::line_type_classifiers::law_classifier</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1tz__classifier">dedoc::structure_extractors::line_type_classifiers::tz_classifier</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1aadac96e59351b7e081967e93f115dc36" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.line_type_classifiers._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.line_type_classifiers._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for line type classifiers — modules that classify each document line as a header, list item, table of contents entry, raw text, or other structural type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for line_type_classifiers subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from classifier modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors" kindref="compound">dedoc.structure_extractors.feature_extractors</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Every document line receives exactly one line type label. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate line type classifiers package? A: Line type classification is the first stage of the structure extraction pipeline; isolating it enables swapping classification strategies (rule-based vs ML). \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Line classification]: DocumentLine → LineTypeClassifier → LineTypeLabel → HierarchyBuilder </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/line_type_classifiers/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

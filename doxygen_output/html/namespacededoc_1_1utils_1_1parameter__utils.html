@@ -156,6 +156,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a017f9af2c6e949025eb9fbaf808b6ba2"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1utils_1_1parameter__utils.html#a017f9af2c6e949025eb9fbaf808b6ba2">get_param_attachments_dir</a> (Optional[dict] parameters, str file_path)</td></tr>
 <tr class="memdesc:a017f9af2c6e949025eb9fbaf808b6ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Purpose\/ \:  To resolve the attachments directory from user parameters or derive it from the input file path.  <br /></td></tr>
 <tr class="separator:a017f9af2c6e949025eb9fbaf808b6ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0e99464b8e4b85a32150bbb6da0337"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1utils_1_1parameter__utils.html#a0c0e99464b8e4b85a32150bbb6da0337">get_param_ocr_engine</a> (Optional[dict] parameters)</td></tr>
+<tr class="memdesc:a0c0e99464b8e4b85a32150bbb6da0337"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Purpose\/ \:  To extract the OCR engine name from user parameters, defaulting to "tesseract" for backward compatibility.  <br /></td></tr>
+<tr class="separator:a0c0e99464b8e4b85a32150bbb6da0337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -195,7 +198,7 @@ Variables</h2></td></tr>
 </ul>
 <p>Q: Why have individual getters instead of a generic config object? A: Explicit per-parameter functions provide type safety, documented defaults, and IDE autocomplete — critical for a large API surface. \par \b Changes\/ \:</p>
 <p>LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging] \par \b Module Map\/ \:</p>
-<p>FUNC 5[Bool value coercion] =&gt; get_bool_value FUNC 6[Dict bool param extractor] =&gt; get_bool_parameter FUNC 5[Language normalization] =&gt; get_param_language FUNC 4[Document type extractor] =&gt; get_param_document_type FUNC 5[With attachments flag] =&gt; get_param_with_attachments FUNC 5[Content analysis flag] =&gt; get_param_need_content_analysis FUNC 5[Header/footer analysis flag] =&gt; get_param_need_header_footers_analysis FUNC 5[PDF table analysis flag] =&gt; get_param_need_pdf_table_analysis FUNC 5[GOST frame analysis flag] =&gt; get_param_need_gost_frame_analysis FUNC 5[Binarization flag] =&gt; get_param_need_binarization FUNC 5[One column document flag] =&gt; get_param_is_one_column_document FUNC 4[Document orientation] =&gt; get_param_document_orientation FUNC 5[PDF text layer mode] =&gt; get_param_pdf_with_txt_layer FUNC 4[Table type] =&gt; get_param_table_type FUNC 7[Page slice parsing] =&gt; get_param_page_slice FUNC 6[GPU availability check] =&gt; get_param_gpu_available FUNC 6[Path parameter resolver] =&gt; get_path_param FUNC 6[Attachments dir resolver] =&gt; get_param_attachments_dir \par \b Use Cases\/ \:</p>
+<p>FUNC 5[Bool value coercion] =&gt; get_bool_value FUNC 6[Dict bool param extractor] =&gt; get_bool_parameter FUNC 5[Language normalization] =&gt; get_param_language FUNC 4[Document type extractor] =&gt; get_param_document_type FUNC 5[With attachments flag] =&gt; get_param_with_attachments FUNC 5[Content analysis flag] =&gt; get_param_need_content_analysis FUNC 5[Header/footer analysis flag] =&gt; get_param_need_header_footers_analysis FUNC 5[PDF table analysis flag] =&gt; get_param_need_pdf_table_analysis FUNC 5[GOST frame analysis flag] =&gt; get_param_need_gost_frame_analysis FUNC 5[Binarization flag] =&gt; get_param_need_binarization FUNC 5[One column document flag] =&gt; get_param_is_one_column_document FUNC 4[Document orientation] =&gt; get_param_document_orientation FUNC 5[PDF text layer mode] =&gt; get_param_pdf_with_txt_layer FUNC 4[Table type] =&gt; get_param_table_type FUNC 7[Page slice parsing] =&gt; get_param_page_slice FUNC 6[GPU availability check] =&gt; get_param_gpu_available FUNC 6[Path parameter resolver] =&gt; get_path_param FUNC 6[Attachments dir resolver] =&gt; get_param_attachments_dir FUNC 5[OCR engine name extractor] =&gt; get_param_ocr_engine \par \b Use Cases\/ \:</p>
 <ul>
 <li>[get_param_page_slice]: API → ParsePageRange → (first_page, last_page) tuple</li>
 <li>[get_param_gpu_available]: DedocManager → CheckGPU → Configuration updated </li>
@@ -519,6 +522,27 @@ Variables</h2></td></tr>
 
 <p>\par \b Purpose\/ \:  To extract the PDF table analysis flag, defaulting to True for table detection in PDF documents. </p>
 <p>\par \b I/O\/ \:  Optional[dict] -&gt; bool \par \b Complexity\/ \:  2 </p>
+
+</div>
+</div>
+<a id="a0c0e99464b8e4b85a32150bbb6da0337" name="a0c0e99464b8e4b85a32150bbb6da0337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c0e99464b8e4b85a32150bbb6da0337">&#9670;&#160;</a></span>get_param_ocr_engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str dedoc.utils.parameter_utils.get_param_ocr_engine </td>
+          <td>(</td>
+          <td class="paramtype">Optional[dict]&#160;</td>
+          <td class="paramname"><em>parameters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>\par \b Purpose\/ \:  To extract the OCR engine name from user parameters, defaulting to "tesseract" for backward compatibility. </p>
+<p>\par \b I/O\/ \:  Optional[dict] -&gt; str \par \b Complexity\/ \:  2 </p>
 
 </div>
 </div>

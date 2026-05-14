@@ -12,8 +12,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>body_builder,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>body_builder/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>LegalDocuments;<sp/>CONCEPT(9):<sp/>BodyStructure,<sp/>LawHierarchy;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>the<sp/>law<sp/>body<sp/>section<sp/>hierarchy<sp/>builder<sp/>—<sp/>assigns<sp/>levels<sp/>to<sp/>lines<sp/>in<sp/>the<sp/>main<sp/>body<sp/>portion<sp/>of<sp/>legal<sp/>documents.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>body_builder<sp/>subpackage.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>body<sp/>builder<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.structure_extractors.hierarchy_level_builders.law_builders]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Body<sp/>hierarchy<sp/>follows<sp/>legal<sp/>document<sp/>article/chapter/section<sp/>conventions.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>body<sp/>builder?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>The<sp/>main<sp/>body<sp/>of<sp/>laws<sp/>has<sp/>distinct<sp/>structural<sp/>patterns<sp/>(articles,<sp/>chapters,<sp/>parts)<sp/>different<sp/>from<sp/>appendices<sp/>and<sp/>other<sp/>document<sp/>types.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Body<sp/>hierarchy]:<sp/>LawLines<sp/>→<sp/>BodyBuilder<sp/>→<sp/>BodyLevels<sp/>→<sp/>StructuredLaw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder_1abd8d9768e04199c67ce8b810c09d9942" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder_1abd8d9768e04199c67ce8b810c09d9942" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>body_builder,<sp/>init,<sp/>structure_extractors,<sp/>law,<sp/>body,<sp/>article,<sp/>chapter,<sp/>legal<sp/>document</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>body_builder/__init__<sp/>→<sp/>⊕<sp/>import<sp/>body<sp/>builder<sp/>modules<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/body_builder/__init__.py"/>
   </compounddef>

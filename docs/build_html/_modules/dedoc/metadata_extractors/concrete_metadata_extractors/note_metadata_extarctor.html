@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.metadata_extractors.concrete_metadata_extractors.note_metadata_extarctor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing, MetadataExtraction; CONCEPT(6): NoteFormat, PickleDeserialization; TECH(6): PythonPickle]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose To extract metadata from .note.pickle documents — a custom serialized format containing author, file size, and timestamps stored as a pickled dictionary.</span>
+<span class="c1">## @scope Note (.note.pickle) file metadata extraction, pickle deserialization.</span>
+<span class="c1">## @input file_path via extract(), config with logger.</span>
+<span class="c1">## @output dict with keys: file_name, file_type (&quot;note&quot;), size, access_time, created_time, modified_time, author.</span>
+<span class="c1">## @links [USES_API(6): pickle.load, BadFileFormatError]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - can_extract checks for &quot;.note.pickle&quot; suffix (case-insensitive).</span>
+<span class="c1">## - On pickle deserialization failure, raises BadFileFormatError.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why override can_extract with a suffix check?</span>
+<span class="c1">## A: .note.pickle files have no standard MIME type and no consistent extension registry — suffix matching is the most reliable detection method.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 — Semantic template markup and LDD logging added.]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS 7[Note metadata extractor from .note.pickle files] =&gt; NoteMetadataExtractor</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [NoteMetadataExtractor]: MetadataExtractorComposition → DetectNotePickle → DeserializePickle → MetadataDict</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: note, pickle, metadata, author, deserialize, BadFileFormatError</span>
+<span class="c1"># STRUCTURE: ▶ CLASS NoteMetadataExtractor(ABC): ◇ can_extract ┌.note.pickle suffix?┐ → ⚡ extract ┌pickle.load → dict┐ → ⚡ BadFileFormatError on failure</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.common.exceptions.bad_file_error</span><span class="w"> </span><span class="kn">import</span> <span class="n">BadFileFormatError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.metadata_extractors.abstract_metadata_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">AbstractMetadataExtractor</span>
+
+
+<span class="c1"># region CLASS_NoteMetadataExtractor [DOMAIN(8): DocumentProcessing, MetadataExtraction; CONCEPT(6): NoteFormat, PickleDeserialization; TECH(6): PythonPickle]</span>
+<span class="c1">## @purpose To extract metadata from .note.pickle files by deserializing a pickled dictionary containing author, size, and timestamp fields.</span>
+<div class="viewcode-block" id="NoteMetadataExtractor"><a class="viewcode-back" href="../../../../modules/metadata_extractors.html#dedoc.metadata_extractors.NoteMetadataExtractor">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">NoteMetadataExtractor</span><span class="p">(</span><span class="n">AbstractMetadataExtractor</span><span class="p">):</span>
+    <span class="c1"># region METHOD_init [DOMAIN(6): Configuration; CONCEPT(5): Constructor; TECH(4): PythonDefaults]</span>
+    <span class="c1">## @purpose To instantiate the extractor — no format-specific registrations needed since .note.pickle has no standard MIME/extension.</span>
+    <span class="c1">## @uses None</span>
+    <span class="c1">## @io Optional[dict] -&gt; None</span>
+    <span class="c1">## @complexity 2</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;[IMP:4][NoteMetadataExtractor][INIT] Note metadata extractor initialized&quot;</span><span class="p">)</span>
+    <span class="c1"># endregion METHOD_init</span>
+
+    <span class="c1"># region METHOD_can_extract [DOMAIN(7): FormatMatching; CONCEPT(6): SuffixCheck; TECH(4): PythonStrings]</span>
+    <span class="c1">## @purpose To detect .note.pickle files by checking the converted filename suffix — no MIME or extension registry used.</span>
+    <span class="c1">## @uses AbstractMetadataExtractor._get_names</span>
+    <span class="c1">## @io str × Optional[str] × Optional[str] × Optional[dict] × Optional[str] × Optional[str] -&gt; bool</span>
+    <span class="c1">## @complexity 4</span>
+<div class="viewcode-block" id="NoteMetadataExtractor.can_extract"><a class="viewcode-back" href="../../../../modules/metadata_extractors.html#dedoc.metadata_extractors.NoteMetadataExtractor.can_extract">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">can_extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                    <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                    <span class="n">converted_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">original_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">mime</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">extension</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the document has .note.pickle extension.</span>
+<span class="sd">        Look to the :meth:`~dedoc.metadata_extractors.AbstractMetadataExtractor.can_extract` documentation to get the information about parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_dir</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_names</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span><span class="p">)</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">converted_filename</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.note.pickle&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:5][NoteMetadataExtractor][CAN_EXTRACT] File=</span><span class="si">{</span><span class="n">converted_filename</span><span class="si">}</span><span class="s2">, is_note_pickle=</span><span class="si">{</span><span class="n">matches</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">matches</span></div>
+    <span class="c1"># endregion METHOD_can_extract</span>
+
+    <span class="c1"># region METHOD_extract [DOMAIN(8): MetadataExtraction; CONCEPT(7): PickleDeserialization; TECH(6): PythonPickle]</span>
+    <span class="c1">## @purpose To deserialize a .note.pickle file and construct a metadata dictionary with author, file size, and timestamps.</span>
+    <span class="c1">## @uses pickle, os.path, BadFileFormatError</span>
+    <span class="c1">## @io str × Optional[str] × Optional[str] × Optional[dict] -&gt; dict</span>
+    <span class="c1">## @complexity 6</span>
+<div class="viewcode-block" id="NoteMetadataExtractor.extract"><a class="viewcode-back" href="../../../../modules/metadata_extractors.html#dedoc.metadata_extractors.NoteMetadataExtractor.extract">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                <span class="n">file_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+                <span class="n">converted_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">original_filename</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add the predefined list of metadata for the .note.pickle documents.</span>
+<span class="sd">        Look to the :meth:`~dedoc.metadata_extractors.AbstractMetadataExtractor.extract` documentation to get the information about parameters.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">pickle</span>
+
+        <span class="n">file_dir</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_names</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">,</span> <span class="n">original_filename</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">file_path_resolved</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_dir</span><span class="p">,</span> <span class="n">converted_filename</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:5][NoteMetadataExtractor][OPEN] Loading pickle file=</span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path_resolved</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path_resolved</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+                <span class="n">note_dict</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+
+            <span class="n">meta_info</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="n">original_filename</span><span class="p">,</span>
+                             <span class="n">file_type</span><span class="o">=</span><span class="s2">&quot;note&quot;</span><span class="p">,</span>
+                             <span class="n">size</span><span class="o">=</span><span class="n">note_dict</span><span class="p">[</span><span class="s2">&quot;size&quot;</span><span class="p">],</span>
+                             <span class="n">access_time</span><span class="o">=</span><span class="n">note_dict</span><span class="p">[</span><span class="s2">&quot;modified_time&quot;</span><span class="p">],</span>
+                             <span class="n">created_time</span><span class="o">=</span><span class="n">note_dict</span><span class="p">[</span><span class="s2">&quot;created_time&quot;</span><span class="p">],</span>
+                             <span class="n">modified_time</span><span class="o">=</span><span class="n">note_dict</span><span class="p">[</span><span class="s2">&quot;modified_time&quot;</span><span class="p">],</span>
+                             <span class="n">author</span><span class="o">=</span><span class="n">note_dict</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:9][NoteMetadataExtractor][RESULT] Metadata extracted: author=</span><span class="si">{</span><span class="n">meta_info</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">, size=</span><span class="si">{</span><span class="n">meta_info</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">meta_info</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:9][NoteMetadataExtractor][BROKEN] Bad note file: </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path_resolved</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">BadFileFormatError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bad note file:</span><span class="se">\n</span><span class="s2"> file_name = </span><span class="si">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">file_path_resolved</span><span class="p">)</span><span class="si">}</span><span class="s2">. Seems note-format is broken&quot;</span><span class="p">)</span></div></div>
+    <span class="c1"># endregion METHOD_extract</span>
+<span class="c1"># endregion CLASS_NoteMetadataExtractor</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

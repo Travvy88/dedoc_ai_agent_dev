@@ -250,7 +250,7 @@ def __paint_bounds(image: np.ndarray) -> np.ndarray:
     return image
 
 
-def detect_tables_by_contours(img: np.ndarray, language: str = "rus", table_type: str = "", *, config: dict) -> [TableTree, List[np.ndarray], float]:
+def detect_tables_by_contours(img: np.ndarray, language: str = "rus", table_type: str = "", *, config: dict, engine=None) -> [TableTree, List[np.ndarray], float]:
     """
     detecting contours and TreeTable with help contour analysis. TreeTable is
     :param img: input image
@@ -267,7 +267,7 @@ def detect_tables_by_contours(img: np.ndarray, language: str = "rus", table_type
 
         cv2.imwrite(os.path.join(get_path_param(config, "path_detect"), "img_draw_counters.jpg"), img)
 
-    tree_table.set_text_into_tree(tree=tree_table, src_image=image, language=language, config=config)
+    tree_table.set_text_into_tree(tree=tree_table, src_image=image, language=language, config=config, engine=engine)
 
     if config.get("debug_mode", False):
         tree_table.print_tree(depth=0)

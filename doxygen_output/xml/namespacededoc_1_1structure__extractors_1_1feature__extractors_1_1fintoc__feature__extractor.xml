@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/feature_extractors/fintoc_feature_extractor.py" line="229" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/fintoc_feature_extractor.py" bodystart="229" bodyend="234"/>
+        <location file="dedoc/structure_extractors/feature_extractors/fintoc_feature_extractor.py" line="231" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/fintoc_feature_extractor.py" bodystart="231" bodyend="236"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

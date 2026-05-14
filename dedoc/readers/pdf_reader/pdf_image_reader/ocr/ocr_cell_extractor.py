@@ -10,9 +10,8 @@ from dedoc.data_structures.concrete_annotations.bbox_annotation import BBoxAnnot
 from dedoc.data_structures.concrete_annotations.confidence_annotation import ConfidenceAnnotation
 from dedoc.data_structures.line_metadata import LineMetadata
 from dedoc.data_structures.line_with_meta import LineWithMeta
+from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract import OCREngineAbstract, OCRResult
 from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor import OCRLineExtractor
-from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page import OcrPage
-from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils import get_text_with_bbox_from_cells
 from dedoc.utils.image_utils import get_highest_pixel_frequency
 from dedoc.utils.parameter_utils import get_path_param
 
@@ -20,10 +19,13 @@ from dedoc.utils.parameter_utils import get_path_param
 # region CLASS_OCRCellExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class OCRCellExtractor:
     # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
-    def __init__(self, *, config: dict) -> None:
-        super().__init__()
+    def __init__(self, *, config: dict, engine: "OCREngineAbstract" = None) -> None:
         self.config = config
-        self.line_extractor = OCRLineExtractor(config=config)
+        if engine is None:
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
+            engine = TesseractOCREngine(config=config)
+        self.engine = engine
+        self.line_extractor = OCRLineExtractor(config=config, engine=engine)
         self.logger = config.get("logger", logging.getLogger())
 
     # region METHOD_get_cells_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
@@ -72,14 +74,14 @@ class OCRCellExtractor:
     # region METHOD___handle_one_batch [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD_get_cells_text
     def __handle_one_batch(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"], num_batch: int, language: str = "rus") \
-            -> Tuple[OcrPage, List[BBox]]:  # noqa
+            -> Tuple[OCRResult, List[BBox]]:  # noqa
         concatenated, chunk_boxes = self.__concat_images(src_image=src_image, tree_table_nodes=tree_table_nodes)
         if self.config.get("debug_mode", False):
             debug_dir = os.path.join(get_path_param(self.config, "path_debug"), "debug_tables", "batches")
             os.makedirs(debug_dir, exist_ok=True)
             image_path = os.path.join(debug_dir, f"stacked_batch_image_{num_batch}.png")
             cv2.imwrite(image_path, concatenated)
-        ocr_result = get_text_with_bbox_from_cells(concatenated, language, ocr_conf_threshold=0.0)
+        ocr_result = self.engine.recognize_cells(image=concatenated, language=language)
 
         return ocr_result, chunk_boxes
 
@@ -198,10 +200,9 @@ class OCRCellExtractor:
             bigger_cell = np.full((image.shape[0] + padding_px, image.shape[1] + padding_px, 3), color_backgr)
             bigger_cell[padding_px // 2:-padding_px // 2, padding_px // 2:-padding_px // 2, :] = image
 
-# endregion CLASS_OCRCellExtractor
         return bigger_cell, padding_px // 2
-
     # endregion METHOD_upscale
+# endregion CLASS_OCRCellExtractor
 
 
 # region MODULE_CONTRACT [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader_ocr_cell_extractor; TECH(6): Python, dedoc]
@@ -225,5 +226,5 @@ class OCRCellExtractor:
 def _module_contract():
     pass
 # endregion MODULE_CONTRACT
-# GREP_SUMMARY: ocr_cell_extractor, dedoc, reader, PDF, PdfReader, BaseReader, PDF, pdfminer, tabby, OCR, tables, image, txtlayer, columns, orientation, paragraphs, metadata, extraction, line, bbox, OCRCellExtractor
-# STRUCTURE: ▶ Init ┌PDF file┐ → [OCRCellExtractor] ○ can_read? → ○ read → [__init__ → get_cells_text → __handle_one_batch] → ⊕ UnstructuredDocument(lines, tables, attachments)
+# GREP_SUMMARY: ocr_cell_extractor, dedoc, reader, OCR, tables, image, OCRCellExtractor, OCREngineAbstract, DI, Strategy, cell extraction
+# STRUCTURE: ▶ Init ┌config + engine┐ → [OCRCellExtractor] ○ get_cells_text → __handle_one_batch → engine.recognize_cells() → ⊕ OCRResult → __create_lines_with_meta → ∑ List[List[LineWithMeta]]

@@ -12,10 +12,9 @@ from dedoc.data_structures.concrete_annotations.confidence_annotation import Con
 from dedoc.data_structures.line_with_meta import LineWithMeta
 from dedoc.readers.pdf_reader.data_classes.tables.cell import Cell
 from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor import OCRCellExtractor
-from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_utils import get_text_with_bbox_from_cells
 
 
-def split_last_column(matrix_table: List[List[Cell]], language: str, image: np.array) -> List[List[Cell]]:
+def split_last_column(matrix_table: List[List[Cell]], language: str, image: np.array, engine=None) -> List[List[Cell]]:
     """
                   A         B       C       D
             --------------------------------------
@@ -61,7 +60,7 @@ def split_last_column(matrix_table: List[List[Cell]], language: str, image: np.a
 
         if row_id == len(last_column) - 1 and len(union_cells) > 1 or cell.id_con != prev_cell.id_con and len(union_cells) > 1:
             result_matrix[start_union_cell:start_union_cell + len(union_cells)] = \
-                _split_each_row(union_cells, matrix_table[start_union_cell:start_union_cell + len(union_cells)], language=language, image=image)
+                _split_each_row(union_cells, matrix_table[start_union_cell:start_union_cell + len(union_cells)], language=language, image=image, engine=engine)
             union_cells = [cell]
             start_union_cell = -1
 
@@ -78,7 +77,7 @@ def split_last_column(matrix_table: List[List[Cell]], language: str, image: np.a
     return result_matrix
 
 
-def _split_each_row(union_cells: List[Cell], matrix_table: List[List[Cell]], language: str, image: np.array) -> List[List[Cell]]:
+def _split_each_row(union_cells: List[Cell], matrix_table: List[List[Cell]], language: str, image: np.array, engine=None) -> List[List[Cell]]:
     assert len(union_cells) == len(matrix_table)
     if len(matrix_table[0]) < 1:
         return matrix_table
@@ -113,7 +112,8 @@ def _split_each_row(union_cells: List[Cell], matrix_table: List[List[Cell]], lan
                     _split_row(cell_splitter=matrix_table[row_id][col_id],
                                union_cell=matrix_table[row_id][end_union_cell:start_union_cell + 1],
                                language=language,
-                               image=image)
+                               image=image,
+                               engine=engine)
 
                 union_cells = []
                 start_union_cell, end_union_cell = -1, -1
@@ -125,7 +125,7 @@ def _split_each_row(union_cells: List[Cell], matrix_table: List[List[Cell]], lan
     return result_matrix
 
 
-def _split_row(cell_splitter: Cell, union_cell: List[Cell], language: str, image: np.array) -> List[Cell]:
+def _split_row(cell_splitter: Cell, union_cell: List[Cell], language: str, image: np.array, engine=None) -> List[Cell]:
     if len(union_cell) == 0:
         return union_cell
 
@@ -152,16 +152,24 @@ def _split_row(cell_splitter: Cell, union_cell: List[Cell], language: str, image
         result_row[col_id].lines = __get_ocr_lines(cell_image, language, page_image=image,
                                                    cell_bbox=BBox(x_top_left=x_left, y_top_left=y_top_split,
                                                                   width=x_right - x_left, height=y_bottom_split - y_top_split),
-                                                   padding_cell_value=padding_value)
+                                                   padding_cell_value=padding_value,
+                                                   engine=engine)
 
         col_id -= 1
 
     return result_row
 
 
-def __get_ocr_lines(cell_image: np.ndarray, language: str, page_image: np.ndarray, cell_bbox: BBox, padding_cell_value: int) -> List[LineWithMeta]:
+def __get_ocr_lines(cell_image: np.ndarray, language: str, page_image: np.ndarray, cell_bbox: BBox, padding_cell_value: int, engine=None) -> List[LineWithMeta]:
 
-    ocr_result = get_text_with_bbox_from_cells(cell_image, language)
+    # BUG_FIX_CONTEXT: pass config={} as fallback when no engine provided via DI chain.
+    # TesseractOCREngine defaults ocr_conf_threshold to 40.0, but recognize_cells() overrides to 0.0 —
+    # so empty config is safe for now. Consider propagating real config through the table pipeline in future.
+    if engine is None:
+        from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
+        engine = TesseractOCREngine(config={})
+
+    ocr_result = engine.recognize_cells(image=cell_image, language=language)
     cell_lines = []
     for line in list(ocr_result.lines):
         text_line = OCRCellExtractor.get_line_with_meta("")

@@ -32,7 +32,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="dedoc/api/api_args.py" line="42" column="1" bodyfile="dedoc/api/api_args.py" bodystart="42" bodyend="-1"/>
-        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1adcf7a61cb8a9f14cc905cf8c328e051f" compoundref="pattern__composition_8py" startline="56" endline="73">dedoc.structure_extractors.patterns.pattern_composition.PatternComposition.get_hierarchy_level</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1adcf7a61cb8a9f14cc905cf8c328e051f" compoundref="pattern__composition_8py" startline="57" endline="74">dedoc.structure_extractors.patterns.pattern_composition.PatternComposition.get_hierarchy_level</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a81656c911c1b834069f8512beb6563c9" prot="public" static="yes" mutable="no">
         <type>str</type>
@@ -373,6 +373,21 @@
         </inbodydescription>
         <location file="dedoc/api/api_args.py" line="77" column="1" bodyfile="dedoc/api/api_args.py" bodystart="77" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1aa11b281b9bd5220bbeda30266bf8df4e" prot="public" static="yes" mutable="no">
+        <type>str</type>
+        <definition>str dedoc.api.api_args.QueryParameters::ocr_engine</definition>
+        <argsstring></argsstring>
+        <name>ocr_engine</name>
+        <qualifiedname>dedoc.api.api_args.QueryParameters.ocr_engine</qualifiedname>
+        <initializer>=  Form(&quot;tesseract&quot;, description=&quot;OCR engine name (e.g. &apos;tesseract&apos;, &apos;easyocr&apos;, &apos;paddleocr&apos;)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/api/api_args.py" line="78" column="1" bodyfile="dedoc/api/api_args.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ab6a59c3e5e4d4981a2c4457a73dcc341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -393,7 +408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/api/api_args.py" line="84" column="1" bodyfile="dedoc/api/api_args.py" bodystart="84" bodyend="91"/>
+        <location file="dedoc/api/api_args.py" line="85" column="1" bodyfile="dedoc/api/api_args.py" bodystart="85" bodyend="92"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -415,7 +430,7 @@
         <label>Optional</label>
       </node>
     </collaborationgraph>
-    <location file="dedoc/api/api_args.py" line="39" column="1" bodyfile="dedoc/api/api_args.py" bodystart="39" bodyend="94"/>
+    <location file="dedoc/api/api_args.py" line="39" column="1" bodyfile="dedoc/api/api_args.py" bodystart="39" bodyend="95"/>
     <listofallmembers>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a561a03655582ea09214fea3b81ff50a3" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>delimiter</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c82c1802337636beeb2d8ee3fe43192" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>document_orientation</name></member>
@@ -431,6 +446,7 @@
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a073cbe604f9833edca724d936890d083" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_gost_frame_analysis</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1af9b7cbe307f52a0d0d247c672bc3b3f6" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_header_footer_analysis</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae0e9ee7ec7b183081cc9ae17b6765f46" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>need_pdf_table_analysis</name></member>
+      <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1aa11b281b9bd5220bbeda30266bf8df4e" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>ocr_engine</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae6f01091509d030bf17be5f372859c4f" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>pages</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ac5bd7021afb50a429e9217ae30a4f2c6" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>patterns</name></member>
       <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a24b6b8471a62500325d72e55da2026c0" prot="public" virt="non-virtual"><scope>dedoc::api::api_args::QueryParameters</scope><name>pdf_with_text_layer</name></member>

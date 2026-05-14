@@ -11,8 +11,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>header_builder,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>header_builder/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentStructure;<sp/>CONCEPT(9):<sp/>HeaderDetection,<sp/>HierarchyBuilding;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>header-based<sp/>hierarchy<sp/>level<sp/>builder<sp/>—<sp/>assigns<sp/>hierarchy<sp/>levels<sp/>to<sp/>lines<sp/>identified<sp/>as<sp/>section<sp/>headers.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>header_builder<sp/>subpackage.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>header<sp/>builder<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.structure_extractors.hierarchy_level_builders]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Header<sp/>levels<sp/>are<sp/>assigned<sp/>based<sp/>on<sp/>typographic<sp/>and<sp/>positional<sp/>features<sp/>(font<sp/>size,<sp/>bold,<sp/>indentation).</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>header<sp/>builder?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Header<sp/>detection<sp/>relies<sp/>on<sp/>visual/metadata<sp/>features<sp/>distinct<sp/>from<sp/>content-based<sp/>hierarchy<sp/>(law,<sp/>diploma,<sp/>TOC).</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Header<sp/>hierarchy]:<sp/>DocumentLines<sp/>→<sp/>HeaderBuilder<sp/>→<sp/>HeaderLevels<sp/>→<sp/>StructuredDocument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1aeb9b8c09b01fe4d880be477917d058e9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1aeb9b8c09b01fe4d880be477917d058e9" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>header_builder,<sp/>init,<sp/>structure_extractors,<sp/>header<sp/>detection,<sp/>font<sp/>size,<sp/>bold,<sp/>typographic<sp/>hierarchy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>header_builder/__init__<sp/>→<sp/>⊕<sp/>import<sp/>header<sp/>builder<sp/>modules<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/hierarchy_level_builders/header_builder/__init__.py"/>
   </compounddef>

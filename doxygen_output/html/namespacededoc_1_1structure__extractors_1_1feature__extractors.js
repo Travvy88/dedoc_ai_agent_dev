@@ -29,5 +29,6 @@ var namespacededoc_1_1structure__extractors_1_1feature__extractors =
       [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1utils__feature__extractor.html#ab386fdd1e3404e82a7aeb13b2b0b32d0", null ],
       [ "normalization_by_min_max", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1utils__feature__extractor.html#a785f27c32898e0f268834fba12e3471f", null ],
       [ "logger", "namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1utils__feature__extractor.html#a438504219cd2bb19055d551f6b12a467", null ]
-    ] ]
+    ] ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1feature__extractors.html#ae47496d4be367f542de18630f8a424ae", null ]
 ];

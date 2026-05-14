@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.data_structures.hierarchy_level &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.data_structures.hierarchy_level</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.data_structures.hierarchy_level</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">total_ordering</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<span class="c1"># region CLASS_HierarchyLevel [DOMAIN(9): DocumentProcessing, DataStructures; CONCEPT(10): Hierarchy, LineLevel; TECH(6): Python, TotalOrdering]</span>
+<span class="c1">## @purpose Define the hierarchical level of a document line — encodes primary (level_1) and secondary (level_2) importance with line type.</span>
+<div class="viewcode-block" id="HierarchyLevel"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel">[docs]</a><span class="nd">@total_ordering</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">HierarchyLevel</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class defines the level of the document line.</span>
+<span class="sd">    The lower is its value, the more important the line is.</span>
+
+<span class="sd">    The level of the line consists of two parts:</span>
+<span class="sd">        - level_1 defines primary importance (e.g. root - level_1=0, header - level_1=1, etc.);</span>
+<span class="sd">        - level_2 defines the level inside lines of equal type (e.g. for list items - &quot;1.&quot; - level_2=1, &quot;1.1.&quot; - level_2=2, etc.).</span>
+
+<span class="sd">    For the least important lines (line_type=raw_text) both levels are None.</span>
+
+<span class="sd">    Look to the :ref:`hierarchy level description &lt;add_structure_type_hierarchy_level&gt;` to get more details.</span>
+
+<span class="sd">    :ivar level_1: value of a line&#39;s primary importance</span>
+<span class="sd">    :ivar level_2: level of the line inside specific class</span>
+<span class="sd">    :ivar can_be_multiline: is used to unify lines inside tree node, if line can be multiline, it can be joined with another line</span>
+<span class="sd">    :ivar line_type: type of the line, e.g. raw text, list item, header, etc.</span>
+
+<span class="sd">    :vartype level_1: Optional[int]</span>
+<span class="sd">    :vartype level_2: Optional[int]</span>
+<span class="sd">    :vartype can_be_multiline: bool</span>
+<span class="sd">    :vartype line_type: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span>
+    <span class="n">toc</span> <span class="o">=</span> <span class="s2">&quot;toc&quot;</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="s2">&quot;header&quot;</span>
+    <span class="n">toc_item</span> <span class="o">=</span> <span class="s2">&quot;toc_item&quot;</span>
+    <span class="nb">list</span> <span class="o">=</span> <span class="s2">&quot;list&quot;</span>  <span class="c1"># noqa</span>
+    <span class="n">list_item</span> <span class="o">=</span> <span class="s2">&quot;list_item&quot;</span>
+    <span class="n">bullet_list_item</span> <span class="o">=</span> <span class="s2">&quot;bullet_list_item&quot;</span>
+    <span class="n">raw_text</span> <span class="o">=</span> <span class="s2">&quot;raw_text&quot;</span>
+    <span class="n">footer</span> <span class="o">=</span> <span class="s2">&quot;footer&quot;</span>
+    <span class="n">page_id</span> <span class="o">=</span> <span class="s2">&quot;page_id&quot;</span>
+    <span class="n">unknown</span> <span class="o">=</span> <span class="s2">&quot;unknown&quot;</span>
+
+    <span class="c1"># region METHOD___init__ [DOMAIN(9): DocumentProcessing; CONCEPT(10): Hierarchy; TECH(6): Python]</span>
+    <span class="c1">## @purpose Initialize hierarchy level with validated level_1, level_2, multiline flag, and line type.</span>
+    <span class="c1">## @io (Optional[int], Optional[int], bool, str) -&gt; None</span>
+    <span class="c1">## @complexity 3</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level_1</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">level_2</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">can_be_multiline</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">line_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param level_1: value of a line&#39;s primary importance</span>
+<span class="sd">        :param level_2: level of the line inside specific class</span>
+<span class="sd">        :param can_be_multiline: is used to unify lines inside tree node, if line can be multiline, it can be joined with another line</span>
+<span class="sd">        :param line_type: type of the line</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][HierarchyLevel][INIT] level_1=</span><span class="si">{</span><span class="n">level_1</span><span class="si">}</span><span class="s2">, level_2=</span><span class="si">{</span><span class="n">level_2</span><span class="si">}</span><span class="s2">, can_be_multiline=</span><span class="si">{</span><span class="n">can_be_multiline</span><span class="si">}</span><span class="s2">, line_type=</span><span class="si">{</span><span class="n">line_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">level_1</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">level_1</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+        <span class="k">assert</span> <span class="n">level_2</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">level_2</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">level_1</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">level_1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">level_2</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">level_2</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">can_be_multiline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">can_be_multiline</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">line_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">line_type</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][HierarchyLevel][INIT] HierarchyLevel created: type=</span><span class="si">{</span><span class="n">line_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># endregion METHOD___init__</span>
+
+    <span class="c1"># region METHOD___is_defined [DOMAIN(9): DocumentProcessing; CONCEPT(8): Comparison; TECH(5): Python]</span>
+    <span class="c1">## @purpose Check if both self and other have defined (non-None) level_1 and level_2.</span>
+    <span class="c1">## @io (HierarchyLevel) -&gt; bool</span>
+    <span class="c1">## @complexity 2</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__is_defined</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">level_1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">level_2</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">other</span><span class="o">.</span><span class="n">level_1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">other</span><span class="o">.</span><span class="n">level_2</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+    <span class="c1"># endregion METHOD___is_defined</span>
+
+    <span class="c1"># region METHOD___eq__ [DOMAIN(9): DocumentProcessing; CONCEPT(8): Equality; TECH(5): Python]</span>
+    <span class="c1">## @purpose Compare two hierarchy levels — None values are treated as +inf for equality.</span>
+    <span class="c1">## @uses __to_number</span>
+    <span class="c1">## @io (HierarchyLevel) -&gt; bool</span>
+    <span class="c1">## @complexity 3</span>
+<div class="viewcode-block" id="HierarchyLevel.__eq__"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.__eq__">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="fm">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Defines the equality of two hierarchy levels:</span>
+<span class="sd">            - two lines with equal level_1, level_2 are equal.</span>
+<span class="sd">            - if some of the levels is None, its value is considered as +inf (infinities have equal value)</span>
+
+<span class="sd">        :param other: other hierarchy level</span>
+<span class="sd">        :return: whether current hierarchy level == other hierarchy level</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="n">HierarchyLevel</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="n">level_1</span><span class="p">,</span> <span class="n">level_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">level_1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span>
+        <span class="n">other_level_1</span><span class="p">,</span> <span class="n">other_level_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">level_1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">level_1</span><span class="p">,</span> <span class="n">level_2</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">other_level_1</span><span class="p">,</span> <span class="n">other_level_2</span><span class="p">)</span></div>
+    <span class="c1"># endregion METHOD___eq__</span>
+
+    <span class="c1"># region METHOD___lt__ [DOMAIN(9): DocumentProcessing; CONCEPT(8): Ordering; TECH(5): Python]</span>
+    <span class="c1">## @purpose Compare two hierarchy levels for ordering — lower level_1/level_2 means more important.</span>
+    <span class="c1">## @uses __is_defined, __to_number</span>
+    <span class="c1">## @io (HierarchyLevel) -&gt; bool</span>
+    <span class="c1">## @complexity 5</span>
+<div class="viewcode-block" id="HierarchyLevel.__lt__"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.__lt__">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="fm">__lt__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Defines the comparison of hierarchy levels:</span>
+<span class="sd">            - current level &lt; other level if (level_1, level_2) &lt; other (level_1, level_2);</span>
+<span class="sd">            - if some of the levels is None, its value is considered as +inf (infinities have equal value)</span>
+
+<span class="sd">        :param other: other hierarchy level</span>
+<span class="sd">        :return: whether current hierarchy level &lt; other hierarchy level</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># all not None</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__is_defined</span><span class="p">(</span><span class="n">other</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">level_1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">level_1</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span>
+
+        <span class="c1"># all None</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">level_1</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">level_2</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">other</span><span class="o">.</span><span class="n">level_1</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">other</span><span class="o">.</span><span class="n">level_2</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+        <span class="n">level_1</span><span class="p">,</span> <span class="n">level_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">level_1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span>
+        <span class="n">other_level_1</span><span class="p">,</span> <span class="n">other_level_2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">level_1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">__to_number</span><span class="p">(</span><span class="n">other</span><span class="o">.</span><span class="n">level_2</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="p">(</span><span class="n">level_1</span><span class="p">,</span> <span class="n">level_2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">other_level_1</span><span class="p">,</span> <span class="n">other_level_2</span><span class="p">)</span></div>
+    <span class="c1"># endregion METHOD___lt__</span>
+
+    <span class="c1"># region METHOD___str__ [DOMAIN(9): DocumentProcessing; CONCEPT(5): Display; TECH(5): Python]</span>
+    <span class="c1">## @purpose Return string representation of the hierarchy level.</span>
+    <span class="c1">## @io None -&gt; str</span>
+    <span class="c1">## @complexity 1</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;HierarchyLevel(level_1=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">level_1</span><span class="si">}</span><span class="s2">, level_2=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">level_2</span><span class="si">}</span><span class="s2">, can_be_multiline=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">can_be_multiline</span><span class="si">}</span><span class="s2">, line_type=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">line_type</span><span class="si">}</span><span class="s2">)&quot;</span>
+    <span class="c1"># endregion METHOD___str__</span>
+
+    <span class="c1"># region METHOD___to_number [DOMAIN(9): DocumentProcessing; CONCEPT(5): Comparison; TECH(5): Python, numpy]</span>
+    <span class="c1">## @purpose Convert Optional[int] to number, mapping None to +inf for comparison purposes.</span>
+    <span class="c1">## @uses numpy</span>
+    <span class="c1">## @io Optional[int] -&gt; int</span>
+    <span class="c1">## @complexity 2</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__to_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="k">if</span> <span class="n">x</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">x</span>
+    <span class="c1"># endregion METHOD___to_number</span>
+
+    <span class="c1"># region METHOD_is_raw_text [DOMAIN(9): DocumentProcessing; CONCEPT(6): LineType; TECH(5): Python]</span>
+    <span class="c1">## @purpose Check if the line is raw text.</span>
+    <span class="c1">## @io None -&gt; bool</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.is_raw_text"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.is_raw_text">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">is_raw_text</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the line is raw text.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_type</span> <span class="o">==</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">raw_text</span></div>
+    <span class="c1"># endregion METHOD_is_raw_text</span>
+
+    <span class="c1"># region METHOD_is_unknown [DOMAIN(9): DocumentProcessing; CONCEPT(6): LineType; TECH(5): Python]</span>
+    <span class="c1">## @purpose Check if the line type is unknown (only for levels from readers).</span>
+    <span class="c1">## @io None -&gt; bool</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.is_unknown"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.is_unknown">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">is_unknown</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the type of the line is unknown (only for levels from readers).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_type</span> <span class="o">==</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">unknown</span></div>
+    <span class="c1"># endregion METHOD_is_unknown</span>
+
+    <span class="c1"># region METHOD_is_list_item [DOMAIN(9): DocumentProcessing; CONCEPT(6): LineType; TECH(5): Python]</span>
+    <span class="c1">## @purpose Check if the line is a list item.</span>
+    <span class="c1">## @io None -&gt; bool</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.is_list_item"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.is_list_item">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="nf">is_list_item</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Check if the line is a list item.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">line_type</span> <span class="o">==</span> <span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">list_item</span></div>
+    <span class="c1"># endregion METHOD_is_list_item</span>
+
+    <span class="c1"># region METHOD_create_raw_text [DOMAIN(9): DocumentProcessing; CONCEPT(8): Factory; TECH(5): Python]</span>
+    <span class="c1">## @purpose Create hierarchy level for a raw textual line (both levels None).</span>
+    <span class="c1">## @io None -&gt; HierarchyLevel</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.create_raw_text"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.create_raw_text">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">create_raw_text</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create hierarchy level for a raw textual line.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="p">(</span><span class="n">level_1</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">level_2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">can_be_multiline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_type</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">raw_text</span><span class="p">)</span></div>
+    <span class="c1"># endregion METHOD_create_raw_text</span>
+
+    <span class="c1"># region METHOD_create_unknown [DOMAIN(9): DocumentProcessing; CONCEPT(8): Factory; TECH(5): Python]</span>
+    <span class="c1">## @purpose Create hierarchy level for a line with unknown type.</span>
+    <span class="c1">## @io None -&gt; HierarchyLevel</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.create_unknown"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.create_unknown">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">create_unknown</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create hierarchy level for a line with unknown type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="p">(</span><span class="n">level_1</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">level_2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">can_be_multiline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_type</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">unknown</span><span class="p">)</span></div>
+    <span class="c1"># endregion METHOD_create_unknown</span>
+
+    <span class="c1"># region METHOD_create_root [DOMAIN(9): DocumentProcessing; CONCEPT(8): Factory; TECH(5): Python]</span>
+    <span class="c1">## @purpose Create hierarchy level for the document root (level_1=0, level_2=0).</span>
+    <span class="c1">## @io None -&gt; HierarchyLevel</span>
+    <span class="c1">## @complexity 1</span>
+<div class="viewcode-block" id="HierarchyLevel.create_root"><a class="viewcode-back" href="../../../modules/data_structures.html#dedoc.data_structures.HierarchyLevel.create_root">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">create_root</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="s2">&quot;HierarchyLevel&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create hierarchy level for the document root.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">HierarchyLevel</span><span class="p">(</span><span class="n">level_1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">level_2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">can_be_multiline</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">line_type</span><span class="o">=</span><span class="n">HierarchyLevel</span><span class="o">.</span><span class="n">root</span><span class="p">)</span></div></div>
+    <span class="c1"># endregion METHOD_create_root</span>
+<span class="c1"># endregion CLASS_HierarchyLevel</span>
+
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(9): DocumentProcessing, DataStructures; CONCEPT(10): Hierarchy, LineLevel; TECH(6): Python, TotalOrdering]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Define the HierarchyLevel data structure — two-dimensional importance levels (level_1, level_2) with total ordering for document tree construction.</span>
+<span class="c1">## @scope Hierarchy levels: comparison operators, factory methods for known line types.</span>
+<span class="c1">## @input Level_1, level_2 (Optional[int]), multiline flag, line type string.</span>
+<span class="c1">## @output HierarchyLevel instances with total ordering support.</span>
+<span class="c1">## @links [USED_BY(9): LineMetadata, TreeNode]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - level_1 is either None or &gt;= 0</span>
+<span class="c1">## - level_2 is either None or &gt;= 0</span>
+<span class="c1">## - None levels are treated as +inf in comparisons</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why two-level hierarchy (level_1 and level_2)?</span>
+<span class="c1">## A: Documents have both primary importance (root &gt; header &gt; list &gt; raw_text) and secondary ordering within the same type (list item numbering). Two-dimensional model captures both aspects.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Added semantic markup and LDD logging]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS 10[Document line hierarchy level] =&gt; HierarchyLevel</span>
+<span class="c1">## METHOD 6[Constructor] =&gt; __init__</span>
+<span class="c1">## METHOD 8[Comparison less] =&gt; __lt__</span>
+<span class="c1">## METHOD 7[Equality] =&gt; __eq__</span>
+<span class="c1">## METHOD 5[Type check: raw] =&gt; is_raw_text</span>
+<span class="c1">## METHOD 5[Type check: unknown] =&gt; is_unknown</span>
+<span class="c1">## METHOD 5[Type check: list] =&gt; is_list_item</span>
+<span class="c1">## METHOD 5[Factory: raw_text] =&gt; create_raw_text</span>
+<span class="c1">## METHOD 5[Factory: unknown] =&gt; create_unknown</span>
+<span class="c1">## METHOD 5[Factory: root] =&gt; create_root</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [HierarchyLevel]: StructureExtractor → AssignHierarchyLevel → HierarchyLevelInstantiated</span>
+<span class="c1">## - [HierarchyLevel]: TreeNode → CompareLevels → TreeBuilt</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: HierarchyLevel, hierarchy, level, document, line, ordering, root, header, list_item, raw_text, can_be_multiline, total_ordering</span>
+<span class="c1"># STRUCTURE: ▶ HierarchyLevel ┌level_1?, level_2?, can_be_multiline, line_type┐ → ◇ [total_ordering] __eq__(None→inf) + __lt__ → ⊕ is_raw_text/is_unknown/is_list_item → ⊕ factory: create_raw_text/create_unknown/create_root → ⎋ Level</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

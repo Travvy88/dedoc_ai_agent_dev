@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.structure_extractors.concrete_structure_extractors.classifying_law_structure_extractor</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.line_with_meta</span><span class="w"> </span><span class="kn">import</span> <span class="n">LineWithMeta</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.data_structures.unstructured_document</span><span class="w"> </span><span class="kn">import</span> <span class="n">UnstructuredDocument</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.structure_extractors.abstract_structure_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">AbstractStructureExtractor</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<span class="c1"># region CLASS_LawDocType [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]</span>
+<span class="c1">## @purpose LawDocType for document structure extraction pipeline</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">LawDocType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">decree</span> <span class="o">=</span> <span class="s2">&quot;постановление&quot;</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="s2">&quot;приказ&quot;</span>
+    <span class="n">bylaw</span> <span class="o">=</span> <span class="s2">&quot;распоряжение&quot;</span>
+    <span class="n">definition</span> <span class="o">=</span> <span class="s2">&quot;определение&quot;</span>
+    <span class="n">directive</span> <span class="o">=</span> <span class="s2">&quot;директива&quot;</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s2">&quot;кодекс&quot;</span>
+    <span class="n">law</span> <span class="o">=</span> <span class="s2">&quot;закон&quot;</span>
+    <span class="n">constitution</span> <span class="o">=</span> <span class="s2">&quot;конституция&quot;</span>
+    <span class="n">edict</span> <span class="o">=</span> <span class="s2">&quot;указ&quot;</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="s2">&quot;положение&quot;</span>
+    <span class="n">instruction</span> <span class="o">=</span> <span class="s2">&quot;инструкция&quot;</span>
+    <span class="n">federal_law</span> <span class="o">=</span> <span class="s2">&quot;федеральный закон&quot;</span>
+
+    <span class="c1"># region METHOD_doc_types [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose doc_types method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">doc_types</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+        <span class="c1"># BUG_FIX_CONTEXT: self.logger не существует в @staticmethod — заменён на модульный logger.</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][LawDocType][doc_types_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="c1"># order is important</span>
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">definition</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">order</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">bylaw</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">code</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">federal_law</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">edict</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">law</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">decree</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">directive</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">constitution</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">state</span><span class="p">,</span>
+            <span class="n">LawDocType</span><span class="o">.</span><span class="n">instruction</span>
+        <span class="p">]</span>
+
+    <span class="c1"># endregion METHOD_doc_types</span>
+    <span class="c1"># region METHOD_foiv_types [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose foiv_types method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">foiv_types</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="s2">&quot;LawDocType&quot;</span><span class="p">]:</span>
+        <span class="c1"># BUG_FIX_CONTEXT: self.logger не существует в @staticmethod — заменён на модульный logger.</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][LawDocType][foiv_types_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">order</span><span class="p">,</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">state</span><span class="p">,</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">instruction</span><span class="p">]</span>
+
+
+    <span class="c1"># endregion METHOD_foiv_types</span>
+<span class="c1"># endregion CLASS_LawDocType</span>
+<span class="c1"># region CLASS_ClassifyingLawStructureExtractor [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]</span>
+<span class="c1">## @purpose ClassifyingLawStructureExtractor for document structure extraction pipeline</span>
+<div class="viewcode-block" id="ClassifyingLawStructureExtractor"><a class="viewcode-back" href="../../../../modules/structure_extractors.html#dedoc.structure_extractors.ClassifyingLawStructureExtractor">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">ClassifyingLawStructureExtractor</span><span class="p">(</span><span class="n">AbstractStructureExtractor</span><span class="p">,</span> <span class="n">ABC</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This class is used to dynamically classify laws into two types: laws and foiv.</span>
+<span class="sd">    The specific extractors are called according to the classifying results.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">document_type</span> <span class="o">=</span> <span class="s2">&quot;law&quot;</span>
+
+    <span class="c1"># region METHOD___init__ [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __init__ method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+<div class="viewcode-block" id="ClassifyingLawStructureExtractor.__init__"><a class="viewcode-back" href="../../../../modules/structure_extractors.html#dedoc.structure_extractors.ClassifyingLawStructureExtractor.__init__">[docs]</a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extractors</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">AbstractStructureExtractor</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param extractors: mapping law_type -&gt; structure extractor, defined for certain law types</span>
+<span class="sd">        :param config: configuration of the extractor, e.g. logger for logging</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__init___INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span> <span class="o">=</span> <span class="n">extractors</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">hat_batch_size</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hat_batch_count</span> <span class="o">=</span> <span class="mi">7</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="n">federal_law_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;федеральный закон&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">federal_law</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">federal_law_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">decree_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;постановление&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">decree</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">decree_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="c1"># Hot fix for tesseract common error</span>
+        <span class="n">order_char_map</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;з&quot;</span><span class="p">:</span> <span class="s2">&quot;[з3]&quot;</span><span class="p">}</span>
+        <span class="n">order_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;приказ&quot;</span><span class="p">,</span> <span class="n">char_map</span><span class="o">=</span><span class="n">order_char_map</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">order</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">order_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">bylaw_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;распоряжение&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">bylaw</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">bylaw_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">law_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;закон&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">law</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">law_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">edict_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;указ&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">edict</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">edict_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">definition_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;определение&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">definition</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">definition_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">directive_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;директива&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">directive</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">directive_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>  <span class="c1"># TODO no data</span>
+
+        <span class="n">code_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;кодекс&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">code</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">code_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">constitution_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;конституция&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">constitution</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">constitution_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">state_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;положение&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">state</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">state_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span>
+
+        <span class="n">instruction_ws</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__add_whitespace_match</span><span class="p">(</span><span class="s2">&quot;инструкция&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">LawDocType</span><span class="o">.</span><span class="n">instruction</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sa">rf</span><span class="s2">&quot;\b</span><span class="si">{</span><span class="n">instruction_ws</span><span class="si">}</span><span class="s2">\b&quot;</span><span class="p">}</span></div>
+
+    <span class="c1"># endregion METHOD___init__</span>
+    <span class="c1"># region METHOD_extract [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose extract method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">extract</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">document</span><span class="p">:</span> <span class="n">UnstructuredDocument</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UnstructuredDocument</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][extract_INIT] Starting&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Classify law kind and extract structure according to the specific law format.</span>
+<span class="sd">        To get the information about the method&#39;s parameters look at the documentation of the class \</span>
+<span class="sd">        :class:`~dedoc.structure_extractors.AbstractStructureExtractor`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">parameters</span> <span class="o">=</span> <span class="p">{}</span> <span class="k">if</span> <span class="n">parameters</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">parameters</span>
+        <span class="n">selected_extractor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_predict_extractor</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">selected_extractor</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">document</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span>
+        <span class="n">warning</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Use </span><span class="si">{</span><span class="n">selected_extractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2"> classifier&quot;</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">warnings</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">warnings</span> <span class="o">+</span> <span class="p">[</span><span class="n">warning</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="c1"># endregion METHOD_extract</span>
+    <span class="c1"># region METHOD__predict_extractor [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose _predict_extractor method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_predict_extractor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LineWithMeta</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">AbstractStructureExtractor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][_predict_extractor_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="n">raw_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">line</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+        <span class="n">doc_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__type_detect</span><span class="p">(</span><span class="n">lines</span><span class="o">=</span><span class="n">raw_lines</span><span class="p">)</span>
+        <span class="n">extractor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_extractor_by_type</span><span class="p">(</span><span class="n">doc_type</span><span class="o">=</span><span class="n">doc_type</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">extractor</span>
+
+    <span class="c1"># endregion METHOD__predict_extractor</span>
+    <span class="c1"># region METHOD___type_detect [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __type_detect method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__type_detect</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">LawDocType</span><span class="p">]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__type_detect_INIT] Starting&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Search for type N in first lines.</span>
+<span class="sd">        Roud robin type search for each line batch.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+        <span class="n">first_lines</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__create_line_batches</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">hat_batch_size</span><span class="p">,</span> <span class="n">batch_count</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">hat_batch_count</span><span class="p">)</span>
+
+        <span class="c1"># Hack for ЗАКОН ... КОДЕКС ...</span>
+        <span class="n">law_matched</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="n">first_lines</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">doc_type</span> <span class="ow">in</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">doc_types</span><span class="p">():</span>
+                <span class="k">for</span> <span class="n">template</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">main_templates</span><span class="p">[</span><span class="n">doc_type</span><span class="p">]:</span>
+                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">batch</span><span class="p">:</span>
+                        <span class="c1"># - for ЯМАЛО-НЕНЕЦКИЙ, \.№ for ПОСТАНОВЛЕНИЕ от 1.1.2000 № 34</span>
+                        <span class="c1"># / for Приказ № 47/823 от 17.12.2013 г.</span>
+                        <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">fullmatch</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[\s\w-]*&quot;</span> <span class="o">+</span> <span class="n">template</span> <span class="o">+</span> <span class="sa">r</span><span class="s2">&quot;[()/\.№\s\w-]*&quot;</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="n">doc_type</span> <span class="ow">is</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">law</span><span class="p">:</span>
+                                <span class="n">law_matched</span> <span class="o">=</span> <span class="kc">True</span>
+                            <span class="k">else</span><span class="p">:</span>
+                                <span class="k">return</span> <span class="n">doc_type</span>
+        <span class="k">if</span> <span class="n">law_matched</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">law</span>
+
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="c1"># endregion METHOD___type_detect</span>
+    <span class="c1"># region METHOD___get_extractor_by_type [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __get_extractor_by_type method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__get_extractor_by_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">LawDocType</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">AbstractStructureExtractor</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__get_extractor_by_type_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.structure_extractors.concrete_structure_extractors.foiv_law_structure_extractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">FoivLawStructureExtractor</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">dedoc.structure_extractors.concrete_structure_extractors.law_structure_excractor</span><span class="w"> </span><span class="kn">import</span> <span class="n">LawStructureExtractor</span>
+
+        <span class="k">if</span> <span class="n">doc_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dynamic document type not found, using base: </span><span class="si">{</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span><span class="p">[</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">doc_type</span> <span class="ow">in</span> <span class="n">LawDocType</span><span class="o">.</span><span class="n">foiv_types</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">FoivLawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dynamic document type predicted: </span><span class="si">{</span><span class="n">FoivLawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span><span class="p">[</span><span class="n">FoivLawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No classifier for predicted dynamic document type </span><span class="si">{</span><span class="n">FoivLawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2">, &quot;</span>
+                                    <span class="sa">f</span><span class="s2">&quot;using </span><span class="si">{</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span><span class="p">[</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dynamic document type predicted: </span><span class="si">{</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">extractors</span><span class="p">[</span><span class="n">LawStructureExtractor</span><span class="o">.</span><span class="n">document_type</span><span class="p">]</span>
+
+    <span class="c1"># endregion METHOD___get_extractor_by_type</span>
+    <span class="c1"># region METHOD___add_whitespace_match [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __add_whitespace_match method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__add_whitespace_match</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pattern</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">char_map</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__add_whitespace_match_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">char_map</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># convert some chars to seq of chars: [з3]</span>
+            <span class="n">robust_word</span> <span class="o">=</span> <span class="p">(</span><span class="n">char_map</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pattern</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">pattern</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+                           <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="k">return</span> <span class="sa">r</span><span class="s2">&quot;\s*&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">robust_word</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">r</span><span class="s2">&quot;\s*&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pattern</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="c1"># endregion METHOD___add_whitespace_match</span>
+    <span class="c1"># region METHOD___create_line_batches [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __create_line_batches method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__create_line_batches</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">batch_size</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">batch_count</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__create_line_batches_INIT] Starting&quot;</span><span class="p">)</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Pack lines into batch_count batches of size batch_size.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">batch_lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">cur_batch</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">cur_batches_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">cur_batch_size</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__text_clean</span><span class="p">(</span><span class="n">line</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">cur_batch_size</span> <span class="o">&lt;</span> <span class="n">batch_size</span><span class="p">:</span>
+                    <span class="n">cur_batch</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                    <span class="n">cur_batch_size</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">batch_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cur_batch</span><span class="p">)</span>
+                    <span class="n">cur_batch</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="p">]</span>
+                    <span class="n">cur_batch_size</span> <span class="o">=</span> <span class="mi">1</span>
+                    <span class="n">cur_batches_count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">cur_batches_count</span> <span class="o">&gt;</span> <span class="n">batch_count</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">return</span> <span class="n">batch_lines</span>
+
+    <span class="c1"># endregion METHOD___create_line_batches</span>
+    <span class="c1"># region METHOD___text_clean [DOMAIN(X): ...; CONCEPT(Y): ...; TECH(Z): ...]</span>
+    <span class="c1">## @purpose __text_clean method</span>
+    <span class="c1">## @io Input -&gt; Output</span>
+    <span class="c1">## @complexity 5</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">__text_clean</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[IMP:4][ClassifyingLawStructureExtractor][__text_clean_INIT] Starting&quot;</span><span class="p">)</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">OrderedDict</span>
+
+        <span class="n">bad_characters</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span><span class="s2">&quot;</span><span class="se">\u0438\u0306</span><span class="s2">&quot;</span><span class="p">:</span> <span class="s2">&quot;й&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\u0439\u0306</span><span class="s2">&quot;</span><span class="p">:</span> <span class="s2">&quot;й&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\u0418\u0306</span><span class="s2">&quot;</span><span class="p">:</span> <span class="s2">&quot;Й&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\u0419\u0306</span><span class="s2">&quot;</span><span class="p">:</span> <span class="s2">&quot;Й&quot;</span><span class="p">})</span>
+        <span class="k">for</span> <span class="n">bad_c</span><span class="p">,</span> <span class="n">good_c</span> <span class="ow">in</span> <span class="n">bad_characters</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">bad_c</span><span class="p">,</span> <span class="n">good_c</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">text</span></div>
+
+    <span class="c1"># endregion METHOD___text_clean</span>
+<span class="c1"># endregion CLASS_ClassifyingLawStructureExtractor</span>
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(DocumentProcessing): ...; CONCEPT(DocumentStructureParser): ...; TECH(Python): ...]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Document structure extraction for structure_extractors/concrete_structure_extractors/classifying_law_structure_extractor: line classification, hierarchy level assignment, pattern matching.</span>
+<span class="c1">## @scope Structure extraction pipeline — structure_extractors/concrete_structure_extractors/classifying_law_structure_extractor</span>
+<span class="c1">## @input Document lines with reader metadata.</span>
+<span class="c1">## @output Lines annotated with hierarchy levels and line type labels.</span>
+<span class="c1">## @links [USES_API(8): dedoc.data_structures; READS_DATA_FROM(8): readers]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - Output lines preserve input order.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why semantic region markup and LDD logging?</span>
+<span class="c1">## A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS [Weight 7][Structure extraction] =&gt; LawDocType</span>
+<span class="c1">## CLASS [Weight 7][Structure extraction] =&gt; ClassifyingLawStructureExtractor</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: structure extractors, concrete structure extractors, classifying law structure extractor</span>
+<span class="c1"># STRUCTURE: ▶ structure_extractors/concrete_structure_extractors/classifying_law_structure_extractor → ○ LawDocType.cls ⊕ ClassifyingLawStructureExtractor.cls → ⎋ result</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

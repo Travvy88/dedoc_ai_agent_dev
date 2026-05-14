@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding support for a new structure type to Dedoc &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dataset creation" href="add_new_structure_type/dataset_creation.html" />
+    <link rel="prev" title="Adding support for a new document format to Dedoc" href="add_new_doc_format.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding support for a new structure type to Dedoc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implementing-structure-extractor-using-heuristic-rules">Implementing structure extractor using heuristic rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementing-structure-extractor-using-lines-classification">Implementing structure extractor using lines classification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/dataset_creation.html">Dataset creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/features_extraction.html">Features extraction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/lines_classification.html">Lines classification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/post_processing.html">Lines post-processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/conclusion.html">Adding implemented extractor to the main pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/hierarchy_level.html">Hierarchy level for document lines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_new_structure_type/classes.html">Main classes related to the structure extraction via lines classification</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Adding support for a new structure type to Dedoc</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorials/add_new_structure_type.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adding-support-for-a-new-structure-type-to-dedoc">
+<span id="add-structure-type"></span><h1>Adding support for a new structure type to Dedoc<a class="headerlink" href="#adding-support-for-a-new-structure-type-to-dedoc" title="Permalink to this heading"></a></h1>
+<p>Dedoc supports several structure types, e.g. Russian <a class="reference internal" href="../structure_types/law.html#law-structure"><span class="std std-ref">laws</span></a> or <a class="reference internal" href="../structure_types/tz.html#tz-structure"><span class="std std-ref">technical specifications</span></a>
+according to the description of the  <a class="reference internal" href="../index.html#structure"><span class="std std-ref">structure extraction step</span></a>.
+However, one may need to add support for their own structure type, e.g. for English documents.</p>
+<p>It’s possible to define a new structure extractor in order to handle documents of new domains.
+There are two main ways of creating a structure extractor that are used in Dedoc:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Usage of domain-specific rules and some heuristics to detect lines types and their hierarchy (see <a class="reference internal" href="#heuristic-structure-extractor"><span class="std std-ref">Implementing structure extractor using heuristic rules</span></a>).</p></li>
+<li><p>Document lines classification with machine learning and post-processing using domain-specific rules (see <a class="reference internal" href="#classification-structure-extractor"><span class="std std-ref">Implementing structure extractor using lines classification</span></a>).</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A custom structure extractor should fill <code class="docutils literal notranslate"><span class="pre">hierarchy_level</span></code> (<a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.HierarchyLevel" title="dedoc.data_structures.HierarchyLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">HierarchyLevel</span></code></a>)
+field of <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.LineMetadata" title="dedoc.data_structures.LineMetadata"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineMetadata</span></code></a> for each document line (<a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.LineWithMeta" title="dedoc.data_structures.LineWithMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineWithMeta</span></code></a>).
+See <a class="reference internal" href="add_new_structure_type/hierarchy_level.html#add-structure-type-hierarchy-level"><span class="std std-ref">Hierarchy level for document lines</span></a> and documentation of the <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.HierarchyLevel" title="dedoc.data_structures.HierarchyLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">HierarchyLevel</span></code></a> class
+to get more information about lines hierarchy levels.</p>
+</div>
+<p>While implementing a custom structure extractor, there are no limits about its architecture and used methods.
+The two aforesaid methods are only examples how the document structure can be parsed.
+As an alternative, a structure extractor can automatically detect subtypes of some structure and then call more specific structure extractors.
+For instance, there are <cite>simple law</cite> and <cite>foiv law</cite> subtypes in <a class="reference internal" href="../structure_types/law.html#law-structure"><span class="std std-ref">law structure type</span></a>.
+Still, the rule about filling <code class="docutils literal notranslate"><span class="pre">hierarchy_level</span></code> field remains obligatory as it is the result of the structure extraction process.</p>
+<section id="implementing-structure-extractor-using-heuristic-rules">
+<span id="heuristic-structure-extractor"></span><h2>Implementing structure extractor using heuristic rules<a class="headerlink" href="#implementing-structure-extractor-using-heuristic-rules" title="Permalink to this heading"></a></h2>
+<p>If there are strict rules describing a document structure, it’s possible to get by only with regular expressions
+while implementing a new structure extractor.
+A code example of such a structure extractor can be found
+<a class="reference external" href="https://github.com/ispras/dedoc/blob/master/dedoc/structure_extractors/concrete_structure_extractors/default_structure_extractor.py">here</a>
+– this is a structure extractor for the <a class="reference internal" href="../structure_types/other.html#other-structure"><span class="std std-ref">default structure type</span></a> in Dedoc.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The description of details related to the <code class="docutils literal notranslate"><span class="pre">hierarchy_level</span></code> can be found <a class="reference internal" href="add_new_structure_type/hierarchy_level.html#add-structure-type-hierarchy-level"><span class="std std-ref">here</span></a>.</p>
+</div>
+<p>There are some useful tips for creation of a heuristic structure extractor:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Some readers can extract annotations about visual formatting that can be useful if some structure has a strict formatting rules.
+Annotations are stored in the <code class="docutils literal notranslate"><span class="pre">annotations</span></code> attribute of each document line (<a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.LineWithMeta" title="dedoc.data_structures.LineWithMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">LineWithMeta</span></code></a>).
+Information about readers possibilities is given in <a class="reference internal" href="../readers_output/annotations.html#readers-annotations"><span class="std std-ref">Text annotations</span></a>.</p></li>
+<li><p>Some readers can extract preliminary lines types and their levels with the help of internal content provided by the format.
+Information about readers possibilities to extract line types is given in <a class="reference internal" href="../readers_output/line_types.html#readers-line-types"><span class="std std-ref">Types of textual lines</span></a>.
+Note that some readers extract list items using regular expressions that can differ from a custom domain,
+only <a class="reference internal" href="../modules/readers.html#dedoc.readers.DocxReader" title="dedoc.readers.DocxReader"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocxReader</span></code></a> and HTML-based readers extract list items with their levels without using regular expressions.</p></li>
+<li><p>The information about hierarchy level given in <a class="reference internal" href="add_new_structure_type/hierarchy_level.html#add-structure-type-hierarchy-level"><span class="std std-ref">hierarchy level description</span></a> and
+documentation of the <a class="reference internal" href="../modules/data_structures.html#dedoc.data_structures.HierarchyLevel" title="dedoc.data_structures.HierarchyLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">HierarchyLevel</span></code></a> class can help in filling <code class="docutils literal notranslate"><span class="pre">hierarchy_level</span></code> field.</p></li>
+<li><p>Hierarchy level fields <code class="docutils literal notranslate"><span class="pre">level_1</span></code> and <code class="docutils literal notranslate"><span class="pre">level_2</span></code> may be <code class="docutils literal notranslate"><span class="pre">None</span></code> for lines with types <code class="docutils literal notranslate"><span class="pre">raw_text</span></code> and <code class="docutils literal notranslate"><span class="pre">unknown</span></code>.
+In this case, while structure construction step, these lines will become leaves of a document tree (they have least importance).</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="implementing-structure-extractor-using-lines-classification">
+<span id="classification-structure-extractor"></span><h2>Implementing structure extractor using lines classification<a class="headerlink" href="#implementing-structure-extractor-using-lines-classification" title="Permalink to this heading"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We plan to change structure extraction pipeline in future to make in more user-friendly and easy-to-use.
+Still, this process isn’t fast, therefore here we give actual information about implementing new structure extractors.</p>
+</div>
+<p>In Dedoc, several structure extractors use a typical pipeline for retrieving line types and levels.
+This pipeline is visualized and its main parts are described below.</p>
+<figure class="align-default" id="id1">
+<span id="structure-pipeline-image"></span><a class="reference internal image-reference" href="../_images/structure_pipeline.png"><img alt="../_images/structure_pipeline.png" src="../_images/structure_pipeline.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-text">Pipeline for a structure extractor with lines classification</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>The structure extraction pipeline uses ML lines classification so a training dataset should be created.
+For classification, different models can be used, but our experience showed the most suitable model –
+<a class="reference external" href="https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier">XGBClassifier</a>.
+In case of using XGBClassifier, it is necessary to build a feature matrix for feeding a classifier.
+After implementing features extraction step, a classifier is trained on the gathered and labeled data.
+As any ML model, the classifier can make mistakes – they may be fixed afterwards along with hierarchy level determination.
+All these nuances form following steps for adding a new structure extractor:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Dataset creation.</strong> The step includes data gathering, their preparation for annotating (labeling) and the labeling itself.
+We propose an <a class="reference external" href="https://github.com/dronperminov/ImageClassifier">external labeling system</a> for document lines labeling.
+The detailed description of this step is given in <a class="reference internal" href="add_new_structure_type/dataset_creation.html#add-structure-type-dataset-creation"><span class="std std-ref">Dataset creation</span></a>.</p></li>
+<li><p><strong>Features extraction.</strong> The step is intended for making a feature matrix for the subsequent training of a classifier.
+For each document line a feature vector is formed based on line’s text, appearance, position inside the document, etc.
+Moreover, some context can be used – features of the adjacent lines, statistics for the entire document (e.g. mean font size).
+This step is described in <a class="reference internal" href="add_new_structure_type/features_extraction.html#add-structure-type-features-extraction"><span class="std std-ref">Features extraction</span></a>.</p></li>
+<li><p><strong>Lines classification.</strong> This step is connected with training a lines classifier,
+selection of optimal hyperparameters and analysis of features importance for classifier decisions.
+The step is described in <a class="reference internal" href="add_new_structure_type/lines_classification.html#add-structure-type-lines-classification"><span class="std std-ref">Lines classification</span></a>.</p></li>
+<li><p><strong>Post-processing of results.</strong> During this step, some rules are utilized to correct classifier’s predictions.
+Also, hierarchy level (<code class="docutils literal notranslate"><span class="pre">level_1</span></code>, <code class="docutils literal notranslate"><span class="pre">level_2</span></code>) should be filled according to the predicted types and specific domain rules.
+The step is described in <a class="reference internal" href="add_new_structure_type/post_processing.html#add-structure-type-post-processing"><span class="std std-ref">Lines post-processing</span></a>.</p></li>
+<li><p><strong>Adding a new structure extractor to the main pipeline.</strong>
+<a class="reference internal" href="add_new_structure_type/conclusion.html#add-structure-type-conclusion"><span class="std std-ref">Here</span></a> we give an example how to use the implemented custom extractor in Dedoc.</p></li>
+</ol>
+</div></blockquote>
+<p><strong>The following pages may be useful for further reading:</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/dataset_creation.html">Dataset creation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/features_extraction.html">Features extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/lines_classification.html">Lines classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/post_processing.html">Lines post-processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/conclusion.html">Adding implemented extractor to the main pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/hierarchy_level.html">Hierarchy level for document lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type/classes.html">Main classes related to the structure extraction via lines classification</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="add_new_doc_format.html" class="btn btn-neutral float-left" title="Adding support for a new document format to Dedoc" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add_new_structure_type/dataset_creation.html" class="btn btn-neutral float-right" title="Dataset creation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

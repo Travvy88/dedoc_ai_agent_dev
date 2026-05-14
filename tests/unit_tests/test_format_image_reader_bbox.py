@@ -5,12 +5,15 @@ import unittest
 import cv2
 
 from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor import OCRLineExtractor
+from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
 from tests.test_utils import get_test_config
 
 
 class TestImageReaderWithBBox(unittest.TestCase):
     abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "scanned"))
-    reader = OCRLineExtractor(config=get_test_config())
+    _config = get_test_config()
+    _engine = TesseractOCREngine(config=_config)
+    reader = OCRLineExtractor(config=_config, engine=_engine)
 
     def test_line_order(self) -> None:
         image = cv2.imread(os.path.join(self.abs_path, "part.png"))

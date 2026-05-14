@@ -38,6 +38,7 @@ class TableRecognizer:
         self.multipage_tables_extractor = MultiPageTableExtractor(config=config, logger=self.logger)
         self.config = config
         self.table_type = TableTypeAdditionalOptions()
+        self.ocr_engine = None
 
     # region METHOD_convert_to_multipages_tables [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
@@ -77,7 +78,8 @@ class TableRecognizer:
             image=gray_image,
             page_number=page_num,
             language=language,
-            table_type=table_type)
+            table_type=table_type,
+            engine=self.ocr_engine)
 
         if self.config.get("labeling_mode", False):
             self.__save_tables(tables=single_page_tables, image=src_image, table_path=self.config.get("table_path", "/tmp/tables"))

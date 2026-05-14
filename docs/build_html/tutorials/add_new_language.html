@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding support for a new language to Dedoc &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Adding support for a new OCR engine to Dedoc" href="add_new_ocr_engine.html" />
+    <link rel="prev" title="Main classes related to the structure extraction via lines classification" href="add_new_structure_type/classes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding support for a new language to Dedoc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#add-new-language-in-docker">Add new language in docker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-docker-build">Using docker build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-docker-compose">Using docker-compose</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#add-new-language-locally">Add new language locally</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Adding support for a new language to Dedoc</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/tutorials/add_new_language.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adding-support-for-a-new-language-to-dedoc">
+<span id="add-language"></span><h1>Adding support for a new language to Dedoc<a class="headerlink" href="#adding-support-for-a-new-language-to-dedoc" title="Permalink to this heading"></a></h1>
+<p>By default, dedoc supports handling Russian and English languages.
+The most important part of language support is OCR (for images, PDF).
+If you don’t need parse images and PDF files, you don’t need to do anything.</p>
+<p>To parse images with a new language, additional Tesseract language packages should be installed.
+The list of languages supported by Tesseract are enlisted <a class="reference external" href="https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html">here</a> (see <strong>Languages</strong> section).</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>The instruction with Tesseract installation can be found <a class="reference internal" href="../getting_started/installation.html#install-tesseract"><span class="std std-ref">here</span></a>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Not all languages are fully supported by dedoc even with installed Tesseract packages. The more detailed information will appear soon.</p>
+</div>
+<section id="add-new-language-in-docker">
+<h2>Add new language in docker<a class="headerlink" href="#add-new-language-in-docker" title="Permalink to this heading"></a></h2>
+<p>Similar to the <a class="reference internal" href="../getting_started/installation.html#dedoc-installation"><span class="std std-ref">installation tutorial</span></a>, beforehand one should clone the dedoc repository and go to the <cite>dedoc</cite> directory:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ispras/dedoc
+<span class="nb">cd</span><span class="w"> </span>dedoc
+</pre></div>
+</div>
+<p>Then one should decide, which languages should be supported, and look for them in the
+<a class="reference external" href="https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html">list of supported languages</a> (<strong>Languages</strong> section).
+For each language, <code class="docutils literal notranslate"><span class="pre">LangCode</span></code> is used to configure it.
+For example, if we need to add French and Spanish, we should use <code class="docutils literal notranslate"><span class="pre">fra</span></code> and <code class="docutils literal notranslate"><span class="pre">spa</span></code> language codes.</p>
+<section id="using-docker-build">
+<h3>Using docker build<a class="headerlink" href="#using-docker-build" title="Permalink to this heading"></a></h3>
+<p>For passing the list of languages while building docker image, the <code class="docutils literal notranslate"><span class="pre">LANGUAGES</span></code> argument is used.
+Languages should be enlisted in string and separated by spaces.
+For example, for adding French and Spanish we should use the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>--build-arg<span class="w"> </span><span class="nv">LANGUAGES</span><span class="o">=</span><span class="s2">&quot;fra spa&quot;</span><span class="w"> </span>.
+</pre></div>
+</div>
+<p>One may also choose a tag for an image, e.g. <code class="docutils literal notranslate"><span class="pre">dedocproject/dedoc_multilang:latest</span></code>, and run the container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>dedocproject/dedoc_multilang:latest<span class="w"> </span>--build-arg<span class="w"> </span><span class="nv">LANGUAGES</span><span class="o">=</span><span class="s2">&quot;fra spa&quot;</span><span class="w"> </span>.
+docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">1231</span>:1231<span class="w"> </span>--rm<span class="w"> </span>dedocproject/dedoc_multilang<span class="w"> </span>python3<span class="w"> </span>/dedoc_root/dedoc/main.py
+</pre></div>
+</div>
+</section>
+<section id="using-docker-compose">
+<h3>Using docker-compose<a class="headerlink" href="#using-docker-compose" title="Permalink to this heading"></a></h3>
+<p>For passing the list of languages while building docker image, the <code class="docutils literal notranslate"><span class="pre">LANGUAGES</span></code> argument is used in the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file.
+Languages should be enlisted in string and separated by spaces.
+For example, for adding French and Spanish we should add the following lines to the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;2.4&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">dedoc</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">mem_limit</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">16G</span>
+<span class="w">    </span><span class="nt">build</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.</span>
+<span class="hll"><span class="w">      </span><span class="nt">args</span><span class="p">:</span>
+</span><span class="hll"><span class="w">        </span><span class="nt">LANGUAGES</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;fra</span><span class="nv"> </span><span class="s">spa&quot;</span>
+</span><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">always</span>
+<span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1231:1231</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">DOCREADER_PORT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1231</span>
+<span class="w">      </span><span class="nt">GROBID_HOST</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;grobid&quot;</span>
+<span class="w">      </span><span class="nt">GROBID_PORT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8070</span>
+</pre></div>
+</div>
+<p>Then, the service can be run with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker-compose<span class="w"> </span>up<span class="w"> </span>--build
+</pre></div>
+</div>
+</section>
+</section>
+<section id="add-new-language-locally">
+<h2>Add new language locally<a class="headerlink" href="#add-new-language-locally" title="Permalink to this heading"></a></h2>
+<p>Suppose Tesseract OCR 5 is already installed on the computer (or see <a class="reference internal" href="../getting_started/installation.html#install-tesseract"><span class="std std-ref">instruction</span></a>).
+For each language, the following command should be executed (<code class="docutils literal notranslate"><span class="pre">lang</span></code> is one language code):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>tesseract-ocr-<span class="nv">$lang</span>
+</pre></div>
+</div>
+<p>For example, for adding French and Spanish we should use the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>tesseract-ocr-fra
+apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>tesseract-ocr-spa
+</pre></div>
+</div>
+<p>Or we can install all packages with one command using <code class="docutils literal notranslate"><span class="pre">LANGUAGES</span></code> variable:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">LANGUAGES</span><span class="o">=</span><span class="s2">&quot;fra spa&quot;</span>
+<span class="k">for</span><span class="w"> </span>lang<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$LANGUAGES</span><span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>tesseract-ocr-<span class="nv">$lang</span><span class="p">;</span><span class="w"> </span><span class="k">done</span>
+</pre></div>
+</div>
+<p>Then the dedoc library can be used with new languages or dedoc API can be run locally (see <a class="reference internal" href="../getting_started/installation.html#install-library-via-pip"><span class="std std-ref">instruction</span></a>) for more details.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="add_new_structure_type/classes.html" class="btn btn-neutral float-left" title="Main classes related to the structure extraction via lines classification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="add_new_ocr_engine.html" class="btn btn-neutral float-right" title="Adding support for a new OCR engine to Dedoc" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

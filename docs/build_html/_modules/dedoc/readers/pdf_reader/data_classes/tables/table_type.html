@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dedoc.readers.pdf_reader.data_classes.tables.table_type &mdash; dedoc documentation</title>
+      <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../../_static/togglebutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../../_static/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../../_static/jquery.js"></script>
+        <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../../../" id="documentation_options" src="../../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../../_static/doctools.js"></script>
+        <script src="../../../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../../../_static/clipboard.min.js"></script>
+        <script src="../../../../../../_static/copybutton.js"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../../../../../_static/togglebutton.js"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../../index.html" class="icon icon-home">
+            dedoc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started/installation.html">Dedoc installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../getting_started/usage.html">Dedoc usage tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../parameters/parameters.html">Parameters description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/notebooks.html">Notebooks with examples of Dedoc usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/add_new_doc_format.html">Adding support for a new document format to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/add_new_structure_type.html">Adding support for a new structure type to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/add_new_language.html">Adding support for a new language to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/add_new_ocr_engine.html">Adding support for a new OCR engine to Dedoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/creating_document_classes.html">Creating Dedoc Document from basic data structures in code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../tutorials/using_patterns.html">Configure structure extraction using patterns</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Dedoc API usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../dedoc_api_usage/api.html">Using dedoc via API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../dedoc_api_usage/api_schema.html">API schema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../dedoc_api_usage/return_format.html">Description of the API output format</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Readers output</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readers_output/annotations.html">Text annotations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../readers_output/line_types.html">Types of textual lines</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Structure types</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/other.html">Default document structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/law.html">Law structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/tz.html">Technical specification structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/diploma.html">Diploma structure type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/article.html">Article structure type (GROBID)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../structure_types/fintoc.html">FinTOC structure type</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Package Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/manager.html">Dedoc pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/data_structures.html">dedoc.data_structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/converters.html">dedoc.converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/readers.html">dedoc.readers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/attachments_extractors.html">dedoc.attachments_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/metadata_extractors.html">dedoc.metadata_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/structure_extractors.html">dedoc.structure_extractors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/structure_constructors.html">dedoc.structure_constructors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../modules/pdf_parsing.html">Auxiliary data structures for PDF and images parsing</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../contributing/contributing.html">Support and Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../../index.html">dedoc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">dedoc.readers.pdf_reader.data_classes.tables.table_type</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for dedoc.readers.pdf_reader.data_classes.tables.table_type</h1><div class="highlight"><pre>
+<span></span><span class="c1"># region CLASS_TableTypeAdditionalOptions [DOMAIN(7): DocumentProcessing; CONCEPT(8): TableType, TableRecognition; TECH(6): Python]</span>
+<span class="c1">## @purpose Define the enumeration of table recognition strategies for the PDF image table recognizer — controls which table detection algorithms are active.</span>
+<span class="c1">## @uses None (pure data class)</span>
+<span class="c1">## @io None -&gt; None (constructor sets instance attributes)</span>
+<span class="c1">## @complexity 2</span>
+<div class="viewcode-block" id="TableTypeAdditionalOptions"><a class="viewcode-back" href="../../../../../../modules/pdf_parsing.html#dedoc.readers.pdf_reader.data_classes.tables.table_type.TableTypeAdditionalOptions">[docs]</a><span class="k">class</span><span class="w"> </span><span class="nc">TableTypeAdditionalOptions</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Enum for table types of tables for the table recognizer.</span>
+<span class="sd">    The value of the parameter specifies the type of tables recognized when processed by</span>
+<span class="sd">    class :class:`~dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer`.</span>
+
+<span class="sd">    * Parameter `table_type=wo_external_bounds` - recognize tables without external bounds.</span>
+
+<span class="sd">    Example of a table of type `wo_external_bounds`::</span>
+
+<span class="sd">       text   | text | text</span>
+<span class="sd">      --------+------+------</span>
+<span class="sd">       text   | text | text</span>
+<span class="sd">      --------+------+------</span>
+<span class="sd">       text   | text | text</span>
+<span class="sd">      --------+------+------</span>
+<span class="sd">       text   | text | text</span>
+
+
+<span class="sd">    * Parameter `table_type=one_cell_table` - if a document contains a bounding box with text, it will be considered a table.</span>
+
+<span class="sd">    Example of a page with a table of type `one_cell_table`::</span>
+
+<span class="sd">         _________________________</span>
+<span class="sd">         Header of document</span>
+<span class="sd">         text text text +------+</span>
+<span class="sd">         text           | text |  &lt;--- it is a table</span>
+<span class="sd">                        +------+</span>
+<span class="sd">         ________________________</span>
+
+<span class="sd">    * Parameter `table_type=split_last_column` - specified parameter for the merged last column of the table.</span>
+
+<span class="sd">    Example of a table of type `split_last_column`::</span>
+
+<span class="sd">         +--------+------+-------+</span>
+<span class="sd">         | text   | text | text1 |</span>
+<span class="sd">         +--------+------+       |</span>
+<span class="sd">         | text0  | text | text2 |</span>
+<span class="sd">         |        | -----|       |</span>
+<span class="sd">         |        | text | text3 |</span>
+<span class="sd">         +--------+------+       |</span>
+<span class="sd">         | text   | text | text4 |</span>
+<span class="sd">         +--------+------+-------+</span>
+<span class="sd">                     |</span>
+<span class="sd">                 Recognition</span>
+<span class="sd">                    |</span>
+<span class="sd">                    V</span>
+<span class="sd">         +--------+------+-------+</span>
+<span class="sd">         | text   | text | text1 |</span>
+<span class="sd">         +--------+------+-------|</span>
+<span class="sd">         | text0  | text | text2 |</span>
+<span class="sd">         |--------+ -----+------ |</span>
+<span class="sd">         | text0  | text | text3 |</span>
+<span class="sd">         +--------+------+------ |</span>
+<span class="sd">         | text   | text | text4 |</span>
+<span class="sd">         +--------+------+-------+</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># region METHOD___init__ [DOMAIN(7): TableRecognition; CONCEPT(6): Initialization; TECH(5): Python]</span>
+    <span class="c1">## @purpose Initialize table type configuration constants.</span>
+    <span class="c1">## @complexity 1</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># LDD-log: initialization</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_wo_external_bounds</span> <span class="o">=</span> <span class="s2">&quot;wo_external_bounds&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">detect_one_cell_table</span> <span class="o">=</span> <span class="s2">&quot;one_cell_table&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">split_last_column</span> <span class="o">=</span> <span class="s2">&quot;split_last_column&quot;</span></div>
+    <span class="c1"># endregion METHOD___init__</span>
+<span class="c1"># endregion CLASS_TableTypeAdditionalOptions</span>
+
+<span class="c1"># region MODULE_CONTRACT [DOMAIN(7): DocumentProcessing; CONCEPT(8): TableRecognition, TableType; TECH(6): Python]</span>
+<span class="c1">## @modulecontract</span>
+<span class="c1">## @purpose Define the enumeration of table recognition strategies (wo_external_bounds, one_cell_table, split_last_column) used by the PDF image table recognizer.</span>
+<span class="c1">## @scope Table type configuration for the TableRecognizer subsystem.</span>
+<span class="c1">## @input None (configuration class instantiated on demand).</span>
+<span class="c1">## @output TableTypeAdditionalOptions instance with strategy flags.</span>
+<span class="c1">## @links [USES_API(8): dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.TableRecognizer]</span>
+<span class="c1">## @invariants</span>
+<span class="c1">## - TableTypeAdditionalOptions ALWAYS provides three strategy flags.</span>
+<span class="c1">## @rationale</span>
+<span class="c1">## Q: Why class with string constants instead of Python Enum?</span>
+<span class="c1">## A: Maintains backward compatibility with existing parameter passing via string values.</span>
+<span class="c1">## @changes</span>
+<span class="c1">## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]</span>
+<span class="c1">## @modulemap</span>
+<span class="c1">## CLASS [8][Table recognition strategy enumerator] =&gt; TableTypeAdditionalOptions</span>
+<span class="c1">## @usecases</span>
+<span class="c1">## - [TableTypeAdditionalOptions]: TableRecognizer (Configure) → SelectStrategy → RecognitionModeActive</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">_module_contract</span><span class="p">():</span>
+    <span class="k">pass</span>
+<span class="c1"># endregion MODULE_CONTRACT</span>
+<span class="c1"># GREP_SUMMARY: table_type, TableTypeAdditionalOptions, table_recognition, wo_external_bounds, one_cell_table, split_last_column, PDF, dedoc, reader</span>
+<span class="c1"># STRUCTURE: ▶ TableTypeAdditionalOptions ∋ {wo_external_bounds, one_cell_table, split_last_column} → ○ TableRecognizer selects strategy → ⊕ recognized table</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Dedoc team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

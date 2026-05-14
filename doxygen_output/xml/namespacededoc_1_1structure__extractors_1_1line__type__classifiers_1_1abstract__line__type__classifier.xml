@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.py" line="61" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.py" bodystart="61" bodyend="66"/>
+        <location file="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.py" line="62" column="1" bodyfile="dedoc/structure_extractors/line_type_classifiers/abstract_line_type_classifier.py" bodystart="62" bodyend="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

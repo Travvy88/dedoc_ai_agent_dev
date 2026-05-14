@@ -2,6 +2,7 @@ var classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features
 [
     [ "__init__", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html#a5584efcaf2cfa522e51beb6deb9aeab4", null ],
     [ "indent_std", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html#a36ffe5295ec3bcba00b5e11662fce0dd", null ],
+    [ "logger", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html#ad7bc3f776fd07dbb54b22371b372fc69", null ],
     [ "prefix_after", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html#a4b0ac64bb0f594871b680cbc5ce30949", null ],
     [ "prefix_before", "classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window.html#a42cf6dda1e7dfef04d19f82e2f312a7d", null ]
 ];
