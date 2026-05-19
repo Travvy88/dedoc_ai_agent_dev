@@ -53,6 +53,11 @@ logger = logging.getLogger(__name__)
 ## @complexity 1
 @dataclass
 class OCRWord:
+    """A single recognized word token with its bounding box and confidence score.
+
+    Serves as the atomic unit of OCR output across all engine implementations.
+    """
+
     text: str
     bbox: BBox
     confidence: float
@@ -65,10 +70,34 @@ class OCRWord:
 ## @complexity 5
 @dataclass
 class OCRLine:
+    """A single line of recognized text composed of OCRWord tokens.
+
+    Contains a line-level bounding box and provides annotation generation
+    for the dedoc pipeline, converting OCR output into structured metadata.
+    """
+
     words: List[OCRWord]
     bbox: BBox
 
     def get_annotations(self, page_width: int, page_height: int, extract_line_bbox: bool) -> List[Annotation]:
+        """Generate dedoc annotations for this line.
+
+        When *extract_line_bbox* is ``True``, a single
+        :class:`~dedoc.data_structures.concrete_annotations.bbox_annotation.BBoxAnnotation`
+        is returned for the whole line. Otherwise per-word
+        :class:`~dedoc.data_structures.concrete_annotations.bbox_annotation.BBoxAnnotation` and
+        :class:`~dedoc.data_structures.concrete_annotations.confidence_annotation.ConfidenceAnnotation`
+        objects are generated.
+
+        Args:
+            page_width: Width of the source page in pixels.
+            page_height: Height of the source page in pixels.
+            extract_line_bbox: If ``True``, emit a single line-level bbox
+                annotation; otherwise emit per-word annotations.
+
+        Returns:
+            List of dedoc Annotation objects.
+        """
         # LDD-log: annotation generation entry
         logger.debug(f"[IMP:5][OCRLine][GET_ANNOTATIONS] extract_line_bbox={extract_line_bbox}, word_count={len(self.words)}")
 
@@ -98,6 +127,12 @@ class OCRLine:
 ## @complexity 1
 @dataclass
 class OCRResult:
+    """Top-level OCR output for a single image.
+
+    Encapsulates the complete recognition result as a flat list of OCRLine
+    objects, replacing the legacy nested OcrPage hierarchy.
+    """
+
     lines: List[OCRLine]
 # endregion DATACLASS_OCRResult
 
@@ -107,12 +142,39 @@ class OCRResult:
 ## @uses abc.ABC, abc.abstractmethod
 ## @complexity 1
 class OCREngineAbstract(ABC):
+    """Abstract interface for OCR engine implementations.
+
+    Defines the stable contract that all OCR engine backends (Tesseract,
+    EasyOCR, PaddleOCR, etc.) must fulfill, enabling runtime engine selection
+    via configuration without modifying pipeline orchestration code.
+    """
 
     @abstractmethod
     def recognize_page(self, image: np.ndarray, language: str, is_one_column: bool, **kwargs) -> OCRResult:
+        """Recognize text on a full document page.
+
+        Args:
+            image: Input page image as a numpy array.
+            language: OCR language string (e.g. "rus+eng").
+            is_one_column: Whether the document uses a single-column layout.
+            **kwargs: Additional engine-specific parameters.
+
+        Returns:
+            OCRResult containing all recognized lines and words.
+        """
         ...
 
     @abstractmethod
     def recognize_cells(self, image: np.ndarray, language: str, **kwargs) -> OCRResult:
+        """Recognize text in table cell images.
+
+        Args:
+            image: Input cell image as a numpy array.
+            language: OCR language string.
+            **kwargs: Additional engine-specific parameters.
+
+        Returns:
+            OCRResult containing recognized text lines within the cell.
+        """
         ...
 # endregion CLASS_OCREngineAbstract

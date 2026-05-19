@@ -14,15 +14,38 @@ from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract import OC
 
 # region CLASS_OCRLineExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class OCRLineExtractor:
+    """Extract text lines from page images using an OCR engine.
+
+    Delegates page recognition to an :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCREngineAbstract` implementation
+    and converts the resulting :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRResult` into dedoc's internal
+    :class:`~dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox` / :class:`~dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox` representation.
+    """
 
     # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict, engine: "OCREngineAbstract") -> None:
+        """Initialize the line extractor.
+
+        Args:
+            config: Dedoc configuration dictionary.
+            engine: An OCR engine instance implementing :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCREngineAbstract`.
+        """
         self.config = config
         self.engine = engine
 
     # region METHOD_split_image2lines [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
     def split_image2lines(self, image: np.ndarray, page_num: int, language: str = "rus+eng", is_one_column_document: bool = True) -> PageWithBBox:
+        """Split a page image into recognized text lines.
+
+        Args:
+            image: Page image as a numpy array.
+            page_num: Zero-based page number.
+            language: OCR language string (default ``"rus+eng"``).
+            is_one_column_document: Whether the document is single-column.
+
+        Returns:
+            PageWithBBox containing the extracted lines and their bounding boxes.
+        """
         bboxes = self.__split_image2bboxes(image=image, page_num=page_num, language=language, is_one_column_document=is_one_column_document)
 
         filtered_bboxes = list(self._filtered_bboxes(bboxes))
@@ -33,6 +56,20 @@ class OCRLineExtractor:
     # region METHOD___split_image2bboxes [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD_split_image2lines
     def __split_image2bboxes(self, image: np.ndarray, page_num: int, language: str, is_one_column_document: bool) -> List[TextWithBBox]:
+        """Run OCR on the page and return a list of TextWithBBox objects.
+
+        Iterates over OCR lines, generates per-word annotations, and
+        assigns sequential 0-based line numbers in reading order.
+
+        Args:
+            image: Page image as a numpy array.
+            page_num: Zero-based page number.
+            language: OCR language string.
+            is_one_column_document: Whether the document is single-column.
+
+        Returns:
+            List of TextWithBBox, one per recognized line.
+        """
         ocr_result = self.engine.recognize_page(image=image, language=language, is_one_column=is_one_column_document)
 
         height, width = image.shape[:2]
@@ -55,6 +92,18 @@ class OCRLineExtractor:
     # endregion METHOD___split_image2bboxes
     # region METHOD__filtered_bboxes [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def _filtered_bboxes(self, bboxes: List[TextWithBBox]) -> Iterable[TextWithBBox]:
+        """Filter out lines with extreme aspect ratios.
+
+        Removes lines whose height-to-width ratio falls outside the
+        range (0.01, 24), which typically correspond to false positives
+        from the OCR engine.
+
+        Args:
+            bboxes: List of TextWithBBox objects to filter.
+
+        Yields:
+            TextWithBBox objects that pass the aspect-ratio check.
+        """
         for text_with_bbox in bboxes:
             bbox = text_with_bbox.bbox
             height_width = bbox.height / (bbox.width + 1e-6)

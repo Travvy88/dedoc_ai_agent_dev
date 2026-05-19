@@ -18,8 +18,22 @@ from dedoc.utils.parameter_utils import get_path_param
 
 # region CLASS_OCRCellExtractor [DOMAIN(8): DocumentProcessing; CONCEPT(7): Reader; TECH(6): Python]
 class OCRCellExtractor:
+    """Extract text from table cell images using an OCR engine.
+
+    Handles batching of cell images, concatenation for efficient OCR
+    processing, and reconstruction of cell-level :class:`~dedoc.data_structures.line_with_meta.LineWithMeta`
+    objects with bounding box and confidence annotations.
+    """
+
     # region METHOD___init__ [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def __init__(self, *, config: dict, engine: "OCREngineAbstract" = None) -> None:
+        """Initialize the cell extractor.
+
+        Args:
+            config: Dedoc configuration dictionary.
+            engine: An OCR engine instance. Falls back to
+                :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine.TesseractOCREngine` when ``None``.
+        """
         self.config = config
         if engine is None:
             from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
@@ -31,6 +45,21 @@ class OCRCellExtractor:
     # region METHOD_get_cells_text [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
     def get_cells_text(self, page_image: np.ndarray, tree_nodes: List["TableTree"], language: str) -> List[List[LineWithMeta]]:  # noqa
+        """Extract text from all table cells in a page image.
+
+        Sorts table nodes by crop box width (descending), batches them
+        for efficient OCR, then maps recognized lines back to individual
+        cells and produces :class:`~dedoc.data_structures.line_with_meta.LineWithMeta` objects.
+
+        Args:
+            page_image: Full page image as a numpy array.
+            tree_nodes: List of table tree nodes to process.
+            language: OCR language string.
+
+        Returns:
+            List of lists, where each inner list contains LineWithMeta
+            objects for one table cell.
+        """
         for node in tree_nodes:
             node.set_crop_text_box(page_image)
 
@@ -75,6 +104,17 @@ class OCRCellExtractor:
     # endregion METHOD_get_cells_text
     def __handle_one_batch(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"], num_batch: int, language: str = "rus") \
             -> Tuple[OCRResult, List[BBox]]:  # noqa
+        """Run OCR on a batch of concatenated cell images.
+
+        Args:
+            src_image: Source page image.
+            tree_table_nodes: Nodes belonging to this batch.
+            num_batch: Batch index (used for debug output).
+            language: OCR language string.
+
+        Returns:
+            Tuple of (OCRResult, list of BBox chunk boundaries).
+        """
         concatenated, chunk_boxes = self.__concat_images(src_image=src_image, tree_table_nodes=tree_table_nodes)
         if self.config.get("debug_mode", False):
             debug_dir = os.path.join(get_path_param(self.config, "path_debug"), "debug_tables", "batches")
@@ -88,6 +128,19 @@ class OCRCellExtractor:
     # region METHOD___concat_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___handle_one_batch
     def __concat_images(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"]) -> Tuple[np.ndarray, List[BBox]]:  # noqa
+        """Concatenate multiple cell images into a single stacked image.
+
+        Cells are stacked vertically with a small spacing. The resulting
+        image is passed to the OCR engine for batched recognition.
+
+        Args:
+            src_image: Source page image from which to crop cells.
+            tree_table_nodes: Table nodes whose crop boxes define the
+                cell regions.
+
+        Returns:
+            Tuple of (stacked image array, list of BBox chunk boundaries).
+        """
         space = 10
         width = max((tree_node.crop_text_box.width + space for tree_node in tree_table_nodes))
         height = sum((tree_node.crop_text_box.height + space for tree_node in tree_table_nodes))
@@ -120,6 +173,18 @@ class OCRCellExtractor:
     # region METHOD___nodes2batch [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___concat_images
     def __nodes2batch(self, tree_nodes: List["TableTree"]) -> Iterator[List["TableTree"]]:  # noqa
+        """Group table nodes into batches for efficient OCR processing.
+
+        A new batch is started when the cumulative area
+        (width * height) exceeds 10⁷ or when the widest node is more
+        than 1.5 times wider than the current node.
+
+        Args:
+            tree_nodes: All table tree nodes to batch.
+
+        Yields:
+            Lists of TableTree nodes comprising one batch.
+        """
         batch = []
         width = 0
         height = 0
@@ -140,6 +205,21 @@ class OCRCellExtractor:
     # endregion METHOD___nodes2batch
     def __create_lines_with_meta(self, tree_nodes: List["TableTree"], original_box_to_fast_ocr_box: dict, original_image: np.ndarray) \
             -> List[List[LineWithMeta]]:  # noqa
+        """Build LineWithMeta objects from OCR output for each cell.
+
+        Aggregates per-cell word lists into :class:`~dedoc.data_structures.line_with_meta.LineWithMeta` objects
+        with bounding box and confidence annotations, one list per cell.
+
+        Args:
+            tree_nodes: All processed table tree nodes.
+            original_box_to_fast_ocr_box: Mapping from cell box to list
+                of word lists (one per OCR line in that cell).
+            original_image: The source page image (for bbox annotation
+                dimensions).
+
+        Returns:
+            List of lists of LineWithMeta, one inner list per cell.
+        """
         nodes_lines = []
 
         for node in tree_nodes:
@@ -171,6 +251,17 @@ class OCRCellExtractor:
                            bbox: Optional[BBox] = None,
                            image: Optional[np.ndarray] = None,
                            confidences: Optional[List[ConfidenceAnnotation]] = None) -> LineWithMeta:
+        """Build a LineWithMeta from raw text and optional annotations.
+
+        Args:
+            text: The line text.
+            bbox: Optional bounding box of the line.
+            image: The source image (required when *bbox* is given).
+            confidences: Optional list of confidence annotations.
+
+        Returns:
+            A fully constructed LineWithMeta.
+        """
         annotations = []
 
         if bbox:
@@ -188,6 +279,18 @@ class OCRCellExtractor:
     @staticmethod
     # region METHOD_upscale [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     def upscale(image: Optional[np.ndarray], padding_px: int = 40) -> Tuple[Optional[np.ndarray], int]:
+        """Add padding around a cell image to improve OCR accuracy.
+
+        Fills the padding region with the most frequent pixel colour
+        in the original image.
+
+        Args:
+            image: Input cell image.
+            padding_px: Total padding in pixels (default 40).
+
+        Returns:
+            Tuple of (padded image, half-padding offset).
+        """
         if image is None or sum(image.shape) < 5:
             return image, 0
 

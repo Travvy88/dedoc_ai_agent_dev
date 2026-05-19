@@ -45,12 +45,23 @@ logger = logging.getLogger(__name__)
 ## @uses pytesseract, OCREngineAbstract, OCRResult, OCRLine, OCRWord
 ## @complexity 6
 class TesseractOCREngine(OCREngineAbstract):
+    """Default OCR engine in the dedoc pipeline wrapping Tesseract via pytesseract.
+
+    Produces engine-agnostic     :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRResult` objects with configurable
+    confidence threshold and PSM modes for page vs. cell recognition.
+    """
 
     # region METHOD___init__ [DOMAIN(8): OCR; CONCEPT(7): Configuration; TECH(6): Python]
     ## @purpose To initialize the Tesseract engine with configuration (confidence threshold) from the dedoc config dict.
     ## @io dict -> None
     ## @complexity 2
     def __init__(self, config: dict) -> None:
+        """Initialize the Tesseract engine with configuration.
+
+        Args:
+            config: Dedoc configuration dictionary. Expected to contain
+                an optional ``ocr_conf_threshold`` key (default: 40.0).
+        """
         self.ocr_conf_threshold = config.get("ocr_conf_threshold", 40.0)
         logger.info(f"[IMP:7][TesseractOCREngine][INIT] ocr_conf_threshold={self.ocr_conf_threshold}")
 
@@ -60,6 +71,22 @@ class TesseractOCREngine(OCREngineAbstract):
     ## @io np.ndarray, str, bool, **kwargs -> OCRResult
     ## @complexity 5
     def recognize_page(self, image: np.ndarray, language: str, is_one_column: bool, **kwargs) -> OCRResult:
+        """Recognize text on a full document page image.
+
+        Uses Tesseract PSM 4 for single-column documents and PSM 3 for
+        multi-column layouts.
+
+        Args:
+            image: Page image as a numpy array.
+            language: OCR language string (e.g. ``"rus+eng"``).
+            is_one_column: ``True`` for single-column layout (PSM 4),
+                ``False`` for multi-column (PSM 3).
+            **kwargs: May include ``ocr_conf_threshold`` to override
+                the instance-level threshold for this call.
+
+        Returns:
+            OCRResult with recognized lines and words.
+        """
         # LDD-log: page recognition entry
         ocr_conf_threshold = kwargs.get("ocr_conf_threshold", self.ocr_conf_threshold)
         psm = 4 if is_one_column else 3
@@ -79,6 +106,19 @@ class TesseractOCREngine(OCREngineAbstract):
     ## @io np.ndarray, str, **kwargs -> OCRResult
     ## @complexity 3
     def recognize_cells(self, image: np.ndarray, language: str, **kwargs) -> OCRResult:
+        """Recognize text in table cell images.
+
+        Uses Tesseract PSM 6 (uniform block of text).
+
+        Args:
+            image: Cell image as a numpy array.
+            language: OCR language string.
+            **kwargs: May include ``ocr_conf_threshold`` to override
+                the default threshold (0.0) for this call.
+
+        Returns:
+            OCRResult with recognized text lines within the cell.
+        """
         # LDD-log: cell recognition entry
         ocr_conf_threshold = kwargs.get("ocr_conf_threshold", 0.0)
         logger.info(f"[IMP:7][TesseractOCREngine][RECOGNIZE_CELLS] language={language}")
@@ -97,6 +137,23 @@ class TesseractOCREngine(OCREngineAbstract):
     ## @io Dict -> OCRResult
     ## @complexity 6
     def _raw_dict_to_ocr_result(self, raw_dict: Dict[str, list], ocr_conf_threshold: float = None) -> OCRResult:
+        """Convert Tesseract's raw image_to_data dict into an OCRResult.
+
+        Groups level-5 (word) entries by compound key
+        ``(block_num, line_num)``, extracts line bounding boxes from level-4
+        entries, filters words by confidence threshold, and assembles
+        :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRLine` objects in reading order.
+
+        Args:
+            raw_dict: The dictionary returned by
+                ``pytesseract.image_to_data(output_type=DICT)``.
+            ocr_conf_threshold: Minimum confidence value for a word to be
+                included. Falls back to ``self.ocr_conf_threshold`` if
+                ``None``.
+
+        Returns:
+            OCRResult containing the parsed lines.
+        """
         if ocr_conf_threshold is None:
             ocr_conf_threshold = self.ocr_conf_threshold
         n_entries = len(raw_dict.get("level", []))
