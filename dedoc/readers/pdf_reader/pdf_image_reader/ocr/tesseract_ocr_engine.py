@@ -7,13 +7,10 @@
 ## @links [USES_API(9): pytesseract.image_to_data; IMPLEMENTS_INTERFACE(10): OCREngineAbstract]
 ## @invariants
 ## - recognize_page() and recognize_cells() ALWAYS return an OCRResult.
-## - Words with confidence below ocr_conf_threshold are ALWAYS filtered out per line.
-## - Line bbox comes from the level==4 Tesseract entry.
-## @rationale
-## Q: Why inline the dict parsing instead of using the old OcrPage.from_dict() chain?
-## A: The old Page→Block→Paragraph→Line→Word hierarchy was Tesseract-specific and had no business value beyond grouping. Flattening directly to OCRLine→OCRWord eliminates 3 intermediate data classes and their sorting overhead. The confidence filtering and word ordering logic is preserved intact.
+## - Lines with all words below ocr_conf_threshold are ALWAYS preserved as OCRLine with empty words and valid bbox (matching legacy OcrLine.from_list behavior).
 ## @changes
-## LAST_CHANGE: [v2.0.1 – Bug fix: compound key (block_num, par_num, line_num) for word grouping prevents cross-paragraph/cross-block line collision in Tesseract output.]
+## LAST_CHANGE: [v2.0.2 – Bug fix: removed `if not filtered_words: continue` to preserve lines with empty words, restoring line-count compatibility with old OcrLine.from_list(). Fixes 33 vs 34 regression in law_image.png.]
+## - [v2.0.1 – Bug fix: compound key (block_num, par_num, line_num) for word grouping prevents cross-paragraph/cross-block line collision in Tesseract output.]
 ## - [v2.0.0 – Initial creation: Tesseract adapter implementation (Hypothesis D).]
 ## @modulemap
 ## CLASS 10[Tesseract OCR engine implementing OCREngineAbstract] => TesseractOCREngine
@@ -211,10 +208,9 @@ class TesseractOCREngine(OCREngineAbstract):
                 if float(w["conf"]) >= ocr_conf_threshold
             ]
 
-            if not filtered_words:
-                logger.debug(f"[IMP:5][TesseractOCREngine][RAW_TO_RESULT] All words filtered for block={block_num} par={par_num} line={line_num}")
-                continue
-
+            # BUG_FIX_CONTEXT: Lines with all words below confidence threshold are preserved as empty OCRLine
+            # (words=[]) with valid bbox from level==4 head — matching old OcrLine.from_list() behavior.
+            # The removed `if not filtered_words: continue` caused a line-count regression (33 vs 34) in law_image.png.
             ocr_words = [
                 OCRWord(
                     text=str(entry["text"]).replace("\u2014", " "),
