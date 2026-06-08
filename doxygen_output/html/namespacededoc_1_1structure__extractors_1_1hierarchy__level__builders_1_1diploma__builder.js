@@ -1,4 +1,5 @@
 var namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder =
 [
-    [ "body_builder", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder.html", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder" ]
+    [ "body_builder", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder.html", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder" ],
+    [ "_module_contract", "namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder.html#a1124bc130f95d9acc28bd569ab692334", null ]
 ];

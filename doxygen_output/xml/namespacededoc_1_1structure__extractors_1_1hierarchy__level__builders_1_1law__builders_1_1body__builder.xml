@@ -5,6 +5,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__69eb78d1019e047f70f00e5ad4c44ba9">dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder::abstract_body_hierarchy_level_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__a3f529b294a3effd92c7c17157504396">dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder::body_foiv_hierarchy_level_builder</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__32c8150ebfb7505f2d1a4604681cfd5f">dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder::body_law_hierarchy_level_builder</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder_1abd8d9768e04199c67ce8b810c09d9942" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.law_builders.body_builder._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.body_builder._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for the law body section hierarchy builder — assigns levels to lines in the main body portion of legal documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for body_builder subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from body builder modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders" kindref="compound">dedoc.structure_extractors.hierarchy_level_builders.law_builders</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Body hierarchy follows legal document article/chapter/section conventions. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate body builder? A: The main body of laws has distinct structural patterns (articles, chapters, parts) different from appendices and other document types. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Body hierarchy]: LawLines → BodyBuilder → BodyLevels → StructuredLaw </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/body_builder/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/body_builder/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

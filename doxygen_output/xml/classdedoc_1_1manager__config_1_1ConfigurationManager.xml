@@ -35,7 +35,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="dedoc/manager_config.py" line="142" column="1" bodyfile="dedoc/manager_config.py" bodystart="142" bodyend="-1"/>
-        <referencedby refid="classdedoc_1_1config_1_1Configuration_1af2987152c5357b915a11e231360e2d3c" compoundref="config_8py" startline="41" endline="92">dedoc.config.Configuration.get_config</referencedby>
+        <referencedby refid="classdedoc_1_1config_1_1Configuration_1af2987152c5357b915a11e231360e2d3c" compoundref="config_8py" startline="41" endline="94">dedoc.config.Configuration.get_config</referencedby>
         <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1acfb3868e345ab3ad12b736362dad1a12" compoundref="manager__config_8py" startline="181" endline="185">dedoc.manager_config.ConfigurationManager.get_config</referencedby>
         <referencedby refid="classdedoc_1_1manager__config_1_1ConfigurationManager_1a891d28c894497eaf34210571dc7388ec" compoundref="manager__config_8py" startline="167" endline="173">dedoc.manager_config.ConfigurationManager.init_config</referencedby>
       </memberdef>

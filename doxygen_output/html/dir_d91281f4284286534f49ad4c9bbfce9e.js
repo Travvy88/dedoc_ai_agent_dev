@@ -1,7 +1,7 @@
 var dir_d91281f4284286534f49ad4c9bbfce9e =
 [
     [ "list_features", "dir_b418dfc70fd3f6f04b3da31062e288fe.html", "dir_b418dfc70fd3f6f04b3da31062e288fe" ],
-    [ "__init__.py", "structure__extractors_2feature__extractors_2____init_____8py.html", null ],
+    [ "__init__.py", "structure__extractors_2feature__extractors_2____init_____8py.html", "structure__extractors_2feature__extractors_2____init_____8py" ],
     [ "abstract_extractor.py", "abstract__extractor_8py.html", "abstract__extractor_8py" ],
     [ "char_features.py", "char__features_8py.html", "char__features_8py" ],
     [ "diploma_feature_extractor.py", "diploma__feature__extractor_8py.html", "diploma__feature__extractor_8py" ],

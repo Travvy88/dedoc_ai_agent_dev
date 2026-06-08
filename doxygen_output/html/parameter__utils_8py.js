@@ -14,6 +14,7 @@ var parameter__utils_8py =
     [ "get_param_need_gost_frame_analysis", "parameter__utils_8py.html#a22fcef39262ef75419f48dcfc0c184a0", null ],
     [ "get_param_need_header_footers_analysis", "parameter__utils_8py.html#ad71c382954d40498df5f169503133b6d", null ],
     [ "get_param_need_pdf_table_analysis", "parameter__utils_8py.html#a00cca9e10fc74b40b19b49cd02d40e1b", null ],
+    [ "get_param_ocr_engine", "parameter__utils_8py.html#a0c0e99464b8e4b85a32150bbb6da0337", null ],
     [ "get_param_page_slice", "parameter__utils_8py.html#ac6c54c68840a0974b848b6c60664bb7a", null ],
     [ "get_param_pdf_with_txt_layer", "parameter__utils_8py.html#affb36c75e254b90f1003049900baf45e", null ],
     [ "get_param_table_type", "parameter__utils_8py.html#a03ead768bfc765a557e21584b9d5b74f", null ],

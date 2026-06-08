@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_cell_extractor.py" line="225" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_cell_extractor.py" bodystart="225" bodyend="230"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_cell_extractor.py" line="226" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_cell_extractor.py" bodystart="226" bodyend="231"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

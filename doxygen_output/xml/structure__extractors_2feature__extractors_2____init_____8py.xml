@@ -10,8 +10,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>feature_extractors,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>feature_extractors/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentStructure;<sp/>CONCEPT(9):<sp/>FeatureExtraction,<sp/>LineClassification;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>line<sp/>feature<sp/>extractors<sp/>—<sp/>modules<sp/>that<sp/>compute<sp/>discriminative<sp/>features<sp/>from<sp/>document<sp/>lines<sp/>for<sp/>downstream<sp/>classification.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>feature_extractors<sp/>subpackage.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>feature<sp/>extractor<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.data_structures]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>All<sp/>feature<sp/>extractors<sp/>produce<sp/>a<sp/>consistent<sp/>feature<sp/>vector<sp/>per<sp/>line.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>separate<sp/>features<sp/>into<sp/>their<sp/>own<sp/>package?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Feature<sp/>computation<sp/>is<sp/>a<sp/>distinct<sp/>concern<sp/>from<sp/>classification;<sp/>modular<sp/>features<sp/>enable<sp/>composition<sp/>and<sp/>reuse<sp/>across<sp/>classifiers.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Feature<sp/>extraction]:<sp/>DocumentLine<sp/>→<sp/>FeatureExtractor<sp/>→<sp/>FeatureVector<sp/>→<sp/>Classifier</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1ae47496d4be367f542de18630f8a424ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1ae47496d4be367f542de18630f8a424ae" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>feature_extractors,<sp/>init,<sp/>structure_extractors,<sp/>line<sp/>features,<sp/>feature<sp/>vector,<sp/>classification</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>feature_extractors/__init__<sp/>→<sp/>⊕<sp/>import<sp/>feature<sp/>modules<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/feature_extractors/__init__.py"/>
   </compounddef>

@@ -66,7 +66,7 @@
         <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a147f91020ad96fce0003cc56406514b1" compoundref="data__structures_2line__with__meta_8py" startline="131" endline="149">dedoc.data_structures.line_with_meta.LineWithMeta.__getitem__</referencedby>
         <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a66188d89c9c638009eebb7c666531f33" compoundref="data__structures_2line__with__meta_8py" startline="88" endline="89">dedoc.data_structures.line_with_meta.LineWithMeta.__lt__</referencedby>
         <referencedby refid="classdedoc_1_1data__structures_1_1line__with__meta_1_1LineWithMeta_1a022522cd1119ede36d827f0c4c05307f" compoundref="data__structures_2line__with__meta_8py" startline="243" endline="249">dedoc.data_structures.line_with_meta.LineWithMeta.__repr__</referencedby>
-        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ae47e49bba8cc4399b7d47510416df6a6" compoundref="toc__feature__extractor_8py" startline="34" endline="41">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.filter_toc_line</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ae47e49bba8cc4399b7d47510416df6a6" compoundref="toc__feature__extractor_8py" startline="35" endline="42">dedoc.structure_extractors.feature_extractors.toc_feature_extractor.TocItem.filter_toc_line</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">

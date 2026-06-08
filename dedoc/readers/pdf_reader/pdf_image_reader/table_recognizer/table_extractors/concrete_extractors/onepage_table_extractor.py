@@ -33,20 +33,22 @@ class OnePageTableExtractor(BaseTableExtractor):
 
     # region METHOD_extract_onepage_tables_from_image [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
-    def extract_onepage_tables_from_image(self, image: np.ndarray, page_number: int, language: str, table_type: str) -> List[ScanTable]:
+    def extract_onepage_tables_from_image(self, image: np.ndarray, page_number: int, language: str, table_type: str, engine=None) -> List[ScanTable]:
         """
         extracts tables from input image
         :param image: input gray image
         :param page_number:
         :param language: language for Tesseract
+        :param engine: OCREngineAbstract instance for OCR (DI)
         :return: List[ScanTable]
         """
         self.image = image
         self.page_number = page_number
         self.language = language
+        self.ocr_engine = engine
 
         # Read the image
-        tables_tree, contours, angle_rotate = detect_tables_by_contours(image, language=language, config=self.config, table_type=table_type)
+        tables_tree, contours, angle_rotate = detect_tables_by_contours(image, language=language, config=self.config, table_type=table_type, engine=engine)
         tables = self.__build_structure_table_from_tree(tables_tree=tables_tree, table_type=table_type)
 
         for table in tables:
@@ -116,7 +118,7 @@ class OnePageTableExtractor(BaseTableExtractor):
 
         # Postprocess table
         if self.table_options.split_last_column in table_type:
-            cells = split_last_column(cells, language=self.language, image=self.image)
+            cells = split_last_column(cells, language=self.language, image=self.image, engine=self.ocr_engine)
 
         self.table_header_extractor.set_header_cells(cells)
 

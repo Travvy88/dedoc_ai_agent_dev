@@ -3,6 +3,23 @@
   <compounddef id="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor" kind="namespace" language="Python">
     <compoundname>dedoc::structure_extractors::abstract_structure_extractor</compoundname>
     <innerclass refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor" prot="public">dedoc::structure_extractors::abstract_structure_extractor::AbstractStructureExtractor</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor_1a71584574eb7166cb48f0ab03ddc2b80a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::structure_extractors::abstract_structure_extractor.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.structure_extractors.abstract_structure_extractor.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/abstract_structure_extractor.py" line="9" column="1" bodyfile="dedoc/structure_extractors/abstract_structure_extractor.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor_1a157ee4a3453dbfc7d8ce83c5cb428acb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -21,7 +38,7 @@
 </listitem></itemizedlist>
 </para>
 <para>Q: Why semantic region markup and LDD logging? A: Enables agent navigation via grep/Doxygen XML and runtime trace analysis. \par \b Changes\/ \:</para>
-<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup and LDD logging] \par \b Module Map\/ \:</para>
+<para>LAST_CHANGE: [v1.0.1 – Fix LDD logging: use module-level logger in @staticmethod _select_annotations, fix <bold>init</bold> logger init order] \par \b Module Map\/ \:</para>
 <para>CLASS [Weight 7][Structure extraction] =&gt; AbstractStructureExtractor \par \b Use Cases\/ \:</para>
 <para><itemizedlist>
 <listitem><para>Extract structure: Reader → StructureExtractor → HierarchyBuilder → AnnotatedDocument </para>
@@ -30,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/abstract_structure_extractor.py" line="160" column="1" bodyfile="dedoc/structure_extractors/abstract_structure_extractor.py" bodystart="160" bodyend="165"/>
+        <location file="dedoc/structure_extractors/abstract_structure_extractor.py" line="162" column="1" bodyfile="dedoc/structure_extractors/abstract_structure_extractor.py" bodystart="162" bodyend="167"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

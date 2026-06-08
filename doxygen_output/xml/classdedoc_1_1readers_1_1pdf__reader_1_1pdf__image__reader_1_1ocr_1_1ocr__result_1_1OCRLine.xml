@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a20fc94701927f09c4546b822bd30b7cb" prot="public" static="yes" mutable="no">
+        <type>List</type>
+        <definition>List dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine::words</definition>
+        <argsstring></argsstring>
+        <name>words</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.words</qualifiedname>
+        <initializer>[<ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord" kindref="compound">OCRWord</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="60" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="60" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a039c86b1b7a2918e8276db99311a979b" compoundref="ocr__line_8py" startline="36" endline="53">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.get_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a9c41fe96ecf8680633830c421a5bc0e0" compoundref="text__with__bbox_8py" startline="38" endline="40">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a7ec72369995f27b4e3051836bf97cfb2" compoundref="ocr__line_8py" startline="31" endline="33">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1ad1a0a0a078cb835f26ac90a1d0dc437c" prot="public" static="yes" mutable="no">
+        <type>BBox</type>
+        <definition>BBox dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine::bbox</definition>
+        <argsstring></argsstring>
+        <name>bbox</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.bbox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="61" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1acbeb1c107724f1643e4554b26b734444" compoundref="location_8py" startline="50" endline="52">dedoc.readers.pdf_reader.data_classes.tables.location.Location.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a1c144ea09c4af2979e8ea47f36dc8745" compoundref="location_8py" startline="55" endline="58">dedoc.readers.pdf_reader.data_classes.tables.location.Location.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a039c86b1b7a2918e8276db99311a979b" compoundref="ocr__line_8py" startline="36" endline="53">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.get_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1acaa9c0c258045c266f6427e711e9d4ba" compoundref="location_8py" startline="26" endline="28">dedoc.readers.pdf_reader.data_classes.tables.location.Location.shift</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a3c203df7c872fc950bf4bf7a8328e204" compoundref="cell_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.shift</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1acba182f20945ebaa6a2f7fb0092cc83e" compoundref="word__with__bbox_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a7c2c7294df7a6db46b234920b8938496" compoundref="location_8py" startline="31" endline="35">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_relative_bbox_dict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a6c2deab755fd4faad75ffab00baa96aa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine::line_num</definition>
+        <argsstring></argsstring>
+        <name>line_num</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.line_num</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="62" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a939fce019b5342fa9d8df3727c1c9f9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine::bbox</definition>
+        <argsstring></argsstring>
+        <name>bbox</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.bbox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="70" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="70" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1acbeb1c107724f1643e4554b26b734444" compoundref="location_8py" startline="50" endline="52">dedoc.readers.pdf_reader.data_classes.tables.location.Location.__eq__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a1c144ea09c4af2979e8ea47f36dc8745" compoundref="location_8py" startline="55" endline="58">dedoc.readers.pdf_reader.data_classes.tables.location.Location.__lt__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a039c86b1b7a2918e8276db99311a979b" compoundref="ocr__line_8py" startline="36" endline="53">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine.get_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1acaa9c0c258045c266f6427e711e9d4ba" compoundref="location_8py" startline="26" endline="28">dedoc.readers.pdf_reader.data_classes.tables.location.Location.shift</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a3c203df7c872fc950bf4bf7a8328e204" compoundref="cell_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.shift</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1ae3a391eb72a6bff8e1efa2d25d2003cb" compoundref="location_8py" startline="38" endline="47">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a957a227a87c93bbf9607f152a064e46e" compoundref="text__with__bbox_8py" startline="53" endline="67">dedoc.readers.pdf_reader.data_classes.text_with_bbox.TextWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1word__with__bbox_1_1WordWithBBox_1acba182f20945ebaa6a2f7fb0092cc83e" compoundref="word__with__bbox_8py" startline="28" endline="36">dedoc.readers.pdf_reader.data_classes.word_with_bbox.WordWithBBox.to_dict</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1location_1_1Location_1a7c2c7294df7a6db46b234920b8938496" compoundref="location_8py" startline="31" endline="35">dedoc.readers.pdf_reader.data_classes.tables.location.Location.to_relative_bbox_dict</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a06e1023e4650722529a841f55b3f30bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
+        <definition> List[Annotation] dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.get_annotations</definition>
+        <argsstring>(self, int page_width, int page_height, bool extract_line_bbox)</argsstring>
+        <name>get_annotations</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine.get_annotations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>extract_line_bbox</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To replicate the legacy OcrLine.get_annotations() logic: when extract_line_bbox=True, returns a single BBoxAnnotation for the whole line; otherwise returns per-word BBoxAnnotation + ConfidenceAnnotation pairs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (page_width: int, page_height: int, extract_line_bbox: bool) -&gt; List[Annotation] \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="68" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="68" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To group recognized words into a text line, provide the line-level bbox, and generate BBoxAnnotation/ConfidenceAnnotation for the dedoc pipeline — matching legacy OcrLine.get_annotations() semantics. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>\par \b I/O\/ \:  (words: List[OCRWord], bbox: BBox, line_num: int) -&gt; OCRLine </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>words</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>bbox</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BBox</label>
+      </node>
+      <node id="2">
+        <label>List</label>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="59" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="59" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1ad1a0a0a078cb835f26ac90a1d0dc437c" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</scope><name>bbox</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a939fce019b5342fa9d8df3727c1c9f9d" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</scope><name>bbox</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a06e1023e4650722529a841f55b3f30bb" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</scope><name>get_annotations</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a6c2deab755fd4faad75ffab00baa96aa" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</scope><name>line_num</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a20fc94701927f09c4546b822bd30b7cb" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</scope><name>words</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

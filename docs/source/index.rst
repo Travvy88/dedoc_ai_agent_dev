@@ -233,6 +233,7 @@ This type of structure is configurable (see :ref:`using_patterns`).
    tutorials/add_new_doc_format
    tutorials/add_new_structure_type
    tutorials/add_new_language
+   tutorials/add_new_ocr_engine
    tutorials/creating_document_classes
    tutorials/using_patterns
 

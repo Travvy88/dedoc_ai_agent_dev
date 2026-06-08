@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespacededoc_1_1structure__extractor
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dedoc.structure_extractors.feature_extractors.list_features Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -104,7 +105,51 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix.html">prefix</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0b903141adbc08710547c7548f5d7716"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features.html#a0b903141adbc08710547c7548f5d7716">_module_contract</a> ()</td></tr>
+<tr class="memdesc:a0b903141adbc08710547c7548f5d7716"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for list-related feature extractors — modules that detect and characterize list structures within document lines.  <br /></td></tr>
+<tr class="separator:a0b903141adbc08710547c7548f5d7716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0b903141adbc08710547c7548f5d7716" name="a0b903141adbc08710547c7548f5d7716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b903141adbc08710547c7548f5d7716">&#9670;&#160;</a></span>_module_contract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dedoc.structure_extractors.feature_extractors.list_features._module_contract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for list-related feature extractors — modules that detect and characterize list structures within document lines. </p>
+<p>\par \b Scope\/ \:  Package initialization for list_features subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from list feature modules. \par \b Links\/ \:  [USES_API(8): <a class="el" href="namespacededoc_1_1structure__extractors_1_1feature__extractors.html">dedoc.structure_extractors.feature_extractors</a>] \par \b Invariants\/ \:</p>
+<ul>
+<li>List features are computed per-line and indicate membership in ordered/unordered lists. \par \b Rationale\/ \:</li>
+</ul>
+<p>Q: Why isolate list features? A: List detection has domain-specific heuristics (prefixes, indentation, numbering) that benefit from a dedicated module cluster. \par \b Changes\/ \:</p>
+<p>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</p>
+<p>\par \b Use Cases\/ \:</p>
+<ul>
+<li>[List detection]: DocumentLine → ListFeatureExtractor → ListMembershipScore → HierarchyBuilder </li>
+</ul>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

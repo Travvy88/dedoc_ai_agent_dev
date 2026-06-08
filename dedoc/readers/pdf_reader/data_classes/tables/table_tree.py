@@ -39,9 +39,13 @@ class TableTree(object):
 
     # region METHOD_set_text_into_tree [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___init__
-    def set_text_into_tree(self, tree: "TableTree", src_image: ndarray, language: str = "rus", *, config: dict) -> None:
+    def set_text_into_tree(self, tree: "TableTree", src_image: ndarray, language: str = "rus", *, config: dict, engine=None) -> None:
         import logging
         from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor import OCRCellExtractor
+
+        if engine is None:
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
+            engine = TesseractOCREngine(config=config)
 
         # get List of TableTree
         cur_depth = 0
@@ -59,7 +63,7 @@ class TableTree(object):
             for ch in node_tree.children:
                 stack.append((ch, cur_depth + 1, begin_depth, end_depth))
 
-        cell_extractor = OCRCellExtractor(config=config)
+        cell_extractor = OCRCellExtractor(config=config, engine=engine)
         lines_with_meta = cell_extractor.get_cells_text(page_image=src_image, tree_nodes=trees, language=language)
         assert len(trees) == len(lines_with_meta)
 

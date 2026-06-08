@@ -12,8 +12,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>prefix,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>prefix/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentStructure;<sp/>CONCEPT(9):<sp/>PrefixAnalysis,<sp/>ListDetection;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>prefix-based<sp/>list<sp/>feature<sp/>extractors<sp/>—<sp/>modules<sp/>that<sp/>analyze<sp/>line<sp/>prefixes<sp/>(bullets,<sp/>numbers,<sp/>letters)<sp/>for<sp/>list<sp/>structure<sp/>detection.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>prefix<sp/>subpackage<sp/>within<sp/>list_features.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>prefix<sp/>analysis<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.structure_extractors.feature_extractors.list_features]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Prefix<sp/>analysis<sp/>operates<sp/>on<sp/>the<sp/>leading<sp/>tokens<sp/>of<sp/>each<sp/>document<sp/>line.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>prefix<sp/>package?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Prefix-based<sp/>heuristics<sp/>(bullet<sp/>chars,<sp/>numbering<sp/>schemes,<sp/>Roman<sp/>numerals)<sp/>are<sp/>a<sp/>distinct<sp/>analytical<sp/>dimension<sp/>warranting<sp/>isolated<sp/>extraction<sp/>logic.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Prefix<sp/>analysis]:<sp/>DocumentLine<sp/>→<sp/>PrefixExtractor<sp/>→<sp/>PrefixType<sp/>→<sp/>ListFeatureVector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1a948167d5f6cb1f0478c79f46ba37b6f8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1a948167d5f6cb1f0478c79f46ba37b6f8" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>prefix,<sp/>init,<sp/>structure_extractors,<sp/>prefix<sp/>analysis,<sp/>bullet,<sp/>numbering,<sp/>Roman<sp/>numeral,<sp/>list<sp/>prefix</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>prefix/__init__<sp/>→<sp/>⊕<sp/>import<sp/>prefix<sp/>modules<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/feature_extractors/list_features/prefix/__init__.py"/>
   </compounddef>

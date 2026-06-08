@@ -11,6 +11,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1letter__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::letter_prefix</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::prefix</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1roman__prefix">dedoc::structure_extractors::feature_extractors::list_features::prefix::roman_prefix</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1a948167d5f6cb1f0478c79f46ba37b6f8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.feature_extractors.list_features.prefix._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.feature_extractors.list_features.prefix._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for prefix-based list feature extractors — modules that analyze line prefixes (bullets, numbers, letters) for list structure detection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for prefix subpackage within list_features. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from prefix analysis modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features" kindref="compound">dedoc.structure_extractors.feature_extractors.list_features</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Prefix analysis operates on the leading tokens of each document line. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate prefix package? A: Prefix-based heuristics (bullet chars, numbering schemes, Roman numerals) are a distinct analytical dimension warranting isolated extraction logic. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Prefix analysis]: DocumentLine → PrefixExtractor → PrefixType → ListFeatureVector </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/feature_extractors/list_features/prefix/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/feature_extractors/list_features/prefix/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

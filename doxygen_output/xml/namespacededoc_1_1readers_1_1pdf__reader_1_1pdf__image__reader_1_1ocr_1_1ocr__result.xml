@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</innerclass>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRResult</innerclass>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRWord</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1a7d74e1fcb8110f38d7bd213f650e403a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="37" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1aed20dfca59d3f9eae39b64cb95666aef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To provide a flat, engine-agnostic canonical data model for OCR output — OCRWord, OCRLine, OCRResult — replacing the 5-level Tesseract-specific OcrPage hierarchy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  OCR result representation: word-level confidence+bbox, line-level grouping, annotation generation for dedoc pipeline. \par \b Input\/ \:  Engine-specific dict/native output (converted by adapter). \par \b Output\/ \:  List[Annotation] via get_annotations() for dedoc document pipeline. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1data__structures_1_1annotation" kindref="compound">dedoc.data_structures.annotation</ref>.*; USES_API(8): <ref refid="namespacededoc_1_1data__structures_1_1concrete__annotations" kindref="compound">dedoc.data_structures.concrete_annotations</ref>.*; USES_API(9): dedocutils.data_structures.BBox] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>OCRWord ALWAYS has text (str, may be empty), bbox (BBox), and confidence (float 0-100).</para>
+</listitem><listitem><para>OCRLine ALWAYS has non-None words list and bbox.</para>
+</listitem><listitem><para>OCRResult ALWAYS has non-None lines list.</para>
+</listitem><listitem><para>get_annotations() ALWAYS returns List[Annotation] matching old OcrLine.get_annotations() semantics. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why flat dataclasses instead of the old 5-level OcrPage hierarchy? A: Any OCR engine can emit a list of words with bbox and confidence — no hierarchy needed. Flat dataclasses reduce coupling and simplify adapter writing for new engines (EasyOCR, PaddleOCR). \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v2.6.2 – Initial creation: OCRWord, OCRLine, OCRResult canonical dataclasses] \par \b Module Map\/ \:</para>
+<para>CLASS 3[Single recognized word with bbox and confidence] =&gt; OCRWord CLASS 5[Group of words forming a text line with get_annotations()] =&gt; OCRLine CLASS 2[Container for OCRLines] =&gt; OCRResult \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[OCRResult]: OCREngine → RecognizeImage → CanonicalDataModel → dedoc Pipeline </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="24" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_result.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

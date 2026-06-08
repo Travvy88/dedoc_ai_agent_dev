@@ -127,10 +127,13 @@ var hierarchy =
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_tuple.OcrElement", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_line.OcrLine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine.html", null ],
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRLine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph.html", null ],
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRResult", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult.html", null ],
     [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_word.OcrWord", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord.html", null ],
+    [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRWord", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord.html", null ],
     [ "dedoc.readers.pdf_reader.data_classes.page_with_bboxes.PageWithBBox", "classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1page__with__bboxes_1_1PageWithBBox.html", null ],
     [ "dedoc.readers.docx_reader.data_structures.utils.ParagraphMaker", "classdedoc_1_1readers_1_1docx__reader_1_1data__structures_1_1utils_1_1ParagraphMaker.html", null ],
     [ "dedoc.structure_extractors.patterns.pattern_composition.PatternComposition", "classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition.html", null ],
@@ -250,6 +253,9 @@ var hierarchy =
         [ "dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.letter_txtlayer_classifier.LetterTxtlayerClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1letter__txtd59bc2c3038e2d7bced48d1b1b4d2158.html", null ],
         [ "dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.ml_txtlayer_classifier.MlTxtlayerClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1ml__txtlaye4ac76ee4c7073aa694b97c692528b32b.html", null ],
         [ "dedoc.readers.pdf_reader.pdf_auto_reader.txtlayer_classifier.simple_txtlayer_classifier.SimpleTxtlayerClassifier", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__auto__reader_1_1txtlayer__classifier_1_1simple__txtecfa9cc9f0277aeba584d697fdef376a.html", null ]
+      ] ],
+      [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine.html", [
+        [ "dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine", "classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine.html", null ]
       ] ],
       [ "dedoc.structure_constructors.abstract_structure_constructor.AbstractStructureConstructor", "classdedoc_1_1structure__constructors_1_1abstract__structure__constructor_1_1AbstractStructureConstructor.html", [
         [ "dedoc.structure_constructors.concrete_structure_constructors.linear_constructor.LinearConstructor", "classdedoc_1_1structure__constructors_1_1concrete__structure__constructors_1_1linear__constructor_1_1LinearConstructor.html", null ],

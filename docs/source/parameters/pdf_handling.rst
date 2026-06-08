@@ -91,6 +91,20 @@ PDF and images handling
             * **fra** -- French (for :class:`~dedoc.structure_extractors.FintocStructureExtractor`);
             * **spa** -- Spanish (for :class:`~dedoc.structure_extractors.FintocStructureExtractor`).
 
+    * - ocr_engine
+      - tesseract
+      - tesseract
+      - * :meth:`dedoc.DedocManager.parse`
+        * :meth:`dedoc.readers.PdfImageReader.read`
+        * :meth:`dedoc.readers.PdfAutoReader.read`
+        * :meth:`dedoc.readers.ReaderComposition.read`
+      - The OCR engine used for text recognition in image-based PDF documents and scanned images.
+        Currently the following engines are supported:
+
+            * **tesseract** — Tesseract OCR engine (default), uses pytesseract for text recognition.
+
+        To add support for a new OCR engine follow the tutorial :ref:`add_ocr_engine`.
+
     * - pages
       - :, start:, :end, start:end
       - :

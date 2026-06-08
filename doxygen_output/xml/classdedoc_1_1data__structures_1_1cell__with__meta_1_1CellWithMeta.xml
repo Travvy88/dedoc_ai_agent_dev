@@ -53,6 +53,7 @@
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult_1af4cc710d12b28d30a16a99587a415db6" compoundref="ocr__result_8py" startline="94">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRResult.lines</references>
         <references refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a9639e5890d547f66a57977db92a42fe7" compoundref="api_2schema_2cell__with__meta_8py" startline="53">dedoc.api.schema.cell_with_meta.CellWithMeta.rowspan</references>
         <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
       </memberdef>
@@ -103,6 +104,7 @@
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult_1af4cc710d12b28d30a16a99587a415db6" compoundref="ocr__result_8py" startline="94">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRResult.lines</references>
       </memberdef>
       <memberdef kind="function" id="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1af7799b7484c81b18790902dbbda2a8eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>List[<ref refid="classdedoc_1_1data__structures_1_1annotation_1_1Annotation" kindref="compound">Annotation</ref>]</type>
@@ -129,6 +131,7 @@
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult_1af4cc710d12b28d30a16a99587a415db6" compoundref="ocr__result_8py" startline="94">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRResult.lines</references>
       </memberdef>
       <memberdef kind="function" id="classdedoc_1_1data__structures_1_1cell__with__meta_1_1CellWithMeta_1a3c0aeaa86e2e7846c6d696301d4788d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -182,6 +185,7 @@
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1cell_1_1Cell_1a654ee69d8736717549ac853ce7faa543" compoundref="cell_8py" startline="60">dedoc.readers.pdf_reader.data_classes.tables.cell.Cell.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage_1ac6189f4de0c5eaa0ef2ffa1671348552" compoundref="ocr__page_8py" startline="94" endline="99">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_page.OcrPage.lines</references>
         <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1ae896d5eee2efb15afe8b7f0066a075d1" compoundref="ocr__paragraph_8py" startline="24">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_page.ocr_paragraph.OcrParagraph.lines</references>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult_1af4cc710d12b28d30a16a99587a415db6" compoundref="ocr__result_8py" startline="94">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_result.OCRResult.lines</references>
         <references refid="classdedoc_1_1api_1_1schema_1_1cell__with__meta_1_1CellWithMeta_1a9639e5890d547f66a57977db92a42fe7" compoundref="api_2schema_2cell__with__meta_8py" startline="53">dedoc.api.schema.cell_with_meta.CellWithMeta.rowspan</references>
       </memberdef>
       </sectiondef>

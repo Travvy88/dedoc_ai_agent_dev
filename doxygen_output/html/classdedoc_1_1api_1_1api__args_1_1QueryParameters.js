@@ -15,6 +15,7 @@ var classdedoc_1_1api_1_1api__args_1_1QueryParameters =
     [ "need_gost_frame_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a073cbe604f9833edca724d936890d083", null ],
     [ "need_header_footer_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#af9b7cbe307f52a0d0d247c672bc3b3f6", null ],
     [ "need_pdf_table_analysis", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ae0e9ee7ec7b183081cc9ae17b6765f46", null ],
+    [ "ocr_engine", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#aa11b281b9bd5220bbeda30266bf8df4e", null ],
     [ "pages", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ae6f01091509d030bf17be5f372859c4f", null ],
     [ "patterns", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#ac5bd7021afb50a429e9217ae30a4f2c6", null ],
     [ "pdf_with_text_layer", "classdedoc_1_1api_1_1api__args_1_1QueryParameters.html#a24b6b8471a62500325d72e55da2026c0", null ],

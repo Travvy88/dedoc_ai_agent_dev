@@ -10,8 +10,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>concrete_structure_extractors,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>concrete_structure_extractors/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentStructure;<sp/>CONCEPT(9):<sp/>StructureExtraction,<sp/>ConcreteImplementations;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>concrete<sp/>structure<sp/>extractor<sp/>implementations<sp/>—<sp/>law,<sp/>diploma,<sp/>article,<sp/>TZ,<sp/>and<sp/>other<sp/>document-type-specific<sp/>extractors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>concrete_structure_extractors<sp/>subpackage.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>concrete<sp/>extractor<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.structure_extractors.abstract_structure_extractor]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>All<sp/>concrete<sp/>extractors<sp/>conform<sp/>to<sp/>AbstractStructureExtractor<sp/>interface.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>package<sp/>for<sp/>concrete<sp/>implementations?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Isolates<sp/>document-type-specific<sp/>logic<sp/>from<sp/>the<sp/>abstract<sp/>extraction<sp/>pipeline,<sp/>enabling<sp/>easy<sp/>addition<sp/>of<sp/>new<sp/>document<sp/>types.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Structure<sp/>extraction]:<sp/>DocumentType<sp/>→<sp/>ConcreteExtractor<sp/>→<sp/>AnnotatedLines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1a34f48f4cec6c5cb48ba65e50b2c11c9b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1a34f48f4cec6c5cb48ba65e50b2c11c9b" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>concrete_structure_extractors,<sp/>init,<sp/>structure_extractors,<sp/>document<sp/>type,<sp/>law,<sp/>diploma,<sp/>article,<sp/>TZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>concrete_structure_extractors/__init__<sp/>→<sp/>⊕<sp/>import<sp/>concrete<sp/>extractors<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/concrete_structure_extractors/__init__.py"/>
   </compounddef>

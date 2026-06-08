@@ -1,6 +1,6 @@
 var dir_4ccedf54827d976b7a1d1fcad0251c77 =
 [
-    [ "__init__.py", "structure__extractors_2line__type__classifiers_2____init_____8py.html", null ],
+    [ "__init__.py", "structure__extractors_2line__type__classifiers_2____init_____8py.html", "structure__extractors_2line__type__classifiers_2____init_____8py" ],
     [ "abstract_line_type_classifier.py", "abstract__line__type__classifier_8py.html", "abstract__line__type__classifier_8py" ],
     [ "abstract_pickled_classifier.py", "abstract__pickled__classifier_8py.html", "abstract__pickled__classifier_8py" ],
     [ "diploma_classifier.py", "diploma__classifier_8py.html", "diploma__classifier_8py" ],

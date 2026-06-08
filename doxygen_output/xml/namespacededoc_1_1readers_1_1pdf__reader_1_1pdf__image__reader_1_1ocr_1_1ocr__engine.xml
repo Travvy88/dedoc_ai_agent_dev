@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine" kind="namespace" language="Python">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine</compoundname>
+    <innerclass refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" prot="public">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a6b576ac136958d35dc2d9c440942424d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine.logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.logger</qualifiedname>
+        <initializer>=  logging.getLogger(__name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="36" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1aee2a13867d9d579924f285161b8891d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  To define the abstract OCREngine contract and provide a factory function for creating OCR engine instances by name — enabling decoupled multi-engine OCR without hardcoding Tesseract. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  OCR engine abstraction: interface definition (recognize_page, recognize_cells), factory for instantiation. \par \b Input\/ \:  Engine name (str) and configuration dict. \par \b Output\/ \:  OCREngine subclass instance. \par \b Links\/ \:  [USES_TYPE(9): OCRResult, OCRLine, OCRWord; INSTANTIATES(8): TesseractEngine] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>get_ocr_engine(&quot;tesseract&quot;, config) ALWAYS returns a TesseractEngine instance.</para>
+</listitem><listitem><para>get_ocr_engine(unknown_name, config) ALWAYS raises ValueError.</para>
+</listitem><listitem><para>OCREngine subclasses MUST implement both recognize_page() and recognize_cells(). \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why abstract base class + factory instead of a simple callable? A: Strategy Pattern allows swapping OCR backends without touching orchestration code. Factory centralizes engine registration — new engines just add themselves to the registry. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v2.6.2 – Initial creation: OCREngine ABC + get_ocr_engine() factory] \par \b Module Map\/ \:</para>
+<para>CLASS 10[Abstract base class for OCR engines] =&gt; OCREngine FUNC 10[Factory returns OCREngine instance by name] =&gt; get_ocr_engine \par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[get_ocr_engine]: PdfImageReader (Init) → CreateEngine(&quot;tesseract&quot;) → TesseractEngine ready</para>
+</listitem><listitem><para>[OCREngine]: Developer → ImplementNewEngine → RegisterInFactory → New engine available </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="23" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a500ef38d70ea5034aa2bb2ec703d8653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" kindref="compound">OCREngine</ref></type>
+        <definition> OCREngine dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.get_ocr_engine</definition>
+        <argsstring>(str name, dict config)</argsstring>
+        <name>get_ocr_engine</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.get_ocr_engine</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To instantiate and return an OCREngine by name using a registry pattern — current support: &quot;tesseract&quot; only. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  _ocr_engine_registry \par \b I/O\/ \:  (name: str, config: dict) -&gt; OCREngine \par \b Complexity\/ \:  4 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="72" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="72" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a31b306b948579e6e4c26e26c3cf94c5f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine._register_engine</definition>
+        <argsstring>(str name, Type[OCREngine] engine_class)</argsstring>
+        <name>_register_engine</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine._register_engine</qualifiedname>
+        <param>
+          <type>str</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>engine_class</declname>
+          <array>[OCREngine]</array>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To register an OCR engine class in the factory registry — called at module import time by concrete implementations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (name: str, engine_class: Type[OCREngine]) -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="86" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" bodystart="86" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_engine.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

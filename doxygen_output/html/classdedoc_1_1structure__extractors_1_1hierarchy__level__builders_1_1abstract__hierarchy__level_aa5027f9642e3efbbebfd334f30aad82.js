@@ -1,8 +1,10 @@
 var classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82 =
 [
+    [ "__init__", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#ad5b818395927d0411f4146cd00fd0185", null ],
     [ "_postprocess_roman", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#a1c8750c1af2e75230dab3c7c00db95f0", null ],
     [ "can_build", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#ae87bac4ee0f799c57287e26d13048438", null ],
     [ "get_lines_with_hierarchy", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#a3716f947c436ba6dd8df963ffcd03fa9", null ],
     [ "document_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#a12e98543595f849e0e3e9272039bc860", null ],
+    [ "logger", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#a9267eb62d3a10b4606da5f615641422d", null ],
     [ "starting_line_types", "classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82.html#a4f9f9e5bcdcd6ee6e691562f27ac85e6", null ]
 ];

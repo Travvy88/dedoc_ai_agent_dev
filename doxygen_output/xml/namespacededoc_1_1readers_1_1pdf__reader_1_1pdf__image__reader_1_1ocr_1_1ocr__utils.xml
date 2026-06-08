@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="6" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="6" bodyend="-1"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="8" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="8" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -39,14 +39,12 @@
           <declname>ocr_conf_threshold</declname>
         </param>
         <briefdescription>
-<para>Extract text from image with Tesseract OCR. </para>
         </briefdescription>
         <detaileddescription>
-<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="11" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="11" bodyend="24"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="13" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="13" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1a39c90ac0ee28a0660dbd7c2ffeac27f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage" kindref="compound">OcrPage</ref></type>
@@ -68,14 +66,12 @@
           <defval>-1.0</defval>
         </param>
         <briefdescription>
-<para>Extract text from image with Tesseract OCR. </para>
         </briefdescription>
         <detaileddescription>
-<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="25" bodyend="38"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="25" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="25" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1aa3b83e4160cb0dfc14a51fbd6229f262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__page_1_1OcrPage" kindref="compound">OcrPage</ref></type>
@@ -97,14 +93,12 @@
           <defval>-1.0</defval>
         </param>
         <briefdescription>
-<para>Extract text from image with Tesseract OCR. </para>
         </briefdescription>
         <detaileddescription>
-<para>:param image: document image (assume that it is black and white text) :param language: document language as rus, eng or rus+eng :param ocr_conf_threshold: minimal confidence value :return: </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="39" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="39" bodyend="53"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="37" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="37" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1acbab24da33b973735361f71034106d14" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -132,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="73" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="73" bodyend="78"/>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" line="69" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_utils.py" bodystart="69" bodyend="74"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

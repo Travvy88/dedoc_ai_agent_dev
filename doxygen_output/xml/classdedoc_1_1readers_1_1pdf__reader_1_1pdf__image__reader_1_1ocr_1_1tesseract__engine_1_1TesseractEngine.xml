@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine" kind="class" language="Python" prot="public">
+    <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</compoundname>
+    <basecompoundref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" prot="public" virt="non-virtual">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a4212ad5d1330b50b1bf310bca618f161" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="52" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1tables_1_1table__tree_1_1TableTree_1ab9432258dbcec84cad299f38ba86dfe8" compoundref="table__tree_8py" startline="113" endline="135">dedoc.readers.pdf_reader.data_classes.tables.table_tree.TableTree.__build_childs</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1abd0a09e2eab55b1ec3cd64bb2e80bf30" compoundref="onepage__table__extractor_8py" startline="89" endline="103">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.__build_structure_table_from_tree</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a58475ab4b7a2a5fbeb4a00fb205dfd66" compoundref="ocr__cell__extractor_8py" startline="89" endline="118">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.__concat_images</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1ad1de7403799880d75ca058925c726d14" compoundref="pdfminer__extractor_8py" startline="294" endline="348">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.__debug_extract_layout</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1ab17d34ac9da20ef486bed34657f4dd83" compoundref="pdf__tabby__reader_8py" startline="93" endline="161">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__extract</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a8b2ee70a8512e8237d61d4b49911dce7" compoundref="pdfminer__extractor_8py" startline="201" endline="238">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.__get_line_annotations</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1a7c86dd2be5647d7b9225bbdf4ac92a6b" compoundref="pdf__tabby__reader_8py" startline="280" endline="344">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__get_lines_with_location</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1a10b6733c4d22057b62cbe3254a80d272" compoundref="pdf__tabby__reader_8py" startline="187" endline="242">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__get_tables</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extracd4d6977a631d1e12859fc513b78e481f_1ac26ea492e063636605941935c8ec5ea7" compoundref="multipage__table__extractor_8py" startline="74" endline="104">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.multipage_table_extractor.MultiPageTableExtractor.__handle_multipage_table</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a703d05344d080ee85df3e183ab8909df" compoundref="ocr__cell__extractor_8py" startline="76" endline="86">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.__handle_one_batch</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a1d68c30224e862fea14a3abc7a79d7ed" compoundref="pdf__base__reader_8py" startline="42" endline="61">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader.__init__</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extracd4d6977a631d1e12859fc513b78e481f_1a4dcfe8c11864600d3e6493a7ecc08939" compoundref="multipage__table__extractor_8py" startline="142" endline="156">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.multipage_table_extractor.MultiPageTableExtractor.__is_equal_width_cells</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extracd4d6977a631d1e12859fc513b78e481f_1ad9b972c80f37c5f4b05d2c76f64b004c" compoundref="multipage__table__extractor_8py" startline="159" endline="206">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.multipage_table_extractor.MultiPageTableExtractor.__is_one_table</referencedby>
+        <referencedby refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a28911bf9d507e40e4d337bf3a819dbfc" compoundref="dedoc__manager_8py" startline="119" endline="171">dedoc.dedoc_manager.DedocManager.__parse_no_error_handling</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__recognizer_1_1TableRecognizer_1a272065f55e5a646c232331d59a4ede3c" compoundref="table__recognizer_8py" startline="73" endline="92">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_recognizer.TableRecognizer.__rec_tables_from_img</referencedby>
+        <referencedby refid="classdedoc_1_1dedoc__manager_1_1DedocManager_1a3d455c6fa4a5c8c93c21e3bcde00f0af" compoundref="dedoc__manager_8py" startline="263" endline="271">dedoc.dedoc_manager.DedocManager.__save</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdf__tabby__reader_1_1PdfTabbyReader_1af610bcb90773e6b0d74c2e99c8f6a5ec" compoundref="pdf__tabby__reader_8py" startline="164" endline="184">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdf_tabby_reader.PdfTabbyReader.__save_gost_frame_boxes_to_json</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a170e5f60b1f86147d07bb7d351dfb162" compoundref="ocr__line__extractor_8py" startline="35" endline="50">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor.__split_image2bboxes</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a2be18885ed16ee1081f677dad5f85434" compoundref="pdf__image__reader_8py" startline="111" endline="144">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader._detect_column_count_and_orientation</referencedby>
+        <referencedby refid="classdedoc_1_1metadata__extractors_1_1concrete__metadata__extractors_1_1pdf__metadata__extractor_1_1PdfMetadataExtractor_1a8eb64f2d7eb2e9bb39930df52c0eaace" compoundref="pdf__metadata__extractor_8py" startline="94" endline="114">dedoc.metadata_extractors.concrete_metadata_extractors.pdf_metadata_extractor.PdfMetadataExtractor._get_pdf_info</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1adfe3c817f11b0af4a1a3c865bb9a3073" compoundref="pdfminer__extractor_8py" startline="76" endline="127">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor._handle_page</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a30cd137a19f0f8bb0091edaafbb8b056" compoundref="pdf__base__reader_8py" startline="106" endline="160">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._parse_document</referencedby>
+        <referencedby refid="classdedoc_1_1structure__extractors_1_1abstract__structure__extractor_1_1AbstractStructureExtractor_1a2d039f7b957f818e8240c1ff44b16296" compoundref="abstract__structure__extractor_8py" startline="60" endline="115">dedoc.structure_extractors.abstract_structure_extractor.AbstractStructureExtractor._postprocess</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a3b041d1d922c252617f232c71c52a4eb" compoundref="pdf__base__reader_8py" startline="164" endline="180">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._process_document_with_gost_frame</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a52433c8cb9c289c7d36cb835a6bfd58b" compoundref="pdf__image__reader_8py" startline="73" endline="108">dedoc.readers.pdf_reader.pdf_image_reader.pdf_image_reader.PdfImageReader._process_one_page</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__base__reader_1_1PdfBaseReader_1a8bc49992fb33f379e7761618641877d9" compoundref="pdf__base__reader_8py" startline="255" endline="285">dedoc.readers.pdf_reader.pdf_base_reader.PdfBaseReader._split_pdf2image</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1_1scan__para27896c0d6a3f53b1cdd7fad74576057a_1a1655384328ff7929dd264e270af9c718" compoundref="scan__paragraph__classifier__extractor_8py" startline="51" endline="72">dedoc.readers.pdf_reader.pdf_image_reader.paragraph_extractor.scan_paragraph_classifier_extractor.ScanParagraphClassifierExtractor._unpickle</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1article__reader_1_1article__reader_1_1ArticleReader_1ac17ba87e8938aa69f270c6001e30b2a2" compoundref="article__reader_8py" startline="87" endline="107">dedoc.readers.article_reader.article_reader.ArticleReader.can_read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7715ae2cc01e15cbad56930afe0af262" compoundref="onepage__table__extractor_8py" startline="36" endline="58">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.extract_onepage_tables_from_image</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1ae3ac9d2d9604f563af6580907f1faf44" compoundref="ocr__cell__extractor_8py" startline="32" endline="72">dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_cell_extractor.OCRCellExtractor.get_cells_text</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__txtlayer__reader_1_1pdfminer__reader_1_1pdfminer__extractor_1_1PdfminerExtractor_1a57cfc7e5b8b58511a202a6bee4662ea4" compoundref="pdfminer__extractor_8py" startline="180" endline="198">dedoc.readers.pdf_reader.pdf_txtlayer_reader.pdfminer_reader.pdfminer_extractor.PdfminerExtractor.get_info_layout_object</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a7461fba8bc0af5cd1647a48628697bc6" compoundref="onepage__table__extractor_8py" startline="106" endline="128">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.table_extractors.concrete_extractors.onepage_table_extractor.OnePageTableExtractor.handle_cells</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1utils_1_1line__object__linker_1_1LineObjectLinker_1a052a5c6ce40a51662975067c2c59cdf6" compoundref="line__object__linker_8py" startline="31" endline="66">dedoc.readers.pdf_reader.utils.line_object_linker.LineObjectLinker.link_objects</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1gost__frame__439d1bbce1a10e86e05da16469ac082d_1afe3adf1b5fb0790cab7b342208dd925a" compoundref="gost__frame__recognizer_8py" startline="23" endline="37">dedoc.readers.pdf_reader.pdf_image_reader.table_recognizer.gost_frame_recognizer.GOSTFrameRecognizer.rec_and_clean_frame</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1af098f3d0f195d173d79b7fe9b1bb31a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine::ocr_conf_threshold</definition>
+        <argsstring></argsstring>
+        <name>ocr_conf_threshold</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.ocr_conf_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="53" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" compoundref="tesseract__engine_8py" startline="93" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine._dict_to_ocr_result</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1afbf59221e6d2a3c75f1629f13409b689" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>None</type>
+        <definition> None dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.__init__</definition>
+        <argsstring>(self, dict config)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To initialize the engine with configuration parameters, primarily ocr_conf_threshold for word confidence filtering. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (config: dict) -&gt; None \par \b Complexity\/ \:  2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="51" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="51" bodyend="54"/>
+        <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a39acb5acb2083a68f7fec2e1c89af56f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kindref="compound">OCRResult</ref></type>
+        <definition> OCRResult dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_page</definition>
+        <argsstring>(self, np.ndarray image, str language, int psm_mode)</argsstring>
+        <name>recognize_page</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_page</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a492ea7c06fa9a895770b72197ed34c5a">recognize_page</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>psm_mode</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To recognize text from a full page image using pytesseract with the specified PSM mode (3=multi-column, 4=single-column). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  pytesseract.image_to_data \par \b I/O\/ \:  (image: np.ndarray, language: str, psm_mode: int) -&gt; OCRResult \par \b Complexity\/ \:  6 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="62" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="62" bodyend="70"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" compoundref="tesseract__engine_8py" startline="93" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine._dict_to_ocr_result</references>
+      </memberdef>
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a5d2b12b4e444a2dfa300ee1b446dff84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kindref="compound">OCRResult</ref></type>
+        <definition> OCRResult dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_cells</definition>
+        <argsstring>(self, np.ndarray image, str language)</argsstring>
+        <name>recognize_cells</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_cells</qualifiedname>
+        <reimplements refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1ae7b7b599bbccd81bb1b4252fee6825d9">recognize_cells</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>np.ndarray</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>str</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To recognize text from a concatenated table cells image using pytesseract with PSM 6 (uniform block of text). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Uses\/ \:  pytesseract.image_to_data \par \b I/O\/ \:  (image: np.ndarray, language: str) -&gt; OCRResult \par \b Complexity\/ \:  5 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="78" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="78" bodyend="86"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" compoundref="tesseract__engine_8py" startline="93" endline="146">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine._dict_to_ocr_result</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kindref="compound">OCRResult</ref></type>
+        <definition> OCRResult dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine._dict_to_ocr_result</definition>
+        <argsstring>(self, dict rec_dict)</argsstring>
+        <name>_dict_to_ocr_result</name>
+        <qualifiedname>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine._dict_to_ocr_result</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dict</type>
+          <declname>rec_dict</declname>
+        </param>
+        <briefdescription>
+<para>\par \b Purpose\/ \:  To convert the pytesseract dict output (Output.DICT) into an OCRResult by filtering words by confidence, filtering empty text, grouping by line_num, and computing line-level bboxes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b I/O\/ \:  (rec_dict: dict) -&gt; OCRResult \par \b Complexity\/ \:  7 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="93" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="93" bodyend="146"/>
+        <references refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1af098f3d0f195d173d79b7fe9b1bb31a0" compoundref="tesseract__engine_8py" startline="53">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.ocr_conf_threshold</references>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a5d2b12b4e444a2dfa300ee1b446dff84" compoundref="tesseract__engine_8py" startline="78" endline="86">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_cells</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a39acb5acb2083a68f7fec2e1c89af56f" compoundref="tesseract__engine_8py" startline="62" endline="70">dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine.recognize_page</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>\par \b Purpose\/ \:  To provide a concrete OCREngine implementation that wraps pytesseract (Tesseract OCR), converting its dict output into the engine-agnostic OCRResult format for the dedoc pipeline. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>ABC</label>
+      </node>
+      <node id="1">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_engine.TesseractEngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine.OCREngine</label>
+        <link refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" line="45" column="1" bodyfile="dedoc/readers/pdf_reader/pdf_image_reader/ocr/tesseract_engine.py" bodystart="45" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1afbf59221e6d2a3c75f1629f13409b689" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>__init__</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" prot="protected" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>_dict_to_ocr_result</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a4212ad5d1330b50b1bf310bca618f161" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>config</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1af098f3d0f195d173d79b7fe9b1bb31a0" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>ocr_conf_threshold</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a5d2b12b4e444a2dfa300ee1b446dff84" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>recognize_cells</name></member>
+      <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a39acb5acb2083a68f7fec2e1c89af56f" prot="public" virt="non-virtual"><scope>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</scope><name>recognize_page</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

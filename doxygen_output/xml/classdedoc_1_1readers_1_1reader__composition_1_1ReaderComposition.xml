@@ -17,7 +17,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="dedoc/readers/reader_composition.py" line="25" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="25" bodyend="-1"/>
-        <referencedby refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" compoundref="reader__composition_8py" startline="29" endline="56">dedoc.readers.reader_composition.ReaderComposition.read</referencedby>
+        <referencedby refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" compoundref="reader__composition_8py" startline="29" endline="54">dedoc.readers.reader_composition.ReaderComposition.read</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/reader_composition.py" line="21" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="21" bodyend="26"/>
+        <location file="dedoc/readers/reader_composition.py" line="21" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="21" bodyend="25"/>
         <referencedby refid="classdedoc_1_1api_1_1process__handler_1_1CancellationProcessHandler_1a6a962b807f687e38680f49e9317b3d17" compoundref="process__handler_8py" startline="175" endline="205">dedoc.api.process_handler.CancellationProcessHandler.handle</referencedby>
       </memberdef>
       <memberdef kind="function" id="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/readers/reader_composition.py" line="29" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="29" bodyend="56"/>
+        <location file="dedoc/readers/reader_composition.py" line="29" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="29" bodyend="54"/>
         <references refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1add7dbfd7eb48d36ee8fbf7e40a4fc765" compoundref="reader__composition_8py" startline="25">dedoc.readers.reader_composition.ReaderComposition.readers</references>
       </memberdef>
       </sectiondef>
@@ -119,7 +119,7 @@
         <label>object</label>
       </node>
     </collaborationgraph>
-    <location file="dedoc/readers/reader_composition.py" line="13" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="13" bodyend="60"/>
+    <location file="dedoc/readers/reader_composition.py" line="13" column="1" bodyfile="dedoc/readers/reader_composition.py" bodystart="13" bodyend="59"/>
     <listofallmembers>
       <member refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1afbbdcfa1ff9a04785da15d99488396e6" prot="public" virt="non-virtual"><scope>dedoc::readers::reader_composition::ReaderComposition</scope><name>__init__</name></member>
       <member refid="classdedoc_1_1readers_1_1reader__composition_1_1ReaderComposition_1a18f94ae500ce3c0276915f33522cc1fb" prot="public" virt="non-virtual"><scope>dedoc::readers::reader_composition::ReaderComposition</scope><name>read</name></member>

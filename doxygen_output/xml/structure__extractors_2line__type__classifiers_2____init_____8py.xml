@@ -10,8 +10,28 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers" refkind="compound"><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>line_type_classifiers,<sp/>init,<sp/>structure_extractors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>line_type_classifiers/__init__<sp/>→<sp/>⊕<sp/>imports<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers" refkind="compound"><highlight class="comment">#<sp/>region<sp/>MODULE_CONTRACT<sp/>[DOMAIN(8):<sp/>DocumentStructure;<sp/>CONCEPT(9):<sp/>LineClassification,<sp/>DocumentParsing;<sp/>TECH(7):<sp/>PythonPackage]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">##<sp/>@modulecontract</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">##<sp/>@purpose<sp/>Provide<sp/>the<sp/>package<sp/>entry<sp/>point<sp/>for<sp/>line<sp/>type<sp/>classifiers<sp/>—<sp/>modules<sp/>that<sp/>classify<sp/>each<sp/>document<sp/>line<sp/>as<sp/>a<sp/>header,<sp/>list<sp/>item,<sp/>table<sp/>of<sp/>contents<sp/>entry,<sp/>raw<sp/>text,<sp/>or<sp/>other<sp/>structural<sp/>type.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">##<sp/>@scope<sp/>Package<sp/>initialization<sp/>for<sp/>line_type_classifiers<sp/>subpackage.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">##<sp/>@input<sp/>None<sp/>(package-level).</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">##<sp/>@output<sp/>Public<sp/>symbols<sp/>re-exported<sp/>from<sp/>classifier<sp/>modules.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">##<sp/>@links<sp/>[USES_API(8):<sp/>dedoc.structure_extractors.feature_extractors]</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">##<sp/>@invariants</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">##<sp/>-<sp/>Every<sp/>document<sp/>line<sp/>receives<sp/>exactly<sp/>one<sp/>line<sp/>type<sp/>label.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">##<sp/>@rationale</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">##<sp/>Q:<sp/>Why<sp/>a<sp/>separate<sp/>line<sp/>type<sp/>classifiers<sp/>package?</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">##<sp/>A:<sp/>Line<sp/>type<sp/>classification<sp/>is<sp/>the<sp/>first<sp/>stage<sp/>of<sp/>the<sp/>structure<sp/>extraction<sp/>pipeline;<sp/>isolating<sp/>it<sp/>enables<sp/>swapping<sp/>classification<sp/>strategies<sp/>(rule-based<sp/>vs<sp/>ML).</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">##<sp/>@changes</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">##<sp/>LAST_CHANGE:<sp/>[v1.0.0<sp/>–<sp/>Added<sp/>semantic<sp/>template<sp/>markup]</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">##<sp/>@modulemap</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">##<sp/>@usecases</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">##<sp/>-<sp/>[Line<sp/>classification]:<sp/>DocumentLine<sp/>→<sp/>LineTypeClassifier<sp/>→<sp/>LineTypeLabel<sp/>→<sp/>HierarchyBuilder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1aadac96e59351b7e081967e93f115dc36" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1aadac96e59351b7e081967e93f115dc36" kindref="member">_module_contract</ref>():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>endregion<sp/>MODULE_CONTRACT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GREP_SUMMARY:<sp/>line_type_classifiers,<sp/>init,<sp/>structure_extractors,<sp/>line<sp/>classification,<sp/>header,<sp/>list<sp/>item,<sp/>TOC,<sp/>raw<sp/>text</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">#<sp/>STRUCTURE:<sp/>▶<sp/>line_type_classifiers/__init__<sp/>→<sp/>⊕<sp/>import<sp/>classifier<sp/>modules<sp/>→<sp/>⎋<sp/>__all__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="dedoc/structure_extractors/line_type_classifiers/__init__.py"/>
   </compounddef>

@@ -12,7 +12,7 @@
 ## Q: Why dataclass with Form() instead of Pydantic BaseModel?
 ## A: FastAPI's Form() with dataclass provides direct mapping from multipart form data and enum validation without Pydantic overhead. Fields use string enums for request validation.
 ## @changes
-## LAST_CHANGE: [v1.0.0 – Initial creation with semantic markup]
+## LAST_CHANGE: [v1.1.0 – Added ocr_engine field for per-request OCR engine selection (AC5)]
 ## @modulemap
 ## CLASS 8[API query parameters as Form dataclass] => QueryParameters
 ## METHOD 5[Serializes dataclass to flat dict] => to_dict
@@ -60,6 +60,7 @@ class QueryParameters:
     textual_layer_classifier: str = Form("ml", enum=["ml", "simple", "letter"], description="Type of classifier for PDF textual layer detection")
     each_page_textual_layer_detection: str = Form("false", enum=["true", "false"], description="Detect textual layer on each page. Slower but more accurate.")
     language: str = Form("rus+eng", description="Recognition language ('rus+eng', 'rus', 'eng', 'fra', 'spa')")
+    ocr_engine: str = Form("tesseract", description="OCR engine name for image-based PDF parsing ('tesseract')")
     pages: str = Form(":", description='Page numbers range for reading PDF or images, "left:right" means read pages from left to right')
     is_one_column_document: str = Form("auto", enum=["auto", "true", "false"],
                                        description='One or multiple column document, "auto" - predict number of page columns automatically')

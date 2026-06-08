@@ -3,9 +3,12 @@
   <compounddef id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr" kind="namespace" language="Python">
     <compoundname>dedoc::readers::pdf_reader::pdf_image_reader::ocr</compoundname>
     <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_cell_extractor</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine</innernamespace>
     <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_line_extractor</innernamespace>
     <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_page</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result</innernamespace>
     <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils">dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_utils</innernamespace>
+    <innernamespace refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine">dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine</innernamespace>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1af0853bebc37098dec6676d41eab417aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>

@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespacededoc_1_1structure__extractor
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">dedoc.structure_extractors.concrete_structure_extractors Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -116,7 +117,51 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor.html">tz_structure_extractor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a34f48f4cec6c5cb48ba65e50b2c11c9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors.html#a34f48f4cec6c5cb48ba65e50b2c11c9b">_module_contract</a> ()</td></tr>
+<tr class="memdesc:a34f48f4cec6c5cb48ba65e50b2c11c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for concrete structure extractor implementations — law, diploma, article, TZ, and other document-type-specific extractors.  <br /></td></tr>
+<tr class="separator:a34f48f4cec6c5cb48ba65e50b2c11c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a34f48f4cec6c5cb48ba65e50b2c11c9b" name="a34f48f4cec6c5cb48ba65e50b2c11c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f48f4cec6c5cb48ba65e50b2c11c9b">&#9670;&#160;</a></span>_module_contract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dedoc.structure_extractors.concrete_structure_extractors._module_contract </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\par \b Module Contract\/ \:\par \b Purpose\/ \:  Provide the package entry point for concrete structure extractor implementations — law, diploma, article, TZ, and other document-type-specific extractors. </p>
+<p>\par \b Scope\/ \:  Package initialization for concrete_structure_extractors subpackage. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from concrete extractor modules. \par \b Links\/ \:  [USES_API(8): <a class="el" href="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor.html">dedoc.structure_extractors.abstract_structure_extractor</a>] \par \b Invariants\/ \:</p>
+<ul>
+<li>All concrete extractors conform to AbstractStructureExtractor interface. \par \b Rationale\/ \:</li>
+</ul>
+<p>Q: Why a separate package for concrete implementations? A: Isolates document-type-specific logic from the abstract extraction pipeline, enabling easy addition of new document types. \par \b Changes\/ \:</p>
+<p>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</p>
+<p>\par \b Use Cases\/ \:</p>
+<ul>
+<li>[Structure extraction]: DocumentType → ConcreteExtractor → AnnotatedLines </li>
+</ul>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

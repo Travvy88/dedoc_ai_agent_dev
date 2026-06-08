@@ -5,6 +5,36 @@
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct93940d05def7d10fba2a1926f1e2c860">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::foiv_structure_unit</innernamespace>
     <innernamespace refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct490f4e3f2bfa3e0fbca0479a9ef4353e">dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::law_structure_unit</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit_1a7300f6fc4a80ca36280b0be1e40e56af" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit._module_contract</definition>
+        <argsstring>()</argsstring>
+        <name>_module_contract</name>
+        <qualifiedname>dedoc.structure_extractors.hierarchy_level_builders.law_builders.structure_unit._module_contract</qualifiedname>
+        <briefdescription>
+<para>\par \b Module Contract\/ \:</para>
+<para>\par \b Purpose\/ \:  Provide the package entry point for law structure unit modules — data models and logic for atomic structural elements (articles, paragraphs, subparagraphs) in legal documents. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>\par \b Scope\/ \:  Package initialization for structure_unit subpackage within law_builders. \par \b Input\/ \:  None (package-level). \par \b Output\/ \:  Public symbols re-exported from structure unit modules. \par \b Links\/ \:  [USES_API(8): <ref refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders" kindref="compound">dedoc.structure_extractors.hierarchy_level_builders.law_builders</ref>] \par \b Invariants\/ \:</para>
+<para><itemizedlist>
+<listitem><para>Structure units represent the finest granularity of legal document hierarchy. \par \b Rationale\/ \:</para>
+</listitem></itemizedlist>
+</para>
+<para>Q: Why a separate structure_unit package? A: Atomic legal structure units (article, paragraph, subparagraph, item) require dedicated data models reused across body and application builders. \par \b Changes\/ \:</para>
+<para>LAST_CHANGE: [v1.0.0 – Added semantic template markup] \par \b Module Map\/ \:</para>
+<para>\par \b Use Cases\/ \:</para>
+<para><itemizedlist>
+<listitem><para>[Structure unit]: LawLine → StructureUnit → LevelAssignment → HierarchyNode </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/__init__.py" line="18" column="1" bodyfile="dedoc/structure_extractors/hierarchy_level_builders/law_builders/structure_unit/__init__.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

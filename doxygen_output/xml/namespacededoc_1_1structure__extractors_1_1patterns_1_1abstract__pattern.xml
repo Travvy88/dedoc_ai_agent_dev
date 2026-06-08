@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="108" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="108" bodyend="113"/>
+        <location file="dedoc/structure_extractors/patterns/abstract_pattern.py" line="110" column="1" bodyfile="dedoc/structure_extractors/patterns/abstract_pattern.py" bodystart="110" bodyend="115"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

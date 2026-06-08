@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="dedoc/structure_extractors/patterns/regexp_pattern.py" line="134" column="1" bodyfile="dedoc/structure_extractors/patterns/regexp_pattern.py" bodystart="134" bodyend="139"/>
+        <location file="dedoc/structure_extractors/patterns/regexp_pattern.py" line="135" column="1" bodyfile="dedoc/structure_extractors/patterns/regexp_pattern.py" bodystart="135" bodyend="140"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

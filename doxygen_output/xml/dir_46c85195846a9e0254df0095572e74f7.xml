@@ -5,8 +5,11 @@
     <innerdir refid="dir_c1ea1a59d2465b4a140dd0e79c22d923">dedoc/readers/pdf_reader/pdf_image_reader/ocr/ocr_page</innerdir>
     <innerfile refid="readers_2pdf__reader_2pdf__image__reader_2ocr_2____init_____8py">__init__.py</innerfile>
     <innerfile refid="ocr__cell__extractor_8py">ocr_cell_extractor.py</innerfile>
+    <innerfile refid="ocr__engine_8py">ocr_engine.py</innerfile>
     <innerfile refid="ocr__line__extractor_8py">ocr_line_extractor.py</innerfile>
+    <innerfile refid="ocr__result_8py">ocr_result.py</innerfile>
     <innerfile refid="ocr__utils_8py">ocr_utils.py</innerfile>
+    <innerfile refid="tesseract__engine_8py">tesseract_engine.py</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

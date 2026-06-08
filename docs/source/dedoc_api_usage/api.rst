@@ -235,6 +235,16 @@ Api parameters description
             * **fra** -- French (for fintoc structure type);
             * **spa** -- Spanish (for fintoc structure type).
 
+    * - ocr_engine
+      - tesseract
+      - tesseract
+      - The OCR engine used for text recognition in image-based PDF documents and scanned images.
+        Currently the following engines are supported:
+
+            * **tesseract** — Tesseract OCR engine (default), uses pytesseract for text recognition.
+
+        To add support for a new OCR engine see the tutorial :ref:`add_ocr_engine`.
+
     * - pages
       - :, start:, :end, start:end
       - :

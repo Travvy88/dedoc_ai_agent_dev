@@ -46,6 +46,8 @@
     <member refid="classdedoc_1_1converters_1_1concrete__converters_1_1abstract__converter_1_1AbstractConverter_1a540d53114244284f763bc88d81b8d594" kind="function"><name>_run_subprocess</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor" kind="class"><name>dedoc::structure_extractors::feature_extractors::abstract_extractor::AbstractFeatureExtractor</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ab21fa2b02b8547a402103648c1a8727b" kind="variable"><name>logger</name></member>
+    <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1a9dc16992a38f3ca44d48471233427ac2" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1aadcf633163d20944734922090bae130c" kind="function"><name>parameters</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ab4b859be1ed6c974b8a02a41303da75b" kind="function"><name>transform</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1_1AbstractFeatureExtractor_1ae6bbd6467aa4f4ae2f032d32d6a77f52" kind="function"><name>prev_next_line_features</name></member>
@@ -73,6 +75,8 @@
   <compound refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82" kind="class"><name>dedoc::structure_extractors::hierarchy_level_builders::abstract_hierarchy_level_builder::AbstractHierarchyLevelBuilder</name>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1a4f9f9e5bcdcd6ee6e691562f27ac85e6" kind="variable"><name>starting_line_types</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1a12e98543595f849e0e3e9272039bc860" kind="variable"><name>document_types</name></member>
+    <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1a9267eb62d3a10b4606da5f615641422d" kind="variable"><name>logger</name></member>
+    <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1ad5b818395927d0411f4146cd00fd0185" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1ae87bac4ee0f799c57287e26d13048438" kind="function"><name>can_build</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1a3716f947c436ba6dd8df963ffcd03fa9" kind="function"><name>get_lines_with_hierarchy</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level_aa5027f9642e3efbbebfd334f30aad82_1a1c8750c1af2e75230dab3c7c00db95f0" kind="function"><name>_postprocess_roman</name></member>
@@ -96,6 +100,7 @@
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d" kind="class"><name>dedoc::structure_extractors::line_type_classifiers::abstract_line_type_classifier::AbstractLineTypeClassifier</name>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac626cf10092c745d4660e0f1ebda3ddb" kind="variable"><name>config</name></member>
+    <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1a3d12b3d374e2373177cf9c44e59c3367" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1a80de3e0ff39a0f94d78325157630b804" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifi41b75b8e36b2b3c4061809144b48b44d_1ac50b24f4495eb3d7e4a13a3229b8147b" kind="function"><name>predict</name></member>
   </compound>
@@ -125,6 +130,7 @@
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern" kind="class"><name>dedoc::structure_extractors::patterns::abstract_pattern::AbstractPattern</name>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a34b2c6136d330f27afe5e8239056d2b6" kind="variable"><name>_name</name></member>
+    <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a892b1da6e0d798cdff251657d45a6971" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1aabe3ef0d1f5a00067a42cbe115fb8ca0" kind="variable"><name>_line_type</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1ab175333cbfe4784dcbd33266f119c647" kind="variable"><name>_level_1</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1abstract__pattern_1_1AbstractPattern_1a4320af1b24ca03c826e137f1a02e781b" kind="variable"><name>_level_2</name></member>
@@ -809,6 +815,7 @@
     <member refid="classdedoc_1_1utils_1_1annotation__merger_1_1ExtendedAnnotation_1aafb49313631dd1bf933f4225c71a7f5b" kind="function"><name>merge</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier_1_1FintocClassifier" kind="class"><name>dedoc::structure_extractors::line_type_classifiers::fintoc_classifier::FintocClassifier</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier_1_1FintocClassifier_1ab1abf931d35fe79cdd218d0758d8de1d" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier_1_1FintocClassifier_1af25fb0271d589c39d88920b99bf66e93" kind="variable"><name>weights_dir_path</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier_1_1FintocClassifier_1a125d9e5ba58f23d81af9f44868869ec9" kind="variable"><name>language</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1line__type__classifiers_1_1fintoc__classifier_1_1FintocClassifier_1aa1ca600e379d9dd4eb7ce6ae16e16f5f" kind="variable"><name>classifiers</name></member>
@@ -942,6 +949,7 @@
     <member refid="classdedoc_1_1data__structures_1_1hierarchy__level_1_1HierarchyLevel_1a78828f5a90c47e105036a18d2c3f68c1" kind="function"><name>create_root</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compositio9662dc4e5d91f77f972f478b398a259f" kind="class"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::composition_hierarchy_level_builder::HierarchyLevelBuilderComposition</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compositio9662dc4e5d91f77f972f478b398a259f_1aabc8456d0e30658e7810798efb023e6b" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compositio9662dc4e5d91f77f972f478b398a259f_1a49c528aea464aa69a87c967e75c3cfc9" kind="variable"><name>builders</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compositio9662dc4e5d91f77f972f478b398a259f_1af82792fd5145630d0895338378c3c948" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compositio9662dc4e5d91f77f972f478b398a259f_1a16a4c7538d5ffe2944bfd3c817e99cd3" kind="function"><name>_get_builder</name></member>
@@ -1411,11 +1419,12 @@
   </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_cell_extractor::OCRCellExtractor</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1aeb7039aa141e1a3efb44866bb19ad4eb" kind="variable"><name>config</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a67d9d4c9cc16597252ec67ec705ca94c" kind="variable"><name>engine</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a573e4f5f1b620b3b3ad2e19e2e679c83" kind="variable"><name>line_extractor</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a28931c7f89864b3064799573086db49f" kind="variable"><name>logger</name></member>
-    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a99205b327535f7519edd7c3af5a31315" kind="function"><name>__init__</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1ac9317668ae855eae3ef3f6685f697e1d" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1ae3ac9d2d9604f563af6580907f1faf44" kind="function"><name>get_cells_text</name></member>
-    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1afcc9466a9d87d63b51be2c6de871de61" kind="function"><name>__handle_one_batch</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a703d05344d080ee85df3e183ab8909df" kind="function"><name>__handle_one_batch</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a58475ab4b7a2a5fbeb4a00fb205dfd66" kind="function"><name>__concat_images</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1a413542f68e02ef8937aae6eaddc2aa92" kind="function"><name>__nodes2batch</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1_1OCRCellExtractor_1af774666ca6e8b374a2303095fd8c1519" kind="function"><name>__create_lines_with_meta</name></member>
@@ -1441,6 +1450,11 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1a6e931f61799dc723d4d5eec78d00ada8" kind="function"><name>bbox</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__tuple_1_1OcrElement_1af26c93920fa4214409e0d93c1c79fbfc" kind="function"><name>from_ocr_dict</name></member>
   </compound>
+  <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine::OCREngine</name>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a4012a35ad1bb3fdb49b1dde53afbdc67" kind="variable"><name>_ocr_engine_registry</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1a492ea7c06fa9a895770b72197ed34c5a" kind="function"><name>recognize_page</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1_1OCREngine_1ae7b7b599bbccd81bb1b4252fee6825d9" kind="function"><name>recognize_cells</name></member>
+  </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_page::ocr_line::OcrLine</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1abf08c30f1ccd231bcaa2915ad8d1a3af" kind="variable"><name>level</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1af11da93b77e9865d6e310d8e50617b31" kind="variable"><name>order</name></member>
@@ -1451,9 +1465,17 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1a039c86b1b7a2918e8276db99311a979b" kind="function"><name>get_annotations</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__line_1_1OcrLine_1ad2bfe9b86e7077bdd1efd3ea112d8706" kind="function"><name>from_list</name></member>
   </compound>
+  <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRLine</name>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a20fc94701927f09c4546b822bd30b7cb" kind="variable"><name>words</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1ad1a0a0a078cb835f26ac90a1d0dc437c" kind="variable"><name>bbox</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a6c2deab755fd4faad75ffab00baa96aa" kind="variable"><name>line_num</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a939fce019b5342fa9d8df3727c1c9f9d" kind="variable"><name>bbox</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRLine_1a06e1023e4650722529a841f55b3f30bb" kind="function"><name>get_annotations</name></member>
+  </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_line_extractor::OCRLineExtractor</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a793e93c97f8d172f8020d83972f50825" kind="variable"><name>config</name></member>
-    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1ac2f400dd1d1abe7381c4df855400e272" kind="function"><name>__init__</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a782da8f22d2d25320b456974dee072da" kind="variable"><name>engine</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a01a82de4f1dfad790987c2e7db72e3db" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1aa1480d8a96ab3d347a56e639b9514e2c" kind="function"><name>split_image2lines</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a170e5f60b1f86147d07bb7d351dfb162" kind="function"><name>__split_image2bboxes</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1_1OCRLineExtractor_1a2ef4e55c246218a15ffdd39d46a4575a" kind="function"><name>_filtered_bboxes</name></member>
@@ -1476,6 +1498,9 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a26a872ab874916aa80a75aaf2d212e0b" kind="function"><name>text</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__paragraph_1_1OcrParagraph_1a66565fde10878962df9d535a3d508684" kind="function"><name>from_list</name></member>
   </compound>
+  <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRResult</name>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRResult_1af4cc710d12b28d30a16a99587a415db6" kind="variable"><name>lines</name></member>
+  </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_page::ocr_word::OcrWord</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a6b4bb5fe334c7f6d5863561fe665f50b" kind="variable"><name>level</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a644fbbd2be30fb5c94f6b7068bfe43dc" kind="variable"><name>text</name></member>
@@ -1483,6 +1508,11 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1ae4124f44aa6ba3779d78c181b3301e5a" kind="variable"><name>confidence</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1a8d04349d1a1e0ba1ff24d40a57e7430b" kind="variable"><name>order</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1_1OcrWord_1ab120277f2b02172c9f4173a3bebf9ecf" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result::OCRWord</name>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord_1af324746b3e6c480148a2ee0d98877fdf" kind="variable"><name>text</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord_1a69c7cc523616ef6ce2a28b1225d5fbcb" kind="variable"><name>bbox</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1_1OCRWord_1a671226961f6811a08b9c508891aa9a00" kind="variable"><name>confidence</name></member>
   </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::table_recognizer::table_extractors::concrete_extractors::onepage_table_extractor::OnePageTableExtractor</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1table__recognizer_1_1table__extrac4fa5a8f1b4830e90644c1bd2259d6935_1a706565be9ed9187bc5c8ae935f40de3a" kind="variable"><name>language</name></member>
@@ -1579,6 +1609,7 @@
     <member refid="classdedoc_1_1data__structures_1_1parsed__document_1_1ParsedDocument_1a50c1380430302f2e52e4224ef50993df" kind="function"><name>to_api_schema</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition" kind="class"><name>dedoc::structure_extractors::patterns::pattern_composition::PatternComposition</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1a0943348069336e4fe62b058d78e10560" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1a21ba9955b095113aa98c93dec99e5161" kind="variable"><name>patterns</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1af17e2dc81713c88dfe0710cd017d6f71" kind="function"><name>__init__</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1pattern__composition_1_1PatternComposition_1adcf7a61cb8a9f14cc905cf8c328e051f" kind="function"><name>get_hierarchy_level</name></member>
@@ -1644,6 +1675,7 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a85ace1346abf54732018e5372064dfbc" kind="variable"><name>skew_corrector</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1acaa8f2a6611c463d4dad66bf6ba27933" kind="variable"><name>column_orientation_classifier</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a5f20021860c78f3c590a76785d6aa209" kind="variable"><name>binarizer</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a59c2cc0c06aeb89ae9a74914868d337f" kind="variable"><name>ocr_engine</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a936d8ab16d509c2aa5810fe7141b6913" kind="variable"><name>ocr</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a3a8ccddb4f50c4743b07b3878476a7a4" kind="variable"><name>page_number</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1pdf__image__reader_1_1PdfImageReader_1a867edc1961c3e209776c7408cf387ed7" kind="function"><name>__init__</name></member>
@@ -1846,6 +1878,7 @@
     <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1a4c3dedb29862ed749171353f67185bd4" kind="variable"><name>encoding</name></member>
     <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ae98b6d63efed82f3e4abf4212d61f9c6" kind="variable"><name>html_fields</name></member>
     <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1abe6c654a9dbfcee300319e86c3092241" kind="variable"><name>handle_invisible_table</name></member>
+    <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1aa11b281b9bd5220bbeda30266bf8df4e" kind="variable"><name>ocr_engine</name></member>
     <member refid="classdedoc_1_1api_1_1api__args_1_1QueryParameters_1ab6a59c3e5e4d4981a2c4457a73dcc341" kind="function"><name>to_dict</name></member>
   </compound>
   <compound refid="classdedoc_1_1readers_1_1txt__reader_1_1raw__text__reader_1_1RawTextReader" kind="class"><name>dedoc::readers::txt_reader::raw_text_reader::RawTextReader</name>
@@ -2124,6 +2157,14 @@
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1ac2dad23bfacdee1d18eb83e5b9839ae3" kind="function"><name>_get_regexp_level_2</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1patterns_1_1tag__pattern_1_1TagPattern_1a025df26c9c55c40c0ddc8d2e485c9976" kind="function"><name>_get_can_be_multiline</name></member>
   </compound>
+  <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine" kind="class"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine::TesseractEngine</name>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a4212ad5d1330b50b1bf310bca618f161" kind="variable"><name>config</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1af098f3d0f195d173d79b7fe9b1bb31a0" kind="variable"><name>ocr_conf_threshold</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1afbf59221e6d2a3c75f1629f13409b689" kind="function"><name>__init__</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a39acb5acb2083a68f7fec2e1c89af56f" kind="function"><name>recognize_page</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1a5d2b12b4e444a2dfa300ee1b446dff84" kind="function"><name>recognize_cells</name></member>
+    <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1_1TesseractEngine_1aaf6e2cc94e07a2fb0b7788730f13c342" kind="function"><name>_dict_to_ocr_result</name></member>
+  </compound>
   <compound refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox" kind="class"><name>dedoc::readers::pdf_reader::data_classes::text_with_bbox::TextWithBBox</name>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a3cf6ffc21714d7e83b2000abc9da9f03" kind="variable"><name>bbox</name></member>
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1data__classes_1_1text__with__bbox_1_1TextWithBBox_1a36fa79d6e6a21cfa1ee407105bf36381" kind="variable"><name>page_num</name></member>
@@ -2155,6 +2196,7 @@
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TOCFeatureExtractor_1a4aa08e7fbd35726e9a97f14ccbee028b" kind="function"><name>__check_page_order</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem" kind="class"><name>dedoc::structure_extractors::feature_extractors::toc_feature_extractor::TocItem</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1af2bcd65d0746efe23e9ec083a9a84df1" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a80c77bb9644bba849f140ca912194088" kind="variable"><name>line</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1ac147dcb67821ffbf667add08418ae403" kind="variable"><name>page</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1toc__feature__extractor_1_1TocItem_1a420f804ce955f4c6b883b4ecabadc2a7" kind="function"><name>__init__</name></member>
@@ -2272,6 +2314,7 @@
     <member refid="classdedoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1line__metadata__extractor_1_1bold_4865f24fe2507c3ee46c0cb8ac08fe5f_1a36546c71d73a3164830cddd7b7077605" kind="function"><name>__get_threshold</name></member>
   </compound>
   <compound refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window" kind="class"><name>dedoc::structure_extractors::feature_extractors::list_features::list_features_extractor::Window</name>
+    <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window_1ad7bc3f776fd07dbb54b22371b372fc69" kind="variable"><name>logger</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window_1a36ffe5295ec3bcba00b5e11662fce0dd" kind="variable"><name>indent_std</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window_1a42cf6dda1e7dfef04d19f82e2f312a7d" kind="variable"><name>prefix_before</name></member>
     <member refid="classdedoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1_1Window_1a4b0ac64bb0f594871b680cbc5ce30949" kind="variable"><name>prefix_after</name></member>
@@ -3012,6 +3055,12 @@
   <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_cell_extractor</name>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__cell__extractor_1a94165d14ed2feb5b0b7eb9b4cf6c69ea" kind="function"><name>_module_contract</name></member>
   </compound>
+  <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_engine</name>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a6b576ac136958d35dc2d9c440942424d" kind="variable"><name>logger</name></member>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1aee2a13867d9d579924f285161b8891d5" kind="function"><name>_module_contract</name></member>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a500ef38d70ea5034aa2bb2ec703d8653" kind="function"><name>get_ocr_engine</name></member>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__engine_1a31b306b948579e6e4c26e26c3cf94c5f" kind="function"><name>_register_engine</name></member>
+  </compound>
   <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_line_extractor</name>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1ada60c01a82fb55ca49699d12b46b2423" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__line__extractor_1a7595fe02b0d0f86c1a05363d17b665c6" kind="function"><name>_module_contract</name></member>
@@ -3043,12 +3092,20 @@
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1ae56e45d0592d41780304f5af9623076a" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__page_1_1ocr__word_1af6224291a7dc3269556fe575e5d059f3" kind="function"><name>_module_contract</name></member>
   </compound>
+  <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_result</name>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1a7d74e1fcb8110f38d7bd213f650e403a" kind="variable"><name>logger</name></member>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__result_1aed20dfca59d3f9eae39b64cb95666aef" kind="function"><name>_module_contract</name></member>
+  </compound>
   <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::ocr_utils</name>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1a7a69dcb3545d6309de15f941e98b1ee7" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1aed4ba2a626c96d7a0a0d4db219ca8fa2" kind="function"><name>get_text_with_bbox_from_document_page_one_column</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1a39c90ac0ee28a0660dbd7c2ffeac27f8" kind="function"><name>get_text_with_bbox_from_document_page</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1aa3b83e4160cb0dfc14a51fbd6229f262" kind="function"><name>get_text_with_bbox_from_cells</name></member>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1ocr__utils_1acbab24da33b973735361f71034106d14" kind="function"><name>_module_contract</name></member>
+  </compound>
+  <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::ocr::tesseract_engine</name>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1ac1456cc6ec37d0d50cdb12d98f3176fa" kind="variable"><name>logger</name></member>
+    <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1ocr_1_1tesseract__engine_1a75b0a3769ab55483ad58f0747f588edf" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor" kind="namespace"><name>dedoc::readers::pdf_reader::pdf_image_reader::paragraph_extractor</name>
     <member refid="namespacededoc_1_1readers_1_1pdf__reader_1_1pdf__image__reader_1_1paragraph__extractor_1a2579c0c9280251c6b0117b045c0851f7" kind="function"><name>_module_contract</name></member>
@@ -3300,9 +3357,11 @@
     <member refid="namespacededoc_1_1structure__extractors_1af5f1378b532b903eb4a11d816bd07b96" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor" kind="namespace"><name>dedoc::structure_extractors::abstract_structure_extractor</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor_1a71584574eb7166cb48f0ab03ddc2b80a" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1abstract__structure__extractor_1a157ee4a3453dbfc7d8ce83c5cb428acb" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors" kind="namespace"><name>dedoc::structure_extractors::concrete_structure_extractors</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1a34f48f4cec6c5cb48ba65e50b2c11c9b" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structure__extractor" kind="namespace"><name>dedoc::structure_extractors::concrete_structure_extractors::abstract_law_structure_extractor</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1abstract__law__structure__extractor_1a5e8c080a02f7ad831ee8321da81483f1" kind="variable"><name>logger</name></member>
@@ -3341,6 +3400,7 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1concrete__structure__extractors_1_1tz__structure__extractor_1aa4d6a5e67b3676ac3c1dc24b0d5a8adf" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors" kind="namespace"><name>dedoc::structure_extractors::feature_extractors</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1ae47496d4be367f542de18630f8a424ae" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor" kind="namespace"><name>dedoc::structure_extractors::feature_extractors::abstract_extractor</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1abstract__extractor_1a8558ed92b0f0ed254982672e869f363d" kind="variable"><name>logger</name></member>
@@ -3375,6 +3435,7 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1law__text__features_1a45141b4753623f9dc591d93cf99905bd" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features" kind="namespace"><name>dedoc::structure_extractors::feature_extractors::list_features</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1a0b903141adbc08710547c7548f5d7716" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor" kind="namespace"><name>dedoc::structure_extractors::feature_extractors::list_features::list_features_extractor</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__features__extractor_1a8a35a8405db0f1623cb435690e2ff5ad" kind="variable"><name>logger</name></member>
@@ -3387,6 +3448,7 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1list__utils_1a2dc0227f502510f4ea948da426a305f9" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix" kind="namespace"><name>dedoc::structure_extractors::feature_extractors::list_features::prefix</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1a948167d5f6cb1f0478c79f46ba37b6f8" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1any__letter__prefix" kind="namespace"><name>dedoc::structure_extractors::feature_extractors::list_features::prefix::any_letter_prefix</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1list__features_1_1prefix_1_1any__letter__prefix_1a53cb0cfd8573a812027c42c243f4bb2c" kind="variable"><name>logger</name></member>
@@ -3446,26 +3508,31 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1feature__extractors_1_1utils__feature__extractor_1ab386fdd1e3404e82a7aeb13b2b0b32d0" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1ae1d04c593da450eec8e54fffc4e2d36c" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::abstract_hierarchy_level_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level__builder_1afa4af245685fffe6af53fbc8196c3c7a" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1abstract__hierarchy__level__builder_1a99f899ab937197d3e3c2b7fa90029762" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::diploma_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1a1124bc130f95d9acc28bd569ab692334" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::diploma_builder::body_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder_1a7835551a55198ec64733a7e4dae40a77" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1diploma__builder_1_1body__builder_1a003ee75f6a4346df26265c0e0e9f8d20" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::header_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1aeb9b8c09b01fe4d880be477917d058e9" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::header_builder::header_hierarchy_level_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder_1af59e83eb72a337291e3823b6a4c63b71" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1header__builder_1_1header__hierarchy__level__builder_1a2176747d7ea36cae9f6be351692524c9" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1a522832de6264994b4b0fee345a083cbf" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1application__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1application__builder_1a3882e2c98d5a4bdb36474f10e1a8cf76" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6657e853bf5b4da9fbddc2379e9ab5d5" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::application_builder::abstract_application_hierarchy_level_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6657e853bf5b4da9fbddc2379e9ab5d5_1ae8b709018003f796408d2000f19cb1ea" kind="variable"><name>logger</name></member>
@@ -3480,6 +3547,7 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1applic6e50e4f05957a83f9eda6adb3640bbb1_1a1b77209ea0e2cf7995b552d72bfe9120" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__builder_1abd8d9768e04199c67ce8b810c09d9942" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__69eb78d1019e047f70f00e5ad4c44ba9" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::body_builder::abstract_body_hierarchy_level_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1body__69eb78d1019e047f70f00e5ad4c44ba9_1a62da324c2ddfdcf4c53ee209932babba" kind="variable"><name>logger</name></member>
@@ -3502,6 +3570,7 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1compos8c8faf816ce67a5ede7315f7505f75c4_1af46d6eb8dd289a304a0420eb87907855" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1structure__unit_1a7300f6fc4a80ca36280b0be1e40e56af" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::law_builders::structure_unit::abstract_structure_unit</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1struct730dbf0c4c9b57bec484082fc7b960bc_1ac4b27412185740584821a0cd834f6b56" kind="variable"><name>logger</name></member>
@@ -3520,12 +3589,14 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1law__builders_1_1stub__hierarchy__level__builder_1aef83d4432066051f8b3b6f57b8465db2" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::toc_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder_1a4577472322dfc66816d935f249911965" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder_1_1toc__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::toc_builder::toc_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder_1_1toc__builder_1aa00aa0b23e993bd870fdeb15432b6062" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1toc__builder_1_1toc__builder_1a71f4e620038dd5959902d3997a617374" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::tz_builder</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder_1a0eca9af229b7c45e63a21379cb7a42f7" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder_1_1body__builder" kind="namespace"><name>dedoc::structure_extractors::hierarchy_level_builders::tz_builder::body_builder</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1tz__builder_1_1body__builder_1ae3dcf7eda244b78e2ff0298c8c8e281d" kind="variable"><name>logger</name></member>
@@ -3547,12 +3618,14 @@
     <member refid="namespacededoc_1_1structure__extractors_1_1hierarchy__level__builders_1_1utils__reg_1a2120e6febc7d50efe5125e6a8c33d824" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers" kind="namespace"><name>dedoc::structure_extractors::line_type_classifiers</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1aadac96e59351b7e081967e93f115dc36" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier" kind="namespace"><name>dedoc::structure_extractors::line_type_classifiers::abstract_line_type_classifier</name>
     <member refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier_1aa64bfe216312ce22f143104c649ac74d" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__line__type__classifier_1a67c660ed01aa450103f3f19027ca4343" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier" kind="namespace"><name>dedoc::structure_extractors::line_type_classifiers::abstract_pickled_classifier</name>
+    <member refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_1a7d919f7e6d888402283fdea72d8fe04a" kind="variable"><name>logger</name></member>
     <member refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1abstract__pickled__classifier_1a5b12bdb69d56165b7930ca1209691d31" kind="function"><name>_module_contract</name></member>
   </compound>
   <compound refid="namespacededoc_1_1structure__extractors_1_1line__type__classifiers_1_1diploma__classifier" kind="namespace"><name>dedoc::structure_extractors::line_type_classifiers::diploma_classifier</name>
@@ -3689,6 +3762,7 @@
     <member refid="namespacededoc_1_1utils_1_1parameter__utils_1aa1db6bbfdd2495d8331d0cddd64b9934" kind="function"><name>get_param_gpu_available</name></member>
     <member refid="namespacededoc_1_1utils_1_1parameter__utils_1a1ba9169bb893a06b3c83dd1698fa7fd1" kind="function"><name>get_path_param</name></member>
     <member refid="namespacededoc_1_1utils_1_1parameter__utils_1a017f9af2c6e949025eb9fbaf808b6ba2" kind="function"><name>get_param_attachments_dir</name></member>
+    <member refid="namespacededoc_1_1utils_1_1parameter__utils_1a0c0e99464b8e4b85a32150bbb6da0337" kind="function"><name>get_param_ocr_engine</name></member>
   </compound>
   <compound refid="namespacededoc_1_1utils_1_1pdf__utils" kind="namespace"><name>dedoc::utils::pdf_utils</name>
     <member refid="namespacededoc_1_1utils_1_1pdf__utils_1a2903bdddab3f110455cfb23e68d9f19e" kind="variable"><name>logger</name></member>
@@ -3745,6 +3819,18 @@
   <compound refid="namespaceenum" kind="namespace"><name>enum</name>
   </compound>
   <compound refid="namespacenn" kind="namespace"><name>nn</name>
+  </compound>
+  <compound refid="__semantic__template__reference_8py" kind="file"><name>_semantic_template_reference.py</name>
+  </compound>
+  <compound refid="api__args_8py" kind="file"><name>api_args.py</name>
+  </compound>
+  <compound refid="api__utils_8py" kind="file"><name>api_utils.py</name>
+  </compound>
+  <compound refid="cancellation_8py" kind="file"><name>cancellation.py</name>
+  </compound>
+  <compound refid="dedoc__api_8py" kind="file"><name>dedoc_api.py</name>
+  </compound>
+  <compound refid="process__handler_8py" kind="file"><name>process_handler.py</name>
   </compound>
   <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
@@ -3883,18 +3969,6 @@
   <compound refid="structure__extractors_2patterns_2____init_____8py" kind="file"><name>__init__.py</name>
   </compound>
   <compound refid="utils_2____init_____8py" kind="file"><name>__init__.py</name>
-  </compound>
-  <compound refid="__semantic__template__reference_8py" kind="file"><name>_semantic_template_reference.py</name>
-  </compound>
-  <compound refid="api__args_8py" kind="file"><name>api_args.py</name>
-  </compound>
-  <compound refid="api__utils_8py" kind="file"><name>api_utils.py</name>
-  </compound>
-  <compound refid="cancellation_8py" kind="file"><name>cancellation.py</name>
-  </compound>
-  <compound refid="dedoc__api_8py" kind="file"><name>dedoc_api.py</name>
-  </compound>
-  <compound refid="process__handler_8py" kind="file"><name>process_handler.py</name>
   </compound>
   <compound refid="api_2schema_2annotation_8py" kind="file"><name>annotation.py</name>
   </compound>
@@ -4188,6 +4262,8 @@
   </compound>
   <compound refid="ocr__cell__extractor_8py" kind="file"><name>ocr_cell_extractor.py</name>
   </compound>
+  <compound refid="ocr__engine_8py" kind="file"><name>ocr_engine.py</name>
+  </compound>
   <compound refid="ocr__line__extractor_8py" kind="file"><name>ocr_line_extractor.py</name>
   </compound>
   <compound refid="ocr__block_8py" kind="file"><name>ocr_block.py</name>
@@ -4202,7 +4278,11 @@
   </compound>
   <compound refid="ocr__word_8py" kind="file"><name>ocr_word.py</name>
   </compound>
+  <compound refid="ocr__result_8py" kind="file"><name>ocr_result.py</name>
+  </compound>
   <compound refid="ocr__utils_8py" kind="file"><name>ocr_utils.py</name>
+  </compound>
+  <compound refid="tesseract__engine_8py" kind="file"><name>tesseract_engine.py</name>
   </compound>
   <compound refid="scan__paragraph__classifier__extractor_8py" kind="file"><name>scan_paragraph_classifier_extractor.py</name>
   </compound>

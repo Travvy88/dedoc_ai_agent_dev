@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v2.7 (unreleased)
+-----------------
+
+* Added multi-engine OCR architecture (Strategy pattern) with abstract interface :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCREngineAbstract`.
+* OCR engine selection via ``ocr_engine`` API parameter and library config (default ``"tesseract"``).
+* New flat :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRResult`, :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRLine`, and :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCRWord` dataclasses replace the legacy nested OcrPage hierarchy.
+* Added tutorial for adding custom OCR engines (:ref:`add_ocr_engine`).
+
 v2.6.1 (2025-12-16)
 -------------------
 Release note: `v2.6.1 <https://github.com/ispras/dedoc/releases/tag/v2.6.1>`_
