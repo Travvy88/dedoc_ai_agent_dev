@@ -74,21 +74,8 @@ class ScanParagraphClassifierExtractor(object):
     # endregion METHOD__unpickle
     def extract(self, lines_with_links: List[LineWithLocation]) -> List[LineWithLocation]:
         data = self.feature_extractor.transform([lines_with_links])
-        # BUG_FIX_CONTEXT: The HuggingFace model was trained with an older ParagraphFeatureExtractor
-        # that produced 14 features (distance_next, distance_prev, height, height_next, height_prev,
-        # indent, indent_next, indent_prev, indent_prev_right, indent_right, intersection_next,
-        # intersection_prev, is_capitalized, local_order). The current extractor produces 24 features.
-        # We filter to only the 13 matching features and pad local_order with zeros to match model expectation.
-        model_feature_names = sorted([
-            "distance_next", "distance_prev", "height", "height_next",
-            "height_prev", "indent", "indent_next", "indent_prev",
-            "indent_prev_right", "indent_right", "intersection_next",
-            "intersection_prev", "is_capitalized"
-        ])
-        present = [f for f in model_feature_names if f in data.columns]
-        data = data[present]
-        data["local_order"] = 0.0
-        data = data[sorted(data.columns)]
+        # BUG_FIX_CONTEXT: The old hack reduced 24 features to 14, but the model on HuggingFace Hub
+        # was retrained with the current ParagraphFeatureExtractor (24 features). Removing the obsolete filtering.
         if any((data[col].isna().all() for col in data.columns)):
             labels = ["not_paragraph"] * len(lines_with_links)
         else:
