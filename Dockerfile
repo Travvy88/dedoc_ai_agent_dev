@@ -5,6 +5,7 @@ RUN for lang in $LANGUAGES; do apt install -y tesseract-ocr-$(echo $lang | tr "_
 
 ENV PYTHONPATH "${PYTHONPATH}:/dedoc_root"
 ENV RESOURCES_PATH "/dedoc_root/resources"
+ENV PADDLE_PDX_MODEL_SOURCE=HUGGINGFACE
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt

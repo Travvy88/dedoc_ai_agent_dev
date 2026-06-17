@@ -368,7 +368,7 @@ Now we can use all the patterns together and see the resulting document tree.
 
 .. literalinclude:: ../_static/code_examples/dedoc_using_patterns_tutorial.py
     :language: python
-    :lines: 113-122
+    :lines: 113-116
 
 .. code-block:: text
 

@@ -81,8 +81,16 @@ class Configuration(object):
                 # -------------------------------------------RECOGNIZE SETTINGS-----------------------------------------------------
                 # TESSERACT OCR confidence threshold ( values: [-1 - undefined;  0.0 : 100.0 % - confidence value)
                 ocr_conf_threshold=40.0,
-                # OCR engine name: "tesseract" (default), future: "easyocr", "paddleocr", etc.
+                # OCR engine name: "tesseract" (default), "paddle_v6_medium", "paddle_v6_small", "paddle_v6_tiny", "paddle_v5_server", "paddle_v5_mobile"
                 ocr_engine="tesseract",
+                # OCR device: "cpu", "gpu:0"
+                ocr_device="cpu",
+                # OCR precision: "fp32" or "fp16" (GPU only)
+                ocr_precision="fp32",
+                # Use TensorRT acceleration (GPU only)
+                ocr_use_tensorrt=False,
+                # Number of CPU threads for OCR
+                ocr_cpu_threads=10,
                 # max depth of document structure tree
                 recursion_deep_subparagraphs=30,
 
@@ -120,7 +128,7 @@ def get_config() -> dict:
 ## Q: Why Singleton + lazy initialization for configuration?
 ## A: Dedoc has many components (readers, converters, extractors) that all need config. Singleton ensures consistency; lazy init avoids expensive config assembly on import.
 ## @changes
-## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging]
+## LAST_CHANGE: [v1.2.0 – Merged ocr_model into ocr_engine; removed ocr_model parameter]
 ## @modulemap
 ## CLASS 10[Singleton configuration holder] => Configuration
 ## FUNC 8[Shortcut to get config dict] => get_config

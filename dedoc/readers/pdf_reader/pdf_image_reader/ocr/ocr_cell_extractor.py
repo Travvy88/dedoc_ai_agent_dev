@@ -104,17 +104,10 @@ class OCRCellExtractor:
     # endregion METHOD_get_cells_text
     def __handle_one_batch(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"], num_batch: int, language: str = "rus") \
             -> Tuple[OCRResult, List[BBox]]:  # noqa
-        """Run OCR on a batch of concatenated cell images.
+        from dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddle_ocr_engine import PaddleOCREngine
+        if isinstance(self.engine, PaddleOCREngine):
+            return self.__handle_one_batch_paddle(src_image, tree_table_nodes, num_batch, language)
 
-        Args:
-            src_image: Source page image.
-            tree_table_nodes: Nodes belonging to this batch.
-            num_batch: Batch index (used for debug output).
-            language: OCR language string.
-
-        Returns:
-            Tuple of (OCRResult, list of BBox chunk boundaries).
-        """
         concatenated, chunk_boxes = self.__concat_images(src_image=src_image, tree_table_nodes=tree_table_nodes)
         if self.config.get("debug_mode", False):
             debug_dir = os.path.join(get_path_param(self.config, "path_debug"), "debug_tables", "batches")
@@ -124,6 +117,40 @@ class OCRCellExtractor:
         ocr_result = self.engine.recognize_cells(image=concatenated, language=language)
 
         return ocr_result, chunk_boxes
+
+    # BUG_FIX_CONTEXT: PaddleOCR's DBNet detection model fails on the synthetic concatenated cell image
+    # (vertical stack of cell crops with 10px white gaps), returning zero detections. This method
+    # processes each cell individually using recognize_page() which runs DBNet on real cell crops,
+    # then adjusts coordinates to match the concatenated-image space expected by get_cells_text().
+    def __handle_one_batch_paddle(self, src_image: np.ndarray, tree_table_nodes: List["TableTree"], num_batch: int, language: str) \
+            -> Tuple[OCRResult, List[BBox]]:
+        space = 10
+        width = max((node.crop_text_box.width + space for node in tree_table_nodes))
+        all_lines = []
+        chunk_boxes = []
+        y_offset = 0
+
+        for node in tree_table_nodes:
+            cell_image = BBox.crop_image_by_box(src_image, node.crop_text_box)
+            # BUG_FIX_CONTEXT: PaddleX text detection resize() processor does h, w, c = image.shape
+            # and crashes on grayscale (H, W) input. Convert to 3-channel BGR to prevent crash.
+            if len(cell_image.shape) == 2:
+                cell_image = cv2.cvtColor(cell_image, cv2.COLOR_GRAY2BGR)
+            cell_result = self.engine.recognize_page(image=cell_image, language=language, is_one_column=True)
+            cell_height = node.crop_text_box.height
+
+            for line in cell_result.lines:
+                line.bbox.y_top_left += y_offset
+                line.bbox.x_top_left += space
+                for word in line.words:
+                    word.bbox.y_top_left += y_offset
+                    word.bbox.x_top_left += space
+                all_lines.append(line)
+
+            chunk_boxes.append(BBox(x_top_left=space, y_top_left=y_offset, width=width - space, height=cell_height + space))
+            y_offset += cell_height + space
+
+        return OCRResult(lines=all_lines), chunk_boxes
 
     # region METHOD___concat_images [DOMAIN(7): DocumentProcessing; CONCEPT(6): Method; TECH(6): Python]
     # endregion METHOD___handle_one_batch
@@ -321,7 +348,7 @@ class OCRCellExtractor:
 ## Q: Why is this reader separated from others?
 ## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
 ## @changes
-## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## LAST_CHANGE: [v1.2.0 – Fix: convert grayscale cell images to 3-channel BGR in __handle_one_batch_paddle to prevent PaddleX text detection resize() crash on (H,W) input.]
 ## @modulemap
 ## CLASS [16][OCRCellExtractor reader/processor] => OCRCellExtractor
 ## @usecases

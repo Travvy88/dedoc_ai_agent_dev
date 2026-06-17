@@ -40,3 +40,5 @@ wget==3.2
 xgbfir>=0.3.1,<1.0
 xgboost>=1.6.0,<2.0  # lower versions aren't compatible with pandas>2
 xlrd>=1.2.0,<2.0
+paddleocr>=3.7.0,<3.8.0  # PaddleOCR SDK (depends on paddlex[ocr-core])
+paddlepaddle==3.2.1  # PaddlePaddle CPU runtime — compatible with PaddleX 3.7.x

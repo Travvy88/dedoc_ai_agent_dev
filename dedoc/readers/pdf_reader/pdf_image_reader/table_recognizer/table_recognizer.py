@@ -65,7 +65,10 @@ class TableRecognizer:
             return cleaned_image, scan_tables
         except Exception as ex:
             traceback_message = "".join(traceback.format_exception(type(ex), value=ex, tb=ex.__traceback__))
-            logging.warning(traceback_message)
+            self.logger.warning(traceback_message)
+            # BUG_FIX_CONTEXT: bare except prevented error propagation — PaddleX cell recognition crashes
+            # were silently swallowed, returning HTTP 200 with 0 tables. Log at IMP:10 for diagnostics.
+            self.logger.critical(f"[IMP:10][TableRecognizer][FAIL] Table recognition failed: {ex}")
 
             return image, []
 
@@ -182,7 +185,7 @@ class TableRecognizer:
 ## Q: Why is this reader separated from others?
 ## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
 ## @changes
-## LAST_CHANGE: [v1.0.0 – Added SEMANTIC TEMPLATE markup and LDD logging.]
+## LAST_CHANGE: [v1.1.0 – Upgrade silent bare except Exception in recognize_tables_from_image: now logs at IMP:10 (critical) with full traceback for PaddleX cell recognition failures.]
 ## @modulemap
 ## CLASS [18][TableRecognizer reader/processor] => TableRecognizer
 ## @usecases

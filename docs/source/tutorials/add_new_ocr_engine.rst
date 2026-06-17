@@ -8,7 +8,7 @@ Overview
 
 Dedoc uses optical character recognition (OCR) to extract text from image-based PDF documents and scanned images.
 The OCR subsystem is built on the **Strategy pattern**: the abstract interface :class:`~dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_engine_abstract.OCREngineAbstract`
-defines the contract, and concrete engine implementations (e.g., Tesseract) provide the actual text recognition logic.
+defines the contract, and concrete engine implementations (e.g., Tesseract, PaddleOCR) provide the actual text recognition logic.
 
 The OCR abstraction consists of three flat dataclasses and one abstract base class:
 

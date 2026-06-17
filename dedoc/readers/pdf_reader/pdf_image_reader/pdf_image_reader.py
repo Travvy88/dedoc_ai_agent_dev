@@ -58,6 +58,9 @@ class PdfImageReader(PdfBaseReader):
         if ocr_engine_name == "tesseract":
             from dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine import TesseractOCREngine
             ocr_engine = TesseractOCREngine(config=self.config)
+        elif ocr_engine_name.startswith("paddle_"):
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddle_ocr_engine import PaddleOCREngine
+            ocr_engine = PaddleOCREngine(config=self.config)
         else:
             raise ValueError(f"Unknown OCR engine: {ocr_engine_name}")
         self._current_engine_name = ocr_engine_name
@@ -90,6 +93,17 @@ class PdfImageReader(PdfBaseReader):
             from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor import OCRLineExtractor
             ocr_engine = TesseractOCREngine(config=self.config)
             self._current_engine_name = "tesseract"
+            self.ocr_engine = ocr_engine
+            self.ocr = OCRLineExtractor(config=self.config, engine=ocr_engine)
+            self.table_recognizer.ocr_engine = ocr_engine
+            self.logger.debug(f"[IMP:7][PdfImageReader][SET_ENGINE] Switched OCR engine to '{ocr_engine_name}'")
+        elif ocr_engine_name.startswith("paddle_"):
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddle_ocr_engine import PaddleOCREngine
+            from dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor import OCRLineExtractor
+            engine_config = dict(self.config)
+            engine_config["ocr_engine"] = ocr_engine_name
+            ocr_engine = PaddleOCREngine(config=engine_config)
+            self._current_engine_name = ocr_engine_name
             self.ocr_engine = ocr_engine
             self.ocr = OCRLineExtractor(config=self.config, engine=ocr_engine)
             self.table_recognizer.ocr_engine = ocr_engine
@@ -192,7 +206,7 @@ class PdfImageReader(PdfBaseReader):
 ## Q: Why is this reader separated from others?
 ## A: Each reader handles one format family — isolation prevents format coupling and simplifies extension.
 ## @changes
-## LAST_CHANGE: [v1.1.0 – Added _set_ocr_engine_from_parameters for per-request OCR engine selection (AC5).]
+## LAST_CHANGE: [v1.2.0 – Merged ocr_model into ocr_engine; used startswith for paddle engine detection.]
 ## @modulemap
 ## CLASS [8][PdfImageReader reader/processor] => PdfImageReader
 ## @usecases

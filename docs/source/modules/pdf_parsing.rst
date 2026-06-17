@@ -28,5 +28,8 @@ Auxiliary data structures for PDF and images parsing
 .. autoclass:: dedoc.readers.pdf_reader.pdf_image_reader.ocr.tesseract_ocr_engine.TesseractOCREngine
     :members:
 
+.. autoclass:: dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddle_ocr_engine.PaddleOCREngine
+    :members:
+
 .. autoclass:: dedoc.readers.pdf_reader.pdf_image_reader.ocr.ocr_line_extractor.OCRLineExtractor
     :members:
