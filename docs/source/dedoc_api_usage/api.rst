@@ -225,25 +225,39 @@ Api parameters description
         The GOST frame recognizer is used recognize and ignore GOST frame on images and PDF documents.
 
     * - language
-      - rus, eng, rus+eng, fra, spa
+      - rus, eng, rus+eng, fra, spa, deu, ita, por, pol, nld, swe, fin, ces, hun, ron, tur, vie, ind,
+        msa, bel, ukr, bul, kaz, ara, hin, kor, tha, ell, jpn, chi_sim, chi_tra,
+        а также краткая нотация: ru, en, de, fr, es, it, pt, pl, nl, sv, fi, cs, hu, ro, tr, vi, id,
+        ms, be, uk, bg, kk, ar, hi, ko, th, el, japan, ch
       - rus+eng
-      - Language of the parsed PDF document without a textual layer. The following values are available:
+      - Language of the document without a textual layer.
+        Поддерживается нотация Tesseract (``rus``, ``eng``, ``deu``, ``fra``, ...)
+        и краткая нотация PaddleOCR (``ru``, ``en``, ``de``, ``fr``, ...).
+        Языковой маппер автоматически преобразует форматы.
 
-            * **rus** -- Russian;
-            * **eng** -- English;
-            * **rus+eng** -- both Russian and English;
-            * **fra** -- French (for fintoc structure type);
-            * **spa** -- Spanish (for fintoc structure type).
+        Для PaddleOCR доступно 80+ языков, полный список см. в PADDLEOCR_DEVGUIDE.md.
+        При использовании ``paddle_v6`` поддерживаются только 50 языков (латиница + CJK),
+        при ``paddle_v5`` — все 80+ включая кириллицу и арабский.
 
     * - ocr_engine
-      - tesseract
+      - tesseract, paddle_v6_medium, paddle_v6_small, paddle_v6_tiny, paddle_v5_server, paddle_v5_mobile
       - tesseract
       - The OCR engine used for text recognition in image-based PDF documents and scanned images.
-        Currently the following engines are supported:
 
-            * **tesseract** — Tesseract OCR engine (default), uses pytesseract for text recognition.
+        Параметр ``ocr_model`` удалён. Версия движка и размер модели кодируются в значении ``ocr_engine``:
 
-        To add support for a new OCR engine see the tutorial :ref:`add_ocr_engine`.
+            * **tesseract** — Tesseract OCR engine (default), uses pytesseract.
+            * **paddle_v6_medium** / **paddle_v6_small** / **paddle_v6_tiny** — PP-OCRv6 (50 languages: Latin + CJK).
+              Single multilingual model, fastest and most accurate for Latin scripts.
+              Medium = 133 MB (accurate), Small = 30 MB (balanced), Tiny = 6 MB (fast).
+            * **paddle_v5_server** / **paddle_v5_mobile** — PP-OCRv5 (80+ languages: Cyrillic, Arabic, Devanagari, Korean, Thai, ...).
+              Language-specific rec models auto-selected by language group.
+              Server = 84 MB det (accurate), Mobile = 5 MB det (fast).
+
+    * - device
+      - cpu, gpu:0
+      - cpu
+      - Device for OCR inference. ``cpu`` for CPU mode, ``gpu:0`` for GPU mode (PaddleOCR only).
 
     * - pages
       - :, start:, :end, start:end

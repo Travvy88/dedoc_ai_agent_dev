@@ -12,7 +12,7 @@
 ## Q: Why dataclass with Form() instead of Pydantic BaseModel?
 ## A: FastAPI's Form() with dataclass provides direct mapping from multipart form data and enum validation without Pydantic overhead. Fields use string enums for request validation.
 ## @changes
-## LAST_CHANGE: [v1.1.0 – Added ocr_engine field for per-request OCR engine selection (AC5)]
+## LAST_CHANGE: [v1.2.0 – Merged ocr_model into ocr_engine; removed ocr_model parameter]
 ## @modulemap
 ## CLASS 8[API query parameters as Form dataclass] => QueryParameters
 ## METHOD 5[Serializes dataclass to flat dict] => to_dict
@@ -59,8 +59,10 @@ class QueryParameters:
                                     description="Extract text from a text layer of PDF or using OCR methods for image-like documents")
     textual_layer_classifier: str = Form("ml", enum=["ml", "simple", "letter"], description="Type of classifier for PDF textual layer detection")
     each_page_textual_layer_detection: str = Form("false", enum=["true", "false"], description="Detect textual layer on each page. Slower but more accurate.")
-    language: str = Form("rus+eng", description="Recognition language ('rus+eng', 'rus', 'eng', 'fra', 'spa')")
-    ocr_engine: str = Form("tesseract", description="OCR engine name for image-based PDF parsing ('tesseract')")
+    language: str = Form("rus+eng", description="Recognition language in short notation ('rus+eng', 'ru', 'en', 'de', 'fr', 'es')")
+    ocr_engine: str = Form("tesseract", enum=["tesseract", "paddle_v6_medium", "paddle_v6_small", "paddle_v6_tiny", "paddle_v5_server", "paddle_v5_mobile"],
+                           description="OCR engine name for image-based PDF parsing")
+    device: str = Form("cpu", enum=["cpu", "gpu:0"], description="Device for OCR inference: 'cpu' or 'gpu:0'")
     pages: str = Form(":", description='Page numbers range for reading PDF or images, "left:right" means read pages from left to right')
     is_one_column_document: str = Form("auto", enum=["auto", "true", "false"],
                                        description='One or multiple column document, "auto" - predict number of page columns automatically')

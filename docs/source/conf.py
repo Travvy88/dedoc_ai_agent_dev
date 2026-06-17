@@ -85,7 +85,10 @@ nitpick_ignore = [
     ("py:meth", "dedoc.structure_extractors.feature_extractors.abstract_extractor.AbstractFeatureExtractor._normalize_features"),
     ("py:meth", "dedoc.structure_extractors.line_type_classifiers.abstract_line_type_classifier.AbstractLineTypeClassifier.predict"),
     ("py:meth", "dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.match"),
-    ("py:meth", "dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.get_hierarchy_level")
+    ("py:meth", "dedoc.structure_extractors.patterns.abstract_pattern.AbstractPattern.get_hierarchy_level"),
+    ("py:class", "dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddleocr_language_mapper.PaddleOCRLanguageMapper"),
+    ("py:class", "dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddleocr_model_config.PaddleOCRModelConfig"),
+    ("py:class", "dedoc.readers.pdf_reader.pdf_image_reader.ocr.paddle_ocr_engine.PaddleOCREngine")
 ]
 
 # -- Options for HTML output -------------------------------------------------

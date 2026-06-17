@@ -10,6 +10,20 @@ If you don't need parse images and PDF files, you don't need to do anything.
 To parse images with a new language, additional Tesseract language packages should be installed.
 The list of languages supported by Tesseract are enlisted `here <https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html>`_ (see **Languages** section).
 
+Adding language support for PaddleOCR
+--------------------------------------
+
+Для PaddleOCR не требуется установка дополнительных языковых пакетов — модели
+скачиваются автоматически при первом вызове. Достаточно указать ``ocr_engine``
+(например, ``paddle_v5_server`` или ``paddle_v6_medium``) и код языка в параметре ``language``.
+
+Поддерживаются оба формата языковых кодов:
+- Tesseract-нотация: ``rus``, ``eng``, ``deu``, ``fra``, ``spa``, ...
+- Краткая нотация PaddleOCR: ``ru``, ``en``, ``de``, ``fr``, ``es``, ...
+
+Языковой маппер автоматически преобразует форматы. Полный список поддерживаемых
+языков — см. ``PADDLEOCR_DEVGUIDE.md``.
+
 .. seealso::
     The instruction with Tesseract installation can be found :ref:`here <install_tesseract>`.
 
